@@ -433,31 +433,52 @@ function buildBetCard(bet) {
   const card = document.createElement("div");
   card.className = "bet-card";
 
-  const profitText =
-    bet.status === "pending"
-      ? ""
-      : `<div class="bet-profit ${bet.profitUnits >= 0 ? "positive" : "negative"}">${bet.profitUnits >= 0 ? "+" : ""}${bet.profitUnits.toFixed(2)} units</div>`;
+  const isSettled = bet.status !== "pending";
+  const unitValue = getUnitValue();
+  const stakeDollars = unitValue ? bet.stakeUnits * unitValue : null;
+  const potentialProfitDollars = unitValue ? stakeDollars * (bet.multiplier - 1) : null;
 
-  const removeBtn = bet.status === "pending" ? `<button class="bet-remove" data-id="${bet.id}">Remove</button>` : "";
+  const statusBadge = isSettled ? `<span class="bet-status ${bet.status}">${bet.status}</span>` : "";
+
+  const profitText = isSettled
+    ? `<div class="bet-profit ${bet.profitUnits >= 0 ? "positive" : "negative"}">${bet.profitUnits >= 0 ? "+" : ""}${bet.profitUnits.toFixed(2)} units${unitValue ? ` (${bet.profitUnits >= 0 ? "+" : ""}$${(bet.profitUnits * unitValue).toFixed(0)})` : ""}</div>`
+    : "";
+
+  const moneyLine = !isSettled
+    ? `<div class="bet-money">
+        <span>In: ${bet.stakeUnits} units${stakeDollars !== null ? ` (~$${stakeDollars.toFixed(0)})` : ""}</span>
+        <span>Potential: +${(bet.stakeUnits * (bet.multiplier - 1)).toFixed(2)} units${potentialProfitDollars !== null ? ` (~$${potentialProfitDollars.toFixed(0)})` : ""}</span>
+      </div>`
+    : "";
+
+  const removeBtn = !isSettled ? `<button class="bet-remove" data-id="${bet.id}">Remove</button>` : "";
+  const liveBlockId = `live-${bet.id}`;
 
   card.innerHTML = `
     <div class="bet-top">
       <span class="bet-matchup">${escapeHtml(bet.matchup)} — backing ${escapeHtml(bet.side)}</span>
-      <span class="bet-status ${bet.status}">${bet.status}</span>
+      ${statusBadge}
     </div>
     <div class="bet-detail">${escapeHtml(bet.sport)} · ${escapeHtml(bet.date)} · ${bet.stakeUnits} units @ ${bet.multiplier}x · EV was ${bet.evPercent >= 0 ? "+" : ""}${bet.evPercent.toFixed(1)}%</div>
     ${bet.finalScore ? `<div class="bet-detail">Final: ${escapeHtml(bet.finalScore)}</div>` : ""}
+    ${moneyLine}
     ${profitText}
+    ${!isSettled ? `<div class="live-block" id="${liveBlockId}"></div>` : ""}
     ${removeBtn}
   `;
 
   const removeButton = card.querySelector(".bet-remove");
   if (removeButton) {
     removeButton.addEventListener("click", () => {
+      stopLiveTracking(bet.id);
       myBets = myBets.filter((b) => b.id !== bet.id);
       saveBets();
       renderAll();
     });
+  }
+
+  if (!isSettled) {
+    startLiveTracking(bet, liveBlockId);
   }
 
   return card;
@@ -465,13 +486,30 @@ function buildBetCard(bet) {
 
 function renderMyBets() {
   const root = document.getElementById("mybets-root");
+  clearAllLiveTracking();
+
   if (myBets.length === 0) {
     root.innerHTML = '<p class="empty-state">No bets placed yet. Click a pick on the Picks tab to log one.</p>';
     return;
   }
 
-  const sorted = [...myBets].sort((a, b) => new Date(b.placedAt) - new Date(a.placedAt));
+  const unitValue = getUnitValue();
+  const pending = myBets.filter((b) => b.status === "pending");
   root.innerHTML = "";
+
+  if (pending.length > 0) {
+    const totalStakeUnits = pending.reduce((sum, b) => sum + b.stakeUnits, 0);
+    const totalPotentialUnits = pending.reduce((sum, b) => sum + b.stakeUnits * (b.multiplier - 1), 0);
+    const summary = document.createElement("div");
+    summary.className = "bets-summary";
+    summary.innerHTML = `
+      <div><span class="summary-label">In play</span> ${totalStakeUnits.toFixed(2)} units${unitValue ? ` (~$${(totalStakeUnits * unitValue).toFixed(0)})` : ""} across ${pending.length} bet${pending.length === 1 ? "" : "s"}</div>
+      <div><span class="summary-label">Potential earnings</span> +${totalPotentialUnits.toFixed(2)} units${unitValue ? ` (~$${(totalPotentialUnits * unitValue).toFixed(0)})` : ""} if everything hits</div>
+    `;
+    root.appendChild(summary);
+  }
+
+  const sorted = [...myBets].sort((a, b) => new Date(b.placedAt) - new Date(a.placedAt));
   for (const bet of sorted) {
     root.appendChild(buildBetCard(bet));
   }
@@ -505,6 +543,328 @@ function renderNetCounter() {
 
   allTimeEl.textContent = formatLine("All time", allTimeUnits, settled.length);
   allTimeEl.className = "net-alltime " + (settled.length === 0 ? "" : allTimeUnits > 0 ? "positive" : allTimeUnits < 0 ? "negative" : "");
+}
+
+// ---------- live tracking ----------
+// Best-effort, unofficial: uses ESPN's public (undocumented) scoreboard/summary
+// endpoints. No API key, no guarantees — fails quietly to "unavailable" if
+// anything doesn't match or the endpoint changes shape.
+
+const LIVE_SCORE_INTERVAL_MS = 15000;
+const LIVE_PROB_INTERVAL_MS = 30000;
+const liveTimers = {};
+
+const ESPN_LEAGUE_PATHS = {
+  NFL: "football/nfl",
+  MLB: "baseball/mlb",
+  NBA: "basketball/nba",
+  WNBA: "basketball/wnba",
+  NHL: "hockey/nhl",
+};
+
+function leagueEspnPath(sport) {
+  for (const key of Object.keys(ESPN_LEAGUE_PATHS)) {
+    if (sport.startsWith(key)) return ESPN_LEAGUE_PATHS[key];
+  }
+  return null;
+}
+
+function espnDateParam(dateStr) {
+  return dateStr.replace(/-/g, "");
+}
+
+function shiftDate(dateStr, days) {
+  const [y, m, d] = dateStr.split("-").map(Number);
+  const dt = new Date(Date.UTC(y, m - 1, d));
+  dt.setUTCDate(dt.getUTCDate() + days);
+  return `${dt.getUTCFullYear()}-${pad2(dt.getUTCMonth() + 1)}-${pad2(dt.getUTCDate())}`;
+}
+
+async function fetchJsonSafe(url) {
+  try {
+    const res = await fetch(url, { cache: "no-store" });
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (err) {
+    return null;
+  }
+}
+
+function normalizeTeamKey(name) {
+  return String(name || "").toLowerCase().replace(/[^a-z]/g, "");
+}
+
+function teamsMatch(nameA, nameB) {
+  const a = normalizeTeamKey(nameA);
+  const b = normalizeTeamKey(nameB);
+  if (!a || !b) return false;
+  return a.includes(b) || b.includes(a);
+}
+
+function parseTeamsFromBet(bet) {
+  const parenMatch = bet.matchup.match(/\(([^)]+)\)\s*$/);
+  const teamsPart = parenMatch ? parenMatch[1] : bet.matchup;
+  const parts = teamsPart.split(/\s+vs\.?\s+/i);
+  if (parts.length !== 2) return null;
+  return [parts[0].trim(), parts[1].trim()];
+}
+
+function parsePropInfo(bet) {
+  const dashMatch = bet.matchup.match(/^(.+?)\s+—\s+(.+?)\s+O\/U\s+(-?\d+(?:\.\d+)?)/);
+  if (!dashMatch) return null;
+  return {
+    player: dashMatch[1].trim(),
+    statLabel: dashMatch[2].trim().toLowerCase(),
+    line: parseFloat(dashMatch[3]),
+    isOver: /^over/i.test(bet.side),
+  };
+}
+
+async function findEspnEvent(espnPath, dateStr, teamA, teamB) {
+  for (const candidateDate of [dateStr, shiftDate(dateStr, 1), shiftDate(dateStr, -1)]) {
+    const data = await fetchJsonSafe(
+      `https://site.api.espn.com/apis/site/v2/sports/${espnPath}/scoreboard?dates=${espnDateParam(candidateDate)}`
+    );
+    if (!data || !Array.isArray(data.events)) continue;
+
+    for (const event of data.events) {
+      const competitors = event.competitions?.[0]?.competitors || [];
+      if (competitors.length !== 2) continue;
+      const names = competitors.map((c) => c.team?.displayName || c.team?.name || "");
+      if (names.some((n) => teamsMatch(n, teamA)) && names.some((n) => teamsMatch(n, teamB))) {
+        return event;
+      }
+    }
+  }
+  return null;
+}
+
+function espnEventScoreText(event) {
+  const competitors = event.competitions?.[0]?.competitors || [];
+  if (competitors.length !== 2) return null;
+  const parts = competitors.map(
+    (c) => `${c.team?.shortDisplayName || c.team?.abbreviation || c.team?.displayName}: ${c.score ?? "-"}`
+  );
+  const status = event.status?.type?.shortDetail || event.status?.type?.description || "";
+  return { text: parts.join("   ·   "), status };
+}
+
+function estimateGameProgress(event, sport) {
+  const status = event.status;
+  if (!status) return 0.5;
+  if (status.type?.state === "post") return 1;
+  if (status.type?.state === "pre") return 0;
+
+  const period = status.period || 1;
+  const clock = status.displayClock || "0:00";
+  const clockParts = clock.split(":").map(Number);
+  const secsLeftInPeriod = (clockParts[0] || 0) * 60 + (clockParts[1] || 0);
+
+  if (sport.startsWith("NFL")) {
+    const periodLen = 15 * 60;
+    const elapsedInPeriod = periodLen - secsLeftInPeriod;
+    return Math.min(1, Math.max(0, ((period - 1) * periodLen + elapsedInPeriod) / (4 * periodLen)));
+  }
+  if (sport.startsWith("MLB")) {
+    const half = (status.type?.detail || "").toLowerCase().includes("bot") ? 0.5 : 0;
+    return Math.min(1, Math.max(0, (period - 1 + half) / 9));
+  }
+  if (sport.startsWith("NBA") || sport.startsWith("WNBA")) {
+    const periodLen = 12 * 60;
+    const elapsedInPeriod = periodLen - secsLeftInPeriod;
+    return Math.min(1, Math.max(0, ((period - 1) * periodLen + elapsedInPeriod) / (4 * periodLen)));
+  }
+  return 0.5;
+}
+
+function scoreDiffForBetSide(event, bet, teamA, teamB) {
+  const competitors = event.competitions?.[0]?.competitors || [];
+  if (competitors.length !== 2) return null;
+
+  const sideTeamGuess = bet.side.replace(/[-+]\d+(\.\d+)?$/, "").trim();
+  const backedTeamName = teamsMatch(sideTeamGuess, teamA) ? teamA : teamsMatch(sideTeamGuess, teamB) ? teamB : null;
+  if (!backedTeamName) return null;
+
+  const backedComp = competitors.find((c) => teamsMatch(c.team?.displayName || "", backedTeamName));
+  const otherComp = competitors.find((c) => c !== backedComp);
+  if (!backedComp || !otherComp) return null;
+  return (parseFloat(backedComp.score) || 0) - (parseFloat(otherComp.score) || 0);
+}
+
+const STAT_LABEL_MAP = {
+  "passing yards": { categories: ["passing"], labels: ["YDS"] },
+  "rushing yards": { categories: ["rushing"], labels: ["YDS"] },
+  "receiving yards": { categories: ["receiving"], labels: ["YDS"] },
+  receptions: { categories: ["receiving"], labels: ["REC"] },
+  "earned runs allowed": { categories: ["pitching"], labels: ["ER"] },
+  hits: { categories: ["batting"], labels: ["H"] },
+  runs: { categories: ["batting"], labels: ["R"] },
+  "rbi's": { categories: ["batting"], labels: ["RBI"] },
+  rbis: { categories: ["batting"], labels: ["RBI"] },
+  "home runs": { categories: ["batting"], labels: ["HR"] },
+  strikeouts: { categories: ["pitching", "batting"], labels: ["SO", "K"] },
+};
+
+async function fetchPlayerStatValue(espnPath, eventId, playerName, statLabel) {
+  const spec = STAT_LABEL_MAP[statLabel];
+  if (!spec) return null;
+
+  const data = await fetchJsonSafe(`https://site.api.espn.com/apis/site/v2/sports/${espnPath}/summary?event=${eventId}`);
+  if (!data || !data.boxscore || !Array.isArray(data.boxscore.players)) return null;
+
+  for (const teamBlock of data.boxscore.players) {
+    for (const statCat of teamBlock.statistics || []) {
+      if (!spec.categories.includes(statCat.name)) continue;
+      const labelIdx = (statCat.labels || []).findIndex((l) => spec.labels.includes(String(l).toUpperCase()));
+      if (labelIdx < 0) continue;
+      const athleteRow = (statCat.athletes || []).find(
+        (a) => normalizeTeamKey(a.athlete?.displayName) === normalizeTeamKey(playerName)
+      );
+      if (athleteRow?.stats?.[labelIdx] !== undefined) {
+        const val = parseFloat(athleteRow.stats[labelIdx]);
+        if (!isNaN(val)) return val;
+      }
+    }
+  }
+  return null;
+}
+
+function renderLiveUnavailable(container) {
+  container.innerHTML = `<div class="live-note">Live tracking unavailable for this bet right now.</div>`;
+}
+
+function renderLiveScore(container, scoreInfo) {
+  container.innerHTML = `
+    <div class="live-score-line">
+      <span class="live-dot"></span>
+      <span>${escapeHtml(scoreInfo.text)}</span>
+      <span class="live-status">${escapeHtml(scoreInfo.status)}</span>
+    </div>
+    <div class="live-prob-line" id="${container.id}-prob">Calculating live chance…</div>
+  `;
+}
+
+function renderLiveProp(container, currentValue, line, isOver) {
+  const pct = Math.min(100, Math.max(0, (currentValue / line) * 100));
+  const winningNow = isOver ? currentValue >= line : currentValue <= line;
+  container.innerHTML = `
+    <div class="live-progress-wrap">
+      <div class="live-progress-track">
+        <div class="live-progress-fill ${winningNow ? "good" : "bad"}" style="width:${pct}%"></div>
+      </div>
+      <div class="live-progress-labels">
+        <span>${currentValue}</span>
+        <span>${line}</span>
+      </div>
+    </div>
+    <div class="live-prob-line" id="${container.id}-prob">Calculating live chance…</div>
+  `;
+}
+
+async function pollLiveDisplay(bet, containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  const espnPath = leagueEspnPath(bet.sport);
+  const teams = parseTeamsFromBet(bet);
+  if (!espnPath || !teams) {
+    renderLiveUnavailable(container);
+    return;
+  }
+
+  const event = await findEspnEvent(espnPath, bet.date, teams[0], teams[1]);
+  if (!document.getElementById(containerId)) return;
+  if (!event) {
+    renderLiveUnavailable(container);
+    return;
+  }
+
+  const prop = parsePropInfo(bet);
+  if (prop) {
+    const value = await fetchPlayerStatValue(espnPath, event.id, prop.player, prop.statLabel);
+    if (!document.getElementById(containerId)) return;
+    if (value === null) {
+      renderLiveUnavailable(container);
+      return;
+    }
+    renderLiveProp(container, value, prop.line, prop.isOver);
+  } else {
+    const scoreInfo = espnEventScoreText(event);
+    if (!scoreInfo) {
+      renderLiveUnavailable(container);
+      return;
+    }
+    renderLiveScore(container, scoreInfo);
+  }
+}
+
+async function pollLiveProbability(bet, containerId) {
+  const probEl = document.getElementById(`${containerId}-prob`);
+  if (!probEl) return;
+
+  const espnPath = leagueEspnPath(bet.sport);
+  const teams = parseTeamsFromBet(bet);
+  if (!espnPath || !teams) return;
+
+  const event = await findEspnEvent(espnPath, bet.date, teams[0], teams[1]);
+  if (!document.getElementById(`${containerId}-prob`)) return;
+  if (!event || event.status?.type?.state === "pre") {
+    probEl.textContent = "Game hasn't started yet.";
+    return;
+  }
+
+  const progress = estimateGameProgress(event, bet.sport);
+  const prop = parsePropInfo(bet);
+  let liveProb;
+
+  if (prop) {
+    const value = await fetchPlayerStatValue(espnPath, event.id, prop.player, prop.statLabel);
+    if (!document.getElementById(`${containerId}-prob`)) return;
+    if (value === null) return;
+    const remaining = Math.max(0, 1 - progress);
+    const pace = progress > 0.05 ? value / progress : value;
+    const paceMargin = (pace - prop.line) / Math.max(prop.line, 1);
+    let signal = 0.5 + paceMargin * 0.6;
+    if (!prop.isOver) signal = 1 - signal;
+    signal = Math.min(0.97, Math.max(0.03, signal));
+    liveProb = (bet.modelProbability / 100) * remaining + signal * (1 - remaining);
+  } else {
+    const diff = scoreDiffForBetSide(event, bet, teams[0], teams[1]);
+    if (diff === null) return;
+    const remaining = Math.max(0, 1 - progress);
+    const swingPoints = bet.sport.startsWith("MLB") ? 4 : bet.sport.startsWith("NFL") ? 14 : 10;
+    let signal = 0.5 + (diff / swingPoints) * 0.5;
+    signal = Math.min(0.97, Math.max(0.03, signal));
+    liveProb = (bet.modelProbability / 100) * remaining + signal * (1 - remaining);
+  }
+
+  liveProb = Math.min(97, Math.max(3, liveProb * 100));
+  if (document.getElementById(`${containerId}-prob`)) {
+    probEl.textContent = `Live estimate: ~${liveProb.toFixed(0)}% (rough model based on pace/score + time left — not a guarantee)`;
+  }
+}
+
+function startLiveTracking(bet, containerId) {
+  pollLiveDisplay(bet, containerId);
+  const scoreTimer = setInterval(() => pollLiveDisplay(bet, containerId), LIVE_SCORE_INTERVAL_MS);
+  const probTimer = setInterval(() => pollLiveProbability(bet, containerId), LIVE_PROB_INTERVAL_MS);
+  setTimeout(() => pollLiveProbability(bet, containerId), 2500);
+  liveTimers[bet.id] = { scoreTimer, probTimer };
+}
+
+function stopLiveTracking(betId) {
+  const timers = liveTimers[betId];
+  if (timers) {
+    clearInterval(timers.scoreTimer);
+    clearInterval(timers.probTimer);
+    delete liveTimers[betId];
+  }
+}
+
+function clearAllLiveTracking() {
+  for (const id of Object.keys(liveTimers)) {
+    stopLiveTracking(id);
+  }
 }
 
 // ---------- calendar ----------
