@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T17:17:06Z",
+  "generated_at": "2026-09-17T17:28:05Z",
   "window_note": "Rolling feed of upcoming matches (next 1-3 days) that look close, refreshed every 2 hours. Stale/played matches are settled or dropped automatically. Soccer picks use a Draw No Bet framing (the two teams' win probabilities normalized to exclude the draw outcome).",
   "picks": [
     {
@@ -166,6 +166,42 @@
       "sources": [
         "https://www.statmuse.com/nfl/ask/puka-nacua-yards-per-game",
         "https://www.dimers.com/nfl/news/puka-nacua-projected-fantasy-stats-nfl-week-2-2026-ac"
+      ]
+    },
+    {
+      "sport": "NFL Totals",
+      "matchup": "Total Points O/U 47.5 (Colts vs Chiefs)",
+      "date": "2026-09-20",
+      "favorite": "Over 47.5",
+      "estimated_probability": { "Over 47.5": 57, "Under 47.5": 43 },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Colts' defense ranked 29th in the NFL in EPA/play after Week 1 and was torched for 41 points by Baltimore, a real red flag against a Chiefs offense with a history of big output vs Indy (352 passing yards from Mahomes in their last meeting).",
+        "Counterweight: Chiefs' defense was elite in Week 1 (No. 1 EPA/play, No. 2 success rate in the league), which could cap Colts' scoring and shorten the game via a likely running clock in a blowout.",
+        "Set our own total at 47.5 — below the raw sum of each team's Week 1 output (31 + 23 = 54) to account for that defensive counterweight, while still leaning Over given how leaky the Colts' defense looked."
+      ],
+      "sources": [
+        "https://www.foxsports.com/stories/nfl/2026-nfl-defense-rankings-team-pass-rush-stats",
+        "https://www.si.com/betting/colts-vs-chiefs-prediction-odds-spread-injuries-trends-for-nfl-week-2-2026"
+      ]
+    },
+    {
+      "sport": "NFL Player Props",
+      "matchup": "Malik Nabers — Receptions O/U 5.5 (Giants vs Rams)",
+      "date": "2026-09-21",
+      "favorite": "Over 5.5",
+      "estimated_probability": { "Over 5.5": 58, "Under 5.5": 42 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Nabers caught 6 passes in his Week 1 return from a 2025 ACL injury, showing the Giants trust him as an immediate high-volume target.",
+        "New coach John Harbaugh's offense leaned on him in a signature upset win over Dallas, suggesting a featured role rather than a cautious workload.",
+        "Limited matchup-specific data on the Rams' pass defense vs slot/possession receivers is the main uncertainty here — treated as a modest lean rather than a strong one."
+      ],
+      "sources": [
+        "https://www.statmuse.com/nfl/ask/malik-nabers-receptions-per-game",
+        "https://www.pro-football-reference.com/players/N/NabeMa00.htm"
       ]
     }
   ],
