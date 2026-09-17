@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T21:15:22Z",
+  "generated_at": "2026-09-17T21:47:49Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
@@ -526,6 +526,76 @@
       ],
       "sources": [
         "https://royalskeep.com/news-rumors/kansas-city-royals/week-in-review-we-need-to-talk-about-seth-lugo-r4587"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Miami Marlins vs San Diego Padres",
+      "date": "2026-09-18",
+      "favorite": "San Diego Padres",
+      "estimated_probability": { "San Diego Padres": 62, "Miami Marlins": 38 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Confirmed starter Nick Pivetta has a 3.43 ERA and 11.14 K/9 'since returning to form' — a specific, strong recent-form signal, not just a season-long average.",
+        "Padres (73-66) host the Marlins (70-69) with the 3rd NL Wild Card spot directly on the line between these two teams — real stakes for both sides, which is why this isn't pushed higher than a modest lean despite the pitching edge.",
+        "Padres are also reportedly getting Joe Musgrove and Jason Adam back for pitching depth reinforcement, a further specific positive for San Diego.",
+        "Gap: Marlins starter Tyler Phillips' specific recent form wasn't confirmed this session."
+      ],
+      "sources": [
+        "https://www.bleachernation.com/picks/2026/09/16/san-diego-padres-vs-miami-marlins-series-sept-18-20-odds-starting-pitchers-predictions/",
+        "https://en.wikipedia.org/wiki/Nick_Pivetta"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Nick Pivetta — Strikeouts O/U 6.5 (Marlins vs Padres)",
+      "date": "2026-09-18",
+      "favorite": "Over 6.5",
+      "estimated_probability": { "Over 6.5": 63, "Under 6.5": 37 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Pivetta's reported 11.14 K/9 rate since returning to form projects to roughly 7-7.5 strikeouts over a typical 6-inning start — this line is grounded directly in that specific, recent rate rather than a season-long average.",
+        "Not pushed higher: a single start still has real variance (early exit, contact-heavy lineup on a given night), and the Marlins' specific strikeout rate as a team wasn't confirmed this session — a real gap."
+      ],
+      "sources": [
+        "https://www.bleachernation.com/picks/2026/09/16/san-diego-padres-vs-miami-marlins-series-sept-18-20-odds-starting-pitchers-predictions/"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Seattle Mariners vs Colorado Rockies",
+      "date": "2026-09-18",
+      "favorite": "Seattle Mariners",
+      "estimated_probability": { "Seattle Mariners": 66, "Colorado Rockies": 34 },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Colorado is 56-95, one of the worst records in MLB this season; Seattle is 70-82 — a real, sizeable team-quality gap even though neither club is a contender.",
+        "Mariners starter Bryan Woo has a steady 3.44 career ERA, a real specific edge over a Rockies pitching staff that has been a season-long weak point for a 95-loss team.",
+        "Kept at 66% rather than higher specifically because of Coors Field: it's a well-documented, extreme hitter-friendly park that narrows pitching-quality gaps and adds real variance to any single game there."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bryan_Woo",
+        "https://www.bleachernation.com/picks/2026/09/16/colorado-rockies-vs-seattle-mariners-series-sept-18-20-odds-starting-pitchers-predictions/"
+      ]
+    },
+    {
+      "sport": "MLB Totals",
+      "matchup": "Total Runs O/U 10.5 (Mariners vs Rockies)",
+      "date": "2026-09-18",
+      "favorite": "Over 10.5",
+      "estimated_probability": { "Over 10.5": 60, "Under 10.5": 40 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Coors Field's altitude and dimensions are a well-established, extreme run-scoring environment — a specific park factor, not a generic assumption.",
+        "Rockies (56-95) have a season-long weak pitching staff, reinforcing the Over case beyond just the park effect.",
+        "Set the total meaningfully higher than a typical MLB game (10.5 vs. the usual 8-9) specifically because of Coors, not as a round-number guess."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bryan_Woo"
       ]
     }
   ],
