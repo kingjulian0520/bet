@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T18:18:53Z",
+  "generated_at": "2026-09-17T18:35:30Z",
   "window_note": "Rolling feed of upcoming matches (next 1-3 days) that look close, refreshed every 2 hours. Stale/played matches are settled or dropped automatically. Soccer picks use a Draw No Bet framing (the two teams' win probabilities normalized to exclude the draw outcome).",
   "picks": [
     {
@@ -43,21 +43,41 @@
       "matchup": "Toronto Blue Jays vs Texas Rangers",
       "date": "2026-09-19",
       "favorite": "Texas Rangers",
-      "estimated_probability": { "Texas Rangers": 56, "Toronto Blue Jays": 44 },
+      "estimated_probability": { "Texas Rangers": 55, "Toronto Blue Jays": 45 },
       "confidence_label": "Slight lean",
       "recommended_units": 0.5,
       "reasoning": [
-        "Confirmed starters for this specific game: Cal Quantrill (Rangers) vs José Soriano (Blue Jays). Soriano has actually pitched well lately (2.76 ERA over his prior 3 starts before a loss to the Yankees), so this isn't a clear pitching mismatch in Texas's favor — Quantrill's specific recent form wasn't findable in current coverage, a real gap in this pick.",
-        "Texas has won the season series and carries a 3-game head-to-head winning streak over Toronto into this set, plus home-field at Globe Life Field.",
-        "Counterweight: neither team is actually strong overall — Blue Jays finished 75-75, Rangers 73-76, both essentially .500 clubs, and Toronto's specific road struggles (36-39, .480) are a real but modest factor, not a huge one.",
-        "Both teams are fighting for the final AL wild-card spot with under 10 games left, so motivation is high on both sides — this stays a real coin-flip-adjacent game, just nudged toward Texas by home field and recent head-to-head form, not a confident lean.",
-        "Sunday's series finale (not this pick) has Jacob deGrom starting for Texas against a TBD Toronto starter — a much stronger Rangers edge exists that day than in this specific Saturday game."
+        "UPDATE: Toronto's rotation shuffled since this pick was first made — Dylan Cease moved up to start Friday (9/18) and José Soriano was pushed back to the Sunday finale (9/20, now its own separate pick vs deGrom). Saturday's Blue Jays starter is unconfirmed as of this update, a real gap.",
+        "Confirmed for Texas: Cal Quantrill starts Saturday. His specific 2026 recent-start form wasn't findable in current coverage — another real gap, not papered over.",
+        "Texas carries a 3-game head-to-head winning streak over Toronto this season, plus home-field at Globe Life Field.",
+        "Neither team is actually strong overall — Blue Jays finished 75-75, Rangers 73-76, both essentially .500 clubs — so this stays close to a coin flip, nudged toward Texas mainly by home field and recent head-to-head form rather than a real pitching or roster edge.",
+        "Both teams are fighting for the final AL wild-card spot with under 10 games left, so motivation is high on both sides."
       ],
       "sources": [
         "https://www.bleachernation.com/picks/2026/09/16/texas-rangers-vs-toronto-blue-jays-series-sept-18-20-odds-starting-pitchers-predictions/",
-        "https://www.foxsports.com/mlb/jose-soriano-player",
+        "https://www.si.com/mlb/bluejays/onsi/john-schneider-reveals-2-probable-starters-for-upcoming-series-vs-rangers",
         "https://champsorchumps.us/team/mlb/texas-rangers/head-to-head/toronto-blue-jays",
         "https://www.statmuse.com/mlb/ask/blue-jays-away-record-this-year"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Toronto Blue Jays vs Texas Rangers (Sunday, deGrom start)",
+      "date": "2026-09-20",
+      "favorite": "Texas Rangers",
+      "estimated_probability": { "Texas Rangers": 62, "Toronto Blue Jays": 38 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Jacob deGrom starts the series finale for Texas — 3.96 ERA / 1.14 WHIP this season (10-9, 135:29 K:BB), a clear front-line starter.",
+        "His specific history vs Toronto is genuinely mixed, not a lock: 1-1 with a strong 1.65 ERA in 3 career appearances, but one of those starts was a 2-1 loss where he recorded zero strikeouts in 5.1 innings — the Blue Jays have shown they can work him even when the final line looks good, so this isn't treated as a bigger edge than the evidence supports.",
+        "José Soriano starts for Toronto and has actually been pitching well recently (2.76 ERA over his prior 3 starts before a Yankees loss), which caps how large this edge should be despite deGrom's name value.",
+        "Texas gets a further nudge from home field and the head-to-head streak noted in the Saturday pick, but small-sample pitcher-specific history (3 career games) means this stays a real lean, not a strong one."
+      ],
+      "sources": [
+        "https://www.si.com/mlb/bluejays/onsi/news/blue-jays-accomplished-something-against-jacob-degrom-never-done-before",
+        "https://www.mlb.com/news/jacob-degrom-records-zero-strikeouts-vs-blue-jays",
+        "https://www.foxsports.com/mlb/jose-soriano-player"
       ]
     },
     {
