@@ -1,6 +1,136 @@
 {
-  "generated_at": null,
-  "window_note": "Rolling feed of upcoming matches (next 1-3 days) that look close, refreshed every 2 hours. Stale/played matches are dropped automatically.",
-  "picks": [],
+  "generated_at": "2026-09-17T16:56:35Z",
+  "window_note": "Rolling feed of upcoming matches (next 1-3 days) that look close, refreshed every 2 hours. Stale/played matches are settled or dropped automatically. Soccer picks use a Draw No Bet framing (the two teams' win probabilities normalized to exclude the draw outcome).",
+  "picks": [
+    {
+      "sport": "NFL",
+      "matchup": "Indianapolis Colts vs Kansas City Chiefs",
+      "date": "2026-09-20",
+      "favorite": "Kansas City Chiefs",
+      "estimated_probability": { "Kansas City Chiefs": 62, "Indianapolis Colts": 38 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Chiefs opened 1-0 with a 31-10 win over Denver; Colts are 0-1 after allowing 506 total yards in a 41-23 loss to Baltimore.",
+        "Colts' run defense was gashed by Baltimore, a real concern against a Chiefs offense that controls tempo at home.",
+        "Game is at Arrowhead Stadium, where Kansas City has a strong recent home track record."
+      ],
+      "sources": [
+        "https://www.covers.com/nfl/colts-vs-chiefs-predictions-odds-early-leans-week-2-2026",
+        "https://www.si.com/betting/colts-vs-chiefs-prediction-odds-spread-injuries-trends-for-nfl-week-2-2026"
+      ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "New York Giants vs Los Angeles Rams",
+      "date": "2026-09-21",
+      "favorite": "Los Angeles Rams",
+      "estimated_probability": { "Los Angeles Rams": 63, "New York Giants": 37 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Giants pulled a big Week 1 upset over Dallas in new coach John Harbaugh's debut; Rams were blown out 27-7 by San Francisco.",
+        "Rams placed new pass rusher Myles Garrett on IR, a real hit to their defensive front.",
+        "Despite the ugly opener, the Rams' overall roster is still rated ahead of the Giants' by most evaluators."
+      ],
+      "sources": [
+        "https://www.si.com/betting/giants-vs-rams-prediction-odds-spread-injuries-trends-for-nfl-week-2-2026",
+        "https://bvmsports.com/2026/09/17/giants-vs-rams-week-2-game-preview-prediction-keys-to-victory-nfl-2026-monday-night-football/"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Toronto Blue Jays vs Texas Rangers",
+      "date": "2026-09-19",
+      "favorite": "Texas Rangers",
+      "estimated_probability": { "Texas Rangers": 53, "Toronto Blue Jays": 47 },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.25,
+      "reasoning": [
+        "Both teams are fighting for the final AL wild-card spot with under 10 games left; Toronto trails Texas and the White Sox by only 1.5 games.",
+        "This 3-game set at Globe Life Field (Sept 18-20) was flagged by beat writers as a pivotal playoff-positioning series.",
+        "No clear pitching or form edge emerged in coverage — treated as close to a true coin flip with a small nod to Texas at home."
+      ],
+      "sources": [
+        "https://www.bleachernation.com/picks/2026/09/16/texas-rangers-vs-toronto-blue-jays-series-sept-18-20-odds-starting-pitchers-predictions/",
+        "https://sports.yahoo.com/articles/remaining-schedules-toronto-blue-jays-024513379.html"
+      ]
+    },
+    {
+      "sport": "UFC",
+      "matchup": "Joshua Van vs Alexandre Pantoja",
+      "date": "2026-09-19",
+      "favorite": "Joshua Van",
+      "estimated_probability": { "Joshua Van": 54, "Alexandre Pantoja": 46 },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.25,
+      "reasoning": [
+        "Their first meeting ended in 26 seconds on an accidental-injury stoppage, so there's no real in-fight data on how a full bout plays out.",
+        "Market has Van as only a slight favorite (-125 to -133) over Pantoja (+100 to +114) — not a one-sided line.",
+        "Several pro-fighter picks lean toward Pantoja reclaiming the belt despite Van's youth/speed edge, reflecting a genuinely split expert view."
+      ],
+      "sources": [
+        "https://bloodyelbow.com/2026/09/16/joshua-van-offers-prediction-for-ufc-331-title-fight-against-alexandre-pantoja-as-he-promises-banger/",
+        "https://www.lowkickmma.com/ufc-331-van-vs-pantoja-2-preview-stats-odds-picks-and-betting-strategy/"
+      ]
+    },
+    {
+      "sport": "Soccer - EPL",
+      "matchup": "Fulham vs Manchester United",
+      "date": "2026-09-20",
+      "favorite": "Manchester United",
+      "estimated_probability": { "Manchester United": 58, "Fulham": 42 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Man United sit 13th with 4 points from 4 games; Fulham are 18th with just 1 point and on a 3-game losing streak.",
+        "Fulham did draw 0-0 away at Liverpool on Matchday 4, showing they can grind out a result defensively.",
+        "United's Bruno Fernandes/Bryan Mbeumo attacking threat is the projected difference-maker despite United's own inconsistent form.",
+        "Presented Draw No Bet: win probabilities normalized to exclude the draw outcome."
+      ],
+      "sources": [
+        "https://www.goal.com/en/news/fulham-manchester-united-premier-league-preview/bltb04fedd95c5eee15",
+        "https://www.dimers.com/epl/predictions/2026_5_ful_mnu"
+      ]
+    },
+    {
+      "sport": "Soccer - EPL",
+      "matchup": "Bournemouth vs Liverpool",
+      "date": "2026-09-20",
+      "favorite": "Liverpool",
+      "estimated_probability": { "Liverpool": 64, "Bournemouth": 36 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Bournemouth have led in all 4 league games this season under new boss Marco Rose but converted none into wins, drawing the last three.",
+        "Liverpool have also drawn 3 of 4, but carry more overall talent and a lopsided head-to-head history (won 83% of the last 6 vs Bournemouth).",
+        "Both sides have notable injuries (Liverpool missing Ekitike, Chiesa, Bradley; Bournemouth missing Araujo, Kroupi, Adli).",
+        "Presented Draw No Bet: win probabilities normalized to exclude the draw outcome."
+      ],
+      "sources": [
+        "https://www.goal.com/en/news/afc-bournemouth-liverpool-premier-league-preview/blt99eef58b6905f2a4",
+        "https://www.statsinsider.com.au/news/bournemouth-vs-liverpool-prediction-and-tips-20-september-2026"
+      ]
+    },
+    {
+      "sport": "Soccer - EPL",
+      "matchup": "Tottenham Hotspur vs Aston Villa",
+      "date": "2026-09-19",
+      "favorite": "Tottenham Hotspur",
+      "estimated_probability": { "Tottenham Hotspur": 65, "Aston Villa": 35 },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Both winless: Spurs 17th with 2 points, Villa 19th with 1 point, from 4 games each.",
+        "Villa have lost 3 of their 4 openers, a worse trajectory than Tottenham's two draws.",
+        "Home advantage plus Villa's poor away form so far tips this toward Spurs, though a low-scoring, tight game is expected either way.",
+        "Presented Draw No Bet: win probabilities normalized to exclude the draw outcome."
+      ],
+      "sources": [
+        "https://www.sportskeeda.com/football/tottenham-hotspur-vs-aston-villa-prediction-betting-tips-september-19th-2026",
+        "https://www.dimers.com/epl/news/tottenham-vs-aston-villa-prediction-09-19-2026-ac"
+      ]
+    }
+  ],
   "settled": []
 }
