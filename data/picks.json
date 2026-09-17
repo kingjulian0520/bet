@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T16:56:35Z",
+  "generated_at": "2026-09-17T17:17:06Z",
   "window_note": "Rolling feed of upcoming matches (next 1-3 days) that look close, refreshed every 2 hours. Stale/played matches are settled or dropped automatically. Soccer picks use a Draw No Bet framing (the two teams' win probabilities normalized to exclude the draw outcome).",
   "picks": [
     {
@@ -129,6 +129,43 @@
       "sources": [
         "https://www.sportskeeda.com/football/tottenham-hotspur-vs-aston-villa-prediction-betting-tips-september-19th-2026",
         "https://www.dimers.com/epl/news/tottenham-vs-aston-villa-prediction-09-19-2026-ac"
+      ]
+    },
+    {
+      "sport": "NFL Player Props",
+      "matchup": "Patrick Mahomes — Passing Yards O/U 259.5 (Chiefs vs Colts)",
+      "date": "2026-09-20",
+      "favorite": "Over 259.5",
+      "estimated_probability": { "Over 259.5": 60, "Under 259.5": 40 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Mahomes threw for 352 yards in his most recent meeting with the Colts and combined for 583 yards across his two prior games against them — a strong track record vs this specific opponent.",
+        "Colts' defense just allowed Lamar Jackson to throw for 324 yards in Week 1, an early red flag for their pass coverage even though Jackson isn't a high-volume passer by trade.",
+        "Counterpoint: Mahomes threw for only 184 yards in Week 1 vs Denver, but that came in a comfortable blowout with a run-heavy second half (he also ran for a TD) — game script, not a talent or arm decline."
+      ],
+      "sources": [
+        "https://www.sports-reference.com/stathead/football/vs/patrick-mahomes-vs-indianapolis-colts",
+        "https://www.washingtonpost.com/sports/nfl/2026/09/13/ravens-colts-score/87dcb546-afb1-11f1-92c2-5c918f4a6127_story.html",
+        "https://www.si.com/nfl/chiefs/onsi/chiefs-qb-patrick-mahomes-provides-honest-assessment-of-his-week-1-performance"
+      ]
+    },
+    {
+      "sport": "NFL Player Props",
+      "matchup": "Puka Nacua — Receiving Yards O/U 79.5 (Rams vs Giants)",
+      "date": "2026-09-21",
+      "favorite": "Over 79.5",
+      "estimated_probability": { "Over 79.5": 63, "Under 79.5": 37 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Nacua's career per-game average is 95.3 receiving yards, comfortably above this line.",
+        "An analytics projection model has him at roughly 90 receiving yards specifically for this Week 2 matchup vs the Giants.",
+        "He was quiet in Week 1 (74 yards) during the Rams' lopsided loss to San Francisco, but that came in a blowout script that likely suppressed pass volume — a more balanced game vs the Giants should mean more targets."
+      ],
+      "sources": [
+        "https://www.statmuse.com/nfl/ask/puka-nacua-yards-per-game",
+        "https://www.dimers.com/nfl/news/puka-nacua-projected-fantasy-stats-nfl-week-2-2026-ac"
       ]
     }
   ],
