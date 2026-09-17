@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T17:31:19Z",
+  "generated_at": "2026-09-17T18:18:53Z",
   "window_note": "Rolling feed of upcoming matches (next 1-3 days) that look close, refreshed every 2 hours. Stale/played matches are settled or dropped automatically. Soccer picks use a Draw No Bet framing (the two teams' win probabilities normalized to exclude the draw outcome).",
   "picks": [
     {
@@ -43,17 +43,21 @@
       "matchup": "Toronto Blue Jays vs Texas Rangers",
       "date": "2026-09-19",
       "favorite": "Texas Rangers",
-      "estimated_probability": { "Texas Rangers": 53, "Toronto Blue Jays": 47 },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.25,
+      "estimated_probability": { "Texas Rangers": 56, "Toronto Blue Jays": 44 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
       "reasoning": [
-        "Both teams are fighting for the final AL wild-card spot with under 10 games left; Toronto trails Texas and the White Sox by only 1.5 games.",
-        "This 3-game set at Globe Life Field (Sept 18-20) was flagged by beat writers as a pivotal playoff-positioning series.",
-        "No clear pitching or form edge emerged in coverage — treated as close to a true coin flip with a small nod to Texas at home."
+        "Confirmed starters for this specific game: Cal Quantrill (Rangers) vs José Soriano (Blue Jays). Soriano has actually pitched well lately (2.76 ERA over his prior 3 starts before a loss to the Yankees), so this isn't a clear pitching mismatch in Texas's favor — Quantrill's specific recent form wasn't findable in current coverage, a real gap in this pick.",
+        "Texas has won the season series and carries a 3-game head-to-head winning streak over Toronto into this set, plus home-field at Globe Life Field.",
+        "Counterweight: neither team is actually strong overall — Blue Jays finished 75-75, Rangers 73-76, both essentially .500 clubs, and Toronto's specific road struggles (36-39, .480) are a real but modest factor, not a huge one.",
+        "Both teams are fighting for the final AL wild-card spot with under 10 games left, so motivation is high on both sides — this stays a real coin-flip-adjacent game, just nudged toward Texas by home field and recent head-to-head form, not a confident lean.",
+        "Sunday's series finale (not this pick) has Jacob deGrom starting for Texas against a TBD Toronto starter — a much stronger Rangers edge exists that day than in this specific Saturday game."
       ],
       "sources": [
         "https://www.bleachernation.com/picks/2026/09/16/texas-rangers-vs-toronto-blue-jays-series-sept-18-20-odds-starting-pitchers-predictions/",
-        "https://sports.yahoo.com/articles/remaining-schedules-toronto-blue-jays-024513379.html"
+        "https://www.foxsports.com/mlb/jose-soriano-player",
+        "https://champsorchumps.us/team/mlb/texas-rangers/head-to-head/toronto-blue-jays",
+        "https://www.statmuse.com/mlb/ask/blue-jays-away-record-this-year"
       ]
     },
     {
