@@ -556,6 +556,7 @@ const liveTimers = {};
 
 const ESPN_LEAGUE_PATHS = {
   NFL: "football/nfl",
+  "College Football": "football/college-football",
   MLB: "baseball/mlb",
   NBA: "basketball/nba",
   WNBA: "basketball/wnba",
@@ -660,7 +661,7 @@ function estimateGameProgress(event, sport) {
   const clockParts = clock.split(":").map(Number);
   const secsLeftInPeriod = (clockParts[0] || 0) * 60 + (clockParts[1] || 0);
 
-  if (sport.startsWith("NFL")) {
+  if (sport.startsWith("NFL") || sport.startsWith("College Football")) {
     const periodLen = 15 * 60;
     const elapsedInPeriod = periodLen - secsLeftInPeriod;
     return Math.min(1, Math.max(0, ((period - 1) * periodLen + elapsedInPeriod) / (4 * periodLen)));
@@ -703,6 +704,11 @@ const STAT_LABEL_MAP = {
   rbis: { categories: ["batting"], labels: ["RBI"] },
   "home runs": { categories: ["batting"], labels: ["HR"] },
   strikeouts: { categories: ["pitching", "batting"], labels: ["SO", "K"] },
+  goals: { categories: ["skaters"], labels: ["G"] },
+  assists: { categories: ["skaters"], labels: ["A"] },
+  "shots on goal": { categories: ["skaters"], labels: ["SOG", "S"] },
+  saves: { categories: ["goalies"], labels: ["SV"] },
+  "passing tds": { categories: ["passing"], labels: ["TD"] },
 };
 
 async function fetchPlayerStatValue(espnPath, eventId, playerName, statLabel) {
@@ -832,7 +838,11 @@ async function pollLiveProbability(bet, containerId) {
     const diff = scoreDiffForBetSide(event, bet, teams[0], teams[1]);
     if (diff === null) return;
     const remaining = Math.max(0, 1 - progress);
-    const swingPoints = bet.sport.startsWith("MLB") ? 4 : bet.sport.startsWith("NFL") ? 14 : 10;
+    const swingPoints = bet.sport.startsWith("MLB")
+      ? 4
+      : bet.sport.startsWith("NFL") || bet.sport.startsWith("College Football")
+        ? 14
+        : 10;
     let signal = 0.5 + (diff / swingPoints) * 0.5;
     signal = Math.min(0.97, Math.max(0.03, signal));
     liveProb = (bet.modelProbability / 100) * remaining + signal * (1 - remaining);
