@@ -90,6 +90,10 @@ body {
   border-color: var(--lean-mid);
 }
 
+.exposure-summary[hidden] {
+  display: none;
+}
+
 .net-counter {
   margin-top: 0.75rem;
   font-size: 1.1rem;
@@ -215,6 +219,10 @@ body {
   z-index: 100;
 }
 
+.modal-backdrop[hidden] {
+  display: none;
+}
+
 .modal {
   background: var(--panel);
   border: 1px solid var(--border);
@@ -300,6 +308,10 @@ body {
   font-size: 0.82rem;
   color: var(--danger);
   margin-top: 0.7rem;
+}
+
+.modal-override[hidden] {
+  display: none;
 }
 
 .modal-actions {
