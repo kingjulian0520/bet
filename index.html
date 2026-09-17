@@ -17,20 +17,65 @@
     <input id="bankroll-input" type="number" min="0" step="1" placeholder="e.g. 1000">
     <span class="bankroll-note">1 unit = 3% of this, stored only in your browser</span>
   </div>
+
+  <div id="net-counter" class="net-counter">Net: 0.00 units</div>
   <p id="exposure-summary" class="exposure-summary" hidden></p>
 </header>
 
-<main id="picks-root">
-  <p class="empty-state">No picks yet — the first automated research run hasn't happened.</p>
+<nav class="tabs" role="tablist">
+  <button class="tab-btn active" data-tab="picks" role="tab" aria-selected="true">Picks</button>
+  <button class="tab-btn" data-tab="mybets" role="tab" aria-selected="false">My Bets</button>
+</nav>
+
+<main>
+  <section id="picks" class="tab-panel active">
+    <div id="picks-root">
+      <p class="empty-state">No picks yet — the first automated research run hasn't happened.</p>
+    </div>
+  </section>
+
+  <section id="mybets" class="tab-panel">
+    <div id="mybets-root">
+      <p class="empty-state">No bets placed yet. Click a pick on the Picks tab to log one.</p>
+    </div>
+  </section>
 </main>
 
 <footer class="page-footer">
   <p>
     Every pick here is a probability estimate from research (stats, form, injuries, expert
-    analysis), not a guarantee. Even a 70/30 lean loses 3 times out of 10. Gamble responsibly —
-    never stake more than you can afford to lose.
+    analysis), not a guarantee. Even a 70/30 lean loses 3 times out of 10. EV% is only as good
+    as the probability estimate and the multiplier you enter — it can be wrong. Gamble
+    responsibly — never stake more than you can afford to lose.
   </p>
 </footer>
+
+<div id="bet-modal-backdrop" class="modal-backdrop" hidden>
+  <div class="modal" role="dialog" aria-modal="true">
+    <h3 id="modal-matchup">Matchup</h3>
+    <p id="modal-date" class="modal-date"></p>
+
+    <div class="side-toggle" id="side-toggle"></div>
+
+    <label class="modal-label" for="modal-stake">Stake (units)</label>
+    <input id="modal-stake" type="number" min="0" step="0.25" placeholder="e.g. 1.5">
+
+    <label class="modal-label" for="modal-multiplier">Multiplier / decimal odds you're getting</label>
+    <input id="modal-multiplier" type="number" min="1" step="0.01" placeholder="e.g. 1.91">
+
+    <div id="modal-ev" class="modal-ev"></div>
+
+    <label class="modal-override" id="modal-override-wrap" hidden>
+      <input type="checkbox" id="modal-override">
+      I understand this is -EV, place it anyway
+    </label>
+
+    <div class="modal-actions">
+      <button id="modal-cancel" class="secondary-btn">Cancel</button>
+      <button id="modal-place" class="primary-btn" disabled>Place bet</button>
+    </div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>

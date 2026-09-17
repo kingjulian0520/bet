@@ -90,6 +90,240 @@ body {
   border-color: var(--lean-mid);
 }
 
+.net-counter {
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.net-counter.positive { color: var(--lean-high); }
+.net-counter.negative { color: var(--danger); }
+.net-counter.zero { color: var(--muted); }
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.25rem 1rem 0;
+}
+
+.tab-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.88rem;
+}
+
+.tab-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #06110d;
+  font-weight: 600;
+}
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+.pick-card {
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.pick-card:hover {
+  border-color: var(--accent-dim);
+}
+
+.bet-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.bet-card .bet-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.bet-card .bet-matchup {
+  font-weight: 600;
+}
+
+.bet-status {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+
+.bet-status.pending {
+  background: rgba(139, 147, 163, 0.15);
+  color: var(--muted);
+}
+
+.bet-status.won {
+  background: rgba(79, 209, 165, 0.15);
+  color: var(--lean-high);
+}
+
+.bet-status.lost {
+  background: rgba(244, 113, 116, 0.15);
+  color: var(--danger);
+}
+
+.bet-detail {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+
+.bet-profit {
+  font-weight: 700;
+  margin-top: 0.4rem;
+}
+
+.bet-profit.positive { color: var(--lean-high); }
+.bet-profit.negative { color: var(--danger); }
+
+.bet-remove {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 100;
+}
+
+.modal {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 420px;
+}
+
+.modal h3 {
+  margin: 0 0 0.2rem;
+}
+
+.modal-date {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin: 0 0 1rem;
+}
+
+.side-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.side-btn {
+  flex: 1;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.side-btn.selected {
+  border-color: var(--accent);
+  background: rgba(79, 209, 165, 0.1);
+}
+
+.modal-label {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin: 0.7rem 0 0.3rem;
+}
+
+.modal input[type="number"] {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.95rem;
+}
+
+.modal-ev {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+
+.modal-ev.positive {
+  border-color: var(--lean-high);
+  color: var(--lean-high);
+}
+
+.modal-ev.negative {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.modal-override {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--danger);
+  margin-top: 0.7rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  margin-top: 1.2rem;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.6rem 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.primary-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 main {
   max-width: 780px;
   margin: 0 auto;
