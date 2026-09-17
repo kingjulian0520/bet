@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T17:28:05Z",
+  "generated_at": "2026-09-17T17:31:19Z",
   "window_note": "Rolling feed of upcoming matches (next 1-3 days) that look close, refreshed every 2 hours. Stale/played matches are settled or dropped automatically. Soccer picks use a Draw No Bet framing (the two teams' win probabilities normalized to exclude the draw outcome).",
   "picks": [
     {
@@ -202,6 +202,81 @@
       "sources": [
         "https://www.statmuse.com/nfl/ask/malik-nabers-receptions-per-game",
         "https://www.pro-football-reference.com/players/N/NabeMa00.htm"
+      ]
+    },
+    {
+      "sport": "Soccer - EPL",
+      "matchup": "Manchester City vs Sunderland",
+      "date": "2026-09-20",
+      "favorite": "Manchester City",
+      "estimated_probability": { "Manchester City": 78, "Sunderland": 22 },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "Man City have won all 4 games to open the season (12 points, +6 goal difference) and just won the derby at Old Trafford — as good a run of form as any team in the league right now.",
+        "Sunderland are a newly-promoted side with only 4 points from 4 games (1W-1D-2L) and a -2 goal difference, playing away at the Etihad.",
+        "Not treated as a certainty — soccer has more low-scoring randomness/draw risk than most sports, so this stays a strong lean rather than a lock despite the gap in quality.",
+        "Presented Draw No Bet: win probabilities normalized to exclude the draw outcome."
+      ],
+      "sources": [
+        "https://www.goal.com/en/news/manchester-city-sunderland-premier-league-preview/bltfdf076fea1515345",
+        "https://www.dimers.com/epl/predictions/2026_5_mnc_sun"
+      ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Miami Dolphins vs San Francisco 49ers",
+      "date": "2026-09-20",
+      "favorite": "San Francisco 49ers",
+      "estimated_probability": { "San Francisco 49ers": 83, "Miami Dolphins": 17 },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "reasoning": [
+        "49ers' defense was the stingiest in the league in Week 1, holding an opponent to just 7 points.",
+        "Dolphins are in a rebuild widely projected for a 3-4 win season and are outmatched at most positions on paper.",
+        "Kept below 85% deliberately — the NFL has real weekly upset variance even in lopsided-on-paper matchups, so this is a strong favorite, not a sure thing."
+      ],
+      "sources": [
+        "https://www.statsinsider.com.au/news/49ers-vs-dolphins-prediction-and-preview-nfl-week-2-2026",
+        "https://sports.yahoo.com/articles/san-francisco-49ers-play-next-033528466.html"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "San Francisco Giants vs Los Angeles Dodgers",
+      "date": "2026-09-19",
+      "favorite": "Los Angeles Dodgers",
+      "estimated_probability": { "Los Angeles Dodgers": 72, "San Francisco Giants": 28 },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "The Giants are 63-89 this season, one of the worst records in MLB, while the Dodgers hold a comfortable division lead.",
+        "Kept at 72% rather than higher — a single MLB game is one of the most upset-prone units in sports (one bad outing from a starter swings it), so even a huge season-long gap in team quality doesn't make one game close to certain."
+      ],
+      "sources": [
+        "https://www.mlb.com/news/mlb-playoff-picture-and-bracket-2026",
+        "https://www.nbc.com/nbc-insider/los-angeles-dodgers-full-2026-mlb-season-schedule"
+      ]
+    },
+    {
+      "sport": "Parlays",
+      "matchup": "3-Leg Parlay: Man City ML + 49ers ML + Dodgers ML",
+      "date": "2026-09-20",
+      "favorite": "Hits",
+      "estimated_probability": { "Hits": 47, "Doesn't Hit": 53 },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.25,
+      "reasoning": [
+        "Legs: Manchester City to beat Sunderland (our estimate 78%), San Francisco 49ers to beat Miami (83%), Los Angeles Dodgers to beat San Francisco Giants (72%) — three independent games, no shared outcome dependency.",
+        "Combined hit probability is the product of the three: 0.78 x 0.83 x 0.72 = ~47%, not the 78-83% any single leg looks like on its own. Stacking strong favorites into a parlay erodes back toward a coin flip fast.",
+        "This is exactly why the unit size here is a fraction of what any single leg would get on its own (1.25-1.75 units solo vs 0.25 units combined) — the parlay is a much riskier bet than 'three safe picks' intuitively feels like.",
+        "Only 'Hits' is a real, placeable bet — a sportsbook doesn't sell 'this exact parlay misses' as a ticket, so the 'Doesn't Hit' side shown here is for probability context only, not something to stake money on.",
+        "None of the three legs is a certainty on its own (see their individual entries) — treat this as a long-shot-payout play, not a 'safe' bet."
+      ],
+      "sources": [
+        "https://www.dimers.com/epl/predictions/2026_5_mnc_sun",
+        "https://www.statsinsider.com.au/news/49ers-vs-dolphins-prediction-and-preview-nfl-week-2-2026",
+        "https://www.mlb.com/news/mlb-playoff-picture-and-bracket-2026"
       ]
     }
   ],
