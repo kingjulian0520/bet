@@ -76,11 +76,17 @@ async function main() {
   currentPicks = data.picks || [];
   currentSettled = data.settled || [];
 
+  const todayStr = todayDateStr();
+  if (currentPicks.some((p) => p.date === todayStr)) {
+    selectedDayFilter = todayStr;
+  }
+
   settlePendingBets();
   renderAll();
 }
 
 function renderAll() {
+  renderDayFilterBar();
   renderPicks();
   renderExposureSummary();
   renderMyBets();
@@ -107,6 +113,42 @@ function wireTabs() {
 
 // ---------- picks ----------
 
+let selectedDayFilter = "all";
+
+function renderDayFilterBar() {
+  const bar = document.getElementById("day-filter-bar");
+  if (!bar) return;
+
+  const dates = [...new Set(currentPicks.map((p) => p.date).filter(Boolean))].sort();
+  if (dates.length === 0) {
+    bar.innerHTML = "";
+    return;
+  }
+
+  const todayStr = todayDateStr();
+  if (selectedDayFilter !== "all" && !dates.includes(selectedDayFilter)) {
+    selectedDayFilter = "all";
+  }
+
+  const options = [{ value: "all", label: "All days" }].concat(
+    dates.map((d) => ({ value: d, label: d === todayStr ? "Today" : d }))
+  );
+
+  bar.innerHTML = "";
+  for (const opt of options) {
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "day-chip" + (opt.value === selectedDayFilter ? " active" : "");
+    chip.textContent = opt.label;
+    chip.addEventListener("click", () => {
+      selectedDayFilter = opt.value;
+      renderDayFilterBar();
+      renderPicks();
+    });
+    bar.appendChild(chip);
+  }
+}
+
 function renderPicks() {
   const root = document.getElementById("picks-root");
 
@@ -115,27 +157,44 @@ function renderPicks() {
     return;
   }
 
-  const bySport = {};
-  for (const pick of currentPicks) {
-    const sport = pick.sport || "Other";
-    if (!bySport[sport]) bySport[sport] = [];
-    bySport[sport].push(pick);
+  const visiblePicks =
+    selectedDayFilter === "all" ? currentPicks : currentPicks.filter((p) => p.date === selectedDayFilter);
+
+  if (visiblePicks.length === 0) {
+    root.innerHTML = '<p class="empty-state">No picks for this day.</p>';
+    return;
   }
 
   root.innerHTML = "";
-  for (const sport of Object.keys(bySport).sort()) {
-    const group = document.createElement("div");
-    group.className = "sport-group";
 
-    const heading = document.createElement("h2");
-    heading.textContent = sport;
-    group.appendChild(heading);
-
-    for (const pick of bySport[sport]) {
-      group.appendChild(renderCard(pick));
+  if (selectedDayFilter === "all") {
+    const bySport = {};
+    for (const pick of visiblePicks) {
+      const sport = pick.sport || "Other";
+      if (!bySport[sport]) bySport[sport] = [];
+      bySport[sport].push(pick);
     }
 
-    root.appendChild(group);
+    for (const sport of Object.keys(bySport).sort()) {
+      const group = document.createElement("div");
+      group.className = "sport-group";
+
+      const heading = document.createElement("h2");
+      heading.textContent = sport;
+      group.appendChild(heading);
+
+      for (const pick of bySport[sport]) {
+        group.appendChild(renderCard(pick));
+      }
+
+      root.appendChild(group);
+    }
+  } else {
+    // Single-day view: flat list, no sport grouping, so pick types stay
+    // interleaved instead of clustering all moneylines first.
+    for (const pick of visiblePicks) {
+      root.appendChild(renderCard(pick));
+    }
   }
 }
 
@@ -143,13 +202,16 @@ function renderExposureSummary() {
   const el = document.getElementById("exposure-summary");
   const unitValue = getUnitValue();
 
-  const totalUnits = currentPicks.reduce((sum, p) => sum + (p.recommended_units || 0), 0);
+  const visiblePicks =
+    selectedDayFilter === "all" ? currentPicks : currentPicks.filter((p) => p.date === selectedDayFilter);
+  const totalUnits = visiblePicks.reduce((sum, p) => sum + (p.recommended_units || 0), 0);
   if (totalUnits === 0) {
     el.hidden = true;
     return;
   }
 
-  let text = `Current picks add up to ${totalUnits.toFixed(2)} units if you took every one`;
+  const scope = selectedDayFilter === "all" ? "Current picks" : "This day's picks";
+  let text = `${scope} add up to ${totalUnits.toFixed(2)} units if you took every one`;
   if (unitValue) {
     text += ` — about $${(totalUnits * unitValue).toFixed(0)}`;
   }

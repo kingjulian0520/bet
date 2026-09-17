@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-17T18:35:30Z",
-  "window_note": "Rolling feed of upcoming matches (next 1-3 days) that look close, refreshed every 2 hours. Stale/played matches are settled or dropped automatically. Soccer picks use a Draw No Bet framing (the two teams' win probabilities normalized to exclude the draw outcome).",
+  "generated_at": "2026-09-17T21:15:22Z",
+  "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
       "sport": "NFL",
@@ -301,6 +301,231 @@
         "https://www.dimers.com/epl/predictions/2026_5_mnc_sun",
         "https://www.statsinsider.com.au/news/49ers-vs-dolphins-prediction-and-preview-nfl-week-2-2026",
         "https://www.mlb.com/news/mlb-playoff-picture-and-bracket-2026"
+      ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Detroit Lions vs Buffalo Bills",
+      "date": "2026-09-17",
+      "favorite": "Buffalo Bills",
+      "estimated_probability": { "Buffalo Bills": 62, "Detroit Lions": 38 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Lions are missing BOTH starting safeties (Brian Branch and Kerby Joseph) and already gave up 410 passing yards and 3 TDs in Week 1 — a real, specific hole at the exact position Buffalo's passing game (Allen + new WR DJ Moore, who debuted with 100 yards) can attack.",
+        "Bills are 4.5-point home favorites per the market; independently, Buffalo's Week 1 win (36-31 over Houston, Allen with 4 TDs) plus the Lions' own defensive issues support a real edge without treating it as a lock.",
+        "Counterweight: Detroit's offense (Goff, Gibbs, Amon-Ra St. Brown, Jameson Williams) is legitimately explosive and just put up 31 in an OT thriller — this stays a lean, not a strong lean, since Detroit can clearly keep pace.",
+        "Bills' own defense is shaky too (allowed 31 to Houston, league-low 21.4% pressure rate in Week 1), so this isn't a one-sided matchup on either side of the ball."
+      ],
+      "sources": [
+        "https://www.si.com/betting/lions-vs-bills-prediction-odds-spread-injuries-trends-for-nfl-week-2-2026",
+        "https://www.buffalobills.com/news/top-3-things-we-learned-from-bills-vs-texans-week-1-2026"
+      ]
+    },
+    {
+      "sport": "NFL Spreads",
+      "matchup": "Spread: Buffalo Bills -3.5 (Lions vs Bills)",
+      "date": "2026-09-17",
+      "favorite": "Buffalo Bills -3.5",
+      "estimated_probability": { "Buffalo Bills -3.5": 55, "Detroit Lions +3.5": 45 },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Independently projecting a margin here rather than copying the market's 4.5: both offenses have shown they can score in bursts (67 combined points in Buffalo's Week 1 win, 61 combined in Detroit's Week 1 OT game), which argues for a tighter final margin than a blowout number.",
+        "Buffalo's home-field edge and Detroit's decimated safety group support Buffalo covering a smaller number, but covering any spread is inherently closer to a coin flip than just winning outright — treated that way here.",
+        "Same variance caveats as the moneyline pick apply: this is not treated as more certain just because it's a smaller number."
+      ],
+      "sources": [
+        "https://www.si.com/betting/lions-vs-bills-prediction-odds-spread-injuries-trends-for-nfl-week-2-2026"
+      ]
+    },
+    {
+      "sport": "NFL Totals",
+      "matchup": "Total Points O/U 52.5 (Lions vs Bills)",
+      "date": "2026-09-17",
+      "favorite": "Over 52.5",
+      "estimated_probability": { "Over 52.5": 60, "Under 52.5": 40 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Both teams' Week 1 games were shootouts: Bills' game totaled 67 points, Lions' totaled 61 in an OT thriller — a real, specific recent-scoring pattern for both sides, not just 'good offenses' in the abstract.",
+        "Lions missing both starting safeties and Bills' league-low 21.4% pressure rate in Week 1 both point toward more big plays allowed, not fewer.",
+        "Set our own number at 52.5, below the raw average of last week's two shootouts, to account for one week being a small sample and defenses typically tightening in a divisional-style rivalry atmosphere at a new stadium (Highmark's 2026 debut)."
+      ],
+      "sources": [
+        "https://www.buffalobills.com/news/top-3-things-we-learned-from-bills-vs-texans-week-1-2026",
+        "https://www.si.com/betting/lions-vs-bills-prediction-odds-spread-injuries-trends-for-nfl-week-2-2026"
+      ]
+    },
+    {
+      "sport": "NFL Player Props",
+      "matchup": "Josh Allen — Passing Yards O/U 260.5 (Lions vs Bills)",
+      "date": "2026-09-17",
+      "favorite": "Over 260.5",
+      "estimated_probability": { "Over 260.5": 64, "Under 260.5": 36 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Detroit is without both starting safeties (Branch, Joseph) and just allowed 410 passing yards in Week 1 — a specific, matchup-relevant hole in the exact area Allen and new WR DJ Moore (100-yard debut, 8 targets) can exploit.",
+        "Allen threw 4 TDs and led a comeback in Week 1, showing he's fully engaged as a full-time passer even with a strong running game around him.",
+        "This is a full game (not garbage-time-shortened) expected to be competitive per the total/spread picks above, supporting a real passing workload rather than an early running clock."
+      ],
+      "sources": [
+        "https://www.si.com/nfl/bills/onsi/injury-report-2nd-week-3-remains-same-one-day-closer-to-thursday-night-football-vs-dolphins",
+        "https://www.si.com/betting/lions-vs-bills-prediction-odds-spread-injuries-trends-for-nfl-week-2-2026"
+      ]
+    },
+    {
+      "sport": "NFL Player Props",
+      "matchup": "DJ Moore — Receiving Yards O/U 69.5 (Lions vs Bills)",
+      "date": "2026-09-17",
+      "favorite": "Over 69.5",
+      "estimated_probability": { "Over 69.5": 60, "Under 69.5": 40 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Moore led the Bills in targets (8) in his debut and posted 100 receiving yards and a TD — he's clearly locked in as Buffalo's WR1, not a situational piece.",
+        "Facing a Lions secondary missing both starting safeties, a specific and favorable matchup rather than a generic 'good WR' case.",
+        "Gap: no Lions-specific cornerback matchup data (who covers Moore) was found this session — a real limitation on precision here."
+      ],
+      "sources": [
+        "https://rollingout.com/2026/09/13/dj-moore-start-or-sit-bills-week-fantasy/",
+        "https://www.si.com/betting/lions-vs-bills-prediction-odds-spread-injuries-trends-for-nfl-week-2-2026"
+      ]
+    },
+    {
+      "sport": "NFL Player Props",
+      "matchup": "Jahmyr Gibbs — Rushing Yards O/U 64.5 (Lions vs Bills)",
+      "date": "2026-09-17",
+      "favorite": "Over 64.5",
+      "estimated_probability": { "Over 64.5": 62, "Under 64.5": 38 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Buffalo's defense ranked 30th in success rate against the run last season (55.3% success rate allowed) — a specific, significant, and recent structural weakness, not just a hunch.",
+        "By contrast, Buffalo ranked 3rd against the pass — a real reason to expect Detroit to lean on Gibbs and the run game rather than force it through the air, reinforcing this specific prop over a receiving one.",
+        "Gibbs is Detroit's clear lead back in an offense that just scored 31 points; the specific matchup (explosive back vs. a bottom-tier run defense) is the core edge here."
+      ],
+      "sources": [
+        "https://www.foxsports.com/articles/nfl/2025-nfl-defense-rankings-team-pass-and-rush-stats"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Philadelphia Phillies vs New York Mets",
+      "date": "2026-09-17",
+      "favorite": "New York Mets",
+      "estimated_probability": { "New York Mets": 58, "Philadelphia Phillies": 42 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Confirmed starters: Nolan McLean (11-9, 3.24 ERA) for the Mets vs Aaron Nola (6-10, 4.69 ERA) for the Phillies — a real, specific, and sizeable pitching-quality gap, not just a team-level read.",
+        "Mets are already eliminated from playoff contention, which cuts both ways: no desperation edge for them, but also 'spoiler' motivation against a division rival, and nothing to lose by pushing hard.",
+        "Phillies hold the better overall roster and are fighting for the 2nd NL Wild Card spot (84-68, half a game back of the Cubs, only 1 game ahead of a hot Padres team) — real stakes-based motivation on their side too, which is why this stays a modest lean rather than a bigger one despite the pitching gap."
+      ],
+      "sources": [
+        "https://www.philadelphiabaseballreview.com/2026/09/phillies-mets-series-preview-postseason-wild-card-nl-east.html",
+        "https://www.fanduel.com/research/mets-vs-phillies-mlb-odds-prediction-point-spread-over-under-and-betting-trends-for-9-17-2026"
+      ]
+    },
+    {
+      "sport": "MLB Totals",
+      "matchup": "Total Runs O/U 8.5 (Phillies vs Mets)",
+      "date": "2026-09-17",
+      "favorite": "Over 8.5",
+      "estimated_probability": { "Over 8.5": 57, "Under 8.5": 43 },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Aaron Nola's 4.69 ERA this season is a real, specific red flag for run prevention on the Phillies side.",
+        "Nolan McLean's much better 3.24 ERA works against a high total, so this isn't a one-sided case — set close to a coin flip nudged toward Over mainly because of Nola's specific struggles.",
+        "Gap: bullpen usage/fatigue for either team over the past few days wasn't checked this session, a real factor for late-inning scoring that isn't reflected here."
+      ],
+      "sources": [
+        "https://www.fanduel.com/research/mets-vs-phillies-mlb-odds-prediction-point-spread-over-under-and-betting-trends-for-9-17-2026"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Aaron Nola — Earned Runs Allowed O/U 3.5 (Phillies vs Mets)",
+      "date": "2026-09-17",
+      "favorite": "Over 3.5",
+      "estimated_probability": { "Over 3.5": 55, "Under 3.5": 45 },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Nola's season ERA (4.69) works out to roughly 3.5+ earned runs over a full outing on average, so this line is grounded directly in his actual season rate rather than a guess.",
+        "Kept close to a coin flip rather than pushed higher: a single start has real game-to-game variance, and his last-start-specific form wasn't separately confirmed this session — a real gap."
+      ],
+      "sources": [
+        "https://www.philadelphiabaseballreview.com/2026/09/phillies-mets-series-preview-postseason-wild-card-nl-east.html"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Kansas City Royals vs Houston Astros",
+      "date": "2026-09-17",
+      "favorite": "Houston Astros",
+      "estimated_probability": { "Houston Astros": 65, "Kansas City Royals": 35 },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Seth Lugo (Royals' starter) has completely collapsed: 5.03 ERA on the season, 6.01 ERA and no scoreless starts across his last 14 outings, and he just allowed 9 runs in his most recent start — a specific, severe, and very recent form crash.",
+        "Royals are 66-83 and 9 games out of wild-card position — a non-contender playing out the string, with Houston fighting for AL West position by comparison.",
+        "Counterweight: Astros starter Miguel Ullola has thrown only 7 total MLB innings and profiles as a future reliever, not a proven starter — a real specific weakness on Houston's side that keeps this from going higher than a lean."
+      ],
+      "sources": [
+        "https://royalskeep.com/news-rumors/kansas-city-royals/week-in-review-we-need-to-talk-about-seth-lugo-r4587",
+        "https://www.espn.com/mlb/story/_/id/49724506/mlb-2026-playoffs-american-league-west-wild-card-races"
+      ]
+    },
+    {
+      "sport": "MLB Totals",
+      "matchup": "Total Runs O/U 9.5 (Royals vs Astros)",
+      "date": "2026-09-17",
+      "favorite": "Over 9.5",
+      "estimated_probability": { "Over 9.5": 60, "Under 9.5": 40 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Both starters are specific, live concerns for run prevention: Lugo's 6.01 ERA over his last 14 starts, and Ullola with only 7 career MLB innings and a developmental profile.",
+        "Set the total a bit higher than a typical MLB game (9.5) specifically because neither bullpen-taxing ace is on the mound, unlike a typical 'good vs. good' pitching matchup."
+      ],
+      "sources": [
+        "https://royalskeep.com/news-rumors/kansas-city-royals/week-in-review-we-need-to-talk-about-seth-lugo-r4587"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Seth Lugo — Earned Runs Allowed O/U 3.5 (Royals vs Astros)",
+      "date": "2026-09-17",
+      "favorite": "Over 3.5",
+      "estimated_probability": { "Over 3.5": 63, "Under 3.5": 37 },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Lugo has failed to produce a single scoreless start across his last 14 outings and just gave up 9 runs in his most recent one — a severe, specific, and very recent collapse, not a season-long average being applied blindly.",
+        "Facing a Houston lineup that was in AL West contention (a real, competent offense), not a weak one, reinforcing the Over case.",
+        "Not pushed higher than 63% because even a struggling veteran can occasionally right the ship for one outing — one bad stretch doesn't guarantee the next start specifically."
+      ],
+      "sources": [
+        "https://royalskeep.com/news-rumors/kansas-city-royals/week-in-review-we-need-to-talk-about-seth-lugo-r4587"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Yordan Alvarez — Total Bases O/U 1.5 (Royals vs Astros)",
+      "date": "2026-09-17",
+      "favorite": "Over 1.5",
+      "estimated_probability": { "Over 1.5": 68, "Under 1.5": 32 },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Grounded specifically in the opponent: Seth Lugo has a 6.01 ERA over his last 14 starts and just allowed 9 runs in his most recent outing, making this a favorable spot for a middle-of-the-order power bat.",
+        "Gap: Alvarez's own specific recent form (last 10 games) and exact season total-bases rate weren't confirmed this session — this pick leans heavily on the pitcher-side evidence rather than a fully two-sided case, and is flagged as such rather than presented as more complete than it is."
+      ],
+      "sources": [
+        "https://royalskeep.com/news-rumors/kansas-city-royals/week-in-review-we-need-to-talk-about-seth-lugo-r4587"
       ]
     }
   ],

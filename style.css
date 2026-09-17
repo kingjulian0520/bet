@@ -360,6 +360,30 @@ main {
   padding: 3rem 1rem;
 }
 
+.day-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.day-chip {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+
+.day-chip.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #06110d;
+  font-weight: 600;
+}
+
 .sport-group {
   margin-top: 0.5rem;
 }
