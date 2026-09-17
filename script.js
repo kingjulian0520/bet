@@ -1,5 +1,4 @@
-const UNIT_PCT = 0.03; // 1 unit = 3% of capital
-const BANKROLL_KEY = "closeCallsBankroll";
+const UNIT_VALUE_KEY = "closeCallsUnitValue";
 const BETS_KEY = "closeCallsBets";
 
 let currentPicks = [];
@@ -10,14 +9,14 @@ let activeModalSide = null;
 
 // ---------- storage ----------
 
-function getBankroll() {
-  const stored = localStorage.getItem(BANKROLL_KEY);
+function getUnitValue() {
+  const stored = localStorage.getItem(UNIT_VALUE_KEY);
   return stored ? parseFloat(stored) : null;
 }
 
-function setBankroll(value) {
+function setUnitValue(value) {
   try {
-    localStorage.setItem(BANKROLL_KEY, String(value));
+    localStorage.setItem(UNIT_VALUE_KEY, String(value));
   } catch (err) {
     // ignore — localStorage may be unavailable (private browsing etc.)
   }
@@ -46,12 +45,12 @@ async function main() {
   wireTabs();
   wireModal();
 
-  const bankrollInput = document.getElementById("bankroll-input");
-  const savedBankroll = getBankroll();
-  if (savedBankroll) bankrollInput.value = savedBankroll;
-  bankrollInput.addEventListener("input", () => {
-    const val = parseFloat(bankrollInput.value);
-    if (!isNaN(val) && val > 0) setBankroll(val);
+  const unitValueInput = document.getElementById("unit-value-input");
+  const savedUnitValue = getUnitValue();
+  if (savedUnitValue) unitValueInput.value = savedUnitValue;
+  unitValueInput.addEventListener("input", () => {
+    const val = parseFloat(unitValueInput.value);
+    if (!isNaN(val) && val > 0) setUnitValue(val);
     renderAll();
   });
 
@@ -140,7 +139,7 @@ function renderPicks() {
 
 function renderExposureSummary() {
   const el = document.getElementById("exposure-summary");
-  const bankroll = getBankroll();
+  const unitValue = getUnitValue();
 
   const totalUnits = currentPicks.reduce((sum, p) => sum + (p.recommended_units || 0), 0);
   if (totalUnits === 0) {
@@ -148,14 +147,13 @@ function renderExposureSummary() {
     return;
   }
 
-  const totalPct = (totalUnits * UNIT_PCT * 100).toFixed(1);
-  let text = `Current picks add up to ${totalUnits.toFixed(2)} units (${totalPct}% of capital) if you took every one`;
-  if (bankroll) {
-    text += ` — about $${(totalUnits * UNIT_PCT * bankroll).toFixed(0)}`;
+  let text = `Current picks add up to ${totalUnits.toFixed(2)} units if you took every one`;
+  if (unitValue) {
+    text += ` — about $${(totalUnits * unitValue).toFixed(0)}`;
   }
   el.textContent = text + ".";
   el.hidden = false;
-  el.classList.toggle("hot", totalUnits * UNIT_PCT > 0.2);
+  el.classList.toggle("hot", totalUnits >= 8);
 }
 
 function pickKey(pick) {
@@ -183,15 +181,15 @@ function renderCard(pick) {
     .join(" ");
 
   const units = pick.recommended_units;
-  const bankroll = getBankroll();
+  const unitValue = getUnitValue();
   let stakeRow = "";
   if (units) {
-    const dollarsText = bankroll
-      ? `<span class="dollars">≈ $${(units * UNIT_PCT * bankroll).toFixed(0)}</span>`
-      : `<span class="dollars">enter capital above for $ amount</span>`;
+    const dollarsText = unitValue
+      ? `<span class="dollars">≈ $${(units * unitValue).toFixed(0)}</span>`
+      : `<span class="dollars">set unit size above for $ amount</span>`;
     stakeRow = `
       <div class="stake-row">
-        <span class="units">Suggested: ${units} unit${units === 1 ? "" : "s"} (${(units * UNIT_PCT * 100).toFixed(1)}%)</span>
+        <span class="units">Suggested: ${units} unit${units === 1 ? "" : "s"}</span>
         ${dollarsText}
       </div>
     `;
@@ -415,11 +413,11 @@ function renderNetCounter() {
   const el = document.getElementById("net-counter");
   const settled = myBets.filter((b) => b.status !== "pending");
   const netUnits = settled.reduce((sum, b) => sum + (b.profitUnits || 0), 0);
-  const bankroll = getBankroll();
+  const unitValue = getUnitValue();
 
   let text = `Net: ${netUnits >= 0 ? "+" : ""}${netUnits.toFixed(2)} units`;
-  if (bankroll) {
-    text += ` (${netUnits >= 0 ? "+" : ""}$${(netUnits * UNIT_PCT * bankroll).toFixed(0)})`;
+  if (unitValue) {
+    text += ` (${netUnits >= 0 ? "+" : ""}$${(netUnits * unitValue).toFixed(0)})`;
   }
   if (settled.length === 0) text = "Net: 0.00 units — no settled bets yet";
 
