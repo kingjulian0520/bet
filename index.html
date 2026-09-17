@@ -9,8 +9,15 @@
 <body>
 <header class="page-header">
   <h1>Close Calls</h1>
-  <p class="subtitle">Automated research on the tightest upcoming matchups across sports.</p>
+  <p class="subtitle">Automated research on the tightest upcoming matchups across sports, refreshed every 2 hours.</p>
   <p id="last-updated" class="last-updated">Not run yet.</p>
+
+  <div class="bankroll-bar">
+    <label for="bankroll-input">Your capital ($)</label>
+    <input id="bankroll-input" type="number" min="0" step="1" placeholder="e.g. 1000">
+    <span class="bankroll-note">1 unit = 3% of this, stored only in your browser</span>
+  </div>
+  <p id="exposure-summary" class="exposure-summary" hidden></p>
 </header>
 
 <main id="picks-root">

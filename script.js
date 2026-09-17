@@ -1,6 +1,35 @@
+const UNIT_PCT = 0.03; // 1 unit = 3% of capital
+const BANKROLL_KEY = "closeCallsBankroll";
+
+let currentPicks = [];
+
+function getBankroll() {
+  const stored = localStorage.getItem(BANKROLL_KEY);
+  return stored ? parseFloat(stored) : null;
+}
+
+function setBankroll(value) {
+  try {
+    localStorage.setItem(BANKROLL_KEY, String(value));
+  } catch (err) {
+    // localStorage unavailable (private browsing etc.) — ignore, dollar amounts just won't show
+  }
+}
+
 async function main() {
   const root = document.getElementById("picks-root");
   const lastUpdatedEl = document.getElementById("last-updated");
+  const bankrollInput = document.getElementById("bankroll-input");
+
+  const savedBankroll = getBankroll();
+  if (savedBankroll) bankrollInput.value = savedBankroll;
+
+  bankrollInput.addEventListener("input", () => {
+    const val = parseFloat(bankrollInput.value);
+    if (!isNaN(val) && val > 0) setBankroll(val);
+    renderPicks();
+    renderExposureSummary();
+  });
 
   let data;
   try {
@@ -16,13 +45,21 @@ async function main() {
     lastUpdatedEl.textContent = "Last updated " + d.toLocaleString();
   }
 
-  if (!data.picks || data.picks.length === 0) {
+  currentPicks = data.picks || [];
+  renderPicks();
+  renderExposureSummary();
+}
+
+function renderPicks() {
+  const root = document.getElementById("picks-root");
+
+  if (currentPicks.length === 0) {
     root.innerHTML = '<p class="empty-state">No picks yet — the first automated research run hasn\'t happened.</p>';
     return;
   }
 
   const bySport = {};
-  for (const pick of data.picks) {
+  for (const pick of currentPicks) {
     const sport = pick.sport || "Other";
     if (!bySport[sport]) bySport[sport] = [];
     bySport[sport].push(pick);
@@ -43,6 +80,27 @@ async function main() {
 
     root.appendChild(group);
   }
+}
+
+function renderExposureSummary() {
+  const el = document.getElementById("exposure-summary");
+  const bankroll = getBankroll();
+
+  const totalUnits = currentPicks.reduce((sum, p) => sum + (p.recommended_units || 0), 0);
+  if (totalUnits === 0) {
+    el.hidden = true;
+    return;
+  }
+
+  const totalPct = (totalUnits * UNIT_PCT * 100).toFixed(1);
+  let text = `Current picks add up to ${totalUnits.toFixed(2)} units (${totalPct}% of capital) if you took every one`;
+  if (bankroll) {
+    const dollars = (totalUnits * UNIT_PCT * bankroll).toFixed(0);
+    text += ` — about $${dollars}`;
+  }
+  el.textContent = text + ".";
+  el.hidden = false;
+  el.classList.toggle("hot", totalUnits * UNIT_PCT > 0.2);
 }
 
 function renderCard(pick) {
@@ -67,6 +125,21 @@ function renderCard(pick) {
     .map((s, i) => `<a href="${escapeAttr(s)}" target="_blank" rel="noopener noreferrer">[${i + 1}]</a>`)
     .join(" ");
 
+  const units = pick.recommended_units;
+  const bankroll = getBankroll();
+  let stakeRow = "";
+  if (units) {
+    const dollarsText = bankroll
+      ? `<span class="dollars">≈ $${(units * UNIT_PCT * bankroll).toFixed(0)}</span>`
+      : `<span class="dollars">enter capital above for $ amount</span>`;
+    stakeRow = `
+      <div class="stake-row">
+        <span class="units">${units} unit${units === 1 ? "" : "s"} (${(units * UNIT_PCT * 100).toFixed(1)}% of capital)</span>
+        ${dollarsText}
+      </div>
+    `;
+  }
+
   card.innerHTML = `
     <div class="matchup-row">
       <span class="matchup">${escapeHtml(pick.matchup || "")}</span>
@@ -83,6 +156,7 @@ function renderCard(pick) {
     </div>
     <ul class="reasoning">${reasoningItems}</ul>
     ${sourceLinks ? `<div class="sources">Sources: ${sourceLinks}</div>` : ""}
+    ${stakeRow}
   `;
 
   return card;

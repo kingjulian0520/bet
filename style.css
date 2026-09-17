@@ -44,6 +44,52 @@ body {
   margin: 0;
 }
 
+.bankroll-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.bankroll-bar label {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.bankroll-bar input {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  width: 120px;
+  font-size: 0.9rem;
+}
+
+.bankroll-note {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.exposure-summary {
+  margin: 0.75rem auto 0;
+  max-width: 480px;
+  font-size: 0.82rem;
+  color: var(--muted);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  display: inline-block;
+}
+
+.exposure-summary.hot {
+  color: var(--lean-mid);
+  border-color: var(--lean-mid);
+}
+
 main {
   max-width: 780px;
   margin: 0 auto;
@@ -172,6 +218,25 @@ main {
 
 .sources a:hover {
   text-decoration: underline;
+}
+
+.stake-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.6rem;
+  padding-top: 0.6rem;
+  border-top: 1px dashed var(--border);
+  font-size: 0.88rem;
+}
+
+.stake-row .units {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.stake-row .dollars {
+  color: var(--muted);
 }
 
 .page-footer {
