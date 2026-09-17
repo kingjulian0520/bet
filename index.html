@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Close Calls</title>
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 <header class="page-header">
@@ -18,13 +18,17 @@
     <span class="bankroll-note">Set once — stored only in your browser. Just used to show $ amounts, doesn't affect any pick or bet.</span>
   </div>
 
-  <div id="net-counter" class="net-counter">Net: 0.00 units</div>
+  <div class="net-counter">
+    <div id="net-today" class="net-today">Today: 0.00 units</div>
+    <div id="net-alltime" class="net-alltime">All time: 0.00 units</div>
+  </div>
   <p id="exposure-summary" class="exposure-summary" hidden></p>
 </header>
 
 <nav class="tabs" role="tablist">
   <button class="tab-btn active" data-tab="picks" role="tab" aria-selected="true">Picks</button>
   <button class="tab-btn" data-tab="mybets" role="tab" aria-selected="false">My Bets</button>
+  <button class="tab-btn" data-tab="calendar" role="tab" aria-selected="false">Calendar</button>
 </nav>
 
 <main>
@@ -38,6 +42,21 @@
     <div id="mybets-root">
       <p class="empty-state">No bets placed yet. Click a pick on the Picks tab to log one.</p>
     </div>
+  </section>
+
+  <section id="calendar" class="tab-panel">
+    <div class="calendar-header">
+      <button id="cal-prev" class="secondary-btn" aria-label="Previous month">‹</button>
+      <span id="cal-month-label" class="cal-month-label"></span>
+      <button id="cal-next" class="secondary-btn" aria-label="Next month">›</button>
+    </div>
+    <div class="calendar-legend">
+      <span><i class="legend-dot win"></i> Winning day</span>
+      <span><i class="legend-dot loss"></i> Losing day</span>
+      <span><i class="legend-dot neutral"></i> Breakeven / no bets</span>
+    </div>
+    <div id="calendar-grid" class="calendar-grid"></div>
+    <div id="day-detail" class="day-detail"></div>
   </section>
 </main>
 
@@ -77,6 +96,6 @@
   </div>
 </div>
 
-<script src="script.js?v=2"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>

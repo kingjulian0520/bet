@@ -96,13 +96,22 @@ body {
 
 .net-counter {
   margin-top: 0.75rem;
+}
+
+.net-today {
   font-size: 1.1rem;
   font-weight: 700;
 }
 
-.net-counter.positive { color: var(--lean-high); }
-.net-counter.negative { color: var(--danger); }
-.net-counter.zero { color: var(--muted); }
+.net-alltime {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+.net-today.positive, .net-alltime.positive { color: var(--lean-high); }
+.net-today.negative, .net-alltime.negative { color: var(--danger); }
+.net-today.zero { color: var(--muted); }
 
 .tabs {
   display: flex;
@@ -498,5 +507,116 @@ main {
   .pick-card .matchup-row {
     flex-direction: column;
     gap: 0.2rem;
+  }
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.cal-month-label {
+  font-weight: 600;
+  min-width: 160px;
+  text-align: center;
+}
+
+.calendar-legend {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-right: 0.35rem;
+}
+
+.legend-dot.win { background: var(--lean-high); }
+.legend-dot.loss { background: var(--danger); }
+.legend-dot.neutral { background: var(--border); }
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.4rem;
+}
+
+.calendar-weekday {
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  padding-bottom: 0.3rem;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.82rem;
+  gap: 0.15rem;
+  transition: filter 0.1s ease;
+}
+
+.calendar-day:hover {
+  filter: brightness(1.15);
+}
+
+.calendar-day.blank {
+  visibility: hidden;
+  cursor: default;
+}
+
+.calendar-day.win {
+  background: rgba(79, 209, 165, 0.22);
+  border-color: var(--lean-high);
+  color: var(--lean-high);
+}
+
+.calendar-day.loss {
+  background: rgba(244, 113, 116, 0.22);
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.calendar-day.selected {
+  outline: 2px solid var(--text);
+  outline-offset: 1px;
+}
+
+.calendar-day .day-net {
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+.day-detail {
+  margin-top: 1.25rem;
+}
+
+.day-detail h3 {
+  font-size: 0.95rem;
+  margin: 0 0 0.6rem;
+}
+
+@media (max-width: 480px) {
+  .calendar-day {
+    font-size: 0.72rem;
   }
 }

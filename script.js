@@ -44,6 +44,7 @@ function saveBets() {
 async function main() {
   wireTabs();
   wireModal();
+  wireCalendar();
 
   const unitValueInput = document.getElementById("unit-value-input");
   const savedUnitValue = getUnitValue();
@@ -84,6 +85,7 @@ function renderAll() {
   renderExposureSummary();
   renderMyBets();
   renderNetCounter();
+  renderCalendar();
 }
 
 // ---------- tabs ----------
@@ -365,6 +367,40 @@ function settlePendingBets() {
 
 // ---------- my bets ----------
 
+function buildBetCard(bet) {
+  const card = document.createElement("div");
+  card.className = "bet-card";
+
+  const profitText =
+    bet.status === "pending"
+      ? ""
+      : `<div class="bet-profit ${bet.profitUnits >= 0 ? "positive" : "negative"}">${bet.profitUnits >= 0 ? "+" : ""}${bet.profitUnits.toFixed(2)} units</div>`;
+
+  const removeBtn = bet.status === "pending" ? `<button class="bet-remove" data-id="${bet.id}">Remove</button>` : "";
+
+  card.innerHTML = `
+    <div class="bet-top">
+      <span class="bet-matchup">${escapeHtml(bet.matchup)} — backing ${escapeHtml(bet.side)}</span>
+      <span class="bet-status ${bet.status}">${bet.status}</span>
+    </div>
+    <div class="bet-detail">${escapeHtml(bet.sport)} · ${escapeHtml(bet.date)} · ${bet.stakeUnits} units @ ${bet.multiplier}x · EV was ${bet.evPercent >= 0 ? "+" : ""}${bet.evPercent.toFixed(1)}%</div>
+    ${bet.finalScore ? `<div class="bet-detail">Final: ${escapeHtml(bet.finalScore)}</div>` : ""}
+    ${profitText}
+    ${removeBtn}
+  `;
+
+  const removeButton = card.querySelector(".bet-remove");
+  if (removeButton) {
+    removeButton.addEventListener("click", () => {
+      myBets = myBets.filter((b) => b.id !== bet.id);
+      saveBets();
+      renderAll();
+    });
+  }
+
+  return card;
+}
+
 function renderMyBets() {
   const root = document.getElementById("mybets-root");
   if (myBets.length === 0) {
@@ -374,55 +410,164 @@ function renderMyBets() {
 
   const sorted = [...myBets].sort((a, b) => new Date(b.placedAt) - new Date(a.placedAt));
   root.innerHTML = "";
-
   for (const bet of sorted) {
-    const card = document.createElement("div");
-    card.className = "bet-card";
-
-    const profitText =
-      bet.status === "pending"
-        ? ""
-        : `<div class="bet-profit ${bet.profitUnits >= 0 ? "positive" : "negative"}">${bet.profitUnits >= 0 ? "+" : ""}${bet.profitUnits.toFixed(2)} units</div>`;
-
-    const removeBtn = bet.status === "pending" ? `<button class="bet-remove" data-id="${bet.id}">Remove</button>` : "";
-
-    card.innerHTML = `
-      <div class="bet-top">
-        <span class="bet-matchup">${escapeHtml(bet.matchup)} — backing ${escapeHtml(bet.side)}</span>
-        <span class="bet-status ${bet.status}">${bet.status}</span>
-      </div>
-      <div class="bet-detail">${escapeHtml(bet.sport)} · ${escapeHtml(bet.date)} · ${bet.stakeUnits} units @ ${bet.multiplier}x · EV was ${bet.evPercent >= 0 ? "+" : ""}${bet.evPercent.toFixed(1)}%</div>
-      ${bet.finalScore ? `<div class="bet-detail">Final: ${escapeHtml(bet.finalScore)}</div>` : ""}
-      ${profitText}
-      ${removeBtn}
-    `;
-
-    root.appendChild(card);
+    root.appendChild(buildBetCard(bet));
   }
+}
 
-  root.querySelectorAll(".bet-remove").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      myBets = myBets.filter((b) => b.id !== btn.dataset.id);
-      saveBets();
-      renderAll();
-    });
-  });
+function todayDateStr() {
+  const d = new Date();
+  return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
 }
 
 function renderNetCounter() {
-  const el = document.getElementById("net-counter");
+  const todayEl = document.getElementById("net-today");
+  const allTimeEl = document.getElementById("net-alltime");
   const settled = myBets.filter((b) => b.status !== "pending");
-  const netUnits = settled.reduce((sum, b) => sum + (b.profitUnits || 0), 0);
   const unitValue = getUnitValue();
+  const todayStr = todayDateStr();
 
-  let text = `Net: ${netUnits >= 0 ? "+" : ""}${netUnits.toFixed(2)} units`;
-  if (unitValue) {
-    text += ` (${netUnits >= 0 ? "+" : ""}$${(netUnits * unitValue).toFixed(0)})`;
+  const todaySettled = settled.filter((b) => b.date === todayStr);
+  const todayUnits = todaySettled.reduce((sum, b) => sum + (b.profitUnits || 0), 0);
+  const allTimeUnits = settled.reduce((sum, b) => sum + (b.profitUnits || 0), 0);
+
+  const formatLine = (label, units, count) => {
+    let text = `${label}: ${units >= 0 ? "+" : ""}${units.toFixed(2)} units`;
+    if (unitValue) text += ` (${units >= 0 ? "+" : ""}$${(units * unitValue).toFixed(0)})`;
+    if (count === 0) text = `${label}: no settled bets`;
+    return text;
+  };
+
+  todayEl.textContent = formatLine("Today", todayUnits, todaySettled.length);
+  todayEl.className = "net-today " + (todaySettled.length === 0 ? "zero" : todayUnits > 0 ? "positive" : todayUnits < 0 ? "negative" : "zero");
+
+  allTimeEl.textContent = formatLine("All time", allTimeUnits, settled.length);
+  allTimeEl.className = "net-alltime " + (settled.length === 0 ? "" : allTimeUnits > 0 ? "positive" : allTimeUnits < 0 ? "negative" : "");
+}
+
+// ---------- calendar ----------
+
+const today = new Date();
+let calViewYear = today.getFullYear();
+let calViewMonth = today.getMonth(); // 0-indexed
+let calSelectedDate = null;
+
+function wireCalendar() {
+  document.getElementById("cal-prev").addEventListener("click", () => {
+    calViewMonth -= 1;
+    if (calViewMonth < 0) {
+      calViewMonth = 11;
+      calViewYear -= 1;
+    }
+    renderCalendar();
+  });
+
+  document.getElementById("cal-next").addEventListener("click", () => {
+    calViewMonth += 1;
+    if (calViewMonth > 11) {
+      calViewMonth = 0;
+      calViewYear += 1;
+    }
+    renderCalendar();
+  });
+}
+
+function betsByDate() {
+  const map = {};
+  for (const bet of myBets) {
+    if (bet.status === "pending" || !bet.date) continue;
+    if (!map[bet.date]) map[bet.date] = [];
+    map[bet.date].push(bet);
   }
-  if (settled.length === 0) text = "Net: 0.00 units — no settled bets yet";
+  return map;
+}
 
-  el.textContent = text;
-  el.className = "net-counter " + (netUnits > 0 ? "positive" : netUnits < 0 ? "negative" : "zero");
+function pad2(n) {
+  return String(n).padStart(2, "0");
+}
+
+const MONTH_NAMES = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December",
+];
+const WEEKDAY_LABELS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+function renderCalendar() {
+  const grid = document.getElementById("calendar-grid");
+  const label = document.getElementById("cal-month-label");
+  if (!grid || !label) return;
+
+  label.textContent = `${MONTH_NAMES[calViewMonth]} ${calViewYear}`;
+
+  const byDate = betsByDate();
+  const firstWeekday = new Date(calViewYear, calViewMonth, 1).getDay();
+  const daysInMonth = new Date(calViewYear, calViewMonth + 1, 0).getDate();
+
+  grid.innerHTML = "";
+
+  WEEKDAY_LABELS.forEach((w) => {
+    const el = document.createElement("div");
+    el.className = "calendar-weekday";
+    el.textContent = w;
+    grid.appendChild(el);
+  });
+
+  for (let i = 0; i < firstWeekday; i++) {
+    const blank = document.createElement("div");
+    blank.className = "calendar-day blank";
+    grid.appendChild(blank);
+  }
+
+  for (let day = 1; day <= daysInMonth; day++) {
+    const dateStr = `${calViewYear}-${pad2(calViewMonth + 1)}-${pad2(day)}`;
+    const dayBets = byDate[dateStr] || [];
+    const netUnits = dayBets.reduce((sum, b) => sum + (b.profitUnits || 0), 0);
+
+    const cell = document.createElement("div");
+    cell.className = "calendar-day " + (netUnits > 0 ? "win" : netUnits < 0 ? "loss" : "neutral");
+    if (dateStr === calSelectedDate) cell.classList.add("selected");
+
+    cell.innerHTML = `
+      <span>${day}</span>
+      ${dayBets.length ? `<span class="day-net">${netUnits >= 0 ? "+" : ""}${netUnits.toFixed(2)}</span>` : ""}
+    `;
+
+    cell.addEventListener("click", () => {
+      calSelectedDate = dateStr === calSelectedDate ? null : dateStr;
+      renderCalendar();
+      renderDayDetail();
+    });
+
+    grid.appendChild(cell);
+  }
+
+  renderDayDetail();
+}
+
+function renderDayDetail() {
+  const root = document.getElementById("day-detail");
+  if (!calSelectedDate) {
+    root.innerHTML = "";
+    return;
+  }
+
+  const dayBets = betsByDate()[calSelectedDate] || [];
+  const heading = document.createElement("h3");
+  heading.textContent = `Bets for ${calSelectedDate}`;
+  root.innerHTML = "";
+  root.appendChild(heading);
+
+  if (dayBets.length === 0) {
+    const p = document.createElement("p");
+    p.className = "empty-state";
+    p.textContent = "No settled bets on this day.";
+    root.appendChild(p);
+    return;
+  }
+
+  for (const bet of dayBets) {
+    root.appendChild(buildBetCard(bet));
+  }
 }
 
 // ---------- utils ----------
