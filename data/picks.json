@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T21:47:49Z",
+  "generated_at": "2026-09-17T22:23:11Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
@@ -596,6 +596,64 @@
       ],
       "sources": [
         "https://en.wikipedia.org/wiki/Bryan_Woo"
+      ]
+    }
+  ],
+  "long_shots": [
+    {
+      "sport": "Parlays",
+      "matchup": "5-Leg Long Shot: 49ers ML + Man City ML + Mariners ML + Astros ML + Dodgers ML",
+      "date": "2026-09-18",
+      "favorite": "Hits",
+      "estimated_probability": { "Hits": 20, "Doesn't Hit": 80 },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.15,
+      "reasoning": [
+        "Every leg here is the SAME side already favored in the main Picks tab (49ers 83%, Man City 78%, Mariners 66%, Astros 65%, Dodgers 72%) — nothing here fights those picks. If you follow every pick on the Picks tab, this parlay hitting is just those five outcomes all landing at once, never a reason for one of your other bets to lose.",
+        "Combined probability is the product of the five: 0.83 x 0.78 x 0.66 x 0.65 x 0.72 = ~20% — a real long shot despite every individual leg being a lean or better, which is exactly why the stake here is far smaller than any leg gets on its own.",
+        "Only 'Hits' is a real placeable bet — a sportsbook doesn't sell 'this misses' as its own ticket.",
+        "None of the five legs is a certainty (see each one's own Picks entry for the specific evidence and caveats) — this is a payout play built on real research, not a guess."
+      ],
+      "sources": [
+        "https://www.statsinsider.com.au/news/49ers-vs-dolphins-prediction-and-preview-nfl-week-2-2026",
+        "https://www.dimers.com/epl/predictions/2026_5_mnc_sun",
+        "https://en.wikipedia.org/wiki/Bryan_Woo",
+        "https://royalskeep.com/news-rumors/kansas-city-royals/week-in-review-we-need-to-talk-about-seth-lugo-r4587",
+        "https://www.nbc.com/nbc-insider/los-angeles-dodgers-full-2026-mlb-season-schedule"
+      ]
+    },
+    {
+      "sport": "NFL Spreads",
+      "matchup": "Long Shot Spread: Buffalo Bills -7.5 (Lions vs Bills)",
+      "date": "2026-09-17",
+      "favorite": "Buffalo Bills -7.5",
+      "estimated_probability": { "Buffalo Bills -7.5": 32, "Detroit Lions +7.5": 68 },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.2,
+      "reasoning": [
+        "This is a harder version of the same side as the Picks tab's Bills moneyline (62%) and Bills -3.5 spread (55%) — if Buffalo wins by 8+, all three hit together. It never requires Detroit to win, so it can't contradict either existing pick.",
+        "Same underlying case as those two picks (Lions missing both starting safeties, Bills' Week 1 shootout win) but a full two-score margin is a real stretch given how explosive Detroit's own offense looked in its own Week 1 shootout.",
+        "Kept low (32%) specifically because covering a bigger number is meaningfully harder than covering a smaller one or winning outright — this is priced as a genuine long shot, not just 'the same pick with extra confidence.'"
+      ],
+      "sources": [
+        "https://www.si.com/betting/lions-vs-bills-prediction-odds-spread-injuries-trends-for-nfl-week-2-2026"
+      ]
+    },
+    {
+      "sport": "NFL Player Props",
+      "matchup": "Long Shot: Josh Allen — Passing Yards O/U 319.5 (Lions vs Bills)",
+      "date": "2026-09-17",
+      "favorite": "Over 319.5",
+      "estimated_probability": { "Over 319.5": 30, "Under 319.5": 70 },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.2,
+      "reasoning": [
+        "A harder version of the same side as the Picks tab's Allen Over 260.5 prop — if Allen throws for 320+, both hit together, so this can never fight that pick.",
+        "Same underlying case (Lions missing both starting safeties, 410 pass yards already allowed in Week 1) but 320+ yards is a real career-high-range number for Allen in a single game, not a typical output even in a good matchup.",
+        "Priced as a genuine long shot (30%) rather than inflated just because the matchup case is real — a strong matchup supports a good Over lean at 260.5, not a near-even shot at 320+."
+      ],
+      "sources": [
+        "https://www.si.com/nfl/bills/onsi/injury-report-2nd-week-3-remains-same-one-day-closer-to-thursday-night-football-vs-dolphins"
       ]
     }
   ],

@@ -354,6 +354,13 @@ main {
   gap: 1rem;
 }
 
+.panel-intro {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
 .empty-state {
   text-align: center;
   color: var(--muted);

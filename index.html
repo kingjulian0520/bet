@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Close Calls</title>
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 <header class="page-header">
@@ -27,6 +27,7 @@
 
 <nav class="tabs" role="tablist">
   <button class="tab-btn active" data-tab="picks" role="tab" aria-selected="true">Picks</button>
+  <button class="tab-btn" data-tab="longshots" role="tab" aria-selected="false">Long Shots</button>
   <button class="tab-btn" data-tab="mybets" role="tab" aria-selected="false">My Bets</button>
   <button class="tab-btn" data-tab="calendar" role="tab" aria-selected="false">Calendar</button>
 </nav>
@@ -36,6 +37,18 @@
     <div id="day-filter-bar" class="day-filter-bar"></div>
     <div id="picks-root">
       <p class="empty-state">No picks yet — the first automated research run hasn't happened.</p>
+    </div>
+  </section>
+
+  <section id="longshots" class="tab-panel">
+    <p class="panel-intro">
+      Small, deliberately low-probability bets — big parlays and extreme props — sized at
+      0.1-0.25 units. These are built to never fight the Picks tab: a leg here is either a
+      harder version of a side you're already backing there, or a completely separate event.
+      You can follow every pick on both tabs without any of it contradicting itself.
+    </p>
+    <div id="longshots-root">
+      <p class="empty-state">No long shots yet.</p>
     </div>
   </section>
 
@@ -78,7 +91,7 @@
     <div class="side-toggle" id="side-toggle"></div>
 
     <label class="modal-label" for="modal-stake">Stake (units)</label>
-    <input id="modal-stake" type="number" min="0" step="0.25" placeholder="e.g. 1.5">
+    <input id="modal-stake" type="number" min="0" step="0.05" placeholder="e.g. 1.5">
 
     <label class="modal-label" for="modal-multiplier">Multiplier / decimal odds you're getting</label>
     <input id="modal-multiplier" type="number" min="1" step="0.01" placeholder="e.g. 1.91">
@@ -97,6 +110,6 @@
   </div>
 </div>
 
-<script src="script.js?v=6"></script>
+<script src="script.js?v=7"></script>
 </body>
 </html>

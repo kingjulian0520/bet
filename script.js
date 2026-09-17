@@ -2,6 +2,7 @@ const UNIT_VALUE_KEY = "closeCallsUnitValue";
 const BETS_KEY = "closeCallsBets";
 
 let currentPicks = [];
+let currentLongShots = [];
 let currentSettled = [];
 let myBets = [];
 let activeModalPick = null;
@@ -74,6 +75,7 @@ async function main() {
   }
 
   currentPicks = data.picks || [];
+  currentLongShots = data.long_shots || [];
   currentSettled = data.settled || [];
 
   const todayStr = todayDateStr();
@@ -88,6 +90,7 @@ async function main() {
 function renderAll() {
   renderDayFilterBar();
   renderPicks();
+  renderLongShots();
   renderExposureSummary();
   renderMyBets();
   renderNetCounter();
@@ -195,6 +198,21 @@ function renderPicks() {
     for (const pick of visiblePicks) {
       root.appendChild(renderCard(pick));
     }
+  }
+}
+
+function renderLongShots() {
+  const root = document.getElementById("longshots-root");
+  if (!root) return;
+
+  if (currentLongShots.length === 0) {
+    root.innerHTML = '<p class="empty-state">No long shots yet.</p>';
+    return;
+  }
+
+  root.innerHTML = "";
+  for (const pick of currentLongShots) {
+    root.appendChild(renderCard(pick));
   }
 }
 
