@@ -7,6 +7,7 @@ let currentSettled = [];
 let myBets = [];
 let activeModalPick = null;
 let activeModalSide = null;
+let openBetMenuId = null;
 
 // ---------- storage ----------
 
@@ -46,6 +47,12 @@ async function main() {
   wireTabs();
   wireModal();
   wireCalendar();
+
+  document.addEventListener("click", (e) => {
+    if (openBetMenuId && !e.target.closest(".bet-menu-wrap")) {
+      closeBetMenu();
+    }
+  });
 
   const unitValueInput = document.getElementById("unit-value-input");
   const savedUnitValue = getUnitValue();
@@ -599,7 +606,6 @@ function buildBetCard(bet) {
       </div>`
     : "";
 
-  const removeBtn = !isSettled ? `<button class="bet-remove" data-id="${bet.id}">Remove</button>` : "";
   const liveBlockId = `live-${bet.id}`;
 
   const liveBlock = !isSettled
@@ -609,25 +615,100 @@ function buildBetCard(bet) {
       </div>`
     : "";
 
+  const isMenuOpen = openBetMenuId === bet.id;
+  const menuHtml = `
+    <div class="bet-menu-wrap">
+      <button class="bet-menu-btn" data-id="${bet.id}" aria-label="Bet options" aria-expanded="${isMenuOpen}">&#8942;</button>
+      <div class="bet-menu-dropdown" ${isMenuOpen ? "" : "hidden"}>
+        <button class="bet-menu-item" data-action="adjust" data-id="${bet.id}">Adjust odds</button>
+        <button class="bet-menu-item danger" data-action="remove" data-id="${bet.id}">Remove</button>
+      </div>
+    </div>
+  `;
+
+  const adjustFormHtml =
+    isMenuOpen && bet.__adjusting
+      ? `<div class="bet-adjust-form">
+          <label>New multiplier / decimal odds</label>
+          <input type="number" min="1" step="0.01" class="bet-adjust-input" value="${bet.multiplier}">
+          <div class="bet-adjust-actions">
+            <button class="secondary-btn bet-adjust-cancel">Cancel</button>
+            <button class="primary-btn bet-adjust-save">Save</button>
+          </div>
+        </div>`
+      : "";
+
   card.innerHTML = `
     <div class="bet-top">
       <span class="bet-matchup">${escapeHtml(bet.matchup)} — backing ${escapeHtml(bet.side)}</span>
       ${statusBadge}
+      ${menuHtml}
     </div>
     <div class="bet-detail">${escapeHtml(bet.sport)} · ${escapeHtml(bet.date)} · ${bet.stakeUnits} units @ ${bet.multiplier}x · EV was ${bet.evPercent >= 0 ? "+" : ""}${bet.evPercent.toFixed(1)}%</div>
     ${bet.finalScore ? `<div class="bet-detail">Final: ${escapeHtml(bet.finalScore)}</div>` : ""}
     ${moneyLine}
     ${profitText}
     ${liveBlock}
-    ${removeBtn}
+    ${adjustFormHtml}
   `;
 
-  const removeButton = card.querySelector(".bet-remove");
-  if (removeButton) {
-    removeButton.addEventListener("click", () => {
+  const menuBtn = card.querySelector(".bet-menu-btn");
+  menuBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    if (openBetMenuId === bet.id) {
+      closeBetMenu();
+    } else {
+      openBetMenuId = bet.id;
+      bet.__adjusting = false;
+      renderMyBets();
+    }
+  });
+
+  const removeItem = card.querySelector('[data-action="remove"]');
+  if (removeItem) {
+    removeItem.addEventListener("click", () => {
+      if (!confirm(`Remove this bet (${bet.matchup} — ${bet.side})? This can't be undone.`)) return;
       stopLiveTracking(bet.id);
       myBets = myBets.filter((b) => b.id !== bet.id);
       saveBets();
+      openBetMenuId = null;
+      renderAll();
+    });
+  }
+
+  const adjustItem = card.querySelector('[data-action="adjust"]');
+  if (adjustItem) {
+    adjustItem.addEventListener("click", () => {
+      bet.__adjusting = true;
+      renderMyBets();
+    });
+  }
+
+  const adjustCancel = card.querySelector(".bet-adjust-cancel");
+  if (adjustCancel) {
+    adjustCancel.addEventListener("click", () => {
+      bet.__adjusting = false;
+      renderMyBets();
+    });
+  }
+
+  const adjustSave = card.querySelector(".bet-adjust-save");
+  if (adjustSave) {
+    adjustSave.addEventListener("click", () => {
+      const input = card.querySelector(".bet-adjust-input");
+      const newMultiplier = parseFloat(input.value);
+      if (isNaN(newMultiplier) || newMultiplier < 1) {
+        alert("Enter a valid multiplier (1 or higher).");
+        return;
+      }
+      bet.multiplier = newMultiplier;
+      bet.evPercent = ((bet.modelProbability / 100) * newMultiplier - 1) * 100;
+      if (bet.status === "won") {
+        bet.profitUnits = bet.stakeUnits * (newMultiplier - 1);
+      }
+      delete bet.__adjusting;
+      saveBets();
+      openBetMenuId = null;
       renderAll();
     });
   }
@@ -637,6 +718,15 @@ function buildBetCard(bet) {
   }
 
   return card;
+}
+
+function closeBetMenu() {
+  if (openBetMenuId) {
+    const bet = myBets.find((b) => b.id === openBetMenuId);
+    if (bet) delete bet.__adjusting;
+  }
+  openBetMenuId = null;
+  renderMyBets();
 }
 
 function renderMyBets() {

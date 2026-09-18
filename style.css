@@ -9,6 +9,7 @@
   --lean-low: #8b93a3;
   --lean-mid: #e0b04f;
   --lean-high: #4fd1a5;
+  --danger: #f47174;
   --live-blue: #4f9eff;
   --radius: 12px;
 }
@@ -212,15 +213,90 @@ body {
 .bet-profit.positive { color: var(--lean-high); }
 .bet-profit.negative { color: var(--danger); }
 
-.bet-remove {
+.bet-menu-wrap {
+  position: relative;
+  margin-left: auto;
+}
+
+.bet-menu-btn {
   background: transparent;
   border: 1px solid var(--border);
   color: var(--muted);
   border-radius: 6px;
-  padding: 0.3rem 0.6rem;
-  font-size: 0.75rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  line-height: 1;
+  font-size: 1.1rem;
   cursor: pointer;
-  margin-top: 0.5rem;
+}
+
+.bet-menu-btn:hover {
+  color: var(--text);
+  border-color: var(--accent-dim);
+}
+
+.bet-menu-dropdown {
+  position: absolute;
+  top: calc(100% + 0.3rem);
+  right: 0;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  min-width: 140px;
+  z-index: 20;
+  overflow: hidden;
+}
+
+.bet-menu-dropdown[hidden] {
+  display: none;
+}
+
+.bet-menu-item {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  text-align: left;
+  padding: 0.55rem 0.8rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.bet-menu-item:hover {
+  background: rgba(139, 147, 163, 0.12);
+}
+
+.bet-menu-item.danger {
+  color: var(--danger);
+}
+
+.bet-adjust-form {
+  margin-top: 0.6rem;
+  padding: 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: rgba(139, 147, 163, 0.06);
+}
+
+.bet-adjust-form label {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+
+.bet-adjust-form input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.bet-adjust-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
 }
 
 .modal-backdrop {
