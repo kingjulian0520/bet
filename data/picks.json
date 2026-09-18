@@ -1,356 +1,7 @@
 {
-  "generated_at": "2026-09-18T04:11:31Z",
+  "generated_at": "2026-09-18T12:16:48Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
-    {
-      "sport": "NFL",
-      "matchup": "Indianapolis Colts vs Kansas City Chiefs",
-      "date": "2026-09-20",
-      "favorite": "Kansas City Chiefs",
-      "estimated_probability": {
-        "Kansas City Chiefs": 62,
-        "Indianapolis Colts": 38
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "Chiefs opened 1-0 with a 31-10 win over Denver; Colts are 0-1 after allowing 506 total yards in a 41-23 loss to Baltimore.",
-        "Colts' run defense was gashed by Baltimore, a real concern against a Chiefs offense that controls tempo at home.",
-        "Game is at Arrowhead Stadium, where Kansas City has a strong recent home track record."
-      ],
-      "sources": [
-        "https://www.covers.com/nfl/colts-vs-chiefs-predictions-odds-early-leans-week-2-2026",
-        "https://www.si.com/betting/colts-vs-chiefs-prediction-odds-spread-injuries-trends-for-nfl-week-2-2026"
-      ]
-    },
-    {
-      "sport": "NFL",
-      "matchup": "New York Giants vs Los Angeles Rams",
-      "date": "2026-09-21",
-      "favorite": "Los Angeles Rams",
-      "estimated_probability": {
-        "Los Angeles Rams": 63,
-        "New York Giants": 37
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "Giants pulled a big Week 1 upset over Dallas in new coach John Harbaugh's debut; Rams were blown out 27-7 by San Francisco.",
-        "Rams placed new pass rusher Myles Garrett on IR, a real hit to their defensive front.",
-        "Despite the ugly opener, the Rams' overall roster is still rated ahead of the Giants' by most evaluators."
-      ],
-      "sources": [
-        "https://www.si.com/betting/giants-vs-rams-prediction-odds-spread-injuries-trends-for-nfl-week-2-2026",
-        "https://bvmsports.com/2026/09/17/giants-vs-rams-week-2-game-preview-prediction-keys-to-victory-nfl-2026-monday-night-football/"
-      ]
-    },
-    {
-      "sport": "MLB",
-      "matchup": "Toronto Blue Jays vs Texas Rangers",
-      "date": "2026-09-19",
-      "favorite": "Texas Rangers",
-      "estimated_probability": {
-        "Texas Rangers": 55,
-        "Toronto Blue Jays": 45
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.5,
-      "reasoning": [
-        "UPDATE: Toronto's rotation shuffled since this pick was first made — Dylan Cease moved up to start Friday (9/18) and José Soriano was pushed back to the Sunday finale (9/20, now its own separate pick vs deGrom). Saturday's Blue Jays starter is unconfirmed as of this update, a real gap.",
-        "Confirmed for Texas: Cal Quantrill starts Saturday. His specific 2026 recent-start form wasn't findable in current coverage — another real gap, not papered over.",
-        "Texas carries a 3-game head-to-head winning streak over Toronto this season, plus home-field at Globe Life Field.",
-        "Neither team is actually strong overall — Blue Jays finished 75-75, Rangers 73-76, both essentially .500 clubs — so this stays close to a coin flip, nudged toward Texas mainly by home field and recent head-to-head form rather than a real pitching or roster edge.",
-        "Both teams are fighting for the final AL wild-card spot with under 10 games left, so motivation is high on both sides."
-      ],
-      "sources": [
-        "https://www.bleachernation.com/picks/2026/09/16/texas-rangers-vs-toronto-blue-jays-series-sept-18-20-odds-starting-pitchers-predictions/",
-        "https://www.si.com/mlb/bluejays/onsi/john-schneider-reveals-2-probable-starters-for-upcoming-series-vs-rangers",
-        "https://champsorchumps.us/team/mlb/texas-rangers/head-to-head/toronto-blue-jays",
-        "https://www.statmuse.com/mlb/ask/blue-jays-away-record-this-year"
-      ]
-    },
-    {
-      "sport": "MLB",
-      "matchup": "Toronto Blue Jays vs Texas Rangers (Sunday, deGrom start)",
-      "date": "2026-09-20",
-      "favorite": "Texas Rangers",
-      "estimated_probability": {
-        "Texas Rangers": 62,
-        "Toronto Blue Jays": 38
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "Jacob deGrom starts the series finale for Texas — 3.96 ERA / 1.14 WHIP this season (10-9, 135:29 K:BB), a clear front-line starter.",
-        "His specific history vs Toronto is genuinely mixed, not a lock: 1-1 with a strong 1.65 ERA in 3 career appearances, but one of those starts was a 2-1 loss where he recorded zero strikeouts in 5.1 innings — the Blue Jays have shown they can work him even when the final line looks good, so this isn't treated as a bigger edge than the evidence supports.",
-        "José Soriano starts for Toronto and has actually been pitching well recently (2.76 ERA over his prior 3 starts before a Yankees loss), which caps how large this edge should be despite deGrom's name value.",
-        "Texas gets a further nudge from home field and the head-to-head streak noted in the Saturday pick, but small-sample pitcher-specific history (3 career games) means this stays a real lean, not a strong one."
-      ],
-      "sources": [
-        "https://www.si.com/mlb/bluejays/onsi/news/blue-jays-accomplished-something-against-jacob-degrom-never-done-before",
-        "https://www.mlb.com/news/jacob-degrom-records-zero-strikeouts-vs-blue-jays",
-        "https://www.foxsports.com/mlb/jose-soriano-player"
-      ]
-    },
-    {
-      "sport": "UFC",
-      "matchup": "Joshua Van vs Alexandre Pantoja",
-      "date": "2026-09-19",
-      "favorite": "Joshua Van",
-      "estimated_probability": {
-        "Joshua Van": 54,
-        "Alexandre Pantoja": 46
-      },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.25,
-      "reasoning": [
-        "Their first meeting ended in 26 seconds on an accidental-injury stoppage, so there's no real in-fight data on how a full bout plays out.",
-        "Market has Van as only a slight favorite (-125 to -133) over Pantoja (+100 to +114) — not a one-sided line.",
-        "Several pro-fighter picks lean toward Pantoja reclaiming the belt despite Van's youth/speed edge, reflecting a genuinely split expert view."
-      ],
-      "sources": [
-        "https://bloodyelbow.com/2026/09/16/joshua-van-offers-prediction-for-ufc-331-title-fight-against-alexandre-pantoja-as-he-promises-banger/",
-        "https://www.lowkickmma.com/ufc-331-van-vs-pantoja-2-preview-stats-odds-picks-and-betting-strategy/"
-      ]
-    },
-    {
-      "sport": "Soccer - EPL",
-      "matchup": "Fulham vs Manchester United",
-      "date": "2026-09-20",
-      "favorite": "Manchester United",
-      "estimated_probability": {
-        "Manchester United": 58,
-        "Fulham": 42
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.5,
-      "reasoning": [
-        "Man United sit 13th with 4 points from 4 games; Fulham are 18th with just 1 point and on a 3-game losing streak.",
-        "Fulham did draw 0-0 away at Liverpool on Matchday 4, showing they can grind out a result defensively.",
-        "United's Bruno Fernandes/Bryan Mbeumo attacking threat is the projected difference-maker despite United's own inconsistent form.",
-        "Presented Draw No Bet: win probabilities normalized to exclude the draw outcome."
-      ],
-      "sources": [
-        "https://www.goal.com/en/news/fulham-manchester-united-premier-league-preview/bltb04fedd95c5eee15",
-        "https://www.dimers.com/epl/predictions/2026_5_ful_mnu"
-      ]
-    },
-    {
-      "sport": "Soccer - EPL",
-      "matchup": "Bournemouth vs Liverpool",
-      "date": "2026-09-20",
-      "favorite": "Liverpool",
-      "estimated_probability": {
-        "Liverpool": 64,
-        "Bournemouth": 36
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "Bournemouth have led in all 4 league games this season under new boss Marco Rose but converted none into wins, drawing the last three.",
-        "Liverpool have also drawn 3 of 4, but carry more overall talent and a lopsided head-to-head history (won 83% of the last 6 vs Bournemouth).",
-        "Both sides have notable injuries (Liverpool missing Ekitike, Chiesa, Bradley; Bournemouth missing Araujo, Kroupi, Adli).",
-        "Presented Draw No Bet: win probabilities normalized to exclude the draw outcome."
-      ],
-      "sources": [
-        "https://www.goal.com/en/news/afc-bournemouth-liverpool-premier-league-preview/blt99eef58b6905f2a4",
-        "https://www.statsinsider.com.au/news/bournemouth-vs-liverpool-prediction-and-tips-20-september-2026"
-      ]
-    },
-    {
-      "sport": "Soccer - EPL",
-      "matchup": "Tottenham Hotspur vs Aston Villa",
-      "date": "2026-09-19",
-      "favorite": "Tottenham Hotspur",
-      "estimated_probability": {
-        "Tottenham Hotspur": 65,
-        "Aston Villa": 35
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 1,
-      "reasoning": [
-        "Both winless: Spurs 17th with 2 points, Villa 19th with 1 point, from 4 games each.",
-        "Villa have lost 3 of their 4 openers, a worse trajectory than Tottenham's two draws.",
-        "Home advantage plus Villa's poor away form so far tips this toward Spurs, though a low-scoring, tight game is expected either way.",
-        "Presented Draw No Bet: win probabilities normalized to exclude the draw outcome."
-      ],
-      "sources": [
-        "https://www.sportskeeda.com/football/tottenham-hotspur-vs-aston-villa-prediction-betting-tips-september-19th-2026",
-        "https://www.dimers.com/epl/news/tottenham-vs-aston-villa-prediction-09-19-2026-ac"
-      ]
-    },
-    {
-      "sport": "NFL Player Props",
-      "matchup": "Patrick Mahomes — Passing Yards O/U 259.5 (Chiefs vs Colts)",
-      "date": "2026-09-20",
-      "favorite": "Over 259.5",
-      "estimated_probability": {
-        "Over 259.5": 60,
-        "Under 259.5": 40
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.5,
-      "reasoning": [
-        "Mahomes threw for 352 yards in his most recent meeting with the Colts and combined for 583 yards across his two prior games against them — a strong track record vs this specific opponent.",
-        "Colts' defense just allowed Lamar Jackson to throw for 324 yards in Week 1, an early red flag for their pass coverage even though Jackson isn't a high-volume passer by trade.",
-        "Counterpoint: Mahomes threw for only 184 yards in Week 1 vs Denver, but that came in a comfortable blowout with a run-heavy second half (he also ran for a TD) — game script, not a talent or arm decline."
-      ],
-      "sources": [
-        "https://www.sports-reference.com/stathead/football/vs/patrick-mahomes-vs-indianapolis-colts",
-        "https://www.washingtonpost.com/sports/nfl/2026/09/13/ravens-colts-score/87dcb546-afb1-11f1-92c2-5c918f4a6127_story.html",
-        "https://www.si.com/nfl/chiefs/onsi/chiefs-qb-patrick-mahomes-provides-honest-assessment-of-his-week-1-performance"
-      ]
-    },
-    {
-      "sport": "NFL Player Props",
-      "matchup": "Puka Nacua — Receiving Yards O/U 79.5 (Rams vs Giants)",
-      "date": "2026-09-21",
-      "favorite": "Over 79.5",
-      "estimated_probability": {
-        "Over 79.5": 63,
-        "Under 79.5": 37
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "Nacua's career per-game average is 95.3 receiving yards, comfortably above this line.",
-        "An analytics projection model has him at roughly 90 receiving yards specifically for this Week 2 matchup vs the Giants.",
-        "He was quiet in Week 1 (74 yards) during the Rams' lopsided loss to San Francisco, but that came in a blowout script that likely suppressed pass volume — a more balanced game vs the Giants should mean more targets."
-      ],
-      "sources": [
-        "https://www.statmuse.com/nfl/ask/puka-nacua-yards-per-game",
-        "https://www.dimers.com/nfl/news/puka-nacua-projected-fantasy-stats-nfl-week-2-2026-ac"
-      ]
-    },
-    {
-      "sport": "NFL Totals",
-      "matchup": "Total Points O/U 47.5 (Colts vs Chiefs)",
-      "date": "2026-09-20",
-      "favorite": "Over 47.5",
-      "estimated_probability": {
-        "Over 47.5": 57,
-        "Under 47.5": 43
-      },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.5,
-      "reasoning": [
-        "Colts' defense ranked 29th in the NFL in EPA/play after Week 1 and was torched for 41 points by Baltimore, a real red flag against a Chiefs offense with a history of big output vs Indy (352 passing yards from Mahomes in their last meeting).",
-        "Counterweight: Chiefs' defense was elite in Week 1 (No. 1 EPA/play, No. 2 success rate in the league), which could cap Colts' scoring and shorten the game via a likely running clock in a blowout.",
-        "Set our own total at 47.5 — below the raw sum of each team's Week 1 output (31 + 23 = 54) to account for that defensive counterweight, while still leaning Over given how leaky the Colts' defense looked."
-      ],
-      "sources": [
-        "https://www.foxsports.com/stories/nfl/2026-nfl-defense-rankings-team-pass-rush-stats",
-        "https://www.si.com/betting/colts-vs-chiefs-prediction-odds-spread-injuries-trends-for-nfl-week-2-2026"
-      ]
-    },
-    {
-      "sport": "NFL Player Props",
-      "matchup": "Malik Nabers — Receptions O/U 5.5 (Giants vs Rams)",
-      "date": "2026-09-21",
-      "favorite": "Over 5.5",
-      "estimated_probability": {
-        "Over 5.5": 58,
-        "Under 5.5": 42
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.5,
-      "reasoning": [
-        "Nabers caught 6 passes in his Week 1 return from a 2025 ACL injury, showing the Giants trust him as an immediate high-volume target.",
-        "New coach John Harbaugh's offense leaned on him in a signature upset win over Dallas, suggesting a featured role rather than a cautious workload.",
-        "Limited matchup-specific data on the Rams' pass defense vs slot/possession receivers is the main uncertainty here — treated as a modest lean rather than a strong one."
-      ],
-      "sources": [
-        "https://www.statmuse.com/nfl/ask/malik-nabers-receptions-per-game",
-        "https://www.pro-football-reference.com/players/N/NabeMa00.htm"
-      ]
-    },
-    {
-      "sport": "Soccer - EPL",
-      "matchup": "Manchester City vs Sunderland",
-      "date": "2026-09-20",
-      "favorite": "Manchester City",
-      "estimated_probability": {
-        "Manchester City": 78,
-        "Sunderland": 22
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "reasoning": [
-        "Man City have won all 4 games to open the season (12 points, +6 goal difference) and just won the derby at Old Trafford — as good a run of form as any team in the league right now.",
-        "Sunderland are a newly-promoted side with only 4 points from 4 games (1W-1D-2L) and a -2 goal difference, playing away at the Etihad.",
-        "Not treated as a certainty — soccer has more low-scoring randomness/draw risk than most sports, so this stays a strong lean rather than a lock despite the gap in quality.",
-        "Presented Draw No Bet: win probabilities normalized to exclude the draw outcome."
-      ],
-      "sources": [
-        "https://www.goal.com/en/news/manchester-city-sunderland-premier-league-preview/bltfdf076fea1515345",
-        "https://www.dimers.com/epl/predictions/2026_5_mnc_sun"
-      ]
-    },
-    {
-      "sport": "NFL",
-      "matchup": "Miami Dolphins vs San Francisco 49ers",
-      "date": "2026-09-20",
-      "favorite": "San Francisco 49ers",
-      "estimated_probability": {
-        "San Francisco 49ers": 83,
-        "Miami Dolphins": 17
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "reasoning": [
-        "49ers' defense was the stingiest in the league in Week 1, holding an opponent to just 7 points.",
-        "Dolphins are in a rebuild widely projected for a 3-4 win season and are outmatched at most positions on paper.",
-        "Kept below 85% deliberately — the NFL has real weekly upset variance even in lopsided-on-paper matchups, so this is a strong favorite, not a sure thing."
-      ],
-      "sources": [
-        "https://www.statsinsider.com.au/news/49ers-vs-dolphins-prediction-and-preview-nfl-week-2-2026",
-        "https://sports.yahoo.com/articles/san-francisco-49ers-play-next-033528466.html"
-      ]
-    },
-    {
-      "sport": "MLB",
-      "matchup": "San Francisco Giants vs Los Angeles Dodgers",
-      "date": "2026-09-19",
-      "favorite": "Los Angeles Dodgers",
-      "estimated_probability": {
-        "Los Angeles Dodgers": 72,
-        "San Francisco Giants": 28
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.25,
-      "reasoning": [
-        "The Giants are 63-89 this season, one of the worst records in MLB, while the Dodgers hold a comfortable division lead.",
-        "Kept at 72% rather than higher — a single MLB game is one of the most upset-prone units in sports (one bad outing from a starter swings it), so even a huge season-long gap in team quality doesn't make one game close to certain."
-      ],
-      "sources": [
-        "https://www.mlb.com/news/mlb-playoff-picture-and-bracket-2026",
-        "https://www.nbc.com/nbc-insider/los-angeles-dodgers-full-2026-mlb-season-schedule"
-      ]
-    },
-    {
-      "sport": "Parlays",
-      "matchup": "3-Leg Parlay: Man City ML + 49ers ML + Dodgers ML",
-      "date": "2026-09-20",
-      "favorite": "Hits",
-      "estimated_probability": {
-        "Hits": 47,
-        "Doesn't Hit": 53
-      },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.25,
-      "reasoning": [
-        "Legs: Manchester City to beat Sunderland (our estimate 78%), San Francisco 49ers to beat Miami (83%), Los Angeles Dodgers to beat San Francisco Giants (72%) — three independent games, no shared outcome dependency.",
-        "Combined hit probability is the product of the three: 0.78 x 0.83 x 0.72 = ~47%, not the 78-83% any single leg looks like on its own. Stacking strong favorites into a parlay erodes back toward a coin flip fast.",
-        "This is exactly why the unit size here is a fraction of what any single leg would get on its own (1.25-1.75 units solo vs 0.25 units combined) — the parlay is a much riskier bet than 'three safe picks' intuitively feels like.",
-        "Only 'Hits' is a real, placeable bet — a sportsbook doesn't sell 'this exact parlay misses' as a ticket, so the 'Doesn't Hit' side shown here is for probability context only, not something to stake money on.",
-        "None of the three legs is a certainty on its own (see their individual entries) — treat this as a long-shot-payout play, not a 'safe' bet."
-      ],
-      "sources": [
-        "https://www.dimers.com/epl/predictions/2026_5_mnc_sun",
-        "https://www.statsinsider.com.au/news/49ers-vs-dolphins-prediction-and-preview-nfl-week-2-2026",
-        "https://www.mlb.com/news/mlb-playoff-picture-and-bracket-2026"
-      ]
-    },
     {
       "sport": "MLB",
       "matchup": "Miami Marlins vs San Diego Padres",
@@ -431,6 +82,409 @@
       ],
       "sources": [
         "https://en.wikipedia.org/wiki/Bryan_Woo"
+      ]
+    },
+    {
+      "sport": "WTA",
+      "matchup": "Paula Badosa vs Mary Stoiana",
+      "date": "2026-09-18",
+      "favorite": "Paula Badosa",
+      "estimated_probability": {
+        "Paula Badosa": 62,
+        "Mary Stoiana": 38
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "SP Open (WTA 250, hardcourt, Sao Paulo) quarterfinal, Friday 5:30pm local on Court 1.",
+        "Ranking gap is real but not huge: Badosa is a former top-10 player currently rebuilding at roughly world No. 70; Stoiana is a fast-rising 21-year-old at a career-high No. 122 who only recently cracked the top 150.",
+        "Recent form in this event favors Badosa slightly on paper (won her QF-qualifying matches 6-3 6-2 then 4-6 6-2 6-2) but she needed a third set against a much lower-ranked Ortenzi, which is a real red flag, not a footnote.",
+        "Real, explicitly-flagged gap: Badosa has a documented recent injury history (a back stress fracture and a torn hip labrum) that has repeatedly interrupted her comeback in 2025-2026 - this caps how heavily her ranking/experience edge should be weighted.",
+        "Stoiana has looked comfortable getting here (6-3 7-5, then 7-6(5) 6-1) and is in career-best form, playing without the injury cloud Badosa carries.",
+        "No prior head-to-head between the two.",
+        "Market roughly agrees with this range: one bookmaker (TAB) prices it near 63/37 in implied probability, consistent with a real but not overwhelming favorite rather than a lock.",
+        "Net: Badosa's quality edge is real, but the injury history and a shaky third-set win to get here keep this at a lean, not a strong lean."
+      ],
+      "sources": [
+        "https://www.sportskeeda.com/tennis/paula-badosa-vs-mary-stoiana-preview-head-to-head-odds-prediction-betting-tips-sp-open-2026",
+        "https://en.wikipedia.org/wiki/Paula_Badosa",
+        "https://www.wtatennis.com/players/330265/mary-stoiana",
+        "https://www.creditonecharlestonopen.com/articles/navigating-injuries-paula-badosa-sets-out-to-reclimb-mountain/"
+      ]
+    },
+    {
+      "sport": "WTA",
+      "matchup": "Anna Blinkova vs Alina Charaeva",
+      "date": "2026-09-18",
+      "favorite": "Anna Blinkova",
+      "estimated_probability": {
+        "Anna Blinkova": 55,
+        "Alina Charaeva": 45
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "SP Open quarterfinal, Friday 3:30pm local on Court 1 - the earlier match on the same court/day as Badosa-Stoiana.",
+        "Genuinely close on the numbers: Blinkova (4-seed) is ranked No. 94, but her 2026 season record (26-28) is actually worse than Charaeva's (8-seed, 32-21) - sources disagree on Charaeva's exact current rank (108/118/133 depending on the site), which is itself a sign this isn't a clean gap.",
+        "Both are in good form to reach this stage: Blinkova won 6-1 6-3 then 6-3 6-0; Charaeva won a tighter 3-6 7-6(5) 6-3 then a clean 6-2 6-3.",
+        "No head-to-head history between them - first tour meeting.",
+        "Slight lean to Blinkova mainly on seeding/higher nominal ranking and the more comfortable second-round scoreline, not on any decisive edge - this is intentionally sized and labeled as a coin flip rather than inflated because it's the higher seed.",
+        "Real gap: no confirmed reporting found on either player's physical condition/fatigue after their round-of-16 matches, which could matter on a same-day turnaround."
+      ],
+      "sources": [
+        "https://www.sportskeeda.com/tennis/anna-blinkova-vs-alina-charaeva-preview-head-to-head-odds-prediction-betting-tips-sp-open-2026",
+        "https://en.wikipedia.org/wiki/Anna_Blinkova",
+        "https://en.wikipedia.org/wiki/Alina_Charaeva",
+        "https://en.tennistemple.com/actu/anna-blinkova-wins-first-match-as-french-citizen/EvkC"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Toronto Blue Jays vs Texas Rangers",
+      "date": "2026-09-19",
+      "favorite": "Texas Rangers",
+      "estimated_probability": {
+        "Texas Rangers": 55,
+        "Toronto Blue Jays": 45
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "UPDATE: Toronto's rotation shuffled since this pick was first made — Dylan Cease moved up to start Friday (9/18) and José Soriano was pushed back to the Sunday finale (9/20, now its own separate pick vs deGrom). Saturday's Blue Jays starter is unconfirmed as of this update, a real gap.",
+        "Confirmed for Texas: Cal Quantrill starts Saturday. His specific 2026 recent-start form wasn't findable in current coverage — another real gap, not papered over.",
+        "Texas carries a 3-game head-to-head winning streak over Toronto this season, plus home-field at Globe Life Field.",
+        "Neither team is actually strong overall — Blue Jays finished 75-75, Rangers 73-76, both essentially .500 clubs — so this stays close to a coin flip, nudged toward Texas mainly by home field and recent head-to-head form rather than a real pitching or roster edge.",
+        "Both teams are fighting for the final AL wild-card spot with under 10 games left, so motivation is high on both sides."
+      ],
+      "sources": [
+        "https://www.bleachernation.com/picks/2026/09/16/texas-rangers-vs-toronto-blue-jays-series-sept-18-20-odds-starting-pitchers-predictions/",
+        "https://www.si.com/mlb/bluejays/onsi/john-schneider-reveals-2-probable-starters-for-upcoming-series-vs-rangers",
+        "https://champsorchumps.us/team/mlb/texas-rangers/head-to-head/toronto-blue-jays",
+        "https://www.statmuse.com/mlb/ask/blue-jays-away-record-this-year"
+      ]
+    },
+    {
+      "sport": "UFC",
+      "matchup": "Joshua Van vs Alexandre Pantoja",
+      "date": "2026-09-19",
+      "favorite": "Joshua Van",
+      "estimated_probability": {
+        "Joshua Van": 54,
+        "Alexandre Pantoja": 46
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.25,
+      "reasoning": [
+        "Their first meeting ended in 26 seconds on an accidental-injury stoppage, so there's no real in-fight data on how a full bout plays out.",
+        "Market has Van as only a slight favorite (-125 to -133) over Pantoja (+100 to +114) — not a one-sided line.",
+        "Several pro-fighter picks lean toward Pantoja reclaiming the belt despite Van's youth/speed edge, reflecting a genuinely split expert view."
+      ],
+      "sources": [
+        "https://bloodyelbow.com/2026/09/16/joshua-van-offers-prediction-for-ufc-331-title-fight-against-alexandre-pantoja-as-he-promises-banger/",
+        "https://www.lowkickmma.com/ufc-331-van-vs-pantoja-2-preview-stats-odds-picks-and-betting-strategy/"
+      ]
+    },
+    {
+      "sport": "Soccer - EPL",
+      "matchup": "Tottenham Hotspur vs Aston Villa",
+      "date": "2026-09-19",
+      "favorite": "Tottenham Hotspur",
+      "estimated_probability": {
+        "Tottenham Hotspur": 65,
+        "Aston Villa": 35
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Both winless: Spurs 17th with 2 points, Villa 19th with 1 point, from 4 games each.",
+        "Villa have lost 3 of their 4 openers, a worse trajectory than Tottenham's two draws.",
+        "Home advantage plus Villa's poor away form so far tips this toward Spurs, though a low-scoring, tight game is expected either way.",
+        "Presented Draw No Bet: win probabilities normalized to exclude the draw outcome."
+      ],
+      "sources": [
+        "https://www.sportskeeda.com/football/tottenham-hotspur-vs-aston-villa-prediction-betting-tips-september-19th-2026",
+        "https://www.dimers.com/epl/news/tottenham-vs-aston-villa-prediction-09-19-2026-ac"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "San Francisco Giants vs Los Angeles Dodgers",
+      "date": "2026-09-19",
+      "favorite": "Los Angeles Dodgers",
+      "estimated_probability": {
+        "Los Angeles Dodgers": 72,
+        "San Francisco Giants": 28
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "The Giants are 63-89 this season, one of the worst records in MLB, while the Dodgers hold a comfortable division lead.",
+        "Kept at 72% rather than higher — a single MLB game is one of the most upset-prone units in sports (one bad outing from a starter swings it), so even a huge season-long gap in team quality doesn't make one game close to certain."
+      ],
+      "sources": [
+        "https://www.mlb.com/news/mlb-playoff-picture-and-bracket-2026",
+        "https://www.nbc.com/nbc-insider/los-angeles-dodgers-full-2026-mlb-season-schedule"
+      ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Indianapolis Colts vs Kansas City Chiefs",
+      "date": "2026-09-20",
+      "favorite": "Kansas City Chiefs",
+      "estimated_probability": {
+        "Kansas City Chiefs": 62,
+        "Indianapolis Colts": 38
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Chiefs opened 1-0 with a 31-10 win over Denver; Colts are 0-1 after allowing 506 total yards in a 41-23 loss to Baltimore.",
+        "Colts' run defense was gashed by Baltimore, a real concern against a Chiefs offense that controls tempo at home.",
+        "Game is at Arrowhead Stadium, where Kansas City has a strong recent home track record."
+      ],
+      "sources": [
+        "https://www.covers.com/nfl/colts-vs-chiefs-predictions-odds-early-leans-week-2-2026",
+        "https://www.si.com/betting/colts-vs-chiefs-prediction-odds-spread-injuries-trends-for-nfl-week-2-2026"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Toronto Blue Jays vs Texas Rangers (Sunday, deGrom start)",
+      "date": "2026-09-20",
+      "favorite": "Texas Rangers",
+      "estimated_probability": {
+        "Texas Rangers": 62,
+        "Toronto Blue Jays": 38
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Jacob deGrom starts the series finale for Texas — 3.96 ERA / 1.14 WHIP this season (10-9, 135:29 K:BB), a clear front-line starter.",
+        "His specific history vs Toronto is genuinely mixed, not a lock: 1-1 with a strong 1.65 ERA in 3 career appearances, but one of those starts was a 2-1 loss where he recorded zero strikeouts in 5.1 innings — the Blue Jays have shown they can work him even when the final line looks good, so this isn't treated as a bigger edge than the evidence supports.",
+        "José Soriano starts for Toronto and has actually been pitching well recently (2.76 ERA over his prior 3 starts before a Yankees loss), which caps how large this edge should be despite deGrom's name value.",
+        "Texas gets a further nudge from home field and the head-to-head streak noted in the Saturday pick, but small-sample pitcher-specific history (3 career games) means this stays a real lean, not a strong one."
+      ],
+      "sources": [
+        "https://www.si.com/mlb/bluejays/onsi/news/blue-jays-accomplished-something-against-jacob-degrom-never-done-before",
+        "https://www.mlb.com/news/jacob-degrom-records-zero-strikeouts-vs-blue-jays",
+        "https://www.foxsports.com/mlb/jose-soriano-player"
+      ]
+    },
+    {
+      "sport": "Soccer - EPL",
+      "matchup": "Fulham vs Manchester United",
+      "date": "2026-09-20",
+      "favorite": "Manchester United",
+      "estimated_probability": {
+        "Manchester United": 58,
+        "Fulham": 42
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Man United sit 13th with 4 points from 4 games; Fulham are 18th with just 1 point and on a 3-game losing streak.",
+        "Fulham did draw 0-0 away at Liverpool on Matchday 4, showing they can grind out a result defensively.",
+        "United's Bruno Fernandes/Bryan Mbeumo attacking threat is the projected difference-maker despite United's own inconsistent form.",
+        "Presented Draw No Bet: win probabilities normalized to exclude the draw outcome."
+      ],
+      "sources": [
+        "https://www.goal.com/en/news/fulham-manchester-united-premier-league-preview/bltb04fedd95c5eee15",
+        "https://www.dimers.com/epl/predictions/2026_5_ful_mnu"
+      ]
+    },
+    {
+      "sport": "Soccer - EPL",
+      "matchup": "Bournemouth vs Liverpool",
+      "date": "2026-09-20",
+      "favorite": "Liverpool",
+      "estimated_probability": {
+        "Liverpool": 64,
+        "Bournemouth": 36
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Bournemouth have led in all 4 league games this season under new boss Marco Rose but converted none into wins, drawing the last three.",
+        "Liverpool have also drawn 3 of 4, but carry more overall talent and a lopsided head-to-head history (won 83% of the last 6 vs Bournemouth).",
+        "Both sides have notable injuries (Liverpool missing Ekitike, Chiesa, Bradley; Bournemouth missing Araujo, Kroupi, Adli).",
+        "Presented Draw No Bet: win probabilities normalized to exclude the draw outcome."
+      ],
+      "sources": [
+        "https://www.goal.com/en/news/afc-bournemouth-liverpool-premier-league-preview/blt99eef58b6905f2a4",
+        "https://www.statsinsider.com.au/news/bournemouth-vs-liverpool-prediction-and-tips-20-september-2026"
+      ]
+    },
+    {
+      "sport": "NFL Player Props",
+      "matchup": "Patrick Mahomes — Passing Yards O/U 259.5 (Chiefs vs Colts)",
+      "date": "2026-09-20",
+      "favorite": "Over 259.5",
+      "estimated_probability": {
+        "Over 259.5": 60,
+        "Under 259.5": 40
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Mahomes threw for 352 yards in his most recent meeting with the Colts and combined for 583 yards across his two prior games against them — a strong track record vs this specific opponent.",
+        "Colts' defense just allowed Lamar Jackson to throw for 324 yards in Week 1, an early red flag for their pass coverage even though Jackson isn't a high-volume passer by trade.",
+        "Counterpoint: Mahomes threw for only 184 yards in Week 1 vs Denver, but that came in a comfortable blowout with a run-heavy second half (he also ran for a TD) — game script, not a talent or arm decline."
+      ],
+      "sources": [
+        "https://www.sports-reference.com/stathead/football/vs/patrick-mahomes-vs-indianapolis-colts",
+        "https://www.washingtonpost.com/sports/nfl/2026/09/13/ravens-colts-score/87dcb546-afb1-11f1-92c2-5c918f4a6127_story.html",
+        "https://www.si.com/nfl/chiefs/onsi/chiefs-qb-patrick-mahomes-provides-honest-assessment-of-his-week-1-performance"
+      ]
+    },
+    {
+      "sport": "NFL Totals",
+      "matchup": "Total Points O/U 47.5 (Colts vs Chiefs)",
+      "date": "2026-09-20",
+      "favorite": "Over 47.5",
+      "estimated_probability": {
+        "Over 47.5": 57,
+        "Under 47.5": 43
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Colts' defense ranked 29th in the NFL in EPA/play after Week 1 and was torched for 41 points by Baltimore, a real red flag against a Chiefs offense with a history of big output vs Indy (352 passing yards from Mahomes in their last meeting).",
+        "Counterweight: Chiefs' defense was elite in Week 1 (No. 1 EPA/play, No. 2 success rate in the league), which could cap Colts' scoring and shorten the game via a likely running clock in a blowout.",
+        "Set our own total at 47.5 — below the raw sum of each team's Week 1 output (31 + 23 = 54) to account for that defensive counterweight, while still leaning Over given how leaky the Colts' defense looked."
+      ],
+      "sources": [
+        "https://www.foxsports.com/stories/nfl/2026-nfl-defense-rankings-team-pass-rush-stats",
+        "https://www.si.com/betting/colts-vs-chiefs-prediction-odds-spread-injuries-trends-for-nfl-week-2-2026"
+      ]
+    },
+    {
+      "sport": "Soccer - EPL",
+      "matchup": "Manchester City vs Sunderland",
+      "date": "2026-09-20",
+      "favorite": "Manchester City",
+      "estimated_probability": {
+        "Manchester City": 78,
+        "Sunderland": 22
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "Man City have won all 4 games to open the season (12 points, +6 goal difference) and just won the derby at Old Trafford — as good a run of form as any team in the league right now.",
+        "Sunderland are a newly-promoted side with only 4 points from 4 games (1W-1D-2L) and a -2 goal difference, playing away at the Etihad.",
+        "Not treated as a certainty — soccer has more low-scoring randomness/draw risk than most sports, so this stays a strong lean rather than a lock despite the gap in quality.",
+        "Presented Draw No Bet: win probabilities normalized to exclude the draw outcome."
+      ],
+      "sources": [
+        "https://www.goal.com/en/news/manchester-city-sunderland-premier-league-preview/bltfdf076fea1515345",
+        "https://www.dimers.com/epl/predictions/2026_5_mnc_sun"
+      ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Miami Dolphins vs San Francisco 49ers",
+      "date": "2026-09-20",
+      "favorite": "San Francisco 49ers",
+      "estimated_probability": {
+        "San Francisco 49ers": 83,
+        "Miami Dolphins": 17
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "reasoning": [
+        "49ers' defense was the stingiest in the league in Week 1, holding an opponent to just 7 points.",
+        "Dolphins are in a rebuild widely projected for a 3-4 win season and are outmatched at most positions on paper.",
+        "Kept below 85% deliberately — the NFL has real weekly upset variance even in lopsided-on-paper matchups, so this is a strong favorite, not a sure thing."
+      ],
+      "sources": [
+        "https://www.statsinsider.com.au/news/49ers-vs-dolphins-prediction-and-preview-nfl-week-2-2026",
+        "https://sports.yahoo.com/articles/san-francisco-49ers-play-next-033528466.html"
+      ]
+    },
+    {
+      "sport": "Parlays",
+      "matchup": "3-Leg Parlay: Man City ML + 49ers ML + Dodgers ML",
+      "date": "2026-09-20",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 47,
+        "Doesn't Hit": 53
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.25,
+      "reasoning": [
+        "Legs: Manchester City to beat Sunderland (our estimate 78%), San Francisco 49ers to beat Miami (83%), Los Angeles Dodgers to beat San Francisco Giants (72%) — three independent games, no shared outcome dependency.",
+        "Combined hit probability is the product of the three: 0.78 x 0.83 x 0.72 = ~47%, not the 78-83% any single leg looks like on its own. Stacking strong favorites into a parlay erodes back toward a coin flip fast.",
+        "This is exactly why the unit size here is a fraction of what any single leg would get on its own (1.25-1.75 units solo vs 0.25 units combined) — the parlay is a much riskier bet than 'three safe picks' intuitively feels like.",
+        "Only 'Hits' is a real, placeable bet — a sportsbook doesn't sell 'this exact parlay misses' as a ticket, so the 'Doesn't Hit' side shown here is for probability context only, not something to stake money on.",
+        "None of the three legs is a certainty on its own (see their individual entries) — treat this as a long-shot-payout play, not a 'safe' bet."
+      ],
+      "sources": [
+        "https://www.dimers.com/epl/predictions/2026_5_mnc_sun",
+        "https://www.statsinsider.com.au/news/49ers-vs-dolphins-prediction-and-preview-nfl-week-2-2026",
+        "https://www.mlb.com/news/mlb-playoff-picture-and-bracket-2026"
+      ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "New York Giants vs Los Angeles Rams",
+      "date": "2026-09-21",
+      "favorite": "Los Angeles Rams",
+      "estimated_probability": {
+        "Los Angeles Rams": 63,
+        "New York Giants": 37
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Giants pulled a big Week 1 upset over Dallas in new coach John Harbaugh's debut; Rams were blown out 27-7 by San Francisco.",
+        "Rams placed new pass rusher Myles Garrett on IR, a real hit to their defensive front.",
+        "Despite the ugly opener, the Rams' overall roster is still rated ahead of the Giants' by most evaluators."
+      ],
+      "sources": [
+        "https://www.si.com/betting/giants-vs-rams-prediction-odds-spread-injuries-trends-for-nfl-week-2-2026",
+        "https://bvmsports.com/2026/09/17/giants-vs-rams-week-2-game-preview-prediction-keys-to-victory-nfl-2026-monday-night-football/"
+      ]
+    },
+    {
+      "sport": "NFL Player Props",
+      "matchup": "Puka Nacua — Receiving Yards O/U 79.5 (Rams vs Giants)",
+      "date": "2026-09-21",
+      "favorite": "Over 79.5",
+      "estimated_probability": {
+        "Over 79.5": 63,
+        "Under 79.5": 37
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Nacua's career per-game average is 95.3 receiving yards, comfortably above this line.",
+        "An analytics projection model has him at roughly 90 receiving yards specifically for this Week 2 matchup vs the Giants.",
+        "He was quiet in Week 1 (74 yards) during the Rams' lopsided loss to San Francisco, but that came in a blowout script that likely suppressed pass volume — a more balanced game vs the Giants should mean more targets."
+      ],
+      "sources": [
+        "https://www.statmuse.com/nfl/ask/puka-nacua-yards-per-game",
+        "https://www.dimers.com/nfl/news/puka-nacua-projected-fantasy-stats-nfl-week-2-2026-ac"
+      ]
+    },
+    {
+      "sport": "NFL Player Props",
+      "matchup": "Malik Nabers — Receptions O/U 5.5 (Giants vs Rams)",
+      "date": "2026-09-21",
+      "favorite": "Over 5.5",
+      "estimated_probability": {
+        "Over 5.5": 58,
+        "Under 5.5": 42
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Nabers caught 6 passes in his Week 1 return from a 2025 ACL injury, showing the Giants trust him as an immediate high-volume target.",
+        "New coach John Harbaugh's offense leaned on him in a signature upset win over Dallas, suggesting a featured role rather than a cautious workload.",
+        "Limited matchup-specific data on the Rams' pass defense vs slot/possession receivers is the main uncertainty here — treated as a modest lean rather than a strong one."
+      ],
+      "sources": [
+        "https://www.statmuse.com/nfl/ask/malik-nabers-receptions-per-game",
+        "https://www.pro-football-reference.com/players/N/NabeMa00.htm"
       ]
     }
   ],
