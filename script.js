@@ -114,9 +114,19 @@ function hasStarted(pick) {
   return !!pick.start_time && new Date(pick.start_time).getTime() <= Date.now();
 }
 
+// Once you've already placed a bet on a pick, it disappears from the
+// browsable Picks/Long Shots list - seeing the same matchup there again
+// after you've already acted on it is just confusing. Removing the bet
+// (via the 3-dot menu) brings the pick back into view automatically,
+// since this is re-evaluated against myBets on every render.
+function hasBet(pick) {
+  const key = pickKey(pick);
+  return myBets.some((b) => b.key === key);
+}
+
 function prunePicks() {
-  currentPicks = rawPicks.filter((p) => !hasStarted(p));
-  currentLongShots = rawLongShots.filter((p) => !hasStarted(p));
+  currentPicks = rawPicks.filter((p) => !hasStarted(p) && !hasBet(p));
+  currentLongShots = rawLongShots.filter((p) => !hasStarted(p) && !hasBet(p));
 }
 
 function renderAll() {
