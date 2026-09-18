@@ -609,6 +609,18 @@ async function fetchJsonSafe(url) {
   }
 }
 
+// ESPN's undocumented API doesn't send Access-Control-Allow-Origin for
+// arbitrary sites, so direct browser fetches get blocked by CORS. Route
+// through a public CORS-relay proxy that fetches server-side and re-adds
+// permissive headers. This is a best-effort workaround, not guaranteed —
+// if the proxy itself is ever down or rate-limited, live tracking will
+// just show "unavailable" rather than break anything else on the page.
+const CORS_PROXY = "https://api.allorigins.win/raw?url=";
+
+async function espnFetch(url) {
+  return fetchJsonSafe(CORS_PROXY + encodeURIComponent(url));
+}
+
 function normalizeTeamKey(name) {
   return String(name || "").toLowerCase().replace(/[^a-z]/g, "");
 }
@@ -641,7 +653,7 @@ function parsePropInfo(bet) {
 
 async function findEspnEvent(espnPath, dateStr, teamA, teamB) {
   for (const candidateDate of [dateStr, shiftDate(dateStr, 1), shiftDate(dateStr, -1)]) {
-    const data = await fetchJsonSafe(
+    const data = await espnFetch(
       `https://site.api.espn.com/apis/site/v2/sports/${espnPath}/scoreboard?dates=${espnDateParam(candidateDate)}`
     );
     if (!data || !Array.isArray(data.events)) continue;
@@ -733,7 +745,7 @@ async function fetchPlayerStatValue(espnPath, eventId, playerName, statLabel) {
   const spec = STAT_LABEL_MAP[statLabel];
   if (!spec) return null;
 
-  const data = await fetchJsonSafe(`https://site.api.espn.com/apis/site/v2/sports/${espnPath}/summary?event=${eventId}`);
+  const data = await espnFetch(`https://site.api.espn.com/apis/site/v2/sports/${espnPath}/summary?event=${eventId}`);
   if (!data || !data.boxscore || !Array.isArray(data.boxscore.players)) return null;
 
   for (const teamBlock of data.boxscore.players) {
@@ -873,10 +885,14 @@ async function pollLiveProbability(bet, containerId) {
 }
 
 function startLiveTracking(bet, containerId) {
-  pollLiveDisplay(bet, containerId);
+  // Deferred, not called directly: this runs before the card has been
+  // appended to the document (buildBetCard calls this before returning
+  // the element to renderMyBets, which appends it), so an immediate
+  // document.getElementById lookup here would always fail.
+  setTimeout(() => pollLiveDisplay(bet, containerId), 50);
+  setTimeout(() => pollLiveProbability(bet, containerId), 2500);
   const scoreTimer = setInterval(() => pollLiveDisplay(bet, containerId), LIVE_SCORE_INTERVAL_MS);
   const probTimer = setInterval(() => pollLiveProbability(bet, containerId), LIVE_PROB_INTERVAL_MS);
-  setTimeout(() => pollLiveProbability(bet, containerId), 2500);
   liveTimers[bet.id] = { scoreTimer, probTimer };
 }
 
