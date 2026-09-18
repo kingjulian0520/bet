@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T22:23:11Z",
+  "generated_at": "2026-09-18T03:27:08Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
@@ -608,6 +608,13 @@
       "estimated_probability": { "Hits": 20, "Doesn't Hit": 80 },
       "confidence_label": "Coin flip",
       "recommended_units": 0.15,
+      "legs": [
+        { "sport": "NFL", "matchup": "Miami Dolphins vs San Francisco 49ers", "date": "2026-09-20", "side": "San Francisco 49ers", "probability": 83 },
+        { "sport": "Soccer - EPL", "matchup": "Manchester City vs Sunderland", "date": "2026-09-20", "side": "Manchester City", "probability": 78 },
+        { "sport": "MLB", "matchup": "Seattle Mariners vs Colorado Rockies", "date": "2026-09-18", "side": "Seattle Mariners", "probability": 66 },
+        { "sport": "MLB", "matchup": "Kansas City Royals vs Houston Astros", "date": "2026-09-17", "side": "Houston Astros", "probability": 65 },
+        { "sport": "MLB", "matchup": "San Francisco Giants vs Los Angeles Dodgers", "date": "2026-09-19", "side": "Los Angeles Dodgers", "probability": 72 }
+      ],
       "reasoning": [
         "Every leg here is the SAME side already favored in the main Picks tab (49ers 83%, Man City 78%, Mariners 66%, Astros 65%, Dodgers 72%) — nothing here fights those picks. If you follow every pick on the Picks tab, this parlay hitting is just those five outcomes all landing at once, never a reason for one of your other bets to lose.",
         "Combined probability is the product of the five: 0.83 x 0.78 x 0.66 x 0.65 x 0.72 = ~20% — a real long shot despite every individual leg being a lean or better, which is exactly why the stake here is far smaller than any leg gets on its own.",

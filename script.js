@@ -411,6 +411,7 @@ function placeBet() {
     multiplier,
     modelProbability: p,
     evPercent,
+    legs: Array.isArray(activeModalPick.legs) ? activeModalPick.legs : null,
     placedAt: new Date().toISOString(),
     status: "pending",
     profitUnits: null,
@@ -472,6 +473,13 @@ function buildBetCard(bet) {
   const removeBtn = !isSettled ? `<button class="bet-remove" data-id="${bet.id}">Remove</button>` : "";
   const liveBlockId = `live-${bet.id}`;
 
+  const liveBlock = !isSettled
+    ? `<div class="live-block">
+        <div class="live-status" id="${liveBlockId}-status"></div>
+        <div class="live-prob-line" id="${liveBlockId}-prob">${formatBaselineProb(bet)}</div>
+      </div>`
+    : "";
+
   card.innerHTML = `
     <div class="bet-top">
       <span class="bet-matchup">${escapeHtml(bet.matchup)} — backing ${escapeHtml(bet.side)}</span>
@@ -481,7 +489,7 @@ function buildBetCard(bet) {
     ${bet.finalScore ? `<div class="bet-detail">Final: ${escapeHtml(bet.finalScore)}</div>` : ""}
     ${moneyLine}
     ${profitText}
-    ${!isSettled ? `<div class="live-block" id="${liveBlockId}"></div>` : ""}
+    ${liveBlock}
     ${removeBtn}
   `;
 
@@ -765,72 +773,146 @@ async function fetchPlayerStatValue(espnPath, eventId, playerName, statLabel) {
   return null;
 }
 
-function renderLiveUnavailable(container) {
-  container.innerHTML = `<div class="live-note">Live tracking unavailable for this bet right now.</div>`;
+function formatBaselineProb(bet) {
+  const pct = Math.round(bet.modelProbability);
+  return `Estimate: ${pct}% chance (pre-game research estimate)`;
 }
 
-function renderLiveScore(container, scoreInfo) {
-  container.innerHTML = `
+function renderLiveUnavailable(statusEl) {
+  statusEl.innerHTML = `<div class="live-note">No live score/stat feed found for this bet yet.</div>`;
+}
+
+function renderLiveScore(statusEl, scoreInfo) {
+  statusEl.innerHTML = `
     <div class="live-score-line">
       <span class="live-dot"></span>
       <span>${escapeHtml(scoreInfo.text)}</span>
       <span class="live-status">${escapeHtml(scoreInfo.status)}</span>
     </div>
-    <div class="live-prob-line" id="${container.id}-prob">Calculating live chance…</div>
   `;
 }
 
-function renderLiveProp(container, currentValue, line, isOver) {
-  const pct = Math.min(100, Math.max(0, (currentValue / line) * 100));
-  const winningNow = isOver ? currentValue >= line : currentValue <= line;
-  container.innerHTML = `
+function renderLiveProp(statusEl, currentValue, line) {
+  const pct = Math.min(100, Math.max(0, Math.round((currentValue / line) * 100)));
+  statusEl.innerHTML = `
     <div class="live-progress-wrap">
       <div class="live-progress-track">
-        <div class="live-progress-fill ${winningNow ? "good" : "bad"}" style="width:${pct}%"></div>
+        <div class="live-progress-fill" style="width:${pct}%"></div>
       </div>
       <div class="live-progress-labels">
-        <span>${currentValue}</span>
-        <span>${line}</span>
+        <span>${currentValue} so far</span>
+        <span>${pct}% of ${line}</span>
       </div>
     </div>
-    <div class="live-prob-line" id="${container.id}-prob">Calculating live chance…</div>
   `;
+}
+
+function resolveLegState(leg) {
+  const settledByKey = {};
+  for (const s of currentSettled) settledByKey[pickKey(s)] = s;
+  const result = settledByKey[pickKey(leg)];
+  if (!result) return { state: "pending", detail: "" };
+  const won = result.winner === leg.side;
+  return { state: won ? "won" : "lost", detail: result.final_score || "" };
+}
+
+function computeParlayLiveProb(bet) {
+  if (!Array.isArray(bet.legs) || bet.legs.length === 0) return null;
+  let product = 1;
+  for (const leg of bet.legs) {
+    const { state } = resolveLegState(leg);
+    if (state === "lost") return 0;
+    if (state === "pending") product *= (leg.probability ?? 50) / 100;
+  }
+  return product * 100;
+}
+
+function renderParlayStatus(statusEl, bet) {
+  if (!Array.isArray(bet.legs) || bet.legs.length === 0) {
+    statusEl.innerHTML = `<div class="live-note">No leg-by-leg data saved for this parlay (it was placed before this feature existed) — it'll still settle normally.</div>`;
+    return;
+  }
+
+  const rows = bet.legs.map((leg) => ({ leg, ...resolveLegState(leg) }));
+  const wonCount = rows.filter((r) => r.state === "won").length;
+  const lostCount = rows.filter((r) => r.state === "lost").length;
+  const pendingCount = rows.filter((r) => r.state === "pending").length;
+
+  const summaryLine =
+    lostCount > 0
+      ? `Already missed — ${lostCount} leg${lostCount === 1 ? "" : "s"} lost.`
+      : `${wonCount}/${rows.length} legs hit so far, ${pendingCount} still pending.`;
+
+  statusEl.innerHTML = `
+    <div class="parlay-summary ${lostCount > 0 ? "dead" : ""}">${escapeHtml(summaryLine)}</div>
+    <ul class="parlay-legs">
+      ${rows
+        .map(
+          (r, i) => `
+        <li class="parlay-leg ${r.state}" data-leg-index="${i}">
+          <span class="parlay-leg-name">${escapeHtml(r.leg.matchup)} — ${escapeHtml(r.leg.side)}</span>
+          <span class="parlay-leg-state">${escapeHtml(r.state)}${r.detail ? ` (${escapeHtml(r.detail)})` : ""}</span>
+        </li>`
+        )
+        .join("")}
+    </ul>
+  `;
+
+  // Only fetch/show a live score for legs whose game is actually in progress right now.
+  rows.forEach((r, i) => {
+    if (r.state !== "pending") return;
+    const espnPath = leagueEspnPath(r.leg.sport);
+    const teams = parseTeamsFromBet({ matchup: r.leg.matchup });
+    if (!espnPath || !teams) return;
+    findEspnEvent(espnPath, r.leg.date, teams[0], teams[1]).then((event) => {
+      if (!event || event.status?.type?.state !== "in") return;
+      const scoreInfo = espnEventScoreText(event);
+      if (!scoreInfo) return;
+      const stateEl = statusEl.querySelector(`li[data-leg-index="${i}"] .parlay-leg-state`);
+      if (stateEl) stateEl.textContent = `live — ${scoreInfo.text} (${scoreInfo.status})`;
+    });
+  });
 }
 
 async function pollLiveDisplay(bet, containerId) {
-  const container = document.getElementById(containerId);
-  if (!container) return;
+  const statusEl = document.getElementById(`${containerId}-status`);
+  if (!statusEl) return;
+
+  if (bet.sport === "Parlays") {
+    renderParlayStatus(statusEl, bet);
+    return;
+  }
 
   const espnPath = leagueEspnPath(bet.sport);
   const teams = parseTeamsFromBet(bet);
   if (!espnPath || !teams) {
-    renderLiveUnavailable(container);
+    renderLiveUnavailable(statusEl);
     return;
   }
 
   const event = await findEspnEvent(espnPath, bet.date, teams[0], teams[1]);
-  if (!document.getElementById(containerId)) return;
+  if (!document.getElementById(`${containerId}-status`)) return;
   if (!event) {
-    renderLiveUnavailable(container);
+    renderLiveUnavailable(statusEl);
     return;
   }
 
   const prop = parsePropInfo(bet);
   if (prop) {
     const value = await fetchPlayerStatValue(espnPath, event.id, prop.player, prop.statLabel);
-    if (!document.getElementById(containerId)) return;
+    if (!document.getElementById(`${containerId}-status`)) return;
     if (value === null) {
-      renderLiveUnavailable(container);
+      renderLiveUnavailable(statusEl);
       return;
     }
-    renderLiveProp(container, value, prop.line, prop.isOver);
+    renderLiveProp(statusEl, value, prop.line);
   } else {
     const scoreInfo = espnEventScoreText(event);
     if (!scoreInfo) {
-      renderLiveUnavailable(container);
+      renderLiveUnavailable(statusEl);
       return;
     }
-    renderLiveScore(container, scoreInfo);
+    renderLiveScore(statusEl, scoreInfo);
   }
 }
 
@@ -838,16 +920,21 @@ async function pollLiveProbability(bet, containerId) {
   const probEl = document.getElementById(`${containerId}-prob`);
   if (!probEl) return;
 
+  if (bet.sport === "Parlays") {
+    const liveProb = computeParlayLiveProb(bet);
+    if (liveProb !== null) {
+      probEl.textContent = `Current chance: ~${liveProb.toFixed(0)}% (updates as legs settle; still a rough estimate for pending legs)`;
+    }
+    return;
+  }
+
   const espnPath = leagueEspnPath(bet.sport);
   const teams = parseTeamsFromBet(bet);
   if (!espnPath || !teams) return;
 
   const event = await findEspnEvent(espnPath, bet.date, teams[0], teams[1]);
   if (!document.getElementById(`${containerId}-prob`)) return;
-  if (!event || event.status?.type?.state === "pre") {
-    probEl.textContent = "Game hasn't started yet.";
-    return;
-  }
+  if (!event || event.status?.type?.state === "pre") return; // baseline estimate already shown, leave it as-is
 
   const progress = estimateGameProgress(event, bet.sport);
   const prop = parsePropInfo(bet);

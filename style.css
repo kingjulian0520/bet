@@ -9,6 +9,7 @@
   --lean-low: #8b93a3;
   --lean-mid: #e0b04f;
   --lean-high: #4fd1a5;
+  --live-blue: #4f9eff;
   --radius: 12px;
 }
 
@@ -736,15 +737,9 @@ main {
 
 .live-progress-fill {
   height: 100%;
+  min-width: 2px;
+  background: var(--live-blue);
   transition: width 0.4s ease;
-}
-
-.live-progress-fill.good {
-  background: var(--lean-high);
-}
-
-.live-progress-fill.bad {
-  background: var(--danger);
 }
 
 .live-progress-labels {
@@ -752,6 +747,62 @@ main {
   justify-content: space-between;
   font-size: 0.78rem;
   color: var(--muted);
+}
+
+.parlay-summary {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.parlay-summary.dead {
+  color: var(--danger);
+}
+
+.parlay-legs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.parlay-leg {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  font-size: 0.82rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+
+.parlay-leg-name {
+  color: var(--text);
+}
+
+.parlay-leg-state {
+  color: var(--muted);
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.parlay-leg.won {
+  border-color: var(--lean-high);
+}
+
+.parlay-leg.won .parlay-leg-state {
+  color: var(--lean-high);
+}
+
+.parlay-leg.lost {
+  border-color: var(--danger);
+}
+
+.parlay-leg.lost .parlay-leg-state {
+  color: var(--danger);
 }
 
 .live-prob-line {
