@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T12:25:27Z",
+  "generated_at": "2026-09-18T12:39:37Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
@@ -206,6 +206,53 @@
       "sources": [
         "https://tennisstats.com/players/mary-stoiana",
         "https://www.sportskeeda.com/tennis/paula-badosa-vs-mary-stoiana-preview-head-to-head-odds-prediction-betting-tips-sp-open-2026"
+      ]
+    },
+    {
+      "sport": "ATP Challenger",
+      "matchup": "Marco Trungelliti vs Marco Cecchinato",
+      "date": "2026-09-18",
+      "favorite": "Marco Trungelliti",
+      "estimated_probability": {
+        "Marco Trungelliti": 63,
+        "Marco Cecchinato": 37
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "ATP Challenger Szczecin (Poland) quarterfinal - Trungelliti is the No. 2 seed, Cecchinato the No. 5 seed.",
+        "This one initially looks backwards from name recognition (Cecchinato is a former world No. 16 and Roland Garros semifinalist), but the actual current-form gap favors Trungelliti: he's ranked No. 83 (career-high No. 76 this April) against Cecchinato's No. 166, and Trungelliti has been the better player in 2026 - a Marrakech final and a Rwanda Challenger title, both this year, while Cecchinato lost that same Rwanda final to him and enters off a 1-2 loss to Laslo Djere in Genoa.",
+        "Head-to-head is close (3-2 Cecchinato) but the two most recent and most relevant data points both favor Trungelliti: he won their last meeting (Rwanda Challenger II final, March 2026, 4-6 6-0 6-3) and has been the more in-form player since.",
+        "Deliberately not sized higher than a slight lean - Cecchinato does hold a career sets/games edge in the head-to-head overall and has the higher ceiling when he's playing well, and this is only a Challenger quarterfinal sample."
+      ],
+      "sources": [
+        "https://tennistonic.com/tennis-news/1055653/h2h-prediction-of-marco-trungelliti-vs-marco-cecchinato-in-szczecin-challenger-with-odds-preview-pick-18th-september-2026/",
+        "https://www.atptour.com/en/news/trungelliti-top-100-projection-april-2026",
+        "https://en.wikipedia.org/wiki/Marco_Cecchinato",
+        "https://www.crushrushnews.com/2026/09/12/szczecin-challenger-entry-list/"
+      ]
+    },
+    {
+      "sport": "ATP Challenger",
+      "matchup": "Nikolas Sanchez-Izquierdo vs Zdenek Kolar",
+      "date": "2026-09-18",
+      "favorite": "Nikolas Sanchez-Izquierdo",
+      "estimated_probability": {
+        "Nikolas Sanchez-Izquierdo": 55,
+        "Zdenek Kolar": 45
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.25,
+      "reasoning": [
+        "ATP Challenger Szczecin quarterfinal, No. 7 seed Kolar vs unseeded Sanchez-Izquierdo.",
+        "Genuinely close: Kolar is the higher-ranked player (No. 154-156 vs No. 214), which would normally point the other way, but Sanchez-Izquierdo has the more relevant recent data point - he beat Kolar in the Ostra Group Open final this April (6-4, 7-6(4)), his maiden Challenger title, and that's their most recent meeting.",
+        "Real gap: no data found on hardcourt-specific splits for either player, and this is a small sample (one prior meeting) to lean on - sized as a coin flip rather than inflated off a single head-to-head result.",
+        "Consistent with market pricing: sportsbook odds imply a similar ~53/47 split once vig is removed, not a case of the site inventing a lean the market disagrees with."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/2026_Ostra_Group_Open",
+        "https://www.atptour.com/en/players/zdenek-kolar/kh56/rankings-breakdown",
+        "https://tennistonic.com/tennis-news/1055662/h2h-prediction-of-zdenek-kolar-vs-nikolas-sanchez-izquierdo-in-szczecin-challenger-with-odds-preview-pick-18th-september-2026/"
       ]
     },
     {
