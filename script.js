@@ -486,12 +486,30 @@ function extractNumberFromText(text) {
   return match ? parseFloat(match[0]) : null;
 }
 
-// Fallback settlement from the automated routine's research-based "settled"
-// data. This is a secondary path — the primary one is client-side
-// self-settlement (see pollLiveDisplay/determineOutcome below), which uses
-// live ESPN data and correctly handles an adjusted line. This fallback only
-// grades cases it can do safely from freeform text; anything it can't
-// confidently determine is left pending rather than guessed at.
+function favoriteTeamName(favoriteStr) {
+  return String(favoriteStr || "").replace(/\s[-+]\d+(?:\.\d+)?$/, "").trim();
+}
+
+function gradeOverUnder(bet, actual) {
+  if (actual === bet.line) return { status: "push", profitUnits: 0 };
+  const isOver = /^over/i.test(bet.side);
+  const won = isOver ? actual > bet.line : actual < bet.line;
+  return {
+    status: won ? "won" : "lost",
+    profitUnits: won ? bet.stakeUnits * (bet.multiplier - 1) : -bet.stakeUnits,
+  };
+}
+
+// Settlement from the automated routine's (or manually-verified) "settled"
+// data. This is the authoritative grading path — it uses structured numeric
+// fields (actual_value / actual_total / actual_margin) the research process
+// records alongside each result, not freeform text parsing, so it correctly
+// handles a line the user adjusted in the bet modal and isn't thrown off by
+// which number happens to appear first in a prose recap. Client-side live
+// self-settlement (pollLiveDisplay/determineOutcome) can also grade a bet
+// sooner, straight from live ESPN data, but this is the fallback that always
+// works once a result is recorded here — it doesn't depend on the ESPN proxy
+// or the tab having been open when the game ended.
 function settlePendingBets() {
   const settledByKey = {};
   for (const s of currentSettled) {
@@ -506,29 +524,42 @@ function settlePendingBets() {
 
     const isOverUnder = /^(over|under)/i.test(bet.side);
 
-    if (bet.line != null && isOverUnder && bet.sport.includes("Player Props")) {
-      const actual = extractNumberFromText(result.final_score);
-      if (actual == null) continue;
-      if (actual === bet.line) {
-        bet.status = "push";
-        bet.profitUnits = 0;
-        bet.finalScore = result.final_score || null;
-        changed = true;
-        continue;
-      }
-      const isOver = /^over/i.test(bet.side);
-      const won = isOver ? actual > bet.line : actual < bet.line;
-      bet.status = won ? "won" : "lost";
-      bet.profitUnits = won ? bet.stakeUnits * (bet.multiplier - 1) : -bet.stakeUnits;
+    if (isOverUnder && bet.line != null && typeof result.actual_value === "number") {
+      const graded = gradeOverUnder(bet, result.actual_value);
+      Object.assign(bet, graded);
+      bet.finalScore = result.final_score || null;
+      changed = true;
+      continue;
+    }
+
+    if (isOverUnder && bet.line != null && typeof result.actual_total === "number") {
+      const graded = gradeOverUnder(bet, result.actual_total);
+      Object.assign(bet, graded);
+      bet.finalScore = result.final_score || null;
+      changed = true;
+      continue;
+    }
+
+    if (bet.line != null && typeof result.actual_margin === "number" && result.favorite) {
+      const favTeam = favoriteTeamName(result.favorite);
+      const betTeam = favoriteTeamName(bet.side);
+      const signedMargin = betTeam === favTeam ? result.actual_margin : -result.actual_margin;
+      const covers = signedMargin + bet.line;
+      const status = covers > 0 ? "won" : covers < 0 ? "lost" : "push";
+      bet.status = status;
+      bet.profitUnits =
+        status === "won" ? bet.stakeUnits * (bet.multiplier - 1) : status === "push" ? 0 : -bet.stakeUnits;
       bet.finalScore = result.final_score || null;
       changed = true;
       continue;
     }
 
     if (bet.line != null) {
-      // Adjusted spread/total line — freeform score text is too unreliable to
-      // grade safely here. Client-side self-settlement (live scores) handles
-      // this correctly; leave pending rather than risk a wrong grade.
+      // No structured numeric field recorded for this result (older data,
+      // or the routine couldn't confirm exact numbers) — freeform text is
+      // too unreliable to grade an adjusted-line bet safely. Client-side
+      // self-settlement can still catch this from live data; otherwise it
+      // stays pending rather than risk a wrong grade.
       continue;
     }
 

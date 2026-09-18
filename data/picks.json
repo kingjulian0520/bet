@@ -585,7 +585,8 @@
       ],
       "winner": "Buffalo Bills -3.5",
       "final_score": "Bills 41, Lions 31 (margin of 10 covers -3.5)",
-      "settled_at": "2026-09-18T04:11:31Z"
+      "settled_at": "2026-09-18T04:11:31Z",
+      "actual_margin": 10
     },
     {
       "sport": "NFL Totals",
@@ -609,7 +610,8 @@
       ],
       "winner": "Over 52.5",
       "final_score": "72 combined points (41-31)",
-      "settled_at": "2026-09-18T04:11:31Z"
+      "settled_at": "2026-09-18T04:11:31Z",
+      "actual_total": 72
     },
     {
       "sport": "NFL Player Props",
@@ -633,7 +635,8 @@
       ],
       "winner": "Under 260.5",
       "final_score": "248 passing yards",
-      "settled_at": "2026-09-18T04:11:31Z"
+      "settled_at": "2026-09-18T04:11:31Z",
+      "actual_value": 248
     },
     {
       "sport": "NFL Player Props",
@@ -657,7 +660,8 @@
       ],
       "winner": "Under 69.5",
       "final_score": "0 receiving yards — left game in 2nd quarter with shoulder injury/stinger, ruled out",
-      "settled_at": "2026-09-18T04:11:31Z"
+      "settled_at": "2026-09-18T04:11:31Z",
+      "actual_value": 0
     },
     {
       "sport": "NFL Player Props",
@@ -680,7 +684,8 @@
       ],
       "winner": "Under 64.5",
       "final_score": "52 rushing yards on 16 carries",
-      "settled_at": "2026-09-18T04:11:31Z"
+      "settled_at": "2026-09-18T04:11:31Z",
+      "actual_value": 52
     },
     {
       "sport": "MLB",
@@ -727,7 +732,8 @@
       ],
       "winner": "Under 8.5",
       "final_score": "3 total runs (3-0)",
-      "settled_at": "2026-09-18T04:11:31Z"
+      "settled_at": "2026-09-18T04:11:31Z",
+      "actual_total": 3
     },
     {
       "sport": "MLB Player Props",
@@ -749,7 +755,8 @@
       ],
       "winner": "Under 3.5",
       "final_score": "7 scoreless IP, 0 ER",
-      "settled_at": "2026-09-18T04:11:31Z"
+      "settled_at": "2026-09-18T04:11:31Z",
+      "actual_value": 0
     },
     {
       "sport": "MLB",
@@ -795,7 +802,8 @@
       ],
       "winner": "Under 9.5",
       "final_score": "8 total runs (6-2)",
-      "settled_at": "2026-09-18T04:11:31Z"
+      "settled_at": "2026-09-18T04:11:31Z",
+      "actual_total": 8
     },
     {
       "sport": "MLB Player Props",
@@ -818,7 +826,8 @@
       ],
       "winner": "Over 3.5",
       "final_score": "Allowed 4 solo home runs (Peña, Varsho, Wade Jr., Alvarez) — at least 4 ER",
-      "settled_at": "2026-09-18T04:11:31Z"
+      "settled_at": "2026-09-18T04:11:31Z",
+      "actual_value": 4
     },
     {
       "sport": "MLB Player Props",
@@ -840,7 +849,8 @@
       ],
       "winner": "Over 1.5",
       "final_score": "Hit his 40th home run — at least 4 total bases",
-      "settled_at": "2026-09-18T04:11:31Z"
+      "settled_at": "2026-09-18T04:11:31Z",
+      "actual_value": 4
     }
   ]
 }
