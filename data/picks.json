@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T13:25:57Z",
+  "generated_at": "2026-09-18T17:57:50Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
@@ -420,6 +420,34 @@
         "https://sports.yahoo.com/articles/lsu-footballs-defense-improve-key-163304262.html"
       ],
       "start_time": "2026-09-19T23:30:00Z"
+    },
+    {
+      "sport": "WNBA",
+      "matchup": "Chicago Sky vs Atlanta Dream",
+      "date": "2026-09-19",
+      "start_time": "2026-09-19T23:00:00Z",
+      "favorite": "Atlanta Dream",
+      "estimated_probability": {
+        "Atlanta Dream": 79,
+        "Chicago Sky": 21
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "7:00pm ET at State Farm Arena, Atlanta - the WNBA just returned Sept 17 from a 3-week break for the FIBA World Cup, with 4 regular-season games left and playoff seeding still very much live.",
+        "Real situational/stakes gap: Atlanta (already clinched, tied with Indiana for the final first-round home-court seed) has everything to play for; Chicago (3-14 in East play) has already been eliminated from playoff contention - a real motivation asymmetry, not just a record gap.",
+        "Missing key players - concrete, not just 'on the injury report': Chicago is without DiJonai Carrington (foot) and has lost BOTH Skylar Diggins and Rickea Jackson for the season (knee) - three real rotation pieces gone. Atlanta's only notable absence is Brionna Jones (out for the season, leg), a real but smaller loss than Chicago's collective one.",
+        "Checked specifically for World Cup break impact since it's the headline storyline of this return week: Atlanta sent 4 players to the World Cup (Angel Reese and Rhyne Howard to Team USA, plus two others), but Reese is confirmed back and in form - she just dropped 30 points in a 103-59 blowout win over Connecticut in Atlanta's first game back.",
+        "Head-to-head this season already favors Atlanta (won their last meeting 93-91 on July 19), though that was a one-possession game, not a blowout - part of why this stays a Strong lean rather than higher.",
+        "Real gap: no confirmed reporting found on Chicago's own World Cup-related absences/rust for this specific date beyond the injury report above."
+      ],
+      "sources": [
+        "https://sports.yahoo.com/articles/wnba-standings-playoff-picture-remaining-014953691.html",
+        "https://www.espn.com/wnba/story/_/id/49944388/wnba-playoffs-2026-picture-postseason-race-berth-seeds",
+        "https://www.espn.com/wnba/preview?gameId=401857199",
+        "https://www.threads.com/@wilsworld54/post/DXudwpEGtWJ",
+        "https://www.atlantanewsfirst.com/2026/09/01/4-dream-players-headed-womens-basketball-world-cup/"
+      ]
     },
     {
       "sport": "NFL",
