@@ -193,6 +193,11 @@ body {
   color: var(--danger);
 }
 
+.bet-status.push {
+  background: rgba(139, 147, 163, 0.15);
+  color: var(--muted);
+}
+
 .bet-detail {
   font-size: 0.85rem;
   color: var(--muted);
@@ -290,6 +295,39 @@ body {
   border-radius: 6px;
   padding: 0.55rem 0.7rem;
   font-size: 0.95rem;
+}
+
+.modal-line-wrap {
+  margin-top: 0.7rem;
+  padding: 0.7rem;
+  border-radius: 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+
+.modal-line-wrap input {
+  width: 100%;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 0.5rem 0.6rem;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.modal-line-note {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.modal-ev-caveat {
+  display: inline-block;
+  margin-top: 0.4rem;
+  color: var(--lean-mid);
+  font-size: 0.8rem;
 }
 
 .modal-ev {

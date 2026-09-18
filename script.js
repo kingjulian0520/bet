@@ -242,6 +242,18 @@ function pickKey(pick) {
   return `${pick.sport}__${pick.matchup}__${pick.date}`;
 }
 
+function extractLineFromSide(sideStr) {
+  const match = String(sideStr || "").match(/-?\d+(?:\.\d+)?/);
+  return match ? parseFloat(match[0]) : null;
+}
+
+function rebuildSideWithLine(sideStr, newLine) {
+  const match = String(sideStr || "").match(/([+-]?)(\d+(?:\.\d+)?)/);
+  if (!match) return sideStr;
+  const sign = match[1] === "-" ? "-" : match[1] === "+" ? "+" : "";
+  return sideStr.replace(match[0], `${sign}${newLine}`);
+}
+
 function renderCard(pick) {
   const card = document.createElement("div");
   card.className = "pick-card";
@@ -309,6 +321,7 @@ function wireModal() {
   });
   document.getElementById("modal-stake").addEventListener("input", updateModalEv);
   document.getElementById("modal-multiplier").addEventListener("input", updateModalEv);
+  document.getElementById("modal-line").addEventListener("input", updateModalEv);
   document.getElementById("modal-override").addEventListener("change", updateModalEv);
   document.getElementById("modal-place").addEventListener("click", placeBet);
 }
@@ -339,13 +352,32 @@ function openBetModal(pick) {
       activeModalSide = team;
       toggle.querySelectorAll(".side-btn").forEach((b) => b.classList.remove("selected"));
       btn.classList.add("selected");
+      syncLineInputToSide();
       updateModalEv();
     });
     toggle.appendChild(btn);
   });
 
+  syncLineInputToSide();
   document.getElementById("bet-modal-backdrop").hidden = false;
   updateModalEv();
+}
+
+function syncLineInputToSide() {
+  const wrap = document.getElementById("modal-line-wrap");
+  const input = document.getElementById("modal-line");
+  const note = document.getElementById("modal-line-note");
+  const line = extractLineFromSide(activeModalSide);
+
+  if (line === null) {
+    wrap.hidden = true;
+    return;
+  }
+
+  wrap.hidden = false;
+  input.value = line;
+  input.dataset.originalLine = line;
+  note.textContent = `Our line: ${line}`;
 }
 
 function closeBetModal() {
@@ -376,10 +408,22 @@ function updateModalEv() {
   const impliedProb = (1 / multiplier) * 100;
   const evPercent = (p * multiplier - 1) * 100;
 
+  const lineInput = document.getElementById("modal-line");
+  const lineWrap = document.getElementById("modal-line-wrap");
+  let lineCaveat = "";
+  if (!lineWrap.hidden) {
+    const currentLine = parseFloat(lineInput.value);
+    const originalLine = parseFloat(lineInput.dataset.originalLine);
+    if (!isNaN(currentLine) && !isNaN(originalLine) && currentLine !== originalLine) {
+      lineCaveat = ` <br><span class="modal-ev-caveat">Adjusted to ${currentLine} (from ${originalLine}) — the probability above is still our estimate for ${originalLine}, not recalculated for your number.</span>`;
+    }
+  }
+
   evBox.innerHTML =
     `Our estimate: <strong>${(p * 100).toFixed(0)}%</strong> · ` +
     `Market implies: <strong>${impliedProb.toFixed(0)}%</strong> · ` +
-    `EV: <strong>${evPercent >= 0 ? "+" : ""}${evPercent.toFixed(1)}%</strong>`;
+    `EV: <strong>${evPercent >= 0 ? "+" : ""}${evPercent.toFixed(1)}%</strong>` +
+    lineCaveat;
   evBox.className = "modal-ev " + (evPercent >= 0 ? "positive" : "negative");
 
   const validStake = !isNaN(stake) && stake > 0;
@@ -400,13 +444,26 @@ function placeBet() {
   const p = probs[activeModalSide] ?? 50;
   const evPercent = ((p / 100) * multiplier - 1) * 100;
 
+  const lineWrap = document.getElementById("modal-line-wrap");
+  const originalLine = extractLineFromSide(activeModalSide);
+  let finalSide = activeModalSide;
+  let line = null;
+
+  if (!lineWrap.hidden) {
+    const enteredLine = parseFloat(document.getElementById("modal-line").value);
+    line = !isNaN(enteredLine) ? enteredLine : originalLine;
+    finalSide = rebuildSideWithLine(activeModalSide, line);
+  }
+
   myBets.push({
     id: `${Date.now()}_${Math.random().toString(36).slice(2, 8)}`,
     sport: activeModalPick.sport,
     matchup: activeModalPick.matchup,
     date: activeModalPick.date,
     key: pickKey(activeModalPick),
-    side: activeModalSide,
+    side: finalSide,
+    line,
+    originalLine,
     stakeUnits: stake,
     multiplier,
     modelProbability: p,
@@ -424,6 +481,17 @@ function placeBet() {
 
 // ---------- settlement ----------
 
+function extractNumberFromText(text) {
+  const match = String(text || "").match(/-?\d+(?:\.\d+)?/);
+  return match ? parseFloat(match[0]) : null;
+}
+
+// Fallback settlement from the automated routine's research-based "settled"
+// data. This is a secondary path — the primary one is client-side
+// self-settlement (see pollLiveDisplay/determineOutcome below), which uses
+// live ESPN data and correctly handles an adjusted line. This fallback only
+// grades cases it can do safely from freeform text; anything it can't
+// confidently determine is left pending rather than guessed at.
 function settlePendingBets() {
   const settledByKey = {};
   for (const s of currentSettled) {
@@ -435,6 +503,34 @@ function settlePendingBets() {
     if (bet.status !== "pending") continue;
     const result = settledByKey[bet.key];
     if (!result || !result.winner) continue;
+
+    const isOverUnder = /^(over|under)/i.test(bet.side);
+
+    if (bet.line != null && isOverUnder && bet.sport.includes("Player Props")) {
+      const actual = extractNumberFromText(result.final_score);
+      if (actual == null) continue;
+      if (actual === bet.line) {
+        bet.status = "push";
+        bet.profitUnits = 0;
+        bet.finalScore = result.final_score || null;
+        changed = true;
+        continue;
+      }
+      const isOver = /^over/i.test(bet.side);
+      const won = isOver ? actual > bet.line : actual < bet.line;
+      bet.status = won ? "won" : "lost";
+      bet.profitUnits = won ? bet.stakeUnits * (bet.multiplier - 1) : -bet.stakeUnits;
+      bet.finalScore = result.final_score || null;
+      changed = true;
+      continue;
+    }
+
+    if (bet.line != null) {
+      // Adjusted spread/total line — freeform score text is too unreliable to
+      // grade safely here. Client-side self-settlement (live scores) handles
+      // this correctly; leave pending rather than risk a wrong grade.
+      continue;
+    }
 
     const won = result.winner === bet.side;
     bet.status = won ? "won" : "lost";
@@ -460,7 +556,9 @@ function buildBetCard(bet) {
   const statusBadge = isSettled ? `<span class="bet-status ${bet.status}">${bet.status}</span>` : "";
 
   const profitText = isSettled
-    ? `<div class="bet-profit ${bet.profitUnits >= 0 ? "positive" : "negative"}">${bet.profitUnits >= 0 ? "+" : ""}${bet.profitUnits.toFixed(2)} units${unitValue ? ` (${bet.profitUnits >= 0 ? "+" : ""}$${(bet.profitUnits * unitValue).toFixed(0)})` : ""}</div>`
+    ? bet.status === "push"
+      ? `<div class="bet-profit">Push — stake returned, no gain or loss.</div>`
+      : `<div class="bet-profit ${bet.profitUnits >= 0 ? "positive" : "negative"}">${bet.profitUnits >= 0 ? "+" : ""}${bet.profitUnits.toFixed(2)} units${unitValue ? ` (${bet.profitUnits >= 0 ? "+" : ""}$${(bet.profitUnits * unitValue).toFixed(0)})` : ""}</div>`
     : "";
 
   const moneyLine = !isSettled
@@ -874,6 +972,62 @@ function renderParlayStatus(statusEl, bet) {
   });
 }
 
+// Determines win/lost/push for a single-event bet directly from live ESPN
+// data once the event is final — this is what lets settlement happen within
+// ~15s of the game ending instead of waiting for the hourly research
+// routine. Uses bet.line (which reflects any adjustment the user made at
+// placement) rather than the pick's original line, so an adjusted line still
+// grades correctly. Returns null if it can't confidently determine anything
+// (unsupported bet shape, stat not found, etc.) — the bet is left pending
+// for the routine's own settlement pass to catch instead.
+async function determineOutcome(event, bet, espnPath, teams) {
+  const prop = parsePropInfo(bet);
+
+  if (prop) {
+    const value = await fetchPlayerStatValue(espnPath, event.id, prop.player, prop.statLabel);
+    if (value === null) return null;
+    const finalText = `${prop.player}: ${value} (line ${prop.line})`;
+    if (value === prop.line) return { result: "push", finalText };
+    const won = prop.isOver ? value > prop.line : value < prop.line;
+    return { result: won ? "won" : "lost", finalText };
+  }
+
+  const scoreInfo = espnEventScoreText(event);
+  const finalText = scoreInfo?.text || "";
+
+  if (bet.sport.includes("Spreads")) {
+    if (bet.line == null) return null;
+    const margin = scoreDiffForBetSide(event, bet, teams[0], teams[1]);
+    if (margin === null) return null;
+    const covers = margin + bet.line;
+    return { result: covers > 0 ? "won" : covers < 0 ? "lost" : "push", finalText };
+  }
+
+  if (bet.sport.includes("Totals")) {
+    if (bet.line == null) return null;
+    const competitors = event.competitions?.[0]?.competitors || [];
+    if (competitors.length !== 2) return null;
+    const total = (parseFloat(competitors[0].score) || 0) + (parseFloat(competitors[1].score) || 0);
+    const isOver = /^over/i.test(bet.side);
+    if (total === bet.line) return { result: "push", finalText };
+    const won = isOver ? total > bet.line : total < bet.line;
+    return { result: won ? "won" : "lost", finalText };
+  }
+
+  // Moneyline / match winner: bet.side should be one of the two team names.
+  const diff = scoreDiffForBetSide(event, bet, teams[0], teams[1]);
+  if (diff === null) return null;
+  return { result: diff > 0 ? "won" : diff < 0 ? "lost" : "push", finalText };
+}
+
+function applySelfSettlement(bet, outcome) {
+  bet.status = outcome.result;
+  bet.profitUnits = outcome.result === "won" ? bet.stakeUnits * (bet.multiplier - 1) : outcome.result === "push" ? 0 : -bet.stakeUnits;
+  bet.finalScore = outcome.finalText;
+  saveBets();
+  renderAll();
+}
+
 async function pollLiveDisplay(bet, containerId) {
   const statusEl = document.getElementById(`${containerId}-status`);
   if (!statusEl) return;
@@ -894,6 +1048,19 @@ async function pollLiveDisplay(bet, containerId) {
   if (!document.getElementById(`${containerId}-status`)) return;
   if (!event) {
     renderLiveUnavailable(statusEl);
+    return;
+  }
+
+  if (event.status?.type?.state === "post") {
+    const outcome = await determineOutcome(event, bet, espnPath, teams);
+    if (bet.status === "pending" && outcome) {
+      applySelfSettlement(bet, outcome);
+      return; // card re-renders as settled; nothing left to display here
+    }
+    if (bet.status !== "pending") return; // got settled by another concurrent poll
+    // Couldn't confidently grade it yet (e.g. final box score not posted) — show final score, keep as pending.
+    const scoreInfo = espnEventScoreText(event);
+    if (scoreInfo) renderLiveScore(statusEl, scoreInfo);
     return;
   }
 

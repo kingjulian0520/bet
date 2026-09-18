@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Close Calls</title>
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
 <header class="page-header">
@@ -90,6 +90,12 @@
 
     <div class="side-toggle" id="side-toggle"></div>
 
+    <div id="modal-line-wrap" class="modal-line-wrap" hidden>
+      <label class="modal-label" for="modal-line">Line you actually got (if your book's number is different)</label>
+      <input id="modal-line" type="number" step="0.5">
+      <span id="modal-line-note" class="modal-line-note"></span>
+    </div>
+
     <label class="modal-label" for="modal-stake">Stake (units)</label>
     <input id="modal-stake" type="number" min="0" step="0.05" placeholder="e.g. 1.5">
 
@@ -110,6 +116,6 @@
   </div>
 </div>
 
-<script src="script.js?v=9"></script>
+<script src="script.js?v=10"></script>
 </body>
 </html>
