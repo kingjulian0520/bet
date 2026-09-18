@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T12:16:48Z",
+  "generated_at": "2026-09-18T12:22:25Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
@@ -136,6 +136,76 @@
         "https://en.wikipedia.org/wiki/Anna_Blinkova",
         "https://en.wikipedia.org/wiki/Alina_Charaeva",
         "https://en.tennistemple.com/actu/anna-blinkova-wins-first-match-as-french-citizen/EvkC"
+      ]
+    },
+    {
+      "sport": "College Football",
+      "matchup": "Portland State Vikings vs Oregon Ducks",
+      "date": "2026-09-18",
+      "favorite": "Oregon Ducks",
+      "estimated_probability": {
+        "Oregon Ducks": 95,
+        "Portland State Vikings": 5
+      },
+      "confidence_label": "Chalk",
+      "recommended_units": 3,
+      "reasoning": [
+        "Autzen Stadium, Friday 10:30pm ET. Oregon (1-1, No. 21 AP) is favored by 57.5-58 points across DraftKings/BetMGM/Caesars/FanDuel; Polymarket traders price the moneyline at 99% - this is about as lopsided a real matchup as exists this week.",
+        "Portland State is 0-3 and winless, an FCS program facing a Power 4 roster - the talent/depth gap at this level is close to the largest in this matchup type.",
+        "Real, explicitly-flagged gap that keeps this off a flat 99%/100%: Oregon's defense has actually been shaky in 2026, allowing over 500 yards and 63 points combined across its first two games, and just lost outright to Oklahoma State (unranked) six days before this game. Eight Ducks are dealing with injuries, including starting TE Jamari Johnson, unlikely to play.",
+        "None of that changes the opponent - Portland State's issues (0-3, outmatched at FBS level) make an outright upset very unlikely even against a shakier-than-expected Oregon team - but it's the real reason this is capped at the site's 95% max rather than treated as inevitable the way the market's 99% number implies.",
+        "This is a moneyline pick only (not the -57.5 spread), which is deliberately the safer side of this matchup given Oregon's own uneven defensive form this season."
+      ],
+      "sources": [
+        "https://www.si.com/betting/portland-state-vs-oregon-prediction-odds-and-key-players-to-watch-for-college-football-week-3",
+        "https://polymarket.com/sports/cfb/cfb-portst-ore-2026-09-18",
+        "https://www.si.com/college/oregon/football/oregon-ducks-injury-concerns-monitor-portland-state-vikings"
+      ]
+    },
+    {
+      "sport": "WTA Player Props",
+      "matchup": "Paula Badosa — Aces O/U 2.5 (Badosa vs Stoiana)",
+      "date": "2026-09-18",
+      "favorite": "Over 2.5",
+      "estimated_probability": {
+        "Over 2.5": 73,
+        "Under 2.5": 27
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "SP Open quarterfinal, hardcourt, Friday 5:30pm local.",
+        "This is grounded in Badosa's own real 2026 match log, not a guess: she has hit over 2.5 aces in 73% of her matches this season, and over 3.5 in 68% - a fairly reliable, serve-driven pattern rather than a one-off streak.",
+        "Hardcourt in Sao Paulo (moderate altitude, ~760m) tends to play a touch faster, which if anything supports the serve rather than working against it.",
+        "Real gap: no specific data found on Stoiana's return-game numbers against big servers specifically, so this leans on Badosa's own baseline rate rather than an opponent-specific adjustment - that's why it's sized as a Lean, not higher.",
+        "This is independent of the existing Badosa vs Stoiana moneyline pick already on the board - a different market on the same match, not a hedge or a duplicate of it."
+      ],
+      "sources": [
+        "https://tennisstats.com/players/paula-badosa",
+        "https://www.sportskeeda.com/tennis/paula-badosa-vs-mary-stoiana-preview-head-to-head-odds-prediction-betting-tips-sp-open-2026"
+      ]
+    },
+    {
+      "sport": "WTA Player Props",
+      "matchup": "Mary Stoiana — Aces O/U 3.5 (Badosa vs Stoiana)",
+      "date": "2026-09-18",
+      "favorite": "Under 3.5",
+      "estimated_probability": {
+        "Under 3.5": 82,
+        "Over 3.5": 18
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "Same match as the Badosa aces pick above (SP Open QF, Friday 5:30pm local), but this side is on Stoiana's own aces total, not Badosa's - a separate market, not a hedge.",
+        "Grounded in Stoiana's real 2026 match log: she has gone over 3.5 aces in only 16% of her matches this season (i.e. stayed under in 84% of them) and averages about 2.0 aces per match - a much smaller, less powerful serve profile than a player like Badosa.",
+        "This is a much more consistent pattern than a single average suggests - the site's own frequency data shows she rarely spikes into high-ace matches, which is exactly the kind of specific, repeatable evidence that should push confidence up rather than defaulting to a cautious middle number.",
+        "Real gap: first career meeting with Badosa, so there's no head-to-head signal on how Stoiana's serve holds up specifically against this level of returner - sized at Strong lean rather than higher for that reason.",
+        "Capped below 85% deliberately - a single match can always run hot relative to a season rate, especially in a career-first tour quarterfinal with real nerves/adrenaline in play."
+      ],
+      "sources": [
+        "https://tennisstats.com/players/mary-stoiana",
+        "https://www.sportskeeda.com/tennis/paula-badosa-vs-mary-stoiana-preview-head-to-head-odds-prediction-betting-tips-sp-open-2026"
       ]
     },
     {
