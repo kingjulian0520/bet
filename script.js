@@ -1,6 +1,8 @@
 const UNIT_VALUE_KEY = "closeCallsUnitValue";
 const BETS_KEY = "closeCallsBets";
 
+let rawPicks = [];
+let rawLongShots = [];
 let currentPicks = [];
 let currentLongShots = [];
 let currentSettled = [];
@@ -81,9 +83,10 @@ async function main() {
     lastUpdatedEl.textContent = "Last updated " + new Date(data.generated_at).toLocaleString();
   }
 
-  currentPicks = data.picks || [];
-  currentLongShots = data.long_shots || [];
+  rawPicks = data.picks || [];
+  rawLongShots = data.long_shots || [];
   currentSettled = data.settled || [];
+  prunePicks();
 
   const todayStr = todayDateStr();
   if (currentPicks.some((p) => p.date === todayStr)) {
@@ -92,9 +95,32 @@ async function main() {
 
   settlePendingBets();
   renderAll();
+
+  setInterval(() => {
+    const hadPicks = currentPicks.length;
+    const hadLongShots = currentLongShots.length;
+    prunePicks();
+    if (currentPicks.length !== hadPicks || currentLongShots.length !== hadLongShots) {
+      renderAll();
+    }
+  }, 60000);
+}
+
+// A pick/long shot with a known start_time disappears from the browsable
+// list once that time passes - you can't place a fresh bet on something
+// already underway. Settlement (once the result is known) is separate and
+// still handled via the "settled" array regardless of this filter.
+function hasStarted(pick) {
+  return !!pick.start_time && new Date(pick.start_time).getTime() <= Date.now();
+}
+
+function prunePicks() {
+  currentPicks = rawPicks.filter((p) => !hasStarted(p));
+  currentLongShots = rawLongShots.filter((p) => !hasStarted(p));
 }
 
 function renderAll() {
+  prunePicks();
   renderDayFilterBar();
   renderPicks();
   renderLongShots();
