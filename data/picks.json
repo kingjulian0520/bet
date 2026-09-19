@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T19:49:42Z",
+  "generated_at": "2026-09-19T20:21:03Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
@@ -495,22 +495,30 @@
     },
     {
       "sport": "Parlays",
-      "matchup": "4-Leg Long Shot: Tottenham ML + Liverpool ML + Chiefs ML + Rams ML",
+      "matchup": "4-Leg Long Shot: Atlanta Dream ML + Lacy Anytime TD + Liverpool ML + Rams ML",
       "date": "2026-09-19",
+      "start_time": "2026-09-19T23:00:00Z",
       "favorite": "Hits",
       "estimated_probability": {
-        "Hits": 16,
-        "Doesn't Hit": 84
+        "Hits": 21,
+        "Doesn't Hit": 79
       },
       "confidence_label": "Coin flip",
       "recommended_units": 0.15,
       "legs": [
         {
-          "sport": "Soccer - EPL",
-          "matchup": "Tottenham Hotspur vs Aston Villa",
+          "sport": "WNBA",
+          "matchup": "Chicago Sky vs Atlanta Dream",
           "date": "2026-09-19",
-          "side": "Tottenham Hotspur",
-          "probability": 65
+          "side": "Atlanta Dream",
+          "probability": 79
+        },
+        {
+          "sport": "College Football Player Props",
+          "matchup": "Kewan Lacy — Anytime Touchdown (LSU vs Ole Miss)",
+          "date": "2026-09-19",
+          "side": "Yes",
+          "probability": 66
         },
         {
           "sport": "Soccer - EPL",
@@ -521,13 +529,6 @@
         },
         {
           "sport": "NFL",
-          "matchup": "Indianapolis Colts vs Kansas City Chiefs",
-          "date": "2026-09-20",
-          "side": "Kansas City Chiefs",
-          "probability": 62
-        },
-        {
-          "sport": "NFL",
           "matchup": "New York Giants vs Los Angeles Rams",
           "date": "2026-09-21",
           "side": "Los Angeles Rams",
@@ -535,15 +536,13 @@
         }
       ],
       "reasoning": [
-        "Every leg is the SAME side already favored in the main Picks tab (Tottenham 65%, Liverpool 64%, Chiefs 62%, Rams 63%) - none of these can fight those picks. Deliberately uses different legs than the existing 5-Leg Long Shot (49ers/Man City/Mariners/Astros/Dodgers) rather than just re-stacking the same four events into a second ticket.",
-        "Combined probability: 0.65 x 0.64 x 0.62 x 0.63 = ~16% - a real long shot built from four picks that are each a real lean on their own, not from anything weak.",
-        "Spans two sports and four independent events across three days (Sept 19-21), so no single upset takes out more than its own leg."
+        "Every leg is the SAME side already favored in the main Picks tab (Dream 79%, Lacy anytime TD 66%, Liverpool 64%, Rams 63%) - none of these can fight those picks.",
+        "Replaces the previous 4-leg long shot, which died early when its Tottenham leg lost to Aston Villa - deliberately built from different legs (WNBA + a player prop this time, not just more soccer/NFL moneylines) for real variety.",
+        "Combined probability: 0.79 x 0.66 x 0.64 x 0.63 = ~21% - a real long shot from four picks that are each a genuine lean or better on their own.",
+        "Spans three sports across three days (Sept 19-21), so no single upset takes out more than its own leg."
       ],
       "sources": [
-        "https://www.sportskeeda.com/football/tottenham-hotspur-vs-aston-villa-prediction-betting-tips-september-19th-2026",
-        "https://www.statsinsider.com.au/news/bournemouth-vs-liverpool-prediction-and-tips-20-september-2026",
-        "https://www.covers.com/nfl/colts-vs-chiefs-predictions-odds-early-leans-week-2-2026",
-        "https://www.si.com/betting/giants-vs-rams-prediction-odds-spread-injuries-trends-for-nfl-week-2-2026"
+        "Reuses the research already cited on each leg's own Picks tab entry."
       ]
     },
     {
@@ -1249,6 +1248,62 @@
       "winner": "Georgia Bulldogs",
       "final_score": "Georgia 31, Arkansas 3",
       "settled_at": "2026-09-19T19:49:42Z"
+    },
+    {
+      "sport": "Parlays",
+      "matchup": "4-Leg Long Shot: Tottenham ML + Liverpool ML + Chiefs ML + Rams ML",
+      "date": "2026-09-19",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 16,
+        "Doesn't Hit": 84
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.15,
+      "legs": [
+        {
+          "sport": "Soccer - EPL",
+          "matchup": "Tottenham Hotspur vs Aston Villa",
+          "date": "2026-09-19",
+          "side": "Tottenham Hotspur",
+          "probability": 65
+        },
+        {
+          "sport": "Soccer - EPL",
+          "matchup": "Bournemouth vs Liverpool",
+          "date": "2026-09-20",
+          "side": "Liverpool",
+          "probability": 64
+        },
+        {
+          "sport": "NFL",
+          "matchup": "Indianapolis Colts vs Kansas City Chiefs",
+          "date": "2026-09-20",
+          "side": "Kansas City Chiefs",
+          "probability": 62
+        },
+        {
+          "sport": "NFL",
+          "matchup": "New York Giants vs Los Angeles Rams",
+          "date": "2026-09-21",
+          "side": "Los Angeles Rams",
+          "probability": 63
+        }
+      ],
+      "reasoning": [
+        "Every leg is the SAME side already favored in the main Picks tab (Tottenham 65%, Liverpool 64%, Chiefs 62%, Rams 63%) - none of these can fight those picks. Deliberately uses different legs than the existing 5-Leg Long Shot (49ers/Man City/Mariners/Astros/Dodgers) rather than just re-stacking the same four events into a second ticket.",
+        "Combined probability: 0.65 x 0.64 x 0.62 x 0.63 = ~16% - a real long shot built from four picks that are each a real lean on their own, not from anything weak.",
+        "Spans two sports and four independent events across three days (Sept 19-21), so no single upset takes out more than its own leg."
+      ],
+      "sources": [
+        "https://www.sportskeeda.com/football/tottenham-hotspur-vs-aston-villa-prediction-betting-tips-september-19th-2026",
+        "https://www.statsinsider.com.au/news/bournemouth-vs-liverpool-prediction-and-tips-20-september-2026",
+        "https://www.covers.com/nfl/colts-vs-chiefs-predictions-odds-early-leans-week-2-2026",
+        "https://www.si.com/betting/giants-vs-rams-prediction-odds-spread-injuries-trends-for-nfl-week-2-2026"
+      ],
+      "winner": "Doesn't Hit",
+      "final_score": "Settled early: Tottenham lost to Aston Villa (2-3) on Sept 19, which alone dooms the parlay regardless of the other three legs.",
+      "settled_at": "2026-09-19T20:21:03Z"
     }
   ]
 }
