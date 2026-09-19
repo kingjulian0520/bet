@@ -1,194 +1,7 @@
 {
-  "generated_at": "2026-09-18T17:57:50Z",
+  "generated_at": "2026-09-19T19:49:42Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
-    {
-      "sport": "MLB",
-      "matchup": "Miami Marlins vs San Diego Padres",
-      "date": "2026-09-18",
-      "favorite": "San Diego Padres",
-      "estimated_probability": {
-        "San Diego Padres": 62,
-        "Miami Marlins": 38
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "Confirmed starter Nick Pivetta has a 3.43 ERA and 11.14 K/9 'since returning to form' — a specific, strong recent-form signal, not just a season-long average.",
-        "Padres (73-66) host the Marlins (70-69) with the 3rd NL Wild Card spot directly on the line between these two teams — real stakes for both sides, which is why this isn't pushed higher than a modest lean despite the pitching edge.",
-        "Padres are also reportedly getting Joe Musgrove and Jason Adam back for pitching depth reinforcement, a further specific positive for San Diego.",
-        "Gap: Marlins starter Tyler Phillips' specific recent form wasn't confirmed this session."
-      ],
-      "sources": [
-        "https://www.bleachernation.com/picks/2026/09/16/san-diego-padres-vs-miami-marlins-series-sept-18-20-odds-starting-pitchers-predictions/",
-        "https://en.wikipedia.org/wiki/Nick_Pivetta"
-      ]
-    },
-    {
-      "sport": "MLB Player Props",
-      "matchup": "Nick Pivetta — Strikeouts O/U 6.5 (Marlins vs Padres)",
-      "date": "2026-09-18",
-      "favorite": "Over 6.5",
-      "estimated_probability": {
-        "Over 6.5": 63,
-        "Under 6.5": 37
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "Pivetta's reported 11.14 K/9 rate since returning to form projects to roughly 7-7.5 strikeouts over a typical 6-inning start — this line is grounded directly in that specific, recent rate rather than a season-long average.",
-        "Not pushed higher: a single start still has real variance (early exit, contact-heavy lineup on a given night), and the Marlins' specific strikeout rate as a team wasn't confirmed this session — a real gap."
-      ],
-      "sources": [
-        "https://www.bleachernation.com/picks/2026/09/16/san-diego-padres-vs-miami-marlins-series-sept-18-20-odds-starting-pitchers-predictions/"
-      ]
-    },
-    {
-      "sport": "MLB",
-      "matchup": "Seattle Mariners vs Colorado Rockies",
-      "date": "2026-09-18",
-      "favorite": "Seattle Mariners",
-      "estimated_probability": {
-        "Seattle Mariners": 66,
-        "Colorado Rockies": 34
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 1,
-      "reasoning": [
-        "Colorado is 56-95, one of the worst records in MLB this season; Seattle is 70-82 — a real, sizeable team-quality gap even though neither club is a contender.",
-        "Mariners starter Bryan Woo has a steady 3.44 career ERA, a real specific edge over a Rockies pitching staff that has been a season-long weak point for a 95-loss team.",
-        "Kept at 66% rather than higher specifically because of Coors Field: it's a well-documented, extreme hitter-friendly park that narrows pitching-quality gaps and adds real variance to any single game there."
-      ],
-      "sources": [
-        "https://en.wikipedia.org/wiki/Bryan_Woo",
-        "https://www.bleachernation.com/picks/2026/09/16/colorado-rockies-vs-seattle-mariners-series-sept-18-20-odds-starting-pitchers-predictions/"
-      ]
-    },
-    {
-      "sport": "MLB Totals",
-      "matchup": "Total Runs O/U 10.5 (Mariners vs Rockies)",
-      "date": "2026-09-18",
-      "favorite": "Over 10.5",
-      "estimated_probability": {
-        "Over 10.5": 60,
-        "Under 10.5": 40
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "Coors Field's altitude and dimensions are a well-established, extreme run-scoring environment — a specific park factor, not a generic assumption.",
-        "Rockies (56-95) have a season-long weak pitching staff, reinforcing the Over case beyond just the park effect.",
-        "Set the total meaningfully higher than a typical MLB game (10.5 vs. the usual 8-9) specifically because of Coors, not as a round-number guess."
-      ],
-      "sources": [
-        "https://en.wikipedia.org/wiki/Bryan_Woo"
-      ]
-    },
-    {
-      "sport": "WTA",
-      "matchup": "Paula Badosa vs Mary Stoiana",
-      "date": "2026-09-18",
-      "favorite": "Paula Badosa",
-      "estimated_probability": {
-        "Paula Badosa": 62,
-        "Mary Stoiana": 38
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "SP Open (WTA 250, hardcourt, Sao Paulo) quarterfinal, Friday 5:30pm local on Court 1.",
-        "Ranking gap is real but not huge: Badosa is a former top-10 player currently rebuilding at roughly world No. 70; Stoiana is a fast-rising 21-year-old at a career-high No. 122 who only recently cracked the top 150.",
-        "Recent form in this event favors Badosa slightly on paper (won her QF-qualifying matches 6-3 6-2 then 4-6 6-2 6-2) but she needed a third set against a much lower-ranked Ortenzi, which is a real red flag, not a footnote.",
-        "Real, explicitly-flagged gap: Badosa has a documented recent injury history (a back stress fracture and a torn hip labrum) that has repeatedly interrupted her comeback in 2025-2026 - this caps how heavily her ranking/experience edge should be weighted.",
-        "Stoiana has looked comfortable getting here (6-3 7-5, then 7-6(5) 6-1) and is in career-best form, playing without the injury cloud Badosa carries.",
-        "No prior head-to-head between the two.",
-        "Market roughly agrees with this range: one bookmaker (TAB) prices it near 63/37 in implied probability, consistent with a real but not overwhelming favorite rather than a lock.",
-        "Net: Badosa's quality edge is real, but the injury history and a shaky third-set win to get here keep this at a lean, not a strong lean."
-      ],
-      "sources": [
-        "https://www.sportskeeda.com/tennis/paula-badosa-vs-mary-stoiana-preview-head-to-head-odds-prediction-betting-tips-sp-open-2026",
-        "https://en.wikipedia.org/wiki/Paula_Badosa",
-        "https://www.wtatennis.com/players/330265/mary-stoiana",
-        "https://www.creditonecharlestonopen.com/articles/navigating-injuries-paula-badosa-sets-out-to-reclimb-mountain/"
-      ],
-      "start_time": "2026-09-18T20:30:00Z"
-    },
-    {
-      "sport": "WTA",
-      "matchup": "Anna Blinkova vs Alina Charaeva",
-      "date": "2026-09-18",
-      "favorite": "Anna Blinkova",
-      "estimated_probability": {
-        "Anna Blinkova": 55,
-        "Alina Charaeva": 45
-      },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.5,
-      "reasoning": [
-        "SP Open quarterfinal, Friday 3:30pm local on Court 1 - the earlier match on the same court/day as Badosa-Stoiana.",
-        "Genuinely close on the numbers: Blinkova (4-seed) is ranked No. 94, but her 2026 season record (26-28) is actually worse than Charaeva's (8-seed, 32-21) - sources disagree on Charaeva's exact current rank (108/118/133 depending on the site), which is itself a sign this isn't a clean gap.",
-        "Both are in good form to reach this stage: Blinkova won 6-1 6-3 then 6-3 6-0; Charaeva won a tighter 3-6 7-6(5) 6-3 then a clean 6-2 6-3.",
-        "No head-to-head history between them - first tour meeting.",
-        "Slight lean to Blinkova mainly on seeding/higher nominal ranking and the more comfortable second-round scoreline, not on any decisive edge - this is intentionally sized and labeled as a coin flip rather than inflated because it's the higher seed.",
-        "Real gap: no confirmed reporting found on either player's physical condition/fatigue after their round-of-16 matches, which could matter on a same-day turnaround."
-      ],
-      "sources": [
-        "https://www.sportskeeda.com/tennis/anna-blinkova-vs-alina-charaeva-preview-head-to-head-odds-prediction-betting-tips-sp-open-2026",
-        "https://en.wikipedia.org/wiki/Anna_Blinkova",
-        "https://en.wikipedia.org/wiki/Alina_Charaeva",
-        "https://en.tennistemple.com/actu/anna-blinkova-wins-first-match-as-french-citizen/EvkC"
-      ],
-      "start_time": "2026-09-18T18:30:00Z"
-    },
-    {
-      "sport": "College Football",
-      "matchup": "Portland State Vikings vs Oregon Ducks",
-      "date": "2026-09-18",
-      "favorite": "Oregon Ducks",
-      "estimated_probability": {
-        "Oregon Ducks": 95,
-        "Portland State Vikings": 5
-      },
-      "confidence_label": "Chalk",
-      "recommended_units": 3,
-      "reasoning": [
-        "Autzen Stadium, Friday 10:30pm ET. Oregon (1-1, No. 21 AP) is favored by 57.5-58 points across DraftKings/BetMGM/Caesars/FanDuel; Polymarket traders price the moneyline at 99% - this is about as lopsided a real matchup as exists this week.",
-        "Portland State is 0-3 and winless, an FCS program facing a Power 4 roster - the talent/depth gap at this level is close to the largest in this matchup type.",
-        "Real, explicitly-flagged gap that keeps this off a flat 99%/100%: Oregon's defense has actually been shaky in 2026, allowing over 500 yards and 63 points combined across its first two games, and just lost outright to Oklahoma State (unranked) six days before this game. Eight Ducks are dealing with injuries, including starting TE Jamari Johnson, unlikely to play.",
-        "None of that changes the opponent - Portland State's issues (0-3, outmatched at FBS level) make an outright upset very unlikely even against a shakier-than-expected Oregon team - but it's the real reason this is capped at the site's 95% max rather than treated as inevitable the way the market's 99% number implies.",
-        "This is a moneyline pick only (not the -57.5 spread), which is deliberately the safer side of this matchup given Oregon's own uneven defensive form this season."
-      ],
-      "sources": [
-        "https://www.si.com/betting/portland-state-vs-oregon-prediction-odds-and-key-players-to-watch-for-college-football-week-3",
-        "https://polymarket.com/sports/cfb/cfb-portst-ore-2026-09-18",
-        "https://www.si.com/college/oregon/football/oregon-ducks-injury-concerns-monitor-portland-state-vikings"
-      ],
-      "start_time": "2026-09-19T02:30:00Z"
-    },
-    {
-      "sport": "WTA Player Props",
-      "matchup": "Paula Badosa — Aces O/U 2.5 (Badosa vs Stoiana)",
-      "date": "2026-09-18",
-      "favorite": "Over 2.5",
-      "estimated_probability": {
-        "Over 2.5": 73,
-        "Under 2.5": 27
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 1.25,
-      "reasoning": [
-        "SP Open quarterfinal, hardcourt, Friday 5:30pm local.",
-        "This is grounded in Badosa's own real 2026 match log, not a guess: she has hit over 2.5 aces in 73% of her matches this season, and over 3.5 in 68% - a fairly reliable, serve-driven pattern rather than a one-off streak.",
-        "Hardcourt in Sao Paulo (moderate altitude, ~760m) tends to play a touch faster, which if anything supports the serve rather than working against it.",
-        "Real gap: no specific data found on Stoiana's return-game numbers against big servers specifically, so this leans on Badosa's own baseline rate rather than an opponent-specific adjustment - that's why it's sized as a Lean, not higher.",
-        "This is independent of the existing Badosa vs Stoiana moneyline pick already on the board - a different market on the same match, not a hedge or a duplicate of it."
-      ],
-      "sources": [
-        "https://tennisstats.com/players/paula-badosa",
-        "https://www.sportskeeda.com/tennis/paula-badosa-vs-mary-stoiana-preview-head-to-head-odds-prediction-betting-tips-sp-open-2026"
-      ],
-      "start_time": "2026-09-18T20:30:00Z"
-    },
     {
       "sport": "WTA Player Props",
       "matchup": "Mary Stoiana — Aces O/U 3.5 (Badosa vs Stoiana)",
@@ -212,54 +25,6 @@
         "https://www.sportskeeda.com/tennis/paula-badosa-vs-mary-stoiana-preview-head-to-head-odds-prediction-betting-tips-sp-open-2026"
       ],
       "start_time": "2026-09-18T20:30:00Z"
-    },
-    {
-      "sport": "ATP Challenger",
-      "matchup": "Marco Trungelliti vs Marco Cecchinato",
-      "date": "2026-09-18",
-      "favorite": "Marco Trungelliti",
-      "estimated_probability": {
-        "Marco Trungelliti": 63,
-        "Marco Cecchinato": 37
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.5,
-      "reasoning": [
-        "ATP Challenger Szczecin (Poland) quarterfinal - Trungelliti is the No. 2 seed, Cecchinato the No. 5 seed.",
-        "This one initially looks backwards from name recognition (Cecchinato is a former world No. 16 and Roland Garros semifinalist), but the actual current-form gap favors Trungelliti: he's ranked No. 83 (career-high No. 76 this April) against Cecchinato's No. 166, and Trungelliti has been the better player in 2026 - a Marrakech final and a Rwanda Challenger title, both this year, while Cecchinato lost that same Rwanda final to him and enters off a 1-2 loss to Laslo Djere in Genoa.",
-        "Head-to-head is close (3-2 Cecchinato) but the two most recent and most relevant data points both favor Trungelliti: he won their last meeting (Rwanda Challenger II final, March 2026, 4-6 6-0 6-3) and has been the more in-form player since.",
-        "Deliberately not sized higher than a slight lean - Cecchinato does hold a career sets/games edge in the head-to-head overall and has the higher ceiling when he's playing well, and this is only a Challenger quarterfinal sample."
-      ],
-      "sources": [
-        "https://tennistonic.com/tennis-news/1055653/h2h-prediction-of-marco-trungelliti-vs-marco-cecchinato-in-szczecin-challenger-with-odds-preview-pick-18th-september-2026/",
-        "https://www.atptour.com/en/news/trungelliti-top-100-projection-april-2026",
-        "https://en.wikipedia.org/wiki/Marco_Cecchinato",
-        "https://www.crushrushnews.com/2026/09/12/szczecin-challenger-entry-list/"
-      ],
-      "start_time": "2026-09-18T13:00:00Z"
-    },
-    {
-      "sport": "ATP Challenger",
-      "matchup": "Nikolas Sanchez-Izquierdo vs Zdenek Kolar",
-      "date": "2026-09-18",
-      "favorite": "Nikolas Sanchez-Izquierdo",
-      "estimated_probability": {
-        "Nikolas Sanchez-Izquierdo": 55,
-        "Zdenek Kolar": 45
-      },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.25,
-      "reasoning": [
-        "ATP Challenger Szczecin quarterfinal, No. 7 seed Kolar vs unseeded Sanchez-Izquierdo.",
-        "Genuinely close: Kolar is the higher-ranked player (No. 154-156 vs No. 214), which would normally point the other way, but Sanchez-Izquierdo has the more relevant recent data point - he beat Kolar in the Ostra Group Open final this April (6-4, 7-6(4)), his maiden Challenger title, and that's their most recent meeting.",
-        "Real gap: no data found on hardcourt-specific splits for either player, and this is a small sample (one prior meeting) to lean on - sized as a coin flip rather than inflated off a single head-to-head result.",
-        "Consistent with market pricing: sportsbook odds imply a similar ~53/47 split once vig is removed, not a case of the site inventing a lean the market disagrees with."
-      ],
-      "sources": [
-        "https://en.wikipedia.org/wiki/2026_Ostra_Group_Open",
-        "https://www.atptour.com/en/players/zdenek-kolar/kh56/rankings-breakdown",
-        "https://tennistonic.com/tennis-news/1055662/h2h-prediction-of-zdenek-kolar-vs-nikolas-sanchez-izquierdo-in-szczecin-challenger-with-odds-preview-pick-18th-september-2026/"
-      ]
     },
     {
       "sport": "MLB",
@@ -308,28 +73,6 @@
       ]
     },
     {
-      "sport": "Soccer - EPL",
-      "matchup": "Tottenham Hotspur vs Aston Villa",
-      "date": "2026-09-19",
-      "favorite": "Tottenham Hotspur",
-      "estimated_probability": {
-        "Tottenham Hotspur": 65,
-        "Aston Villa": 35
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 1,
-      "reasoning": [
-        "Both winless: Spurs 17th with 2 points, Villa 19th with 1 point, from 4 games each.",
-        "Villa have lost 3 of their 4 openers, a worse trajectory than Tottenham's two draws.",
-        "Home advantage plus Villa's poor away form so far tips this toward Spurs, though a low-scoring, tight game is expected either way.",
-        "Presented Draw No Bet: win probabilities normalized to exclude the draw outcome."
-      ],
-      "sources": [
-        "https://www.sportskeeda.com/football/tottenham-hotspur-vs-aston-villa-prediction-betting-tips-september-19th-2026",
-        "https://www.dimers.com/epl/news/tottenham-vs-aston-villa-prediction-09-19-2026-ac"
-      ]
-    },
-    {
       "sport": "MLB",
       "matchup": "San Francisco Giants vs Los Angeles Dodgers",
       "date": "2026-09-19",
@@ -348,30 +91,6 @@
         "https://www.mlb.com/news/mlb-playoff-picture-and-bracket-2026",
         "https://www.nbc.com/nbc-insider/los-angeles-dodgers-full-2026-mlb-season-schedule"
       ]
-    },
-    {
-      "sport": "College Football",
-      "matchup": "Georgia Bulldogs vs Arkansas Razorbacks",
-      "date": "2026-09-19",
-      "favorite": "Georgia Bulldogs",
-      "estimated_probability": {
-        "Georgia Bulldogs": 95,
-        "Arkansas Razorbacks": 5
-      },
-      "confidence_label": "Chalk",
-      "recommended_units": 3,
-      "reasoning": [
-        "Noon ET, Fayetteville. Georgia (2-0, No. 2) opened as a 24.5-point favorite with a 54.5 total - the market sees this as one of the most lopsided ranked-vs-unranked games of the week.",
-        "Real, specific gap between the teams: Georgia has outscored its two opponents 133-23; Arkansas (1-1) just lost 43-10 to Utah, can't run the ball (120th nationally), and carries an 11-game losing streak against FBS opponents - the longest in program history.",
-        "Georgia does have some banged-up depth (DB Tyriq Green left Week 2 with a leg injury, WR Thomas Blackshear out with a wrist issue, a backup LB out since Week 1), but none of that touches the starting offense that just hung 70 points on Western Kentucky - not enough to meaningfully close a gap this size.",
-        "Moneyline only (not the -24.5 spread) - deliberately the safer side of a game this lopsided, and still capped at the site's 95% max rather than treated as literally certain."
-      ],
-      "sources": [
-        "https://sports.yahoo.com/articles/georgia-vs-arkansas-odds-injuries-080352267.html",
-        "https://www.cbssports.com/college-football/news/georgia-arkansas-prediction-picks-odds-spread-where-to-watch-live/",
-        "https://en.wikipedia.org/wiki/2026_Arkansas_Razorbacks_football_team"
-      ],
-      "start_time": "2026-09-19T16:00:00Z"
     },
     {
       "sport": "College Football Spreads",
@@ -1210,6 +929,326 @@
       "final_score": "248 passing yards",
       "actual_value": 248,
       "settled_at": "2026-09-18T12:25:27Z"
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Miami Marlins vs San Diego Padres",
+      "date": "2026-09-18",
+      "favorite": "San Diego Padres",
+      "estimated_probability": {
+        "San Diego Padres": 62,
+        "Miami Marlins": 38
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Confirmed starter Nick Pivetta has a 3.43 ERA and 11.14 K/9 'since returning to form' — a specific, strong recent-form signal, not just a season-long average.",
+        "Padres (73-66) host the Marlins (70-69) with the 3rd NL Wild Card spot directly on the line between these two teams — real stakes for both sides, which is why this isn't pushed higher than a modest lean despite the pitching edge.",
+        "Padres are also reportedly getting Joe Musgrove and Jason Adam back for pitching depth reinforcement, a further specific positive for San Diego.",
+        "Gap: Marlins starter Tyler Phillips' specific recent form wasn't confirmed this session."
+      ],
+      "sources": [
+        "https://www.bleachernation.com/picks/2026/09/16/san-diego-padres-vs-miami-marlins-series-sept-18-20-odds-starting-pitchers-predictions/",
+        "https://en.wikipedia.org/wiki/Nick_Pivetta"
+      ],
+      "winner": "San Diego Padres",
+      "final_score": "Padres 8, Marlins 2",
+      "settled_at": "2026-09-19T19:49:42Z"
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Nick Pivetta — Strikeouts O/U 6.5 (Marlins vs Padres)",
+      "date": "2026-09-18",
+      "favorite": "Over 6.5",
+      "estimated_probability": {
+        "Over 6.5": 63,
+        "Under 6.5": 37
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Pivetta's reported 11.14 K/9 rate since returning to form projects to roughly 7-7.5 strikeouts over a typical 6-inning start — this line is grounded directly in that specific, recent rate rather than a season-long average.",
+        "Not pushed higher: a single start still has real variance (early exit, contact-heavy lineup on a given night), and the Marlins' specific strikeout rate as a team wasn't confirmed this session — a real gap."
+      ],
+      "sources": [
+        "https://www.bleachernation.com/picks/2026/09/16/san-diego-padres-vs-miami-marlins-series-sept-18-20-odds-starting-pitchers-predictions/"
+      ],
+      "winner": "Under 6.5",
+      "final_score": "5 IP, 4 strikeouts, win",
+      "actual_value": 4,
+      "settled_at": "2026-09-19T19:49:42Z"
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Seattle Mariners vs Colorado Rockies",
+      "date": "2026-09-18",
+      "favorite": "Seattle Mariners",
+      "estimated_probability": {
+        "Seattle Mariners": 66,
+        "Colorado Rockies": 34
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Colorado is 56-95, one of the worst records in MLB this season; Seattle is 70-82 — a real, sizeable team-quality gap even though neither club is a contender.",
+        "Mariners starter Bryan Woo has a steady 3.44 career ERA, a real specific edge over a Rockies pitching staff that has been a season-long weak point for a 95-loss team.",
+        "Kept at 66% rather than higher specifically because of Coors Field: it's a well-documented, extreme hitter-friendly park that narrows pitching-quality gaps and adds real variance to any single game there."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bryan_Woo",
+        "https://www.bleachernation.com/picks/2026/09/16/colorado-rockies-vs-seattle-mariners-series-sept-18-20-odds-starting-pitchers-predictions/"
+      ],
+      "winner": "Seattle Mariners",
+      "final_score": "Mariners 5, Rockies 4 (walk-off HR in the 9th)",
+      "settled_at": "2026-09-19T19:49:42Z"
+    },
+    {
+      "sport": "MLB Totals",
+      "matchup": "Total Runs O/U 10.5 (Mariners vs Rockies)",
+      "date": "2026-09-18",
+      "favorite": "Over 10.5",
+      "estimated_probability": {
+        "Over 10.5": 60,
+        "Under 10.5": 40
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Coors Field's altitude and dimensions are a well-established, extreme run-scoring environment — a specific park factor, not a generic assumption.",
+        "Rockies (56-95) have a season-long weak pitching staff, reinforcing the Over case beyond just the park effect.",
+        "Set the total meaningfully higher than a typical MLB game (10.5 vs. the usual 8-9) specifically because of Coors, not as a round-number guess."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bryan_Woo"
+      ],
+      "winner": "Under 10.5",
+      "final_score": "9 total runs (5-4)",
+      "actual_total": 9,
+      "settled_at": "2026-09-19T19:49:42Z"
+    },
+    {
+      "sport": "WTA",
+      "matchup": "Paula Badosa vs Mary Stoiana",
+      "date": "2026-09-18",
+      "favorite": "Paula Badosa",
+      "estimated_probability": {
+        "Paula Badosa": 62,
+        "Mary Stoiana": 38
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "SP Open (WTA 250, hardcourt, Sao Paulo) quarterfinal, Friday 5:30pm local on Court 1.",
+        "Ranking gap is real but not huge: Badosa is a former top-10 player currently rebuilding at roughly world No. 70; Stoiana is a fast-rising 21-year-old at a career-high No. 122 who only recently cracked the top 150.",
+        "Recent form in this event favors Badosa slightly on paper (won her QF-qualifying matches 6-3 6-2 then 4-6 6-2 6-2) but she needed a third set against a much lower-ranked Ortenzi, which is a real red flag, not a footnote.",
+        "Real, explicitly-flagged gap: Badosa has a documented recent injury history (a back stress fracture and a torn hip labrum) that has repeatedly interrupted her comeback in 2025-2026 - this caps how heavily her ranking/experience edge should be weighted.",
+        "Stoiana has looked comfortable getting here (6-3 7-5, then 7-6(5) 6-1) and is in career-best form, playing without the injury cloud Badosa carries.",
+        "No prior head-to-head between the two.",
+        "Market roughly agrees with this range: one bookmaker (TAB) prices it near 63/37 in implied probability, consistent with a real but not overwhelming favorite rather than a lock.",
+        "Net: Badosa's quality edge is real, but the injury history and a shaky third-set win to get here keep this at a lean, not a strong lean."
+      ],
+      "sources": [
+        "https://www.sportskeeda.com/tennis/paula-badosa-vs-mary-stoiana-preview-head-to-head-odds-prediction-betting-tips-sp-open-2026",
+        "https://en.wikipedia.org/wiki/Paula_Badosa",
+        "https://www.wtatennis.com/players/330265/mary-stoiana",
+        "https://www.creditonecharlestonopen.com/articles/navigating-injuries-paula-badosa-sets-out-to-reclimb-mountain/"
+      ],
+      "start_time": "2026-09-18T20:30:00Z",
+      "winner": "Paula Badosa",
+      "final_score": "Badosa def. Stoiana 6-4, 6-2",
+      "settled_at": "2026-09-19T19:49:42Z"
+    },
+    {
+      "sport": "WTA",
+      "matchup": "Anna Blinkova vs Alina Charaeva",
+      "date": "2026-09-18",
+      "favorite": "Anna Blinkova",
+      "estimated_probability": {
+        "Anna Blinkova": 55,
+        "Alina Charaeva": 45
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "SP Open quarterfinal, Friday 3:30pm local on Court 1 - the earlier match on the same court/day as Badosa-Stoiana.",
+        "Genuinely close on the numbers: Blinkova (4-seed) is ranked No. 94, but her 2026 season record (26-28) is actually worse than Charaeva's (8-seed, 32-21) - sources disagree on Charaeva's exact current rank (108/118/133 depending on the site), which is itself a sign this isn't a clean gap.",
+        "Both are in good form to reach this stage: Blinkova won 6-1 6-3 then 6-3 6-0; Charaeva won a tighter 3-6 7-6(5) 6-3 then a clean 6-2 6-3.",
+        "No head-to-head history between them - first tour meeting.",
+        "Slight lean to Blinkova mainly on seeding/higher nominal ranking and the more comfortable second-round scoreline, not on any decisive edge - this is intentionally sized and labeled as a coin flip rather than inflated because it's the higher seed.",
+        "Real gap: no confirmed reporting found on either player's physical condition/fatigue after their round-of-16 matches, which could matter on a same-day turnaround."
+      ],
+      "sources": [
+        "https://www.sportskeeda.com/tennis/anna-blinkova-vs-alina-charaeva-preview-head-to-head-odds-prediction-betting-tips-sp-open-2026",
+        "https://en.wikipedia.org/wiki/Anna_Blinkova",
+        "https://en.wikipedia.org/wiki/Alina_Charaeva",
+        "https://en.tennistemple.com/actu/anna-blinkova-wins-first-match-as-french-citizen/EvkC"
+      ],
+      "start_time": "2026-09-18T18:30:00Z",
+      "winner": "Anna Blinkova",
+      "final_score": "Blinkova def. Charaeva 6-4, 7-5",
+      "settled_at": "2026-09-19T19:49:42Z"
+    },
+    {
+      "sport": "College Football",
+      "matchup": "Portland State Vikings vs Oregon Ducks",
+      "date": "2026-09-18",
+      "favorite": "Oregon Ducks",
+      "estimated_probability": {
+        "Oregon Ducks": 95,
+        "Portland State Vikings": 5
+      },
+      "confidence_label": "Chalk",
+      "recommended_units": 3,
+      "reasoning": [
+        "Autzen Stadium, Friday 10:30pm ET. Oregon (1-1, No. 21 AP) is favored by 57.5-58 points across DraftKings/BetMGM/Caesars/FanDuel; Polymarket traders price the moneyline at 99% - this is about as lopsided a real matchup as exists this week.",
+        "Portland State is 0-3 and winless, an FCS program facing a Power 4 roster - the talent/depth gap at this level is close to the largest in this matchup type.",
+        "Real, explicitly-flagged gap that keeps this off a flat 99%/100%: Oregon's defense has actually been shaky in 2026, allowing over 500 yards and 63 points combined across its first two games, and just lost outright to Oklahoma State (unranked) six days before this game. Eight Ducks are dealing with injuries, including starting TE Jamari Johnson, unlikely to play.",
+        "None of that changes the opponent - Portland State's issues (0-3, outmatched at FBS level) make an outright upset very unlikely even against a shakier-than-expected Oregon team - but it's the real reason this is capped at the site's 95% max rather than treated as inevitable the way the market's 99% number implies.",
+        "This is a moneyline pick only (not the -57.5 spread), which is deliberately the safer side of this matchup given Oregon's own uneven defensive form this season."
+      ],
+      "sources": [
+        "https://www.si.com/betting/portland-state-vs-oregon-prediction-odds-and-key-players-to-watch-for-college-football-week-3",
+        "https://polymarket.com/sports/cfb/cfb-portst-ore-2026-09-18",
+        "https://www.si.com/college/oregon/football/oregon-ducks-injury-concerns-monitor-portland-state-vikings"
+      ],
+      "start_time": "2026-09-19T02:30:00Z",
+      "winner": "Oregon Ducks",
+      "final_score": "Oregon 84, Portland State 0",
+      "settled_at": "2026-09-19T19:49:42Z"
+    },
+    {
+      "sport": "WTA Player Props",
+      "matchup": "Paula Badosa — Aces O/U 2.5 (Badosa vs Stoiana)",
+      "date": "2026-09-18",
+      "favorite": "Over 2.5",
+      "estimated_probability": {
+        "Over 2.5": 73,
+        "Under 2.5": 27
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "SP Open quarterfinal, hardcourt, Friday 5:30pm local.",
+        "This is grounded in Badosa's own real 2026 match log, not a guess: she has hit over 2.5 aces in 73% of her matches this season, and over 3.5 in 68% - a fairly reliable, serve-driven pattern rather than a one-off streak.",
+        "Hardcourt in Sao Paulo (moderate altitude, ~760m) tends to play a touch faster, which if anything supports the serve rather than working against it.",
+        "Real gap: no specific data found on Stoiana's return-game numbers against big servers specifically, so this leans on Badosa's own baseline rate rather than an opponent-specific adjustment - that's why it's sized as a Lean, not higher.",
+        "This is independent of the existing Badosa vs Stoiana moneyline pick already on the board - a different market on the same match, not a hedge or a duplicate of it."
+      ],
+      "sources": [
+        "https://tennisstats.com/players/paula-badosa",
+        "https://www.sportskeeda.com/tennis/paula-badosa-vs-mary-stoiana-preview-head-to-head-odds-prediction-betting-tips-sp-open-2026"
+      ],
+      "start_time": "2026-09-18T20:30:00Z",
+      "winner": "Over 2.5",
+      "final_score": "Badosa hit 4 aces",
+      "actual_value": 4,
+      "settled_at": "2026-09-19T19:49:42Z"
+    },
+    {
+      "sport": "ATP Challenger",
+      "matchup": "Marco Trungelliti vs Marco Cecchinato",
+      "date": "2026-09-18",
+      "favorite": "Marco Trungelliti",
+      "estimated_probability": {
+        "Marco Trungelliti": 63,
+        "Marco Cecchinato": 37
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "ATP Challenger Szczecin (Poland) quarterfinal - Trungelliti is the No. 2 seed, Cecchinato the No. 5 seed.",
+        "This one initially looks backwards from name recognition (Cecchinato is a former world No. 16 and Roland Garros semifinalist), but the actual current-form gap favors Trungelliti: he's ranked No. 83 (career-high No. 76 this April) against Cecchinato's No. 166, and Trungelliti has been the better player in 2026 - a Marrakech final and a Rwanda Challenger title, both this year, while Cecchinato lost that same Rwanda final to him and enters off a 1-2 loss to Laslo Djere in Genoa.",
+        "Head-to-head is close (3-2 Cecchinato) but the two most recent and most relevant data points both favor Trungelliti: he won their last meeting (Rwanda Challenger II final, March 2026, 4-6 6-0 6-3) and has been the more in-form player since.",
+        "Deliberately not sized higher than a slight lean - Cecchinato does hold a career sets/games edge in the head-to-head overall and has the higher ceiling when he's playing well, and this is only a Challenger quarterfinal sample."
+      ],
+      "sources": [
+        "https://tennistonic.com/tennis-news/1055653/h2h-prediction-of-marco-trungelliti-vs-marco-cecchinato-in-szczecin-challenger-with-odds-preview-pick-18th-september-2026/",
+        "https://www.atptour.com/en/news/trungelliti-top-100-projection-april-2026",
+        "https://en.wikipedia.org/wiki/Marco_Cecchinato",
+        "https://www.crushrushnews.com/2026/09/12/szczecin-challenger-entry-list/"
+      ],
+      "start_time": "2026-09-18T13:00:00Z",
+      "winner": "Marco Trungelliti",
+      "final_score": "Trungelliti def. Cecchinato 6-7(3), 7-5, 6-4",
+      "settled_at": "2026-09-19T19:49:42Z"
+    },
+    {
+      "sport": "ATP Challenger",
+      "matchup": "Nikolas Sanchez-Izquierdo vs Zdenek Kolar",
+      "date": "2026-09-18",
+      "favorite": "Nikolas Sanchez-Izquierdo",
+      "estimated_probability": {
+        "Nikolas Sanchez-Izquierdo": 55,
+        "Zdenek Kolar": 45
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.25,
+      "reasoning": [
+        "ATP Challenger Szczecin quarterfinal, No. 7 seed Kolar vs unseeded Sanchez-Izquierdo.",
+        "Genuinely close: Kolar is the higher-ranked player (No. 154-156 vs No. 214), which would normally point the other way, but Sanchez-Izquierdo has the more relevant recent data point - he beat Kolar in the Ostra Group Open final this April (6-4, 7-6(4)), his maiden Challenger title, and that's their most recent meeting.",
+        "Real gap: no data found on hardcourt-specific splits for either player, and this is a small sample (one prior meeting) to lean on - sized as a coin flip rather than inflated off a single head-to-head result.",
+        "Consistent with market pricing: sportsbook odds imply a similar ~53/47 split once vig is removed, not a case of the site inventing a lean the market disagrees with."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/2026_Ostra_Group_Open",
+        "https://www.atptour.com/en/players/zdenek-kolar/kh56/rankings-breakdown",
+        "https://tennistonic.com/tennis-news/1055662/h2h-prediction-of-zdenek-kolar-vs-nikolas-sanchez-izquierdo-in-szczecin-challenger-with-odds-preview-pick-18th-september-2026/"
+      ],
+      "winner": "Nikolas Sanchez-Izquierdo",
+      "final_score": "Sanchez-Izquierdo def. Kolar 6-1, 6-3",
+      "settled_at": "2026-09-19T19:49:42Z"
+    },
+    {
+      "sport": "Soccer - EPL",
+      "matchup": "Tottenham Hotspur vs Aston Villa",
+      "date": "2026-09-19",
+      "favorite": "Tottenham Hotspur",
+      "estimated_probability": {
+        "Tottenham Hotspur": 65,
+        "Aston Villa": 35
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Both winless: Spurs 17th with 2 points, Villa 19th with 1 point, from 4 games each.",
+        "Villa have lost 3 of their 4 openers, a worse trajectory than Tottenham's two draws.",
+        "Home advantage plus Villa's poor away form so far tips this toward Spurs, though a low-scoring, tight game is expected either way.",
+        "Presented Draw No Bet: win probabilities normalized to exclude the draw outcome."
+      ],
+      "sources": [
+        "https://www.sportskeeda.com/football/tottenham-hotspur-vs-aston-villa-prediction-betting-tips-september-19th-2026",
+        "https://www.dimers.com/epl/news/tottenham-vs-aston-villa-prediction-09-19-2026-ac"
+      ],
+      "winner": "Aston Villa",
+      "final_score": "Aston Villa 3, Tottenham 2 (Villa led 3-0 before two late Spurs goals)",
+      "settled_at": "2026-09-19T19:49:42Z"
+    },
+    {
+      "sport": "College Football",
+      "matchup": "Georgia Bulldogs vs Arkansas Razorbacks",
+      "date": "2026-09-19",
+      "favorite": "Georgia Bulldogs",
+      "estimated_probability": {
+        "Georgia Bulldogs": 95,
+        "Arkansas Razorbacks": 5
+      },
+      "confidence_label": "Chalk",
+      "recommended_units": 3,
+      "reasoning": [
+        "Noon ET, Fayetteville. Georgia (2-0, No. 2) opened as a 24.5-point favorite with a 54.5 total - the market sees this as one of the most lopsided ranked-vs-unranked games of the week.",
+        "Real, specific gap between the teams: Georgia has outscored its two opponents 133-23; Arkansas (1-1) just lost 43-10 to Utah, can't run the ball (120th nationally), and carries an 11-game losing streak against FBS opponents - the longest in program history.",
+        "Georgia does have some banged-up depth (DB Tyriq Green left Week 2 with a leg injury, WR Thomas Blackshear out with a wrist issue, a backup LB out since Week 1), but none of that touches the starting offense that just hung 70 points on Western Kentucky - not enough to meaningfully close a gap this size.",
+        "Moneyline only (not the -24.5 spread) - deliberately the safer side of a game this lopsided, and still capped at the site's 95% max rather than treated as literally certain."
+      ],
+      "sources": [
+        "https://sports.yahoo.com/articles/georgia-vs-arkansas-odds-injuries-080352267.html",
+        "https://www.cbssports.com/college-football/news/georgia-arkansas-prediction-picks-odds-spread-where-to-watch-live/",
+        "https://en.wikipedia.org/wiki/2026_Arkansas_Razorbacks_football_team"
+      ],
+      "start_time": "2026-09-19T16:00:00Z",
+      "winner": "Georgia Bulldogs",
+      "final_score": "Georgia 31, Arkansas 3",
+      "settled_at": "2026-09-19T19:49:42Z"
     }
   ]
 }
