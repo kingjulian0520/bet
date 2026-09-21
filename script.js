@@ -122,13 +122,22 @@ async function applyAuthState(user) {
     let profile = await Auth.getMyProfile(user.id);
     if (!profile) profile = { username: user.email, isPublic: false, unitValue: null, bets: [] };
 
-    // First login on this browser with existing guest bets already logged
-    // here and nothing in the cloud yet - bring them along instead of
-    // silently losing them.
+    // First login on this browser with existing guest data already here
+    // and nothing in the cloud yet - bring it along instead of silently
+    // losing it.
     const localBets = loadLocalBets();
+    const localUnitValue = parseFloat(localStorage.getItem(UNIT_VALUE_KEY));
+    const migrated = {};
     if ((!profile.bets || profile.bets.length === 0) && localBets.length > 0) {
       profile.bets = localBets;
-      await Auth.saveMyProfile(user.id, { bets: localBets });
+      migrated.bets = localBets;
+    }
+    if (!profile.unitValue && !isNaN(localUnitValue) && localUnitValue > 0) {
+      profile.unitValue = localUnitValue;
+      migrated.unitValue = localUnitValue;
+    }
+    if (Object.keys(migrated).length > 0) {
+      await Auth.saveMyProfile(user.id, migrated);
     }
 
     profileCache = profile;
