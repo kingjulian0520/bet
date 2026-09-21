@@ -1,3 +1,5 @@
+import * as Auth from "./auth.js";
+
 const UNIT_VALUE_KEY = "closeCallsUnitValue";
 const BETS_KEY = "closeCallsBets";
 
@@ -11,6 +13,13 @@ let activeModalPick = null;
 let activeModalSide = null;
 let openBetMenuId = null;
 
+// currentUser/profileCache are set once Firebase resolves the login state.
+// Until then (and always, if accounts aren't configured or the visitor
+// isn't signed in) everything reads/writes localStorage - "guest mode",
+// which is exactly how the site behaved before accounts existed.
+let currentUser = null;
+let profileCache = null;
+
 // ---------- storage ----------
 
 // The $ value locked in when a bet was placed. Falls back to the current
@@ -21,11 +30,19 @@ function betUnitValue(bet) {
 }
 
 function getUnitValue() {
+  if (currentUser) return (profileCache && profileCache.unitValue) || null;
   const stored = localStorage.getItem(UNIT_VALUE_KEY);
   return stored ? parseFloat(stored) : null;
 }
 
 function setUnitValue(value) {
+  if (currentUser) {
+    if (profileCache) profileCache.unitValue = value;
+    Auth.saveMyProfile(currentUser.uid, { unitValue: value }).catch((err) => {
+      console.warn("Couldn't sync unit size to your account.", err);
+    });
+    return;
+  }
   try {
     localStorage.setItem(UNIT_VALUE_KEY, String(value));
   } catch (err) {
@@ -33,7 +50,7 @@ function setUnitValue(value) {
   }
 }
 
-function loadBets() {
+function loadLocalBets() {
   try {
     const raw = localStorage.getItem(BETS_KEY);
     return raw ? JSON.parse(raw) : [];
@@ -42,12 +59,171 @@ function loadBets() {
   }
 }
 
-function saveBets() {
+function saveLocalBets() {
   try {
     localStorage.setItem(BETS_KEY, JSON.stringify(myBets));
   } catch (err) {
     // ignore
   }
+}
+
+// Boots from local/guest data - applyAuthState() swaps in cloud data once
+// (and if) the sign-in state resolves.
+function loadBets() {
+  return loadLocalBets();
+}
+
+function saveBets() {
+  if (currentUser) {
+    if (profileCache) profileCache.bets = myBets;
+    Auth.saveMyProfile(currentUser.uid, { bets: myBets }).catch((err) => {
+      console.warn("Couldn't sync bets to your account, saved locally only.", err);
+    });
+    return;
+  }
+  saveLocalBets();
+}
+
+// ---------- accounts ----------
+
+function renderAccountBar() {
+  const loggedOutEl = document.getElementById("account-logged-out");
+  const loggedInEl = document.getElementById("account-logged-in");
+  if (!loggedOutEl || !loggedInEl) return;
+
+  const unitValueInput = document.getElementById("unit-value-input");
+
+  if (currentUser && profileCache) {
+    loggedOutEl.hidden = true;
+    loggedInEl.hidden = false;
+    document.getElementById("account-username").textContent = `@${profileCache.username || "you"}`;
+    document.getElementById("account-public-checkbox").checked = !!profileCache.isPublic;
+    unitValueInput.value = profileCache.unitValue || "";
+  } else {
+    loggedOutEl.hidden = false;
+    loggedInEl.hidden = true;
+    const stored = localStorage.getItem(UNIT_VALUE_KEY);
+    unitValueInput.value = stored || "";
+  }
+}
+
+async function applyAuthState(user) {
+  currentUser = user;
+
+  if (!user) {
+    profileCache = null;
+    myBets = loadLocalBets();
+    renderAccountBar();
+    renderAll();
+    return;
+  }
+
+  try {
+    let profile = await Auth.getMyProfile(user.uid);
+    if (!profile) profile = { username: user.email, isPublic: false, unitValue: null, bets: [] };
+
+    // First login on this browser with existing guest bets already logged
+    // here and nothing in the cloud yet - bring them along instead of
+    // silently losing them.
+    const localBets = loadLocalBets();
+    if ((!profile.bets || profile.bets.length === 0) && localBets.length > 0) {
+      profile.bets = localBets;
+      await Auth.saveMyProfile(user.uid, { bets: localBets });
+    }
+
+    profileCache = profile;
+    myBets = Array.isArray(profile.bets) ? profile.bets : [];
+  } catch (err) {
+    console.warn("Couldn't load your account data, falling back to this browser's local bets.", err);
+    profileCache = { username: user.email, isPublic: false, unitValue: null, bets: [] };
+    myBets = loadLocalBets();
+  }
+
+  renderAccountBar();
+  renderAll();
+}
+
+function wireAuthUI() {
+  const backdrop = document.getElementById("auth-modal-backdrop");
+  const openBtn = document.getElementById("open-auth-btn");
+  const signoutBtn = document.getElementById("account-signout-btn");
+  const publicCheckbox = document.getElementById("account-public-checkbox");
+
+  const tabs = document.querySelectorAll(".auth-tab-btn");
+  const panels = {
+    signin: document.getElementById("auth-signin-panel"),
+    signup: document.getElementById("auth-signup-panel"),
+  };
+
+  function showTab(name) {
+    tabs.forEach((t) => t.classList.toggle("active", t.dataset.authtab === name));
+    panels.signin.hidden = name !== "signin";
+    panels.signup.hidden = name !== "signup";
+  }
+
+  tabs.forEach((t) => t.addEventListener("click", () => showTab(t.dataset.authtab)));
+
+  openBtn.addEventListener("click", async () => {
+    if (!(await Auth.isFirebaseReady())) {
+      alert("Accounts aren't set up on this site yet.");
+      return;
+    }
+    document.getElementById("signin-error").hidden = true;
+    document.getElementById("signup-error").hidden = true;
+    showTab("signin");
+    backdrop.hidden = false;
+  });
+
+  backdrop.addEventListener("click", (e) => {
+    if (e.target.id === "auth-modal-backdrop") backdrop.hidden = true;
+  });
+  document.querySelectorAll(".auth-cancel").forEach((btn) => {
+    btn.addEventListener("click", () => (backdrop.hidden = true));
+  });
+
+  document.getElementById("signin-submit").addEventListener("click", async () => {
+    const email = document.getElementById("signin-email").value.trim();
+    const password = document.getElementById("signin-password").value;
+    const errEl = document.getElementById("signin-error");
+    errEl.hidden = true;
+    try {
+      await Auth.signIn(email, password);
+      backdrop.hidden = true;
+    } catch (err) {
+      errEl.textContent = err.message || "Couldn't sign in.";
+      errEl.hidden = false;
+    }
+  });
+
+  document.getElementById("signup-submit").addEventListener("click", async () => {
+    const username = document.getElementById("signup-username").value.trim();
+    const email = document.getElementById("signup-email").value.trim();
+    const password = document.getElementById("signup-password").value;
+    const errEl = document.getElementById("signup-error");
+    errEl.hidden = true;
+    try {
+      await Auth.signUp(username, email, password);
+      backdrop.hidden = true;
+    } catch (err) {
+      errEl.textContent = err.message || "Couldn't sign up.";
+      errEl.hidden = false;
+    }
+  });
+
+  signoutBtn.addEventListener("click", () => {
+    Auth.signOutUser();
+  });
+
+  publicCheckbox.addEventListener("change", () => {
+    if (!currentUser) return;
+    const isPublic = publicCheckbox.checked;
+    if (profileCache) profileCache.isPublic = isPublic;
+    Auth.saveMyProfile(currentUser.uid, { isPublic }).catch((err) => {
+      console.warn("Couldn't update public/private setting.", err);
+    });
+  });
+
+  Auth.onAuthChange(applyAuthState);
 }
 
 // ---------- boot ----------
@@ -56,6 +232,7 @@ async function main() {
   wireTabs();
   wireModal();
   wireCalendar();
+  wireAuthUI();
 
   document.addEventListener("click", (e) => {
     if (openBetMenuId && !e.target.closest(".bet-menu-wrap") && !e.target.closest(".bet-adjust-form")) {

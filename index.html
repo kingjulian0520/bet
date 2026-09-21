@@ -8,6 +8,20 @@
 </head>
 <body>
 <header class="page-header">
+  <div class="account-bar" id="account-bar">
+    <div id="account-logged-out" class="account-logged-out">
+      <button id="open-auth-btn" class="secondary-btn">Sign In / Sign Up</button>
+    </div>
+    <div id="account-logged-in" class="account-logged-in" hidden>
+      <span id="account-username" class="account-username"></span>
+      <label class="account-public-toggle">
+        <input type="checkbox" id="account-public-checkbox">
+        Make my bets public
+      </label>
+      <button id="account-signout-btn" class="secondary-btn">Sign out</button>
+    </div>
+  </div>
+
   <h1>Close Calls</h1>
   <p class="subtitle">Automated research on the tightest upcoming matchups across sports, refreshed every 2 hours.</p>
   <p id="last-updated" class="last-updated">Not run yet.</p>
@@ -120,6 +134,48 @@
   </div>
 </div>
 
-<script src="script.js?v=18"></script>
+<div id="auth-modal-backdrop" class="modal-backdrop" hidden>
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="auth-tabs">
+      <button class="auth-tab-btn active" data-authtab="signin">Sign In</button>
+      <button class="auth-tab-btn" data-authtab="signup">Sign Up</button>
+    </div>
+
+    <div id="auth-signin-panel" class="auth-panel">
+      <label class="modal-label" for="signin-email">Email</label>
+      <input id="signin-email" type="email" autocomplete="email">
+
+      <label class="modal-label" for="signin-password">Password</label>
+      <input id="signin-password" type="password" autocomplete="current-password">
+
+      <p id="signin-error" class="auth-error" hidden></p>
+
+      <div class="modal-actions">
+        <button class="secondary-btn auth-cancel">Cancel</button>
+        <button id="signin-submit" class="primary-btn">Sign In</button>
+      </div>
+    </div>
+
+    <div id="auth-signup-panel" class="auth-panel" hidden>
+      <label class="modal-label" for="signup-username">Username</label>
+      <input id="signup-username" type="text" autocomplete="username" maxlength="20" placeholder="letters, numbers, underscore">
+
+      <label class="modal-label" for="signup-email">Email</label>
+      <input id="signup-email" type="email" autocomplete="email">
+
+      <label class="modal-label" for="signup-password">Password</label>
+      <input id="signup-password" type="password" autocomplete="new-password" placeholder="at least 6 characters">
+
+      <p id="signup-error" class="auth-error" hidden></p>
+
+      <div class="modal-actions">
+        <button class="secondary-btn auth-cancel">Cancel</button>
+        <button id="signup-submit" class="primary-btn">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="script.js?v=19"></script>
 </body>
 </html>

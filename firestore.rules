@@ -1,0 +1,31 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Username claims. Public read so sign-up can check availability
+    // before creating an account. Only the claiming account may create its
+    // own claim; nobody can rename or delete one (that's handled server
+    // side by not offering the feature, not by rules).
+    match /usernames/{username} {
+      allow read: if true;
+      allow create: if request.auth != null
+                    && request.auth.uid == request.resource.data.uid;
+      allow update, delete: if false;
+    }
+
+    // Private account doc - email + username link. Owner only, never
+    // public, regardless of the profile's public/private toggle below.
+    match /users/{uid} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+
+    // Public-optional profile - bet history, unit size, display name.
+    // Owner can always read/write their own. Anyone (signed in or not) can
+    // read it ONLY when the owner has flipped isPublic to true.
+    match /profiles/{uid} {
+      allow read: if (request.auth != null && request.auth.uid == uid)
+                  || resource.data.isPublic == true;
+      allow write: if request.auth != null && request.auth.uid == uid;
+    }
+  }
+}
