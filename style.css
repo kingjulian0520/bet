@@ -32,7 +32,22 @@ body {
 .account-bar {
   display: flex;
   justify-content: center;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.2rem;
+}
+
+.account-bar .secondary-btn {
+  padding: 0.35rem 0.85rem;
+  font-size: 0.78rem;
+  border-radius: 999px;
+  color: var(--muted);
+}
+
+.account-bar .secondary-btn:hover {
+  color: var(--text);
+}
+
+.account-logged-in[hidden] {
+  display: none;
 }
 
 .account-logged-in {
@@ -41,12 +56,13 @@ body {
   gap: 0.75rem;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 .account-username {
   font-weight: 700;
   color: var(--accent);
+  font-size: 0.85rem;
 }
 
 .account-public-toggle {
@@ -296,11 +312,13 @@ body {
 
 .pick-card {
   cursor: pointer;
-  transition: border-color 0.15s ease;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .pick-card:hover {
   border-color: var(--accent-dim);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
 }
 
 .bet-card {
@@ -824,6 +842,14 @@ main {
 
 .stake-row .dollars {
   color: var(--muted);
+}
+
+.pick-cta {
+  margin-top: 0.7rem;
+  text-align: right;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
 }
 
 .page-footer {

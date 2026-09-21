@@ -543,7 +543,7 @@ function renderCard(pick) {
   if (units) {
     const dollarsText = unitValue
       ? `<span class="dollars">≈ $${(units * unitValue).toFixed(0)}</span>`
-      : `<span class="dollars">set unit size above for $ amount</span>`;
+      : `<span class="dollars">add a unit size above to see $</span>`;
     stakeRow = `
       <div class="stake-row">
         <span class="units">Suggested: ${units} unit${units === 1 ? "" : "s"}</span>
@@ -569,7 +569,7 @@ function renderCard(pick) {
     <ul class="reasoning">${reasoningItems}</ul>
     ${sourceLinks ? `<div class="sources">Sources: ${sourceLinks}</div>` : ""}
     ${stakeRow}
-    <div class="bet-detail">Click to log a bet on this matchup →</div>
+    <div class="pick-cta">Log this bet →</div>
   `;
 
   return card;
