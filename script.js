@@ -161,17 +161,24 @@ function wireTabs() {
 
 let selectedDayFilter = "all";
 
+function addDaysStr(dateStr, n) {
+  const [y, m, d] = dateStr.split("-").map(Number);
+  const dt = new Date(y, m - 1, d);
+  dt.setDate(dt.getDate() + n);
+  return `${dt.getFullYear()}-${pad2(dt.getMonth() + 1)}-${pad2(dt.getDate())}`;
+}
+
 function renderDayFilterBar() {
   const bar = document.getElementById("day-filter-bar");
   if (!bar) return;
 
-  const dates = [...new Set(currentPicks.map((p) => p.date).filter(Boolean))].sort();
-  if (dates.length === 0) {
-    bar.innerHTML = "";
-    return;
-  }
-
   const todayStr = todayDateStr();
+  // Always show today + the next 2 days as selectable, even before any picks
+  // exist for them yet - so it's clear those days are coming, not missing.
+  const windowDates = [todayStr, addDaysStr(todayStr, 1), addDaysStr(todayStr, 2)];
+  const pickDates = currentPicks.map((p) => p.date).filter(Boolean);
+  const dates = [...new Set([...windowDates, ...pickDates])].sort();
+
   if (selectedDayFilter !== "all" && !dates.includes(selectedDayFilter)) {
     selectedDayFilter = "all";
   }
@@ -198,16 +205,18 @@ function renderDayFilterBar() {
 function renderPicks() {
   const root = document.getElementById("picks-root");
 
-  if (currentPicks.length === 0) {
-    root.innerHTML = '<p class="empty-state">No picks yet — the first automated research run hasn\'t happened.</p>';
-    return;
-  }
-
   const visiblePicks =
     selectedDayFilter === "all" ? currentPicks : currentPicks.filter((p) => p.date === selectedDayFilter);
 
   if (visiblePicks.length === 0) {
-    root.innerHTML = '<p class="empty-state">No picks for this day.</p>';
+    const todayStr = todayDateStr();
+    const msg =
+      selectedDayFilter === "all"
+        ? "No picks yet - the research hasn't turned up anything real yet. Check back soon."
+        : selectedDayFilter === todayStr
+        ? "No picks for today yet - check back soon."
+        : "No picks for this day yet - check back closer to the date.";
+    root.innerHTML = `<p class="empty-state">${msg}</p>`;
     return;
   }
 
