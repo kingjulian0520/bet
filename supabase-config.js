@@ -11,6 +11,7 @@
 // size stay in this browser's localStorage, same as before accounts
 // existed) - nothing breaks, sign in/up just stays unavailable.
 export const supabaseConfig = {
-  url: "REPLACE_WITH_YOUR_PROJECT_URL",
-  anonKey: "REPLACE_WITH_YOUR_ANON_KEY",
+  url: "https://kubjcoaorbypiyulgiwy.supabase.co",
+  anonKey:
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt1Ympjb2FvcmJ5cGl5dWxnaXd5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTAwMjk1NzgsImV4cCI6MjEwNTYwNTU3OH0.e3uJMDo-L5139cK1BzmRH0N72hdrkY6tKIKD_eHKaSk",
 };
