@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Close Calls</title>
-<link rel="stylesheet" href="style.css?v=11">
+<link rel="stylesheet" href="style.css?v=12">
 </head>
 <body>
 <header class="page-header">
@@ -135,7 +135,11 @@
 </div>
 
 <div id="auth-modal-backdrop" class="modal-backdrop" hidden>
-  <div class="modal" role="dialog" aria-modal="true">
+  <div class="modal auth-modal" role="dialog" aria-modal="true">
+    <div class="auth-mark">CC</div>
+    <h3 id="auth-modal-title" class="auth-modal-title">Welcome back</h3>
+    <p id="auth-modal-subtitle" class="auth-modal-subtitle">Sign in to sync your bets across devices.</p>
+
     <div class="auth-tabs">
       <button class="auth-tab-btn active" data-authtab="signin">Sign In</button>
       <button class="auth-tab-btn" data-authtab="signup">Sign Up</button>
@@ -143,39 +147,39 @@
 
     <div id="auth-signin-panel" class="auth-panel">
       <label class="modal-label" for="signin-email">Email</label>
-      <input id="signin-email" type="email" autocomplete="email">
+      <input id="signin-email" class="auth-input" type="email" autocomplete="email" placeholder="you@example.com">
 
       <label class="modal-label" for="signin-password">Password</label>
-      <input id="signin-password" type="password" autocomplete="current-password">
+      <input id="signin-password" class="auth-input" type="password" autocomplete="current-password" placeholder="••••••••">
 
       <p id="signin-error" class="auth-error" hidden></p>
 
-      <div class="modal-actions">
+      <div class="modal-actions auth-actions">
+        <button id="signin-submit" class="primary-btn auth-submit">Sign In</button>
         <button class="secondary-btn auth-cancel">Cancel</button>
-        <button id="signin-submit" class="primary-btn">Sign In</button>
       </div>
     </div>
 
     <div id="auth-signup-panel" class="auth-panel" hidden>
       <label class="modal-label" for="signup-username">Username</label>
-      <input id="signup-username" type="text" autocomplete="username" maxlength="20" placeholder="letters, numbers, underscore">
+      <input id="signup-username" class="auth-input" type="text" autocomplete="username" maxlength="20" placeholder="letters, numbers, underscore">
 
       <label class="modal-label" for="signup-email">Email</label>
-      <input id="signup-email" type="email" autocomplete="email">
+      <input id="signup-email" class="auth-input" type="email" autocomplete="email" placeholder="you@example.com">
 
       <label class="modal-label" for="signup-password">Password</label>
-      <input id="signup-password" type="password" autocomplete="new-password" placeholder="at least 6 characters">
+      <input id="signup-password" class="auth-input" type="password" autocomplete="new-password" placeholder="at least 6 characters">
 
       <p id="signup-error" class="auth-error" hidden></p>
 
-      <div class="modal-actions">
+      <div class="modal-actions auth-actions">
+        <button id="signup-submit" class="primary-btn auth-submit">Sign Up</button>
         <button class="secondary-btn auth-cancel">Cancel</button>
-        <button id="signup-submit" class="primary-btn">Sign Up</button>
       </div>
     </div>
   </div>
 </div>
 
-<script type="module" src="script.js?v=21"></script>
+<script type="module" src="script.js?v=22"></script>
 </body>
 </html>

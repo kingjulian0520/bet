@@ -164,10 +164,19 @@ function wireAuthUI() {
     signup: document.getElementById("auth-signup-panel"),
   };
 
+  const titleEl = document.getElementById("auth-modal-title");
+  const subtitleEl = document.getElementById("auth-modal-subtitle");
+  const copy = {
+    signin: ["Welcome back", "Sign in to sync your bets across devices."],
+    signup: ["Create your account", "Track your bets and pick history anywhere you sign in."],
+  };
+
   function showTab(name) {
     tabs.forEach((t) => t.classList.toggle("active", t.dataset.authtab === name));
     panels.signin.hidden = name !== "signin";
     panels.signup.hidden = name !== "signup";
+    titleEl.textContent = copy[name][0];
+    subtitleEl.textContent = copy[name][1];
   }
 
   tabs.forEach((t) => t.addEventListener("click", () => showTab(t.dataset.authtab)));
