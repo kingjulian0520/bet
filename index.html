@@ -99,6 +99,10 @@
     <label class="modal-label" for="modal-stake">Stake (units)</label>
     <input id="modal-stake" type="number" min="0" step="0.05" placeholder="e.g. 1.5">
 
+    <label class="modal-label" for="modal-unit-value">Unit size for this bet ($)</label>
+    <input id="modal-unit-value" type="number" min="0" step="1" placeholder="e.g. 30">
+    <span class="modal-line-note">Locks in $ per unit for this bet — later changes to your unit size above won't change this bet's dollar amounts.</span>
+
     <label class="modal-label" for="modal-multiplier">Multiplier / decimal odds you're getting</label>
     <input id="modal-multiplier" type="number" min="1" step="0.01" placeholder="e.g. 1.91">
 
@@ -116,6 +120,6 @@
   </div>
 </div>
 
-<script src="script.js?v=16"></script>
+<script src="script.js?v=17"></script>
 </body>
 </html>

@@ -13,6 +13,13 @@ let openBetMenuId = null;
 
 // ---------- storage ----------
 
+// The $ value locked in when a bet was placed. Falls back to the current
+// global unit size for bets placed before this field existed, so old bets
+// keep behaving exactly as they did before.
+function betUnitValue(bet) {
+  return bet.unitValue || getUnitValue();
+}
+
 function getUnitValue() {
   const stored = localStorage.getItem(UNIT_VALUE_KEY);
   return stored ? parseFloat(stored) : null;
@@ -389,6 +396,7 @@ function openBetModal(pick) {
   document.getElementById("modal-matchup").textContent = pick.matchup || "";
   document.getElementById("modal-date").textContent = `${pick.sport || ""} · ${pick.date || ""}`;
   document.getElementById("modal-stake").value = pick.recommended_units || "";
+  document.getElementById("modal-unit-value").value = getUnitValue() || "";
   document.getElementById("modal-multiplier").value = "";
   document.getElementById("modal-override").checked = false;
   document.getElementById("modal-override-wrap").hidden = true;
@@ -492,6 +500,8 @@ function updateModalEv() {
 function placeBet() {
   const stake = parseFloat(document.getElementById("modal-stake").value);
   const multiplier = parseFloat(document.getElementById("modal-multiplier").value);
+  const enteredUnitValue = parseFloat(document.getElementById("modal-unit-value").value);
+  const betUnitValueAtPlacement = !isNaN(enteredUnitValue) && enteredUnitValue > 0 ? enteredUnitValue : null;
   const probs = activeModalPick.estimated_probability || {};
   const p = probs[activeModalSide] ?? 50;
   const evPercent = ((p / 100) * multiplier - 1) * 100;
@@ -517,6 +527,7 @@ function placeBet() {
     line,
     originalLine,
     stakeUnits: stake,
+    unitValue: betUnitValueAtPlacement,
     multiplier,
     modelProbability: p,
     evPercent,
@@ -642,7 +653,7 @@ function buildBetCard(bet) {
   card.className = "bet-card";
 
   const isSettled = bet.status !== "pending";
-  const unitValue = getUnitValue();
+  const unitValue = betUnitValue(bet);
   const stakeDollars = unitValue ? bet.stakeUnits * unitValue : null;
   const potentialProfitDollars = unitValue ? stakeDollars * (bet.multiplier - 1) : null;
 
@@ -675,7 +686,7 @@ function buildBetCard(bet) {
     <div class="bet-menu-wrap">
       <button class="bet-menu-btn" data-id="${bet.id}" aria-label="Bet options" aria-expanded="${isMenuOpen}">&#8942;</button>
       <div class="bet-menu-dropdown" ${isMenuOpen ? "" : "hidden"}>
-        <button class="bet-menu-item" data-action="adjust" data-id="${bet.id}">Adjust odds</button>
+        <button class="bet-menu-item" data-action="adjust" data-id="${bet.id}">Adjust odds / unit size</button>
         <button class="bet-menu-item danger" data-action="remove" data-id="${bet.id}">Remove</button>
       </div>
     </div>
@@ -686,6 +697,8 @@ function buildBetCard(bet) {
       ? `<div class="bet-adjust-form">
           <label>New multiplier / decimal odds</label>
           <input type="number" min="1" step="0.01" class="bet-adjust-input" value="${bet.multiplier}">
+          <label>Unit size for this bet ($)</label>
+          <input type="number" min="0" step="1" class="bet-adjust-unitvalue" value="${bet.unitValue || ""}" placeholder="e.g. 30">
           <div class="bet-adjust-actions">
             <button class="secondary-btn bet-adjust-cancel">Cancel</button>
             <button class="primary-btn bet-adjust-save">Save</button>
@@ -756,6 +769,10 @@ function buildBetCard(bet) {
         alert("Enter a valid multiplier (1 or higher).");
         return;
       }
+      const unitValueInput = card.querySelector(".bet-adjust-unitvalue");
+      const newUnitValue = parseFloat(unitValueInput.value);
+      bet.unitValue = !isNaN(newUnitValue) && newUnitValue > 0 ? newUnitValue : null;
+
       bet.multiplier = newMultiplier;
       bet.evPercent = ((bet.modelProbability / 100) * newMultiplier - 1) * 100;
       if (bet.status === "won") {
@@ -793,18 +810,23 @@ function renderMyBets() {
     return;
   }
 
-  const unitValue = getUnitValue();
   const pending = myBets.filter((b) => b.status === "pending");
   root.innerHTML = "";
 
   if (pending.length > 0) {
     const totalStakeUnits = pending.reduce((sum, b) => sum + b.stakeUnits, 0);
     const totalPotentialUnits = pending.reduce((sum, b) => sum + b.stakeUnits * (b.multiplier - 1), 0);
+    // Dollar totals sum each bet's own locked-in unit size, not the current
+    // global one, so a mid-stream unit size change doesn't inflate/deflate
+    // bets placed at a different size.
+    const totalStakeDollars = pending.reduce((sum, b) => sum + b.stakeUnits * betUnitValue(b), 0);
+    const totalPotentialDollars = pending.reduce((sum, b) => sum + b.stakeUnits * (b.multiplier - 1) * betUnitValue(b), 0);
+    const hasAnyUnitValue = pending.some((b) => betUnitValue(b));
     const summary = document.createElement("div");
     summary.className = "bets-summary";
     summary.innerHTML = `
-      <div><span class="summary-label">In play</span> ${totalStakeUnits.toFixed(2)} units${unitValue ? ` (~$${(totalStakeUnits * unitValue).toFixed(0)})` : ""} across ${pending.length} bet${pending.length === 1 ? "" : "s"}</div>
-      <div><span class="summary-label">Potential earnings</span> +${totalPotentialUnits.toFixed(2)} units${unitValue ? ` (~$${(totalPotentialUnits * unitValue).toFixed(0)})` : ""} if everything hits</div>
+      <div><span class="summary-label">In play</span> ${totalStakeUnits.toFixed(2)} units${hasAnyUnitValue ? ` (~$${totalStakeDollars.toFixed(0)})` : ""} across ${pending.length} bet${pending.length === 1 ? "" : "s"}</div>
+      <div><span class="summary-label">Potential earnings</span> +${totalPotentialUnits.toFixed(2)} units${hasAnyUnitValue ? ` (~$${totalPotentialDollars.toFixed(0)})` : ""} if everything hits</div>
     `;
     root.appendChild(summary);
   }
@@ -824,24 +846,31 @@ function renderNetCounter() {
   const todayEl = document.getElementById("net-today");
   const allTimeEl = document.getElementById("net-alltime");
   const settled = myBets.filter((b) => b.status !== "pending");
-  const unitValue = getUnitValue();
   const todayStr = todayDateStr();
 
   const todaySettled = settled.filter((b) => b.date === todayStr);
   const todayUnits = todaySettled.reduce((sum, b) => sum + (b.profitUnits || 0), 0);
   const allTimeUnits = settled.reduce((sum, b) => sum + (b.profitUnits || 0), 0);
 
-  const formatLine = (label, units, count) => {
+  // Each bet's dollar contribution uses the unit size locked in when it was
+  // placed, not today's global unit size — changing your unit size shouldn't
+  // rewrite the dollar value of bets made at a different size.
+  const dollarSum = (bets) => bets.reduce((sum, b) => sum + (b.profitUnits || 0) * betUnitValue(b), 0);
+  const todayDollars = dollarSum(todaySettled);
+  const allTimeDollars = dollarSum(settled);
+  const hasAnyUnitValue = settled.some((b) => betUnitValue(b));
+
+  const formatLine = (label, units, dollars, count) => {
     let text = `${label}: ${units >= 0 ? "+" : ""}${units.toFixed(2)} units`;
-    if (unitValue) text += ` (${units >= 0 ? "+" : ""}$${(units * unitValue).toFixed(0)})`;
+    if (hasAnyUnitValue) text += ` (${dollars >= 0 ? "+" : ""}$${dollars.toFixed(0)})`;
     if (count === 0) text = `${label}: no settled bets`;
     return text;
   };
 
-  todayEl.textContent = formatLine("Today", todayUnits, todaySettled.length);
+  todayEl.textContent = formatLine("Today", todayUnits, todayDollars, todaySettled.length);
   todayEl.className = "net-today " + (todaySettled.length === 0 ? "zero" : todayUnits > 0 ? "positive" : todayUnits < 0 ? "negative" : "zero");
 
-  allTimeEl.textContent = formatLine("All time", allTimeUnits, settled.length);
+  allTimeEl.textContent = formatLine("All time", allTimeUnits, allTimeDollars, settled.length);
   allTimeEl.className = "net-alltime " + (settled.length === 0 ? "" : allTimeUnits > 0 ? "positive" : allTimeUnits < 0 ? "negative" : "");
 }
 
