@@ -13,7 +13,7 @@ let activeModalPick = null;
 let activeModalSide = null;
 let openBetMenuId = null;
 
-// currentUser/profileCache are set once Firebase resolves the login state.
+// currentUser/profileCache are set once Supabase resolves the login state.
 // Until then (and always, if accounts aren't configured or the visitor
 // isn't signed in) everything reads/writes localStorage - "guest mode",
 // which is exactly how the site behaved before accounts existed.
@@ -38,7 +38,7 @@ function getUnitValue() {
 function setUnitValue(value) {
   if (currentUser) {
     if (profileCache) profileCache.unitValue = value;
-    Auth.saveMyProfile(currentUser.uid, { unitValue: value }).catch((err) => {
+    Auth.saveMyProfile(currentUser.id, { unitValue: value }).catch((err) => {
       console.warn("Couldn't sync unit size to your account.", err);
     });
     return;
@@ -76,7 +76,7 @@ function loadBets() {
 function saveBets() {
   if (currentUser) {
     if (profileCache) profileCache.bets = myBets;
-    Auth.saveMyProfile(currentUser.uid, { bets: myBets }).catch((err) => {
+    Auth.saveMyProfile(currentUser.id, { bets: myBets }).catch((err) => {
       console.warn("Couldn't sync bets to your account, saved locally only.", err);
     });
     return;
@@ -119,7 +119,7 @@ async function applyAuthState(user) {
   }
 
   try {
-    let profile = await Auth.getMyProfile(user.uid);
+    let profile = await Auth.getMyProfile(user.id);
     if (!profile) profile = { username: user.email, isPublic: false, unitValue: null, bets: [] };
 
     // First login on this browser with existing guest bets already logged
@@ -128,7 +128,7 @@ async function applyAuthState(user) {
     const localBets = loadLocalBets();
     if ((!profile.bets || profile.bets.length === 0) && localBets.length > 0) {
       profile.bets = localBets;
-      await Auth.saveMyProfile(user.uid, { bets: localBets });
+      await Auth.saveMyProfile(user.id, { bets: localBets });
     }
 
     profileCache = profile;
@@ -164,12 +164,14 @@ function wireAuthUI() {
   tabs.forEach((t) => t.addEventListener("click", () => showTab(t.dataset.authtab)));
 
   openBtn.addEventListener("click", async () => {
-    if (!(await Auth.isFirebaseReady())) {
+    if (!(await Auth.isAccountsReady())) {
       alert("Accounts aren't set up on this site yet.");
       return;
     }
     document.getElementById("signin-error").hidden = true;
-    document.getElementById("signup-error").hidden = true;
+    const signupErrEl = document.getElementById("signup-error");
+    signupErrEl.hidden = true;
+    signupErrEl.classList.remove("auth-notice");
     showTab("signin");
     backdrop.hidden = false;
   });
@@ -202,9 +204,16 @@ function wireAuthUI() {
     const errEl = document.getElementById("signup-error");
     errEl.hidden = true;
     try {
-      await Auth.signUp(username, email, password);
-      backdrop.hidden = true;
+      const { needsEmailConfirmation } = await Auth.signUp(username, email, password);
+      if (needsEmailConfirmation) {
+        errEl.textContent = "Account created — check your email to confirm it, then sign in.";
+        errEl.hidden = false;
+        errEl.classList.add("auth-notice");
+      } else {
+        backdrop.hidden = true;
+      }
     } catch (err) {
+      errEl.classList.remove("auth-notice");
       errEl.textContent = err.message || "Couldn't sign up.";
       errEl.hidden = false;
     }
@@ -218,7 +227,7 @@ function wireAuthUI() {
     if (!currentUser) return;
     const isPublic = publicCheckbox.checked;
     if (profileCache) profileCache.isPublic = isPublic;
-    Auth.saveMyProfile(currentUser.uid, { isPublic }).catch((err) => {
+    Auth.saveMyProfile(currentUser.id, { isPublic }).catch((err) => {
       console.warn("Couldn't update public/private setting.", err);
     });
   });
