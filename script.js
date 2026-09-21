@@ -58,7 +58,7 @@ async function main() {
   wireCalendar();
 
   document.addEventListener("click", (e) => {
-    if (openBetMenuId && !e.target.closest(".bet-menu-wrap")) {
+    if (openBetMenuId && !e.target.closest(".bet-menu-wrap") && !e.target.closest(".bet-adjust-form")) {
       closeBetMenu();
     }
   });
@@ -708,10 +708,11 @@ function buildBetCard(bet) {
 
   card.innerHTML = `
     <div class="bet-top">
-      <span class="bet-matchup">${escapeHtml(bet.matchup)} — backing ${escapeHtml(bet.side)}</span>
+      <span class="bet-call">${escapeHtml(String(bet.side || "").toUpperCase())}</span>
       ${statusBadge}
       ${menuHtml}
     </div>
+    <div class="bet-matchup-sub">${escapeHtml(bet.matchup)}</div>
     <div class="bet-detail">${escapeHtml(bet.sport)} · ${escapeHtml(bet.date)} · ${bet.stakeUnits} units @ ${bet.multiplier}x · EV was ${bet.evPercent >= 0 ? "+" : ""}${bet.evPercent.toFixed(1)}%</div>
     ${bet.finalScore ? `<div class="bet-detail">Final: ${escapeHtml(bet.finalScore)}</div>` : ""}
     ${moneyLine}

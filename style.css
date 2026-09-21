@@ -167,8 +167,16 @@ body {
   gap: 0.5rem;
 }
 
-.bet-card .bet-matchup {
-  font-weight: 600;
+.bet-card .bet-call {
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}
+
+.bet-matchup-sub {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
 }
 
 .bet-status {
