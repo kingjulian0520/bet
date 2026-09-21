@@ -606,6 +606,16 @@ function settlePendingBets() {
       continue;
     }
 
+    if (result.winner === "push") {
+      // Draw No Bet (or any other voided moneyline) — stake returned
+      // regardless of which side was picked.
+      bet.status = "push";
+      bet.profitUnits = 0;
+      bet.finalScore = result.final_score || null;
+      changed = true;
+      continue;
+    }
+
     const won = result.winner === bet.side;
     bet.status = won ? "won" : "lost";
     bet.profitUnits = won ? bet.stakeUnits * (bet.multiplier - 1) : -bet.stakeUnits;
