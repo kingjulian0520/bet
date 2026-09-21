@@ -142,3 +142,22 @@ export async function saveMyProfile(uid, partial) {
   const { error } = await supabase.from("profiles").update(columns).eq("id", uid);
   if (error) throw error;
 }
+
+// Ranks everyone who has opted their profile public (RLS only returns rows
+// where is_public = true to a non-owner) by net settled units.
+export async function getPublicLeaderboard() {
+  await ensureInit();
+  if (!ready) return [];
+  const { data, error } = await supabase.from("profiles").select("username, bets").eq("is_public", true);
+  if (error || !data) return [];
+
+  return data
+    .map((row) => {
+      const bets = Array.isArray(row.bets) ? row.bets : [];
+      const netUnits = bets
+        .filter((b) => b.status && b.status !== "pending")
+        .reduce((sum, b) => sum + (b.profitUnits || 0), 0);
+      return { username: row.username, netUnits };
+    })
+    .sort((a, b) => b.netUnits - a.netUnits);
+}

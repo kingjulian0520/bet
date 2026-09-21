@@ -4,21 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Close Calls</title>
-<link rel="stylesheet" href="style.css?v=13">
+<link rel="stylesheet" href="style.css?v=14">
 </head>
 <body>
 <header class="page-header">
   <div class="account-bar" id="account-bar">
     <div id="account-logged-out" class="account-logged-out">
-      <button id="open-auth-btn" class="secondary-btn">Sign In / Sign Up</button>
+      <button id="open-auth-btn" class="pill-btn">Sign In / Sign Up</button>
     </div>
     <div id="account-logged-in" class="account-logged-in" hidden>
-      <span id="account-username" class="account-username"></span>
-      <label class="account-public-toggle">
-        <input type="checkbox" id="account-public-checkbox">
-        Make my bets public
-      </label>
-      <button id="account-signout-btn" class="secondary-btn">Sign out</button>
+      <div class="account-menu-wrap">
+        <button id="account-menu-btn" class="account-menu-btn" aria-expanded="false">
+          <span id="account-username" class="account-username"></span>
+          <span class="account-menu-caret">▾</span>
+        </button>
+        <div id="account-menu-dropdown" class="account-menu-dropdown" hidden>
+          <button class="account-menu-item" data-action="profile">See Profile</button>
+          <button class="account-menu-item" data-action="leaderboard">View Leaderboard</button>
+          <button class="account-menu-item" data-action="report">Report an Issue</button>
+          <button class="account-menu-item" data-action="timezone">Change Time Zone</button>
+          <div class="account-menu-divider"></div>
+          <button class="account-menu-item danger" data-action="signout">Sign Out</button>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -180,6 +188,16 @@
   </div>
 </div>
 
-<script type="module" src="script.js?v=23"></script>
+<div id="account-panel-backdrop" class="modal-backdrop" hidden>
+  <div class="modal account-panel">
+    <div class="account-panel-header">
+      <h3 id="account-panel-title">Panel</h3>
+      <button id="account-panel-close" class="account-panel-close" aria-label="Close">&times;</button>
+    </div>
+    <div id="account-panel-content"></div>
+  </div>
+</div>
+
+<script type="module" src="script.js?v=24"></script>
 </body>
 </html>

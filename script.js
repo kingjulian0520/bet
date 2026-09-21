@@ -2,6 +2,21 @@ import * as Auth from "./auth.js";
 
 const UNIT_VALUE_KEY = "closeCallsUnitValue";
 const BETS_KEY = "closeCallsBets";
+const TIMEZONE_KEY = "closeCallsTimeZone";
+
+// Fill in a real contact address to turn on "Report an Issue" in the
+// account menu - left as a placeholder so nobody's personal email ends up
+// hardcoded into public page source without them choosing that.
+const SUPPORT_EMAIL = "REPLACE_WITH_YOUR_EMAIL";
+
+const COMMON_TIME_ZONES = [
+  { value: "auto", label: "Match my device" },
+  { value: "America/New_York", label: "Eastern (New York)" },
+  { value: "America/Chicago", label: "Central (Chicago)" },
+  { value: "America/Denver", label: "Mountain (Denver)" },
+  { value: "America/Los_Angeles", label: "Pacific (Los Angeles)" },
+  { value: "UTC", label: "UTC" },
+];
 
 let rawPicks = [];
 let rawLongShots = [];
@@ -19,6 +34,7 @@ let openBetMenuId = null;
 // which is exactly how the site behaved before accounts existed.
 let currentUser = null;
 let profileCache = null;
+let generatedAt = null;
 
 // ---------- storage ----------
 
@@ -97,7 +113,6 @@ function renderAccountBar() {
     loggedOutEl.hidden = true;
     loggedInEl.hidden = false;
     document.getElementById("account-username").textContent = `@${profileCache.username || "you"}`;
-    document.getElementById("account-public-checkbox").checked = !!profileCache.isPublic;
     unitValueInput.value = profileCache.unitValue || "";
   } else {
     loggedOutEl.hidden = false;
@@ -155,8 +170,6 @@ async function applyAuthState(user) {
 function wireAuthUI() {
   const backdrop = document.getElementById("auth-modal-backdrop");
   const openBtn = document.getElementById("open-auth-btn");
-  const signoutBtn = document.getElementById("account-signout-btn");
-  const publicCheckbox = document.getElementById("account-public-checkbox");
 
   const tabs = document.querySelectorAll(".auth-tab-btn");
   const panels = {
@@ -237,20 +250,202 @@ function wireAuthUI() {
     }
   });
 
-  signoutBtn.addEventListener("click", () => {
-    Auth.signOutUser();
-  });
+  Auth.onAuthChange(applyAuthState);
+}
 
-  publicCheckbox.addEventListener("change", () => {
-    if (!currentUser) return;
-    const isPublic = publicCheckbox.checked;
+// ---------- account menu / panels ----------
+
+function getTimeZone() {
+  return localStorage.getItem(TIMEZONE_KEY) || "auto";
+}
+
+function setTimeZone(tz) {
+  try {
+    localStorage.setItem(TIMEZONE_KEY, tz);
+  } catch (err) {
+    // ignore
+  }
+}
+
+function refreshLastUpdatedLabel() {
+  const el = document.getElementById("last-updated");
+  if (!el) return;
+  if (!generatedAt) {
+    el.textContent = "Not run yet.";
+    return;
+  }
+  const tz = getTimeZone();
+  const options = { dateStyle: "short", timeStyle: "short" };
+  if (tz !== "auto") options.timeZone = tz;
+  let formatted;
+  try {
+    formatted = new Intl.DateTimeFormat(undefined, options).format(new Date(generatedAt));
+  } catch (err) {
+    formatted = new Date(generatedAt).toLocaleString();
+  }
+  el.textContent = "Last updated " + formatted;
+}
+
+function myBetStats() {
+  const settled = myBets.filter((b) => b.status !== "pending");
+  const wins = settled.filter((b) => b.status === "won").length;
+  const losses = settled.filter((b) => b.status === "lost").length;
+  const netUnits = settled.reduce((sum, b) => sum + (b.profitUnits || 0), 0);
+  return { wins, losses, netUnits, settledCount: settled.length };
+}
+
+function openAccountPanel(type) {
+  const backdrop = document.getElementById("account-panel-backdrop");
+  const titleEl = document.getElementById("account-panel-title");
+  const contentEl = document.getElementById("account-panel-content");
+
+  const renderers = {
+    profile: renderProfilePanel,
+    leaderboard: renderLeaderboardPanel,
+    report: renderReportPanel,
+    timezone: renderTimezonePanel,
+  };
+  const titles = {
+    profile: "Your profile",
+    leaderboard: "Leaderboard",
+    report: "Report an issue",
+    timezone: "Change time zone",
+  };
+
+  titleEl.textContent = titles[type] || "";
+  contentEl.innerHTML = "";
+  (renderers[type] || (() => {}))(contentEl);
+  backdrop.hidden = false;
+}
+
+function closeAccountPanel() {
+  document.getElementById("account-panel-backdrop").hidden = true;
+}
+
+function renderProfilePanel(root) {
+  if (!currentUser || !profileCache) {
+    root.innerHTML = `<p class="account-panel-note">Sign in to see your profile.</p>`;
+    return;
+  }
+  const stats = myBetStats();
+  root.innerHTML = `
+    <div class="profile-stats">
+      <div class="profile-stat">
+        <div class="profile-stat-value">${stats.wins}-${stats.losses}</div>
+        <div class="profile-stat-label">Record</div>
+      </div>
+      <div class="profile-stat">
+        <div class="profile-stat-value ${stats.netUnits >= 0 ? "positive" : "negative"}">${stats.netUnits >= 0 ? "+" : ""}${stats.netUnits.toFixed(2)}</div>
+        <div class="profile-stat-label">Net units</div>
+      </div>
+      <div class="profile-stat">
+        <div class="profile-stat-value">${stats.settledCount}</div>
+        <div class="profile-stat-label">Settled</div>
+      </div>
+    </div>
+    <div class="profile-public-row">
+      <label>
+        <input type="checkbox" id="profile-public-checkbox" ${profileCache.isPublic ? "checked" : ""}>
+        Make my bets public
+      </label>
+    </div>
+    <p class="account-panel-note">Public shows your username, record, and net units on the leaderboard. Your email is never shown.</p>
+  `;
+
+  document.getElementById("profile-public-checkbox").addEventListener("change", (e) => {
+    const isPublic = e.target.checked;
     if (profileCache) profileCache.isPublic = isPublic;
     Auth.saveMyProfile(currentUser.id, { isPublic }).catch((err) => {
       console.warn("Couldn't update public/private setting.", err);
     });
   });
+}
 
-  Auth.onAuthChange(applyAuthState);
+async function renderLeaderboardPanel(root) {
+  root.innerHTML = `<p class="account-panel-note">Loading…</p>`;
+  try {
+    const rows = await Auth.getPublicLeaderboard();
+    if (!rows.length) {
+      root.innerHTML = `<p class="account-panel-note">Nobody's made their bets public yet.</p>`;
+      return;
+    }
+    root.innerHTML = rows
+      .map(
+        (r, i) => `
+        <div class="leaderboard-row">
+          <span class="leaderboard-rank">${i + 1}.</span>
+          <span class="leaderboard-name">@${escapeHtml(r.username)}</span>
+          <span class="leaderboard-units ${r.netUnits >= 0 ? "positive" : "negative"}">${r.netUnits >= 0 ? "+" : ""}${r.netUnits.toFixed(2)}u</span>
+        </div>
+      `
+      )
+      .join("");
+  } catch (err) {
+    root.innerHTML = `<p class="account-panel-note">Couldn't load the leaderboard right now.</p>`;
+  }
+}
+
+function renderReportPanel(root) {
+  if (SUPPORT_EMAIL.startsWith("REPLACE_")) {
+    root.innerHTML = `<p class="account-panel-note">Reporting isn't set up yet — add a contact email (SUPPORT_EMAIL) in script.js to turn this on.</p>`;
+    return;
+  }
+  root.innerHTML = `
+    <p class="account-panel-note">Found a bug or a bad pick? Let us know what happened.</p>
+    <a class="primary-btn account-panel-cta"
+       href="mailto:${escapeAttr(SUPPORT_EMAIL)}?subject=${encodeURIComponent("Close Calls issue report")}">
+      Email us
+    </a>
+  `;
+}
+
+function renderTimezonePanel(root) {
+  const current = getTimeZone();
+  const options = COMMON_TIME_ZONES.map(
+    (z) => `<option value="${z.value}" ${z.value === current ? "selected" : ""}>${escapeHtml(z.label)}</option>`
+  ).join("");
+  root.innerHTML = `
+    <label class="modal-label" for="timezone-select">Time zone</label>
+    <select id="timezone-select" class="timezone-select">${options}</select>
+    <p class="account-panel-note">Used for the "last updated" timestamp. Game dates are shown as-is for now, not yet adjusted per time zone.</p>
+    <button id="timezone-save" class="primary-btn account-panel-cta">Save</button>
+  `;
+  document.getElementById("timezone-save").addEventListener("click", () => {
+    const select = document.getElementById("timezone-select");
+    setTimeZone(select.value);
+    refreshLastUpdatedLabel();
+    closeAccountPanel();
+  });
+}
+
+function wireAccountMenu() {
+  const menuBtn = document.getElementById("account-menu-btn");
+  const dropdown = document.getElementById("account-menu-dropdown");
+
+  menuBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const isOpen = !dropdown.hidden;
+    dropdown.hidden = isOpen;
+    menuBtn.setAttribute("aria-expanded", String(!isOpen));
+  });
+
+  dropdown.querySelectorAll(".account-menu-item").forEach((item) => {
+    item.addEventListener("click", () => {
+      dropdown.hidden = true;
+      menuBtn.setAttribute("aria-expanded", "false");
+      const action = item.dataset.action;
+      if (action === "signout") {
+        Auth.signOutUser();
+      } else {
+        openAccountPanel(action);
+      }
+    });
+  });
+
+  document.getElementById("account-panel-close").addEventListener("click", closeAccountPanel);
+  document.getElementById("account-panel-backdrop").addEventListener("click", (e) => {
+    if (e.target.id === "account-panel-backdrop") closeAccountPanel();
+  });
 }
 
 // ---------- boot ----------
@@ -260,10 +455,16 @@ async function main() {
   wireModal();
   wireCalendar();
   wireAuthUI();
+  wireAccountMenu();
 
   document.addEventListener("click", (e) => {
     if (openBetMenuId && !e.target.closest(".bet-menu-wrap") && !e.target.closest(".bet-adjust-form")) {
       closeBetMenu();
+    }
+    const accountDropdown = document.getElementById("account-menu-dropdown");
+    if (accountDropdown && !accountDropdown.hidden && !e.target.closest(".account-menu-wrap")) {
+      accountDropdown.hidden = true;
+      document.getElementById("account-menu-btn").setAttribute("aria-expanded", "false");
     }
   });
 
@@ -279,7 +480,6 @@ async function main() {
   myBets = loadBets();
 
   const root = document.getElementById("picks-root");
-  const lastUpdatedEl = document.getElementById("last-updated");
 
   let data;
   try {
@@ -290,9 +490,8 @@ async function main() {
     return;
   }
 
-  if (data.generated_at) {
-    lastUpdatedEl.textContent = "Last updated " + new Date(data.generated_at).toLocaleString();
-  }
+  generatedAt = data.generated_at || null;
+  refreshLastUpdatedLabel();
 
   rawPicks = data.picks || [];
   rawLongShots = data.long_shots || [];
