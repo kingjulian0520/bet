@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T19:31:24Z",
+  "generated_at": "2026-09-22T14:45:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
@@ -139,6 +139,130 @@
         "https://www.sportsgrid.com/wnba/game/dallas-wings-phoenix-mercury-scores-odds-picks-props-september-21-2026/57b04ff7-90da-4d7f-98e5-f2a017d883bd",
         "https://www.docsports.com/free-picks/wnba/2026/dallas-wings-vs-phoenix-mercury-prediction-9-21-2026-wnba-pick-tips-and-odds.html",
         "https://dailysports.net/predictions/can-dallas-extend-its-winning-run-phoenix-mercury-vs-dallas-wings-preview-september-22-2026/"
+      ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Atlanta Falcons vs Green Bay Packers",
+      "date": "2026-09-24",
+      "start_time": "2026-09-25T00:15:00Z",
+      "favorite": "Green Bay Packers",
+      "estimated_probability": {
+        "Green Bay Packers": 70,
+        "Atlanta Falcons": 30
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "Packers favored by 6.5 (FanDuel) in their home opener; total set low at 44.5, reflecting expected offensive struggles on both sides.",
+        "Falcons are 0-2 and starting Michael Penix Jr. for the first time this season after he missed Weeks 1-2 recovering from a torn ACL - real rust/health risk in his season debut.",
+        "Packers are 1-1 after an OT comeback win over the Jets, but are banged up on the O-line and at WR (Jayden Reed, Zach Bako-Bewele, Aaron Banks, Donovan Jennings) - why the line only moved from 7 to 6.5 even after Penix was confirmed as Atlanta's starter.",
+        "Packers have the healthier proven QB and home field, but the injury cluster caps this from being a stronger lean."
+      ],
+      "sources": [
+        "https://www.si.com/betting/falcons-vs-packers-prediction-odds-spread-injuries-trends-for-nfl-week-3-2026",
+        "https://www.si.com/betting/massive-michael-penix-jr-injury-update-shifts-falcons-vs-packers-odds-in-nfl-week-3",
+        "https://www.acmepackingcompany.com/green-bay-packers-odds/86723/packers-vs-falcons-odds-week-3-opening-lines-point-spread-total",
+        "https://www.atlantafalcons.com/news/estimated-injury-report-released-week-3-green-bay-packers"
+      ]
+    },
+    {
+      "sport": "WNBA",
+      "matchup": "Minnesota Lynx vs Indiana Fever",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T00:00:00Z",
+      "favorite": "Indiana Fever",
+      "estimated_probability": {
+        "Indiana Fever": 53,
+        "Minnesota Lynx": 47
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.25,
+      "reasoning": [
+        "Minnesota (league-best record) is chasing the #1 playoff seed; Indiana leads the WNBA in scoring at ~96.7 ppg - nearly 13 points above what Minnesota allows per game (83.8), the league's stingiest defense.",
+        "Lynx rookie Olivia Miles (ROY frontrunner, 19.8 pts/6.0 ast, 49.2% FG) was unexpectedly added to the injury report with a new left calf issue and is questionable, despite playing 31 minutes and scoring 21 in her prior game with no visible trouble.",
+        "That news flipped the market - Indiana moved from 1.5-point underdogs to 1.5-point favorites once Miles' questionable tag was released, even though Minnesota has the better record and more on the line.",
+        "Caitlin Clark is probable and hasn't missed a game since July 9, so Indiana is expected close to full strength while Minnesota's engine is in doubt - a genuine toss-up."
+      ],
+      "sources": [
+        "https://bettorsinsider.com/wnba/2026/09/22/lynx-vs-fever-prediction-minnesota-chases-no-1-seed-at-gainbridge-fieldhouse/",
+        "https://sports.yahoo.com/articles/olivia-miles-listed-questionable-lynx-214311133.html",
+        "https://fadeawayworld.net/wnba/indiana-gets-major-playoff-boost-as-olivia-miles-lands-on-injury-report-before-fever-clash",
+        "https://sports.yahoo.com/articles/fever-caitlin-clark-injury-announcement-000405991.html",
+        "https://www.dimers.com/wnba/predictions/2026_138_ind_min"
+      ]
+    },
+    {
+      "sport": "WNBA",
+      "matchup": "Los Angeles Sparks vs Las Vegas Aces",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T02:00:00Z",
+      "favorite": "Las Vegas Aces",
+      "estimated_probability": {
+        "Las Vegas Aces": 94,
+        "Los Angeles Sparks": 6
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "reasoning": [
+        "One of the most lopsided lines of the WNBA season: Aces -16.5, moneyline as steep as -1667 in places (implied win probability north of 94%).",
+        "Las Vegas (29-13) is on a 3-game home winning streak and can clinch home-court advantage through the playoffs with a win; Los Angeles (16-26) is essentially playing out the string.",
+        "LA has been an underdog 27 times this season and won outright only 8 times - a 29.6% hit rate, and this is a bigger spread than most of those.",
+        "Aces' defense is allowing under 87 points a night, which should neutralize Kelsey Plum's recent scoring surge for LA; Wilson/Young give Vegas more two-way firepower at every position."
+      ],
+      "sources": [
+        "https://bettorsinsider.com/wnba/2026/09/22/los-angeles-sparks-vs-las-vegas-aces-prediction-wilson-led-aces-should-cruise-in-regular-season-finale/",
+        "https://www.dimers.com/wnba/predictions/2026_138_lv_la",
+        "https://www.sportsgrid.com/wnba/game/los-angeles-sparks-las-vegas-aces-scores-odds-picks-props-september-22-2026/aa767aa3-f32d-4f1d-968d-b9e1a2aa8ee4"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Toronto Blue Jays vs Baltimore Orioles",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T22:35:00Z",
+      "favorite": "Baltimore Orioles",
+      "estimated_probability": {
+        "Baltimore Orioles": 54,
+        "Toronto Blue Jays": 46
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.25,
+      "reasoning": [
+        "Pitching matchup favors Baltimore on form: Chris Bassitt (8-5, 4.64 ERA) has won 4 of his last 5 starts, while Toronto counters with Max Scherzer (3-8, 6.07 ERA), who has a well-documented home-run problem this year.",
+        "Market agrees but only slightly: Orioles -121 / Blue Jays +101, essentially a coin-flip price after vig.",
+        "Neither team is a real playoff factor - both Toronto (76-79) and Baltimore (75-80) sit well behind the White Sox for the final AL wild-card spot, adding unpredictability from reduced usage/evaluation lineups.",
+        "Season-long ATS trend: Orioles are 82-74 ATS this year vs. Toronto's 77-80 ATS, a modest but real form edge for Baltimore."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/blue-jays-orioles-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/",
+        "https://www.fanduel.com/research/orioles-vs-blue-jays-mlb-odds-prediction-point-spread-over-under-and-betting-trends-for-9-22-2026",
+        "https://www.thespread.com/mlb-articles/blue-jays-vs-orioles-prediction-and-picks-sept-22-is-toronto-the-best-bet/",
+        "https://www.mlb.com/gameday/blue-jays-vs-orioles/2026/09/22/824785/preview"
+      ]
+    },
+    {
+      "sport": "College Football",
+      "matchup": "Liberty Flames vs Coastal Carolina Chanticleers",
+      "date": "2026-09-24",
+      "start_time": "2026-09-24T23:30:00Z",
+      "favorite": "Liberty Flames",
+      "estimated_probability": {
+        "Liberty Flames": 60,
+        "Coastal Carolina Chanticleers": 40
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Liberty (2-1, 2nd in Conference USA) is favored on the road, -132 moneyline / -2.5 spread, over Coastal Carolina (1-2, 8th in Sun Belt); total set at 52.5.",
+        "Liberty rebounded from an opening loss to James Madison by blowing out both Gardner-Webb and Ball State in its last two games, showing real bounce-back form.",
+        "Coastal Carolina being a home underdog in this spot signals the market sees its 1-2 start as more than a fluke; no specific injury news surfaced for either side.",
+        "Liberty WR Makai Jackson (9 catches, 230 yards, 3 TD through 3 games) gives Liberty a proven big-play threat Coastal Carolina's defense hasn't faced yet this year."
+      ],
+      "sources": [
+        "https://www.si.com/betting/liberty-vs-coastal-carolina-prediction-odds-and-key-players-to-watch-for-college-football-week-4",
+        "https://vsin.com/college-football/college-football-week-4-picks-liberty-vs-coastal-carolina/",
+        "https://www.sportsline.com/insiders/liberty-vs-coastal-carolina-odds-2026-college-football-picks-week-4-predictions-from-proven-model/"
       ]
     }
   ],
