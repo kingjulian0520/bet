@@ -221,6 +221,7 @@ function renderLockOverlay(prefix) {
     <input type="text" class="auth-input lock-passcode-input" placeholder="Passcode" autocomplete="off">
     <button class="primary-btn lock-unlock-btn">Unlock</button>
     <p class="lock-error" hidden></p>
+    <a class="lock-discord-link" href="https://discord.gg/zpaWeTPy8" target="_blank" rel="noopener">Don't have a code? Join our Discord</a>
   `;
 
   const input = bodyEl.querySelector(".lock-passcode-input");

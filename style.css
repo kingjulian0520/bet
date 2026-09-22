@@ -700,6 +700,19 @@ body {
   display: none;
 }
 
+.lock-discord-link {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin: 0.7rem 0 0;
+  text-decoration: none;
+}
+
+.lock-discord-link:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
 .pick-card {
   cursor: pointer;
   transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
