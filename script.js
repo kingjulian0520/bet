@@ -40,6 +40,7 @@ let profileCache = null;
 let generatedAt = null;
 let avatarCropper = null;
 let unlockedThisSession = false;
+let unlockedWithCode = null;
 
 // ---------- storage ----------
 
@@ -134,6 +135,7 @@ async function applyAuthState(user) {
     profileCache = null;
     myBets = loadLocalBets();
     unlockedThisSession = false;
+    unlockedWithCode = null;
     renderAccountBar();
     renderAll();
     return;
@@ -235,6 +237,7 @@ function renderLockOverlay(prefix) {
       const ok = await Auth.verifyAccessCode(code);
       if (ok) {
         unlockedThisSession = true;
+        unlockedWithCode = code;
         unlockOverlaysWithFade();
       } else {
         errEl.textContent = "Wrong passcode — try again.";
@@ -738,12 +741,26 @@ async function main() {
   settlePendingBets();
   renderAll();
 
-  setInterval(() => {
+  setInterval(async () => {
     const hadPicks = currentPicks.length;
     const hadLongShots = currentLongShots.length;
     prunePicks();
     if (currentPicks.length !== hadPicks || currentLongShots.length !== hadLongShots) {
       renderAll();
+    }
+
+    // The tab might have been left open across a code rotation - re-check
+    // the code that unlocked it is still today's code, not just whether a
+    // reload happened. Re-locks immediately (no reload needed) the moment
+    // it no longer matches.
+    if (unlockedThisSession && unlockedWithCode) {
+      const stillValid = await Auth.verifyAccessCode(unlockedWithCode);
+      if (!stillValid) {
+        unlockedThisSession = false;
+        unlockedWithCode = null;
+        renderLockOverlays();
+        renderExposureSummary();
+      }
     }
   }, 60000);
 }
