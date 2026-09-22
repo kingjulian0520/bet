@@ -3,30 +3,6 @@
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
-      "sport": "WTA Player Props",
-      "matchup": "Mary Stoiana — Aces O/U 3.5 (Badosa vs Stoiana)",
-      "date": "2026-09-18",
-      "favorite": "Under 3.5",
-      "estimated_probability": {
-        "Under 3.5": 82,
-        "Over 3.5": 18
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "reasoning": [
-        "Same match as the Badosa aces pick above (SP Open QF, Friday 5:30pm local), but this side is on Stoiana's own aces total, not Badosa's - a separate market, not a hedge.",
-        "Grounded in Stoiana's real 2026 match log: she has gone over 3.5 aces in only 16% of her matches this season (i.e. stayed under in 84% of them) and averages about 2.0 aces per match - a much smaller, less powerful serve profile than a player like Badosa.",
-        "This is a much more consistent pattern than a single average suggests - the site's own frequency data shows she rarely spikes into high-ace matches, which is exactly the kind of specific, repeatable evidence that should push confidence up rather than defaulting to a cautious middle number.",
-        "Real gap: first career meeting with Badosa, so there's no head-to-head signal on how Stoiana's serve holds up specifically against this level of returner - sized at Strong lean rather than higher for that reason.",
-        "Capped below 85% deliberately - a single match can always run hot relative to a season rate, especially in a career-first tour quarterfinal with real nerves/adrenaline in play."
-      ],
-      "sources": [
-        "https://tennisstats.com/players/mary-stoiana",
-        "https://www.sportskeeda.com/tennis/paula-badosa-vs-mary-stoiana-preview-head-to-head-odds-prediction-betting-tips-sp-open-2026"
-      ],
-      "start_time": "2026-09-18T20:30:00Z"
-    },
-    {
       "sport": "NFL",
       "matchup": "New York Giants vs Los Angeles Rams",
       "date": "2026-09-21",
@@ -66,79 +42,6 @@
       "sources": [
         "https://www.statmuse.com/nfl/ask/malik-nabers-receptions-per-game",
         "https://www.pro-football-reference.com/players/N/NabeMa00.htm"
-      ]
-    },
-    {
-      "sport": "WNBA",
-      "matchup": "Atlanta Dream vs New York Liberty",
-      "date": "2026-09-21",
-      "start_time": "2026-09-22T00:00:00Z",
-      "favorite": "Atlanta Dream",
-      "estimated_probability": {
-        "Atlanta Dream": 54,
-        "New York Liberty": 46
-      },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.25,
-      "reasoning": [
-        "8pm ET at Barclays Center. Atlanta (28-14, 1st in the East) is an 8-2 in their last 10, on a 3-game win streak, fresh off a 106-81 blowout of Chicago - chasing a top-4 seed and first-round home court.",
-        "New York (26-16) is also genuinely hot on their own merits, not just riding Atlanta's name: also a 3-game win streak, and 14-6 at home this season specifically.",
-        "Head-to-head cuts against Atlanta here: Liberty won the last meeting 104-90, in Atlanta, back in June.",
-        "Real, already-known absence: Atlanta is down Brionna Jones (season-ending leg injury) - not new information, but a real frontcourt cost.",
-        "Market has this close too (Dream -128 / Liberty +104, normalizing to about 53/47) - consistent with treating this as a real toss-up with a slight lean to Atlanta's better overall record, not a confident favorite."
-      ],
-      "sources": [
-        "https://www.sportsgrid.com/wnba/game/atlanta-dream-new-york-liberty-scores-odds-picks-props-september-21-2026/a6852646-afdb-42b6-944e-829c0ea3c222",
-        "https://www.thespread.com/wnba/dream-vs-liberty-prediction-september-21-can-atlanta-cover-as-road-fave/",
-        "https://sports.yahoo.com/articles/atlanta-takes-york-following-reeses-060017295.html"
-      ]
-    },
-    {
-      "sport": "WNBA Player Props",
-      "matchup": "Angel Reese — Double-Double (Dream vs Liberty)",
-      "date": "2026-09-21",
-      "start_time": "2026-09-22T00:00:00Z",
-      "favorite": "Yes",
-      "estimated_probability": {
-        "Yes": 88,
-        "No": 12
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2,
-      "reasoning": [
-        "Same game as the Dream/Liberty moneyline above - different market, not a hedge.",
-        "Grounded in her actual recent log, not reputation: 18.6 points, 15.4 rebounds, 4.2 assists over her last 5 games - she's clearing 10 rebounds alone most nights, so points aren't even required for the double-double to hit.",
-        "She set the WNBA single-season rebounding record this month (500+ boards) and no other player in the league has matched her production on the glass this year - this is a sustained season-long pattern, not a hot streak.",
-        "Real gap: Liberty's specific frontcourt matchup/rebounding rate against Atlanta wasn't separately confirmed - capped below 90% for that reason rather than treated as a lock."
-      ],
-      "sources": [
-        "https://rollingout.com/2026/09/20/angel-reese-becomes-first-wnba-player/",
-        "https://www.statmuse.com/wnba/ask/angel-reese-stats-in-her-last-5-games",
-        "https://www.espn.com/wnba/player/gamelog/_/id/4433402/angel-reese"
-      ]
-    },
-    {
-      "sport": "WNBA",
-      "matchup": "Dallas Wings vs Phoenix Mercury",
-      "date": "2026-09-21",
-      "start_time": "2026-09-22T02:00:00Z",
-      "favorite": "Dallas Wings",
-      "estimated_probability": {
-        "Dallas Wings": 84,
-        "Phoenix Mercury": 16
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 1.75,
-      "reasoning": [
-        "10pm ET at Mortgage Matchup Center. Dallas (26-16, tied with Liberty/Mystics for playoff seeding) is on a genuine 6-game win streak and just beat this exact Mercury team 87-82 three days ago.",
-        "Phoenix (15-27) has nothing left to play for - eliminated from playoff contention, a completely different team from last year's finals run.",
-        "Missing key players, specifically: Kelsey Plum is out for the SEASON (lower leg), Copper is out (groin), and Kara Dunn is questionable (knee) - that's Phoenix's perimeter scoring largely gutted, not just a name on an injury report.",
-        "Real gap: no confirmed read on how much rotation/minutes Dallas's bench got in Saturday's win that might affect fatigue tonight (back-to-back-ish scheduling) - kept just below Chalk for that reason."
-      ],
-      "sources": [
-        "https://www.sportsgrid.com/wnba/game/dallas-wings-phoenix-mercury-scores-odds-picks-props-september-21-2026/57b04ff7-90da-4d7f-98e5-f2a017d883bd",
-        "https://www.docsports.com/free-picks/wnba/2026/dallas-wings-vs-phoenix-mercury-prediction-9-21-2026-wnba-pick-tips-and-odds.html",
-        "https://dailysports.net/predictions/can-dallas-extend-its-winning-run-phoenix-mercury-vs-dallas-wings-preview-september-22-2026/"
       ]
     },
     {
@@ -549,27 +452,6 @@
       ],
       "sources": [
         "https://sports.betmgm.com/en/blog/mlb/blue-jays-orioles-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
-      ]
-    },
-    {
-      "sport": "MLB",
-      "matchup": "Tampa Bay Rays vs New York Yankees",
-      "date": "2026-09-22",
-      "start_time": "2026-09-22T17:05:00Z",
-      "favorite": "New York Yankees",
-      "estimated_probability": {
-        "New York Yankees": 58,
-        "Tampa Bay Rays": 42
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.5,
-      "reasoning": [
-        "Rodon (2.95 ERA) has been excellent; market has NYY -135/-145, model gives Yankees 57.4%.",
-        "Rays are 22-7 in Nick Martinez's starts this year and he's held teams to <=3 ER in 25 of 29 outings - a live underdog, not a blowout spot."
-      ],
-      "sources": [
-        "https://www.si.com/betting/rays-vs-yankees-prediction-odds-probable-pitchers-prop-bets-for-tuesday-sept-22",
-        "https://sports.betmgm.com/en/blog/mlb/rays-yankees-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb/"
       ]
     },
     {
@@ -1249,132 +1131,7 @@
       ]
     }
   ],
-  "long_shots": [
-    {
-      "sport": "Parlays",
-      "matchup": "4-Leg Long Shot: Atlanta Dream ML + Lacy Anytime TD + Liverpool ML + Rams ML",
-      "date": "2026-09-19",
-      "start_time": "2026-09-19T23:00:00Z",
-      "favorite": "Hits",
-      "estimated_probability": {
-        "Hits": 21,
-        "Doesn't Hit": 79
-      },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.15,
-      "legs": [
-        {
-          "sport": "WNBA",
-          "matchup": "Chicago Sky vs Atlanta Dream",
-          "date": "2026-09-19",
-          "side": "Atlanta Dream",
-          "probability": 79
-        },
-        {
-          "sport": "College Football Player Props",
-          "matchup": "Kewan Lacy — Anytime Touchdown (LSU vs Ole Miss)",
-          "date": "2026-09-19",
-          "side": "Yes",
-          "probability": 66
-        },
-        {
-          "sport": "Soccer - EPL",
-          "matchup": "Bournemouth vs Liverpool",
-          "date": "2026-09-20",
-          "side": "Liverpool",
-          "probability": 64
-        },
-        {
-          "sport": "NFL",
-          "matchup": "New York Giants vs Los Angeles Rams",
-          "date": "2026-09-21",
-          "side": "Los Angeles Rams",
-          "probability": 63
-        }
-      ],
-      "reasoning": [
-        "Every leg is the SAME side already favored in the main Picks tab (Dream 79%, Lacy anytime TD 66%, Liverpool 64%, Rams 63%) - none of these can fight those picks.",
-        "Replaces the previous 4-leg long shot, which died early when its Tottenham leg lost to Aston Villa - deliberately built from different legs (WNBA + a player prop this time, not just more soccer/NFL moneylines) for real variety.",
-        "Combined probability: 0.79 x 0.66 x 0.64 x 0.63 = ~21% - a real long shot from four picks that are each a genuine lean or better on their own.",
-        "Spans three sports across three days (Sept 19-21), so no single upset takes out more than its own leg."
-      ],
-      "sources": [
-        "Reuses the research already cited on each leg's own Picks tab entry."
-      ]
-    },
-    {
-      "sport": "Parlays",
-      "matchup": "4-Leg Long Shot: Reese Double-Double + Wings ML + Dream ML + Rams ML",
-      "date": "2026-09-21",
-      "start_time": "2026-09-22T00:00:00Z",
-      "favorite": "Hits",
-      "estimated_probability": {
-        "Hits": 25,
-        "Doesn't Hit": 75
-      },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.15,
-      "legs": [
-        {
-          "sport": "WNBA Player Props",
-          "matchup": "Angel Reese — Double-Double (Dream vs Liberty)",
-          "date": "2026-09-21",
-          "side": "Yes",
-          "probability": 88
-        },
-        {
-          "sport": "WNBA",
-          "matchup": "Dallas Wings vs Phoenix Mercury",
-          "date": "2026-09-21",
-          "side": "Dallas Wings",
-          "probability": 84
-        },
-        {
-          "sport": "WNBA",
-          "matchup": "Atlanta Dream vs New York Liberty",
-          "date": "2026-09-21",
-          "side": "Atlanta Dream",
-          "probability": 54
-        },
-        {
-          "sport": "NFL",
-          "matchup": "New York Giants vs Los Angeles Rams",
-          "date": "2026-09-21",
-          "side": "Los Angeles Rams",
-          "probability": 63
-        }
-      ],
-      "reasoning": [
-        "Every leg is the SAME side already favored in the main Picks tab - none of these can fight those picks.",
-        "Combined probability: 0.88 x 0.84 x 0.54 x 0.63 = ~25% - the Dream/Liberty coin-flip leg is what keeps this a real long shot despite three genuinely strong legs.",
-        "Spans two sports (WNBA, NFL) across one night, all concluding within a few hours of each other."
-      ],
-      "sources": [
-        "Reuses the research already cited on each leg's own Picks tab entry."
-      ]
-    },
-    {
-      "sport": "WNBA Player Props",
-      "matchup": "Long Shot: Angel Reese — Triple-Double (Dream vs Liberty)",
-      "date": "2026-09-21",
-      "start_time": "2026-09-22T00:00:00Z",
-      "favorite": "Yes",
-      "estimated_probability": {
-        "Yes": 10,
-        "No": 90
-      },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.15,
-      "reasoning": [
-        "Harder version of the same side as the Picks tab's Reese double-double (Yes) - a triple-double requires 10+ in three categories, which mathematically includes the double-double, so it can never contradict that pick.",
-        "Her rebounding (15.4/game over her last 5) makes 10+ boards close to automatic; the real bottleneck is assists, where she's averaging 4.2 over that stretch - a real gap between what's needed (10) and what she's been doing.",
-        "Priced as a genuine long shot (10%) specifically because the assist number is the limiting factor, not inflated just because the rebounding case is strong."
-      ],
-      "sources": [
-        "https://www.statmuse.com/wnba/ask/angel-reese-stats-in-her-last-5-games"
-      ]
-    }
-  ],
+  "long_shots": [],
   "settled": [
     {
       "sport": "NFL",
@@ -2590,6 +2347,273 @@
       "final_score": "63 total points (33-30 OT)",
       "actual_total": 63,
       "settled_at": "2026-09-21T19:28:36Z"
+    },
+    {
+      "sport": "WTA Player Props",
+      "matchup": "Mary Stoiana — Aces O/U 3.5 (Badosa vs Stoiana)",
+      "date": "2026-09-18",
+      "favorite": "Under 3.5",
+      "estimated_probability": {
+        "Under 3.5": 82,
+        "Over 3.5": 18
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "Same match as the Badosa aces pick above (SP Open QF, Friday 5:30pm local), but this side is on Stoiana's own aces total, not Badosa's - a separate market, not a hedge.",
+        "Grounded in Stoiana's real 2026 match log: she has gone over 3.5 aces in only 16% of her matches this season (i.e. stayed under in 84% of them) and averages about 2.0 aces per match - a much smaller, less powerful serve profile than a player like Badosa.",
+        "This is a much more consistent pattern than a single average suggests - the site's own frequency data shows she rarely spikes into high-ace matches, which is exactly the kind of specific, repeatable evidence that should push confidence up rather than defaulting to a cautious middle number.",
+        "Real gap: first career meeting with Badosa, so there's no head-to-head signal on how Stoiana's serve holds up specifically against this level of returner - sized at Strong lean rather than higher for that reason.",
+        "Capped below 85% deliberately - a single match can always run hot relative to a season rate, especially in a career-first tour quarterfinal with real nerves/adrenaline in play."
+      ],
+      "sources": [
+        "https://tennisstats.com/players/mary-stoiana",
+        "https://www.sportskeeda.com/tennis/paula-badosa-vs-mary-stoiana-preview-head-to-head-odds-prediction-betting-tips-sp-open-2026"
+      ],
+      "start_time": "2026-09-18T20:30:00Z",
+      "winner": "Under 3.5",
+      "actual_value": 1,
+      "final_score": "Badosa d. Stoiana 6-4, 6-2; Stoiana finished with 1 ace",
+      "settled_at": "2026-09-22T18:31:16.408959Z"
+    },
+    {
+      "sport": "WNBA",
+      "matchup": "Atlanta Dream vs New York Liberty",
+      "date": "2026-09-21",
+      "start_time": "2026-09-22T00:00:00Z",
+      "favorite": "Atlanta Dream",
+      "estimated_probability": {
+        "Atlanta Dream": 54,
+        "New York Liberty": 46
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.25,
+      "reasoning": [
+        "8pm ET at Barclays Center. Atlanta (28-14, 1st in the East) is an 8-2 in their last 10, on a 3-game win streak, fresh off a 106-81 blowout of Chicago - chasing a top-4 seed and first-round home court.",
+        "New York (26-16) is also genuinely hot on their own merits, not just riding Atlanta's name: also a 3-game win streak, and 14-6 at home this season specifically.",
+        "Head-to-head cuts against Atlanta here: Liberty won the last meeting 104-90, in Atlanta, back in June.",
+        "Real, already-known absence: Atlanta is down Brionna Jones (season-ending leg injury) - not new information, but a real frontcourt cost.",
+        "Market has this close too (Dream -128 / Liberty +104, normalizing to about 53/47) - consistent with treating this as a real toss-up with a slight lean to Atlanta's better overall record, not a confident favorite."
+      ],
+      "sources": [
+        "https://www.sportsgrid.com/wnba/game/atlanta-dream-new-york-liberty-scores-odds-picks-props-september-21-2026/a6852646-afdb-42b6-944e-829c0ea3c222",
+        "https://www.thespread.com/wnba/dream-vs-liberty-prediction-september-21-can-atlanta-cover-as-road-fave/",
+        "https://sports.yahoo.com/articles/atlanta-takes-york-following-reeses-060017295.html"
+      ],
+      "winner": "Atlanta Dream",
+      "final_score": "Dream 95, Liberty 84",
+      "settled_at": "2026-09-22T18:31:16.408959Z"
+    },
+    {
+      "sport": "WNBA Player Props",
+      "matchup": "Angel Reese — Double-Double (Dream vs Liberty)",
+      "date": "2026-09-21",
+      "start_time": "2026-09-22T00:00:00Z",
+      "favorite": "Yes",
+      "estimated_probability": {
+        "Yes": 88,
+        "No": 12
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "reasoning": [
+        "Same game as the Dream/Liberty moneyline above - different market, not a hedge.",
+        "Grounded in her actual recent log, not reputation: 18.6 points, 15.4 rebounds, 4.2 assists over her last 5 games - she's clearing 10 rebounds alone most nights, so points aren't even required for the double-double to hit.",
+        "She set the WNBA single-season rebounding record this month (500+ boards) and no other player in the league has matched her production on the glass this year - this is a sustained season-long pattern, not a hot streak.",
+        "Real gap: Liberty's specific frontcourt matchup/rebounding rate against Atlanta wasn't separately confirmed - capped below 90% for that reason rather than treated as a lock."
+      ],
+      "sources": [
+        "https://rollingout.com/2026/09/20/angel-reese-becomes-first-wnba-player/",
+        "https://www.statmuse.com/wnba/ask/angel-reese-stats-in-her-last-5-games",
+        "https://www.espn.com/wnba/player/gamelog/_/id/4433402/angel-reese"
+      ],
+      "winner": "Yes",
+      "final_score": "18 pts, 10 reb, 2 ast (Dream 95, Liberty 84)",
+      "settled_at": "2026-09-22T18:31:16.408959Z"
+    },
+    {
+      "sport": "WNBA",
+      "matchup": "Dallas Wings vs Phoenix Mercury",
+      "date": "2026-09-21",
+      "start_time": "2026-09-22T02:00:00Z",
+      "favorite": "Dallas Wings",
+      "estimated_probability": {
+        "Dallas Wings": 84,
+        "Phoenix Mercury": 16
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 1.75,
+      "reasoning": [
+        "10pm ET at Mortgage Matchup Center. Dallas (26-16, tied with Liberty/Mystics for playoff seeding) is on a genuine 6-game win streak and just beat this exact Mercury team 87-82 three days ago.",
+        "Phoenix (15-27) has nothing left to play for - eliminated from playoff contention, a completely different team from last year's finals run.",
+        "Missing key players, specifically: Kelsey Plum is out for the SEASON (lower leg), Copper is out (groin), and Kara Dunn is questionable (knee) - that's Phoenix's perimeter scoring largely gutted, not just a name on an injury report.",
+        "Real gap: no confirmed read on how much rotation/minutes Dallas's bench got in Saturday's win that might affect fatigue tonight (back-to-back-ish scheduling) - kept just below Chalk for that reason."
+      ],
+      "sources": [
+        "https://www.sportsgrid.com/wnba/game/dallas-wings-phoenix-mercury-scores-odds-picks-props-september-21-2026/57b04ff7-90da-4d7f-98e5-f2a017d883bd",
+        "https://www.docsports.com/free-picks/wnba/2026/dallas-wings-vs-phoenix-mercury-prediction-9-21-2026-wnba-pick-tips-and-odds.html",
+        "https://dailysports.net/predictions/can-dallas-extend-its-winning-run-phoenix-mercury-vs-dallas-wings-preview-september-22-2026/"
+      ],
+      "winner": "Phoenix Mercury",
+      "final_score": "Mercury 87, Wings 86",
+      "settled_at": "2026-09-22T18:31:16.408959Z"
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Tampa Bay Rays vs New York Yankees",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T17:05:00Z",
+      "favorite": "New York Yankees",
+      "estimated_probability": {
+        "New York Yankees": 58,
+        "Tampa Bay Rays": 42
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Rodon (2.95 ERA) has been excellent; market has NYY -135/-145, model gives Yankees 57.4%.",
+        "Rays are 22-7 in Nick Martinez's starts this year and he's held teams to <=3 ER in 25 of 29 outings - a live underdog, not a blowout spot."
+      ],
+      "sources": [
+        "https://www.si.com/betting/rays-vs-yankees-prediction-odds-probable-pitchers-prop-bets-for-tuesday-sept-22",
+        "https://sports.betmgm.com/en/blog/mlb/rays-yankees-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb/"
+      ],
+      "winner": "Tampa Bay Rays",
+      "final_score": "Rays 5, Yankees 3 (Game 1 of DH)",
+      "settled_at": "2026-09-22T18:31:16.408959Z"
+    },
+    {
+      "sport": "Parlays",
+      "matchup": "4-Leg Long Shot: Atlanta Dream ML + Lacy Anytime TD + Liverpool ML + Rams ML",
+      "date": "2026-09-19",
+      "start_time": "2026-09-19T23:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 21,
+        "Doesn't Hit": 79
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.15,
+      "legs": [
+        {
+          "sport": "WNBA",
+          "matchup": "Chicago Sky vs Atlanta Dream",
+          "date": "2026-09-19",
+          "side": "Atlanta Dream",
+          "probability": 79
+        },
+        {
+          "sport": "College Football Player Props",
+          "matchup": "Kewan Lacy — Anytime Touchdown (LSU vs Ole Miss)",
+          "date": "2026-09-19",
+          "side": "Yes",
+          "probability": 66
+        },
+        {
+          "sport": "Soccer - EPL",
+          "matchup": "Bournemouth vs Liverpool",
+          "date": "2026-09-20",
+          "side": "Liverpool",
+          "probability": 64
+        },
+        {
+          "sport": "NFL",
+          "matchup": "New York Giants vs Los Angeles Rams",
+          "date": "2026-09-21",
+          "side": "Los Angeles Rams",
+          "probability": 63
+        }
+      ],
+      "reasoning": [
+        "Every leg is the SAME side already favored in the main Picks tab (Dream 79%, Lacy anytime TD 66%, Liverpool 64%, Rams 63%) - none of these can fight those picks.",
+        "Replaces the previous 4-leg long shot, which died early when its Tottenham leg lost to Aston Villa - deliberately built from different legs (WNBA + a player prop this time, not just more soccer/NFL moneylines) for real variety.",
+        "Combined probability: 0.79 x 0.66 x 0.64 x 0.63 = ~21% - a real long shot from four picks that are each a genuine lean or better on their own.",
+        "Spans three sports across three days (Sept 19-21), so no single upset takes out more than its own leg."
+      ],
+      "sources": [
+        "Reuses the research already cited on each leg's own Picks tab entry."
+      ],
+      "winner": "Hits",
+      "final_score": "All 4 legs won: Dream 106-81 over Sky, Lacy scored a TD, Liverpool 1-0 over Bournemouth, Rams 28-6 over Giants",
+      "settled_at": "2026-09-22T18:31:16.408959Z"
+    },
+    {
+      "sport": "Parlays",
+      "matchup": "4-Leg Long Shot: Reese Double-Double + Wings ML + Dream ML + Rams ML",
+      "date": "2026-09-21",
+      "start_time": "2026-09-22T00:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 25,
+        "Doesn't Hit": 75
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.15,
+      "legs": [
+        {
+          "sport": "WNBA Player Props",
+          "matchup": "Angel Reese — Double-Double (Dream vs Liberty)",
+          "date": "2026-09-21",
+          "side": "Yes",
+          "probability": 88
+        },
+        {
+          "sport": "WNBA",
+          "matchup": "Dallas Wings vs Phoenix Mercury",
+          "date": "2026-09-21",
+          "side": "Dallas Wings",
+          "probability": 84
+        },
+        {
+          "sport": "WNBA",
+          "matchup": "Atlanta Dream vs New York Liberty",
+          "date": "2026-09-21",
+          "side": "Atlanta Dream",
+          "probability": 54
+        },
+        {
+          "sport": "NFL",
+          "matchup": "New York Giants vs Los Angeles Rams",
+          "date": "2026-09-21",
+          "side": "Los Angeles Rams",
+          "probability": 63
+        }
+      ],
+      "reasoning": [
+        "Every leg is the SAME side already favored in the main Picks tab - none of these can fight those picks.",
+        "Combined probability: 0.88 x 0.84 x 0.54 x 0.63 = ~25% - the Dream/Liberty coin-flip leg is what keeps this a real long shot despite three genuinely strong legs.",
+        "Spans two sports (WNBA, NFL) across one night, all concluding within a few hours of each other."
+      ],
+      "sources": [
+        "Reuses the research already cited on each leg's own Picks tab entry."
+      ],
+      "winner": "Doesn't Hit",
+      "final_score": "Settled early: Dallas Wings lost to Phoenix Mercury 86-87, which alone dooms the parlay (other 3 legs - Reese DD, Dream ML, Rams ML - all won)",
+      "settled_at": "2026-09-22T18:31:16.408959Z"
+    },
+    {
+      "sport": "WNBA Player Props",
+      "matchup": "Long Shot: Angel Reese — Triple-Double (Dream vs Liberty)",
+      "date": "2026-09-21",
+      "start_time": "2026-09-22T00:00:00Z",
+      "favorite": "Yes",
+      "estimated_probability": {
+        "Yes": 10,
+        "No": 90
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.15,
+      "reasoning": [
+        "Harder version of the same side as the Picks tab's Reese double-double (Yes) - a triple-double requires 10+ in three categories, which mathematically includes the double-double, so it can never contradict that pick.",
+        "Her rebounding (15.4/game over her last 5) makes 10+ boards close to automatic; the real bottleneck is assists, where she's averaging 4.2 over that stretch - a real gap between what's needed (10) and what she's been doing.",
+        "Priced as a genuine long shot (10%) specifically because the assist number is the limiting factor, not inflated just because the rebounding case is strong."
+      ],
+      "sources": [
+        "https://www.statmuse.com/wnba/ask/angel-reese-stats-in-her-last-5-games"
+      ],
+      "winner": "No",
+      "final_score": "Reese finished with 18 pts, 10 reb, 2 ast - double-double but not a triple-double",
+      "settled_at": "2026-09-22T18:31:16.408959Z"
     }
   ]
 }
