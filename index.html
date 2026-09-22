@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Close Calls</title>
-<link rel="stylesheet" href="style.css?v=15">
+<link rel="stylesheet" href="style.css?v=16">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css">
 </head>
 <body>
 <header class="page-header">
@@ -198,6 +199,20 @@
   </div>
 </div>
 
-<script type="module" src="script.js?v=25"></script>
+<div id="avatar-crop-backdrop" class="modal-backdrop" hidden>
+  <div class="modal avatar-crop-modal">
+    <h3>Crop your photo</h3>
+    <div class="avatar-crop-wrap">
+      <img id="avatar-crop-image" alt="">
+    </div>
+    <div class="modal-actions">
+      <button id="avatar-crop-cancel" class="secondary-btn">Cancel</button>
+      <button id="avatar-crop-save" class="primary-btn">Save</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
+<script type="module" src="script.js?v=26"></script>
 </body>
 </html>

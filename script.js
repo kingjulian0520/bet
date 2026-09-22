@@ -35,6 +35,7 @@ let openBetMenuId = null;
 let currentUser = null;
 let profileCache = null;
 let generatedAt = null;
+let avatarCropper = null;
 
 // ---------- storage ----------
 
@@ -377,25 +378,78 @@ function renderProfilePanel(root) {
   const statusEl = document.getElementById("profile-avatar-status");
   document.getElementById("profile-avatar-upload-btn").addEventListener("click", () => fileInput.click());
 
-  fileInput.addEventListener("change", async () => {
+  fileInput.addEventListener("change", () => {
     const file = fileInput.files[0];
+    fileInput.value = "";
     if (!file) return;
     if (file.size > 2 * 1024 * 1024) {
       statusEl.textContent = "Image must be 2MB or smaller.";
       statusEl.hidden = false;
       return;
     }
-    statusEl.textContent = "Uploading…";
-    statusEl.hidden = false;
-    try {
-      const url = await Auth.uploadAvatar(currentUser.id, file);
-      if (profileCache) profileCache.avatarUrl = url;
-      renderProfilePanel(root);
-    } catch (err) {
-      statusEl.textContent = "Upload failed — try a different image.";
-      statusEl.hidden = false;
-    }
+    statusEl.hidden = true;
+    openAvatarCropModal(file, root);
   });
+}
+
+function openAvatarCropModal(file, profileRoot) {
+  const backdrop = document.getElementById("avatar-crop-backdrop");
+  const imgEl = document.getElementById("avatar-crop-image");
+  const cancelBtn = document.getElementById("avatar-crop-cancel");
+  const saveBtn = document.getElementById("avatar-crop-save");
+
+  const cleanup = () => {
+    if (avatarCropper) {
+      avatarCropper.destroy();
+      avatarCropper = null;
+    }
+    backdrop.hidden = true;
+  };
+
+  const reader = new FileReader();
+  reader.onload = () => {
+    imgEl.src = reader.result;
+    backdrop.hidden = false;
+    if (avatarCropper) avatarCropper.destroy();
+    avatarCropper = new Cropper(imgEl, {
+      aspectRatio: 1,
+      viewMode: 1,
+      autoCropArea: 1,
+      background: false,
+    });
+  };
+  reader.readAsDataURL(file);
+
+  cancelBtn.onclick = cleanup;
+  backdrop.onclick = (e) => {
+    if (e.target.id === "avatar-crop-backdrop") cleanup();
+  };
+
+  saveBtn.onclick = () => {
+    if (!avatarCropper) return;
+    avatarCropper.getCroppedCanvas({ width: 400, height: 400 }).toBlob(
+      async (blob) => {
+        cleanup();
+        const statusEl = document.getElementById("profile-avatar-status");
+        if (statusEl) {
+          statusEl.textContent = "Uploading…";
+          statusEl.hidden = false;
+        }
+        try {
+          const url = await Auth.uploadAvatar(currentUser.id, blob);
+          if (profileCache) profileCache.avatarUrl = url;
+          renderProfilePanel(profileRoot);
+        } catch (err) {
+          if (statusEl) {
+            statusEl.textContent = "Upload failed — try a different image.";
+            statusEl.hidden = false;
+          }
+        }
+      },
+      "image/jpeg",
+      0.9
+    );
+  };
 }
 
 async function renderLeaderboardPanel(root) {
