@@ -1078,8 +1078,73 @@ main {
 
 .picks-filter-bar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
   margin-bottom: 0.75rem;
+}
+
+.picks-sort-wrap {
+  position: relative;
+}
+
+.sort-caret {
+  width: 12px;
+  height: 12px;
+  color: var(--muted);
+}
+
+.sort-dropdown[hidden] {
+  display: none;
+}
+
+.sort-dropdown {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  left: 0;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+  min-width: 180px;
+  padding: 0.4rem;
+  z-index: 50;
+}
+
+.sort-option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: var(--text);
+  padding: 0.55rem 0.7rem;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.sort-option:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.sort-option.active {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.filter-section-label {
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  margin: 1rem 0 0;
+}
+
+.filter-section-label:first-of-type {
+  margin-top: 0;
 }
 
 .filter-trigger-btn {

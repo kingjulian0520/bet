@@ -763,6 +763,7 @@ async function main() {
   wireAccountMenu();
   wirePasswordRecovery();
   wireSportFilter();
+  wireSortDropdown();
 
   document.addEventListener("click", (e) => {
     if (openBetMenuId && !e.target.closest(".bet-menu-wrap") && !e.target.closest(".bet-adjust-form")) {
@@ -772,6 +773,10 @@ async function main() {
     if (accountDropdown && !accountDropdown.hidden && !e.target.closest(".account-menu-wrap")) {
       accountDropdown.hidden = true;
       document.getElementById("account-menu-btn").setAttribute("aria-expanded", "false");
+    }
+    const sortDropdown = document.getElementById("sort-dropdown");
+    if (sortDropdown && !sortDropdown.hidden && !e.target.closest(".picks-sort-wrap")) {
+      sortDropdown.hidden = true;
     }
   });
 
@@ -899,6 +904,11 @@ let selectedDayFilter = "all";
 let activeSportFilters = new Set();
 let pendingSportFilters = new Set();
 
+// "featured" (existing sport-grouped/original-order layout), "closest"
+// (soonest start_time first), or "confidence" (highest recommended_units
+// first). Applies immediately on selection, unlike the staged filters.
+let picksSortMode = "featured";
+
 // Strips trailing qualifiers so prop/total/spread variants of a league
 // group under the same filter chip as its moneyline (e.g. "WNBA Player
 // Props" and "WNBA" both become "WNBA").
@@ -933,6 +943,31 @@ function sportIconSvg(group) {
   else if (g.includes("table tennis") || g.includes("wtt") || g.includes("ittf")) key = "tabletennis";
   else if (/soccer|premier|la liga|mls|champions league|uefa|bundesliga|serie a|ligue 1|efl/.test(g)) key = "soccer";
   return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${SPORT_ICON_SVGS[key]}</svg>`;
+}
+
+// Bet-type filter: same staged-then-apply pattern as the sport filter,
+// sharing the one "Adjust filters" button in the same modal.
+let activeMarketFilters = new Set();
+let pendingMarketFilters = new Set();
+
+const MARKET_TYPES = ["Moneyline", "Over/Under", "Yes/No"];
+const MARKET_ICON_SVGS = {
+  Moneyline: '<path d="M6 21V4M6 4h11l-2 3.5L17 11H6"/>',
+  "Over/Under": '<path d="M12 3v18M7 8l5-5 5 5M7 16l5 5 5-5"/>',
+  "Yes/No": '<circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/>',
+};
+
+function marketIconSvg(type) {
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${MARKET_ICON_SVGS[type] || SPORT_ICON_SVGS.generic}</svg>`;
+}
+
+// Classifies a pick by its estimated_probability key shape rather than its
+// sport, so it works the same across every league without a lookup table.
+function pickMarketType(pick) {
+  const keys = Object.keys(pick.estimated_probability || {});
+  if (keys.length === 2 && keys.includes("Yes") && keys.includes("No")) return "Yes/No";
+  if (keys.some((k) => /^(over|under)\b/i.test(k))) return "Over/Under";
+  return "Moneyline";
 }
 
 function addDaysStr(dateStr, n) {
@@ -979,44 +1014,61 @@ function renderDayFilterBar() {
 function updateSportFilterCount() {
   const badge = document.getElementById("sport-filter-count");
   if (!badge) return;
-  if (activeSportFilters.size > 0) {
-    badge.textContent = String(activeSportFilters.size);
+  const total = activeSportFilters.size + activeMarketFilters.size;
+  if (total > 0) {
+    badge.textContent = String(total);
     badge.hidden = false;
   } else {
     badge.hidden = true;
   }
 }
 
-function renderSportFilterGrid() {
-  const grid = document.getElementById("sport-filter-grid");
+function renderChipGrid(gridId, options, pendingSet) {
+  const grid = document.getElementById(gridId);
   if (!grid) return;
 
-  const groups = [...new Set(currentPicks.map((p) => sportGroup(p.sport)).filter(Boolean))].sort();
-
-  if (groups.length === 0) {
+  if (options.length === 0) {
     grid.innerHTML = '<p class="account-panel-note">No picks to filter yet.</p>';
     return;
   }
 
   grid.innerHTML = "";
-  for (const group of groups) {
+  for (const { value, label, icon } of options) {
     const chip = document.createElement("button");
     chip.type = "button";
-    chip.className = "sport-chip" + (pendingSportFilters.has(group) ? " selected" : "");
+    chip.className = "sport-chip" + (pendingSet.has(value) ? " selected" : "");
     chip.innerHTML = `
-      <span class="sport-chip-icon">${sportIconSvg(group)}</span>
-      <span class="sport-chip-label">${escapeHtml(group)}</span>
+      <span class="sport-chip-icon">${icon}</span>
+      <span class="sport-chip-label">${escapeHtml(label)}</span>
     `;
     chip.addEventListener("click", () => {
-      if (pendingSportFilters.has(group)) {
-        pendingSportFilters.delete(group);
+      if (pendingSet.has(value)) {
+        pendingSet.delete(value);
       } else {
-        pendingSportFilters.add(group);
+        pendingSet.add(value);
       }
       chip.classList.toggle("selected");
     });
     grid.appendChild(chip);
   }
+}
+
+function renderSportFilterGrid() {
+  const groups = [...new Set(currentPicks.map((p) => sportGroup(p.sport)).filter(Boolean))].sort();
+  renderChipGrid(
+    "sport-filter-grid",
+    groups.map((g) => ({ value: g, label: g, icon: sportIconSvg(g) })),
+    pendingSportFilters
+  );
+}
+
+function renderMarketFilterGrid() {
+  const types = MARKET_TYPES.filter((t) => currentPicks.some((p) => pickMarketType(p) === t));
+  renderChipGrid(
+    "market-filter-grid",
+    types.map((t) => ({ value: t, label: t, icon: marketIconSvg(t) })),
+    pendingMarketFilters
+  );
 }
 
 function wireSportFilter() {
@@ -1028,7 +1080,9 @@ function wireSportFilter() {
 
   openBtn.addEventListener("click", () => {
     pendingSportFilters = new Set(activeSportFilters);
+    pendingMarketFilters = new Set(activeMarketFilters);
     renderSportFilterGrid();
+    renderMarketFilterGrid();
     backdrop.hidden = false;
   });
 
@@ -1040,10 +1094,50 @@ function wireSportFilter() {
 
   applyBtn.addEventListener("click", () => {
     activeSportFilters = new Set(pendingSportFilters);
+    activeMarketFilters = new Set(pendingMarketFilters);
     updateSportFilterCount();
     close();
     renderPicks();
   });
+}
+
+function wireSortDropdown() {
+  const wrap = document.getElementById("picks-sort-wrap");
+  const openBtn = document.getElementById("open-sort-btn");
+  const dropdown = document.getElementById("sort-dropdown");
+  const labelEl = document.getElementById("sort-current-label");
+  if (!wrap || !openBtn || !dropdown || !labelEl) return;
+
+  const labels = { featured: "Featured", closest: "Closest Upcoming", confidence: "By Confidence" };
+
+  openBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    dropdown.hidden = !dropdown.hidden;
+  });
+
+  dropdown.querySelectorAll(".sort-option").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      picksSortMode = btn.dataset.sort;
+      labelEl.textContent = labels[picksSortMode];
+      dropdown.querySelectorAll(".sort-option").forEach((b) => b.classList.toggle("active", b === btn));
+      dropdown.hidden = true;
+      renderPicks();
+    });
+  });
+}
+
+function sortPicksForDisplay(picks, mode) {
+  if (mode === "closest") {
+    return [...picks].sort((a, b) => {
+      const ta = a.start_time ? new Date(a.start_time).getTime() : Infinity;
+      const tb = b.start_time ? new Date(b.start_time).getTime() : Infinity;
+      return ta - tb;
+    });
+  }
+  if (mode === "confidence") {
+    return [...picks].sort((a, b) => (b.recommended_units || 0) - (a.recommended_units || 0));
+  }
+  return picks;
 }
 
 function renderPicks() {
@@ -1054,24 +1148,35 @@ function renderPicks() {
   if (activeSportFilters.size > 0) {
     visiblePicks = visiblePicks.filter((p) => activeSportFilters.has(sportGroup(p.sport)));
   }
+  if (activeMarketFilters.size > 0) {
+    visiblePicks = visiblePicks.filter((p) => activeMarketFilters.has(pickMarketType(p)));
+  }
+
+  const hasActiveFilters = activeSportFilters.size > 0 || activeMarketFilters.size > 0;
 
   if (visiblePicks.length === 0) {
     const todayStr = todayDateStr();
-    const msg =
-      activeSportFilters.size > 0
-        ? "No picks match your selected sports right now - try adjusting your filters."
-        : selectedDayFilter === "all"
-        ? "No picks yet - the research hasn't turned up anything real yet. Check back soon."
-        : selectedDayFilter === todayStr
-        ? "No picks for today yet - check back soon."
-        : "No picks for this day yet - check back closer to the date.";
+    const msg = hasActiveFilters
+      ? "No picks match your filters right now - try adjusting them."
+      : selectedDayFilter === "all"
+      ? "No picks yet - the research hasn't turned up anything real yet. Check back soon."
+      : selectedDayFilter === todayStr
+      ? "No picks for today yet - check back soon."
+      : "No picks for this day yet - check back closer to the date.";
     root.innerHTML = `<p class="empty-state">${msg}</p>`;
     return;
   }
 
   root.innerHTML = "";
 
-  if (selectedDayFilter === "all") {
+  if (picksSortMode !== "featured") {
+    // Closest Upcoming / By Confidence: always a flat list across every
+    // visible pick, regardless of day filter - sport-grouping would defeat
+    // the point of sorting by time or confidence.
+    for (const pick of sortPicksForDisplay(visiblePicks, picksSortMode)) {
+      root.appendChild(renderCard(pick));
+    }
+  } else if (selectedDayFilter === "all") {
     const bySport = {};
     for (const pick of visiblePicks) {
       const sport = pick.sport || "Other";
