@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T15:20:00Z",
+  "generated_at": "2026-09-22T16:10:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
@@ -164,31 +164,6 @@
         "https://www.si.com/betting/massive-michael-penix-jr-injury-update-shifts-falcons-vs-packers-odds-in-nfl-week-3",
         "https://www.acmepackingcompany.com/green-bay-packers-odds/86723/packers-vs-falcons-odds-week-3-opening-lines-point-spread-total",
         "https://www.atlantafalcons.com/news/estimated-injury-report-released-week-3-green-bay-packers"
-      ]
-    },
-    {
-      "sport": "MLB",
-      "matchup": "Toronto Blue Jays vs Baltimore Orioles",
-      "date": "2026-09-22",
-      "start_time": "2026-09-22T22:35:00Z",
-      "favorite": "Baltimore Orioles",
-      "estimated_probability": {
-        "Baltimore Orioles": 54,
-        "Toronto Blue Jays": 46
-      },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.25,
-      "reasoning": [
-        "Pitching matchup favors Baltimore on form: Chris Bassitt (8-5, 4.64 ERA) has won 4 of his last 5 starts, while Toronto counters with Max Scherzer (3-8, 6.07 ERA), who has a well-documented home-run problem this year.",
-        "Market agrees but only slightly: Orioles -121 / Blue Jays +101, essentially a coin-flip price after vig.",
-        "Neither team is a real playoff factor - both Toronto (76-79) and Baltimore (75-80) sit well behind the White Sox for the final AL wild-card spot, adding unpredictability from reduced usage/evaluation lineups.",
-        "Season-long ATS trend: Orioles are 82-74 ATS this year vs. Toronto's 77-80 ATS, a modest but real form edge for Baltimore."
-      ],
-      "sources": [
-        "https://sports.betmgm.com/en/blog/mlb/blue-jays-orioles-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/",
-        "https://www.fanduel.com/research/orioles-vs-blue-jays-mlb-odds-prediction-point-spread-over-under-and-betting-trends-for-9-22-2026",
-        "https://www.thespread.com/mlb-articles/blue-jays-vs-orioles-prediction-and-picks-sept-22-is-toronto-the-best-bet/",
-        "https://www.mlb.com/gameday/blue-jays-vs-orioles/2026/09/22/824785/preview"
       ]
     },
     {
@@ -532,6 +507,745 @@
       ],
       "sources": [
         "https://www.sportsgrid.com/wnba/game/golden-state-valkyries-portland-fire-scores-odds-picks-props-september-22-2026/3f333975-7f93-41b2-bf70-ad23d30650d4"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Toronto Blue Jays vs Baltimore Orioles",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T22:35:00Z",
+      "favorite": "Baltimore Orioles",
+      "estimated_probability": {
+        "Baltimore Orioles": 55,
+        "Toronto Blue Jays": 45
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Scherzer is having a rough year (6.07 ERA) and just faced Baltimore on Sept 11, giving up 6 ER/7H in 5 IP.",
+        "Bassitt (8-5, 4.64 ERA) has been inconsistent but recently tossed 6 IP/1 ER against Toronto.",
+        "Model had Orioles at 51.0%; nudged slightly higher given Scherzer's specific struggles vs this Baltimore lineup."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/blue-jays-orioles-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/",
+        "https://www.bleachernation.com/picks/2026/09/22/orioles-vs-blue-jays-probable-starting-pitchers-sept-22/"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Alejandro Kirk — Singles O/U 0.5 (Blue Jays vs Orioles)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T22:35:00Z",
+      "favorite": "Over 0.5",
+      "estimated_probability": {
+        "Over 0.5": 67,
+        "Under 0.5": 33
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Kirk has gone Over the Singles line in 22 of his last 25 games (88%, +18.00u/54% ROI per BetMGM).",
+        "Elite contact hitter with a low K rate, so even in a down power year this line has stayed consistently soft."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/blue-jays-orioles-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Tampa Bay Rays vs New York Yankees",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T17:05:00Z",
+      "favorite": "New York Yankees",
+      "estimated_probability": {
+        "New York Yankees": 58,
+        "Tampa Bay Rays": 42
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Rodon (2.95 ERA) has been excellent; market has NYY -135/-145, model gives Yankees 57.4%.",
+        "Rays are 22-7 in Nick Martinez's starts this year and he's held teams to <=3 ER in 25 of 29 outings - a live underdog, not a blowout spot."
+      ],
+      "sources": [
+        "https://www.si.com/betting/rays-vs-yankees-prediction-odds-probable-pitchers-prop-bets-for-tuesday-sept-22",
+        "https://sports.betmgm.com/en/blog/mlb/rays-yankees-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb/"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Liam Hicks — Hits O/U 0.5 (Rays vs Yankees)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T17:05:00Z",
+      "favorite": "Over 0.5",
+      "estimated_probability": {
+        "Over 0.5": 64,
+        "Under 0.5": 36
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Hicks has hit the Hits Over in 16 of his last 20 road games (80%, +11.00u/30% ROI).",
+        "Facing an above-average but not shutdown Yankees rotation piece."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/rays-yankees-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb/"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Cleveland Guardians vs Boston Red Sox",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T22:45:00Z",
+      "favorite": "Boston Red Sox",
+      "estimated_probability": {
+        "Boston Red Sox": 57,
+        "Cleveland Guardians": 43
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Model gives BOS 56.9%.",
+        "Both LHP starters (Messick 12-9/2.57 ERA vs Tolle 9-6/3.02 ERA) are having strong years - a legit pitching duel, line reflects home-field edge more than a clear talent gap."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/guardians-red-sox-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Trevor Story — Total Bases O/U 1.5 (Guardians vs Red Sox)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T22:45:00Z",
+      "favorite": "Over 1.5",
+      "estimated_probability": {
+        "Over 1.5": 68,
+        "Under 1.5": 32
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Story has cleared the TB Over line in 20 of his last 25 games (80%, +16.75u/50% ROI) and Hits Over in 22 of 25 (88%).",
+        "Right-handed power bat at home, facing a LHP (Messick) - favorable platoon look."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/guardians-red-sox-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Jose Ramirez — RBIs O/U 0.5 (Guardians vs Red Sox)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T22:45:00Z",
+      "favorite": "Under 0.5",
+      "estimated_probability": {
+        "Under 0.5": 62,
+        "Over 0.5": 38
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Ramirez has gone Under his RBI line in 21 of his last 25 games (84%, +12.45u/24% ROI) - a real, sustained trend for Cleveland's best hitter.",
+        "Worth fading the RBI market specifically, not his overall production."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/guardians-red-sox-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Washington Nationals vs Detroit Tigers",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T22:40:00Z",
+      "favorite": "Detroit Tigers",
+      "estimated_probability": {
+        "Detroit Tigers": 58,
+        "Washington Nationals": 42
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Tigers pitchers own a 3.30 home ERA (2nd-best in MLB) and allow just 3.71 runs/game at home (3rd-best).",
+        "Nationals pitchers carry a 5.03 home ERA (3rd-worst) with the 5th-lowest K rate in MLB.",
+        "Market has DET -160; model gives 55.6%."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/nationals-tigers-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Daylen Lile — Hits O/U 0.5 (Nationals vs Tigers)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T22:40:00Z",
+      "favorite": "Under 0.5",
+      "estimated_probability": {
+        "Under 0.5": 63,
+        "Over 0.5": 37
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Lile has gone Under his hits line in 14 of his last 20 road games (70%, +12.90u/53% ROI).",
+        "Consistent with Washington's offense struggling on the road against a strong Tigers home staff."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/nationals-tigers-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Chicago White Sox vs Kansas City Royals",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T23:40:00Z",
+      "favorite": "Chicago White Sox",
+      "estimated_probability": {
+        "Chicago White Sox": 54,
+        "Kansas City Royals": 46
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.25,
+      "reasoning": [
+        "White Sox (-120, 79-76) still have modest playoff motivation while Royals (67-89) are long eliminated.",
+        "BetMGM's own model actually leans Royals (51.7%) - a genuine coin flip; sided very slightly with the market favorite given the motivation gap."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/white-sox-royals-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb/"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Anthony Kay — Outs Recorded O/U 12.5 (White Sox vs Royals)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T23:40:00Z",
+      "favorite": "Over 12.5",
+      "estimated_probability": {
+        "Over 12.5": 71,
+        "Under 12.5": 29
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "Kay is 2-1 with a 2.93 ERA in 3 starts vs Kansas City this year (12 K in 15 1/3 IP) - a real, specific batter-vs-pitcher edge.",
+        "Dimers' model independently flags 70.6% on this exact line at -162."
+      ],
+      "sources": [
+        "https://www.dimers.com/mlb/news/mlb-player-props-09-22-2026-ac"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Randal Grichuk — Hits O/U 0.5 (White Sox vs Royals)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T23:40:00Z",
+      "favorite": "Over 0.5",
+      "estimated_probability": {
+        "Over 0.5": 70,
+        "Under 0.5": 30
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "Grichuk has hit safely (Over 0.5) in 18 of his last 20 games (90%, +14.15u/42% ROI) - one of the strongest trends found on the whole slate."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/white-sox-royals-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb/"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "New York Mets vs Texas Rangers",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T00:05:00Z",
+      "favorite": "Texas Rangers",
+      "estimated_probability": {
+        "Texas Rangers": 58,
+        "New York Mets": 42
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Market has TEX -145/NYM +118, model at 56.6% Rangers.",
+        "Gore at home carries a real edge over Manaea, who's been the Mets' back-end arm down the stretch."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/mets-rangers-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Carson Benge — Total Bases O/U 1.5 (Mets vs Rangers)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T00:05:00Z",
+      "favorite": "Over 1.5",
+      "estimated_probability": {
+        "Over 1.5": 62,
+        "Under 1.5": 38
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Benge has cleared TB Over in 14 of his last 20 road games (70%, +11.85u/51% ROI) and Runs Over in 13/20 (65%) - a hitter running hot on the road right now."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/mets-rangers-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Los Angeles Angels vs Athletics",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T01:40:00Z",
+      "favorite": "Los Angeles Angels",
+      "estimated_probability": {
+        "Los Angeles Angels": 52,
+        "Athletics": 48
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.25,
+      "reasoning": [
+        "Odds were inconsistent across books (-160/+132 at one, -109/-110 at another) - a genuine coin-flip spot between two non-contenders (Angels 60-95, A's 61-94)."
+      ],
+      "sources": [
+        "https://www.bleachernation.com/picks/2026/09/20/athletics-vs-los-angeles-angels-series-sept-22-23-odds-starting-pitchers-predictions/"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Shea Langeliers — Home Run O/U 0.5 (Angels vs Athletics)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T01:40:00Z",
+      "favorite": "Over 0.5",
+      "estimated_probability": {
+        "Over 0.5": 58,
+        "Under 0.5": 42
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "A park + matchup edge, not just a trend: Sutter Health Park is the 3rd-best run-scoring venue in MLB this year (11.36 runs/game, 3.13 HR/game).",
+        "Langeliers faces Kikuchi, who's allowing homers at a 1.10 HR/9 clip (7 HR in 57 1/3 IP)."
+      ],
+      "sources": [
+        "https://www.fanduel.com/research/mlb-home-run-prop-odds-9-22-2026"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Minnesota Twins vs San Francisco Giants",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T01:45:00Z",
+      "favorite": "Minnesota Twins",
+      "estimated_probability": {
+        "Minnesota Twins": 57,
+        "San Francisco Giants": 43
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Market MIN -134/SF +114.",
+        "Giants are 65-92, well out of contention, while Minnesota (72-83) is playing out the string but with the better roster on paper."
+      ],
+      "sources": [
+        "https://www.fanduel.com/research/twins-vs-giants-mlb-odds-prediction-point-spread-over-under-and-betting-trends-for-9-22-2026"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Ryan Jeffers — Singles O/U 0.5 (Twins vs Giants)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T01:45:00Z",
+      "favorite": "Under 0.5",
+      "estimated_probability": {
+        "Under 0.5": 63,
+        "Over 0.5": 37
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Jeffers has gone Under the Singles line in 19 of his last 25 games (76%, +11.40u/34% ROI) and Under Runs in his last 10 straight.",
+        "A catcher who does damage in extra bases but doesn't rack up cheap singles or runs."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/twins-giants-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb/"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Cincinnati Reds vs Atlanta Braves",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T23:15:00Z",
+      "favorite": "Atlanta Braves",
+      "estimated_probability": {
+        "Atlanta Braves": 63,
+        "Cincinnati Reds": 37
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Market ATL -184/CIN +154, model at 62.3%.",
+        "Braves already clinched the division; Ritchie's team is 2-2 SU this year when he starts as the favorite, keeping this from being a total lock despite the price."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/reds-braves-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Ronald Acuña Jr. — Home Run O/U 0.5 (Reds vs Braves)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T23:15:00Z",
+      "favorite": "Over 0.5",
+      "estimated_probability": {
+        "Over 0.5": 76,
+        "Under 0.5": 24
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "Batting .342/.699 SLG in September with 7 HR this month.",
+        "5-for-10 with 4 HR specifically against Cincinnati this season.",
+        "Reds are starting LHP Brandon Williamson (4-4, 5.56 ERA) - a pitcher Acuna has personally torched."
+      ],
+      "sources": [
+        "https://www.wagertalk.com/news/mlb/best-home-run-props-today-hr-picks-bets-for-september-22-2026/"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Elly De La Cruz — Stolen Base O/U 0.5 (Reds vs Braves)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T23:15:00Z",
+      "favorite": "Over 0.5",
+      "estimated_probability": {
+        "Over 0.5": 60,
+        "Under 0.5": 40
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "27 SB with 8 games left, chasing a 30-30 season.",
+        "Batting .435 (40-for-92) over his last 23 games with a 1.268 OPS - a hitter in peak form with clear personal motivation to keep running.",
+        "Hits Over trend (21/25, 84%) supports the same read on his overall form."
+      ],
+      "sources": [
+        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-09-18/elly-de-la-cruz-notches-27th-steal-in-win-over-cubs",
+        "https://sports.betmgm.com/en/blog/mlb/reds-braves-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "St. Louis Cardinals vs Pittsburgh Pirates",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T22:40:00Z",
+      "favorite": "Pittsburgh Pirates",
+      "estimated_probability": {
+        "Pittsburgh Pirates": 56,
+        "St. Louis Cardinals": 44
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Jared Jones has allowed just 3 ER over his last 18 IP, while Pallante is coming off a 6-ER outing.",
+        "Total has moved down from 7.5 to 7, consistent with a strong-pitching read favoring the Pirates at home."
+      ],
+      "sources": [
+        "https://www.thespread.com/mlb-articles/cardinals-vs-pirates-prediction-sept-22-is-pittsburgh-at-home-the-best-bet/"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Nathan Church — Hits O/U 0.5 (Cardinals vs Pirates)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T22:40:00Z",
+      "favorite": "Over 0.5",
+      "estimated_probability": {
+        "Over 0.5": 71,
+        "Under 0.5": 29
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "Church has hit safely in 18 of his last 20 road games (90%, +14.70u/44% ROI) and cleared Singles Over in 17/20 (85%) - one of the cleanest hit-streak trends on the slate."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/cardinals-pirates-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Milwaukee Brewers vs Philadelphia Phillies",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T22:40:00Z",
+      "favorite": "Philadelphia Phillies",
+      "estimated_probability": {
+        "Philadelphia Phillies": 58,
+        "Milwaukee Brewers": 42
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Wheeler remains a clear ace against May, who's had a shakier, lower-K season for Milwaukee. Market PHI -140, model 58%.",
+        "Milwaukee already clinched the NL Central and may not be pushing every lever, slightly favoring Philly's motivation in a game that matters more for their WC seeding."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/brewers-phillies-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Joey Ortiz — Total Bases O/U 1.5 (Brewers vs Phillies)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T22:40:00Z",
+      "favorite": "Over 1.5",
+      "estimated_probability": {
+        "Over 1.5": 68,
+        "Under 1.5": 32
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Ortiz has cleared TB Over in 20 of his last 25 games (80%, +15.00u/39% ROI) and Hits Over in 21/25 (84%) - one of the strongest and most consistent trends on the slate."
+      ],
+      "sources": [
+        "https://www.covers.com/sport/baseball/mlb/matchup/368337/picks"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Miami Marlins vs Chicago Cubs",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T00:40:00Z",
+      "favorite": "Chicago Cubs",
+      "estimated_probability": {
+        "Chicago Cubs": 71,
+        "Miami Marlins": 29
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "Market CHC -220/MIA +180, model at 72.1% - one of the widest gaps on the slate.",
+        "Gausman (9-12) at home against a rebuilding Marlins team (76-80) starting Janson Junk (6-9)."
+      ],
+      "sources": [
+        "https://www.fanduel.com/research/cubs-vs-marlins-mlb-odds-prediction-point-spread-over-under-and-betting-trends-for-9-22-2026"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Michael Conforto — Runs O/U 0.5 (Marlins vs Cubs)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T00:40:00Z",
+      "favorite": "Under 0.5",
+      "estimated_probability": {
+        "Under 0.5": 72,
+        "Over 0.5": 28
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "Conforto has gone Under his runs-scored line in 23 of his last 25 home games (92%, +19.90u/44% ROI) - the single strongest hit-rate trend found on the entire slate."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/marlins-cubs-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Otto Lopez — Hits O/U 0.5 (Marlins vs Cubs)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T00:40:00Z",
+      "favorite": "Under 0.5",
+      "estimated_probability": {
+        "Under 0.5": 65,
+        "Over 0.5": 35
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Lopez has gone hitless (Under 0.5) in 19 of his last 25 road games (76%, +12.70u/26% ROI) against a Cubs staff anchored by a strong home performer in Gausman."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/marlins-cubs-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "San Diego Padres vs Los Angeles Dodgers",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T02:10:00Z",
+      "favorite": "Los Angeles Dodgers",
+      "estimated_probability": {
+        "Los Angeles Dodgers": 54,
+        "San Diego Padres": 46
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.25,
+      "reasoning": [
+        "Model gives LAD only 52.4%.",
+        "Padres are 87-69 ATS this season (excellent) vs Dodgers 68-87 ATS - the market has been overpaying for the Dodgers name most of the year.",
+        "Yamamoto (14-8) is the best pitcher in this game, but King was specifically moved up in San Diego's rotation for this start on full rest, tempering the home edge."
+      ],
+      "sources": [
+        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-09-20/michael-king-moved-up-in-padres-rotation",
+        "https://sports.betmgm.com/en/blog/mlb/padres-dodgers-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb/"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Teoscar Hernández — Hits O/U 0.5 (Padres vs Dodgers)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T02:10:00Z",
+      "favorite": "Over 0.5",
+      "estimated_probability": {
+        "Over 0.5": 71,
+        "Under 0.5": 29
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "Hernandez has hit safely in 17 of his last 20 home games (85%, +11.65u/30% ROI) and cleared Singles Over in 19/25 home (76%)."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/padres-dodgers-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb/"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Kyle Tucker — Home Run O/U 0.5 (Padres vs Dodgers)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T02:10:00Z",
+      "favorite": "Over 0.5",
+      "estimated_probability": {
+        "Over 0.5": 60,
+        "Under 0.5": 40
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Has gone deep in 5 of his last 10 games (50%, +20.30u/203% ROI) - the single best HR-frequency trend found among Dodgers hitters."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/padres-dodgers-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb/"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Arizona Diamondbacks vs Colorado Rockies",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T00:40:00Z",
+      "favorite": "Arizona Diamondbacks",
+      "estimated_probability": {
+        "Arizona Diamondbacks": 64,
+        "Colorado Rockies": 36
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Market ARI -200/COL +165, model 62.9%.",
+        "Soroka (8-5, 3.45 ERA) is clearly the better arm tonight vs Freeland (4-10).",
+        "Game is at Coors Field even though Arizona is favored - real park risk works against a clean blowout, kept at Slight lean despite the price."
+      ],
+      "sources": [
+        "https://www.bleachernation.com/picks/2026/09/20/colorado-rockies-vs-arizona-diamondbacks-series-sept-22-24-odds-starting-pitchers-predictions/"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Nolan Arenado — Home Run O/U 0.5 (Diamondbacks vs Rockies)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T00:40:00Z",
+      "favorite": "Over 0.5",
+      "estimated_probability": {
+        "Over 0.5": 75,
+        "Under 0.5": 25
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "Homered in 5 of his last 10 games (50%, +28.10u/281% ROI, the highest ROI trend found on the whole slate).",
+        "Gets to do it at Coors Field tonight, the single best power-hitting park in MLB, as the road team."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/diamondbacks-rockies-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Ezequiel Tovar — Total Bases O/U 1.5 (Diamondbacks vs Rockies)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T00:40:00Z",
+      "favorite": "Under 1.5",
+      "estimated_probability": {
+        "Under 1.5": 65,
+        "Over 1.5": 35
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Counterintuitively, Tovar has gone Under the TB line in 19 of his last 25 home games (76%, +14.95u/46% ROI) despite playing at Coors - a genuine cold streak the raw park factor hasn't overridden."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/diamondbacks-rockies-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
+      ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Houston Astros vs Seattle Mariners",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T01:40:00Z",
+      "favorite": "Seattle Mariners",
+      "estimated_probability": {
+        "Seattle Mariners": 56,
+        "Houston Astros": 44
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Sources disagreed (one had SEA -150, another a near-even 50.9%/49.1% model read) - genuinely close.",
+        "Gilbert's clear edge over Javier in current form tips it to Seattle at home, but not by much."
+      ],
+      "sources": [
+        "https://www.bleachernation.com/picks/2026/09/20/seattle-mariners-vs-houston-astros-series-sept-22-23-odds-starting-pitchers-predictions/",
+        "https://sports.betmgm.com/en/blog/mlb/astros-mariners-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb/"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Logan Gilbert — Strikeouts O/U 5.5 (Astros vs Mariners)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T01:40:00Z",
+      "favorite": "Over 5.5",
+      "estimated_probability": {
+        "Over 5.5": 61,
+        "Under 5.5": 39
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Averaging 6.5 K/game across 30 appearances this year, and the market itself is already pricing the Over as the play (-156 vs +122), consistent with his season-long form pitching at home."
+      ],
+      "sources": [
+        "https://www.fanduel.com/research/mlb-strikeout-prop-odds-9-22-2026"
+      ]
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Christian Walker — Runs O/U 0.5 (Astros vs Mariners)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T01:40:00Z",
+      "favorite": "Under 0.5",
+      "estimated_probability": {
+        "Under 0.5": 70,
+        "Over 0.5": 30
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "Walker has gone Under his runs-scored line in 18 of his last 20 games (90%, +13.55u/35% ROI) - one of the strongest fade trends on the slate, on the road against a Mariners staff anchored by Gilbert."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/astros-mariners-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb/"
       ]
     }
   ],
