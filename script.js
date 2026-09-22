@@ -39,6 +39,7 @@ let currentUser = null;
 let profileCache = null;
 let generatedAt = null;
 let avatarCropper = null;
+let unlockedThisSession = false;
 
 // ---------- storage ----------
 
@@ -132,6 +133,7 @@ async function applyAuthState(user) {
   if (!user) {
     profileCache = null;
     myBets = loadLocalBets();
+    unlockedThisSession = false;
     renderAccountBar();
     renderAll();
     return;
@@ -139,7 +141,7 @@ async function applyAuthState(user) {
 
   try {
     let profile = await Auth.getMyProfile(user.id);
-    if (!profile) profile = { username: user.email, isPublic: false, unitValue: null, bets: [], unlockedDate: null };
+    if (!profile) profile = { username: user.email, isPublic: false, unitValue: null, bets: [] };
 
     // First login on this browser with existing guest data already here
     // and nothing in the cloud yet - bring it along instead of silently
@@ -163,7 +165,7 @@ async function applyAuthState(user) {
     myBets = Array.isArray(profile.bets) ? profile.bets : [];
   } catch (err) {
     console.warn("Couldn't load your account data, falling back to this browser's local bets.", err);
-    profileCache = { username: user.email, isPublic: false, unitValue: null, bets: [], unlockedDate: null };
+    profileCache = { username: user.email, isPublic: false, unitValue: null, bets: [] };
     myBets = loadLocalBets();
   }
 
@@ -173,8 +175,12 @@ async function applyAuthState(user) {
 
 // ---------- picks/long shots lock ----------
 
-function isUnlockedToday() {
-  return !!(currentUser && profileCache && profileCache.unlockedDate === todayDateStr());
+// Deliberately in-memory only, not saved to the profile or localStorage -
+// resets on every page load/reopen so the passcode has to be re-entered
+// each time, even though the login itself stays signed in (Supabase
+// persists that separately).
+function isUnlocked() {
+  return !!(currentUser && unlockedThisSession);
 }
 
 function renderLockOverlays() {
@@ -187,7 +193,7 @@ function renderLockOverlay(prefix) {
   const bodyEl = document.getElementById(`${prefix}-lock-body`);
   if (!overlay || !lockable || !bodyEl) return;
 
-  if (isUnlockedToday()) {
+  if (isUnlocked()) {
     overlay.hidden = true;
     lockable.classList.remove("locked");
     return;
@@ -228,9 +234,7 @@ function renderLockOverlay(prefix) {
     try {
       const ok = await Auth.verifyAccessCode(code);
       if (ok) {
-        const today = todayDateStr();
-        if (profileCache) profileCache.unlockedDate = today;
-        await Auth.saveMyProfile(currentUser.id, { unlockedDate: today });
+        unlockedThisSession = true;
         unlockOverlaysWithFade();
       } else {
         errEl.textContent = "Wrong passcode — try again.";
@@ -741,9 +745,6 @@ async function main() {
     if (currentPicks.length !== hadPicks || currentLongShots.length !== hadLongShots) {
       renderAll();
     }
-    // Re-locks automatically once the date rolls past whatever day was
-    // last unlocked, without needing a page reload.
-    renderLockOverlays();
   }, 60000);
 }
 
@@ -912,7 +913,7 @@ function renderLongShots() {
 
 function renderExposureSummary() {
   const el = document.getElementById("exposure-summary");
-  if (!isUnlockedToday()) {
+  if (!isUnlocked()) {
     el.hidden = true;
     return;
   }

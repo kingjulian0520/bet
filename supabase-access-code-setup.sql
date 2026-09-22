@@ -40,8 +40,3 @@ $$;
 
 revoke all on function public.verify_access_code(text) from public;
 grant execute on function public.verify_access_code(text) to authenticated;
-
--- Which date (as 'YYYY-MM-DD') this user last unlocked Picks/Long Shots by
--- entering the correct code. Re-locks automatically once the date no
--- longer matches today.
-alter table public.profiles add column if not exists unlocked_date text;

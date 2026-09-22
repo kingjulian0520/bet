@@ -130,7 +130,6 @@ export async function getMyProfile(uid) {
     unitValue: data.unit_value,
     bets: data.bets || [],
     avatarUrl: data.avatar_url || null,
-    unlockedDate: data.unlocked_date || null,
   };
 }
 
@@ -142,7 +141,6 @@ export async function saveMyProfile(uid, partial) {
   if ("bets" in partial) columns.bets = partial.bets;
   if ("isPublic" in partial) columns.is_public = partial.isPublic;
   if ("avatarUrl" in partial) columns.avatar_url = partial.avatarUrl;
-  if ("unlockedDate" in partial) columns.unlocked_date = partial.unlockedDate;
   const { error } = await supabase.from("profiles").update(columns).eq("id", uid);
   if (error) throw error;
 }
