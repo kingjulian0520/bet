@@ -193,6 +193,10 @@ body {
   font-size: 0.85rem;
 }
 
+.auth-tabs[hidden] {
+  display: none;
+}
+
 .auth-tabs {
   display: flex;
   gap: 0.2rem;
@@ -276,6 +280,22 @@ body {
 }
 
 .auth-actions .auth-cancel:hover {
+  color: var(--text);
+}
+
+.auth-link-btn {
+  display: block;
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 0.78rem;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.auth-link-btn:hover {
   color: var(--text);
 }
 

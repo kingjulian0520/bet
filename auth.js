@@ -119,6 +119,41 @@ export async function signOutUser() {
   await supabase.auth.signOut();
 }
 
+// Emails a link back to this same page. Clicking it logs the browser into
+// a short-lived recovery session and fires a PASSWORD_RECOVERY auth event
+// (see onPasswordRecovery below) - it does NOT change the password itself.
+export async function sendPasswordReset(email) {
+  await ensureInit();
+  if (!ready) throw new Error("Accounts aren't set up yet.");
+  const { error } = await supabase.auth.resetPasswordForEmail(email, {
+    redirectTo: window.location.origin + window.location.pathname,
+  });
+  if (error) throw error;
+}
+
+// Only works while a recovery session (from clicking the emailed link) or
+// a normal logged-in session is active.
+export async function updatePassword(newPassword) {
+  await ensureInit();
+  if (!ready) throw new Error("Accounts aren't set up yet.");
+  const { error } = await supabase.auth.updateUser({ password: newPassword });
+  if (error) throw error;
+}
+
+// Fires when the visitor arrives via a password-reset email link, so the
+// UI can show a "set new password" prompt instead of treating it like a
+// normal sign-in.
+export async function onPasswordRecovery(callback) {
+  await ensureInit();
+  if (!ready) return () => {};
+  const {
+    data: { subscription },
+  } = supabase.auth.onAuthStateChange((event) => {
+    if (event === "PASSWORD_RECOVERY") callback();
+  });
+  return () => subscription.unsubscribe();
+}
+
 export async function getMyProfile(uid) {
   await ensureInit();
   if (!ready) return null;

@@ -278,9 +278,11 @@ function wireAuthUI() {
   const openBtn = document.getElementById("open-auth-btn");
 
   const tabs = document.querySelectorAll(".auth-tab-btn");
+  const authTabsEl = document.getElementById("auth-tabs");
   const panels = {
     signin: document.getElementById("auth-signin-panel"),
     signup: document.getElementById("auth-signup-panel"),
+    reset: document.getElementById("auth-reset-panel"),
   };
 
   const titleEl = document.getElementById("auth-modal-title");
@@ -288,12 +290,15 @@ function wireAuthUI() {
   const copy = {
     signin: ["Welcome back", "Sign in to sync your bets across devices."],
     signup: ["Create your account", "Track your bets and pick history anywhere you sign in."],
+    reset: ["Reset your password", "We'll email you a link to set a new one."],
   };
 
   function showTab(name) {
+    authTabsEl.hidden = name === "reset";
     tabs.forEach((t) => t.classList.toggle("active", t.dataset.authtab === name));
     panels.signin.hidden = name !== "signin";
     panels.signup.hidden = name !== "signup";
+    panels.reset.hidden = name !== "reset";
     titleEl.textContent = copy[name][0];
     subtitleEl.textContent = copy[name][1];
   }
@@ -356,7 +361,72 @@ function wireAuthUI() {
     }
   });
 
+  document.getElementById("forgot-password-link").addEventListener("click", () => {
+    document.getElementById("reset-error").hidden = true;
+    document.getElementById("reset-email").value = document.getElementById("signin-email").value;
+    showTab("reset");
+  });
+
+  document.getElementById("reset-back").addEventListener("click", () => showTab("signin"));
+
+  document.getElementById("reset-submit").addEventListener("click", async () => {
+    const email = document.getElementById("reset-email").value.trim();
+    const errEl = document.getElementById("reset-error");
+    errEl.classList.remove("auth-notice");
+    errEl.hidden = true;
+    if (!email) {
+      errEl.textContent = "Enter your email first.";
+      errEl.hidden = false;
+      return;
+    }
+    try {
+      await Auth.sendPasswordReset(email);
+      errEl.textContent = "Check your email for a link to reset your password.";
+      errEl.classList.add("auth-notice");
+      errEl.hidden = false;
+    } catch (err) {
+      errEl.textContent = err.message || "Couldn't send that — try again.";
+      errEl.hidden = false;
+    }
+  });
+
   Auth.onAuthChange(applyAuthState);
+}
+
+function wirePasswordRecovery() {
+  const backdrop = document.getElementById("new-password-backdrop");
+  const input = document.getElementById("new-password-input");
+  const errEl = document.getElementById("new-password-error");
+  const submitBtn = document.getElementById("new-password-submit");
+
+  Auth.onPasswordRecovery(() => {
+    document.getElementById("auth-modal-backdrop").hidden = true;
+    input.value = "";
+    errEl.hidden = true;
+    backdrop.hidden = false;
+  });
+
+  submitBtn.addEventListener("click", async () => {
+    const newPassword = input.value;
+    errEl.hidden = true;
+    if (newPassword.length < 6) {
+      errEl.textContent = "Password must be at least 6 characters.";
+      errEl.hidden = false;
+      return;
+    }
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Saving…";
+    try {
+      await Auth.updatePassword(newPassword);
+      backdrop.hidden = true;
+    } catch (err) {
+      errEl.textContent = err.message || "Couldn't update your password — try again.";
+      errEl.hidden = false;
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Save new password";
+    }
+  });
 }
 
 // ---------- account menu / panels ----------
@@ -691,6 +761,7 @@ async function main() {
   wireCalendar();
   wireAuthUI();
   wireAccountMenu();
+  wirePasswordRecovery();
 
   document.addEventListener("click", (e) => {
     if (openBetMenuId && !e.target.closest(".bet-menu-wrap") && !e.target.closest(".bet-adjust-form")) {

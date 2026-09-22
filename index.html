@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Close Calls</title>
-<link rel="stylesheet" href="style.css?v=19">
+<link rel="stylesheet" href="style.css?v=21">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css">
 </head>
 <body>
@@ -175,7 +175,7 @@
     <h3 id="auth-modal-title" class="auth-modal-title">Welcome back</h3>
     <p id="auth-modal-subtitle" class="auth-modal-subtitle">Sign in to sync your bets across devices.</p>
 
-    <div class="auth-tabs">
+    <div class="auth-tabs" id="auth-tabs">
       <button class="auth-tab-btn active" data-authtab="signin">Sign In</button>
       <button class="auth-tab-btn" data-authtab="signup">Sign Up</button>
     </div>
@@ -187,11 +187,25 @@
       <label class="modal-label" for="signin-password">Password</label>
       <input id="signin-password" class="auth-input" type="password" autocomplete="current-password" placeholder="••••••••">
 
+      <button type="button" id="forgot-password-link" class="auth-link-btn">Forgot password?</button>
+
       <p id="signin-error" class="auth-error" hidden></p>
 
       <div class="modal-actions auth-actions">
         <button id="signin-submit" class="primary-btn auth-submit">Sign In</button>
         <button class="secondary-btn auth-cancel">Cancel</button>
+      </div>
+    </div>
+
+    <div id="auth-reset-panel" class="auth-panel" hidden>
+      <label class="modal-label" for="reset-email">Email</label>
+      <input id="reset-email" class="auth-input" type="email" autocomplete="email" placeholder="you@example.com">
+
+      <p id="reset-error" class="auth-error" hidden></p>
+
+      <div class="modal-actions auth-actions">
+        <button id="reset-submit" class="primary-btn auth-submit">Send reset link</button>
+        <button type="button" id="reset-back" class="secondary-btn">Back to sign in</button>
       </div>
     </div>
 
@@ -212,6 +226,21 @@
         <button class="secondary-btn auth-cancel">Cancel</button>
       </div>
     </div>
+  </div>
+</div>
+
+<div id="new-password-backdrop" class="modal-backdrop" hidden>
+  <div class="modal auth-modal">
+    <div class="auth-mark">CC</div>
+    <h3 class="auth-modal-title">Set a new password</h3>
+    <p class="auth-modal-subtitle">Choose a new password for your account.</p>
+
+    <label class="modal-label" for="new-password-input">New password</label>
+    <input id="new-password-input" class="auth-input" type="password" autocomplete="new-password" placeholder="at least 6 characters">
+
+    <p id="new-password-error" class="auth-error" hidden></p>
+
+    <button id="new-password-submit" class="primary-btn account-panel-cta">Save new password</button>
   </div>
 </div>
 
@@ -239,6 +268,6 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
-<script type="module" src="script.js?v=32"></script>
+<script type="module" src="script.js?v=33"></script>
 </body>
 </html>
