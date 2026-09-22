@@ -328,7 +328,20 @@ function renderProfilePanel(root) {
     return;
   }
   const stats = myBetStats();
+  const initial = (profileCache.username || "?").charAt(0).toUpperCase();
+  const avatarInner = profileCache.avatarUrl
+    ? `<img src="${escapeAttr(profileCache.avatarUrl)}" alt="">`
+    : escapeHtml(initial);
+
   root.innerHTML = `
+    <div class="profile-avatar-row">
+      <div class="profile-avatar" id="profile-avatar">${avatarInner}</div>
+      <div class="profile-avatar-actions">
+        <button id="profile-avatar-upload-btn" class="secondary-btn">Change photo</button>
+        <input type="file" id="profile-avatar-input" accept="image/png,image/jpeg,image/webp,image/gif" hidden>
+        <p id="profile-avatar-status" class="account-panel-note" hidden></p>
+      </div>
+    </div>
     <div class="profile-stats">
       <div class="profile-stat">
         <div class="profile-stat-value">${stats.wins}-${stats.losses}</div>
@@ -349,7 +362,7 @@ function renderProfilePanel(root) {
         Make my bets public
       </label>
     </div>
-    <p class="account-panel-note">Public shows your username, record, and net units on the leaderboard. Your email is never shown.</p>
+    <p class="account-panel-note">Public shows your username, photo, record, and net units on the leaderboard. Your email is never shown.</p>
   `;
 
   document.getElementById("profile-public-checkbox").addEventListener("change", (e) => {
@@ -358,6 +371,30 @@ function renderProfilePanel(root) {
     Auth.saveMyProfile(currentUser.id, { isPublic }).catch((err) => {
       console.warn("Couldn't update public/private setting.", err);
     });
+  });
+
+  const fileInput = document.getElementById("profile-avatar-input");
+  const statusEl = document.getElementById("profile-avatar-status");
+  document.getElementById("profile-avatar-upload-btn").addEventListener("click", () => fileInput.click());
+
+  fileInput.addEventListener("change", async () => {
+    const file = fileInput.files[0];
+    if (!file) return;
+    if (file.size > 2 * 1024 * 1024) {
+      statusEl.textContent = "Image must be 2MB or smaller.";
+      statusEl.hidden = false;
+      return;
+    }
+    statusEl.textContent = "Uploading…";
+    statusEl.hidden = false;
+    try {
+      const url = await Auth.uploadAvatar(currentUser.id, file);
+      if (profileCache) profileCache.avatarUrl = url;
+      renderProfilePanel(root);
+    } catch (err) {
+      statusEl.textContent = "Upload failed — try a different image.";
+      statusEl.hidden = false;
+    }
   });
 }
 

@@ -129,6 +129,7 @@ export async function getMyProfile(uid) {
     isPublic: data.is_public,
     unitValue: data.unit_value,
     bets: data.bets || [],
+    avatarUrl: data.avatar_url || null,
   };
 }
 
@@ -139,8 +140,28 @@ export async function saveMyProfile(uid, partial) {
   if ("unitValue" in partial) columns.unit_value = partial.unitValue;
   if ("bets" in partial) columns.bets = partial.bets;
   if ("isPublic" in partial) columns.is_public = partial.isPublic;
+  if ("avatarUrl" in partial) columns.avatar_url = partial.avatarUrl;
   const { error } = await supabase.from("profiles").update(columns).eq("id", uid);
   if (error) throw error;
+}
+
+// Stores every user's avatar at a fixed path ("<uid>/avatar") so a new
+// upload replaces the old one instead of piling up orphaned files.
+// Appends a cache-busting query param so browsers don't keep showing the
+// previous image after a replace, since the URL itself doesn't change.
+export async function uploadAvatar(uid, file) {
+  await ensureInit();
+  if (!ready) throw new Error("Accounts aren't set up yet.");
+  const path = `${uid}/avatar`;
+  const { error: uploadError } = await supabase.storage
+    .from("avatars")
+    .upload(path, file, { upsert: true, contentType: file.type });
+  if (uploadError) throw uploadError;
+
+  const { data } = supabase.storage.from("avatars").getPublicUrl(path);
+  const avatarUrl = `${data.publicUrl}?v=${Date.now()}`;
+  await saveMyProfile(uid, { avatarUrl });
+  return avatarUrl;
 }
 
 // Ranks everyone who has opted their profile public (RLS only returns rows
