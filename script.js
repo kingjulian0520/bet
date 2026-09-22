@@ -4,12 +4,13 @@ const UNIT_VALUE_KEY = "closeCallsUnitValue";
 const BETS_KEY = "closeCallsBets";
 const TIMEZONE_KEY = "closeCallsTimeZone";
 
-// Web3Forms access key for "Report an Issue" in the account menu. This key
-// only identifies which Web3Forms account relays the message - it does NOT
-// reveal the destination email (that's set privately in the Web3Forms
+// Formspree form ID for "Report an Issue" in the account menu. This ID
+// only identifies which Formspree form relays the message - it does NOT
+// reveal the destination email (that's set privately in the Formspree
 // dashboard), so unlike a mailto: link this is safe to leave in public page
-// source. Get one free at web3forms.com. Left as a placeholder until set.
-const WEB3FORMS_ACCESS_KEY = "REPLACE_WITH_YOUR_WEB3FORMS_KEY";
+// source. Find/create it at formspree.io ("Forms" -> your form -> the
+// f/xxxxxx part of its endpoint). Left as a placeholder until set.
+const FORMSPREE_FORM_ID = "REPLACE_WITH_YOUR_FORMSPREE_FORM_ID";
 
 const COMMON_TIME_ZONES = [
   { value: "auto", label: "Match my device" },
@@ -479,8 +480,8 @@ async function renderLeaderboardPanel(root) {
 }
 
 function renderReportPanel(root) {
-  if (WEB3FORMS_ACCESS_KEY.startsWith("REPLACE_")) {
-    root.innerHTML = `<p class="account-panel-note">Reporting isn't set up yet — add a Web3Forms access key (WEB3FORMS_ACCESS_KEY) in script.js to turn this on.</p>`;
+  if (FORMSPREE_FORM_ID.startsWith("REPLACE_")) {
+    root.innerHTML = `<p class="account-panel-note">Reporting isn't set up yet — add a Formspree form ID (FORMSPREE_FORM_ID) in script.js to turn this on.</p>`;
     return;
   }
   root.innerHTML = `
@@ -509,19 +510,16 @@ function renderReportPanel(root) {
     statusEl.hidden = false;
 
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_FORM_ID}`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
-          access_key: WEB3FORMS_ACCESS_KEY,
-          subject: "Close Calls issue report",
-          from_name: "Close Calls site",
           email: emailEl.value.trim() || undefined,
           message,
+          _subject: "Close Calls issue report",
         }),
       });
-      const result = await res.json();
-      if (result.success) {
+      if (res.ok) {
         statusEl.textContent = "Sent — thanks for the report.";
         messageEl.value = "";
         emailEl.value = "";
