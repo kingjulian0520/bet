@@ -4,10 +4,12 @@ const UNIT_VALUE_KEY = "closeCallsUnitValue";
 const BETS_KEY = "closeCallsBets";
 const TIMEZONE_KEY = "closeCallsTimeZone";
 
-// Fill in a real contact address to turn on "Report an Issue" in the
-// account menu - left as a placeholder so nobody's personal email ends up
-// hardcoded into public page source without them choosing that.
-const SUPPORT_EMAIL = "REPLACE_WITH_YOUR_EMAIL";
+// Web3Forms access key for "Report an Issue" in the account menu. This key
+// only identifies which Web3Forms account relays the message - it does NOT
+// reveal the destination email (that's set privately in the Web3Forms
+// dashboard), so unlike a mailto: link this is safe to leave in public page
+// source. Get one free at web3forms.com. Left as a placeholder until set.
+const WEB3FORMS_ACCESS_KEY = "REPLACE_WITH_YOUR_WEB3FORMS_KEY";
 
 const COMMON_TIME_ZONES = [
   { value: "auto", label: "Match my device" },
@@ -477,17 +479,59 @@ async function renderLeaderboardPanel(root) {
 }
 
 function renderReportPanel(root) {
-  if (SUPPORT_EMAIL.startsWith("REPLACE_")) {
-    root.innerHTML = `<p class="account-panel-note">Reporting isn't set up yet — add a contact email (SUPPORT_EMAIL) in script.js to turn this on.</p>`;
+  if (WEB3FORMS_ACCESS_KEY.startsWith("REPLACE_")) {
+    root.innerHTML = `<p class="account-panel-note">Reporting isn't set up yet — add a Web3Forms access key (WEB3FORMS_ACCESS_KEY) in script.js to turn this on.</p>`;
     return;
   }
   root.innerHTML = `
     <p class="account-panel-note">Found a bug or a bad pick? Let us know what happened.</p>
-    <a class="primary-btn account-panel-cta"
-       href="mailto:${escapeAttr(SUPPORT_EMAIL)}?subject=${encodeURIComponent("Close Calls issue report")}">
-      Email us
-    </a>
+    <label class="modal-label" for="report-message">What happened?</label>
+    <textarea id="report-message" class="auth-input report-textarea" rows="4" placeholder="Describe the issue..."></textarea>
+    <label class="modal-label" for="report-email">Your email (optional, so we can follow up)</label>
+    <input id="report-email" class="auth-input" type="email" placeholder="you@example.com">
+    <p id="report-status" class="account-panel-note" hidden></p>
+    <button id="report-submit" class="primary-btn account-panel-cta">Send report</button>
   `;
+
+  document.getElementById("report-submit").addEventListener("click", async () => {
+    const messageEl = document.getElementById("report-message");
+    const emailEl = document.getElementById("report-email");
+    const statusEl = document.getElementById("report-status");
+    const message = messageEl.value.trim();
+
+    if (!message) {
+      statusEl.textContent = "Describe the issue before sending.";
+      statusEl.hidden = false;
+      return;
+    }
+
+    statusEl.textContent = "Sending…";
+    statusEl.hidden = false;
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: "Close Calls issue report",
+          from_name: "Close Calls site",
+          email: emailEl.value.trim() || undefined,
+          message,
+        }),
+      });
+      const result = await res.json();
+      if (result.success) {
+        statusEl.textContent = "Sent — thanks for the report.";
+        messageEl.value = "";
+        emailEl.value = "";
+      } else {
+        statusEl.textContent = "Couldn't send that — try again in a moment.";
+      }
+    } catch (err) {
+      statusEl.textContent = "Couldn't send that — try again in a moment.";
+    }
+  });
 }
 
 function renderTimezonePanel(root) {
