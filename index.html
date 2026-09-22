@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Close Calls</title>
-<link rel="stylesheet" href="style.css?v=17">
+<link rel="stylesheet" href="style.css?v=19">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css">
 </head>
 <body>
@@ -57,21 +57,47 @@
 
 <main>
   <section id="picks" class="tab-panel active">
-    <div id="day-filter-bar" class="day-filter-bar"></div>
-    <div id="picks-root">
-      <p class="empty-state">No picks yet — the first automated research run hasn't happened.</p>
+    <div class="lockable" id="picks-lockable">
+      <div id="day-filter-bar" class="day-filter-bar"></div>
+      <div id="picks-root">
+        <p class="empty-state">No picks yet — the first automated research run hasn't happened.</p>
+      </div>
+    </div>
+    <div class="lock-overlay" id="picks-lock-overlay" hidden>
+      <div class="lock-sticky-inner">
+        <div class="lock-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+            <path d="M8 11V7a4 4 0 1 1 8 0v4" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div id="picks-lock-body" class="lock-body"></div>
+      </div>
     </div>
   </section>
 
   <section id="longshots" class="tab-panel">
-    <p class="panel-intro">
-      Small, deliberately low-probability bets — big parlays and extreme props — sized at
-      0.1-0.25 units. These are built to never fight the Picks tab: a leg here is either a
-      harder version of a side you're already backing there, or a completely separate event.
-      You can follow every pick on both tabs without any of it contradicting itself.
-    </p>
-    <div id="longshots-root">
-      <p class="empty-state">No long shots yet.</p>
+    <div class="lockable" id="longshots-lockable">
+      <p class="panel-intro">
+        Small, deliberately low-probability bets — big parlays and extreme props — sized at
+        0.1-0.25 units. These are built to never fight the Picks tab: a leg here is either a
+        harder version of a side you're already backing there, or a completely separate event.
+        You can follow every pick on both tabs without any of it contradicting itself.
+      </p>
+      <div id="longshots-root">
+        <p class="empty-state">No long shots yet.</p>
+      </div>
+    </div>
+    <div class="lock-overlay" id="longshots-lock-overlay" hidden>
+      <div class="lock-sticky-inner">
+        <div class="lock-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+            <path d="M8 11V7a4 4 0 1 1 8 0v4" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div id="longshots-lock-body" class="lock-body"></div>
+      </div>
     </div>
   </section>
 
@@ -213,6 +239,6 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
-<script type="module" src="script.js?v=29"></script>
+<script type="module" src="script.js?v=30"></script>
 </body>
 </html>

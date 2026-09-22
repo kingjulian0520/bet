@@ -130,6 +130,7 @@ export async function getMyProfile(uid) {
     unitValue: data.unit_value,
     bets: data.bets || [],
     avatarUrl: data.avatar_url || null,
+    unlockedDate: data.unlocked_date || null,
   };
 }
 
@@ -141,8 +142,19 @@ export async function saveMyProfile(uid, partial) {
   if ("bets" in partial) columns.bets = partial.bets;
   if ("isPublic" in partial) columns.is_public = partial.isPublic;
   if ("avatarUrl" in partial) columns.avatar_url = partial.avatarUrl;
+  if ("unlockedDate" in partial) columns.unlocked_date = partial.unlockedDate;
   const { error } = await supabase.from("profiles").update(columns).eq("id", uid);
   if (error) throw error;
+}
+
+// Checks a typed passcode server-side (see supabase-access-code-setup.sql)
+// - the real code never reaches the browser, only this true/false result.
+export async function verifyAccessCode(code) {
+  await ensureInit();
+  if (!ready) return false;
+  const { data, error } = await supabase.rpc("verify_access_code", { input_code: code });
+  if (error) return false;
+  return !!data;
 }
 
 // Stores every user's avatar at a fixed path ("<uid>/avatar") so a new

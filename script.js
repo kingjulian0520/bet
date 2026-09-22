@@ -139,7 +139,7 @@ async function applyAuthState(user) {
 
   try {
     let profile = await Auth.getMyProfile(user.id);
-    if (!profile) profile = { username: user.email, isPublic: false, unitValue: null, bets: [] };
+    if (!profile) profile = { username: user.email, isPublic: false, unitValue: null, bets: [], unlockedDate: null };
 
     // First login on this browser with existing guest data already here
     // and nothing in the cloud yet - bring it along instead of silently
@@ -163,12 +163,107 @@ async function applyAuthState(user) {
     myBets = Array.isArray(profile.bets) ? profile.bets : [];
   } catch (err) {
     console.warn("Couldn't load your account data, falling back to this browser's local bets.", err);
-    profileCache = { username: user.email, isPublic: false, unitValue: null, bets: [] };
+    profileCache = { username: user.email, isPublic: false, unitValue: null, bets: [], unlockedDate: null };
     myBets = loadLocalBets();
   }
 
   renderAccountBar();
   renderAll();
+}
+
+// ---------- picks/long shots lock ----------
+
+function isUnlockedToday() {
+  return !!(currentUser && profileCache && profileCache.unlockedDate === todayDateStr());
+}
+
+function renderLockOverlays() {
+  ["picks", "longshots"].forEach((prefix) => renderLockOverlay(prefix));
+}
+
+function renderLockOverlay(prefix) {
+  const overlay = document.getElementById(`${prefix}-lock-overlay`);
+  const lockable = document.getElementById(`${prefix}-lockable`);
+  const bodyEl = document.getElementById(`${prefix}-lock-body`);
+  if (!overlay || !lockable || !bodyEl) return;
+
+  if (isUnlockedToday()) {
+    overlay.hidden = true;
+    lockable.classList.remove("locked");
+    return;
+  }
+
+  lockable.classList.add("locked");
+  overlay.hidden = false;
+  overlay.classList.remove("fading");
+
+  if (!currentUser) {
+    bodyEl.innerHTML = `
+      <p class="lock-note">Sign in to unlock today's picks.</p>
+      <button class="pill-btn lock-signin-btn">Sign In / Sign Up</button>
+    `;
+    bodyEl.querySelector(".lock-signin-btn").addEventListener("click", () => {
+      document.getElementById("open-auth-btn").click();
+    });
+    return;
+  }
+
+  bodyEl.innerHTML = `
+    <p class="lock-note">Enter today's passcode to unlock.</p>
+    <input type="text" class="auth-input lock-passcode-input" placeholder="Passcode" autocomplete="off">
+    <button class="primary-btn lock-unlock-btn">Unlock</button>
+    <p class="lock-error" hidden></p>
+  `;
+
+  const input = bodyEl.querySelector(".lock-passcode-input");
+  const btn = bodyEl.querySelector(".lock-unlock-btn");
+  const errEl = bodyEl.querySelector(".lock-error");
+
+  const attempt = async () => {
+    const code = input.value.trim();
+    if (!code) return;
+    errEl.hidden = true;
+    btn.disabled = true;
+    btn.textContent = "Checking…";
+    try {
+      const ok = await Auth.verifyAccessCode(code);
+      if (ok) {
+        const today = todayDateStr();
+        if (profileCache) profileCache.unlockedDate = today;
+        await Auth.saveMyProfile(currentUser.id, { unlockedDate: today });
+        unlockOverlaysWithFade();
+      } else {
+        errEl.textContent = "Wrong passcode — try again.";
+        errEl.hidden = false;
+        btn.disabled = false;
+        btn.textContent = "Unlock";
+      }
+    } catch (err) {
+      errEl.textContent = "Couldn't check that — try again.";
+      errEl.hidden = false;
+      btn.disabled = false;
+      btn.textContent = "Unlock";
+    }
+  };
+
+  btn.addEventListener("click", attempt);
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") attempt();
+  });
+}
+
+function unlockOverlaysWithFade() {
+  ["picks", "longshots"].forEach((prefix) => {
+    const overlay = document.getElementById(`${prefix}-lock-overlay`);
+    const lockable = document.getElementById(`${prefix}-lockable`);
+    if (!overlay || !lockable) return;
+    overlay.classList.add("fading");
+    lockable.classList.remove("locked");
+    setTimeout(() => {
+      overlay.hidden = true;
+    }, 400);
+  });
+  renderExposureSummary();
 }
 
 function wireAuthUI() {
@@ -646,6 +741,9 @@ async function main() {
     if (currentPicks.length !== hadPicks || currentLongShots.length !== hadLongShots) {
       renderAll();
     }
+    // Re-locks automatically once the date rolls past whatever day was
+    // last unlocked, without needing a page reload.
+    renderLockOverlays();
   }, 60000);
 }
 
@@ -681,6 +779,7 @@ function renderAll() {
   renderMyBets();
   renderNetCounter();
   renderCalendar();
+  renderLockOverlays();
 }
 
 // ---------- tabs ----------
@@ -813,6 +912,10 @@ function renderLongShots() {
 
 function renderExposureSummary() {
   const el = document.getElementById("exposure-summary");
+  if (!isUnlockedToday()) {
+    el.hidden = true;
+    return;
+  }
   const unitValue = getUnitValue();
 
   const visiblePicks =

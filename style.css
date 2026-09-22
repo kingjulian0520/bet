@@ -590,7 +590,95 @@ body {
 }
 
 .tab-panel { display: none; }
-.tab-panel.active { display: block; }
+.tab-panel.active { display: block; position: relative; }
+
+.lockable {
+  transition: filter 0.3s ease;
+}
+
+.lockable.locked {
+  filter: blur(7px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.lock-overlay {
+  position: absolute;
+  inset: 0;
+  min-height: 320px;
+  text-align: center;
+  transition: opacity 0.4s ease;
+}
+
+.lock-overlay[hidden] {
+  display: none;
+}
+
+.lock-overlay.fading {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Sticky rather than centered on the overlay's own (potentially very tall,
+   matching however many picks are blurred behind it) box - keeps the lock
+   icon/form pinned near the top of the viewport as you scroll instead of
+   floating in the middle of a tall stretch of blurred cards. */
+.lock-sticky-inner {
+  position: sticky;
+  top: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 2rem 1.25rem;
+}
+
+.lock-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dim));
+  color: #06110d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.5);
+}
+
+.lock-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.lock-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  max-width: 280px;
+}
+
+.lock-note {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin: 0;
+}
+
+.lock-passcode-input {
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.lock-error {
+  color: var(--danger);
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+.lock-error[hidden] {
+  display: none;
+}
 
 .pick-card {
   cursor: pointer;
