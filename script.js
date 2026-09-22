@@ -762,6 +762,7 @@ async function main() {
   wireAuthUI();
   wireAccountMenu();
   wirePasswordRecovery();
+  wireSportFilter();
 
   document.addEventListener("click", (e) => {
     if (openBetMenuId && !e.target.closest(".bet-menu-wrap") && !e.target.closest(".bet-adjust-form")) {
@@ -892,6 +893,48 @@ function wireTabs() {
 
 let selectedDayFilter = "all";
 
+// Sport filter: applied (activeSportFilters) vs staged-in-the-modal
+// (pendingSportFilters) - selecting chips doesn't change what's shown until
+// "Adjust filters" is clicked. Empty set means no filter (show every sport).
+let activeSportFilters = new Set();
+let pendingSportFilters = new Set();
+
+// Strips trailing qualifiers so prop/total/spread variants of a league
+// group under the same filter chip as its moneyline (e.g. "WNBA Player
+// Props" and "WNBA" both become "WNBA").
+function sportGroup(sport) {
+  const s = String(sport || "").trim();
+  return s.replace(/\s+(Player Props|Totals|Spreads)$/i, "").trim() || s;
+}
+
+const SPORT_ICON_SVGS = {
+  football: '<ellipse cx="12" cy="12" rx="9" ry="5.5"/><path d="M12 8v8M9.5 9.5h5M9.5 12h5M9.5 14.5h5"/>',
+  basketball: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3v18M5.6 5.6c3 3 3 9.8 0 12.8M18.4 5.6c-3 3-3 9.8 0 12.8"/>',
+  baseball: '<circle cx="12" cy="12" r="9"/><path d="M7 5c3 3 3 11 0 14M17 5c-3 3-3 11 0 14"/>',
+  hockey: '<circle cx="6" cy="18" r="2"/><path d="M9 4v11h11"/>',
+  soccer: '<circle cx="12" cy="12" r="9"/><path d="M12 8l3.5 2.5-1.3 4.1h-4.4L8.5 10.5z"/>',
+  mma: '<path d="M7 10V7a2 2 0 0 1 4 0v.5M11 7.5V6a2 2 0 0 1 4 0v2M15 8v1a2 2 0 0 1 4 0v5a5 5 0 0 1-5 5H10a5 5 0 0 1-5-5v-3l1.5-1.5"/>',
+  tennis: '<circle cx="12" cy="12" r="9"/><path d="M4 8c4 2 4 6 0 8M20 8c-4 2-4 6 0 8"/>',
+  darts: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/>',
+  tabletennis: '<circle cx="10" cy="9" r="5"/><path d="M13 13l6 6"/>',
+  generic: '<path d="M12 3l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L12 16.9 6.4 20l1.4-6.2L3 9.5l6.4-.6z"/>',
+};
+
+function sportIconSvg(group) {
+  const g = group.toLowerCase();
+  let key = "generic";
+  if (g.includes("football") || g === "nfl" || g === "cfb") key = "football";
+  else if (g.includes("wnba") || g.includes("nba") || g.includes("basketball")) key = "basketball";
+  else if (g.includes("mlb") || g.includes("baseball")) key = "baseball";
+  else if (g.includes("nhl") || g.includes("hockey")) key = "hockey";
+  else if (g.includes("wta") || g.includes("atp") || g.includes("tennis")) key = "tennis";
+  else if (g.includes("ufc") || g.includes("mma")) key = "mma";
+  else if (g.includes("dart")) key = "darts";
+  else if (g.includes("table tennis") || g.includes("wtt") || g.includes("ittf")) key = "tabletennis";
+  else if (/soccer|premier|la liga|mls|champions league|uefa|bundesliga|serie a|ligue 1|efl/.test(g)) key = "soccer";
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${SPORT_ICON_SVGS[key]}</svg>`;
+}
+
 function addDaysStr(dateStr, n) {
   const [y, m, d] = dateStr.split("-").map(Number);
   const dt = new Date(y, m - 1, d);
@@ -933,16 +976,91 @@ function renderDayFilterBar() {
   }
 }
 
+function updateSportFilterCount() {
+  const badge = document.getElementById("sport-filter-count");
+  if (!badge) return;
+  if (activeSportFilters.size > 0) {
+    badge.textContent = String(activeSportFilters.size);
+    badge.hidden = false;
+  } else {
+    badge.hidden = true;
+  }
+}
+
+function renderSportFilterGrid() {
+  const grid = document.getElementById("sport-filter-grid");
+  if (!grid) return;
+
+  const groups = [...new Set(currentPicks.map((p) => sportGroup(p.sport)).filter(Boolean))].sort();
+
+  if (groups.length === 0) {
+    grid.innerHTML = '<p class="account-panel-note">No picks to filter yet.</p>';
+    return;
+  }
+
+  grid.innerHTML = "";
+  for (const group of groups) {
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "sport-chip" + (pendingSportFilters.has(group) ? " selected" : "");
+    chip.innerHTML = `
+      <span class="sport-chip-icon">${sportIconSvg(group)}</span>
+      <span class="sport-chip-label">${escapeHtml(group)}</span>
+    `;
+    chip.addEventListener("click", () => {
+      if (pendingSportFilters.has(group)) {
+        pendingSportFilters.delete(group);
+      } else {
+        pendingSportFilters.add(group);
+      }
+      chip.classList.toggle("selected");
+    });
+    grid.appendChild(chip);
+  }
+}
+
+function wireSportFilter() {
+  const openBtn = document.getElementById("open-sport-filter-btn");
+  const backdrop = document.getElementById("sport-filter-backdrop");
+  const closeBtn = document.getElementById("sport-filter-close");
+  const applyBtn = document.getElementById("sport-filter-apply");
+  if (!openBtn || !backdrop || !closeBtn || !applyBtn) return;
+
+  openBtn.addEventListener("click", () => {
+    pendingSportFilters = new Set(activeSportFilters);
+    renderSportFilterGrid();
+    backdrop.hidden = false;
+  });
+
+  const close = () => (backdrop.hidden = true);
+  closeBtn.addEventListener("click", close);
+  backdrop.addEventListener("click", (e) => {
+    if (e.target.id === "sport-filter-backdrop") close();
+  });
+
+  applyBtn.addEventListener("click", () => {
+    activeSportFilters = new Set(pendingSportFilters);
+    updateSportFilterCount();
+    close();
+    renderPicks();
+  });
+}
+
 function renderPicks() {
   const root = document.getElementById("picks-root");
 
-  const visiblePicks =
+  let visiblePicks =
     selectedDayFilter === "all" ? currentPicks : currentPicks.filter((p) => p.date === selectedDayFilter);
+  if (activeSportFilters.size > 0) {
+    visiblePicks = visiblePicks.filter((p) => activeSportFilters.has(sportGroup(p.sport)));
+  }
 
   if (visiblePicks.length === 0) {
     const todayStr = todayDateStr();
     const msg =
-      selectedDayFilter === "all"
+      activeSportFilters.size > 0
+        ? "No picks match your selected sports right now - try adjusting your filters."
+        : selectedDayFilter === "all"
         ? "No picks yet - the research hasn't turned up anything real yet. Check back soon."
         : selectedDayFilter === todayStr
         ? "No picks for today yet - check back soon."

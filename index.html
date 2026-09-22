@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Close Calls</title>
-<link rel="stylesheet" href="style.css?v=21">
+<link rel="stylesheet" href="style.css?v=22">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css">
 </head>
 <body>
@@ -58,6 +58,13 @@
 <main>
   <section id="picks" class="tab-panel active">
     <div class="lockable" id="picks-lockable">
+      <div class="picks-filter-bar">
+        <button id="open-sport-filter-btn" class="filter-trigger-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+          Filters
+          <span id="sport-filter-count" class="filter-count" hidden></span>
+        </button>
+      </div>
       <div id="day-filter-bar" class="day-filter-bar"></div>
       <div id="picks-root">
         <p class="empty-state">No picks yet — the first automated research run hasn't happened.</p>
@@ -254,6 +261,17 @@
   </div>
 </div>
 
+<div id="sport-filter-backdrop" class="modal-backdrop" hidden>
+  <div class="modal sport-filter-modal">
+    <div class="account-panel-header">
+      <h3>Filter by sport</h3>
+      <button id="sport-filter-close" class="account-panel-close" aria-label="Close">&times;</button>
+    </div>
+    <div id="sport-filter-grid" class="sport-filter-grid"></div>
+    <button id="sport-filter-apply" class="primary-btn account-panel-cta">Adjust filters</button>
+  </div>
+</div>
+
 <div id="avatar-crop-backdrop" class="modal-backdrop" hidden>
   <div class="modal avatar-crop-modal">
     <h3>Crop your photo</h3>
@@ -268,6 +286,6 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
-<script type="module" src="script.js?v=33"></script>
+<script type="module" src="script.js?v=35"></script>
 </body>
 </html>
