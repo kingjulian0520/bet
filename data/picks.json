@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T14:45:00Z",
+  "generated_at": "2026-09-22T15:20:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
@@ -167,56 +167,6 @@
       ]
     },
     {
-      "sport": "WNBA",
-      "matchup": "Minnesota Lynx vs Indiana Fever",
-      "date": "2026-09-22",
-      "start_time": "2026-09-23T00:00:00Z",
-      "favorite": "Indiana Fever",
-      "estimated_probability": {
-        "Indiana Fever": 53,
-        "Minnesota Lynx": 47
-      },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.25,
-      "reasoning": [
-        "Minnesota (league-best record) is chasing the #1 playoff seed; Indiana leads the WNBA in scoring at ~96.7 ppg - nearly 13 points above what Minnesota allows per game (83.8), the league's stingiest defense.",
-        "Lynx rookie Olivia Miles (ROY frontrunner, 19.8 pts/6.0 ast, 49.2% FG) was unexpectedly added to the injury report with a new left calf issue and is questionable, despite playing 31 minutes and scoring 21 in her prior game with no visible trouble.",
-        "That news flipped the market - Indiana moved from 1.5-point underdogs to 1.5-point favorites once Miles' questionable tag was released, even though Minnesota has the better record and more on the line.",
-        "Caitlin Clark is probable and hasn't missed a game since July 9, so Indiana is expected close to full strength while Minnesota's engine is in doubt - a genuine toss-up."
-      ],
-      "sources": [
-        "https://bettorsinsider.com/wnba/2026/09/22/lynx-vs-fever-prediction-minnesota-chases-no-1-seed-at-gainbridge-fieldhouse/",
-        "https://sports.yahoo.com/articles/olivia-miles-listed-questionable-lynx-214311133.html",
-        "https://fadeawayworld.net/wnba/indiana-gets-major-playoff-boost-as-olivia-miles-lands-on-injury-report-before-fever-clash",
-        "https://sports.yahoo.com/articles/fever-caitlin-clark-injury-announcement-000405991.html",
-        "https://www.dimers.com/wnba/predictions/2026_138_ind_min"
-      ]
-    },
-    {
-      "sport": "WNBA",
-      "matchup": "Los Angeles Sparks vs Las Vegas Aces",
-      "date": "2026-09-22",
-      "start_time": "2026-09-23T02:00:00Z",
-      "favorite": "Las Vegas Aces",
-      "estimated_probability": {
-        "Las Vegas Aces": 94,
-        "Los Angeles Sparks": 6
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2.5,
-      "reasoning": [
-        "One of the most lopsided lines of the WNBA season: Aces -16.5, moneyline as steep as -1667 in places (implied win probability north of 94%).",
-        "Las Vegas (29-13) is on a 3-game home winning streak and can clinch home-court advantage through the playoffs with a win; Los Angeles (16-26) is essentially playing out the string.",
-        "LA has been an underdog 27 times this season and won outright only 8 times - a 29.6% hit rate, and this is a bigger spread than most of those.",
-        "Aces' defense is allowing under 87 points a night, which should neutralize Kelsey Plum's recent scoring surge for LA; Wilson/Young give Vegas more two-way firepower at every position."
-      ],
-      "sources": [
-        "https://bettorsinsider.com/wnba/2026/09/22/los-angeles-sparks-vs-las-vegas-aces-prediction-wilson-led-aces-should-cruise-in-regular-season-finale/",
-        "https://www.dimers.com/wnba/predictions/2026_138_lv_la",
-        "https://www.sportsgrid.com/wnba/game/los-angeles-sparks-las-vegas-aces-scores-odds-picks-props-september-22-2026/aa767aa3-f32d-4f1d-968d-b9e1a2aa8ee4"
-      ]
-    },
-    {
       "sport": "MLB",
       "matchup": "Toronto Blue Jays vs Baltimore Orioles",
       "date": "2026-09-22",
@@ -263,6 +213,325 @@
         "https://www.si.com/betting/liberty-vs-coastal-carolina-prediction-odds-and-key-players-to-watch-for-college-football-week-4",
         "https://vsin.com/college-football/college-football-week-4-picks-liberty-vs-coastal-carolina/",
         "https://www.sportsline.com/insiders/liberty-vs-coastal-carolina-odds-2026-college-football-picks-week-4-predictions-from-proven-model/"
+      ]
+    },
+    {
+      "sport": "WNBA",
+      "matchup": "Connecticut Sun vs Washington Mystics",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T23:30:00Z",
+      "favorite": "Washington Mystics",
+      "estimated_probability": {
+        "Washington Mystics": 93,
+        "Connecticut Sun": 7
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "reasoning": [
+        "Books have Mystics at -1300 to -1667 across shops (93-94% implied); spread is -15.5/-16.",
+        "Records: Mystics 26-16 (playoff-bound, one game from clinching); Sun 10-32 (worst record in WNBA, on a 5-game losing streak).",
+        "Mystics have won 21 of last 24 including a 110-80 blowout of the Sky and a 93-77 win over Indiana on 9/20.",
+        "Sun's best player, Brittney Griner, was questionable/in danger of missing her 10th straight game (left knee) as of the Lynx game on 9/20 - likely out again, further gutting Connecticut's frontcourt."
+      ],
+      "sources": [
+        "https://www.thespread.com/wnba/sun-vs-mystics-sept-22-prediction-is-16-too-much-for-washington-to-cover/",
+        "https://sports.yahoo.com/articles/sun-vs-mystics-prediction-pick-113338388.html",
+        "https://www.yardbarker.com/wnba/articles/final_injury_report_for_lynx_sun_will_brittney_griner_olivia_nelson_ododa_play/s1_17615_44326711"
+      ]
+    },
+    {
+      "sport": "WNBA Player Props",
+      "matchup": "Kiki Iriafen — Double-Double (Connecticut Sun vs Washington Mystics)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T23:30:00Z",
+      "favorite": "Yes",
+      "estimated_probability": {
+        "Yes": 72,
+        "No": 28
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "Iriafen has 7 consecutive double-doubles and 8 straight games with 10+ rebounds; season average sits at 9.6 RPG.",
+        "In her two games against the Sun already this season she posted 14 and 10 rebounds.",
+        "Sun allow 33.7 rebounds per game as a team - among the worst rebounding defenses in the league, and Griner (their best interior defender) is likely unavailable again tonight.",
+        "21 pts/14 reb on 9/20 and 18 pts/11 reb on 9/17 - both halves of the double-double trending well above threshold entering tonight."
+      ],
+      "sources": [
+        "https://www.washingtontimes.com/news/2026/sep/20/washington-mystics-defeat-indiana-fever-93-77-move-within-one-game/",
+        "https://lethbridgeherald.com/sports/national-sports/2026/09/17/austin-scores-20-iriafen-has-18-points-and-11-rebounds-mystics-beat-sky-110-80/",
+        "https://www.si.com/betting/wnba-best-bets-today-predictions-prop-bets-for-kiki-iriafen-lynx-vs-fever-valkyries-vs-fire"
+      ]
+    },
+    {
+      "sport": "WNBA Player Props",
+      "matchup": "Georgia Amoore — 3-Pointers Made O/U 2.5 (Connecticut Sun vs Washington Mystics)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T23:30:00Z",
+      "favorite": "Over 2.5",
+      "estimated_probability": {
+        "Over 2.5": 61,
+        "Under 2.5": 39
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Amoore has hit 3+ threes in 4 consecutive games, averaging 4.0 threes on ~49% from deep over that stretch.",
+        "Over the last 7-8 games she's shooting roughly 40%+ from three with just 1.6 turnovers a game - a clear rookie hot streak/role expansion late in the year.",
+        "No specific Sun 3PT-defense number found, so this leans more on her own form than the matchup - kept to Slight lean rather than higher.",
+        "Her threes line has been as low as 1.5 in some earlier games this season; if tonight's number is still 1.5 rather than 2.5, this becomes a much stronger lean."
+      ],
+      "sources": [
+        "https://www.cbssports.com/wnba/news/georgia-amoore-swagger-acl-injury-mystics-playoffs/",
+        "https://www.si.com/onsi/womens-fastbreak/wnba/georgia-amoore-s-late-season-surge-makes-mystics-a-different-team-01m2t4mm111b"
+      ]
+    },
+    {
+      "sport": "WNBA",
+      "matchup": "Minnesota Lynx vs Indiana Fever",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T00:00:00Z",
+      "favorite": "Indiana Fever",
+      "estimated_probability": {
+        "Indiana Fever": 54,
+        "Minnesota Lynx": 46
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.25,
+      "reasoning": [
+        "Genuinely tight market (-112/-108 to -110/-110 depending on shop); line reportedly flipped to Fever -1.5 favorites after Lynx rookie PG Olivia Miles was tagged questionable with a left calf injury.",
+        "Lynx are the better team by record (32-10 vs 27-15) and rank 3rd in points allowed (83.8), but have already all-but-clinched the #1 seed - effectively a dead rubber for them, while Indiana is fighting to climb from 5th to 4th seed.",
+        "Fever are the highest-scoring team in the WNBA (96.7 ppg) and are 14-7 at home this year.",
+        "Close enough that either side is defensible - this is a lean toward the home/motivated team, not a real statistical edge."
+      ],
+      "sources": [
+        "https://sports.yahoo.com/articles/lynx-vs-fever-prediction-pick-111902948.html",
+        "https://sports.yahoo.com/articles/lynx-announce-concerning-olivia-miles-021251776.html",
+        "https://bettorsinsider.com/wnba/2026/09/22/lynx-vs-fever-prediction-minnesota-chases-no-1-seed-at-gainbridge-fieldhouse/"
+      ]
+    },
+    {
+      "sport": "WNBA Player Props",
+      "matchup": "Kelsey Mitchell — Points O/U 24.5 (Minnesota Lynx vs Indiana Fever)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T00:00:00Z",
+      "favorite": "Over 24.5",
+      "estimated_probability": {
+        "Over 24.5": 58,
+        "Under 24.5": 42
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Mitchell is 2nd in the WNBA in scoring at 25.1 ppg; tonight's consensus prop opened at 24 points, below her season average.",
+        "She has scored 20+ points in 25 consecutive games - remarkable floor-level consistency, not just ceiling.",
+        "Fever are the league's highest-scoring offense (96.7 ppg); pace/usage strongly favors a big Mitchell number.",
+        "Kept to Slight lean rather than higher because Minnesota ranks 3rd in points allowed league-wide - a real countervailing factor."
+      ],
+      "sources": [
+        "https://www.docsports.com/free-picks/wnba/2026/kelsey-mitchell-wnba-prop-bets-today-vs-minnesota-lynx-9-22-2026.html",
+        "https://www.si.com/wnba/fever/caitlin-clark-has-high-praise-for-kelsey-mitchell-s-insane-historic-run"
+      ]
+    },
+    {
+      "sport": "WNBA",
+      "matchup": "Toronto Tempo vs Chicago Sky",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T00:00:00Z",
+      "favorite": "Chicago Sky",
+      "estimated_probability": {
+        "Chicago Sky": 68,
+        "Toronto Tempo": 32
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Market: Sky -235 / Tempo +190 (spread -6.5), implying ~68% for Chicago after normalizing for vig.",
+        "Toronto is missing THREE key rotation pieces for the rest of the season: All-Star Marina Mabrey (adductor), Brittney Sykes (foot), and Aneesah Morrow (knee) - all ruled out.",
+        "Both teams are eliminated and playing out the string (Tempo lost 6 straight, Sky lost 5 straight), but Chicago's remaining talent (Cardoso, Atkins) clearly outweighs Toronto's injury-ravaged group.",
+        "Kept at Lean rather than higher because both teams are bad and variance in garbage-time games like this is real."
+      ],
+      "sources": [
+        "https://sports.yahoo.com/articles/tempo-vs-sky-prediction-pick-115446522.html",
+        "https://www.tsn.ca/wnba/article/tempos-sykes-morrow-ruled-out-for-season/",
+        "https://sports.yahoo.com/articles/marina-mabreys-career-best-season-205917082.html"
+      ]
+    },
+    {
+      "sport": "WNBA Player Props",
+      "matchup": "Sydney Taylor — Points O/U 13.5 (Toronto Tempo vs Chicago Sky)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T00:00:00Z",
+      "favorite": "Over 13.5",
+      "estimated_probability": {
+        "Over 13.5": 60,
+        "Under 13.5": 40
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Confirmed live book price: Over 13.5 at -106.",
+        "Chicago's Skylar Diggins is out for the rest of the season (knee) - since Diggins went down, Taylor is leading the Sky in scoring at 19.3 ppg and 29.5% usage over her last 10 games, well above her 13.8 ppg season average.",
+        "High-volume 3-point shooter (1.9 threes/game on the year), adding scoring variance/ceiling.",
+        "Facing a Tempo defense that's been gutted and playing out the string with three starters out."
+      ],
+      "sources": [
+        "https://www.swishappeal.com/wnba/84077/wnba-sydney-taylor-chicago-sky-skylar-diggins-rickea-jackson-rookie-of-the-year",
+        "https://www.nbcsports.com/wnba/news/sky-guard-skylar-diggins-to-miss-the-rest-of-the-season-because-of-a-knee-injury"
+      ]
+    },
+    {
+      "sport": "WNBA Player Props",
+      "matchup": "Kamilla Cardoso — Rebounds O/U 7.5 (Toronto Tempo vs Chicago Sky)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T00:00:00Z",
+      "favorite": "Over 7.5",
+      "estimated_probability": {
+        "Over 7.5": 60,
+        "Under 7.5": 40
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Confirmed live book price: Over 7.5 rebounds at -127.",
+        "Season average is 8.6 rpg, comfortably above the 7.5 line.",
+        "Toronto is thin up front with Morrow (their most physical forward) out for the year - one preview explicitly noted Toronto is 'awfully light on size' right now."
+      ],
+      "sources": [
+        "https://www.covers.com/sport/basketball/wnba/players/293676/kamilla-cardoso"
+      ]
+    },
+    {
+      "sport": "WNBA",
+      "matchup": "Los Angeles Sparks vs Las Vegas Aces",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T02:00:00Z",
+      "favorite": "Las Vegas Aces",
+      "estimated_probability": {
+        "Las Vegas Aces": 95,
+        "Los Angeles Sparks": 5
+      },
+      "confidence_label": "Chalk",
+      "recommended_units": 3,
+      "reasoning": [
+        "Sparks priced at +980 - Aces given a 95% implied win probability directly by the sportsbook.",
+        "Aces are on a 5-game win streak, defending champions, 29-13, with A'ja Wilson playing at an MVP level down the stretch.",
+        "Sparks (16-26) are already eliminated from playoff contention and playing their season finale on the road with no incentive.",
+        "Scoring/defense splits favor Vegas: Aces score 91.3 ppg and allow 86.1 (Sparks score only 87.5 and allow 91.7)."
+      ],
+      "sources": [
+        "https://bettorsinsider.com/wnba/2026/09/22/los-angeles-sparks-vs-las-vegas-aces-prediction-wilson-led-aces-should-cruise-in-regular-season-finale/",
+        "https://www.si.com/wnba/sparks/news/kelsey-plum-sparks-eliminated-from-wnba-playoff-contention"
+      ]
+    },
+    {
+      "sport": "WNBA Player Props",
+      "matchup": "A'ja Wilson — Points O/U 25.5 (Los Angeles Sparks vs Las Vegas Aces)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T02:00:00Z",
+      "favorite": "Over 25.5",
+      "estimated_probability": {
+        "Over 25.5": 66,
+        "Under 25.5": 34
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Confirmed prop opens at 25 points; season average is 26.0 ppg on 52%+ shooting.",
+        "Topped 25 points in four straight games, including 30 points (7-13 FG, 16-18 FT) in her most recent outing on 9/21.",
+        "Facing a Sparks defense that allows 91.7 ppg (near the bottom of the league) and has nothing to play for."
+      ],
+      "sources": [
+        "https://www.docsports.com/free-picks/wnba/2026/aja-wilson-wnba-player-prop-bets-today-vs-los-angeles-sparks-9-22-2026.html",
+        "https://yournews.com/2026/09/21/7202391/aja-wilson-aces-win-5th-straight-as-storm-cant-keep/"
+      ]
+    },
+    {
+      "sport": "WNBA",
+      "matchup": "Golden State Valkyries vs Portland Fire",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T02:00:00Z",
+      "favorite": "Golden State Valkyries",
+      "estimated_probability": {
+        "Golden State Valkyries": 88,
+        "Portland Fire": 12
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "reasoning": [
+        "Market: Valkyries -1100/Fire +700, roughly 88-92% implied after normalizing for vig.",
+        "Golden State (31-11) is on a 6-game winning streak and still fighting for the #1 seed (needs to win out plus a Lynx loss) - real motivation.",
+        "Third meeting with Portland since 8/30 - Golden State won the previous two by 17 and 16 points.",
+        "Portland (16-27) is eliminated and has lost 4 straight."
+      ],
+      "sources": [
+        "https://sports.yahoo.com/articles/valkyries-vs-fire-prediction-pick-113933483.html",
+        "https://www.kptv.com/2026/09/18/portland-fire-take-golden-state-valkyries-battle-top-seed/"
+      ]
+    },
+    {
+      "sport": "WNBA Player Props",
+      "matchup": "Veronica Burton — Assists O/U 6.5 (Golden State Valkyries vs Portland Fire)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T02:00:00Z",
+      "favorite": "Over 6.5",
+      "estimated_probability": {
+        "Over 6.5": 58,
+        "Under 6.5": 42
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Averaging 7.6 assists over her last 5 games, with a season-high 13 assists (zero turnovers) against the Liberty on 8/27.",
+        "Portland allows the most opponent assists per game of any team in the WNBA - a direct, favorable matchup stat.",
+        "Tonight's exact book number for her assist line could not be independently confirmed - treat this line as an estimate based on how these props are typically set relative to her averages."
+      ],
+      "sources": [
+        "https://valkyries.wnba.com/news/gameday-recap-20260827",
+        "https://www.si.com/betting/valkyries-vs-fire-prediction-odds-best-wnba-prop-bet-for-tuesday-sept-22"
+      ]
+    },
+    {
+      "sport": "WNBA Player Props",
+      "matchup": "Kayla Thornton — Rebounds O/U 3.5 (Golden State Valkyries vs Portland Fire)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T02:00:00Z",
+      "favorite": "Over 3.5",
+      "estimated_probability": {
+        "Over 3.5": 57,
+        "Under 3.5": 43
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Confirmed live book price: Over 3.5 rebounds at -146, with a model-cited 5.3% edge.",
+        "Actual game logs are mixed: 4 rebounds on 9/18 vs this same Portland team, 6 vs Seattle, 10 vs Dallas - averaging exactly 4.0 over her last 3 games.",
+        "Downgraded from the model's stated edge to reflect that the raw box scores are closer to a coin flip than -146 pricing would suggest."
+      ],
+      "sources": [
+        "https://sfstandard.com/2026/08/05/kayla-thornton-valkyries-star-toronto-tempo/",
+        "https://www.sportsgrid.com/wnba/game/golden-state-valkyries-portland-fire-scores-odds-picks-props-september-22-2026/3f333975-7f93-41b2-bf70-ad23d30650d4"
+      ]
+    },
+    {
+      "sport": "WNBA Player Props",
+      "matchup": "Cecilia Zandalasini — Points O/U 9.5 (Golden State Valkyries vs Portland Fire)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T02:00:00Z",
+      "favorite": "Under 9.5",
+      "estimated_probability": {
+        "Under 9.5": 60,
+        "Over 9.5": 40
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Confirmed live book price: Under 9.5 at +102, with a model-cited projection of 7.8 points and a 9.6% edge.",
+        "Golden State's offense runs through Burton/Thornton/others with Gabby Williams out; Zandalasini is more of a complementary scorer whose role fluctuates game to game.",
+        "Leans more on a third-party model's projection than independently-verified box-score trends specific to Zandalasini - the softest of the three Valkyries-Fire props."
+      ],
+      "sources": [
+        "https://www.sportsgrid.com/wnba/game/golden-state-valkyries-portland-fire-scores-odds-picks-props-september-22-2026/3f333975-7f93-41b2-bf70-ad23d30650d4"
       ]
     }
   ],
