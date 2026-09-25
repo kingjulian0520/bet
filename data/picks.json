@@ -1155,7 +1155,84 @@
       "start_time": "2026-09-25T18:00:00Z"
     }
   ],
-  "long_shots": [],
+  "long_shots": [
+    {
+      "sport": "Parlays",
+      "matchup": "6-Leg CFB Long Shot: Texas Tech + Houston + Kentucky + Arizona + Tulane + LSU (all ML)",
+      "date": "2026-09-26",
+      "start_time": "2026-09-26T16:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 29,
+        "Doesn't Hit": 71
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.1,
+      "legs": [
+        {
+          "sport": "College Football",
+          "matchup": "Sam Houston Bearkats vs Texas Tech Red Raiders",
+          "date": "2026-09-26",
+          "side": "Texas Tech Red Raiders",
+          "probability": 93
+        },
+        {
+          "sport": "College Football",
+          "matchup": "Houston Cougars vs Georgia Southern Eagles",
+          "date": "2026-09-26",
+          "side": "Houston Cougars",
+          "probability": 85
+        },
+        {
+          "sport": "College Football",
+          "matchup": "South Alabama Jaguars vs Kentucky Wildcats",
+          "date": "2026-09-26",
+          "side": "Kentucky Wildcats",
+          "probability": 82
+        },
+        {
+          "sport": "College Football",
+          "matchup": "Arizona Wildcats vs Washington State Cougars",
+          "date": "2026-09-26",
+          "side": "Arizona Wildcats",
+          "probability": 78
+        },
+        {
+          "sport": "College Football",
+          "matchup": "Southern Miss Golden Eagles vs Tulane Green Wave",
+          "date": "2026-09-26",
+          "side": "Tulane Green Wave",
+          "probability": 78
+        },
+        {
+          "sport": "College Football",
+          "matchup": "Texas A&M Aggies vs LSU Tigers",
+          "date": "2026-09-26",
+          "side": "LSU Tigers",
+          "probability": 73
+        }
+      ],
+      "reasoning": [
+        "Six straight moneylines, all Week 4 favorites with real, cited quality gaps - not just chalk by name recognition:",
+        "Texas Tech (-34.5, No. 11 AP, 3-0) over Sam Houston: Tech just knocked off then-No.25 Houston on the road: Sam Houston is a live, improved team (QB Landyn Locke: 973 yds/9 TD/1 INT) but has almost no run game and is a full tier below.",
+        "Houston (-18.5) over Georgia Southern: models put Houston at 87-92% win probability; Georgia Southern is 1-2 and outmatched physically at this level.",
+        "Kentucky (-20/-21.5) over South Alabama: Kentucky just beat then-No.9 Texas A&M 31-21 and gets its first Group-of-Six game of the year; South Alabama (2-1) is solid but a clear class below a hot SEC team.",
+        "Arizona (-450 ML) over Washington State: Arizona is coming off a 42-17 win with a program passing-yards record for Fifita; Washington State has a brand-new coaching staff and QB still finding its footing, even with RB Kirby Vorhees back.",
+        "Tulane (-18.5) over Southern Miss: same 1-2 records on paper, but real form gap - Tulane's losses/wins were competitive (17-3 to Duke, beat South Alabama with 200+ rush yards), while Southern Miss just got blown out 48-20 with its QB throwing 4 INTs.",
+        "LSU (-375 ML, No. 10 AP) over Texas A&M: LSU at home off a loss to Ole Miss, A&M off a loss to Kentucky - deliberately NOT sized as high as the market's implied ~79%, since A&M has won the last two meetings in this series including 49-25 last year.",
+        "Combined probability: 0.93 x 0.85 x 0.82 x 0.78 x 0.78 x 0.73 = ~29% - a real long shot built entirely from favorites with genuine evidence, not from forcing weak sides together.",
+        "Deliberately left App State (3-0) at NC State off this ticket despite NC State being favored - App State's giant-killer track record (has beaten Michigan, Texas A&M, South Carolina, UNC in recent years) made that leg too live to stack into a 6-leg chain."
+      ],
+      "sources": [
+        "https://sports.yahoo.com/articles/2026-week-4-preview-sam-163000591.html",
+        "https://sports.betmgm.com/en/blog/college-football/houston-georgia-southern-prediction-odds-player-prop-bets-picks-ncaaf-week-4-jaa/",
+        "https://sports.yahoo.com/articles/kentucky-vs-south-alabama-prediction-073201534.html",
+        "https://www.si.com/college/arizona/football/arizona-washington-state-odds-spread-betting-lines-week-4",
+        "https://sports.yahoo.com/articles/tulane-early-large-marge-favorite-012027594.html",
+        "https://www.covers.com/ncaaf/texas-am-vs-lsu-prediction-picks-odds-early-leans-week-4-2026"
+      ]
+    }
+  ],
   "settled": [
     {
       "sport": "NFL",
