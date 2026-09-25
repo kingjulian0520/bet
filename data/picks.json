@@ -1129,6 +1129,30 @@
       "sources": [
         "https://sports.betmgm.com/en/blog/mlb/astros-mariners-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb/"
       ]
+    },
+    {
+      "sport": "Laver Cup",
+      "matchup": "Rafael Jodar vs Alexander Bublik",
+      "date": "2026-09-25",
+      "favorite": "Alexander Bublik",
+      "estimated_probability": {
+        "Alexander Bublik": 58,
+        "Rafael Jodar": 42
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "First-ever meeting (0-0 H2H) - both are Laver Cup debutants, so this comes down to surface fit and recent form, not history.",
+        "Bublik is running hot on indoor hard specifically right now: 76.5% first-serve win rate and averaging 10 aces per match across his 6 indoor matches in 2026 - a real, specific indoor serving peak, not a reputation-based edge.",
+        "Jodar owns the better career indoor record on paper (17-4), but his most recent result is a concerning first-round exit at the US Open closing out a long rookie season - a real dip right before a big, pressure-filled debut, not a reason for extra confidence.",
+        "Real gap: expert opinion here is genuinely split - some picks favor Jodar in straight sets on the read that Bublik is streaky and fades once behind, which is why this stays a Slight lean rather than higher."
+      ],
+      "sources": [
+        "https://www.freetips.com/tennis/rafael-jodar-vs-alexander-bublik-tips-live-stream-20260924-0048/",
+        "https://lastwordonsports.com/tennis/2026/09/24/laver-cup-day-1-predictions-jodar-bublik/",
+        "https://www.sportskeeda.com/tennis/alexander-bublik-vs-rafael-jodar-preview-head-to-head-odds-prediction-betting-tips-laver-cup-2026"
+      ],
+      "start_time": "2026-09-25T18:00:00Z"
     }
   ],
   "long_shots": [],
