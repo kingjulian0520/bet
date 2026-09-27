@@ -1,7 +1,104 @@
 {
   "generated_at": "2026-09-22T16:10:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [],
+  "picks": [
+    {
+      "sport": "NFL",
+      "matchup": "Philadelphia Eagles vs Chicago Bears",
+      "date": "2026-09-28",
+      "favorite": "Philadelphia Eagles",
+      "estimated_probability": {
+        "Philadelphia Eagles": 67,
+        "Chicago Bears": 33
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Bears are down to their QB3: Caleb Williams (hamstring) is week-to-week and backup Tyson Bagent is in the concussion protocol, pushing Chicago to Case Keenum, who hasn't thrown a regular-season pass since 2023.",
+        "The market line moved from Bears -1.5 to Eagles favored specifically on the QB news - a market-confirmed, injury-driven swing, not just a generic power-rating read.",
+        "Eagles are 2-0 and relatively healthy (missing only depth pieces), with Jonathan Greenard possibly returning from injury.",
+        "Bears' secondary is further thinned: S Coby Bryant out 4-6 months (fractured knee), CB Kyler Gordon out at least 4 games (calf) - a shorthanded secondary facing a healthy Eagles offense."
+      ],
+      "sources": [
+        "https://www.phillyvoice.com/eagles-bears-week-3-injury-report-analysis-2026-caleb-williams-tyson-bagent-devonta-smith/",
+        "https://www.inquirer.com/eagles/eagles-bears-mnf-storylines-caleb-williams-jalen-hurts-20260927.html",
+        "https://www.si.com/betting/eagles-vs-bears-prediction-odds-spread-injuries-trends-for-nfl-week-3-2026"
+      ],
+      "start_time": "2026-09-29T00:15:00Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Baltimore Ravens vs Dallas Cowboys",
+      "date": "2026-09-27",
+      "favorite": "Baltimore Ravens",
+      "estimated_probability": {
+        "Baltimore Ravens": 60,
+        "Dallas Cowboys": 40
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Cowboys defense ranks 29th in opponent EPA/play and 31st in opponent success rate, with a long-standing weak spot against the run - directly into a Ravens offense built around Derrick Henry.",
+        "Dallas will be without 4 defensive players for this game, including 3 Week 1 starters (S Malik Hooker, CB Cobie Durant, LB DeMarvion Overshown) plus top safety backup PJ Locke.",
+        "Ravens got a positive pregame update with WR Zay Flowers active despite a hamstring issue; Lamar Jackson is playing through a limited-practice elbow issue but has vowed to play.",
+        "Market has Ravens only -3.5 given the extent of Dallas's defensive absences, suggesting the line hasn't fully caught up to the news - kept at a modest lean rather than higher given Lamar's elbow and the neutral-site (Rio de Janeiro) travel wrinkle for both teams."
+      ],
+      "sources": [
+        "https://www.sharpfootballanalysis.com/analysis/dallas-cowboys-defense/",
+        "https://atozsports.com/nfl/dallas-cowboys-news/injury-updates-week-3-vs-ravens/",
+        "https://www.foxnews.com/sports/lamar-jackson-ravens-injury-report-vows-to-play-sunday"
+      ],
+      "start_time": "2026-09-27T20:25:00Z"
+    },
+    {
+      "sport": "WNBA",
+      "matchup": "Dallas Wings vs Golden State Valkyries",
+      "date": "2026-09-27",
+      "favorite": "Golden State Valkyries",
+      "estimated_probability": {
+        "Golden State Valkyries": 70,
+        "Dallas Wings": 30
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "Golden State swept the regular-season series 3-0, winning by an average of 12.3 points per game - a real, repeated result, not a single sample.",
+        "Valkyries have the league's best defense (75.1 opp. PPG, 7.6 points better than the next-best team) - a specific statistical mismatch against a Dallas offense that ranks top-5 but has no prior success solving this defense.",
+        "Golden State has home court (Chase Center) for the full first-round series.",
+        "Sized a notch below the market-implied probability (~74% at -290/-7.5) rather than chasing the number."
+      ],
+      "sources": [
+        "https://www.wnba.com/news/2026-playoffs-series-preview-first-round",
+        "https://sports.betmgm.com/en/blog/wnba/wings-vs-valkyries-prediction-game-1-2026-playoffs-bm23/",
+        "https://winsidr.com/2026/09/2026-wnba-playoffs-preview-round-1-golden-state-valkyries-vs-dallas-wings/"
+      ],
+      "start_time": "2026-09-28T01:00:00Z"
+    },
+    {
+      "sport": "ATP Chengdu",
+      "matchup": "Hubert Hurkacz vs Denis Shapovalov",
+      "date": "2026-09-28",
+      "favorite": "Hubert Hurkacz",
+      "estimated_probability": {
+        "Hubert Hurkacz": 63,
+        "Denis Shapovalov": 37
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Head-to-head is 5-1 in Hurkacz's favor overall, and specifically 4-1 on hard courts.",
+        "2026 season form clearly favors Hurkacz: 28-19 overall (16-9 on hard) vs. Shapovalov's 19-18.",
+        "Both reached the semis in straightforward fashion this week, so recent tournament form doesn't override the H2H/season-record edge.",
+        "Kept at a modest 63% rather than higher - it's a best-of-3 ATP 250 semifinal where either player is capable of a hot day, and Shapovalov does have one win in this H2H."
+      ],
+      "sources": [
+        "https://lastwordonsports.com/tennis/2026/09/27/atp-chengdu-semifinal-predictions-hurkacz-vs-shapovalov/",
+        "https://tennistonic.com/tennis-news/1058374/h2h-prediction-of-hubert-hurkacz-vs-denis-shapovalov-in-chengdu-with-odds-preview-pick-28th-september-2026/",
+        "https://www.atptour.com/en/news/chengdu-2026-sunday-report"
+      ],
+      "start_time": "2026-09-28T11:00:00Z"
+    }
+  ],
   "long_shots": [],
   "settled": [
     {
