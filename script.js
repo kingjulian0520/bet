@@ -478,13 +478,11 @@ function openAccountPanel(type) {
 
   const renderers = {
     profile: renderProfilePanel,
-    leaderboard: renderLeaderboardPanel,
     report: renderReportPanel,
     timezone: renderTimezonePanel,
   };
   const titles = {
     profile: "Your profile",
-    leaderboard: "Leaderboard",
     report: "Report an issue",
     timezone: "Change time zone",
   };
@@ -533,22 +531,7 @@ function renderProfilePanel(root) {
         <div class="profile-stat-label">Settled</div>
       </div>
     </div>
-    <div class="profile-public-row">
-      <label>
-        <input type="checkbox" id="profile-public-checkbox" ${profileCache.isPublic ? "checked" : ""}>
-        Make my bets public
-      </label>
-    </div>
-    <p class="account-panel-note">Public shows your username, photo, record, and net units on the leaderboard. Your email is never shown.</p>
   `;
-
-  document.getElementById("profile-public-checkbox").addEventListener("change", (e) => {
-    const isPublic = e.target.checked;
-    if (profileCache) profileCache.isPublic = isPublic;
-    Auth.saveMyProfile(currentUser.id, { isPublic }).catch((err) => {
-      console.warn("Couldn't update public/private setting.", err);
-    });
-  });
 
   const fileInput = document.getElementById("profile-avatar-input");
   const statusEl = document.getElementById("profile-avatar-status");
@@ -626,30 +609,6 @@ function openAvatarCropModal(file, profileRoot) {
       0.9
     );
   };
-}
-
-async function renderLeaderboardPanel(root) {
-  root.innerHTML = `<p class="account-panel-note">Loading…</p>`;
-  try {
-    const rows = await Auth.getPublicLeaderboard();
-    if (!rows.length) {
-      root.innerHTML = `<p class="account-panel-note">Nobody's made their bets public yet.</p>`;
-      return;
-    }
-    root.innerHTML = rows
-      .map(
-        (r, i) => `
-        <div class="leaderboard-row">
-          <span class="leaderboard-rank">${i + 1}.</span>
-          <span class="leaderboard-name">@${escapeHtml(r.username)}</span>
-          <span class="leaderboard-units ${r.netUnits >= 0 ? "positive" : "negative"}">${r.netUnits >= 0 ? "+" : ""}${r.netUnits.toFixed(2)}u</span>
-        </div>
-      `
-      )
-      .join("");
-  } catch (err) {
-    root.innerHTML = `<p class="account-panel-note">Couldn't load the leaderboard right now.</p>`;
-  }
 }
 
 function renderReportPanel(root) {
