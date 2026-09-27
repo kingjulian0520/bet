@@ -1,192 +1,8 @@
 {
   "generated_at": "2026-09-22T16:10:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [
-    {
-      "sport": "WNBA Player Props",
-      "matchup": "Georgia Amoore — 3-Pointers Made O/U 2.5 (Connecticut Sun vs Washington Mystics)",
-      "date": "2026-09-22",
-      "start_time": "2026-09-22T23:30:00Z",
-      "favorite": "Over 2.5",
-      "estimated_probability": {
-        "Over 2.5": 61,
-        "Under 2.5": 39
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "Amoore has hit 3+ threes in 4 consecutive games, averaging 4.0 threes on ~49% from deep over that stretch.",
-        "Over the last 7-8 games she's shooting roughly 40%+ from three with just 1.6 turnovers a game - a clear rookie hot streak/role expansion late in the year.",
-        "No specific Sun 3PT-defense number found, so this leans more on her own form than the matchup - kept to Slight lean rather than higher.",
-        "Her threes line has been as low as 1.5 in some earlier games this season; if tonight's number is still 1.5 rather than 2.5, this becomes a much stronger lean."
-      ],
-      "sources": [
-        "https://www.cbssports.com/wnba/news/georgia-amoore-swagger-acl-injury-mystics-playoffs/",
-        "https://www.si.com/onsi/womens-fastbreak/wnba/georgia-amoore-s-late-season-surge-makes-mystics-a-different-team-01m2t4mm111b"
-      ]
-    },
-    {
-      "sport": "MLB Player Props",
-      "matchup": "Jose Ramirez — RBIs O/U 0.5 (Guardians vs Red Sox)",
-      "date": "2026-09-22",
-      "start_time": "2026-09-22T22:45:00Z",
-      "favorite": "Under 0.5",
-      "estimated_probability": {
-        "Under 0.5": 62,
-        "Over 0.5": 38
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "Ramirez has gone Under his RBI line in 21 of his last 25 games (84%, +12.45u/24% ROI) - a real, sustained trend for Cleveland's best hitter.",
-        "Worth fading the RBI market specifically, not his overall production."
-      ],
-      "sources": [
-        "https://sports.betmgm.com/en/blog/mlb/guardians-red-sox-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
-      ]
-    },
-    {
-      "sport": "MLB Player Props",
-      "matchup": "Daylen Lile — Hits O/U 0.5 (Nationals vs Tigers)",
-      "date": "2026-09-22",
-      "start_time": "2026-09-22T22:40:00Z",
-      "favorite": "Under 0.5",
-      "estimated_probability": {
-        "Under 0.5": 63,
-        "Over 0.5": 37
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "Lile has gone Under his hits line in 14 of his last 20 road games (70%, +12.90u/53% ROI).",
-        "Consistent with Washington's offense struggling on the road against a strong Tigers home staff."
-      ],
-      "sources": [
-        "https://sports.betmgm.com/en/blog/mlb/nationals-tigers-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
-      ]
-    },
-    {
-      "sport": "MLB Player Props",
-      "matchup": "Michael Conforto — Runs O/U 0.5 (Marlins vs Cubs)",
-      "date": "2026-09-22",
-      "start_time": "2026-09-23T00:40:00Z",
-      "favorite": "Under 0.5",
-      "estimated_probability": {
-        "Under 0.5": 72,
-        "Over 0.5": 28
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 1.25,
-      "reasoning": [
-        "Conforto has gone Under his runs-scored line in 23 of his last 25 home games (92%, +19.90u/44% ROI) - the single strongest hit-rate trend found on the entire slate."
-      ],
-      "sources": [
-        "https://sports.betmgm.com/en/blog/mlb/marlins-cubs-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
-      ]
-    },
-    {
-      "sport": "Laver Cup",
-      "matchup": "Rafael Jodar vs Alexander Bublik",
-      "date": "2026-09-25",
-      "favorite": "Alexander Bublik",
-      "estimated_probability": {
-        "Alexander Bublik": 58,
-        "Rafael Jodar": 42
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.5,
-      "reasoning": [
-        "First-ever meeting (0-0 H2H) - both are Laver Cup debutants, so this comes down to surface fit and recent form, not history.",
-        "Bublik is running hot on indoor hard specifically right now: 76.5% first-serve win rate and averaging 10 aces per match across his 6 indoor matches in 2026 - a real, specific indoor serving peak, not a reputation-based edge.",
-        "Jodar owns the better career indoor record on paper (17-4), but his most recent result is a concerning first-round exit at the US Open closing out a long rookie season - a real dip right before a big, pressure-filled debut, not a reason for extra confidence.",
-        "Real gap: expert opinion here is genuinely split - some picks favor Jodar in straight sets on the read that Bublik is streaky and fades once behind, which is why this stays a Slight lean rather than higher."
-      ],
-      "sources": [
-        "https://www.freetips.com/tennis/rafael-jodar-vs-alexander-bublik-tips-live-stream-20260924-0048/",
-        "https://lastwordonsports.com/tennis/2026/09/24/laver-cup-day-1-predictions-jodar-bublik/",
-        "https://www.sportskeeda.com/tennis/alexander-bublik-vs-rafael-jodar-preview-head-to-head-odds-prediction-betting-tips-laver-cup-2026"
-      ],
-      "start_time": "2026-09-25T18:00:00Z"
-    }
-  ],
-  "long_shots": [
-    {
-      "sport": "Parlays",
-      "matchup": "6-Leg CFB Long Shot: Texas Tech + Houston + Kentucky + Arizona + Tulane + LSU (all ML)",
-      "date": "2026-09-26",
-      "start_time": "2026-09-26T16:00:00Z",
-      "favorite": "Hits",
-      "estimated_probability": {
-        "Hits": 29,
-        "Doesn't Hit": 71
-      },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.1,
-      "legs": [
-        {
-          "sport": "College Football",
-          "matchup": "Sam Houston Bearkats vs Texas Tech Red Raiders",
-          "date": "2026-09-26",
-          "side": "Texas Tech Red Raiders",
-          "probability": 93
-        },
-        {
-          "sport": "College Football",
-          "matchup": "Houston Cougars vs Georgia Southern Eagles",
-          "date": "2026-09-26",
-          "side": "Houston Cougars",
-          "probability": 85
-        },
-        {
-          "sport": "College Football",
-          "matchup": "South Alabama Jaguars vs Kentucky Wildcats",
-          "date": "2026-09-26",
-          "side": "Kentucky Wildcats",
-          "probability": 82
-        },
-        {
-          "sport": "College Football",
-          "matchup": "Arizona Wildcats vs Washington State Cougars",
-          "date": "2026-09-26",
-          "side": "Arizona Wildcats",
-          "probability": 78
-        },
-        {
-          "sport": "College Football",
-          "matchup": "Southern Miss Golden Eagles vs Tulane Green Wave",
-          "date": "2026-09-26",
-          "side": "Tulane Green Wave",
-          "probability": 78
-        },
-        {
-          "sport": "College Football",
-          "matchup": "Texas A&M Aggies vs LSU Tigers",
-          "date": "2026-09-26",
-          "side": "LSU Tigers",
-          "probability": 73
-        }
-      ],
-      "reasoning": [
-        "Six straight moneylines, all Week 4 favorites with real, cited quality gaps - not just chalk by name recognition:",
-        "Texas Tech (-34.5, No. 11 AP, 3-0) over Sam Houston: Tech just knocked off then-No.25 Houston on the road: Sam Houston is a live, improved team (QB Landyn Locke: 973 yds/9 TD/1 INT) but has almost no run game and is a full tier below.",
-        "Houston (-18.5) over Georgia Southern: models put Houston at 87-92% win probability; Georgia Southern is 1-2 and outmatched physically at this level.",
-        "Kentucky (-20/-21.5) over South Alabama: Kentucky just beat then-No.9 Texas A&M 31-21 and gets its first Group-of-Six game of the year; South Alabama (2-1) is solid but a clear class below a hot SEC team.",
-        "Arizona (-450 ML) over Washington State: Arizona is coming off a 42-17 win with a program passing-yards record for Fifita; Washington State has a brand-new coaching staff and QB still finding its footing, even with RB Kirby Vorhees back.",
-        "Tulane (-18.5) over Southern Miss: same 1-2 records on paper, but real form gap - Tulane's losses/wins were competitive (17-3 to Duke, beat South Alabama with 200+ rush yards), while Southern Miss just got blown out 48-20 with its QB throwing 4 INTs.",
-        "LSU (-375 ML, No. 10 AP) over Texas A&M: LSU at home off a loss to Ole Miss, A&M off a loss to Kentucky - deliberately NOT sized as high as the market's implied ~79%, since A&M has won the last two meetings in this series including 49-25 last year.",
-        "Combined probability: 0.93 x 0.85 x 0.82 x 0.78 x 0.78 x 0.73 = ~29% - a real long shot built entirely from favorites with genuine evidence, not from forcing weak sides together.",
-        "Deliberately left App State (3-0) at NC State off this ticket despite NC State being favored - App State's giant-killer track record (has beaten Michigan, Texas A&M, South Carolina, UNC in recent years) made that leg too live to stack into a 6-leg chain."
-      ],
-      "sources": [
-        "https://sports.yahoo.com/articles/2026-week-4-preview-sam-163000591.html",
-        "https://sports.betmgm.com/en/blog/college-football/houston-georgia-southern-prediction-odds-player-prop-bets-picks-ncaaf-week-4-jaa/",
-        "https://sports.yahoo.com/articles/kentucky-vs-south-alabama-prediction-073201534.html",
-        "https://www.si.com/college/arizona/football/arizona-washington-state-odds-spread-betting-lines-week-4",
-        "https://sports.yahoo.com/articles/tulane-early-large-marge-favorite-012027594.html",
-        "https://www.covers.com/ncaaf/texas-am-vs-lsu-prediction-picks-odds-early-leans-week-4-2026"
-      ]
-    }
-  ],
+  "picks": [],
+  "long_shots": [],
   "settled": [
     {
       "sport": "NFL",
@@ -2773,6 +2589,159 @@
       "final_score": "1 reception, 1 yard on 4 targets - left the game with a shoulder injury",
       "actual_value": 1,
       "settled_at": "2026-09-25T14:44:25.207777Z"
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Jose Ramirez — RBIs O/U 0.5 (Guardians vs Red Sox)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-22T22:45:00Z",
+      "favorite": "Under 0.5",
+      "estimated_probability": {
+        "Under 0.5": 62,
+        "Over 0.5": 38
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Ramirez has gone Under his RBI line in 21 of his last 25 games (84%, +12.45u/24% ROI) - a real, sustained trend for Cleveland's best hitter.",
+        "Worth fading the RBI market specifically, not his overall production."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/guardians-red-sox-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
+      ],
+      "winner": "Under 0.5",
+      "final_score": "0-for-1 with RISP; Guardians' only 2 early runs credited to David Fry (RBI single) and a run-scoring double play, not Ramirez",
+      "actual_value": 0,
+      "settled_at": "2026-09-27T19:05:43.225149Z"
+    },
+    {
+      "sport": "MLB Player Props",
+      "matchup": "Michael Conforto — Runs O/U 0.5 (Marlins vs Cubs)",
+      "date": "2026-09-22",
+      "start_time": "2026-09-23T00:40:00Z",
+      "favorite": "Under 0.5",
+      "estimated_probability": {
+        "Under 0.5": 72,
+        "Over 0.5": 28
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "Conforto has gone Under his runs-scored line in 23 of his last 25 home games (92%, +19.90u/44% ROI) - the single strongest hit-rate trend found on the entire slate."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/mlb/marlins-cubs-prediction-odds-player-prop-bets-picks-sep-22-2026-jaa-mlb-2/"
+      ],
+      "winner": "Under 0.5",
+      "final_score": "Lined out to right in his PA; Cubs' only 2 runs both credited to Pete Crow-Armstrong and Ian Happ, not Conforto",
+      "actual_value": 0,
+      "settled_at": "2026-09-27T19:05:43.225149Z"
+    },
+    {
+      "sport": "Laver Cup",
+      "matchup": "Rafael Jodar vs Alexander Bublik",
+      "date": "2026-09-25",
+      "favorite": "Alexander Bublik",
+      "estimated_probability": {
+        "Alexander Bublik": 58,
+        "Rafael Jodar": 42
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "First-ever meeting (0-0 H2H) - both are Laver Cup debutants, so this comes down to surface fit and recent form, not history.",
+        "Bublik is running hot on indoor hard specifically right now: 76.5% first-serve win rate and averaging 10 aces per match across his 6 indoor matches in 2026 - a real, specific indoor serving peak, not a reputation-based edge.",
+        "Jodar owns the better career indoor record on paper (17-4), but his most recent result is a concerning first-round exit at the US Open closing out a long rookie season - a real dip right before a big, pressure-filled debut, not a reason for extra confidence.",
+        "Real gap: expert opinion here is genuinely split - some picks favor Jodar in straight sets on the read that Bublik is streaky and fades once behind, which is why this stays a Slight lean rather than higher."
+      ],
+      "sources": [
+        "https://www.freetips.com/tennis/rafael-jodar-vs-alexander-bublik-tips-live-stream-20260924-0048/",
+        "https://lastwordonsports.com/tennis/2026/09/24/laver-cup-day-1-predictions-jodar-bublik/",
+        "https://www.sportskeeda.com/tennis/alexander-bublik-vs-rafael-jodar-preview-head-to-head-odds-prediction-betting-tips-laver-cup-2026"
+      ],
+      "start_time": "2026-09-25T18:00:00Z",
+      "winner": "Rafael Jodar",
+      "final_score": "Jodar def. Bublik 6-2, 6-3 (1hr 24min)",
+      "settled_at": "2026-09-27T19:05:43.225149Z"
+    },
+    {
+      "sport": "Parlays",
+      "matchup": "6-Leg CFB Long Shot: Texas Tech + Houston + Kentucky + Arizona + Tulane + LSU (all ML)",
+      "date": "2026-09-26",
+      "start_time": "2026-09-26T16:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 29,
+        "Doesn't Hit": 71
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.1,
+      "legs": [
+        {
+          "sport": "College Football",
+          "matchup": "Sam Houston Bearkats vs Texas Tech Red Raiders",
+          "date": "2026-09-26",
+          "side": "Texas Tech Red Raiders",
+          "probability": 93
+        },
+        {
+          "sport": "College Football",
+          "matchup": "Houston Cougars vs Georgia Southern Eagles",
+          "date": "2026-09-26",
+          "side": "Houston Cougars",
+          "probability": 85
+        },
+        {
+          "sport": "College Football",
+          "matchup": "South Alabama Jaguars vs Kentucky Wildcats",
+          "date": "2026-09-26",
+          "side": "Kentucky Wildcats",
+          "probability": 82
+        },
+        {
+          "sport": "College Football",
+          "matchup": "Arizona Wildcats vs Washington State Cougars",
+          "date": "2026-09-26",
+          "side": "Arizona Wildcats",
+          "probability": 78
+        },
+        {
+          "sport": "College Football",
+          "matchup": "Southern Miss Golden Eagles vs Tulane Green Wave",
+          "date": "2026-09-26",
+          "side": "Tulane Green Wave",
+          "probability": 78
+        },
+        {
+          "sport": "College Football",
+          "matchup": "Texas A&M Aggies vs LSU Tigers",
+          "date": "2026-09-26",
+          "side": "LSU Tigers",
+          "probability": 73
+        }
+      ],
+      "reasoning": [
+        "Six straight moneylines, all Week 4 favorites with real, cited quality gaps - not just chalk by name recognition:",
+        "Texas Tech (-34.5, No. 11 AP, 3-0) over Sam Houston: Tech just knocked off then-No.25 Houston on the road: Sam Houston is a live, improved team (QB Landyn Locke: 973 yds/9 TD/1 INT) but has almost no run game and is a full tier below.",
+        "Houston (-18.5) over Georgia Southern: models put Houston at 87-92% win probability; Georgia Southern is 1-2 and outmatched physically at this level.",
+        "Kentucky (-20/-21.5) over South Alabama: Kentucky just beat then-No.9 Texas A&M 31-21 and gets its first Group-of-Six game of the year; South Alabama (2-1) is solid but a clear class below a hot SEC team.",
+        "Arizona (-450 ML) over Washington State: Arizona is coming off a 42-17 win with a program passing-yards record for Fifita; Washington State has a brand-new coaching staff and QB still finding its footing, even with RB Kirby Vorhees back.",
+        "Tulane (-18.5) over Southern Miss: same 1-2 records on paper, but real form gap - Tulane's losses/wins were competitive (17-3 to Duke, beat South Alabama with 200+ rush yards), while Southern Miss just got blown out 48-20 with its QB throwing 4 INTs.",
+        "LSU (-375 ML, No. 10 AP) over Texas A&M: LSU at home off a loss to Ole Miss, A&M off a loss to Kentucky - deliberately NOT sized as high as the market's implied ~79%, since A&M has won the last two meetings in this series including 49-25 last year.",
+        "Combined probability: 0.93 x 0.85 x 0.82 x 0.78 x 0.78 x 0.73 = ~29% - a real long shot built entirely from favorites with genuine evidence, not from forcing weak sides together.",
+        "Deliberately left App State (3-0) at NC State off this ticket despite NC State being favored - App State's giant-killer track record (has beaten Michigan, Texas A&M, South Carolina, UNC in recent years) made that leg too live to stack into a 6-leg chain."
+      ],
+      "sources": [
+        "https://sports.yahoo.com/articles/2026-week-4-preview-sam-163000591.html",
+        "https://sports.betmgm.com/en/blog/college-football/houston-georgia-southern-prediction-odds-player-prop-bets-picks-ncaaf-week-4-jaa/",
+        "https://sports.yahoo.com/articles/kentucky-vs-south-alabama-prediction-073201534.html",
+        "https://www.si.com/college/arizona/football/arizona-washington-state-odds-spread-betting-lines-week-4",
+        "https://sports.yahoo.com/articles/tulane-early-large-marge-favorite-012027594.html",
+        "https://www.covers.com/ncaaf/texas-am-vs-lsu-prediction-picks-odds-early-leans-week-4-2026"
+      ],
+      "winner": "Hits",
+      "final_score": "All 6 legs won: Texas Tech 49-14 Sam Houston, Houston 42-28 Georgia Southern, Kentucky 45-21 South Alabama, Arizona 34-24 Washington State, Tulane 24-21 Southern Miss, LSU 35-6 Texas A&M",
+      "settled_at": "2026-09-27T19:05:43.225149Z"
     }
   ]
 }
