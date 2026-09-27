@@ -145,7 +145,52 @@
       "start_time": "2026-09-28T11:00:00Z"
     }
   ],
-  "long_shots": [],
+  "long_shots": [
+    {
+      "sport": "Parlays",
+      "matchup": "3-Leg Long Shot: Valkyries ML + Eagles ML + Henry Rushing Over 89.5",
+      "date": "2026-09-27",
+      "start_time": "2026-09-27T20:25:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 30,
+        "Doesn't Hit": 70
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.1,
+      "legs": [
+        {
+          "sport": "WNBA",
+          "matchup": "Dallas Wings vs Golden State Valkyries",
+          "date": "2026-09-27",
+          "side": "Golden State Valkyries",
+          "probability": 70
+        },
+        {
+          "sport": "NFL",
+          "matchup": "Philadelphia Eagles vs Chicago Bears",
+          "date": "2026-09-28",
+          "side": "Philadelphia Eagles",
+          "probability": 67
+        },
+        {
+          "sport": "NFL Player Props",
+          "matchup": "Derrick Henry — Rushing Yards O/U 89.5 (Ravens vs Cowboys)",
+          "date": "2026-09-27",
+          "side": "Over 89.5",
+          "probability": 65
+        }
+      ],
+      "reasoning": [
+        "Every leg is the SAME side already favored in today's main Picks tab (Valkyries 70%, Eagles 67%, Henry Over 89.5 at 65%) - none of these fight those picks, they're the exact same convictions stacked for a bigger payout.",
+        "Combined probability: 0.70 x 0.67 x 0.65 = ~30% - a real long shot built entirely from picks that are each a genuine Lean or better on their own, not from forcing anything new or shakier.",
+        "Spans two sports across two days (Sun WNBA/NFL prop, Mon NFL), so no single upset takes out more than its own leg."
+      ],
+      "sources": [
+        "Reuses the research already cited on each leg's own Picks tab entry."
+      ]
+    }
+  ],
   "settled": [
     {
       "sport": "NFL",
