@@ -3340,5 +3340,37 @@
       "settled_at": "2026-09-28T13:15:00Z"
     }
   ],
-  "ladder": []
+  "ladder": [],
+  "prizepicks": [
+    {
+      "sport": "NFL",
+      "matchup": "D'Andre Swift Over 14.5 Rush Attempts + Saquon Barkley Over 44.5 Rush Yards",
+      "date": "2026-09-28",
+      "start_time": "2026-09-29T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 1,
+      "actual_multiplier": 2.0,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "sport": "NFL Player Props",
+          "matchup": "D'Andre Swift — Rush Attempts O/U 14.5",
+          "date": "2026-09-28",
+          "side": "Over 14.5"
+        },
+        {
+          "sport": "NFL Player Props",
+          "matchup": "Saquon Barkley — Rush Yards O/U 44.5",
+          "date": "2026-09-28",
+          "side": "Over 44.5"
+        }
+      ]
+    }
+  ]
 }

@@ -50,8 +50,10 @@ const COMMON_TIME_ZONES = [
 
 let rawPicks = [];
 let rawLongShots = [];
+let rawPrizePicks = [];
 let currentPicks = [];
 let currentLongShots = [];
+let currentPrizePicks = [];
 let currentSettled = [];
 let currentLadder = [];
 
@@ -719,6 +721,7 @@ async function main() {
 
   rawPicks = data.picks || [];
   rawLongShots = data.long_shots || [];
+  rawPrizePicks = data.prizepicks || [];
   currentSettled = data.settled || [];
   currentLadder = data.ladder || [];
   prunePicks();
@@ -726,6 +729,9 @@ async function main() {
   const todayStr = todayDateStr();
   if (currentPicks.some((p) => p.date === todayStr)) {
     selectedDayFilter = todayStr;
+  }
+  if (currentPrizePicks.some((p) => p.date === todayStr)) {
+    selectedPrizePicksDayFilter = todayStr;
   }
 
   renderAll();
@@ -765,6 +771,7 @@ function hasStarted(pick) {
 function prunePicks() {
   currentPicks = rawPicks.filter((p) => !hasStarted(p));
   currentLongShots = rawLongShots.filter((p) => !hasStarted(p));
+  currentPrizePicks = rawPrizePicks.filter((p) => !hasStarted(p));
 }
 
 function renderAll() {
@@ -799,6 +806,7 @@ function wireTabs() {
 // ---------- picks ----------
 
 let selectedDayFilter = "all";
+let selectedPrizePicksDayFilter = "all";
 
 // Sport filter: applied (activeSportFilters) vs staged-in-the-modal
 // (pendingSportFilters) - selecting chips doesn't change what's shown until
@@ -908,6 +916,38 @@ function renderDayFilterBar() {
       selectedDayFilter = opt.value;
       renderDayFilterBar();
       renderPicks();
+    });
+    bar.appendChild(chip);
+  }
+}
+
+function renderPrizePicksDayFilterBar() {
+  const bar = document.getElementById("prizepicks-day-filter-bar");
+  if (!bar) return;
+
+  const todayStr = todayDateStr();
+  const windowDates = [todayStr, addDaysStr(todayStr, 1), addDaysStr(todayStr, 2)];
+  const pickDates = currentPrizePicks.map((p) => p.date).filter(Boolean);
+  const dates = [...new Set([...windowDates, ...pickDates])].sort();
+
+  if (selectedPrizePicksDayFilter !== "all" && !dates.includes(selectedPrizePicksDayFilter)) {
+    selectedPrizePicksDayFilter = "all";
+  }
+
+  const options = [{ value: "all", label: "All days" }].concat(
+    dates.map((d) => ({ value: d, label: d === todayStr ? "Today" : d }))
+  );
+
+  bar.innerHTML = "";
+  for (const opt of options) {
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "day-chip" + (opt.value === selectedPrizePicksDayFilter ? " active" : "");
+    chip.textContent = opt.label;
+    chip.addEventListener("click", () => {
+      selectedPrizePicksDayFilter = opt.value;
+      renderPrizePicksDayFilterBar();
+      renderPrizePicks();
     });
     bar.appendChild(chip);
   }
@@ -1047,7 +1087,6 @@ function renderPicks() {
 
   let visiblePicks =
     selectedDayFilter === "all" ? currentPicks : currentPicks.filter((p) => p.date === selectedDayFilter);
-  visiblePicks = visiblePicks.filter((p) => !isPrizePicksPick(p));
   if (activeSportFilters.size > 0) {
     visiblePicks = visiblePicks.filter((p) => activeSportFilters.has(sportGroup(p.sport)));
   }
@@ -1129,9 +1168,22 @@ function renderPrizePicks() {
   const root = document.getElementById("prizepicks-root");
   if (!root) return;
 
-  const items = currentPicks.filter(isPrizePicksPick);
+  renderPrizePicksDayFilterBar();
+
+  const items =
+    selectedPrizePicksDayFilter === "all"
+      ? currentPrizePicks
+      : currentPrizePicks.filter((p) => p.date === selectedPrizePicksDayFilter);
+
   if (items.length === 0) {
-    root.innerHTML = '<p class="empty-state">No PrizePicks picks yet — waiting on a reliable esports stats source.</p>';
+    const todayStr = todayDateStr();
+    const msg =
+      selectedPrizePicksDayFilter === "all"
+        ? "No PrizePicks picks yet — waiting on a reliable stats source."
+        : selectedPrizePicksDayFilter === todayStr
+        ? "No PrizePicks picks for today yet."
+        : "No PrizePicks picks for this day yet.";
+    root.innerHTML = `<p class="empty-state">${msg}</p>`;
     return;
   }
 
@@ -1203,9 +1255,14 @@ function renderCard(pick) {
     } else {
       stakeText = `Suggested: ${units} unit${units === 1 ? "" : "s"}`;
     }
+    const multiplierText =
+      typeof pick.actual_multiplier === "number" && pick.actual_multiplier > 0
+        ? `<span class="multiplier">${formatMoney(pick.actual_multiplier)}x</span>`
+        : "";
     stakeRow = `
       <div class="stake-row">
         <span class="units">${stakeText}</span>
+        ${multiplierText}
       </div>
     `;
   }
@@ -1346,11 +1403,12 @@ function isLongShotPick(pick) {
   return /long shot/i.test(pick.matchup || "");
 }
 
-// PrizePicks (esports parlay) entries live in the "picks"/"settled" arrays
-// like everything else, tagged with this exact sport string specifically so
-// they never collide with isLongShotPick's own "Parlays" check.
+// PrizePicks entries live in their own "prizepicks" array while live, and
+// carry this flag into "settled" once resolved (same pattern as
+// is_long_shot for long shots) - not tied to any particular sport, since
+// PrizePicks picks can be any sport, not just esports.
 function isPrizePicksPick(pick) {
-  return pick.sport === "Esports Parlays";
+  return pick.is_prizepicks === true;
 }
 
 // Groups a list of picks (any mix of picks/long_shots/prizepicks, settled
@@ -1479,6 +1537,7 @@ function picksByDate() {
   currentSettled.forEach(add);
   currentPicks.forEach(add);
   currentLongShots.forEach(add);
+  currentPrizePicks.forEach(add);
   return map;
 }
 
@@ -1504,7 +1563,7 @@ function renderCalendar() {
   const showDollars = displayMode === "dollars" && unitValue;
 
   const monthPrefix = `${calViewYear}-${pad2(calViewMonth + 1)}-`;
-  const monthPicks = [...currentSettled, ...currentPicks, ...currentLongShots].filter((p) =>
+  const monthPicks = [...currentSettled, ...currentPicks, ...currentLongShots, ...currentPrizePicks].filter((p) =>
     (p.date || "").startsWith(monthPrefix)
   );
   const monthBreakdown = computeBreakdown(monthPicks);
