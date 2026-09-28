@@ -166,7 +166,7 @@ function isUnlocked() {
 }
 
 function renderLockOverlays() {
-  ["picks", "longshots"].forEach((prefix) => renderLockOverlay(prefix));
+  ["picks", "longshots", "prizepicks", "ladder"].forEach((prefix) => renderLockOverlay(prefix));
 }
 
 function renderLockOverlay(prefix) {
