@@ -1219,14 +1219,42 @@ function wireCalendar() {
 // was for - settled ones (win/loss known) plus any still-live ones for
 // today/upcoming days, so a day's cell is complete the moment it's picked,
 // not only once it resolves.
-// Units result for a single settled pick. No real sportsbook odds are
-// stored for the site's own picks (only a probability estimate), so this
-// uses a flat convention - risk the recommended units to win that same
-// amount back - rather than assuming any specific book's juice.
+// Units result for a single settled pick. A loss is always just the
+// stake back, no estimate needed there. For a win, prefer a real
+// sportsbook multiplier (pick.actual_multiplier - long shots especially,
+// where a real book's combined parlay odds are nothing like a naive
+// fair-odds estimate) when one's been recorded; otherwise fall back to
+// whatever multiplier would make the estimated probability "fair"
+// (100 / probability), e.g. a 50% pick implies 2x, a 25% long shot
+// implies 4x - only ever an estimate of what a book would pay, not a
+// quoted line. Use pickUnitsAreExact() to know which case applied.
 function pickNetUnits(pick) {
   const units = pick.recommended_units || 0;
   if (pick.winner === "push" || pick.winner === "Push") return 0;
-  return pick.winner === pick.favorite ? units : -units;
+  if (pick.winner !== pick.favorite) return -units;
+  if (typeof pick.actual_multiplier === "number" && pick.actual_multiplier > 0) {
+    return units * (pick.actual_multiplier - 1);
+  }
+  const favProb = (pick.estimated_probability || {})[pick.favorite];
+  if (!favProb) return units;
+  const multiplier = 100 / favProb;
+  return units * (multiplier - 1);
+}
+
+// Whether pickNetUnits() used a real number (loss/push, or a win graded
+// against a recorded actual_multiplier) or had to fall back to the
+// probability-implied estimate. Callers use this to decide "=" vs "~".
+function pickUnitsAreExact(pick) {
+  if (pick.winner === "push" || pick.winner === "Push") return true;
+  if (pick.winner !== pick.favorite) return true;
+  return typeof pick.actual_multiplier === "number" && pick.actual_multiplier > 0;
+}
+
+// "~+2.43" when it's a probability-implied estimate (see pickNetUnits),
+// "=+2.43" when every contributing pick graded off a real actual_multiplier
+// (or was a loss/push, which need no odds at all).
+function formatUnitsSigned(n, isExact) {
+  return `${isExact ? "=" : "~"}${n >= 0 ? "+" : ""}${n.toFixed(2)}`;
 }
 
 // Long shots lose their array membership once settled (picks/long_shots
@@ -1300,6 +1328,8 @@ function renderCalendar() {
     const losses = settledMain.filter((p) => p.winner !== p.favorite && p.winner !== "push").length;
     const netUnits = settledMain.reduce((sum, p) => sum + pickNetUnits(p), 0);
     const netUnitsWithLS = netUnits + settledLongShots.reduce((sum, p) => sum + pickNetUnits(p), 0);
+    const mainIsExact = settledMain.every(pickUnitsAreExact);
+    const withLSIsExact = mainIsExact && settledLongShots.every(pickUnitsAreExact);
 
     const cell = document.createElement("div");
     cell.className = "calendar-day " + (netUnits > 0 ? "win" : netUnits < 0 ? "loss" : "neutral");
@@ -1310,10 +1340,8 @@ function renderCalendar() {
       : mainPicks.length
         ? `${mainPicks.length} pick${mainPicks.length === 1 ? "" : "s"}`
         : "";
-    const unitsText = settledMain.length ? `${netUnits >= 0 ? "+" : ""}${netUnits.toFixed(2)}u` : "";
-    const lsText = settledLongShots.length
-      ? `with LS (${netUnitsWithLS >= 0 ? "+" : ""}${netUnitsWithLS.toFixed(2)}u)`
-      : "";
+    const unitsText = settledMain.length ? `${formatUnitsSigned(netUnits, mainIsExact)}u` : "";
+    const lsText = settledLongShots.length ? `with LS (${formatUnitsSigned(netUnitsWithLS, withLSIsExact)}u)` : "";
 
     cell.innerHTML = `
       <span>${day}</span>
@@ -1346,12 +1374,14 @@ function renderDayDetail() {
   const settledLongShots = dayPicks.filter((p) => isLongShotPick(p) && p.winner);
   const netUnits = settledMain.reduce((sum, p) => sum + pickNetUnits(p), 0);
   const netUnitsWithLS = netUnits + settledLongShots.reduce((sum, p) => sum + pickNetUnits(p), 0);
+  const mainIsExact = settledMain.every(pickUnitsAreExact);
+  const withLSIsExact = mainIsExact && settledLongShots.every(pickUnitsAreExact);
 
   let headingText = `Picks for ${calSelectedDate}`;
   if (settledMain.length) {
-    headingText += ` — ${netUnits >= 0 ? "+" : ""}${netUnits.toFixed(2)} units`;
+    headingText += ` — ${formatUnitsSigned(netUnits, mainIsExact)} units`;
     if (settledLongShots.length) {
-      headingText += ` (with LS: ${netUnitsWithLS >= 0 ? "+" : ""}${netUnitsWithLS.toFixed(2)})`;
+      headingText += ` (with LS: ${formatUnitsSigned(netUnitsWithLS, withLSIsExact)})`;
     }
   }
 
