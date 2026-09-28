@@ -39,6 +39,13 @@ let unlockedWithCode = null;
 
 // ---------- storage ----------
 
+// Exact dollar amount, not rounded to a whole number - "$7.50", not "~$8".
+// Trims a trailing zero cent (7.50 -> "7.5") but keeps whole numbers plain.
+function formatMoney(n) {
+  const rounded = Math.round(n * 100) / 100;
+  return Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(2).replace(/0$/, "");
+}
+
 function getUnitValue() {
   if (currentUser) return (profileCache && profileCache.unitValue) || null;
   const stored = localStorage.getItem(UNIT_VALUE_KEY);
@@ -1101,7 +1108,7 @@ function renderExposureSummary() {
   const scope = selectedDayFilter === "all" ? "Current picks" : "This day's picks";
   let text = `${scope} add up to ${totalUnits.toFixed(2)} units if you took every one`;
   if (unitValue) {
-    text += ` — about $${(totalUnits * unitValue).toFixed(0)}`;
+    text += ` — $${formatMoney(totalUnits * unitValue)}`;
   }
   el.textContent = text + ".";
   el.hidden = false;
@@ -1132,7 +1139,7 @@ function renderCard(pick) {
   let stakeRow = "";
   if (units) {
     const dollarsText = unitValue
-      ? `<span class="dollars">≈ $${(units * unitValue).toFixed(0)}</span>`
+      ? `<span class="dollars">= $${formatMoney(units * unitValue)}</span>`
       : `<span class="dollars">add a unit size above to see $</span>`;
     stakeRow = `
       <div class="stake-row">
