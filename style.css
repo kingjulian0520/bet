@@ -1153,6 +1153,12 @@ main {
   opacity: 0.85;
 }
 
+.calendar-day .day-ls {
+  font-size: 0.56rem;
+  opacity: 0.7;
+  font-style: italic;
+}
+
 .day-detail {
   margin-top: 1.25rem;
 }

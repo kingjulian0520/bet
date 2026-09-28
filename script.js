@@ -1229,6 +1229,17 @@ function pickNetUnits(pick) {
   return pick.winner === pick.favorite ? units : -units;
 }
 
+// Long shots lose their array membership once settled (picks/long_shots
+// and settled are one flat list by then), so this relies on an explicit
+// is_long_shot flag going forward, falling back to the naming convention
+// already used for every long shot added before that flag existed
+// (a parlay, or a matchup literally titled "Long Shot: ...").
+function isLongShotPick(pick) {
+  if (pick.is_long_shot === true) return true;
+  if (pick.sport === "Parlays") return true;
+  return /long shot/i.test(pick.matchup || "");
+}
+
 function picksByDate() {
   const map = {};
   const add = (p) => {
@@ -1281,26 +1292,34 @@ function renderCalendar() {
   for (let day = 1; day <= daysInMonth; day++) {
     const dateStr = `${calViewYear}-${pad2(calViewMonth + 1)}-${pad2(day)}`;
     const dayPicks = byDate[dateStr] || [];
-    const settledPicks = dayPicks.filter((p) => p.winner);
-    const wins = settledPicks.filter((p) => p.winner === p.favorite).length;
-    const losses = settledPicks.filter((p) => p.winner !== p.favorite && p.winner !== "push").length;
-    const netUnits = settledPicks.reduce((sum, p) => sum + pickNetUnits(p), 0);
+    const mainPicks = dayPicks.filter((p) => !isLongShotPick(p));
+    const longShots = dayPicks.filter(isLongShotPick);
+    const settledMain = mainPicks.filter((p) => p.winner);
+    const settledLongShots = longShots.filter((p) => p.winner);
+    const wins = settledMain.filter((p) => p.winner === p.favorite).length;
+    const losses = settledMain.filter((p) => p.winner !== p.favorite && p.winner !== "push").length;
+    const netUnits = settledMain.reduce((sum, p) => sum + pickNetUnits(p), 0);
+    const netUnitsWithLS = netUnits + settledLongShots.reduce((sum, p) => sum + pickNetUnits(p), 0);
 
     const cell = document.createElement("div");
     cell.className = "calendar-day " + (netUnits > 0 ? "win" : netUnits < 0 ? "loss" : "neutral");
     if (dateStr === calSelectedDate) cell.classList.add("selected");
 
-    const summary = settledPicks.length
+    const summary = settledMain.length
       ? `${wins}-${losses}`
-      : dayPicks.length
-        ? `${dayPicks.length} pick${dayPicks.length === 1 ? "" : "s"}`
+      : mainPicks.length
+        ? `${mainPicks.length} pick${mainPicks.length === 1 ? "" : "s"}`
         : "";
-    const unitsText = settledPicks.length ? `${netUnits >= 0 ? "+" : ""}${netUnits.toFixed(2)}u` : "";
+    const unitsText = settledMain.length ? `${netUnits >= 0 ? "+" : ""}${netUnits.toFixed(2)}u` : "";
+    const lsText = settledLongShots.length
+      ? `with LS (${netUnitsWithLS >= 0 ? "+" : ""}${netUnitsWithLS.toFixed(2)}u)`
+      : "";
 
     cell.innerHTML = `
       <span>${day}</span>
       ${summary ? `<span class="day-net">${summary}</span>` : ""}
       ${unitsText ? `<span class="day-units">${unitsText}</span>` : ""}
+      ${lsText ? `<span class="day-ls">${lsText}</span>` : ""}
     `;
 
     cell.addEventListener("click", () => {
@@ -1323,13 +1342,21 @@ function renderDayDetail() {
   }
 
   const dayPicks = picksByDate()[calSelectedDate] || [];
-  const settledPicks = dayPicks.filter((p) => p.winner);
-  const netUnits = settledPicks.reduce((sum, p) => sum + pickNetUnits(p), 0);
+  const settledMain = dayPicks.filter((p) => !isLongShotPick(p) && p.winner);
+  const settledLongShots = dayPicks.filter((p) => isLongShotPick(p) && p.winner);
+  const netUnits = settledMain.reduce((sum, p) => sum + pickNetUnits(p), 0);
+  const netUnitsWithLS = netUnits + settledLongShots.reduce((sum, p) => sum + pickNetUnits(p), 0);
+
+  let headingText = `Picks for ${calSelectedDate}`;
+  if (settledMain.length) {
+    headingText += ` — ${netUnits >= 0 ? "+" : ""}${netUnits.toFixed(2)} units`;
+    if (settledLongShots.length) {
+      headingText += ` (with LS: ${netUnitsWithLS >= 0 ? "+" : ""}${netUnitsWithLS.toFixed(2)})`;
+    }
+  }
 
   const heading = document.createElement("h3");
-  heading.textContent = settledPicks.length
-    ? `Picks for ${calSelectedDate} — ${netUnits >= 0 ? "+" : ""}${netUnits.toFixed(2)} units`
-    : `Picks for ${calSelectedDate}`;
+  heading.textContent = headingText;
   root.innerHTML = "";
   root.appendChild(heading);
 
