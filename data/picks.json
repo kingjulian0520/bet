@@ -3495,6 +3495,40 @@
           "stat": "Rush Yards"
         }
       ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Zach Ertz Over 10.5 Receiving Yards + Kyle Monangai Over 9.5 Rush Attempts",
+      "date": "2026-09-28",
+      "start_time": "2026-09-29T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 3.6,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Zach Ertz",
+          "opponent": "Chicago Bears",
+          "side": "Over",
+          "line": 10.5,
+          "stat": "Rec. Yards"
+        },
+        {
+          "type": "over_under",
+          "player": "Kyle Monangai",
+          "opponent": "Chicago Bears",
+          "side": "Over",
+          "line": 9.5,
+          "stat": "Rush Att."
+        }
+      ]
     }
   ]
 }
