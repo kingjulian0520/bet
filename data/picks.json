@@ -424,7 +424,8 @@
       ],
       "sources": [
         "Reuses the research already cited on each leg's own Picks tab entry."
-      ]
+      ],
+      "actual_multiplier": 3.53
     },
     {
       "sport": "Parlays",
@@ -469,7 +470,8 @@
       ],
       "sources": [
         "Reuses the research already cited on each leg's own Picks tab entry."
-      ]
+      ],
+      "actual_multiplier": 4.41
     }
   ],
   "settled": [
