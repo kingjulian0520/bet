@@ -675,6 +675,7 @@ async function main() {
   wireCalendar();
   wireLadderNav();
   wireDisplayModeToggle();
+  wireBreakdownModal();
   wireAuthUI();
   wireAccountMenu();
   wirePasswordRecovery();
@@ -771,6 +772,7 @@ function renderAll() {
   renderDayFilterBar();
   renderPicks();
   renderLongShots();
+  renderPrizePicks();
   renderExposureSummary();
   renderCalendar();
   renderLadder();
@@ -1045,6 +1047,7 @@ function renderPicks() {
 
   let visiblePicks =
     selectedDayFilter === "all" ? currentPicks : currentPicks.filter((p) => p.date === selectedDayFilter);
+  visiblePicks = visiblePicks.filter((p) => !isPrizePicksPick(p));
   if (activeSportFilters.size > 0) {
     visiblePicks = visiblePicks.filter((p) => activeSportFilters.has(sportGroup(p.sport)));
   }
@@ -1118,6 +1121,22 @@ function renderLongShots() {
 
   root.innerHTML = "";
   for (const pick of currentLongShots) {
+    root.appendChild(renderCard(pick));
+  }
+}
+
+function renderPrizePicks() {
+  const root = document.getElementById("prizepicks-root");
+  if (!root) return;
+
+  const items = currentPicks.filter(isPrizePicksPick);
+  if (items.length === 0) {
+    root.innerHTML = '<p class="empty-state">No PrizePicks picks yet — waiting on a reliable esports stats source.</p>';
+    return;
+  }
+
+  root.innerHTML = "";
+  for (const pick of items) {
     root.appendChild(renderCard(pick));
   }
 }
@@ -1327,6 +1346,129 @@ function isLongShotPick(pick) {
   return /long shot/i.test(pick.matchup || "");
 }
 
+// PrizePicks (esports parlay) entries live in the "picks"/"settled" arrays
+// like everything else, tagged with this exact sport string specifically so
+// they never collide with isLongShotPick's own "Parlays" check.
+function isPrizePicksPick(pick) {
+  return pick.sport === "Esports Parlays";
+}
+
+// Groups a list of picks (any mix of picks/long_shots/prizepicks, settled
+// or not) into the three tab categories plus a per-sport net total, for the
+// Calendar's compact "Total winnings" + "see full detailed breakdown"
+// bubble. Only settled entries (a winner is known) contribute - unsettled
+// ones have no result yet, so they're excluded rather than counted as 0.
+function computeBreakdown(picksList) {
+  const settled = picksList.filter((p) => p.winner);
+
+  const sumBucket = (arr) => ({
+    net: arr.reduce((sum, p) => sum + pickNetUnits(p), 0),
+    isExact: arr.length ? arr.every(pickUnitsAreExact) : true,
+    count: arr.length,
+  });
+
+  const picksOnly = [];
+  const longshots = [];
+  const prizepicks = [];
+  for (const p of settled) {
+    if (isPrizePicksPick(p)) prizepicks.push(p);
+    else if (isLongShotPick(p)) longshots.push(p);
+    else picksOnly.push(p);
+  }
+
+  const bySport = {};
+  for (const p of settled) {
+    const sport = p.sport || "Other";
+    if (!bySport[sport]) bySport[sport] = [];
+    bySport[sport].push(p);
+  }
+  const sportRows = Object.keys(bySport)
+    .map((sport) => ({ sport, ...sumBucket(bySport[sport]) }))
+    .sort((a, b) => b.net - a.net);
+
+  return {
+    total: sumBucket(settled),
+    picks: sumBucket(picksOnly),
+    longshots: sumBucket(longshots),
+    prizepicks: sumBucket(prizepicks),
+    bySport: sportRows,
+    hasAny: settled.length > 0,
+  };
+}
+
+function formatBreakdownAmount(bucket, unitValue, showDollars) {
+  if (bucket.count === 0) return showDollars ? "$0" : "0 units";
+  return showDollars
+    ? formatDollarsSigned(bucket.net * unitValue, bucket.isExact)
+    : `${formatUnitsSigned(bucket.net, bucket.isExact)}u`;
+}
+
+function wireBreakdownModal() {
+  document.getElementById("breakdown-modal-close").addEventListener("click", closeBreakdownModal);
+  document.getElementById("breakdown-modal-backdrop").addEventListener("click", (e) => {
+    if (e.target.id === "breakdown-modal-backdrop") closeBreakdownModal();
+  });
+}
+
+function closeBreakdownModal() {
+  document.getElementById("breakdown-modal-backdrop").hidden = true;
+}
+
+function openBreakdownModal(title, breakdown) {
+  const backdrop = document.getElementById("breakdown-modal-backdrop");
+  const titleEl = document.getElementById("breakdown-modal-title");
+  const contentEl = document.getElementById("breakdown-modal-content");
+  titleEl.textContent = title;
+
+  if (!breakdown.hasAny) {
+    contentEl.innerHTML = `<p class="empty-state">Nothing settled yet in this window.</p>`;
+    backdrop.hidden = false;
+    return;
+  }
+
+  const unitValue = getUnitValue();
+  const showDollars = displayMode === "dollars" && unitValue;
+  const amtClass = (net) => (net > 0 ? "won-amt" : net < 0 ? "lost-amt" : "neutral-amt");
+
+  const byTypeRows = [
+    ["Picks", breakdown.picks],
+    ["Long Shots", breakdown.longshots],
+    ["PrizePicks", breakdown.prizepicks],
+  ]
+    .filter(([, b]) => b.count > 0)
+    .map(
+      ([label, b]) => `
+        <div class="breakdown-row">
+          <span>${label} (${b.count})</span>
+          <span class="amount ${amtClass(b.net)}">${formatBreakdownAmount(b, unitValue, showDollars)}</span>
+        </div>`
+    )
+    .join("");
+
+  const sportRows = breakdown.bySport
+    .map(
+      (row) => `
+        <div class="breakdown-row">
+          <span>${escapeHtml(row.sport)} (${row.count})</span>
+          <span class="amount ${amtClass(row.net)}">${formatBreakdownAmount(row, unitValue, showDollars)}</span>
+        </div>`
+    )
+    .join("");
+
+  contentEl.innerHTML = `
+    <div class="breakdown-section">
+      <h4>By type</h4>
+      ${byTypeRows}
+    </div>
+    <div class="breakdown-section">
+      <h4>By sport (highest first)</h4>
+      ${sportRows}
+    </div>
+  `;
+
+  backdrop.hidden = false;
+}
+
 function picksByDate() {
   const map = {};
   const add = (p) => {
@@ -1360,6 +1502,27 @@ function renderCalendar() {
   const byDate = picksByDate();
   const unitValue = getUnitValue();
   const showDollars = displayMode === "dollars" && unitValue;
+
+  const monthPrefix = `${calViewYear}-${pad2(calViewMonth + 1)}-`;
+  const monthPicks = [...currentSettled, ...currentPicks, ...currentLongShots].filter((p) =>
+    (p.date || "").startsWith(monthPrefix)
+  );
+  const monthBreakdown = computeBreakdown(monthPicks);
+  const summaryEl = document.getElementById("cal-month-summary");
+  if (summaryEl) {
+    if (monthBreakdown.hasAny) {
+      summaryEl.innerHTML = `
+        <span class="summary-total">Total winnings this month: ${formatBreakdownAmount(monthBreakdown.total, unitValue, showDollars)}</span>
+        <button class="breakdown-btn" type="button">See full detailed breakdown</button>
+      `;
+      summaryEl.querySelector(".breakdown-btn").addEventListener("click", () => {
+        openBreakdownModal(`Breakdown for ${MONTH_NAMES[calViewMonth]} ${calViewYear}`, monthBreakdown);
+      });
+    } else {
+      summaryEl.innerHTML = "";
+    }
+  }
+
   const firstWeekday = new Date(calViewYear, calViewMonth, 1).getDay();
   const daysInMonth = new Date(calViewYear, calViewMonth + 1, 0).getDate();
 
@@ -1441,32 +1604,27 @@ function renderDayDetail() {
   }
 
   const dayPicks = picksByDate()[calSelectedDate] || [];
-  const settledMain = dayPicks.filter((p) => !isLongShotPick(p) && p.winner);
-  const settledLongShots = dayPicks.filter((p) => isLongShotPick(p) && p.winner);
-  const netUnits = settledMain.reduce((sum, p) => sum + pickNetUnits(p), 0);
-  const netUnitsWithLS = netUnits + settledLongShots.reduce((sum, p) => sum + pickNetUnits(p), 0);
-  const mainIsExact = settledMain.every(pickUnitsAreExact);
-  const withLSIsExact = mainIsExact && settledLongShots.every(pickUnitsAreExact);
+  const breakdown = computeBreakdown(dayPicks);
   const unitValue = getUnitValue();
   const showDollars = displayMode === "dollars" && unitValue;
 
-  let headingText = `Picks for ${calSelectedDate}`;
-  if (settledMain.length) {
-    headingText += ` — ${
-      showDollars ? formatDollarsSigned(netUnits * unitValue, mainIsExact) : `${formatUnitsSigned(netUnits, mainIsExact)} units`
-    }`;
-    if (settledLongShots.length) {
-      const lsNet = showDollars
-        ? formatDollarsSigned(netUnitsWithLS * unitValue, withLSIsExact)
-        : formatUnitsSigned(netUnitsWithLS, withLSIsExact);
-      headingText += ` (with LS: ${lsNet})`;
-    }
-  }
-
   const heading = document.createElement("h3");
-  heading.textContent = headingText;
+  heading.textContent = `Picks for ${calSelectedDate}`;
   root.innerHTML = "";
   root.appendChild(heading);
+
+  if (breakdown.hasAny) {
+    const summaryBar = document.createElement("div");
+    summaryBar.className = "summary-bar";
+    summaryBar.innerHTML = `
+      <span class="summary-total">Total winnings: ${formatBreakdownAmount(breakdown.total, unitValue, showDollars)}</span>
+      <button class="breakdown-btn" type="button">See full detailed breakdown</button>
+    `;
+    summaryBar.querySelector(".breakdown-btn").addEventListener("click", () => {
+      openBreakdownModal(`Breakdown for ${calSelectedDate}`, breakdown);
+    });
+    root.appendChild(summaryBar);
+  }
 
   if (dayPicks.length === 0) {
     const p = document.createElement("p");

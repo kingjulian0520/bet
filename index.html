@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Close Calls</title>
-<link rel="stylesheet" href="style.css?v=31">
+<link rel="stylesheet" href="style.css?v=32">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css">
 </head>
 <body>
@@ -153,6 +153,7 @@
       <span id="cal-month-label" class="cal-month-label"></span>
       <button id="cal-next" class="secondary-btn" aria-label="Next month">›</button>
     </div>
+    <div id="cal-month-summary" class="summary-bar"></div>
     <div class="calendar-legend">
       <span><i class="legend-dot win"></i> Winning day</span>
       <span><i class="legend-dot loss"></i> Losing day</span>
@@ -257,6 +258,16 @@
   </div>
 </div>
 
+<div id="breakdown-modal-backdrop" class="modal-backdrop" hidden>
+  <div class="modal account-panel">
+    <div class="account-panel-header">
+      <h3 id="breakdown-modal-title">Breakdown</h3>
+      <button id="breakdown-modal-close" class="account-panel-close" aria-label="Close">&times;</button>
+    </div>
+    <div id="breakdown-modal-content"></div>
+  </div>
+</div>
+
 <div id="sport-filter-backdrop" class="modal-backdrop" hidden>
   <div class="modal sport-filter-modal">
     <div class="account-panel-header">
@@ -285,6 +296,6 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
-<script type="module" src="script.js?v=46"></script>
+<script type="module" src="script.js?v=47"></script>
 </body>
 </html>

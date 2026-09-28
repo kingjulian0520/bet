@@ -159,6 +159,36 @@ body {
   }
 }
 
+/* Shared base for every modal-backdrop/modal pair on the site (auth, account
+   panel, sport filter, avatar crop, password reset, breakdown) - the
+   individual .foo-modal classes below only add their own size/spacing on
+   top of this. */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.modal-backdrop[hidden] {
+  display: none;
+}
+
+.modal {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 420px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
 .auth-modal {
   max-width: 380px;
   padding: 2rem 1.75rem 1.75rem;
@@ -518,6 +548,68 @@ body {
 .exposure-summary[hidden] {
   display: none;
 }
+
+.summary-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 0.5rem 0 0.9rem;
+  font-size: 0.88rem;
+}
+
+.summary-bar .summary-total {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.summary-bar .breakdown-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.summary-bar .breakdown-btn:hover {
+  border-color: var(--accent);
+}
+
+.breakdown-section {
+  margin-bottom: 1.2rem;
+}
+
+.breakdown-section:last-child {
+  margin-bottom: 0;
+}
+
+.breakdown-section h4 {
+  margin: 0 0 0.5rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.breakdown-row:last-child {
+  border-bottom: none;
+}
+
+.breakdown-row .amount.won-amt { color: var(--lean-high); font-weight: 600; }
+.breakdown-row .amount.lost-amt { color: var(--danger); font-weight: 600; }
+.breakdown-row .amount.neutral-amt { color: var(--muted); }
 
 .tabs {
   display: flex;
