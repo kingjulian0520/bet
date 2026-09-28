@@ -27,54 +27,6 @@
       "start_time": "2026-09-29T00:15:00Z"
     },
     {
-      "sport": "NFL",
-      "matchup": "Baltimore Ravens vs Dallas Cowboys",
-      "date": "2026-09-27",
-      "favorite": "Baltimore Ravens",
-      "estimated_probability": {
-        "Baltimore Ravens": 60,
-        "Dallas Cowboys": 40
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "Cowboys defense ranks 29th in opponent EPA/play and 31st in opponent success rate, with a long-standing weak spot against the run - directly into a Ravens offense built around Derrick Henry.",
-        "Dallas will be without 4 defensive players for this game, including 3 Week 1 starters (S Malik Hooker, CB Cobie Durant, LB DeMarvion Overshown) plus top safety backup PJ Locke.",
-        "Ravens got a positive pregame update with WR Zay Flowers active despite a hamstring issue; Lamar Jackson is playing through a limited-practice elbow issue but has vowed to play.",
-        "Market has Ravens only -3.5 given the extent of Dallas's defensive absences, suggesting the line hasn't fully caught up to the news - kept at a modest lean rather than higher given Lamar's elbow and the neutral-site (Rio de Janeiro) travel wrinkle for both teams."
-      ],
-      "sources": [
-        "https://www.sharpfootballanalysis.com/analysis/dallas-cowboys-defense/",
-        "https://atozsports.com/nfl/dallas-cowboys-news/injury-updates-week-3-vs-ravens/",
-        "https://www.foxnews.com/sports/lamar-jackson-ravens-injury-report-vows-to-play-sunday"
-      ],
-      "start_time": "2026-09-27T20:25:00Z"
-    },
-    {
-      "sport": "WNBA",
-      "matchup": "Dallas Wings vs Golden State Valkyries",
-      "date": "2026-09-27",
-      "favorite": "Golden State Valkyries",
-      "estimated_probability": {
-        "Golden State Valkyries": 70,
-        "Dallas Wings": 30
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 1.25,
-      "reasoning": [
-        "Golden State swept the regular-season series 3-0, winning by an average of 12.3 points per game - a real, repeated result, not a single sample.",
-        "Valkyries have the league's best defense (75.1 opp. PPG, 7.6 points better than the next-best team) - a specific statistical mismatch against a Dallas offense that ranks top-5 but has no prior success solving this defense.",
-        "Golden State has home court (Chase Center) for the full first-round series.",
-        "Sized a notch below the market-implied probability (~74% at -290/-7.5) rather than chasing the number."
-      ],
-      "sources": [
-        "https://www.wnba.com/news/2026-playoffs-series-preview-first-round",
-        "https://sports.betmgm.com/en/blog/wnba/wings-vs-valkyries-prediction-game-1-2026-playoffs-bm23/",
-        "https://winsidr.com/2026/09/2026-wnba-playoffs-preview-round-1-golden-state-valkyries-vs-dallas-wings/"
-      ],
-      "start_time": "2026-09-28T01:00:00Z"
-    },
-    {
       "sport": "ATP Chengdu",
       "matchup": "Hubert Hurkacz vs Denis Shapovalov",
       "date": "2026-09-28",
@@ -97,30 +49,6 @@
         "https://www.atptour.com/en/news/chengdu-2026-sunday-report"
       ],
       "start_time": "2026-09-28T11:00:00Z"
-    },
-    {
-      "sport": "NFL Player Props",
-      "matchup": "Derrick Henry — Rushing Yards O/U 89.5 (Ravens vs Cowboys)",
-      "date": "2026-09-27",
-      "favorite": "Over 89.5",
-      "estimated_probability": {
-        "Over 89.5": 65,
-        "Under 89.5": 35
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 1,
-      "reasoning": [
-        "Henry has 212 rushing yards on 40 carries (5.3 YPC) through the first two games of the season - a real, sustained pace, not a one-game outlier.",
-        "Same underlying matchup edge as the Ravens moneyline pick, but a separate market: Cowboys rank 29th in the NFL against the run, allowing 5.0 yards per attempt and 347 rushing yards through two games.",
-        "Dallas is specifically missing LB DeMarvion Overshown, a real front-seven loss directly relevant to stopping the run.",
-        "Kept at a Lean rather than higher given single-game rushing totals carry real game-flow variance (score, weather, red zone usage can all cap volume)."
-      ],
-      "sources": [
-        "https://www.tonyspicks.com/2026/09/27/ravens-vs-cowboys-derrick-henry-over-89-5-rushing-yards-9-27-26/",
-        "https://www.hardrock.bet/news/ravens-vs-cowboys-best-player-props-td-bets-odds-for-nfl-brazil-game/",
-        "https://www.si.com/nfl/ravens/news/baltimore-ravens-derrick-henry-reflects-latest-milestone"
-      ],
-      "start_time": "2026-09-27T20:25:00Z"
     },
     {
       "sport": "ATP Chengdu Totals",
@@ -330,50 +258,6 @@
     }
   ],
   "long_shots": [
-    {
-      "sport": "Parlays",
-      "matchup": "3-Leg Long Shot: Valkyries ML + Eagles ML + Henry Rushing Over 89.5",
-      "date": "2026-09-27",
-      "start_time": "2026-09-27T20:25:00Z",
-      "favorite": "Hits",
-      "estimated_probability": {
-        "Hits": 30,
-        "Doesn't Hit": 70
-      },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.1,
-      "legs": [
-        {
-          "sport": "WNBA",
-          "matchup": "Dallas Wings vs Golden State Valkyries",
-          "date": "2026-09-27",
-          "side": "Golden State Valkyries",
-          "probability": 70
-        },
-        {
-          "sport": "NFL",
-          "matchup": "Philadelphia Eagles vs Chicago Bears",
-          "date": "2026-09-28",
-          "side": "Philadelphia Eagles",
-          "probability": 67
-        },
-        {
-          "sport": "NFL Player Props",
-          "matchup": "Derrick Henry — Rushing Yards O/U 89.5 (Ravens vs Cowboys)",
-          "date": "2026-09-27",
-          "side": "Over 89.5",
-          "probability": 65
-        }
-      ],
-      "reasoning": [
-        "Every leg is the SAME side already favored in today's main Picks tab (Valkyries 70%, Eagles 67%, Henry Over 89.5 at 65%) - none of these fight those picks, they're the exact same convictions stacked for a bigger payout.",
-        "Combined probability: 0.70 x 0.67 x 0.65 = ~30% - a real long shot built entirely from picks that are each a genuine Lean or better on their own, not from forcing anything new or shakier.",
-        "Spans two sports across two days (Sun WNBA/NFL prop, Mon NFL), so no single upset takes out more than its own leg."
-      ],
-      "sources": [
-        "Reuses the research already cited on each leg's own Picks tab entry."
-      ]
-    },
     {
       "sport": "Parlays",
       "matchup": "4-Leg Long Shot: Golden Knights ML + Oilers ML + Rublev ML + Medvedev ML",
@@ -3213,6 +3097,135 @@
       "winner": "Hits",
       "final_score": "All 6 legs won: Texas Tech 49-14 Sam Houston, Houston 42-28 Georgia Southern, Kentucky 45-21 South Alabama, Arizona 34-24 Washington State, Tulane 24-21 Southern Miss, LSU 35-6 Texas A&M",
       "settled_at": "2026-09-27T19:05:43.225149Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Baltimore Ravens vs Dallas Cowboys",
+      "date": "2026-09-27",
+      "favorite": "Baltimore Ravens",
+      "estimated_probability": {
+        "Baltimore Ravens": 60,
+        "Dallas Cowboys": 40
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Cowboys defense ranks 29th in opponent EPA/play and 31st in opponent success rate, with a long-standing weak spot against the run - directly into a Ravens offense built around Derrick Henry.",
+        "Dallas will be without 4 defensive players for this game, including 3 Week 1 starters (S Malik Hooker, CB Cobie Durant, LB DeMarvion Overshown) plus top safety backup PJ Locke.",
+        "Ravens got a positive pregame update with WR Zay Flowers active despite a hamstring issue; Lamar Jackson is playing through a limited-practice elbow issue but has vowed to play.",
+        "Market has Ravens only -3.5 given the extent of Dallas's defensive absences, suggesting the line hasn't fully caught up to the news - kept at a modest lean rather than higher given Lamar's elbow and the neutral-site (Rio de Janeiro) travel wrinkle for both teams."
+      ],
+      "sources": [
+        "https://www.sharpfootballanalysis.com/analysis/dallas-cowboys-defense/",
+        "https://atozsports.com/nfl/dallas-cowboys-news/injury-updates-week-3-vs-ravens/",
+        "https://www.foxnews.com/sports/lamar-jackson-ravens-injury-report-vows-to-play-sunday"
+      ],
+      "start_time": "2026-09-27T20:25:00Z",
+      "winner": "Baltimore Ravens",
+      "final_score": "Ravens 34, Cowboys 31 - Tyler Loop's 56-yard field goal as time expired, capping a 7-second final drive",
+      "settled_at": "2026-09-28T03:17:21.675411Z"
+    },
+    {
+      "sport": "NFL Player Props",
+      "matchup": "Derrick Henry — Rushing Yards O/U 89.5 (Ravens vs Cowboys)",
+      "date": "2026-09-27",
+      "favorite": "Over 89.5",
+      "estimated_probability": {
+        "Over 89.5": 65,
+        "Under 89.5": 35
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Henry has 212 rushing yards on 40 carries (5.3 YPC) through the first two games of the season - a real, sustained pace, not a one-game outlier.",
+        "Same underlying matchup edge as the Ravens moneyline pick, but a separate market: Cowboys rank 29th in the NFL against the run, allowing 5.0 yards per attempt and 347 rushing yards through two games.",
+        "Dallas is specifically missing LB DeMarvion Overshown, a real front-seven loss directly relevant to stopping the run.",
+        "Kept at a Lean rather than higher given single-game rushing totals carry real game-flow variance (score, weather, red zone usage can all cap volume)."
+      ],
+      "sources": [
+        "https://www.tonyspicks.com/2026/09/27/ravens-vs-cowboys-derrick-henry-over-89-5-rushing-yards-9-27-26/",
+        "https://www.hardrock.bet/news/ravens-vs-cowboys-best-player-props-td-bets-odds-for-nfl-brazil-game/",
+        "https://www.si.com/nfl/ravens/news/baltimore-ravens-derrick-henry-reflects-latest-milestone"
+      ],
+      "start_time": "2026-09-27T20:25:00Z",
+      "winner": "Under 89.5",
+      "final_score": "26 carries, 89 yards (2.4 YPC on all but one 29-yard run), 2 TD - landed exactly at 89, one half-yard under the line",
+      "actual_value": 89,
+      "settled_at": "2026-09-28T03:17:21.675411Z"
+    },
+    {
+      "sport": "WNBA",
+      "matchup": "Dallas Wings vs Golden State Valkyries",
+      "date": "2026-09-27",
+      "favorite": "Golden State Valkyries",
+      "estimated_probability": {
+        "Golden State Valkyries": 70,
+        "Dallas Wings": 30
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "Golden State swept the regular-season series 3-0, winning by an average of 12.3 points per game - a real, repeated result, not a single sample.",
+        "Valkyries have the league's best defense (75.1 opp. PPG, 7.6 points better than the next-best team) - a specific statistical mismatch against a Dallas offense that ranks top-5 but has no prior success solving this defense.",
+        "Golden State has home court (Chase Center) for the full first-round series.",
+        "Sized a notch below the market-implied probability (~74% at -290/-7.5) rather than chasing the number."
+      ],
+      "sources": [
+        "https://www.wnba.com/news/2026-playoffs-series-preview-first-round",
+        "https://sports.betmgm.com/en/blog/wnba/wings-vs-valkyries-prediction-game-1-2026-playoffs-bm23/",
+        "https://winsidr.com/2026/09/2026-wnba-playoffs-preview-round-1-golden-state-valkyries-vs-dallas-wings/"
+      ],
+      "start_time": "2026-09-28T01:00:00Z",
+      "winner": "Golden State Valkyries",
+      "final_score": "Valkyries routed the Wings in Game 1 (led 87-56 entering the final stretch of the 4th) - Zandalasini 22, Hayes 21, Williams 20",
+      "settled_at": "2026-09-28T03:17:21.675411Z"
+    },
+    {
+      "sport": "Parlays",
+      "matchup": "3-Leg Long Shot: Valkyries ML + Eagles ML + Henry Rushing Over 89.5",
+      "date": "2026-09-27",
+      "start_time": "2026-09-27T20:25:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 30,
+        "Doesn't Hit": 70
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.1,
+      "legs": [
+        {
+          "sport": "WNBA",
+          "matchup": "Dallas Wings vs Golden State Valkyries",
+          "date": "2026-09-27",
+          "side": "Golden State Valkyries",
+          "probability": 70
+        },
+        {
+          "sport": "NFL",
+          "matchup": "Philadelphia Eagles vs Chicago Bears",
+          "date": "2026-09-28",
+          "side": "Philadelphia Eagles",
+          "probability": 67
+        },
+        {
+          "sport": "NFL Player Props",
+          "matchup": "Derrick Henry — Rushing Yards O/U 89.5 (Ravens vs Cowboys)",
+          "date": "2026-09-27",
+          "side": "Over 89.5",
+          "probability": 65
+        }
+      ],
+      "reasoning": [
+        "Every leg is the SAME side already favored in today's main Picks tab (Valkyries 70%, Eagles 67%, Henry Over 89.5 at 65%) - none of these fight those picks, they're the exact same convictions stacked for a bigger payout.",
+        "Combined probability: 0.70 x 0.67 x 0.65 = ~30% - a real long shot built entirely from picks that are each a genuine Lean or better on their own, not from forcing anything new or shakier.",
+        "Spans two sports across two days (Sun WNBA/NFL prop, Mon NFL), so no single upset takes out more than its own leg."
+      ],
+      "sources": [
+        "Reuses the research already cited on each leg's own Picks tab entry."
+      ],
+      "winner": "Doesn't Hit",
+      "final_score": "Settled early: Henry finished at exactly 89 rushing yards, under the 89.5 line, which alone dooms the parlay regardless of the Eagles leg (not yet played) - the Valkyries leg had already won",
+      "settled_at": "2026-09-28T03:17:21.675411Z"
     }
   ]
 }
