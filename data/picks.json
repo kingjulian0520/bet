@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T13:15:00Z",
+  "generated_at": "2026-09-28T14:00:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
@@ -219,6 +219,124 @@
         "https://stats.tennismylife.org/players/alex-michelsen/season/2026",
         "https://sports.yahoo.com/articles/carlos-alcaraz-remaining-2026-schedule-130053663.html",
         "https://en.wikipedia.org/wiki/2026_Japan_Open_Tennis_Championships"
+      ]
+    },
+    {
+      "sport": "WNBA",
+      "matchup": "Las Vegas Aces vs Indiana Fever",
+      "date": "2026-09-29",
+      "start_time": "2026-09-29T22:30:00Z",
+      "favorite": "Las Vegas Aces",
+      "estimated_probability": {
+        "Las Vegas Aces": 55,
+        "Indiana Fever": 45
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Game 2 of a best-of-3 first-round series; Aces won Game 1 102-85 behind A'ja Wilson's 38pts/16reb/4blk on 15-19 FG.",
+        "Vegas got a balanced attack in Game 1 - Jackie Young (21p/10a) and Chelsea Gray (14p/8a) combined with Wilson for 73 of the team's 102 points.",
+        "Indiana's stars were inefficient in the loss despite decent counting stats: Caitlin Clark had her first career playoff double-double (15p/10a) but shot 6-18 FG/3-10 3PT, and Kelsey Mitchell scored just 12 on 4-16 FG.",
+        "Aliyah Boston (Indiana) is managing a recurring right lower-leg issue - day-to-day, expected to play but not fully right.",
+        "The market has actually flipped to Indiana -1.5 at home, pricing in positive regression for Clark/Mitchell and the home crowd - a legitimate consideration, which is why this stays a true coin flip rather than a lean toward Vegas."
+      ],
+      "sources": [
+        "https://www.si.com/betting/fever-vs-aces-prediction-odds-best-prop-bet-for-wnba-playoffs-game-1-2026",
+        "https://fever.wnba.com/news/game-recap-fever-aces-260927",
+        "https://sports.yahoo.com/articles/know-aliyah-bostons-injury-status-003737726.html",
+        "https://www.sportsbettingdime.com/news/wnba/indiana-fever-vs-las-vegas-aces-prediction-player-prop-picks-best-odds-for-game-2/"
+      ]
+    },
+    {
+      "sport": "WNBA",
+      "matchup": "Minnesota Lynx vs New York Liberty",
+      "date": "2026-09-29",
+      "start_time": "2026-09-30T00:30:00Z",
+      "favorite": "New York Liberty",
+      "estimated_probability": {
+        "New York Liberty": 75,
+        "Minnesota Lynx": 25
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "Game 2 of a best-of-3 first-round series; Liberty won Game 1 91-75 behind Breanna Stewart's 34pts/12reb/6ast, and already won the regular-season series 2-1 including a 93-81 road win at Minnesota on Sep 18.",
+        "Minnesota's two best players were compromised in Game 1: Napheesa Collier (still building back up from offseason ankle surgery, played only 14 games this season) got into early foul trouble and finished a quiet 12pts/5reb on 6-14 FG; Rookie of the Year Olivia Miles battled a late-season left calf issue and shot poorly in her playoff debut.",
+        "No No. 1 seed has lost a first-round series to a No. 8 seed since the WNBA removed first-round byes after 2021 - Minnesota faces real elimination pressure tonight.",
+        "Market odds (Liberty -350 ML, -7.5 spread) land close to this independent 75% read, so this isn't a contrarian call.",
+        "Kept at 'Strong lean' rather than higher since Minnesota has been an excellent road team this season (17-4) and is now maximally desperate - a letdown from Liberty at home is a live, real risk."
+      ],
+      "sources": [
+        "https://www.espn.com/wnba/story/_/id/50045232/liberty-push-no-1-seed-lynx-brink-stunning-game-1-upset",
+        "https://www.startribune.com/minnesota-lynx-new-york-liberty-game-2-wnba-playoffs-game-time-channel-olivia-miles-napheesa-collier/601892379",
+        "https://www.si.com/onsi/womens-fastbreak/wnba/napheesa-collier-must-meet-be-more-assertive-demand-to-save-lynx-s-season-01m3kvch2d0w",
+        "https://www.actionnetwork.com/wnba/minnesota-lynx-game-2-preview-odds-picks-vs-new-york-liberty"
+      ]
+    },
+    {
+      "sport": "MLB Totals",
+      "matchup": "New York Yankees vs Boston Red Sox — Total Runs O/U 6.5",
+      "date": "2026-09-29",
+      "start_time": "2026-09-30T00:00:00Z",
+      "favorite": "Under 6.5",
+      "estimated_probability": {
+        "Under 6.5": 58,
+        "Over 6.5": 42
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "AL Wild Card Game 1, winner-take-all environment - both managers will lean hard on bullpens to protect any lead rather than let the game get away.",
+        "Elite pitching matchup: Cam Schlittler (NYY) enters at 14-6, 1.95 ERA; Sonny Gray (BOS) at 18-5, 2.72 ERA - two of the better ERAs in the league.",
+        "Total is priced tightly (O -112/U -108), reflecting the market's own respect for both starters."
+      ],
+      "sources": [
+        "https://www.si.com/betting/red-sox-vs-yankees-opening-odds-for-american-league-wild-card-game-1-new-york-favored-with-schlittler-starting",
+        "https://thegruelingtruth.com/baseball/news/boston-red-sox-at-new-york-yankees-2026-wild-card-game-1-preview-prediction-betting-odds-4-prop-bets/"
+      ]
+    },
+    {
+      "sport": "MLB Totals",
+      "matchup": "Atlanta Braves vs Philadelphia Phillies — Total Runs O/U 7",
+      "date": "2026-09-29",
+      "start_time": "2026-09-29T18:00:00Z",
+      "favorite": "Under 7",
+      "estimated_probability": {
+        "Under 7": 60,
+        "Over 7": 40
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Chris Sale starts for Atlanta off a Cy Young-caliber year: 14-9, 2.16 ERA, 0.98 WHIP, 200 K in 162.2 IP.",
+        "Atlanta outscored Philadelphia 66-43 across the season series while winning 9 of 13 meetings, suggesting the Braves' pitching staff has had this Phillies lineup's number beyond just Sale.",
+        "Multiple independent preview sites landed on the same Under recommendation."
+      ],
+      "sources": [
+        "https://www.si.com/betting/mlb-wild-card-round-opening-odds-for-every-series-game-1-matchups-2026",
+        "https://www.predictem.com/mlb/phillies-vs-braves-nl-wild-card-game-1-picks-odds-prediction/"
+      ]
+    },
+    {
+      "sport": "MLB Totals",
+      "matchup": "Houston Astros vs Chicago White Sox — Total Runs O/U 8.5",
+      "date": "2026-09-29",
+      "start_time": "2026-09-29T20:00:00Z",
+      "favorite": "Over 8.5",
+      "estimated_probability": {
+        "Over 8.5": 58,
+        "Under 8.5": 42
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Houston burned through its entire rotation (Brown, Wesneski, Lambert) winning the AL West on the final weekend - none will be on normal rest, and multiple beat previews expect a bullpen/opener game in this win-or-go-home spot, meaning thinner, more exploitable pitching than a normal Game 1.",
+        "Both teams have run hot to the Over all season: White Sox 92-67-2 to the Over (57.9%), Astros 79-73-9 (52%).",
+        "Jeremy Peña (.353, 5 HR over Houston's final 12 games) and Christian Walker (1.167 OPS, 4 HR in his last 8 games) are both scorching hot, adding to the offensive-environment case."
+      ],
+      "sources": [
+        "https://vsin.com/mlb/white-sox-vs-astros-al-wild-card-round-prediction-and-preview/",
+        "https://www.sportsbettingdime.com/news/mlb/white-sox-astros-picks-props-target/"
       ]
     }
   ],
