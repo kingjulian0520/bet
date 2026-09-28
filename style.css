@@ -1069,6 +1069,39 @@ main {
 .result-dollars.lost { color: var(--danger); }
 .result-dollars.push { color: var(--muted); }
 
+.ladder-stake {
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px dashed var(--border);
+  font-size: 0.88rem;
+}
+
+.ladder-stake .stake-in {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.ladder-stake .stake-out {
+  display: block;
+  margin-top: 0.3rem;
+  font-weight: 700;
+}
+
+.ladder-stake .stake-out.won { color: var(--lean-high); }
+.ladder-stake .stake-out.lost { color: var(--danger); }
+
+.ladder-empty-day {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.ladder-empty-day .ladder-running {
+  display: block;
+  margin-top: 0.4rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
 .page-footer {
   max-width: 780px;
   margin: 2rem auto 0;
@@ -1085,7 +1118,8 @@ main {
   }
 }
 
-.calendar-header {
+.calendar-header,
+.ladder-header {
   display: flex;
   align-items: center;
   justify-content: center;

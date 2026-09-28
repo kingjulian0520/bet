@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Close Calls</title>
-<link rel="stylesheet" href="style.css?v=30">
+<link rel="stylesheet" href="style.css?v=31">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css">
 </head>
 <body>
@@ -48,6 +48,7 @@
   <button class="tab-btn active" data-tab="picks" role="tab" aria-selected="true">Picks</button>
   <button class="tab-btn" data-tab="longshots" role="tab" aria-selected="false">Long Shots</button>
   <button class="tab-btn" data-tab="prizepicks" role="tab" aria-selected="false">PrizePicks</button>
+  <button class="tab-btn" data-tab="ladder" role="tab" aria-selected="false">Ladder</button>
   <button class="tab-btn" data-tab="calendar" role="tab" aria-selected="false">Calendar</button>
 </nav>
 
@@ -124,6 +125,25 @@
     </p>
     <div id="prizepicks-root">
       <p class="empty-state">No PrizePicks picks yet — waiting on a reliable esports stats source.</p>
+    </div>
+  </section>
+
+  <section id="ladder" class="tab-panel">
+    <p class="panel-intro">
+      One moneyline lock a day, compounding. Start at 1 unit - win, and the
+      payout rolls straight into the next day's pick; lose, and it resets to
+      1 unit. Only strong favorites with a real sportsbook multiplier between
+      1.2x and 1.4x, in matches where a single loss actually means something
+      (tennis, other single-elimination formats) - never a long regular
+      season where one result barely moves the needle.
+    </p>
+    <div class="ladder-header">
+      <button id="ladder-prev" class="secondary-btn" aria-label="Previous day">‹</button>
+      <span id="ladder-date-label" class="cal-month-label"></span>
+      <button id="ladder-next" class="secondary-btn" aria-label="Next day">›</button>
+    </div>
+    <div id="ladder-root">
+      <p class="empty-state">No ladder pick yet.</p>
     </div>
   </section>
 
@@ -265,6 +285,6 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
-<script type="module" src="script.js?v=45"></script>
+<script type="module" src="script.js?v=46"></script>
 </body>
 </html>

@@ -53,6 +53,7 @@ let rawLongShots = [];
 let currentPicks = [];
 let currentLongShots = [];
 let currentSettled = [];
+let currentLadder = [];
 
 // currentUser/profileCache are set once Supabase resolves the login state.
 // Until then (and always, if accounts aren't configured or the visitor
@@ -672,6 +673,7 @@ function wireAccountMenu() {
 async function main() {
   wireTabs();
   wireCalendar();
+  wireLadderNav();
   wireDisplayModeToggle();
   wireAuthUI();
   wireAccountMenu();
@@ -717,6 +719,7 @@ async function main() {
   rawPicks = data.picks || [];
   rawLongShots = data.long_shots || [];
   currentSettled = data.settled || [];
+  currentLadder = data.ladder || [];
   prunePicks();
 
   const todayStr = todayDateStr();
@@ -770,6 +773,7 @@ function renderAll() {
   renderLongShots();
   renderExposureSummary();
   renderCalendar();
+  renderLadder();
   renderLockOverlays();
 }
 
@@ -1475,6 +1479,135 @@ function renderDayDetail() {
   for (const pick of dayPicks) {
     root.appendChild(renderCard(pick));
   }
+}
+
+// ---------- ladder ----------
+
+// A single day-at-a-time view (not a month grid): one moneyline "lock" per
+// day, compounding forward from 1 unit. A win rolls the payout (via that
+// entry's own actual_multiplier - a real sportsbook price, never an
+// estimate) into the next day's stake; a loss resets the climb back to 1
+// unit. Days with no entry just carry the running stake forward unchanged.
+
+let ladderViewDate = null;
+
+function wireLadderNav() {
+  document.getElementById("ladder-prev").addEventListener("click", () => shiftLadderView(-1));
+  document.getElementById("ladder-next").addEventListener("click", () => shiftLadderView(1));
+}
+
+function addDaysToDateStr(dateStr, days) {
+  const [y, m, d] = dateStr.split("-").map(Number);
+  const dt = new Date(y, m - 1, d);
+  dt.setDate(dt.getDate() + days);
+  return `${dt.getFullYear()}-${pad2(dt.getMonth() + 1)}-${pad2(dt.getDate())}`;
+}
+
+function shiftLadderView(days) {
+  const bounds = ladderBounds();
+  const next = addDaysToDateStr(ladderViewDate || bounds.latest, days);
+  if (next < bounds.earliest || next > bounds.latest) return;
+  ladderViewDate = next;
+  renderLadder();
+}
+
+function ladderBounds() {
+  const today = todayDateStr();
+  const dates = currentLadder.map((e) => e.date).filter(Boolean);
+  const earliest = dates.length ? dates.reduce((a, b) => (a < b ? a : b)) : today;
+  return { earliest, latest: today };
+}
+
+// Walks every ladder entry in date order, compounding the stake: a win
+// multiplies the running stake by that entry's real actual_multiplier and
+// carries it into the next entry; a loss resets the next entry back to 1
+// unit; a push carries the same stake forward unchanged. Returns entries
+// augmented with stakeIn/stakeOut/busted.
+function ladderProgression() {
+  const sorted = [...currentLadder].sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
+  let running = 1;
+  const out = [];
+  for (const entry of sorted) {
+    const stakeIn = running;
+    let stakeOut = null;
+    let busted = false;
+    if (entry.winner) {
+      const isPush = entry.winner === "push" || entry.winner === "Push";
+      const isWin = !isPush && entry.winner === entry.favorite;
+      if (isWin) {
+        stakeOut = stakeIn * (entry.actual_multiplier || 1);
+        running = stakeOut;
+      } else if (isPush) {
+        stakeOut = stakeIn;
+      } else {
+        stakeOut = 0;
+        busted = true;
+        running = 1;
+      }
+    }
+    out.push({ entry, stakeIn, stakeOut, busted });
+  }
+  return out;
+}
+
+function formatUnitsPlain(n) {
+  return `${formatMoney(n)} unit${Math.round(n * 100) === 100 ? "" : "s"}`;
+}
+
+function renderLadder() {
+  const label = document.getElementById("ladder-date-label");
+  const root = document.getElementById("ladder-root");
+  const prevBtn = document.getElementById("ladder-prev");
+  const nextBtn = document.getElementById("ladder-next");
+  if (!label || !root) return;
+
+  const bounds = ladderBounds();
+  if (!ladderViewDate) ladderViewDate = bounds.latest;
+  if (ladderViewDate < bounds.earliest) ladderViewDate = bounds.earliest;
+  if (ladderViewDate > bounds.latest) ladderViewDate = bounds.latest;
+
+  const [y, m, d] = ladderViewDate.split("-").map(Number);
+  label.textContent = `${MONTH_NAMES[m - 1]} ${d}, ${y}`;
+  prevBtn.disabled = ladderViewDate <= bounds.earliest;
+  nextBtn.disabled = ladderViewDate >= bounds.latest;
+
+  const progression = ladderProgression();
+  const row = progression.find((r) => r.entry.date === ladderViewDate);
+  const unitValue = getUnitValue();
+  const showDollars = displayMode === "dollars" && unitValue;
+
+  root.innerHTML = "";
+
+  if (!row) {
+    const priorRows = progression.filter((r) => r.entry.date < ladderViewDate);
+    const last = priorRows[priorRows.length - 1];
+    const running = last ? (last.stakeOut ?? last.stakeIn) : 1;
+    const runningText = showDollars ? `$${formatMoney(running * unitValue)}` : formatUnitsPlain(running);
+    const p = document.createElement("p");
+    p.className = "empty-state ladder-empty-day";
+    p.innerHTML = `No ladder pick this day.<span class="ladder-running">Ladder currently at ${runningText}</span>`;
+    root.appendChild(p);
+    return;
+  }
+
+  const card = renderCard(row.entry);
+
+  const stakeInText = showDollars ? `$${formatMoney(row.stakeIn * unitValue)}` : formatUnitsPlain(row.stakeIn);
+  let stakeHtml = `<span class="stake-in">Riding: ${stakeInText}</span>`;
+  if (row.entry.winner) {
+    if (row.busted) {
+      stakeHtml += `<span class="stake-out lost">Busted — back to 1 unit tomorrow</span>`;
+    } else {
+      const stakeOutText = showDollars ? `$${formatMoney(row.stakeOut * unitValue)}` : formatUnitsPlain(row.stakeOut);
+      stakeHtml += `<span class="stake-out won">Rolls into tomorrow at ${stakeOutText}</span>`;
+    }
+  }
+  const stakeDiv = document.createElement("div");
+  stakeDiv.className = "ladder-stake";
+  stakeDiv.innerHTML = stakeHtml;
+  card.appendChild(stakeDiv);
+
+  root.appendChild(card);
 }
 
 // ---------- utils ----------
