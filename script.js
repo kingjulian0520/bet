@@ -1632,44 +1632,27 @@ function renderCalendar() {
   for (let day = 1; day <= daysInMonth; day++) {
     const dateStr = `${calViewYear}-${pad2(calViewMonth + 1)}-${pad2(day)}`;
     const dayPicks = byDate[dateStr] || [];
-    const mainPicks = dayPicks.filter((p) => !isLongShotPick(p));
-    const longShots = dayPicks.filter(isLongShotPick);
-    const settledMain = mainPicks.filter((p) => p.winner);
-    const settledLongShots = longShots.filter((p) => p.winner);
-    const wins = settledMain.filter((p) => p.winner === p.favorite).length;
-    const losses = settledMain.filter((p) => p.winner !== p.favorite && p.winner !== "push").length;
-    const netUnits = settledMain.reduce((sum, p) => sum + pickNetUnits(p), 0);
-    const netUnitsWithLS = netUnits + settledLongShots.reduce((sum, p) => sum + pickNetUnits(p), 0);
-    const mainIsExact = settledMain.every(pickUnitsAreExact);
-    const withLSIsExact = mainIsExact && settledLongShots.every(pickUnitsAreExact);
+    const dayBreakdown = computeBreakdown(dayPicks);
+    const settledCount = dayBreakdown.picks.count + dayBreakdown.longshots.count + dayBreakdown.prizepicks.count;
+    const wins = dayPicks.filter((p) => p.winner && p.winner === p.favorite).length;
+    const losses = dayPicks.filter((p) => p.winner && p.winner !== p.favorite && p.winner !== "push").length;
 
     const cell = document.createElement("div");
-    cell.className = "calendar-day " + (netUnits > 0 ? "win" : netUnits < 0 ? "loss" : "neutral");
+    cell.className =
+      "calendar-day " + (dayBreakdown.total.net > 0 ? "win" : dayBreakdown.total.net < 0 ? "loss" : "neutral");
     if (dateStr === calSelectedDate) cell.classList.add("selected");
 
-    const summary = settledMain.length
+    const summary = settledCount
       ? `${wins}-${losses}`
-      : mainPicks.length
-        ? `${mainPicks.length} pick${mainPicks.length === 1 ? "" : "s"}`
+      : dayPicks.length
+        ? `${dayPicks.length} pick${dayPicks.length === 1 ? "" : "s"}`
         : "";
-    const unitsText = settledMain.length
-      ? showDollars
-        ? formatDollarsSigned(netUnits * unitValue, mainIsExact)
-        : `${formatUnitsSigned(netUnits, mainIsExact)}u`
-      : "";
-    const lsText = settledLongShots.length
-      ? `with LS (${
-          showDollars
-            ? formatDollarsSigned(netUnitsWithLS * unitValue, withLSIsExact)
-            : `${formatUnitsSigned(netUnitsWithLS, withLSIsExact)}u`
-        })`
-      : "";
+    const unitsText = settledCount ? formatBreakdownAmount(dayBreakdown.total, unitValue, showDollars) : "";
 
     cell.innerHTML = `
       <span>${day}</span>
       ${summary ? `<span class="day-net">${summary}</span>` : ""}
       ${unitsText ? `<span class="day-units">${unitsText}</span>` : ""}
-      ${lsText ? `<span class="day-ls">${lsText}</span>` : ""}
     `;
 
     cell.addEventListener("click", () => {
