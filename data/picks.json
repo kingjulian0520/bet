@@ -373,6 +373,103 @@
       "sources": [
         "Reuses the research already cited on each leg's own Picks tab entry."
       ]
+    },
+    {
+      "sport": "Parlays",
+      "matchup": "4-Leg Long Shot: Golden Knights ML + Oilers ML + Rublev ML + Medvedev ML",
+      "date": "2026-09-28",
+      "start_time": "2026-09-28T09:30:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 26,
+        "Doesn't Hit": 74
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.1,
+      "is_long_shot": true,
+      "legs": [
+        {
+          "sport": "ATP Hangzhou",
+          "matchup": "Andrey Rublev vs Kyrian Jacquet",
+          "date": "2026-09-28",
+          "side": "Andrey Rublev",
+          "probability": 72
+        },
+        {
+          "sport": "ATP Hangzhou",
+          "matchup": "Daniil Medvedev vs Roman Safiullin",
+          "date": "2026-09-28",
+          "side": "Daniil Medvedev",
+          "probability": 75
+        },
+        {
+          "sport": "NHL",
+          "matchup": "Vegas Golden Knights vs Chicago Blackhawks",
+          "date": "2026-09-29",
+          "side": "Vegas Golden Knights",
+          "probability": 70
+        },
+        {
+          "sport": "NHL",
+          "matchup": "Edmonton Oilers vs Vancouver Canucks",
+          "date": "2026-09-29",
+          "side": "Edmonton Oilers",
+          "probability": 70
+        }
+      ],
+      "reasoning": [
+        "Every leg is the SAME side already favored in the main Picks tab (Rublev 72%, Medvedev 75%, Golden Knights 70%, Oilers 70%) - none of these fight those picks, they're the exact same convictions stacked for a bigger payout.",
+        "Combined probability: 0.72 x 0.75 x 0.70 x 0.70 = ~26% - a real long shot built entirely from picks that are each a genuine Lean or better on their own.",
+        "Spans two sports across two days (Sun tennis, Mon NHL openers), so no single upset takes out more than its own leg."
+      ],
+      "sources": [
+        "Reuses the research already cited on each leg's own Picks tab entry."
+      ]
+    },
+    {
+      "sport": "Parlays",
+      "matchup": "3-Leg Long Shot: Yankees ML + Braves ML + Astros ML (MLB Wild Card sweep)",
+      "date": "2026-09-29",
+      "start_time": "2026-09-29T18:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 22,
+        "Doesn't Hit": 78
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.1,
+      "is_long_shot": true,
+      "legs": [
+        {
+          "sport": "MLB",
+          "matchup": "Atlanta Braves vs Philadelphia Phillies",
+          "date": "2026-09-29",
+          "side": "Atlanta Braves",
+          "probability": 61
+        },
+        {
+          "sport": "MLB",
+          "matchup": "Houston Astros vs Chicago White Sox",
+          "date": "2026-09-29",
+          "side": "Houston Astros",
+          "probability": 59
+        },
+        {
+          "sport": "MLB",
+          "matchup": "New York Yankees vs Boston Red Sox",
+          "date": "2026-09-29",
+          "side": "New York Yankees",
+          "probability": 62
+        }
+      ],
+      "reasoning": [
+        "All three Game 1 favorites from today's main Picks tab winning on the same Wild Card slate - same side as each individual pick, not a new belief.",
+        "Combined probability: 0.61 x 0.59 x 0.62 = ~22% - genuinely a long shot even though every leg is a real, cited starting-pitcher edge on its own.",
+        "All three are win-or-go-home Game 1s for the higher seed, so each leg is independently motivated - no shared risk factor beyond 'road playoff upsets happen'."
+      ],
+      "sources": [
+        "Reuses the research already cited on each leg's own Picks tab entry."
+      ]
     }
   ],
   "settled": [
