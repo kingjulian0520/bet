@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T16:10:00Z",
+  "generated_at": "2026-09-28T12:10:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
@@ -255,6 +255,61 @@
         "https://tennistonic.com/tennis-news/1058413/h2h-prediction-of-daniil-medvedev-vs-roman-safiullin"
       ],
       "start_time": "2026-09-28T11:30:00Z"
+    },
+    {
+      "sport": "ATP Beijing",
+      "matchup": "Novak Djokovic vs Nuno Borges",
+      "date": "2026-09-30",
+      "start_time": "2026-09-30T03:00:00Z",
+      "favorite": "Novak Djokovic",
+      "estimated_probability": {
+        "Novak Djokovic": 63,
+        "Nuno Borges": 37
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Djokovic's US Open exit (Aug 31) was a 5-set first-round loss to Mariano Navone marked by repeated vomiting, cramping and back spasms; he said afterward this is something he's 'been carrying... pretty much every match this year' - a described chronic issue, not a one-off.",
+        "He played zero tournaments between that Aug 31 exit and Beijing - a full month with no competitive match reps.",
+        "He's dropped out of the top 10 (now ranked ~11-12) and is playing Beijing for the first time in 11 years, so his 29-0/6-time-champion history there is stale and doesn't reflect his current physical state.",
+        "Borges (ranked ~41-48) is in genuinely good recent hard-court form - 7 of his last 10 matches won, including 3 straight in Montreal.",
+        "Still favoring Djokovic since he owns the only prior H2H (won, in Athens) and even a diminished Djokovic is dangerous in best-of-3 vs a non-elite returner - but the number sits well below what his name/history alone would imply, hence ~63% rather than 80%+."
+      ],
+      "sources": [
+        "https://www.foxnews.com/outkick-sports/novak-djokovic-suffers-stunning-defeat-first-round-us-open-trying-battle-through-ailments",
+        "https://bleacherreport.com/articles/25494840-novak-djokovic-threw-vs-mariano-navone-tennis-icon-addresses-health-status-after-us-open-loss",
+        "https://www.tennis365.com/tennis-news/novak-djokovic-signs-up-for-tennis-tournament-immediately-after-us-open-exit",
+        "https://sports.yahoo.com/articles/novak-djokovic-confirms-beijing-appearance-161216124.html",
+        "https://www.tntsports.co.uk/tennis/atp-beijing/2026/novak-djokovic-china-open-return-absence_sto23337957/story.shtml",
+        "https://stats.tennismylife.org/players/nuno-borges/season/2026",
+        "https://www.atptour.com/en/news/beijing-draw-2026-preview"
+      ]
+    },
+    {
+      "sport": "ATP Tokyo",
+      "matchup": "Carlos Alcaraz vs Alex Michelsen",
+      "date": "2026-09-30",
+      "start_time": "2026-09-30T01:00:00Z",
+      "favorite": "Carlos Alcaraz",
+      "estimated_probability": {
+        "Carlos Alcaraz": 65,
+        "Alex Michelsen": 35
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Michelsen is not a token first-round opponent: he made the US Open quarterfinals in 2026, is a career-high-adjacent world No. 34, and is 7-4 (63.6%) at Masters 1000 level and 12-7 (63.2%) on hard courts this season - outlets explicitly framed this as a 'very tough first round match' putting Alcaraz 'under threat of an early exit.'",
+        "Alcaraz lost his last completed best-of-5 (US Open QF vs Shelton) and then played a grueling Laver Cup, going three tight sets and saving match points against Taylor Fritz on Sept 27 - two days before flying to Tokyo for a Sept 29/30 opener, a real short-turnaround/travel-fatigue factor.",
+        "No prior head-to-head between the two, so there's no history to lean on either way.",
+        "Alcaraz remains the far bigger match-experience/ceiling edge, which is why he stays the favorite - just not at the 80%+ level a 'big name vs unseeded floater' storyline would otherwise suggest."
+      ],
+      "sources": [
+        "https://sports.yahoo.com/articles/carlos-alcaraz-draw-japan-open-090000994.html",
+        "https://tennishead.net/carlos-alcarazs-draw-at-the-japan-open-confirmed-as-hes-given-very-tough-first-round-match/",
+        "https://stats.tennismylife.org/players/alex-michelsen/season/2026",
+        "https://sports.yahoo.com/articles/carlos-alcaraz-remaining-2026-schedule-130053663.html",
+        "https://en.wikipedia.org/wiki/2026_Japan_Open_Tennis_Championships"
+      ]
     }
   ],
   "long_shots": [
