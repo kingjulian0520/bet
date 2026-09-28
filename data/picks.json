@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T14:00:00Z",
+  "generated_at": "2026-09-28T17:10:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
@@ -14,15 +14,17 @@
       "confidence_label": "Lean",
       "recommended_units": 1,
       "reasoning": [
-        "Bears are down to their QB3: Caleb Williams (hamstring) is week-to-week and backup Tyson Bagent is in the concussion protocol, pushing Chicago to Case Keenum, who hasn't thrown a regular-season pass since 2023.",
-        "The market line moved from Bears -1.5 to Eagles favored specifically on the QB news - a market-confirmed, injury-driven swing, not just a generic power-rating read.",
-        "Eagles are 2-0 and relatively healthy (missing only depth pieces), with Jonathan Greenard possibly returning from injury.",
-        "Bears' secondary is further thinned: S Coby Bryant out 4-6 months (fractured knee), CB Kyler Gordon out at least 4 games (calf) - a shorthanded secondary facing a healthy Eagles offense."
+        "Bears are down to their QB3 by choice, not just injury: Caleb Williams (hamstring) is out, and backup Tyson Bagent has actually CLEARED the concussion protocol with no injury designation - but Chicago is starting 38-year-old journeyman Case Keenum (no regular-season snap since 2023) over their own healthy backup anyway.",
+        "The market has moved hard on this news: the look-ahead line had Chicago around -1.5, and it has since moved all the way to Eagles -4.5 (some books -3.5), with the total falling from the upper 40s to ~41.5-42.5 - a large, informative move confirming the market agrees with the QB-driven read.",
+        "Eagles are 2-0 and relatively healthy at the skill positions that matter tonight - Saquon Barkley (neck stinger) had a good MRI and was full-go by Friday, DeVonta Smith (hamstring) was fully cleared with no injury designation by Saturday.",
+        "Bears' secondary is thinned at exactly the wrong time: S Coby Bryant out 4-6 months (fractured/hyperextended knee), CB Kaiir Elam out multiple weeks - a shorthanded secondary facing a healthy Eagles passing game."
       ],
       "sources": [
-        "https://www.phillyvoice.com/eagles-bears-week-3-injury-report-analysis-2026-caleb-williams-tyson-bagent-devonta-smith/",
-        "https://www.inquirer.com/eagles/eagles-bears-mnf-storylines-caleb-williams-jalen-hurts-20260927.html",
-        "https://www.si.com/betting/eagles-vs-bears-prediction-odds-spread-injuries-trends-for-nfl-week-3-2026"
+        "https://chicago.suntimes.com/bears/2026/09/25/bears-still-proceeding-with-case-keenum-as-starting-qb-vs-eagles-as-caleb-williams-tyson-bagent-remain-out",
+        "https://www.cbssports.com/nfl/news/bears-expected-to-start-case-keenum-vs-eagles/",
+        "https://www.espn.com/nfl/odds/_/gameId/401872963",
+        "https://betfanatics.com/blog/eagles-vs-bears-odds-spreads-and-lines",
+        "https://www.bleedinggreennation.com/news/184231/eagles-injury-report-good-news-on-devonta-smith-and-saquon-barkley"
       ],
       "start_time": "2026-09-29T00:15:00Z"
     },
@@ -439,6 +441,52 @@
         "Reuses the research already cited on each leg's own Picks tab entry."
       ],
       "actual_multiplier": 4.41
+    },
+    {
+      "sport": "Parlays",
+      "matchup": "2-Leg Same-Game Parlay: DeVonta Smith Over 5.5 Receptions + DeVonta Smith Anytime TD (Eagles vs Bears)",
+      "date": "2026-09-28",
+      "start_time": "2026-09-29T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 30,
+        "Doesn't Hit": 70
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.1,
+      "is_long_shot": true,
+      "legs": [
+        {
+          "sport": "NFL Player Props",
+          "matchup": "DeVonta Smith — Receptions O/U 5.5",
+          "date": "2026-09-28",
+          "side": "Over 5.5",
+          "probability": 61
+        },
+        {
+          "sport": "NFL Player Props",
+          "matchup": "DeVonta Smith — Anytime TD",
+          "date": "2026-09-28",
+          "side": "Yes",
+          "probability": 41
+        }
+      ],
+      "reasoning": [
+        "DeVonta Smith is now the Eagles' unambiguous #1 target with zero competition: AJ Brown left in the offseason, and Dallas Goedert is OUT and IR-bound (sprained MCL, Week 2) - all his volume funnels to Smith. 33.9% target share through 2 games, 10 catches on 13 targets last week (117 yds, TD).",
+        "Bears' pass defense ranks bottom-half of the league and is missing 2 of its top defensive backs tonight (Coby Bryant, Kaiir Elam) - in Week 1 alone, Carolina's WR1 (Jalen Coker) went for 8/138/2TD against this same defense even before the secondary got thinner, concrete evidence it's exploitable by a true #1 WR.",
+        "Smith was fully cleared from a hamstring issue with no injury designation by Saturday, so there's no health discount to apply.",
+        "Both legs share the same underlying driver (heavy target share + a defense that can't cover him), so they're positively correlated - true joint probability is estimated at ~28-32% (used 30%), meaningfully higher than the ~25% naive multiplication of the two legs' independent implied probabilities would suggest, and well above the market's own combined parlay price (~+450 to +500, implying ~17-18%).",
+        "Even with real, well-documented evidence behind each leg, a 2-leg parlay's honest combined probability still lands in the site's lowest confidence/unit tier by the math alone (not because of an arbitrary long-shot cap) - sized at 0.1 units accordingly, per the site's standard probability-to-units table."
+      ],
+      "sources": [
+        "https://www.si.com/betting/eagles-vs-bears-best-nfl-prop-bets-for-monday-night-football-in-week-3-bet-on-devonta-smith",
+        "https://www.fanduel.com/research/nfl/player-news/game-updates/devonta-smith-and-eagles-play-bears-in-week-3-9-28-2026",
+        "https://www.inquirer.com/eagles/eagles-bears-week-3-odds-prop-bets-20260925.html",
+        "https://www.fantasypros.com/nfl/news/610845/devonta-smith-hamstring-cleared-week-3.php",
+        "https://www.cbssports.com/nfl/news/eagles-dallas-goedert-ir-bound-due-to-knee-injury-te-eligible-to-return-in-week-18-vs-giants-per-report",
+        "https://www.fantasypros.com/nfl/notes/440990/saquon-barkley-2026-week-3-outlook.php",
+        "https://www.sharpfootballanalysis.com/analysis/chicago-bears-defense/"
+      ]
     }
   ],
   "settled": [
