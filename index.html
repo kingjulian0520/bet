@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Close Calls</title>
-<link rel="stylesheet" href="style.css?v=25">
+<link rel="stylesheet" href="style.css?v=26">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css">
 </head>
 <body>
@@ -40,17 +40,12 @@
     <span class="bankroll-note">Stored only in your browser — used to show dollar amounts, doesn't affect any pick or bet.</span>
   </div>
 
-  <div class="net-counter">
-    <div id="net-today" class="net-today">Today: 0.00 units</div>
-    <div id="net-alltime" class="net-alltime">All time: 0.00 units</div>
-  </div>
   <p id="exposure-summary" class="exposure-summary" hidden></p>
 </header>
 
 <nav class="tabs" role="tablist">
   <button class="tab-btn active" data-tab="picks" role="tab" aria-selected="true">Picks</button>
   <button class="tab-btn" data-tab="longshots" role="tab" aria-selected="false">Long Shots</button>
-  <button class="tab-btn" data-tab="mybets" role="tab" aria-selected="false">My Bets</button>
   <button class="tab-btn" data-tab="calendar" role="tab" aria-selected="false">Calendar</button>
 </nav>
 
@@ -119,12 +114,6 @@
     </div>
   </section>
 
-  <section id="mybets" class="tab-panel">
-    <div id="mybets-root">
-      <p class="empty-state">No bets placed yet. Click a pick on the Picks tab to log one.</p>
-    </div>
-  </section>
-
   <section id="calendar" class="tab-panel">
     <div class="calendar-header">
       <button id="cal-prev" class="secondary-btn" aria-label="Previous month">‹</button>
@@ -132,9 +121,9 @@
       <button id="cal-next" class="secondary-btn" aria-label="Next month">›</button>
     </div>
     <div class="calendar-legend">
-      <span><i class="legend-dot win"></i> Winning day</span>
-      <span><i class="legend-dot loss"></i> Losing day</span>
-      <span><i class="legend-dot neutral"></i> Breakeven / no bets</span>
+      <span><i class="legend-dot win"></i> More wins that day</span>
+      <span><i class="legend-dot loss"></i> More losses that day</span>
+      <span><i class="legend-dot neutral"></i> Even / pending / no picks</span>
     </div>
     <div id="calendar-grid" class="calendar-grid"></div>
     <div id="day-detail" class="day-detail"></div>
@@ -144,54 +133,17 @@
 <footer class="page-footer">
   <p>
     Every pick here is a probability estimate from research (stats, form, injuries, expert
-    analysis), not a guarantee. Even a 70/30 lean loses 3 times out of 10. EV% is only as good
-    as the probability estimate and the multiplier you enter — it can be wrong. Gamble
-    responsibly — never stake more than you can afford to lose.
+    analysis), not a guarantee. Even a 70/30 lean loses 3 times out of 10. Suggested stakes are
+    a simple unit-size calculation, not financial advice. Gamble responsibly — never stake more
+    than you can afford to lose.
   </p>
 </footer>
-
-<div id="bet-modal-backdrop" class="modal-backdrop" hidden>
-  <div class="modal" role="dialog" aria-modal="true">
-    <h3 id="modal-matchup">Matchup</h3>
-    <p id="modal-date" class="modal-date"></p>
-
-    <div class="side-toggle" id="side-toggle"></div>
-
-    <div id="modal-line-wrap" class="modal-line-wrap" hidden>
-      <label class="modal-label" for="modal-line">Line you actually got (if your book's number is different)</label>
-      <input id="modal-line" type="number" step="0.5">
-      <span id="modal-line-note" class="modal-line-note"></span>
-    </div>
-
-    <label class="modal-label" for="modal-stake">Stake (units)</label>
-    <input id="modal-stake" type="number" min="0" step="0.05" placeholder="e.g. 1.5">
-
-    <label class="modal-label" for="modal-unit-value">Unit size for this bet ($)</label>
-    <input id="modal-unit-value" type="number" min="0" step="1" placeholder="e.g. 30">
-    <span class="modal-line-note">Locks in $ per unit for this bet — later changes to your unit size above won't change this bet's dollar amounts.</span>
-
-    <label class="modal-label" for="modal-multiplier">Multiplier / decimal odds you're getting</label>
-    <input id="modal-multiplier" type="number" min="1" step="0.01" placeholder="e.g. 1.91">
-
-    <div id="modal-ev" class="modal-ev"></div>
-
-    <label class="modal-override" id="modal-override-wrap" hidden>
-      <input type="checkbox" id="modal-override">
-      I understand this is -EV, place it anyway
-    </label>
-
-    <div class="modal-actions">
-      <button id="modal-cancel" class="secondary-btn">Cancel</button>
-      <button id="modal-place" class="primary-btn" disabled>Place bet</button>
-    </div>
-  </div>
-</div>
 
 <div id="auth-modal-backdrop" class="modal-backdrop" hidden>
   <div class="modal auth-modal" role="dialog" aria-modal="true">
     <div class="auth-mark">CC</div>
     <h3 id="auth-modal-title" class="auth-modal-title">Welcome back</h3>
-    <p id="auth-modal-subtitle" class="auth-modal-subtitle">Sign in to sync your bets across devices.</p>
+    <p id="auth-modal-subtitle" class="auth-modal-subtitle">Sign in to unlock today's picks and sync your unit size.</p>
 
     <div class="auth-tabs" id="auth-tabs">
       <button class="auth-tab-btn active" data-authtab="signin">Sign In</button>
@@ -300,6 +252,6 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
-<script type="module" src="script.js?v=38"></script>
+<script type="module" src="script.js?v=39"></script>
 </body>
 </html>
