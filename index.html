@@ -46,6 +46,7 @@
 <nav class="tabs" role="tablist">
   <button class="tab-btn active" data-tab="picks" role="tab" aria-selected="true">Picks</button>
   <button class="tab-btn" data-tab="longshots" role="tab" aria-selected="false">Long Shots</button>
+  <button class="tab-btn" data-tab="prizepicks" role="tab" aria-selected="false">PrizePicks</button>
   <button class="tab-btn" data-tab="calendar" role="tab" aria-selected="false">Calendar</button>
 </nav>
 
@@ -111,6 +112,17 @@
         </div>
         <div id="longshots-lock-body" class="lock-body"></div>
       </div>
+    </div>
+  </section>
+
+  <section id="prizepicks" class="tab-panel">
+    <p class="panel-intro">
+      Esports picks (CS2, League, Valorant, Dota 2, R6) built as PrizePicks-style
+      player prop parlays. Held empty until there's a reliable stats source for
+      per-player kills/headshots data — no picks here are guesses.
+    </p>
+    <div id="prizepicks-root">
+      <p class="empty-state">No PrizePicks picks yet — waiting on a reliable esports stats source.</p>
     </div>
   </section>
 

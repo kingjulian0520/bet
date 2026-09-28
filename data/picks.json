@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T12:10:00Z",
+  "generated_at": "2026-09-28T13:15:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
@@ -25,52 +25,6 @@
         "https://www.si.com/betting/eagles-vs-bears-prediction-odds-spread-injuries-trends-for-nfl-week-3-2026"
       ],
       "start_time": "2026-09-29T00:15:00Z"
-    },
-    {
-      "sport": "ATP Chengdu",
-      "matchup": "Hubert Hurkacz vs Denis Shapovalov",
-      "date": "2026-09-28",
-      "favorite": "Hubert Hurkacz",
-      "estimated_probability": {
-        "Hubert Hurkacz": 63,
-        "Denis Shapovalov": 37
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "Head-to-head is 5-1 in Hurkacz's favor overall, and specifically 4-1 on hard courts.",
-        "2026 season form clearly favors Hurkacz: 28-19 overall (16-9 on hard) vs. Shapovalov's 19-18.",
-        "Both reached the semis in straightforward fashion this week, so recent tournament form doesn't override the H2H/season-record edge.",
-        "Kept at a modest 63% rather than higher - it's a best-of-3 ATP 250 semifinal where either player is capable of a hot day, and Shapovalov does have one win in this H2H."
-      ],
-      "sources": [
-        "https://lastwordonsports.com/tennis/2026/09/27/atp-chengdu-semifinal-predictions-hurkacz-vs-shapovalov/",
-        "https://tennistonic.com/tennis-news/1058374/h2h-prediction-of-hubert-hurkacz-vs-denis-shapovalov-in-chengdu-with-odds-preview-pick-28th-september-2026/",
-        "https://www.atptour.com/en/news/chengdu-2026-sunday-report"
-      ],
-      "start_time": "2026-09-28T11:00:00Z"
-    },
-    {
-      "sport": "ATP Chengdu Totals",
-      "matchup": "Hurkacz vs Shapovalov — Total Games O/U 22.5",
-      "date": "2026-09-28",
-      "favorite": "Over 22.5",
-      "estimated_probability": {
-        "Over 22.5": 61,
-        "Under 22.5": 39
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "In 4 of their 6 previous meetings, total games exceeded 21.5 - a real, repeated pattern across a decent-sized head-to-head sample.",
-        "Both are big servers running hot this week: Hurkacz has averaged 14 aces/match and Shapovalov 9.7 aces/match through their first three matches at this event - a hold-heavy style that pushes sets toward tiebreaks rather than quick breaks.",
-        "Kept modest since this is still a best-of-3 semifinal where a lopsided set (matching the moneyline lean toward Hurkacz) could shorten the total."
-      ],
-      "sources": [
-        "https://www.atptour.com/en/news/chengdu-2026-sunday-report",
-        "https://tennistonic.com/tennis-news/1058374/h2h-prediction-of-hubert-hurkacz-vs-denis-shapovalov-in-chengdu-with-odds-preview-pick-28th-september-2026/"
-      ],
-      "start_time": "2026-09-28T11:00:00Z"
     },
     {
       "sport": "MLB",
@@ -211,50 +165,6 @@
         "https://www.thehockeywriters.com/4-things-learned-from-maple-leafs-preseason-2026-27"
       ],
       "start_time": "2026-09-29T23:00:00Z"
-    },
-    {
-      "sport": "ATP Hangzhou",
-      "matchup": "Andrey Rublev vs Kyrian Jacquet",
-      "date": "2026-09-28",
-      "favorite": "Andrey Rublev",
-      "estimated_probability": {
-        "Andrey Rublev": 72,
-        "Kyrian Jacquet": 28
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 1.25,
-      "reasoning": [
-        "Semifinal. Rublev is ranked ~24-25; Jacquet is ranked ~107-110 and entered the tournament outside the top 100 - a large, genuine ranking/level gap.",
-        "Jacquet's run (wins over Etcheverry and Marozsan) is a real breakout story but this is his first tour-level semifinal - untested at this stage.",
-        "Sized below the market's ~77.5% implied (1.29 decimal) to account for Jacquet's hot form, but this qualifies as a lopsided matchup on ranking/experience grounds."
-      ],
-      "sources": [
-        "https://tennistonic.com/tennis-news/1058336/h2h-prediction-of-andrey-rublev-vs-kyrian-jacquet",
-        "https://www.atptour.com/en/players/kyrian-jacquet/j0az/rankings-history"
-      ],
-      "start_time": "2026-09-28T09:30:00Z"
-    },
-    {
-      "sport": "ATP Hangzhou",
-      "matchup": "Daniil Medvedev vs Roman Safiullin",
-      "date": "2026-09-28",
-      "favorite": "Daniil Medvedev",
-      "estimated_probability": {
-        "Daniil Medvedev": 75,
-        "Roman Safiullin": 25
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "reasoning": [
-        "Semifinal. Medvedev is ranked #6 and chasing his third title of the season; Safiullin is ranked ~99-102 and has had a poor 2026 (3-5 on tour before this event).",
-        "First-ever meeting (0-0 H2H), so no head-to-head risk factor offsetting the ranking gap.",
-        "Market has Medvedev at ~75.8% implied (1.32 decimal) - this estimate lines up closely; a genuinely lopsided pairing (top-10 vs. an outside-top-90 player having a down year)."
-      ],
-      "sources": [
-        "https://www.sportskeeda.com/tennis/daniil-medvedev-vs-roman-safiullin-preview-head-to-head",
-        "https://tennistonic.com/tennis-news/1058413/h2h-prediction-of-daniil-medvedev-vs-roman-safiullin"
-      ],
-      "start_time": "2026-09-28T11:30:00Z"
     },
     {
       "sport": "ATP Beijing",
@@ -3281,6 +3191,109 @@
       "winner": "Doesn't Hit",
       "final_score": "Settled early: Henry finished at exactly 89 rushing yards, under the 89.5 line, which alone dooms the parlay regardless of the Eagles leg (not yet played) - the Valkyries leg had already won",
       "settled_at": "2026-09-28T03:17:21.675411Z"
+    },
+    {
+      "sport": "ATP Chengdu",
+      "matchup": "Hubert Hurkacz vs Denis Shapovalov",
+      "date": "2026-09-28",
+      "favorite": "Hubert Hurkacz",
+      "estimated_probability": {
+        "Hubert Hurkacz": 63,
+        "Denis Shapovalov": 37
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "Head-to-head is 5-1 in Hurkacz's favor overall, and specifically 4-1 on hard courts.",
+        "2026 season form clearly favors Hurkacz: 28-19 overall (16-9 on hard) vs. Shapovalov's 19-18.",
+        "Both reached the semis in straightforward fashion this week, so recent tournament form doesn't override the H2H/season-record edge.",
+        "Kept at a modest 63% rather than higher - it's a best-of-3 ATP 250 semifinal where either player is capable of a hot day, and Shapovalov does have one win in this H2H."
+      ],
+      "sources": [
+        "https://lastwordonsports.com/tennis/2026/09/27/atp-chengdu-semifinal-predictions-hurkacz-vs-shapovalov/",
+        "https://tennistonic.com/tennis-news/1058374/h2h-prediction-of-hubert-hurkacz-vs-denis-shapovalov-in-chengdu-with-odds-preview-pick-28th-september-2026/",
+        "https://www.atptour.com/en/news/chengdu-2026-sunday-report"
+      ],
+      "start_time": "2026-09-28T11:00:00Z",
+      "winner": "Hubert Hurkacz",
+      "final_score": "Hurkacz d. Shapovalov 6-7(8), 6-3, 6-3",
+      "settled_at": "2026-09-28T13:15:00Z"
+    },
+    {
+      "sport": "ATP Chengdu Totals",
+      "matchup": "Hurkacz vs Shapovalov — Total Games O/U 22.5",
+      "date": "2026-09-28",
+      "favorite": "Over 22.5",
+      "estimated_probability": {
+        "Over 22.5": 61,
+        "Under 22.5": 39
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "In 4 of their 6 previous meetings, total games exceeded 21.5 - a real, repeated pattern across a decent-sized head-to-head sample.",
+        "Both are big servers running hot this week: Hurkacz has averaged 14 aces/match and Shapovalov 9.7 aces/match through their first three matches at this event - a hold-heavy style that pushes sets toward tiebreaks rather than quick breaks.",
+        "Kept modest since this is still a best-of-3 semifinal where a lopsided set (matching the moneyline lean toward Hurkacz) could shorten the total."
+      ],
+      "sources": [
+        "https://www.atptour.com/en/news/chengdu-2026-sunday-report",
+        "https://tennistonic.com/tennis-news/1058374/h2h-prediction-of-hubert-hurkacz-vs-denis-shapovalov-in-chengdu-with-odds-preview-pick-28th-september-2026/"
+      ],
+      "start_time": "2026-09-28T11:00:00Z",
+      "winner": "Over 22.5",
+      "final_score": "Hurkacz d. Shapovalov 6-7(8), 6-3, 6-3 (31 total games)",
+      "settled_at": "2026-09-28T13:15:00Z",
+      "actual_total": 31
+    },
+    {
+      "sport": "ATP Hangzhou",
+      "matchup": "Andrey Rublev vs Kyrian Jacquet",
+      "date": "2026-09-28",
+      "favorite": "Andrey Rublev",
+      "estimated_probability": {
+        "Andrey Rublev": 72,
+        "Kyrian Jacquet": 28
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "Semifinal. Rublev is ranked ~24-25; Jacquet is ranked ~107-110 and entered the tournament outside the top 100 - a large, genuine ranking/level gap.",
+        "Jacquet's run (wins over Etcheverry and Marozsan) is a real breakout story but this is his first tour-level semifinal - untested at this stage.",
+        "Sized below the market's ~77.5% implied (1.29 decimal) to account for Jacquet's hot form, but this qualifies as a lopsided matchup on ranking/experience grounds."
+      ],
+      "sources": [
+        "https://tennistonic.com/tennis-news/1058336/h2h-prediction-of-andrey-rublev-vs-kyrian-jacquet",
+        "https://www.atptour.com/en/players/kyrian-jacquet/j0az/rankings-history"
+      ],
+      "start_time": "2026-09-28T09:30:00Z",
+      "winner": "Andrey Rublev",
+      "final_score": "Rublev d. Jacquet 7-6(7), 6-1",
+      "settled_at": "2026-09-28T13:15:00Z"
+    },
+    {
+      "sport": "ATP Hangzhou",
+      "matchup": "Daniil Medvedev vs Roman Safiullin",
+      "date": "2026-09-28",
+      "favorite": "Daniil Medvedev",
+      "estimated_probability": {
+        "Daniil Medvedev": 75,
+        "Roman Safiullin": 25
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "Semifinal. Medvedev is ranked #6 and chasing his third title of the season; Safiullin is ranked ~99-102 and has had a poor 2026 (3-5 on tour before this event).",
+        "First-ever meeting (0-0 H2H), so no head-to-head risk factor offsetting the ranking gap.",
+        "Market has Medvedev at ~75.8% implied (1.32 decimal) - this estimate lines up closely; a genuinely lopsided pairing (top-10 vs. an outside-top-90 player having a down year)."
+      ],
+      "sources": [
+        "https://www.sportskeeda.com/tennis/daniil-medvedev-vs-roman-safiullin-preview-head-to-head",
+        "https://tennistonic.com/tennis-news/1058413/h2h-prediction-of-daniil-medvedev-vs-roman-safiullin"
+      ],
+      "start_time": "2026-09-28T11:30:00Z",
+      "winner": "Daniil Medvedev",
+      "final_score": "Medvedev d. Safiullin 7-5, 6-4",
+      "settled_at": "2026-09-28T13:15:00Z"
     }
   ]
 }
