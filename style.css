@@ -1218,8 +1218,8 @@ main {
 
 .leg-circle {
   flex: 0 0 auto;
-  width: 76px;
-  height: 76px;
+  width: 82px;
+  height: 82px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent), var(--accent-dim));
   color: #06110d;
@@ -1234,15 +1234,15 @@ main {
 
 .leg-circle-main {
   font-weight: 800;
-  font-size: 0.8rem;
+  font-size: 0.92rem;
 }
 
 .leg-circle-ml .leg-circle-main {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
 }
 
 .leg-circle-sub {
-  font-size: 0.44rem;
+  font-size: 0.52rem;
   font-weight: 700;
   opacity: 0.85;
   margin-top: 0.1rem;
