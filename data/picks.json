@@ -218,6 +218,126 @@
         "https://vsin.com/mlb/white-sox-vs-astros-al-wild-card-round-prediction-and-preview/",
         "https://www.sportsbettingdime.com/news/mlb/white-sox-astros-picks-props-target/"
       ]
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Atlanta Braves vs Philadelphia Phillies (Game 2)",
+      "date": "2026-09-30",
+      "favorite": "Atlanta Braves",
+      "estimated_probability": {
+        "Atlanta Braves": 58,
+        "Philadelphia Phillies": 42
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "NL Wild Card Series Game 2. Starters are Jesus Luzardo (PHI) vs Tyler Mahle (ATL) - Mahle has a 2.28 ERA in 4 starts vs Philadelphia this year, and Atlanta got a full rest week to line up its rotation after clinching early, while Philadelphia needed every last out to clinch on the regular season's final day - beat reporters explicitly flagged Phillies fatigue as a real advantage for Atlanta.",
+        "Ronald Acuna Jr. was one of the hottest hitters in baseball down the stretch (.307/.950 OPS over his last 22 games), and closer Robert Suarez is back from injury just in time for Atlanta's bullpen.",
+        "Phillies' own recent form has real cracks: Trea Turner had a down year, Bryson Stott and Bryan De La Cruz have slowed, and J.T. Realmuto's production has fallen off a cliff.",
+        "Tempering factor: Luzardo's stuff is elite when healthy (2-hit, 12-K complete-game shutout of these same Braves on Sept. 7), but he's been shut down since with shoulder inflammation and has thrown only 1 relief inning since - real uncertainty about his workload/effectiveness in Game 2 is why this stays a slight lean rather than stronger."
+      ],
+      "sources": [
+        "https://sports.yahoo.com/articles/phillies-vs-braves-nl-wild-160053122.html",
+        "https://www.nbcsportsphiladelphia.com/mlb/philadelphia-phillies/phillies-braves-wild-card-jesus-luzardo-questions/754145/",
+        "https://www.batterypower.com/atlanta-braves-game-information/140392/2026-wild-card-series-philadelphia-phillies-preview-offense-fielding-pitching-base-running-predicton"
+      ],
+      "start_time": "2026-09-30T18:00:00Z"
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Houston Astros vs Chicago White Sox (Game 2)",
+      "date": "2026-09-30",
+      "favorite": "Chicago White Sox",
+      "estimated_probability": {
+        "Chicago White Sox": 60,
+        "Houston Astros": 40
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "AL Wild Card Series Game 2. Houston's rotation is in real crisis: Framber Valdez was traded away before the season, and for this round Hayden Wesneski is unavailable, Ronel Blanco is ineligible, and Enyel De Los Santos and Cristian Javier are both ineligible due to recent IL placement - Astros manager Joe Espada said the day before Game 1 he 'doesn't know' who starts and will run a bullpen game, and with no starters left, Game 2 is very likely bullpen-game #2 in as many days.",
+        "Chicago has its clear #1, Sean Burke (8-6, 3.20 ERA, 167 K), lined up for Game 2 on full regular rest, and he's trending up in September (5.2 scoreless innings to beat Houston, then a win over Detroit).",
+        "Season-long context also favors Chicago: White Sox finished 84-78 (better record than Houston's 80-81), and Houston was a mediocre 39-42 at home in 2026.",
+        "Tempering factor: Houston's bullpen back end (Bryan Abreu, closer Josh Hader at a 1.01 ERA / 26-for-26 in saves) is elite, which is why this isn't rated higher than a slight lean."
+      ],
+      "sources": [
+        "https://sports.yahoo.com/articles/watch-astros-al-wild-card-130007108.html",
+        "https://www.si.com/fannation/mlb/fastball/injuries/houston-astros-ace-framber-valdez-set-for-bullpen-session-possible-return-from-injury",
+        "https://www.cbssports.com/fantasy/baseball/news/white-soxs-sean-burke-six-strong-innings-in-win-no-10/",
+        "https://www.mlb.com/news/white-sox-vs-astros-wild-card-series-starting-lineups-and-pitching-matchup"
+      ],
+      "start_time": "2026-09-30T21:00:00Z"
+    },
+    {
+      "sport": "NHL",
+      "matchup": "Los Angeles Kings vs Colorado Avalanche",
+      "date": "2026-09-30",
+      "favorite": "Colorado Avalanche",
+      "estimated_probability": {
+        "Colorado Avalanche": 60,
+        "Los Angeles Kings": 40
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "2026-27 season opener, part of the TNT doubleheader. Colorado is at full strength - Nathan MacKinnon, Cale Makar (fresh off a record contract), and captain Gabriel Landeskog suiting up for the first time in three years.",
+        "Los Angeles enters missing a key offensive piece: Kevin Fiala underwent a procedure for a leg fracture suffered at the 2026 Milano Cortina Olympics with no confirmed return timeline, layered on top of Anze Kopitar's retirement - the Kings already ranked 29th in the NHL in goals/game (2.68) last season with bottom-5 special teams (PP 28th, PK 30th).",
+        "Kept at a slight lean given standard opening-night/goaltending variance in the NHL."
+      ],
+      "sources": [
+        "https://www.nhl.com/kings/news/update-on-la-kings-forward-kevin-fiala",
+        "https://www.prohockeyrumors.com/2026/09/kevin-fiala-to-miss-start-of-kings-camp-due-to-injury.html",
+        "https://sports.yahoo.com/articles/3-burning-questions-facing-kings-153037930.html",
+        "https://milehighsticking.com/avalanche-vs-kings-preview-odds-injuries-in-season-opener-01k6xwgrtgdt"
+      ],
+      "start_time": "2026-10-01T02:00:00Z"
+    },
+    {
+      "sport": "ATP Beijing",
+      "matchup": "Alexander Zverev vs Cameron Norrie",
+      "date": "2026-09-30",
+      "start_time": "2026-09-30T03:00:00Z",
+      "favorite": "Alexander Zverev",
+      "estimated_probability": {
+        "Alexander Zverev": 83,
+        "Cameron Norrie": 17
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "reasoning": [
+        "China Open Round 1. Zverev leads the head-to-head 7-1, including a straightforward win at the 2026 Australian Open (7-5, 4-6, 6-3, 6-1).",
+        "Zverev is in career-best form: 62-20 (75.6%) over the last 52 weeks, just won his second major at the US Open, and followed it with a Laver Cup win - a three-time Beijing semifinalist.",
+        "Norrie, by contrast, is world No. 35, has a modest 10-8 (55.6%) 2026 record, and is just 1-3 (25%) against top-10 players this season - exactly the caliber of opponent he's about to face.",
+        "Held to strong lean rather than higher given first-round letdown risk for a player coming off a deep US Open/Laver Cup run."
+      ],
+      "sources": [
+        "https://www.atptour.com/en/players/atp-head-2-head/zverev-zverev-vs-norrie-norrie/z355/n771",
+        "https://stats.tennismylife.org/players/cameron-norrie/season/2026",
+        "https://www.atptour.com/en/news/beijing-draw-2026-preview"
+      ]
+    },
+    {
+      "sport": "ATP Beijing",
+      "matchup": "Alex de Minaur vs Mariano Navone",
+      "date": "2026-09-30",
+      "start_time": "2026-09-30T02:00:00Z",
+      "favorite": "Alex de Minaur",
+      "estimated_probability": {
+        "Alex de Minaur": 78,
+        "Mariano Navone": 22
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "China Open Round 1. This is a surface mismatch as much as a quality gap: de Minaur is the 5th seed, world No. 9 (career-high No. 5 in July 2026), and one of the tour's best hard-court movers.",
+        "Navone (No. 49) is a clay-court specialist who is just 1-5 (16.7% win rate) on hard courts in 2026, versus 17-10 (63%) on clay - this surface should neutralize his biggest strength (long baseline rallies) entirely.",
+        "De Minaur has cooled off recently (only 1 QF in his last 5 events), which is the main reason this isn't rated higher, but that slump has come against elite competition, not a clay-only specialist his ranking says he should beat comfortably on hard courts."
+      ],
+      "sources": [
+        "https://www.atptour.com/en/players/atp-head-2-head/alex-de-minaur-vs-mariano-navone/dh58/n0bs",
+        "https://stats.tennismylife.org/players/mariano-navone/season/2026",
+        "https://stats.tennismylife.org/players/alex-de-minaur/season/2026"
+      ]
     }
   ],
   "long_shots": [
