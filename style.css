@@ -1185,19 +1185,85 @@ main {
 }
 
 .multiplier-lock svg {
-  width: 40px;
-  height: 40px;
+  width: 56px;
+  height: 56px;
 }
 
 .multiplier-lock-text {
   position: absolute;
-  top: 59%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 800;
   color: #000;
   line-height: 1;
+}
+
+.leg-rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.leg-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.7rem 0;
+}
+
+.leg-row + .leg-row {
+  border-top: 1px dashed var(--border);
+}
+
+.leg-circle {
+  flex: 0 0 auto;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dim));
+  color: #06110d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.15;
+  padding: 0.2rem;
+}
+
+.leg-circle-main {
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+.leg-circle-ml .leg-circle-main {
+  font-size: 1.15rem;
+}
+
+.leg-circle-sub {
+  font-size: 0.44rem;
+  font-weight: 700;
+  opacity: 0.85;
+  margin-top: 0.1rem;
+}
+
+.leg-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.leg-primary {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.leg-secondary {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.1rem;
 }
 
 .page-footer {
@@ -1308,12 +1374,12 @@ main {
   outline-offset: 1px;
 }
 
-.calendar-day .day-net {
+.calendar-day .day-units {
   font-size: 0.68rem;
   font-weight: 600;
 }
 
-.calendar-day .day-units {
+.calendar-day .day-net {
   font-size: 0.62rem;
   opacity: 0.85;
 }

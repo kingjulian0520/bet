@@ -3359,16 +3359,20 @@
       "sources": [],
       "legs": [
         {
-          "sport": "NFL Player Props",
-          "matchup": "D'Andre Swift — Rush Attempts O/U 14.5",
-          "date": "2026-09-28",
-          "side": "Over 14.5"
+          "type": "over_under",
+          "player": "D'Andre Swift",
+          "opponent": "Philadelphia Eagles",
+          "side": "Over",
+          "line": 14.5,
+          "stat": "Rush Attempts"
         },
         {
-          "sport": "NFL Player Props",
-          "matchup": "Saquon Barkley — Rush Yards O/U 44.5",
-          "date": "2026-09-28",
-          "side": "Over 44.5"
+          "type": "over_under",
+          "player": "Saquon Barkley",
+          "opponent": "Chicago Bears",
+          "side": "Over",
+          "line": 44.5,
+          "stat": "Rush Yards"
         }
       ]
     }

@@ -241,7 +241,7 @@ function renderLockOverlay(prefix) {
 }
 
 function unlockOverlaysWithFade() {
-  ["picks", "longshots"].forEach((prefix) => {
+  ["picks", "longshots", "prizepicks", "ladder"].forEach((prefix) => {
     const overlay = document.getElementById(`${prefix}-lock-overlay`);
     const lockable = document.getElementById(`${prefix}-lockable`);
     if (!overlay || !lockable) return;
@@ -1224,6 +1224,134 @@ function renderExposureSummary() {
   el.classList.toggle("hot", totalUnits >= 8);
 }
 
+// One leg of any pick: a circle showing the market itself (ML, a spread
+// number, an Over/Under line + its stat, or a Yes/No + its stat), and to
+// the right the name being picked with the opponent as a subtitle
+// underneath - replaces the old plain "name pick + name pick" matchup
+// string, for every tab, not just PrizePicks.
+function legOpponentText(leg) {
+  return leg.opponent ? `vs ${leg.opponent}` : "";
+}
+
+function renderLegRow(leg) {
+  if (leg.type === "moneyline") {
+    return `
+      <div class="leg-row">
+        <div class="leg-circle leg-circle-ml">
+          <span class="leg-circle-main">ML</span>
+        </div>
+        <div class="leg-info">
+          <div class="leg-primary">${escapeHtml(leg.team || "")}</div>
+          <div class="leg-secondary">${escapeHtml(legOpponentText(leg))}</div>
+        </div>
+      </div>`;
+  }
+  if (leg.type === "spread") {
+    return `
+      <div class="leg-row">
+        <div class="leg-circle leg-circle-spread">
+          <span class="leg-circle-main">${escapeHtml(leg.spread || "")}</span>
+          <span class="leg-circle-sub">SPREAD</span>
+        </div>
+        <div class="leg-info">
+          <div class="leg-primary">${escapeHtml(leg.team || "")}</div>
+          <div class="leg-secondary">${escapeHtml(legOpponentText(leg))}</div>
+        </div>
+      </div>`;
+  }
+  if (leg.type === "binary") {
+    return `
+      <div class="leg-row">
+        <div class="leg-circle leg-circle-ou">
+          <span class="leg-circle-main">${escapeHtml((leg.side || "").toUpperCase())}</span>
+          <span class="leg-circle-sub">${escapeHtml(leg.stat || "")}</span>
+        </div>
+        <div class="leg-info">
+          <div class="leg-primary">${escapeHtml(leg.player || "")}</div>
+          <div class="leg-secondary">${escapeHtml(legOpponentText(leg))}</div>
+        </div>
+      </div>`;
+  }
+  const lineText = `${leg.side === "Under" ? "U" : "O"} ${leg.line}`;
+  return `
+    <div class="leg-row">
+      <div class="leg-circle leg-circle-ou">
+        <span class="leg-circle-main">${escapeHtml(lineText)}</span>
+        <span class="leg-circle-sub">${escapeHtml(leg.stat || "")}</span>
+      </div>
+      <div class="leg-info">
+        <div class="leg-primary">${escapeHtml(leg.player || "")}</div>
+        <div class="leg-secondary">${escapeHtml(legOpponentText(leg))}</div>
+      </div>
+    </div>`;
+}
+
+// Best-effort derivation of one visual leg from an existing pick's own
+// fields (sport/matchup/favorite/estimated_probability), following the
+// site's own standing schema conventions (sport suffix Totals/Spreads/
+// Player Props, "Over X.5"/"Under X.5" or "Team -3.5" keys, "A vs B"
+// matchup phrasing) - used for every pick that wasn't hand-authored with
+// a structured legs array already (i.e. everything except PrizePicks).
+function deriveSingleLeg(sport, matchup, favoriteKey, keys) {
+  const s = String(sport || "");
+  const m = String(matchup || "");
+  const fav = String(favoriteKey || "");
+
+  if (/\bTotals$/i.test(s)) {
+    const parts = /^(.*?)\s+—\s+(.*?)\s+O\/U\s+([\d.]+)/i.exec(m);
+    const sideMatch = /^(Over|Under)/i.exec(fav);
+    const side = sideMatch ? sideMatch[1] : "Over";
+    const line = parts ? parts[3] : fav.replace(/[^\d.]/g, "");
+    const stat = parts ? parts[2].trim() : "Total";
+    const teamsPart = parts ? parts[1] : m;
+    const teams = teamsPart.split(/\s+vs\s+/i).map((t) => t.trim());
+    return { type: "over_under", player: teams[0] || teamsPart, opponent: teams[1] || "", side, line, stat };
+  }
+
+  if (/\bPlayer Props$/i.test(s)) {
+    const parts = /^(.*?)\s+—\s+(.*?)(?:\s+O\/U\s+([\d.]+))?$/i.exec(m);
+    if (parts) {
+      const player = parts[1].trim();
+      const stat = parts[2].replace(/\s*O\/U.*$/i, "").trim();
+      if (parts[3]) {
+        const sideMatch = /^(Over|Under)/i.exec(fav);
+        return { type: "over_under", player, opponent: "", side: sideMatch ? sideMatch[1] : "Over", line: parts[3], stat };
+      }
+      return { type: "binary", player, opponent: "", side: fav === "Yes" ? "Yes" : "No", stat };
+    }
+  }
+
+  if (/\bSpreads$/i.test(s)) {
+    const sm = /^(.*?)\s*([+-]\s?[\d.]+)$/.exec(fav);
+    const team = sm ? sm[1].trim() : fav;
+    const spread = sm ? sm[2].replace(/\s+/g, "") : "";
+    const teams = m.split(/\s+vs\s+/i).map((t) => t.trim());
+    const opponent = teams.find((t) => t && t !== team) || teams.find((t) => t) || "";
+    return { type: "spread", team, opponent, spread };
+  }
+
+  // Moneyline / match-winner / tennis-darts-table-tennis set betting default.
+  const teams = keys && keys.length === 2 ? keys : m.split(/\s+vs\s+/i).map((t) => t.trim());
+  const team = fav || teams[0] || "";
+  const opponent = teams.find((t) => t && t !== team) || "";
+  return { type: "moneyline", team, opponent };
+}
+
+function deriveLegsFromPick(pick) {
+  try {
+    const probs = pick.estimated_probability || {};
+    const keys = Object.keys(probs);
+    if (keys.includes("Hits") && keys.includes("Doesn't Hit") && Array.isArray(pick.legs) && pick.legs.length) {
+      const legs = pick.legs.map((leg) => deriveSingleLeg(leg.sport, leg.matchup, leg.side, [])).filter(Boolean);
+      return legs.length ? legs : null;
+    }
+    const leg = deriveSingleLeg(pick.sport, pick.matchup, pick.favorite, keys);
+    return leg ? [leg] : null;
+  } catch (e) {
+    return null;
+  }
+}
+
 function renderCard(pick, options = {}) {
   const card = document.createElement("div");
   card.className = "pick-card";
@@ -1271,6 +1399,15 @@ function renderCard(pick, options = {}) {
       <span class="multiplier-lock-text">${formatMoney(pick.actual_multiplier)}x</span>
     </div>`
       : "";
+
+  // PrizePicks entries with structured legs (type: "moneyline"/"over_under")
+  // render as circle+name+subtitle rows instead of the plain matchup title.
+  const structuredLegs =
+    Array.isArray(pick.legs) && pick.legs.length > 0 && pick.legs.every((l) => l.type)
+      ? pick.legs
+      : deriveLegsFromPick(pick);
+  const hasStructuredLegs = Array.isArray(structuredLegs) && structuredLegs.length > 0;
+  const legRowsBlock = hasStructuredLegs ? `<div class="leg-rows">${structuredLegs.map(renderLegRow).join("")}</div>` : "";
 
   const reasoningItems = (pick.reasoning || []).map((r) => `<li>${escapeHtml(r)}</li>`).join("");
   const sourceLinks = (pick.sources || [])
@@ -1331,9 +1468,10 @@ function renderCard(pick, options = {}) {
 
   card.innerHTML = `
     <div class="matchup-row">
-      <span class="matchup">${escapeHtml(pick.matchup || "")}</span>
+      ${hasStructuredLegs ? "" : `<span class="matchup">${escapeHtml(pick.matchup || "")}</span>`}
       <span class="date">${escapeHtml(pick.date || "")}</span>
     </div>
+    ${legRowsBlock}
     ${probabilityBlock}
     ${multiplierLockBlock}
     <ul class="reasoning">${reasoningItems}</ul>
@@ -1445,6 +1583,19 @@ function isPrizePicksPick(pick) {
 // Calendar's compact "Total winnings" + "see full detailed breakdown"
 // bubble. Only settled entries (a winner is known) contribute - unsettled
 // ones have no result yet, so they're excluded rather than counted as 0.
+// Collapses a specific competition/tour name (e.g. "ATP Hangzhou", "WTA",
+// "Soccer - EPL") down to its broad sport ("Tennis", "Soccer") for the
+// breakdown modal's "By sport" section - "By competition" below it keeps
+// the granular names.
+function broadSportGroup(sport) {
+  const s = sportGroup(sport || "Other");
+  if (/^(ATP|WTA)\b/i.test(s) || /tennis/i.test(s) || /^laver cup$/i.test(s) || /challenger/i.test(s)) {
+    return "Tennis";
+  }
+  if (/^soccer\b/i.test(s)) return "Soccer";
+  return s;
+}
+
 function computeBreakdown(picksList) {
   const settled = picksList.filter((p) => p.winner);
 
@@ -1464,13 +1615,21 @@ function computeBreakdown(picksList) {
   }
 
   const bySport = {};
+  const byCompetition = {};
   for (const p of settled) {
-    const sport = p.sport || "Other";
+    const sport = broadSportGroup(p.sport);
     if (!bySport[sport]) bySport[sport] = [];
     bySport[sport].push(p);
+
+    const competition = p.sport || "Other";
+    if (!byCompetition[competition]) byCompetition[competition] = [];
+    byCompetition[competition].push(p);
   }
   const sportRows = Object.keys(bySport)
     .map((sport) => ({ sport, ...sumBucket(bySport[sport]) }))
+    .sort((a, b) => b.net - a.net);
+  const competitionRows = Object.keys(byCompetition)
+    .map((competition) => ({ sport: competition, ...sumBucket(byCompetition[competition]) }))
     .sort((a, b) => b.net - a.net);
 
   return {
@@ -1479,6 +1638,7 @@ function computeBreakdown(picksList) {
     longshots: sumBucket(longshots),
     prizepicks: sumBucket(prizepicks),
     bySport: sportRows,
+    byCompetition: competitionRows,
     hasAny: settled.length > 0,
   };
 }
@@ -1542,6 +1702,16 @@ function openBreakdownModal(title, breakdown) {
     )
     .join("");
 
+  const competitionRows = breakdown.byCompetition
+    .map(
+      (row) => `
+        <div class="breakdown-row">
+          <span>${escapeHtml(row.sport)} (${row.count})</span>
+          <span class="amount ${amtClass(row.net)}">${formatBreakdownAmount(row, unitValue, showDollars)}</span>
+        </div>`
+    )
+    .join("");
+
   contentEl.innerHTML = `
     <div class="breakdown-section">
       <h4>By type</h4>
@@ -1550,6 +1720,10 @@ function openBreakdownModal(title, breakdown) {
     <div class="breakdown-section">
       <h4>By sport (highest first)</h4>
       ${sportRows}
+    </div>
+    <div class="breakdown-section">
+      <h4>By competition (highest first)</h4>
+      ${competitionRows}
     </div>
   `;
 
@@ -1651,8 +1825,8 @@ function renderCalendar() {
 
     cell.innerHTML = `
       <span>${day}</span>
-      ${summary ? `<span class="day-net">${summary}</span>` : ""}
       ${unitsText ? `<span class="day-units">${unitsText}</span>` : ""}
+      ${summary ? `<span class="day-net">${summary}</span>` : ""}
     `;
 
     cell.addEventListener("click", () => {
