@@ -1151,8 +1151,11 @@ function renderCard(pick) {
 
   // Settled picks (only ever reached from the Calendar tab - live/upcoming
   // picks never carry a "winner" field) get a result badge instead of the
-  // stake row's live implication.
+  // stake row's live implication, plus - right under that original
+  // suggested-stake line - an estimate of the actual $ won/lost, using the
+  // same fair-odds/actual_multiplier convention as the Calendar's net units.
   let resultRow = "";
+  let resultDollarsRow = "";
   if (pick.winner) {
     const isPush = pick.winner === "push" || pick.winner === "Push";
     const isWin = !isPush && pick.winner === pick.favorite;
@@ -1163,6 +1166,10 @@ function renderCard(pick) {
         ${label}${pick.final_score ? ` — ${escapeHtml(pick.final_score)}` : ""}
       </div>
     `;
+    if (units && unitValue) {
+      const netDollars = pickNetUnits(pick) * unitValue;
+      resultDollarsRow = `<div class="result-dollars ${resultClass}">${formatDollarsSigned(netDollars, pickUnitsAreExact(pick))}</div>`;
+    }
   }
 
   card.innerHTML = `
@@ -1182,6 +1189,7 @@ function renderCard(pick) {
     <ul class="reasoning">${reasoningItems}</ul>
     ${sourceLinks ? `<div class="sources">Sources: ${sourceLinks}</div>` : ""}
     ${stakeRow}
+    ${resultDollarsRow}
     ${resultRow}
   `;
 
@@ -1255,6 +1263,12 @@ function pickUnitsAreExact(pick) {
 // (or was a loss/push, which need no odds at all).
 function formatUnitsSigned(n, isExact) {
   return `${isExact ? "=" : "~"}${n >= 0 ? "+" : ""}${n.toFixed(2)}`;
+}
+
+// Same "=+$7.50" / "~+$7.50" convention as formatUnitsSigned, but in
+// dollars (net units * unit size) for a settled pick card's result.
+function formatDollarsSigned(n, isExact) {
+  return `${isExact ? "=" : "~"}${n >= 0 ? "+" : "-"}$${formatMoney(Math.abs(n))}`;
 }
 
 // Long shots lose their array membership once settled (picks/long_shots

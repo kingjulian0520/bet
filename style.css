@@ -1036,6 +1036,16 @@ main {
 .pick-result.lost { color: var(--danger); }
 .pick-result.push { color: var(--muted); }
 
+.result-dollars {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.result-dollars.won { color: var(--lean-high); }
+.result-dollars.lost { color: var(--danger); }
+.result-dollars.push { color: var(--muted); }
+
 .page-footer {
   max-width: 780px;
   margin: 2rem auto 0;
