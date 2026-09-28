@@ -143,6 +143,190 @@
         "https://tennistonic.com/tennis-news/1058374/h2h-prediction-of-hubert-hurkacz-vs-denis-shapovalov-in-chengdu-with-odds-preview-pick-28th-september-2026/"
       ],
       "start_time": "2026-09-28T11:00:00Z"
+    },
+    {
+      "sport": "MLB",
+      "matchup": "New York Yankees vs Boston Red Sox",
+      "date": "2026-09-29",
+      "favorite": "New York Yankees",
+      "estimated_probability": {
+        "New York Yankees": 62,
+        "Boston Red Sox": 38
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "AL Wild Card Series Game 1. Cam Schlittler (presumptive AL Cy Young, 1.95 ERA/239 K in 193.2 IP - the lowest Yankees ERA since Guidry's 1.74 in 1978) starts for New York.",
+        "Schlittler has a 0.55 career ERA against Boston specifically (2 ER in 32.1 IP across 5 starts) - an exceptional, specific matchup history, not just general dominance.",
+        "Boston is expected to start rookie lefty Payton Tolle (9-6, 3.03 ERA) over veteran Sonny Gray in this win-or-go-home spot - real rookie-in-the-Bronx variance, though Tolle has handled the Yankees well before, which tempers the edge.",
+        "Sized just under the market's implied ~63% (-170) to account for that Tolle counter-evidence."
+      ],
+      "sources": [
+        "https://www.nbcsports.com/mlb/news/how-to-watch-red-sox-vs-yankees",
+        "https://www.cbssports.com/mlb/news/yankees-wild-card-series-cam-schlittler-max-fried-gerrit-cole",
+        "https://www.mlb.com/news/cam-schlittler-finishes-2026-regular-season-with-a-1-95-era"
+      ],
+      "start_time": "2026-09-30T00:00:00Z"
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Atlanta Braves vs Philadelphia Phillies",
+      "date": "2026-09-29",
+      "favorite": "Atlanta Braves",
+      "estimated_probability": {
+        "Atlanta Braves": 61,
+        "Philadelphia Phillies": 39
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "NL Wild Card Series Game 1. Chris Sale (14-9, 2.16 ERA, 0.98 WHIP) is having one of the best age-37 seasons by any pitcher since 1921 - only Verlander, Clemens, Vance, and Chandler had a better ERA that old.",
+        "Braves won the NL East outright and get home field for the full series, with Sale starting Game 1 at home.",
+        "Phillies counter with Cristopher Sanchez - solid, but without Sale's current level of dominance.",
+        "Sized in line with the market's ~60% implied (-150)."
+      ],
+      "sources": [
+        "https://www.ajc.com/sports/2026/09/chris-sale-puts-bow-on-memorable-2026-regular-season",
+        "https://www.mlb.com/braves/news/chris-sale-2026-season-comparison"
+      ],
+      "start_time": "2026-09-29T18:00:00Z"
+    },
+    {
+      "sport": "MLB",
+      "matchup": "Houston Astros vs Chicago White Sox",
+      "date": "2026-09-29",
+      "favorite": "Houston Astros",
+      "estimated_probability": {
+        "Houston Astros": 59,
+        "Chicago White Sox": 41
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "AL Wild Card Series Game 1. Hunter Brown (Houston's clear #1 starter) is on full rest; Chicago's Sean Burke (11-7, 3.34 ERA) is good, but the White Sox rotation depth behind him is described as still a work in progress.",
+        "Houston controlled the regular-season series 5-2, including 3-1 at home.",
+        "Chicago's playoff berth (79-76, ending a run of 100-loss seasons) is built on offense (6th in HR, 5th in runs) rather than pitching - its path through this series likely runs through outslugging teams, which favors Houston in a starter-vs-starter Game 1 specifically.",
+        "Exact first pitch time is unconfirmed - sources conflict between 4pm and 5pm ET; using 4pm ET as a fallback start_time."
+      ],
+      "sources": [
+        "https://www.mlb.com/whitesox/news/white-sox-vs-astros-wild-card-series-starting-lineups",
+        "https://www.houstonchronicle.com/sports/astros/article/wild-card-schedule"
+      ],
+      "start_time": "2026-09-29T20:00:00Z"
+    },
+    {
+      "sport": "NHL",
+      "matchup": "Vegas Golden Knights vs Chicago Blackhawks",
+      "date": "2026-09-29",
+      "favorite": "Vegas Golden Knights",
+      "estimated_probability": {
+        "Vegas Golden Knights": 70,
+        "Chicago Blackhawks": 30
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Season opener. Blackhawks franchise player and newly-named captain Connor Bedard is out until November recovering from shoulder surgery (injured in practice July 2) - Chicago opens the season without its best player entirely.",
+        "Vegas enters on a hot preseason/exhibition run and just added Mitch Marner via sign-and-trade.",
+        "Sized below the market's ~72% implied (-263) given real opening-night variance, but this clears the bar for a genuinely lopsided situation given Bedard's absence."
+      ],
+      "sources": [
+        "https://www.athlonsports.com/nhl/chicago-blackhawks/blackhawks-announce-connor-bedard-update",
+        "https://www.bleachernation.com/blackhawks/2026/09/23/blackhawks-notes-bedard-update"
+      ],
+      "start_time": "2026-09-30T02:30:00Z"
+    },
+    {
+      "sport": "NHL",
+      "matchup": "Edmonton Oilers vs Vancouver Canucks",
+      "date": "2026-09-29",
+      "favorite": "Edmonton Oilers",
+      "estimated_probability": {
+        "Edmonton Oilers": 70,
+        "Vancouver Canucks": 30
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Season opener. Edmonton won the last two head-to-head meetings by a combined 12-1 (6-0, 6-1).",
+        "Connor McDavid (138 points last season) headlines a roster priced at +900 to win the Cup vs. Vancouver's +100000 - an extreme talent gap.",
+        "Vancouver missed the playoffs last season with no major offseason additions cited.",
+        "Sized below the market's ~75% implied (-303) but this is a legitimately lopsided matchup on both recent results and roster quality."
+      ],
+      "sources": [
+        "https://www.sportsgrid.com/nhl/game/vancouver-canucks-edmonton-oilers",
+        "https://www.squawka.com/ca/news/nhl/canucks-vs-oilers-prediction-odds-opening-night"
+      ],
+      "start_time": "2026-09-30T02:10:00Z"
+    },
+    {
+      "sport": "NHL",
+      "matchup": "Montreal Canadiens vs Toronto Maple Leafs",
+      "date": "2026-09-29",
+      "favorite": "Montreal Canadiens",
+      "estimated_probability": {
+        "Montreal Canadiens": 58,
+        "Toronto Maple Leafs": 42
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Season opener, a genuine value/contrarian read against the market (Toronto favored -115/-117) rather than a chalk pick.",
+        "Toronto lost a franchise-record 30 points last season (32-36-14, 82 pts) and let its best player, Mitch Marner (102 points, team-leading last season), leave via sign-and-trade to Vegas for a depth piece (Nicolas Roy) - a real talent downgrade, not just an offseason storyline.",
+        "Montreal had a breakout 106-point season (3rd in Atlantic), pushed eventual-champion Carolina to 5 playoff games, and returns an ascending young core: Nick Suzuki (101 pts, captain), Cole Caufield (51 goals), and Calder-runner-up rookie Ivan Demidov.",
+        "Montreal swept the preseason series 2-0 against Toronto specifically (small sample, but notable given the personnel context).",
+        "Toronto is still favored largely on home ice and new goalie Bobrovsky - kept intentionally modest (58%) since this leans against the market rather than with it."
+      ],
+      "sources": [
+        "https://www.nhl.com/canadiens/news/the-2025-26-canadiens-season-one-for-the-books",
+        "https://www.nhl.com/news/mitch-marner-traded-from-toronto-to-vegas-after-signing-8-year-96m-deal",
+        "https://www.thehockeywriters.com/4-things-learned-from-maple-leafs-preseason-2026-27"
+      ],
+      "start_time": "2026-09-29T23:00:00Z"
+    },
+    {
+      "sport": "ATP Hangzhou",
+      "matchup": "Andrey Rublev vs Kyrian Jacquet",
+      "date": "2026-09-28",
+      "favorite": "Andrey Rublev",
+      "estimated_probability": {
+        "Andrey Rublev": 72,
+        "Kyrian Jacquet": 28
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "Semifinal. Rublev is ranked ~24-25; Jacquet is ranked ~107-110 and entered the tournament outside the top 100 - a large, genuine ranking/level gap.",
+        "Jacquet's run (wins over Etcheverry and Marozsan) is a real breakout story but this is his first tour-level semifinal - untested at this stage.",
+        "Sized below the market's ~77.5% implied (1.29 decimal) to account for Jacquet's hot form, but this qualifies as a lopsided matchup on ranking/experience grounds."
+      ],
+      "sources": [
+        "https://tennistonic.com/tennis-news/1058336/h2h-prediction-of-andrey-rublev-vs-kyrian-jacquet",
+        "https://www.atptour.com/en/players/kyrian-jacquet/j0az/rankings-history"
+      ],
+      "start_time": "2026-09-28T09:30:00Z"
+    },
+    {
+      "sport": "ATP Hangzhou",
+      "matchup": "Daniil Medvedev vs Roman Safiullin",
+      "date": "2026-09-28",
+      "favorite": "Daniil Medvedev",
+      "estimated_probability": {
+        "Daniil Medvedev": 75,
+        "Roman Safiullin": 25
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "Semifinal. Medvedev is ranked #6 and chasing his third title of the season; Safiullin is ranked ~99-102 and has had a poor 2026 (3-5 on tour before this event).",
+        "First-ever meeting (0-0 H2H), so no head-to-head risk factor offsetting the ranking gap.",
+        "Market has Medvedev at ~75.8% implied (1.32 decimal) - this estimate lines up closely; a genuinely lopsided pairing (top-10 vs. an outside-top-90 player having a down year)."
+      ],
+      "sources": [
+        "https://www.sportskeeda.com/tennis/daniil-medvedev-vs-roman-safiullin-preview-head-to-head",
+        "https://tennistonic.com/tennis-news/1058413/h2h-prediction-of-daniil-medvedev-vs-roman-safiullin"
+      ],
+      "start_time": "2026-09-28T11:30:00Z"
     }
   ],
   "long_shots": [
