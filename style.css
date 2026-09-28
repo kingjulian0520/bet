@@ -1148,6 +1148,11 @@ main {
   font-weight: 600;
 }
 
+.calendar-day .day-units {
+  font-size: 0.62rem;
+  opacity: 0.85;
+}
+
 .day-detail {
   margin-top: 1.25rem;
 }

@@ -1212,6 +1212,16 @@ function wireCalendar() {
 // was for - settled ones (win/loss known) plus any still-live ones for
 // today/upcoming days, so a day's cell is complete the moment it's picked,
 // not only once it resolves.
+// Units result for a single settled pick. No real sportsbook odds are
+// stored for the site's own picks (only a probability estimate), so this
+// uses a flat convention - risk the recommended units to win that same
+// amount back - rather than assuming any specific book's juice.
+function pickNetUnits(pick) {
+  const units = pick.recommended_units || 0;
+  if (pick.winner === "push" || pick.winner === "Push") return 0;
+  return pick.winner === pick.favorite ? units : -units;
+}
+
 function picksByDate() {
   const map = {};
   const add = (p) => {
@@ -1267,9 +1277,10 @@ function renderCalendar() {
     const settledPicks = dayPicks.filter((p) => p.winner);
     const wins = settledPicks.filter((p) => p.winner === p.favorite).length;
     const losses = settledPicks.filter((p) => p.winner !== p.favorite && p.winner !== "push").length;
+    const netUnits = settledPicks.reduce((sum, p) => sum + pickNetUnits(p), 0);
 
     const cell = document.createElement("div");
-    cell.className = "calendar-day " + (wins > losses ? "win" : losses > wins ? "loss" : "neutral");
+    cell.className = "calendar-day " + (netUnits > 0 ? "win" : netUnits < 0 ? "loss" : "neutral");
     if (dateStr === calSelectedDate) cell.classList.add("selected");
 
     const summary = settledPicks.length
@@ -1277,10 +1288,12 @@ function renderCalendar() {
       : dayPicks.length
         ? `${dayPicks.length} pick${dayPicks.length === 1 ? "" : "s"}`
         : "";
+    const unitsText = settledPicks.length ? `${netUnits >= 0 ? "+" : ""}${netUnits.toFixed(2)}u` : "";
 
     cell.innerHTML = `
       <span>${day}</span>
       ${summary ? `<span class="day-net">${summary}</span>` : ""}
+      ${unitsText ? `<span class="day-units">${unitsText}</span>` : ""}
     `;
 
     cell.addEventListener("click", () => {
@@ -1303,8 +1316,13 @@ function renderDayDetail() {
   }
 
   const dayPicks = picksByDate()[calSelectedDate] || [];
+  const settledPicks = dayPicks.filter((p) => p.winner);
+  const netUnits = settledPicks.reduce((sum, p) => sum + pickNetUnits(p), 0);
+
   const heading = document.createElement("h3");
-  heading.textContent = `Picks for ${calSelectedDate}`;
+  heading.textContent = settledPicks.length
+    ? `Picks for ${calSelectedDate} — ${netUnits >= 0 ? "+" : ""}${netUnits.toFixed(2)} units`
+    : `Picks for ${calSelectedDate}`;
   root.innerHTML = "";
   root.appendChild(heading);
 
