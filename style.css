@@ -470,6 +470,29 @@ body {
   font-size: 0.9rem;
 }
 
+.display-mode-btn {
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.display-mode-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .bankroll-note {
   color: var(--muted);
   font-size: 0.75rem;

@@ -2,6 +2,34 @@ import * as Auth from "./auth.js";
 
 const UNIT_VALUE_KEY = "closeCallsUnitValue";
 const TIMEZONE_KEY = "closeCallsTimeZone";
+const DISPLAY_MODE_KEY = "closeCallsDisplayMode";
+
+// "units" or "dollars" - global toggle for whether unit/dollar amounts
+// across the site show as units or as $ (computed from unit size). Instant,
+// no reload - every render function checks this directly.
+let displayMode = localStorage.getItem(DISPLAY_MODE_KEY) === "dollars" ? "dollars" : "units";
+
+function wireDisplayModeToggle() {
+  const btn = document.getElementById("display-mode-toggle");
+  if (!btn) return;
+  updateDisplayModeButton();
+  btn.addEventListener("click", () => {
+    displayMode = displayMode === "units" ? "dollars" : "units";
+    localStorage.setItem(DISPLAY_MODE_KEY, displayMode);
+    updateDisplayModeButton();
+    renderAll();
+  });
+}
+
+function updateDisplayModeButton() {
+  const btn = document.getElementById("display-mode-toggle");
+  if (!btn) return;
+  btn.textContent = displayMode === "units" ? "U" : "$";
+  btn.setAttribute(
+    "aria-label",
+    displayMode === "units" ? "Showing units — click to show dollars" : "Showing dollars — click to show units"
+  );
+}
 
 // Formspree form ID for "Report an Issue" in the account menu. This ID
 // only identifies which Formspree form relays the message - it does NOT
@@ -644,6 +672,7 @@ function wireAccountMenu() {
 async function main() {
   wireTabs();
   wireCalendar();
+  wireDisplayModeToggle();
   wireAuthUI();
   wireAccountMenu();
   wirePasswordRecovery();
@@ -1106,9 +1135,14 @@ function renderExposureSummary() {
   }
 
   const scope = selectedDayFilter === "all" ? "Current picks" : "This day's picks";
-  let text = `${scope} add up to ${totalUnits.toFixed(2)} units if you took every one`;
-  if (unitValue) {
-    text += ` — $${formatMoney(totalUnits * unitValue)}`;
+  let text;
+  if (displayMode === "dollars" && unitValue) {
+    text = `${scope} add up to $${formatMoney(totalUnits * unitValue)} if you took every one`;
+  } else {
+    text = `${scope} add up to ${totalUnits.toFixed(2)} units if you took every one`;
+    if (displayMode === "dollars") {
+      text += " (add a unit size above to see $)";
+    }
   }
   el.textContent = text + ".";
   el.hidden = false;
@@ -1138,13 +1172,17 @@ function renderCard(pick) {
   const unitValue = getUnitValue();
   let stakeRow = "";
   if (units) {
-    const dollarsText = unitValue
-      ? `<span class="dollars">= $${formatMoney(units * unitValue)}</span>`
-      : `<span class="dollars">add a unit size above to see $</span>`;
+    let stakeText;
+    if (displayMode === "dollars") {
+      stakeText = unitValue
+        ? `Suggested: $${formatMoney(units * unitValue)}`
+        : `Suggested: ${units} unit${units === 1 ? "" : "s"} (add a unit size above to see $)`;
+    } else {
+      stakeText = `Suggested: ${units} unit${units === 1 ? "" : "s"}`;
+    }
     stakeRow = `
       <div class="stake-row">
-        <span class="units">Suggested: ${units} unit${units === 1 ? "" : "s"}</span>
-        ${dollarsText}
+        <span class="units">${stakeText}</span>
       </div>
     `;
   }
@@ -1166,9 +1204,12 @@ function renderCard(pick) {
         ${label}${pick.final_score ? ` — ${escapeHtml(pick.final_score)}` : ""}
       </div>
     `;
-    if (units && unitValue) {
-      const netDollars = pickNetUnits(pick) * unitValue;
-      resultDollarsRow = `<div class="result-dollars ${resultClass}">${formatDollarsSigned(netDollars, pickUnitsAreExact(pick))}</div>`;
+    if (units) {
+      const netText =
+        displayMode === "dollars" && unitValue
+          ? formatDollarsSigned(pickNetUnits(pick) * unitValue, pickUnitsAreExact(pick))
+          : `${formatUnitsSigned(pickNetUnits(pick), pickUnitsAreExact(pick))}u`;
+      resultDollarsRow = `<div class="result-dollars ${resultClass}">${netText}</div>`;
     }
   }
 
@@ -1313,6 +1354,8 @@ function renderCalendar() {
   label.textContent = `${MONTH_NAMES[calViewMonth]} ${calViewYear}`;
 
   const byDate = picksByDate();
+  const unitValue = getUnitValue();
+  const showDollars = displayMode === "dollars" && unitValue;
   const firstWeekday = new Date(calViewYear, calViewMonth, 1).getDay();
   const daysInMonth = new Date(calViewYear, calViewMonth + 1, 0).getDate();
 
@@ -1354,8 +1397,18 @@ function renderCalendar() {
       : mainPicks.length
         ? `${mainPicks.length} pick${mainPicks.length === 1 ? "" : "s"}`
         : "";
-    const unitsText = settledMain.length ? `${formatUnitsSigned(netUnits, mainIsExact)}u` : "";
-    const lsText = settledLongShots.length ? `with LS (${formatUnitsSigned(netUnitsWithLS, withLSIsExact)}u)` : "";
+    const unitsText = settledMain.length
+      ? showDollars
+        ? formatDollarsSigned(netUnits * unitValue, mainIsExact)
+        : `${formatUnitsSigned(netUnits, mainIsExact)}u`
+      : "";
+    const lsText = settledLongShots.length
+      ? `with LS (${
+          showDollars
+            ? formatDollarsSigned(netUnitsWithLS * unitValue, withLSIsExact)
+            : `${formatUnitsSigned(netUnitsWithLS, withLSIsExact)}u`
+        })`
+      : "";
 
     cell.innerHTML = `
       <span>${day}</span>
@@ -1390,12 +1443,19 @@ function renderDayDetail() {
   const netUnitsWithLS = netUnits + settledLongShots.reduce((sum, p) => sum + pickNetUnits(p), 0);
   const mainIsExact = settledMain.every(pickUnitsAreExact);
   const withLSIsExact = mainIsExact && settledLongShots.every(pickUnitsAreExact);
+  const unitValue = getUnitValue();
+  const showDollars = displayMode === "dollars" && unitValue;
 
   let headingText = `Picks for ${calSelectedDate}`;
   if (settledMain.length) {
-    headingText += ` — ${formatUnitsSigned(netUnits, mainIsExact)} units`;
+    headingText += ` — ${
+      showDollars ? formatDollarsSigned(netUnits * unitValue, mainIsExact) : `${formatUnitsSigned(netUnits, mainIsExact)} units`
+    }`;
     if (settledLongShots.length) {
-      headingText += ` (with LS: ${formatUnitsSigned(netUnitsWithLS, withLSIsExact)})`;
+      const lsNet = showDollars
+        ? formatDollarsSigned(netUnitsWithLS * unitValue, withLSIsExact)
+        : formatUnitsSigned(netUnitsWithLS, withLSIsExact);
+      headingText += ` (with LS: ${lsNet})`;
     }
   }
 

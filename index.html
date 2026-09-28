@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Close Calls</title>
-<link rel="stylesheet" href="style.css?v=29">
+<link rel="stylesheet" href="style.css?v=30">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css">
 </head>
 <body>
@@ -37,6 +37,7 @@
   <div class="bankroll-bar">
     <label for="unit-value-input">Unit size ($)</label>
     <input id="unit-value-input" type="number" min="0" step="1" placeholder="e.g. 30">
+    <button id="display-mode-toggle" class="display-mode-btn" type="button" title="Toggle between units and dollars" aria-label="Showing units — click to show dollars">U</button>
     <span class="bankroll-note">Stored only in your browser — used to show dollar amounts, doesn't affect any pick or bet.</span>
   </div>
 
@@ -264,6 +265,6 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
-<script type="module" src="script.js?v=44"></script>
+<script type="module" src="script.js?v=45"></script>
 </body>
 </html>
