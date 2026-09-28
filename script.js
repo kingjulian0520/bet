@@ -1224,7 +1224,7 @@ function renderExposureSummary() {
   el.classList.toggle("hot", totalUnits >= 8);
 }
 
-function renderCard(pick) {
+function renderCard(pick, options = {}) {
   const card = document.createElement("div");
   card.className = "pick-card";
 
@@ -1237,6 +1237,40 @@ function renderCard(pick) {
 
   const confClass = favPct >= 65 ? "high" : favPct >= 58 ? "mid" : "low";
   const confLabel = pick.confidence_label || (favPct >= 65 ? "Lean" : favPct >= 58 ? "Slight lean" : "Coin flip");
+
+  // PrizePicks and Ladder never show a probability/confidence read - PrizePicks
+  // goes purely off the real multiplier you supply, and Ladder is deliberately
+  // presented as a lock with no percentage attached either.
+  const isPP = isPrizePicksPick(pick);
+  const hideProbability = options.hideProbability || isPP;
+
+  const probabilityBlock = hideProbability
+    ? ""
+    : `
+    <span class="confidence-tag ${confClass}">${escapeHtml(confLabel)} — favors ${escapeHtml(favTeam || "?")}</span>
+    <div class="prob-bar">
+      <div class="fav" style="width:${favPct}%"></div>
+      <div class="dog" style="width:${dogPct}%"></div>
+    </div>
+    <div class="prob-labels">
+      <span>${escapeHtml(favTeam || "")} ${favPct}%</span>
+      <span>${escapeHtml(dogTeam || "")} ${dogPct}%</span>
+    </div>`;
+
+  // PrizePicks shows its real multiplier exactly once, as the "keyhole" of a
+  // green lock badge (styled like the site's own access-code lock icon) -
+  // never as a plain percentage or a second time in the stake row below.
+  const multiplierLockBlock =
+    isPP && typeof pick.actual_multiplier === "number" && pick.actual_multiplier > 0
+      ? `
+    <div class="multiplier-lock">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+        <path d="M8 11V7a4 4 0 1 1 8 0v4" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <span class="multiplier-lock-text">${formatMoney(pick.actual_multiplier)}x</span>
+    </div>`
+      : "";
 
   const reasoningItems = (pick.reasoning || []).map((r) => `<li>${escapeHtml(r)}</li>`).join("");
   const sourceLinks = (pick.sources || [])
@@ -1255,8 +1289,10 @@ function renderCard(pick) {
     } else {
       stakeText = `Suggested: ${units} unit${units === 1 ? "" : "s"}`;
     }
+    // The multiplier already gets its own dedicated spot (the PrizePicks
+    // lock keyhole above) - never repeat it here for those picks.
     const multiplierText =
-      typeof pick.actual_multiplier === "number" && pick.actual_multiplier > 0
+      !isPP && typeof pick.actual_multiplier === "number" && pick.actual_multiplier > 0
         ? `<span class="multiplier">${formatMoney(pick.actual_multiplier)}x</span>`
         : "";
     stakeRow = `
@@ -1298,15 +1334,8 @@ function renderCard(pick) {
       <span class="matchup">${escapeHtml(pick.matchup || "")}</span>
       <span class="date">${escapeHtml(pick.date || "")}</span>
     </div>
-    <span class="confidence-tag ${confClass}">${escapeHtml(confLabel)} — favors ${escapeHtml(favTeam || "?")}</span>
-    <div class="prob-bar">
-      <div class="fav" style="width:${favPct}%"></div>
-      <div class="dog" style="width:${dogPct}%"></div>
-    </div>
-    <div class="prob-labels">
-      <span>${escapeHtml(favTeam || "")} ${favPct}%</span>
-      <span>${escapeHtml(dogTeam || "")} ${dogPct}%</span>
-    </div>
+    ${probabilityBlock}
+    ${multiplierLockBlock}
     <ul class="reasoning">${reasoningItems}</ul>
     ${sourceLinks ? `<div class="sources">Sources: ${sourceLinks}</div>` : ""}
     ${stakeRow}
@@ -1767,10 +1796,6 @@ function ladderProgression() {
   return out;
 }
 
-function formatUnitsPlain(n) {
-  return `${formatMoney(n)} unit${Math.round(n * 100) === 100 ? "" : "s"}`;
-}
-
 function renderLadder() {
   const label = document.getElementById("ladder-date-label");
   const root = document.getElementById("ladder-root");
@@ -1790,39 +1815,21 @@ function renderLadder() {
 
   const progression = ladderProgression();
   const row = progression.find((r) => r.entry.date === ladderViewDate);
-  const unitValue = getUnitValue();
-  const showDollars = displayMode === "dollars" && unitValue;
 
   root.innerHTML = "";
 
   if (!row) {
-    const priorRows = progression.filter((r) => r.entry.date < ladderViewDate);
-    const last = priorRows[priorRows.length - 1];
-    const running = last ? (last.stakeOut ?? last.stakeIn) : 1;
-    const runningText = showDollars ? `$${formatMoney(running * unitValue)}` : formatUnitsPlain(running);
     const p = document.createElement("p");
-    p.className = "empty-state ladder-empty-day";
-    p.innerHTML = `No ladder pick this day.<span class="ladder-running">Ladder currently at ${runningText}</span>`;
+    p.className = "empty-state";
+    p.textContent = "No ladder pick this day.";
     root.appendChild(p);
     return;
   }
 
-  const card = renderCard(row.entry);
-
-  const stakeInText = showDollars ? `$${formatMoney(row.stakeIn * unitValue)}` : formatUnitsPlain(row.stakeIn);
-  let stakeHtml = `<span class="stake-in">Riding: ${stakeInText}</span>`;
-  if (row.entry.winner) {
-    if (row.busted) {
-      stakeHtml += `<span class="stake-out lost">Busted — back to 1 unit tomorrow</span>`;
-    } else {
-      const stakeOutText = showDollars ? `$${formatMoney(row.stakeOut * unitValue)}` : formatUnitsPlain(row.stakeOut);
-      stakeHtml += `<span class="stake-out won">Rolls into tomorrow at ${stakeOutText}</span>`;
-    }
-  }
-  const stakeDiv = document.createElement("div");
-  stakeDiv.className = "ladder-stake";
-  stakeDiv.innerHTML = stakeHtml;
-  card.appendChild(stakeDiv);
+  // No unit amounts on the card itself - the bio explains the 1-unit-start,
+  // compounding mechanic once; individual days just show the pick and,
+  // once settled, whether it won (renderCard's own result badge).
+  const card = renderCard(row.entry, { hideProbability: true });
 
   root.appendChild(card);
 }
