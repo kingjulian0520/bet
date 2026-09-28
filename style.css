@@ -1170,34 +1170,30 @@ main {
 .result-dollars.lost { color: var(--danger); }
 .result-dollars.push { color: var(--muted); }
 
-.multiplier-lock {
-  position: relative;
-  width: 74px;
-  height: 74px;
-  margin: 0.8rem auto 0.4rem;
+.pp-body {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pp-body .leg-rows {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.multiplier-badge {
+  flex: 0 0 auto;
+  width: 92px;
+  height: 92px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent), var(--accent-dim));
   color: #06110d;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.4);
-}
-
-.multiplier-lock svg {
-  width: 56px;
-  height: 56px;
-}
-
-.multiplier-lock-text {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.05rem;
+  font-size: 1.7rem;
   font-weight: 800;
-  color: #000;
-  line-height: 1;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.4);
 }
 
 .leg-rows {

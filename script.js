@@ -1385,19 +1385,12 @@ function renderCard(pick, options = {}) {
       <span>${escapeHtml(dogTeam || "")} ${dogPct}%</span>
     </div>`;
 
-  // PrizePicks shows its real multiplier exactly once, as the "keyhole" of a
-  // green lock badge (styled like the site's own access-code lock icon) -
-  // never as a plain percentage or a second time in the stake row below.
-  const multiplierLockBlock =
+  // PrizePicks shows its real multiplier exactly once, as big plain text in
+  // a circle sitting beside the leg rows (vertically centered against them)
+  // - never as a plain percentage or a second time in the stake row below.
+  const multiplierBadgeBlock =
     isPP && typeof pick.actual_multiplier === "number" && pick.actual_multiplier > 0
-      ? `
-    <div class="multiplier-lock">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
-        <path d="M8 11V7a4 4 0 1 1 8 0v4" stroke="currentColor" stroke-width="2"/>
-      </svg>
-      <span class="multiplier-lock-text">${formatMoney(pick.actual_multiplier)}x</span>
-    </div>`
+      ? `<div class="multiplier-badge">${formatMoney(pick.actual_multiplier)}x</div>`
       : "";
 
   // PrizePicks entries with structured legs (type: "moneyline"/"over_under")
@@ -1408,6 +1401,11 @@ function renderCard(pick, options = {}) {
       : deriveLegsFromPick(pick);
   const hasStructuredLegs = Array.isArray(structuredLegs) && structuredLegs.length > 0;
   const legRowsBlock = hasStructuredLegs ? `<div class="leg-rows">${structuredLegs.map(renderLegRow).join("")}</div>` : "";
+  // The multiplier badge sits beside the leg rows, not stacked below them -
+  // wrap both in a row together so the badge centers against their full height.
+  const bodyBlock = multiplierBadgeBlock
+    ? `<div class="pp-body">${legRowsBlock}${multiplierBadgeBlock}</div>`
+    : legRowsBlock;
 
   const reasoningItems = (pick.reasoning || []).map((r) => `<li>${escapeHtml(r)}</li>`).join("");
   const sourceLinks = (pick.sources || [])
@@ -1471,9 +1469,8 @@ function renderCard(pick, options = {}) {
       ${hasStructuredLegs ? "" : `<span class="matchup">${escapeHtml(pick.matchup || "")}</span>`}
       <span class="date">${escapeHtml(pick.date || "")}</span>
     </div>
-    ${legRowsBlock}
+    ${bodyBlock}
     ${probabilityBlock}
-    ${multiplierLockBlock}
     <ul class="reasoning">${reasoningItems}</ul>
     ${sourceLinks ? `<div class="sources">Sources: ${sourceLinks}</div>` : ""}
     ${stakeRow}
