@@ -1172,9 +1172,9 @@ main {
 
 .multiplier-lock {
   position: relative;
-  width: 52px;
-  height: 52px;
-  margin: 0.7rem auto 0.3rem;
+  width: 74px;
+  height: 74px;
+  margin: 0.8rem auto 0.4rem;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent), var(--accent-dim));
   color: #06110d;
@@ -1185,16 +1185,16 @@ main {
 }
 
 .multiplier-lock svg {
-  width: 28px;
-  height: 28px;
+  width: 40px;
+  height: 40px;
 }
 
 .multiplier-lock-text {
   position: absolute;
-  top: 60%;
+  top: 59%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 0.6rem;
+  font-size: 0.95rem;
   font-weight: 800;
   color: #000;
   line-height: 1;
