@@ -459,37 +459,23 @@ body {
   font-size: 0.9rem;
 }
 
-.platform-select-row {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  margin-bottom: 0.75rem;
-}
-
-.platform-select-label {
-  font-size: 0.85rem;
-  color: var(--muted);
-  font-weight: 600;
-}
-
-.platform-select {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  color: var(--text);
-  border-radius: 999px;
-  padding: 0.4rem 1.6rem 0.4rem 0.9rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
+.tab-select {
   appearance: none;
+  font-family: inherit;
   background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%), linear-gradient(135deg, var(--muted) 50%, transparent 50%);
   background-position: calc(100% - 14px) center, calc(100% - 9px) center;
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;
+  padding-right: 2rem;
 }
 
-.platform-select:hover {
-  border-color: var(--accent);
+.tab-select.active {
+  background-image: linear-gradient(45deg, transparent 50%, #06110d 50%), linear-gradient(135deg, #06110d 50%, transparent 50%);
+}
+
+.tab-select option {
+  background: var(--panel);
+  color: var(--text);
 }
 
 .odds-dropdown {

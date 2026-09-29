@@ -807,32 +807,38 @@ function wireTabs() {
 let selectedDayFilter = "all";
 let selectedPrizePicksDayFilter = "all";
 
-// Which platform's name/branding shows on the "PrizePicks" tab - the site
-// owner places these picks across several apps (Courtside, BetMGM, FanDuel,
-// Underdog, Kalshi), not just PrizePicks itself, so the label is a
-// per-viewer preference rather than fixed text.
-let ppPlatformName = localStorage.getItem("ppPlatformName") || "Courtside";
+// Which platform this tab is filtered to - the site owner places these
+// picks across several apps (PrizePicks, Courtside, BetMGM, FanDuel,
+// Underdog, Kalshi). The tab bubble itself is a <select>; picking an
+// option both switches to this tab and filters currentPrizePicks down to
+// entries tagged with that platform.
+let ppPlatformName = localStorage.getItem("ppPlatformName") || "PrizePicks";
 
 function applyPPPlatformLabel() {
   const tabBtn = document.getElementById("prizepicks-tab-btn");
-  if (tabBtn) tabBtn.textContent = ppPlatformName;
+  if (tabBtn) tabBtn.value = ppPlatformName;
 
   const intro = document.getElementById("prizepicks-intro");
   if (intro) {
     intro.textContent = `Picks built specifically for ${ppPlatformName}, packaged as ${ppPlatformName}-style player prop parlays. Held empty until there's a reliable stats source backing them — no picks here are guesses.`;
   }
-
-  const select = document.getElementById("prizepicks-platform-select");
-  if (select) select.value = ppPlatformName;
 }
 
 function wirePPPlatformSelect() {
-  const select = document.getElementById("prizepicks-platform-select");
+  const select = document.getElementById("prizepicks-tab-btn");
   if (!select) return;
   select.addEventListener("change", () => {
     ppPlatformName = select.value;
     localStorage.setItem("ppPlatformName", ppPlatformName);
     applyPPPlatformLabel();
+    document.querySelectorAll(".tab-btn").forEach((b) => {
+      b.classList.remove("active");
+      b.setAttribute("aria-selected", "false");
+    });
+    document.querySelectorAll(".tab-panel").forEach((p) => p.classList.remove("active"));
+    select.classList.add("active");
+    select.setAttribute("aria-selected", "true");
+    document.getElementById(select.dataset.tab).classList.add("active");
     renderPrizePicks();
   });
 }
@@ -1199,19 +1205,23 @@ function renderPrizePicks() {
 
   renderPrizePicksDayFilterBar();
 
+  const platformItems = currentPrizePicks.filter(
+    (p) => (p.platform || "PrizePicks") === ppPlatformName
+  );
   const items =
     selectedPrizePicksDayFilter === "all"
-      ? currentPrizePicks
-      : currentPrizePicks.filter((p) => p.date === selectedPrizePicksDayFilter);
+      ? platformItems
+      : platformItems.filter((p) => p.date === selectedPrizePicksDayFilter);
 
   if (items.length === 0) {
     const todayStr = todayDateStr();
+    const label = ppPlatformName === "PrizePicks" ? "picks" : `${ppPlatformName} picks`;
     const msg =
       selectedPrizePicksDayFilter === "all"
-        ? `No ${ppPlatformName} picks yet — waiting on a reliable stats source.`
+        ? `No ${label} yet — waiting on a reliable stats source.`
         : selectedPrizePicksDayFilter === todayStr
-        ? `No ${ppPlatformName} picks for today yet.`
-        : `No ${ppPlatformName} picks for this day yet.`;
+        ? `No ${label} for today yet.`
+        : `No ${label} for this day yet.`;
     root.innerHTML = `<p class="empty-state">${escapeHtml(msg)}</p>`;
     return;
   }

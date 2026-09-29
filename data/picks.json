@@ -3585,7 +3585,8 @@
       ],
       "winner": "Doesn't Hit",
       "final_score": "Bears 27, Eagles 7. Monangai: 22 carries (well over 9.5, hit). Ertz: only confirmed reception was 9 yards (to the CHI 10) in a low-volume Eagles passing game (Hurts 16/25, 153 yds total) - under the 10.5 line, so this leg misses and the parlay settles Doesn't Hit.",
-      "settled_at": "2026-09-29T03:45:00Z"
+      "settled_at": "2026-09-29T03:45:00Z",
+      "platform": "PrizePicks"
     },
     {
       "sport": "NFL",
@@ -3622,7 +3623,8 @@
       ],
       "winner": "Hits",
       "final_score": "Bears 27, Eagles 7. Corrected settlement: D'Andre Swift actually had 20 carries for 84 yards (comfortably over 14.5 attempts - my original settlement wrongly inferred a low carry count from a flawed team-total-yards subtraction instead of checking his real box score line). Saquon Barkley had 15 carries for 82 yards (73 of it in the first half), also comfortably over his 44.5 line. Both legs hit; parlay corrected to Hits.",
-      "settled_at": "2026-09-29T04:05:00Z"
+      "settled_at": "2026-09-29T04:05:00Z",
+      "platform": "PrizePicks"
     }
   ],
   "ladder": [
@@ -3688,7 +3690,8 @@
           "line": 21.5,
           "stat": "Total Games"
         }
-      ]
+      ],
+      "platform": "PrizePicks"
     },
     {
       "sport": "Mixed",
@@ -3730,7 +3733,8 @@
           "line": 20.5,
           "stat": "Total Games"
         }
-      ]
+      ],
+      "platform": "PrizePicks"
     },
     {
       "sport": "Tennis",
@@ -3764,7 +3768,8 @@
           "line": 18.5,
           "stat": "Total Games"
         }
-      ]
+      ],
+      "platform": "PrizePicks"
     },
     {
       "sport": "WNBA",
@@ -3822,7 +3827,8 @@
           "line": 0.5,
           "stat": "Made Threes"
         }
-      ]
+      ],
+      "platform": "PrizePicks"
     }
   ]
 }
