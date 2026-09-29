@@ -50,7 +50,7 @@
     {
       "sport": "ATP Beijing",
       "matchup": "Novak Djokovic vs Nuno Borges",
-      "date": "2026-09-30",
+      "date": "2026-09-29",
       "start_time": "2026-09-30T03:00:00Z",
       "favorite": "Novak Djokovic",
       "estimated_probability": {
@@ -79,7 +79,7 @@
     {
       "sport": "ATP Tokyo",
       "matchup": "Carlos Alcaraz vs Alex Michelsen",
-      "date": "2026-09-30",
+      "date": "2026-09-29",
       "start_time": "2026-09-30T01:00:00Z",
       "favorite": "Carlos Alcaraz",
       "estimated_probability": {
@@ -151,7 +151,7 @@
     {
       "sport": "ATP Beijing",
       "matchup": "Alexander Zverev vs Cameron Norrie",
-      "date": "2026-09-30",
+      "date": "2026-09-29",
       "start_time": "2026-09-30T03:00:00Z",
       "favorite": "Alexander Zverev",
       "estimated_probability": {
@@ -175,7 +175,7 @@
     {
       "sport": "ATP Beijing",
       "matchup": "Alex de Minaur vs Mariano Navone",
-      "date": "2026-09-30",
+      "date": "2026-09-29",
       "start_time": "2026-09-30T02:00:00Z",
       "favorite": "Alex de Minaur",
       "estimated_probability": {
@@ -423,7 +423,7 @@
     {
       "sport": "ATP Beijing",
       "matchup": "Jakub Mensik vs Alexander Bublik",
-      "date": "2026-09-30",
+      "date": "2026-09-29",
       "start_time": "2026-09-30T03:00:00Z",
       "favorite": "Jakub Mensik",
       "estimated_probability": {
@@ -3629,7 +3629,7 @@
     {
       "sport": "ATP Tokyo",
       "matchup": "Frances Tiafoe vs Kei Nishikori",
-      "date": "2026-09-30",
+      "date": "2026-09-29",
       "start_time": "2026-09-30T02:00:00Z",
       "favorite": "Frances Tiafoe",
       "estimated_probability": {
