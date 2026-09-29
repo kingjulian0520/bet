@@ -151,8 +151,8 @@
     {
       "sport": "ATP Beijing",
       "matchup": "Alexander Zverev vs Cameron Norrie",
-      "date": "2026-09-29",
-      "start_time": "2026-09-30T02:00:00Z",
+      "date": "2026-09-30",
+      "start_time": "2026-10-01T02:00:00Z",
       "favorite": "Alexander Zverev",
       "estimated_probability": {
         "Alexander Zverev": 83,
@@ -423,8 +423,8 @@
     {
       "sport": "ATP Beijing",
       "matchup": "Jakub Mensik vs Alexander Bublik",
-      "date": "2026-09-29",
-      "start_time": "2026-09-30T02:00:00Z",
+      "date": "2026-09-30",
+      "start_time": "2026-10-01T02:00:00Z",
       "favorite": "Jakub Mensik",
       "estimated_probability": {
         "Jakub Mensik": 63,
@@ -3629,8 +3629,8 @@
     {
       "sport": "ATP Tokyo",
       "matchup": "Frances Tiafoe vs Kei Nishikori",
-      "date": "2026-09-29",
-      "start_time": "2026-09-30T02:00:00Z",
+      "date": "2026-09-30",
+      "start_time": "2026-10-01T02:00:00Z",
       "favorite": "Frances Tiafoe",
       "estimated_probability": {
         "Frances Tiafoe": 78,
@@ -3642,7 +3642,8 @@
         "Japan Open Round 1. Tiafoe is the 2-seed at a career-high No. 8 ranking, fresh off the best comeback of his career - a 5-set quarterfinal win over Michelsen (down 0-2 in sets, 2-17 in his career from that spot) en route to a US Open semifinal, his third career major semi.",
         "Nishikori is 36, ranked all the way down at No. 464 after an injury-ravaged career, and is explicitly playing his FINAL-EVER Tokyo appearance on a farewell/retirement tour before hanging it up at the end of this season - re-confirmed as still on with no withdrawal risk found as of this check.",
         "Real sportsbook prices found for this match disagreed by book: -357 (~1.28 decimal) at one source, -500 (~1.20 decimal) at another - genuine line variance, not a data error. Used the more conservative (shorter) of the two real prices found, 1.20, which still sits exactly at this feature's 1.2 floor. Double-check the live price on your own sportsbook immediately before betting - if it's shorter than -500/1.20 decimal, this no longer qualifies under this site's own 1.2-1.4 rule and should be skipped.",
-        "Best-of-3, single-elimination format - a Nishikori upset (plausible given crowd emotion and his own major-final pedigree) would end Tiafoe's tournament outright, exactly the kind of stakes this feature is built around."
+        "Best-of-3, single-elimination format - a Nishikori upset (plausible given crowd emotion and his own major-final pedigree) would end Tiafoe's tournament outright, exactly the kind of stakes this feature is built around.",
+        "Date corrected per direct confirmation: this match is Wednesday (tomorrow), not Tuesday as originally researched - exact time was listed as TBD as of this check, so start_time uses the same placeholder evening-session slot as the other Wednesday Tokyo/Beijing matches; treat as approximate until an exact time is published."
       ],
       "sources": [
         "https://www.cbssports.com/tennis/news/2026-us-open-results-frances-tiafoe-alex-michelsen-quarterfinal/",
@@ -3734,8 +3735,8 @@
     {
       "sport": "Tennis",
       "matchup": "Cameron Norrie Over 7.5 Total Games + Carlos Alcaraz Over 18.5 Total Games",
-      "date": "2026-09-29",
-      "start_time": "2026-09-30T03:00:00Z",
+      "date": "2026-09-30",
+      "start_time": "2026-10-01T02:00:00Z",
       "favorite": "Hits",
       "estimated_probability": {
         "Hits": 50,
