@@ -3711,9 +3711,9 @@
           "stat": "Rush Yards"
         }
       ],
-      "winner": "Doesn't Hit",
-      "final_score": "Bears 27, Eagles 7. Kyle Monangai was the clear workhorse back for Chicago (22 carries, 130 yards, 1 TD) - team rushing total (Bears 375 total yards minus Keenum's 247 passing = ~128 rush yards) leaves essentially nothing for Swift, confirming he saw only a handful of low-volume carries (one confirmed 9-yard run) rather than a real workload. Swift's Over 14.5 Rush Attempts leg misses; parlay settled Doesn't Hit under the early-settlement rule regardless of Barkley's own leg.",
-      "settled_at": "2026-09-29T03:52:00Z"
+      "winner": "Hits",
+      "final_score": "Bears 27, Eagles 7. Corrected settlement: D'Andre Swift actually had 20 carries for 84 yards (comfortably over 14.5 attempts - my original settlement wrongly inferred a low carry count from a flawed team-total-yards subtraction instead of checking his real box score line). Saquon Barkley had 15 carries for 82 yards (73 of it in the first half), also comfortably over his 44.5 line. Both legs hit; parlay corrected to Hits.",
+      "settled_at": "2026-09-29T04:05:00Z"
     }
   ],
   "ladder": [],
