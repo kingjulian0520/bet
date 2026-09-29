@@ -109,19 +109,19 @@
       "start_time": "2026-09-29T20:00:00Z",
       "favorite": "Over 8.5",
       "estimated_probability": {
-        "Over 8.5": 58,
-        "Under 8.5": 42
+        "Over 8.5": 54,
+        "Under 8.5": 46
       },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.5,
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.25,
       "reasoning": [
-        "Houston burned through its entire rotation (Brown, Wesneski, Lambert) winning the AL West on the final weekend - none will be on normal rest, and multiple beat previews expect a bullpen/opener game in this win-or-go-home spot, meaning thinner, more exploitable pitching than a normal Game 1.",
-        "Both teams have trended Over all season: White Sox 87-66-0 (56.9%), Astros 78-74-10 (~51.3%).",
-        "Jeremy Peña and Christian Walker have both been hot in Houston's final games (Walker: 8-for-23, 4 HR over his last 6 games), adding to the offensive-environment case - exact multi-week splits vary by source, so treat the specific streak length as approximate, not the core hot-streak read."
+        "Both teams are confirmed using bullpen/opener games tonight (Blubaugh for Houston, Hagen Smith for Chicago) rather than a normal starter, which raises scoring variance and supports the Over case.",
+        "Both teams have trended Over across the full season: White Sox 87-66-0 (56.9%), Astros 78-74-10 (~51.3%).",
+        "Downgraded from an earlier pass: this ignored a real opposing signal - Houston has reportedly gone Under in 8 of its last 9 games as a home favorite, and Under in its last 5 Wild Card Round games historically. That cuts directly against the season-long Over trend, so this is sized as closer to a coin flip than a confident Over."
       ],
       "sources": [
-        "https://vsin.com/mlb/white-sox-vs-astros-al-wild-card-round-prediction-and-preview/",
-        "https://www.sportsbettingdime.com/news/mlb/white-sox-astros-picks-props-target/"
+        "https://www.yardbarker.com/mlb/articles/astros_white_sox_going_with_bullpen_games_in_game_1_of_wild_card_series/s1_13132_44361751",
+        "https://www.covers.com/sport/baseball/mlb/league-trends"
       ]
     },
     {
@@ -136,15 +136,15 @@
       "confidence_label": "Slight lean",
       "recommended_units": 0.75,
       "reasoning": [
-        "2026-27 season opener, part of the TNT doubleheader. Colorado is at full strength - Nathan MacKinnon, Cale Makar (fresh off a record contract), and captain Gabriel Landeskog suiting up for the first time in three years.",
-        "Los Angeles enters missing a key offensive piece: Kevin Fiala underwent a procedure for a leg fracture suffered at the 2026 Milano Cortina Olympics with no confirmed return timeline, layered on top of Anze Kopitar's retirement - the Kings already ranked 29th in the NHL in goals/game (2.68) last season with bottom-5 special teams (PP 28th, PK 30th).",
+        "2026-27 season opener, part of the TNT doubleheader. Colorado is at full strength - Nathan MacKinnon, Cale Makar (fresh off a record contract), and captain Gabriel Landeskog, now an established top-six piece after a full, healthy 2025-26 season and playoffs following his own return from injury.",
+        "Los Angeles enters missing a key offensive piece: Kevin Fiala underwent a procedure for a leg fracture suffered at the 2026 Milano Cortina Olympics and is out for the season, layered on top of Anze Kopitar's retirement - the Kings already ranked 29th in the NHL in goals/game (2.68) last season with bottom-5 special teams (PP 28th, PK 30th).",
         "Kept at a slight lean given standard opening-night/goaltending variance in the NHL."
       ],
       "sources": [
-        "https://www.nhl.com/kings/news/update-on-la-kings-forward-kevin-fiala",
-        "https://www.prohockeyrumors.com/2026/09/kevin-fiala-to-miss-start-of-kings-camp-due-to-injury.html",
-        "https://sports.yahoo.com/articles/3-burning-questions-facing-kings-153037930.html",
-        "https://milehighsticking.com/avalanche-vs-kings-preview-odds-injuries-in-season-opener-01k6xwgrtgdt"
+        "https://www.nhl.com/news/kings-forward-kevin-fiala-to-miss-rest-of-regular-season-with-leg-fractures",
+        "https://www.cbssports.com/fantasy/hockey/news/kings-anze-kopitar-retirement-official/",
+        "https://thehockeywriters.com/colorado-avalanche-2025-26-player-grades-gabriel-landeskog/",
+        "https://www.nhl.com/news/nhl-home-openers-for-2026-27-season"
       ],
       "start_time": "2026-10-01T02:00:00Z"
     },
@@ -202,21 +202,21 @@
       "start_time": "2026-09-30T18:00:00Z",
       "favorite": "Over 5.5",
       "estimated_probability": {
-        "Over 5.5": 62,
-        "Under 5.5": 38
+        "Over 5.5": 56,
+        "Under 5.5": 44
       },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.5,
       "reasoning": [
         "NL Wild Card Series Game 2. Since being acquired by Atlanta at the trade deadline, Mahle has been dominant - 19 K in 18.2 IP across 3 starts with only 3 ER allowed (~9.2 K/9). In 2 starts vs. the Phillies this year he went 1-0, allowing 1 run on 10 hits with 6 K and 1 BB.",
-        "Phillies' offense has been in a deep second-half slump: team hitting .241 with a .632 OPS over its last 21 games; Kyle Schwarber is 6-for-48 (.125) with 15 K over his last 14 games; Trea Turner .244 over his last 12 games.",
-        "A cold, strikeout-prone lineup facing a hot-streak power arm supports the Over."
+        "Downgraded from an earlier pass: that Atlanta stretch is a small, cherry-picked 3-start sample after a genuinely poor full season with San Francisco (3-9, 5.13 ERA, 137 K total on the year before the trade) - there's no full-season K/9 baseline anywhere near this good to lean on, and a quick playoff hook in an elimination-adjacent game could cap his K total below even a normal-season pace.",
+        "Phillies' offense has been in a deep second-half slump: team hitting roughly .241 with a low OPS over its last 21 games; Kyle Schwarber has cooled noticeably (.205/.336/.413 since July 1) and Trea Turner has been quiet too - a real, if modestly-sized, matchup edge."
       ],
       "sources": [
         "https://heavy.com/sports/mlb/atlanta-braves/braves-phillies-news-starting-pitchers-playoffs-chris-sale/",
-        "https://www.yardbarker.com/mlb/articles/braves_vs_phillies_schedule_pitching_matchups_and_x_factors",
-        "https://www.inquirer.com/phillies/phillies-rays-lineup-trea-turner-leadoff-bryce-harper-position-20260926.html",
-        "https://philliesnation.com/2026/09/lineup-angst-arrives-early-as-phillies-flirt-with-september-collapse/"
+        "https://www.espn.com/mlb/story/_/id/49517153/giants-trade-pitcher-tyler-mahle-31-braves",
+        "https://www.wistv.com/2026/09/28/phillies-braves-everything-you-need-know-about-this-weeks-nl-wild-card-series-between-atlanta-philadelphia/",
+        "https://www.thegoodphight.com/phillies-analysis/87936/where-has-kyle-schwarber-gone"
       ]
     },
     {
@@ -322,14 +322,14 @@
       "confidence_label": "Coin flip",
       "recommended_units": 0.5,
       "reasoning": [
-        "AL Wild Card Series Game 2. Burke ranks top-5 in the AL in strikeouts this year (~161 K in 149 IP, ~9.7 K/9).",
-        "Houston's lineup, while dangerous overall, has shown swing-and-miss vulnerability recently - Yordan Alvarez struck out 10 times in just 33 September AB (.212, 1 HR) - giving Burke's swing-and-miss stuff room to work.",
+        "AL Wild Card Series Game 2. Burke has a genuinely elite full-season strikeout case on his own: 185 K in 172.1 IP (~9.7 K/9), a top-5 AL strikeout total.",
+        "Correction from an earlier pass: this pick previously leaned on Yordan Alvarez being 'cold' in September as a contact-vulnerability signal - that doesn't hold up. Alvarez's September strikeout rate (17.1%) is essentially in line with his full-season norm, and he just won the AL batting title (.316) leading the league in wRC+. Removing that angle since it overstated the case; Burke's own swing-and-miss stuff is the real basis for this pick.",
         "Tempered by his poor (small-sample) career line vs. Houston specifically (0-2, 8.38 ERA in 2 games), though that reflects runs allowed more than whiffs."
       ],
       "sources": [
         "https://www.rotowire.com/baseball/player/sean-burke-17364",
         "https://www.statmuse.com/mlb/ask/sean-burke-stats-vs-houston-astros",
-        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-09-11/yordan-alvarez-not-in-astros-lineup-on-friday"
+        "https://www.ksat.com/sports/2026/09/28/alvarez-and-moreno-win-batting-titles-misiorowski-leads-majors-in-era-and-strikeouts/"
       ]
     },
     {
@@ -3636,12 +3636,12 @@
         "Frances Tiafoe": 78,
         "Kei Nishikori": 22
       },
-      "actual_multiplier": 1.28,
+      "actual_multiplier": 1.2,
       "confidence_label": "Strong lean",
       "reasoning": [
         "Japan Open Round 1. Tiafoe is the 2-seed at a career-high No. 8 ranking, fresh off the best comeback of his career - a 5-set quarterfinal win over Michelsen (down 0-2 in sets, 2-17 in his career from that spot) en route to a US Open semifinal, his third career major semi.",
-        "Nishikori is 36, ranked all the way down at No. 464 after an injury-ravaged career, and is explicitly playing his FINAL-EVER Tokyo appearance on a farewell/retirement tour before hanging it up at the end of this season - this is a ceremonial send-off for the hometown crowd, not a competitively sharp top player.",
-        "Real sportsbook price cited at Frances Tiafoe -357 (Dimers), ~1.28 decimal - comfortably inside the 1.2-1.4 range this feature requires, and consistent with a genuinely lopsided quality gap rather than a coin-flip favorite.",
+        "Nishikori is 36, ranked all the way down at No. 464 after an injury-ravaged career, and is explicitly playing his FINAL-EVER Tokyo appearance on a farewell/retirement tour before hanging it up at the end of this season - re-confirmed as still on with no withdrawal risk found as of this check.",
+        "Real sportsbook prices found for this match disagreed by book: -357 (~1.28 decimal) at one source, -500 (~1.20 decimal) at another - genuine line variance, not a data error. Used the more conservative (shorter) of the two real prices found, 1.20, which still sits exactly at this feature's 1.2 floor. Double-check the live price on your own sportsbook immediately before betting - if it's shorter than -500/1.20 decimal, this no longer qualifies under this site's own 1.2-1.4 rule and should be skipped.",
         "Best-of-3, single-elimination format - a Nishikori upset (plausible given crowd emotion and his own major-final pedigree) would end Tiafoe's tournament outright, exactly the kind of stakes this feature is built around."
       ],
       "sources": [
@@ -3649,8 +3649,8 @@
         "https://www.atptour.com/en/news/tiafoe-damm-us-open-2026-r1",
         "https://www.japantimes.co.jp/sports/2026/05/01/tennis/kei-nishikori-retire-end-2026/",
         "https://www.atptour.com/en/news/nishikori-tokyo-2026-appearance-announcement",
-        "https://www.dimers.com/tennis/news/kei-nishikori-vs-frances-tiafoe-tennis-prediction-atp-japan-open-2026-ac",
-        "https://www.atptour.com/en/news/tokyo-2026-draw-preview"
+        "https://www.bleachernation.com/picks/2026/09/28/nishikori-vs-tiafoe-prediction-at-the-rakuten-japan-open-tennis-championships-tuesday-september-29/",
+        "https://www.pickswise.com/atp/games/kei-nishikori-frances-tiafoe-atp-2026-09-28-2200/"
       ]
     }
   ],
