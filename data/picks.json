@@ -3,32 +3,6 @@
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
-      "sport": "NFL",
-      "matchup": "Philadelphia Eagles vs Chicago Bears",
-      "date": "2026-09-28",
-      "favorite": "Philadelphia Eagles",
-      "estimated_probability": {
-        "Philadelphia Eagles": 67,
-        "Chicago Bears": 33
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 1,
-      "reasoning": [
-        "Bears are down to their QB3 by choice, not just injury: Caleb Williams (hamstring) is out, and backup Tyson Bagent has actually CLEARED the concussion protocol with no injury designation - but Chicago is starting 38-year-old journeyman Case Keenum (no regular-season snap since 2023) over their own healthy backup anyway.",
-        "The market has moved hard on this news: the look-ahead line had Chicago around -1.5, and it has since moved all the way to Eagles -4.5 (some books -3.5), with the total falling from the upper 40s to ~41.5-42.5 - a large, informative move confirming the market agrees with the QB-driven read.",
-        "Eagles are 2-0 and relatively healthy at the skill positions that matter tonight - Saquon Barkley (neck stinger) had a good MRI and was full-go by Friday, DeVonta Smith (hamstring) was fully cleared with no injury designation by Saturday.",
-        "Bears' secondary is thinned at exactly the wrong time: S Coby Bryant out 4-6 months (fractured/hyperextended knee), CB Kaiir Elam out multiple weeks - a shorthanded secondary facing a healthy Eagles passing game."
-      ],
-      "sources": [
-        "https://chicago.suntimes.com/bears/2026/09/25/bears-still-proceeding-with-case-keenum-as-starting-qb-vs-eagles-as-caleb-williams-tyson-bagent-remain-out",
-        "https://www.cbssports.com/nfl/news/bears-expected-to-start-case-keenum-vs-eagles/",
-        "https://www.espn.com/nfl/odds/_/gameId/401872963",
-        "https://betfanatics.com/blog/eagles-vs-bears-odds-spreads-and-lines",
-        "https://www.bleedinggreennation.com/news/184231/eagles-injury-report-good-news-on-devonta-smith-and-saquon-barkley"
-      ],
-      "start_time": "2026-09-29T00:15:00Z"
-    },
-    {
       "sport": "MLB",
       "matchup": "New York Yankees vs Boston Red Sox",
       "date": "2026-09-29",
@@ -220,55 +194,6 @@
       ]
     },
     {
-      "sport": "MLB",
-      "matchup": "Atlanta Braves vs Philadelphia Phillies (Game 2)",
-      "date": "2026-09-30",
-      "favorite": "Atlanta Braves",
-      "estimated_probability": {
-        "Atlanta Braves": 58,
-        "Philadelphia Phillies": 42
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.5,
-      "reasoning": [
-        "NL Wild Card Series Game 2. Starters are Jesus Luzardo (PHI) vs Tyler Mahle (ATL) - Mahle has a 2.28 ERA in 4 starts vs Philadelphia this year, and Atlanta got a full rest week to line up its rotation after clinching early, while Philadelphia needed every last out to clinch on the regular season's final day - beat reporters explicitly flagged Phillies fatigue as a real advantage for Atlanta.",
-        "Ronald Acuna Jr. was one of the hottest hitters in baseball down the stretch (.307/.950 OPS over his last 22 games), and closer Robert Suarez is back from injury just in time for Atlanta's bullpen.",
-        "Phillies' own recent form has real cracks: Trea Turner had a down year, Bryson Stott and Bryan De La Cruz have slowed, and J.T. Realmuto's production has fallen off a cliff.",
-        "Tempering factor: Luzardo's stuff is elite when healthy (2-hit, 12-K complete-game shutout of these same Braves on Sept. 7), but he's been shut down since with shoulder inflammation and has thrown only 1 relief inning since - real uncertainty about his workload/effectiveness in Game 2 is why this stays a slight lean rather than stronger."
-      ],
-      "sources": [
-        "https://sports.yahoo.com/articles/phillies-vs-braves-nl-wild-160053122.html",
-        "https://www.nbcsportsphiladelphia.com/mlb/philadelphia-phillies/phillies-braves-wild-card-jesus-luzardo-questions/754145/",
-        "https://www.batterypower.com/atlanta-braves-game-information/140392/2026-wild-card-series-philadelphia-phillies-preview-offense-fielding-pitching-base-running-predicton"
-      ],
-      "start_time": "2026-09-30T18:00:00Z"
-    },
-    {
-      "sport": "MLB",
-      "matchup": "Houston Astros vs Chicago White Sox (Game 2)",
-      "date": "2026-09-30",
-      "favorite": "Chicago White Sox",
-      "estimated_probability": {
-        "Chicago White Sox": 60,
-        "Houston Astros": 40
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "AL Wild Card Series Game 2. Houston's rotation is in real crisis: Framber Valdez was traded away before the season, and for this round Hayden Wesneski is unavailable, Ronel Blanco is ineligible, and Enyel De Los Santos and Cristian Javier are both ineligible due to recent IL placement - Astros manager Joe Espada said the day before Game 1 he 'doesn't know' who starts and will run a bullpen game, and with no starters left, Game 2 is very likely bullpen-game #2 in as many days.",
-        "Chicago has its clear #1, Sean Burke (8-6, 3.20 ERA, 167 K), lined up for Game 2 on full regular rest, and he's trending up in September (5.2 scoreless innings to beat Houston, then a win over Detroit).",
-        "Season-long context also favors Chicago: White Sox finished 84-78 (better record than Houston's 80-81), and Houston was a mediocre 39-42 at home in 2026.",
-        "Tempering factor: Houston's bullpen back end (Bryan Abreu, closer Josh Hader at a 1.01 ERA / 26-for-26 in saves) is elite, which is why this isn't rated higher than a slight lean."
-      ],
-      "sources": [
-        "https://sports.yahoo.com/articles/watch-astros-al-wild-card-130007108.html",
-        "https://www.si.com/fannation/mlb/fastball/injuries/houston-astros-ace-framber-valdez-set-for-bullpen-session-possible-return-from-injury",
-        "https://www.cbssports.com/fantasy/baseball/news/white-soxs-sean-burke-six-strong-innings-in-win-no-10/",
-        "https://www.mlb.com/news/white-sox-vs-astros-wild-card-series-starting-lineups-and-pitching-matchup"
-      ],
-      "start_time": "2026-09-30T21:00:00Z"
-    },
-    {
       "sport": "NHL",
       "matchup": "Los Angeles Kings vs Colorado Avalanche",
       "date": "2026-09-30",
@@ -439,52 +364,6 @@
         "Reuses the research already cited on each leg's own Picks tab entry."
       ],
       "actual_multiplier": 4.41
-    },
-    {
-      "sport": "Parlays",
-      "matchup": "2-Leg Same-Game Parlay: DeVonta Smith Over 5.5 Receptions + DeVonta Smith Anytime TD (Eagles vs Bears)",
-      "date": "2026-09-28",
-      "start_time": "2026-09-29T00:15:00Z",
-      "favorite": "Hits",
-      "estimated_probability": {
-        "Hits": 30,
-        "Doesn't Hit": 70
-      },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.1,
-      "is_long_shot": true,
-      "legs": [
-        {
-          "sport": "NFL Player Props",
-          "matchup": "DeVonta Smith — Receptions O/U 5.5",
-          "date": "2026-09-28",
-          "side": "Over 5.5",
-          "probability": 61
-        },
-        {
-          "sport": "NFL Player Props",
-          "matchup": "DeVonta Smith — Anytime TD",
-          "date": "2026-09-28",
-          "side": "Yes",
-          "probability": 41
-        }
-      ],
-      "reasoning": [
-        "DeVonta Smith is now the Eagles' unambiguous #1 target with zero competition: AJ Brown left in the offseason, and Dallas Goedert is OUT and IR-bound (sprained MCL, Week 2) - all his volume funnels to Smith. 33.9% target share through 2 games, 10 catches on 13 targets last week (117 yds, TD).",
-        "Bears' pass defense ranks bottom-half of the league and is missing 2 of its top defensive backs tonight (Coby Bryant, Kaiir Elam) - in Week 1 alone, Carolina's WR1 (Jalen Coker) went for 8/138/2TD against this same defense even before the secondary got thinner, concrete evidence it's exploitable by a true #1 WR.",
-        "Smith was fully cleared from a hamstring issue with no injury designation by Saturday, so there's no health discount to apply.",
-        "Both legs share the same underlying driver (heavy target share + a defense that can't cover him), so they're positively correlated - true joint probability is estimated at ~28-32% (used 30%), meaningfully higher than the ~25% naive multiplication of the two legs' independent implied probabilities would suggest, and well above the market's own combined parlay price (~+450 to +500, implying ~17-18%).",
-        "Even with real, well-documented evidence behind each leg, a 2-leg parlay's honest combined probability still lands in the site's lowest confidence/unit tier by the math alone (not because of an arbitrary long-shot cap) - sized at 0.1 units accordingly, per the site's standard probability-to-units table."
-      ],
-      "sources": [
-        "https://www.si.com/betting/eagles-vs-bears-best-nfl-prop-bets-for-monday-night-football-in-week-3-bet-on-devonta-smith",
-        "https://www.fanduel.com/research/nfl/player-news/game-updates/devonta-smith-and-eagles-play-bears-in-week-3-9-28-2026",
-        "https://www.inquirer.com/eagles/eagles-bears-week-3-odds-prop-bets-20260925.html",
-        "https://www.fantasypros.com/nfl/news/610845/devonta-smith-hamstring-cleared-week-3.php",
-        "https://www.cbssports.com/nfl/news/eagles-dallas-goedert-ir-bound-due-to-knee-injury-te-eligible-to-return-in-week-18-vs-giants-per-report",
-        "https://www.fantasypros.com/nfl/notes/440990/saquon-barkley-2026-week-3-outlook.php",
-        "https://www.sharpfootballanalysis.com/analysis/chicago-bears-defense/"
-      ]
     }
   ],
   "settled": [
@@ -3458,43 +3337,84 @@
       "winner": "Daniil Medvedev",
       "final_score": "Medvedev d. Safiullin 7-5, 6-4",
       "settled_at": "2026-09-28T13:15:00Z"
-    }
-  ],
-  "ladder": [],
-  "prizepicks": [
+    },
     {
       "sport": "NFL",
-      "matchup": "D'Andre Swift Over 14.5 Rush Attempts + Saquon Barkley Over 44.5 Rush Yards",
+      "matchup": "Philadelphia Eagles vs Chicago Bears",
+      "date": "2026-09-28",
+      "favorite": "Philadelphia Eagles",
+      "estimated_probability": {
+        "Philadelphia Eagles": 67,
+        "Chicago Bears": 33
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Bears are down to their QB3 by choice, not just injury: Caleb Williams (hamstring) is out, and backup Tyson Bagent has actually CLEARED the concussion protocol with no injury designation - but Chicago is starting 38-year-old journeyman Case Keenum (no regular-season snap since 2023) over their own healthy backup anyway.",
+        "The market has moved hard on this news: the look-ahead line had Chicago around -1.5, and it has since moved all the way to Eagles -4.5 (some books -3.5), with the total falling from the upper 40s to ~41.5-42.5 - a large, informative move confirming the market agrees with the QB-driven read.",
+        "Eagles are 2-0 and relatively healthy at the skill positions that matter tonight - Saquon Barkley (neck stinger) had a good MRI and was full-go by Friday, DeVonta Smith (hamstring) was fully cleared with no injury designation by Saturday.",
+        "Bears' secondary is thinned at exactly the wrong time: S Coby Bryant out 4-6 months (fractured/hyperextended knee), CB Kaiir Elam out multiple weeks - a shorthanded secondary facing a healthy Eagles passing game."
+      ],
+      "sources": [
+        "https://chicago.suntimes.com/bears/2026/09/25/bears-still-proceeding-with-case-keenum-as-starting-qb-vs-eagles-as-caleb-williams-tyson-bagent-remain-out",
+        "https://www.cbssports.com/nfl/news/bears-expected-to-start-case-keenum-vs-eagles/",
+        "https://www.espn.com/nfl/odds/_/gameId/401872963",
+        "https://betfanatics.com/blog/eagles-vs-bears-odds-spreads-and-lines",
+        "https://www.bleedinggreennation.com/news/184231/eagles-injury-report-good-news-on-devonta-smith-and-saquon-barkley"
+      ],
+      "start_time": "2026-09-29T00:15:00Z",
+      "winner": "Chicago Bears",
+      "final_score": "Bears 27, Eagles 7",
+      "settled_at": "2026-09-29T03:45:00Z"
+    },
+    {
+      "sport": "Parlays",
+      "matchup": "2-Leg Same-Game Parlay: DeVonta Smith Over 5.5 Receptions + DeVonta Smith Anytime TD (Eagles vs Bears)",
       "date": "2026-09-28",
       "start_time": "2026-09-29T00:15:00Z",
       "favorite": "Hits",
       "estimated_probability": {
-        "Hits": 50,
-        "Doesn't Hit": 50
+        "Hits": 30,
+        "Doesn't Hit": 70
       },
-      "recommended_units": 1,
-      "actual_multiplier": 2.0,
-      "is_prizepicks": true,
-      "reasoning": [],
-      "sources": [],
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.1,
+      "is_long_shot": true,
       "legs": [
         {
-          "type": "over_under",
-          "player": "D'Andre Swift",
-          "opponent": "Philadelphia Eagles",
-          "side": "Over",
-          "line": 14.5,
-          "stat": "Rush Attempts"
+          "sport": "NFL Player Props",
+          "matchup": "DeVonta Smith — Receptions O/U 5.5",
+          "date": "2026-09-28",
+          "side": "Over 5.5",
+          "probability": 61
         },
         {
-          "type": "over_under",
-          "player": "Saquon Barkley",
-          "opponent": "Chicago Bears",
-          "side": "Over",
-          "line": 44.5,
-          "stat": "Rush Yards"
+          "sport": "NFL Player Props",
+          "matchup": "DeVonta Smith — Anytime TD",
+          "date": "2026-09-28",
+          "side": "Yes",
+          "probability": 41
         }
-      ]
+      ],
+      "reasoning": [
+        "DeVonta Smith is now the Eagles' unambiguous #1 target with zero competition: AJ Brown left in the offseason, and Dallas Goedert is OUT and IR-bound (sprained MCL, Week 2) - all his volume funnels to Smith. 33.9% target share through 2 games, 10 catches on 13 targets last week (117 yds, TD).",
+        "Bears' pass defense ranks bottom-half of the league and is missing 2 of its top defensive backs tonight (Coby Bryant, Kaiir Elam) - in Week 1 alone, Carolina's WR1 (Jalen Coker) went for 8/138/2TD against this same defense even before the secondary got thinner, concrete evidence it's exploitable by a true #1 WR.",
+        "Smith was fully cleared from a hamstring issue with no injury designation by Saturday, so there's no health discount to apply.",
+        "Both legs share the same underlying driver (heavy target share + a defense that can't cover him), so they're positively correlated - true joint probability is estimated at ~28-32% (used 30%), meaningfully higher than the ~25% naive multiplication of the two legs' independent implied probabilities would suggest, and well above the market's own combined parlay price (~+450 to +500, implying ~17-18%).",
+        "Even with real, well-documented evidence behind each leg, a 2-leg parlay's honest combined probability still lands in the site's lowest confidence/unit tier by the math alone (not because of an arbitrary long-shot cap) - sized at 0.1 units accordingly, per the site's standard probability-to-units table."
+      ],
+      "sources": [
+        "https://www.si.com/betting/eagles-vs-bears-best-nfl-prop-bets-for-monday-night-football-in-week-3-bet-on-devonta-smith",
+        "https://www.fanduel.com/research/nfl/player-news/game-updates/devonta-smith-and-eagles-play-bears-in-week-3-9-28-2026",
+        "https://www.inquirer.com/eagles/eagles-bears-week-3-odds-prop-bets-20260925.html",
+        "https://www.fantasypros.com/nfl/news/610845/devonta-smith-hamstring-cleared-week-3.php",
+        "https://www.cbssports.com/nfl/news/eagles-dallas-goedert-ir-bound-due-to-knee-injury-te-eligible-to-return-in-week-18-vs-giants-per-report",
+        "https://www.fantasypros.com/nfl/notes/440990/saquon-barkley-2026-week-3-outlook.php",
+        "https://www.sharpfootballanalysis.com/analysis/chicago-bears-defense/"
+      ],
+      "winner": "Doesn't Hit",
+      "final_score": "Bears 27, Eagles 7 - Eagles' lone TD was a Jalen Hurts 1-yard QB sneak (tush push) at the end of the 1st half, not a Smith score. Anytime TD leg confirmed lost; parlay settled Doesn't Hit under the early-settlement rule regardless of the receptions leg.",
+      "settled_at": "2026-09-29T03:45:00Z"
     },
     {
       "sport": "NFL",
@@ -3528,7 +3448,49 @@
           "line": 9.5,
           "stat": "Rush Att."
         }
-      ]
+      ],
+      "winner": "Doesn't Hit",
+      "final_score": "Bears 27, Eagles 7. Monangai: 22 carries (well over 9.5, hit). Ertz: only confirmed reception was 9 yards (to the CHI 10) in a low-volume Eagles passing game (Hurts 16/25, 153 yds total) - under the 10.5 line, so this leg misses and the parlay settles Doesn't Hit.",
+      "settled_at": "2026-09-29T03:45:00Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "D'Andre Swift Over 14.5 Rush Attempts + Saquon Barkley Over 44.5 Rush Yards",
+      "date": "2026-09-28",
+      "start_time": "2026-09-29T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 1,
+      "actual_multiplier": 2.0,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "D'Andre Swift",
+          "opponent": "Philadelphia Eagles",
+          "side": "Over",
+          "line": 14.5,
+          "stat": "Rush Attempts"
+        },
+        {
+          "type": "over_under",
+          "player": "Saquon Barkley",
+          "opponent": "Chicago Bears",
+          "side": "Over",
+          "line": 44.5,
+          "stat": "Rush Yards"
+        }
+      ],
+      "winner": "Doesn't Hit",
+      "final_score": "Bears 27, Eagles 7. Kyle Monangai was the clear workhorse back for Chicago (22 carries, 130 yards, 1 TD) - team rushing total (Bears 375 total yards minus Keenum's 247 passing = ~128 rush yards) leaves essentially nothing for Swift, confirming he saw only a handful of low-volume carries (one confirmed 9-yard run) rather than a real workload. Swift's Over 14.5 Rush Attempts leg misses; parlay settled Doesn't Hit under the early-settlement rule regardless of Barkley's own leg.",
+      "settled_at": "2026-09-29T03:52:00Z"
     }
-  ]
+  ],
+  "ladder": [],
+  "prizepicks": []
 }
