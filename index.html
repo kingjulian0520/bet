@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Close Calls</title>
-<link rel="stylesheet" href="style.css?v=43">
+<link rel="stylesheet" href="style.css?v=44">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css">
 </head>
 <body>
@@ -45,7 +45,7 @@
 <nav class="tabs" role="tablist">
   <button class="tab-btn active" data-tab="picks" role="tab" aria-selected="true">Picks</button>
   <button class="tab-btn" data-tab="longshots" role="tab" aria-selected="false">Long Shots</button>
-  <button class="tab-btn" data-tab="prizepicks" role="tab" aria-selected="false">PrizePicks</button>
+  <button class="tab-btn" data-tab="prizepicks" role="tab" aria-selected="false" id="prizepicks-tab-btn">PrizePicks</button>
   <button class="tab-btn" data-tab="ladder" role="tab" aria-selected="false">Ladder</button>
   <button class="tab-btn" data-tab="calendar" role="tab" aria-selected="false">Calendar</button>
 </nav>
@@ -117,7 +117,17 @@
 
   <section id="prizepicks" class="tab-panel">
     <div class="lockable" id="prizepicks-lockable">
-      <p class="panel-intro">
+      <div class="platform-select-row">
+        <label for="prizepicks-platform-select" class="platform-select-label">Platform:</label>
+        <select id="prizepicks-platform-select" class="platform-select">
+          <option value="Courtside">Courtside</option>
+          <option value="BetMGM">BetMGM</option>
+          <option value="FanDuel">FanDuel</option>
+          <option value="Underdog">Underdog</option>
+          <option value="Kalshi">Kalshi</option>
+        </select>
+      </div>
+      <p class="panel-intro" id="prizepicks-intro">
         Picks built specifically for PrizePicks, packaged as PrizePicks-style
         player prop parlays. Held empty until there's a reliable stats source
         backing them — no picks here are guesses.
@@ -148,7 +158,10 @@
         1 unit. Only strong favorites with a real sportsbook multiplier between
         1.2x and 1.4x, in matches where a single loss actually means something
         (tennis, other single-elimination formats) - never a long regular
-        season where one result barely moves the needle.
+        season where one result barely moves the needle. Best to stick to one
+        app for the whole ladder so the compounding math actually matches what
+        you're betting - for example, using FanDuel for this the whole way
+        through.
       </p>
       <div class="ladder-header">
         <button id="ladder-prev" class="secondary-btn" aria-label="Previous day">‹</button>
@@ -321,6 +334,6 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
-<script type="module" src="script.js?v=57"></script>
+<script type="module" src="script.js?v=58"></script>
 </body>
 </html>

@@ -682,6 +682,8 @@ async function main() {
   wirePasswordRecovery();
   wireSportFilter();
   wireSortDropdown();
+  wirePPPlatformSelect();
+  applyPPPlatformLabel();
 
   document.addEventListener("click", (e) => {
     const accountDropdown = document.getElementById("account-menu-dropdown");
@@ -804,6 +806,36 @@ function wireTabs() {
 
 let selectedDayFilter = "all";
 let selectedPrizePicksDayFilter = "all";
+
+// Which platform's name/branding shows on the "PrizePicks" tab - the site
+// owner places these picks across several apps (Courtside, BetMGM, FanDuel,
+// Underdog, Kalshi), not just PrizePicks itself, so the label is a
+// per-viewer preference rather than fixed text.
+let ppPlatformName = localStorage.getItem("ppPlatformName") || "Courtside";
+
+function applyPPPlatformLabel() {
+  const tabBtn = document.getElementById("prizepicks-tab-btn");
+  if (tabBtn) tabBtn.textContent = ppPlatformName;
+
+  const intro = document.getElementById("prizepicks-intro");
+  if (intro) {
+    intro.textContent = `Picks built specifically for ${ppPlatformName}, packaged as ${ppPlatformName}-style player prop parlays. Held empty until there's a reliable stats source backing them — no picks here are guesses.`;
+  }
+
+  const select = document.getElementById("prizepicks-platform-select");
+  if (select) select.value = ppPlatformName;
+}
+
+function wirePPPlatformSelect() {
+  const select = document.getElementById("prizepicks-platform-select");
+  if (!select) return;
+  select.addEventListener("change", () => {
+    ppPlatformName = select.value;
+    localStorage.setItem("ppPlatformName", ppPlatformName);
+    applyPPPlatformLabel();
+    renderPrizePicks();
+  });
+}
 
 // Sport filter: applied (activeSportFilters) vs staged-in-the-modal
 // (pendingSportFilters) - selecting chips doesn't change what's shown until
@@ -1113,7 +1145,7 @@ function renderPicks() {
     // visible pick, regardless of day filter - sport-grouping would defeat
     // the point of sorting by time or confidence.
     for (const pick of sortPicksForDisplay(visiblePicks, picksSortMode)) {
-      root.appendChild(renderCard(pick));
+      root.appendChild(renderCard(pick, { showOddsDropdown: true }));
     }
   } else if (selectedDayFilter === "all") {
     const bySport = {};
@@ -1132,7 +1164,7 @@ function renderPicks() {
       group.appendChild(heading);
 
       for (const pick of bySport[sport]) {
-        group.appendChild(renderCard(pick));
+        group.appendChild(renderCard(pick, { showOddsDropdown: true }));
       }
 
       root.appendChild(group);
@@ -1141,7 +1173,7 @@ function renderPicks() {
     // Single-day view: flat list, no sport grouping, so pick types stay
     // interleaved instead of clustering all moneylines first.
     for (const pick of visiblePicks) {
-      root.appendChild(renderCard(pick));
+      root.appendChild(renderCard(pick, { showOddsDropdown: true }));
     }
   }
 }
@@ -1176,11 +1208,11 @@ function renderPrizePicks() {
     const todayStr = todayDateStr();
     const msg =
       selectedPrizePicksDayFilter === "all"
-        ? "No PrizePicks picks yet — waiting on a reliable stats source."
+        ? `No ${ppPlatformName} picks yet — waiting on a reliable stats source.`
         : selectedPrizePicksDayFilter === todayStr
-        ? "No PrizePicks picks for today yet."
-        : "No PrizePicks picks for this day yet.";
-    root.innerHTML = `<p class="empty-state">${msg}</p>`;
+        ? `No ${ppPlatformName} picks for today yet.`
+        : `No ${ppPlatformName} picks for this day yet.`;
+    root.innerHTML = `<p class="empty-state">${escapeHtml(msg)}</p>`;
     return;
   }
 
@@ -1381,6 +1413,22 @@ function renderCard(pick, options = {}) {
     .map((s, i) => `<a href="${escapeAttr(s)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">[${i + 1}]</a>`)
     .join(" ");
 
+  // Picks tab only: a per-pick "See best odds" dropdown listing whichever
+  // 3 apps currently have the best price for this exact bet. The site owner
+  // supplies the actual book/price pairs as they check them (pick.best_odds,
+  // an array of up to 3 {book, odds}) - selecting an option is purely
+  // informational, nothing else on the page reacts to it.
+  const oddsOptions = Array.isArray(pick.best_odds) ? pick.best_odds : [];
+  const oddsDropdownBlock = options.showOddsDropdown
+    ? `
+    <select class="odds-dropdown">
+      <option value="" disabled selected>See best odds</option>
+      ${oddsOptions
+        .map((o) => `<option value="${escapeAttr(o.book || "")}">${escapeHtml(o.book || "")}${o.odds ? " " + escapeHtml(String(o.odds)) : ""}</option>`)
+        .join("")}
+    </select>`
+    : "";
+
   const units = pick.recommended_units;
   const unitValue = getUnitValue();
   let stakeRow = "";
@@ -1443,6 +1491,7 @@ function renderCard(pick, options = {}) {
     <ul class="reasoning">${reasoningItems}</ul>
     ${sourceLinks ? `<div class="sources">Sources: ${sourceLinks}</div>` : ""}
     ${stakeRow}
+    ${oddsDropdownBlock}
     ${resultDollarsRow}
     ${resultRow}
   `;
@@ -1646,7 +1695,7 @@ function openBreakdownModal(title, breakdown) {
   const byTypeRows = [
     ["Picks", breakdown.picks],
     ["Long Shots", breakdown.longshots],
-    ["PrizePicks", breakdown.prizepicks],
+    [ppPlatformName, breakdown.prizepicks],
   ]
     .filter(([, b]) => b.count > 0)
     .map(
