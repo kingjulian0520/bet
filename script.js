@@ -695,6 +695,11 @@ async function main() {
     if (sortDropdown && !sortDropdown.hidden && !e.target.closest(".picks-sort-wrap")) {
       sortDropdown.hidden = true;
     }
+    const ppDropdown = document.getElementById("prizepicks-platform-dropdown");
+    if (ppDropdown && !ppDropdown.hidden && !e.target.closest(".tab-picker-wrap")) {
+      ppDropdown.hidden = true;
+      document.getElementById("prizepicks-tab-btn")?.setAttribute("aria-expanded", "false");
+    }
   });
 
   const unitValueInput = document.getElementById("unit-value-input");
@@ -788,7 +793,7 @@ function renderAll() {
 // ---------- tabs ----------
 
 function wireTabs() {
-  document.querySelectorAll(".tab-btn").forEach((btn) => {
+  document.querySelectorAll(".tab-btn:not(#prizepicks-tab-btn)").forEach((btn) => {
     btn.addEventListener("click", () => {
       document.querySelectorAll(".tab-btn").forEach((b) => {
         b.classList.remove("active");
@@ -809,14 +814,23 @@ let selectedPrizePicksDayFilter = "all";
 
 // Which platform this tab is filtered to - the site owner places these
 // picks across several apps (PrizePicks, Courtside, BetMGM, FanDuel,
-// Underdog, Kalshi). The tab bubble itself is a <select>; picking an
-// option both switches to this tab and filters currentPrizePicks down to
-// entries tagged with that platform.
-let ppPlatformName = localStorage.getItem("ppPlatformName") || "PrizePicks";
+// Underdog, Kalshi). The tab bubble is a button that opens a small
+// dropdown (matching the sort/account menus elsewhere on the site);
+// picking an option both switches to this tab and filters
+// currentPrizePicks down to entries tagged with that platform.
+const PP_PLATFORM_STORAGE_KEY = "ppPlatformNameV2";
+let ppPlatformName = localStorage.getItem(PP_PLATFORM_STORAGE_KEY) || "PrizePicks";
 
 function applyPPPlatformLabel() {
-  const tabBtn = document.getElementById("prizepicks-tab-btn");
-  if (tabBtn) tabBtn.value = ppPlatformName;
+  const label = document.getElementById("prizepicks-tab-label");
+  if (label) label.textContent = ppPlatformName;
+
+  const dropdown = document.getElementById("prizepicks-platform-dropdown");
+  if (dropdown) {
+    dropdown.querySelectorAll(".tab-picker-option").forEach((opt) => {
+      opt.classList.toggle("active", opt.dataset.platform === ppPlatformName);
+    });
+  }
 
   const intro = document.getElementById("prizepicks-intro");
   if (intro) {
@@ -825,21 +839,36 @@ function applyPPPlatformLabel() {
 }
 
 function wirePPPlatformSelect() {
-  const select = document.getElementById("prizepicks-tab-btn");
-  if (!select) return;
-  select.addEventListener("change", () => {
-    ppPlatformName = select.value;
-    localStorage.setItem("ppPlatformName", ppPlatformName);
-    applyPPPlatformLabel();
+  const trigger = document.getElementById("prizepicks-tab-btn");
+  const dropdown = document.getElementById("prizepicks-platform-dropdown");
+  if (!trigger || !dropdown) return;
+
+  trigger.addEventListener("click", (e) => {
+    e.stopPropagation();
     document.querySelectorAll(".tab-btn").forEach((b) => {
       b.classList.remove("active");
       b.setAttribute("aria-selected", "false");
     });
     document.querySelectorAll(".tab-panel").forEach((p) => p.classList.remove("active"));
-    select.classList.add("active");
-    select.setAttribute("aria-selected", "true");
-    document.getElementById(select.dataset.tab).classList.add("active");
-    renderPrizePicks();
+    trigger.classList.add("active");
+    trigger.setAttribute("aria-selected", "true");
+    document.getElementById(trigger.dataset.tab).classList.add("active");
+
+    const isOpen = !dropdown.hidden;
+    dropdown.hidden = isOpen;
+    trigger.setAttribute("aria-expanded", String(!isOpen));
+  });
+
+  dropdown.querySelectorAll(".tab-picker-option").forEach((opt) => {
+    opt.addEventListener("click", (e) => {
+      e.stopPropagation();
+      ppPlatformName = opt.dataset.platform;
+      localStorage.setItem(PP_PLATFORM_STORAGE_KEY, ppPlatformName);
+      dropdown.hidden = true;
+      trigger.setAttribute("aria-expanded", "false");
+      applyPPPlatformLabel();
+      renderPrizePicks();
+    });
   });
 }
 

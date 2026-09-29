@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Close Calls</title>
-<link rel="stylesheet" href="style.css?v=46">
+<link rel="stylesheet" href="style.css?v=47">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css">
 </head>
 <body>
@@ -45,14 +45,20 @@
 <nav class="tabs" role="tablist">
   <button class="tab-btn active" data-tab="picks" role="tab" aria-selected="true">Picks</button>
   <button class="tab-btn" data-tab="longshots" role="tab" aria-selected="false">Long Shots</button>
-  <select class="tab-btn tab-select" data-tab="prizepicks" role="tab" aria-selected="false" id="prizepicks-tab-btn">
-    <option value="PrizePicks">PrizePicks</option>
-    <option value="Courtside">Courtside</option>
-    <option value="BetMGM">BetMGM</option>
-    <option value="FanDuel">FanDuel</option>
-    <option value="Underdog">Underdog</option>
-    <option value="Kalshi">Kalshi</option>
-  </select>
+  <div class="tab-picker-wrap" id="prizepicks-tab-wrap">
+    <button type="button" id="prizepicks-tab-btn" class="tab-btn tab-picker-trigger" data-tab="prizepicks" role="tab" aria-selected="false" aria-haspopup="true" aria-expanded="false">
+      <span id="prizepicks-tab-label">PrizePicks</span>
+      <svg class="tab-picker-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+    <div id="prizepicks-platform-dropdown" class="tab-picker-dropdown" hidden>
+      <button type="button" class="tab-picker-option active" data-platform="PrizePicks">PrizePicks</button>
+      <button type="button" class="tab-picker-option" data-platform="Courtside">Courtside</button>
+      <button type="button" class="tab-picker-option" data-platform="BetMGM">BetMGM</button>
+      <button type="button" class="tab-picker-option" data-platform="FanDuel">FanDuel</button>
+      <button type="button" class="tab-picker-option" data-platform="Underdog">Underdog</button>
+      <button type="button" class="tab-picker-option" data-platform="Kalshi">Kalshi</button>
+    </div>
+  </div>
   <button class="tab-btn" data-tab="ladder" role="tab" aria-selected="false">Ladder</button>
   <button class="tab-btn" data-tab="calendar" role="tab" aria-selected="false">Calendar</button>
 </nav>
@@ -331,6 +337,6 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
-<script type="module" src="script.js?v=60"></script>
+<script type="module" src="script.js?v=61"></script>
 </body>
 </html>
