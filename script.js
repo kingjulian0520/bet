@@ -251,7 +251,6 @@ function unlockOverlaysWithFade() {
       overlay.hidden = true;
     }, 400);
   });
-  renderExposureSummary();
 }
 
 function wireAuthUI() {
@@ -754,7 +753,6 @@ async function main() {
         unlockedThisSession = false;
         unlockedWithCode = null;
         renderLockOverlays();
-        renderExposureSummary();
       }
     }
   }, 60000);
@@ -780,7 +778,6 @@ function renderAll() {
   renderPicks();
   renderLongShots();
   renderPrizePicks();
-  renderExposureSummary();
   renderCalendar();
   renderLadder();
   renderLockOverlays();
@@ -1191,37 +1188,6 @@ function renderPrizePicks() {
   for (const pick of items) {
     root.appendChild(renderCard(pick));
   }
-}
-
-function renderExposureSummary() {
-  const el = document.getElementById("exposure-summary");
-  if (!isUnlocked()) {
-    el.hidden = true;
-    return;
-  }
-  const unitValue = getUnitValue();
-
-  const visiblePicks =
-    selectedDayFilter === "all" ? currentPicks : currentPicks.filter((p) => p.date === selectedDayFilter);
-  const totalUnits = visiblePicks.reduce((sum, p) => sum + (p.recommended_units || 0), 0);
-  if (totalUnits === 0) {
-    el.hidden = true;
-    return;
-  }
-
-  const scope = selectedDayFilter === "all" ? "Current picks" : "This day's picks";
-  let text;
-  if (displayMode === "dollars" && unitValue) {
-    text = `${scope} add up to $${formatMoney(totalUnits * unitValue)} if you took every one`;
-  } else {
-    text = `${scope} add up to ${totalUnits.toFixed(2)} units if you took every one`;
-    if (displayMode === "dollars") {
-      text += " (add a unit size above to see $)";
-    }
-  }
-  el.textContent = text + ".";
-  el.hidden = false;
-  el.classList.toggle("hot", totalUnits >= 8);
 }
 
 // One leg of any pick: a circle showing the market itself (ML, a spread

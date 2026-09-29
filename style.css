@@ -528,27 +528,6 @@ body {
   font-size: 0.75rem;
 }
 
-.exposure-summary {
-  margin: 0.75rem auto 0;
-  max-width: 480px;
-  font-size: 0.82rem;
-  color: var(--muted);
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.45rem 1rem;
-  display: inline-block;
-}
-
-.exposure-summary.hot {
-  color: var(--lean-mid);
-  border-color: var(--lean-mid);
-}
-
-.exposure-summary[hidden] {
-  display: none;
-}
-
 .summary-bar {
   display: flex;
   align-items: center;
