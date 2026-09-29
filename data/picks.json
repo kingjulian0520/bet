@@ -3654,5 +3654,174 @@
       ]
     }
   ],
-  "prizepicks": []
+  "prizepicks": [
+    {
+      "sport": "Tennis",
+      "matchup": "Daniil Medvedev Over 19.5 Total Games + Novak Djokovic Over 21.5 Total Games",
+      "date": "2026-09-29",
+      "start_time": "2026-09-29T11:30:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.25,
+      "actual_multiplier": 1.9,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Daniil Medvedev",
+          "opponent": "Andrey Rublev",
+          "side": "Over",
+          "line": 19.5,
+          "stat": "Total Games"
+        },
+        {
+          "type": "over_under",
+          "player": "Novak Djokovic",
+          "opponent": "Nuno Borges",
+          "side": "Over",
+          "line": 21.5,
+          "stat": "Total Games"
+        }
+      ]
+    },
+    {
+      "sport": "Mixed",
+      "matchup": "millert Over 4.5 Map 1 Headshots + Schwarz Over 13.5 Map 1 Kills + Novak Djokovic Over 20.5 Total Games",
+      "date": "2026-09-29",
+      "start_time": "2026-09-29T16:30:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.25,
+      "actual_multiplier": 4.5,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "millert",
+          "opponent": "Sangal (Map 1)",
+          "side": "Over",
+          "line": 4.5,
+          "stat": "Map 1 Headshots"
+        },
+        {
+          "type": "over_under",
+          "player": "Schwarz",
+          "opponent": "Sangal (Map 1)",
+          "side": "Over",
+          "line": 13.5,
+          "stat": "Map 1 Kills"
+        },
+        {
+          "type": "over_under",
+          "player": "Novak Djokovic",
+          "opponent": "Nuno Borges",
+          "side": "Over",
+          "line": 20.5,
+          "stat": "Total Games"
+        }
+      ]
+    },
+    {
+      "sport": "Tennis",
+      "matchup": "Cameron Norrie Over 7.5 Total Games + Carlos Alcaraz Over 18.5 Total Games",
+      "date": "2026-09-29",
+      "start_time": "2026-09-30T01:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.25,
+      "actual_multiplier": 2.4,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Cameron Norrie",
+          "opponent": "Alexander Zverev",
+          "side": "Over",
+          "line": 7.5,
+          "stat": "Total Games"
+        },
+        {
+          "type": "over_under",
+          "player": "Carlos Alcaraz",
+          "opponent": "Alex Michelsen",
+          "side": "Over",
+          "line": 18.5,
+          "stat": "Total Games"
+        }
+      ]
+    },
+    {
+      "sport": "WNBA",
+      "matchup": "Chelsea Gray Over 1.5 Rebounds + Caitlin Clark Over 1.5 Made Threes + Jackie Young Over 4.5 Assists + Natasha Howard Over 7.5 Points + Olivia Miles Over 0.5 Made Threes",
+      "date": "2026-09-29",
+      "start_time": "2026-09-29T22:30:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 2.2,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Chelsea Gray",
+          "opponent": "Indiana Fever",
+          "side": "Over",
+          "line": 1.5,
+          "stat": "Rebounds"
+        },
+        {
+          "type": "over_under",
+          "player": "Caitlin Clark",
+          "opponent": "Las Vegas Aces",
+          "side": "Over",
+          "line": 1.5,
+          "stat": "Made Threes"
+        },
+        {
+          "type": "over_under",
+          "player": "Jackie Young",
+          "opponent": "Indiana Fever",
+          "side": "Over",
+          "line": 4.5,
+          "stat": "Assists"
+        },
+        {
+          "type": "over_under",
+          "player": "Natasha Howard",
+          "opponent": "New York Liberty",
+          "side": "Over",
+          "line": 7.5,
+          "stat": "Points"
+        },
+        {
+          "type": "over_under",
+          "player": "Olivia Miles",
+          "opponent": "New York Liberty",
+          "side": "Over",
+          "line": 0.5,
+          "stat": "Made Threes"
+        }
+      ]
+    }
+  ]
 }
