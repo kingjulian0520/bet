@@ -1309,14 +1309,17 @@ function deriveSingleLeg(sport, matchup, favoriteKey, keys) {
   }
 
   if (/\bPlayer Props$/i.test(s)) {
-    const parts = /^(.*?)\s+—\s+(.*?)(?:\s+O\/U\s+([\d.]+))?$/i.exec(m);
-    if (parts) {
-      const player = parts[1].trim();
-      const stat = parts[2].replace(/\s*O\/U.*$/i, "").trim();
-      if (parts[3]) {
-        const sideMatch = /^(Over|Under)/i.exec(fav);
-        return { type: "over_under", player, opponent: "", side: sideMatch ? sideMatch[1] : "Over", line: parts[3], stat };
-      }
+    const ouParts = /^(.*?)\s+—\s+(.*?)\s+O\/U\s+([\d.]+)/i.exec(m);
+    if (ouParts) {
+      const player = ouParts[1].trim();
+      const stat = ouParts[2].trim();
+      const sideMatch = /^(Over|Under)/i.exec(fav);
+      return { type: "over_under", player, opponent: "", side: sideMatch ? sideMatch[1] : "Over", line: ouParts[3], stat };
+    }
+    const binParts = /^(.*?)\s+—\s+(.*?)$/i.exec(m);
+    if (binParts) {
+      const player = binParts[1].trim();
+      const stat = binParts[2].replace(/\s*\([^)]*\)\s*$/, "").trim();
       return { type: "binary", player, opponent: "", side: fav === "Yes" ? "Yes" : "No", stat };
     }
   }
@@ -1905,7 +1908,7 @@ function addDaysToDateStr(dateStr, days) {
 
 function shiftLadderView(days) {
   const bounds = ladderBounds();
-  const next = addDaysToDateStr(ladderViewDate || bounds.latest, days);
+  const next = addDaysToDateStr(ladderViewDate || bounds.defaultDate, days);
   if (next < bounds.earliest || next > bounds.latest) return;
   ladderViewDate = next;
   renderLadder();
@@ -1915,7 +1918,15 @@ function ladderBounds() {
   const today = todayDateStr();
   const dates = currentLadder.map((e) => e.date).filter(Boolean);
   const earliest = dates.length ? dates.reduce((a, b) => (a < b ? a : b)) : today;
-  return { earliest, latest: today };
+  const latestEntry = dates.length ? dates.reduce((a, b) => (a > b ? a : b)) : today;
+  // defaultDate is what the view should open on - today, or a future-dated
+  // entry already on the board if that's later than today. latest is how far
+  // Next may go - a couple of days past defaultDate, so the visitor can still
+  // page forward into an empty upcoming day rather than getting stuck once
+  // the newest entry (or today) is reached.
+  const defaultDate = latestEntry > today ? latestEntry : today;
+  const latest = addDaysToDateStr(defaultDate, 2);
+  return { earliest, defaultDate, latest };
 }
 
 // Walks every ladder entry in date order, compounding the stake: a win
@@ -1958,7 +1969,7 @@ function renderLadder() {
   if (!label || !root) return;
 
   const bounds = ladderBounds();
-  if (!ladderViewDate) ladderViewDate = bounds.latest;
+  if (!ladderViewDate) ladderViewDate = bounds.defaultDate;
   if (ladderViewDate < bounds.earliest) ladderViewDate = bounds.earliest;
   if (ladderViewDate > bounds.latest) ladderViewDate = bounds.latest;
 
