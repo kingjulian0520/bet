@@ -3,75 +3,6 @@
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
-      "sport": "MLB",
-      "matchup": "New York Yankees vs Boston Red Sox",
-      "date": "2026-09-29",
-      "favorite": "New York Yankees",
-      "estimated_probability": {
-        "New York Yankees": 58,
-        "Boston Red Sox": 42
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.5,
-      "reasoning": [
-        "AL Wild Card Series Game 1. Cam Schlittler (14-6, 1.95 ERA, 239 K) starts for New York - the lowest Yankees ERA since Guidry's 1.74 in 1978.",
-        "CORRECTION: Boston starts veteran Sonny Gray (18-5, 2.72 ERA), not a rookie as earlier assumed - this is an elite-vs-elite starter matchup, not a mismatch, which tempers the edge significantly.",
-        "Sized to match the market's own ~58% no-vig read (-154/+127) now that both starters are correctly identified - two genuinely good pitchers going head-to-head in a winner-take-all game is a real but modest Yankees edge, not a lopsided one."
-      ],
-      "sources": [
-        "https://www.mlb.com/news/cam-schlittler-finishes-2026-regular-season-with-a-1-95-era",
-        "https://www.cbssports.com/mlb/news/yankees-wild-card-series-cam-schlittler-max-fried-gerrit-cole",
-        "https://www.si.com/betting/red-sox-vs-yankees-opening-odds-for-american-league-wild-card-game-1-new-york-favored-with-schlittler-starting"
-      ],
-      "start_time": "2026-09-30T00:00:00Z"
-    },
-    {
-      "sport": "MLB",
-      "matchup": "Atlanta Braves vs Philadelphia Phillies",
-      "date": "2026-09-29",
-      "favorite": "Atlanta Braves",
-      "estimated_probability": {
-        "Atlanta Braves": 61,
-        "Philadelphia Phillies": 39
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "NL Wild Card Series Game 1. Chris Sale (14-9, 2.16 ERA, 0.98 WHIP) is having one of the best age-37 seasons by any pitcher since 1921 - only Verlander, Clemens, Vance, and Chandler had a better ERA that old.",
-        "Braves won the NL East outright and get home field for the full series, with Sale starting Game 1 at home.",
-        "Phillies counter with Cristopher Sanchez - solid, but without Sale's current level of dominance.",
-        "Sized in line with the market's ~60% implied (-150)."
-      ],
-      "sources": [
-        "https://www.ajc.com/sports/2026/09/chris-sale-puts-bow-on-memorable-2026-regular-season",
-        "https://www.mlb.com/braves/news/chris-sale-2026-season-comparison"
-      ],
-      "start_time": "2026-09-29T18:00:00Z"
-    },
-    {
-      "sport": "MLB",
-      "matchup": "Houston Astros vs Chicago White Sox",
-      "date": "2026-09-29",
-      "favorite": "Houston Astros",
-      "estimated_probability": {
-        "Houston Astros": 59,
-        "Chicago White Sox": 41
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.5,
-      "reasoning": [
-        "AL Wild Card Series Game 1. Hunter Brown (Houston's clear #1 starter) is on full rest; Chicago's Sean Burke (11-7, 3.34 ERA) is good, but the White Sox rotation depth behind him is described as still a work in progress.",
-        "Houston controlled the regular-season series 5-2, including 3-1 at home.",
-        "Chicago's playoff berth (79-76, ending a run of 100-loss seasons) is built on offense (6th in HR, 5th in runs) rather than pitching - its path through this series likely runs through outslugging teams, which favors Houston in a starter-vs-starter Game 1 specifically.",
-        "Exact first pitch time is unconfirmed - sources conflict between 4pm and 5pm ET; using 4pm ET as a fallback start_time."
-      ],
-      "sources": [
-        "https://www.mlb.com/whitesox/news/white-sox-vs-astros-wild-card-series-starting-lineups",
-        "https://www.houstonchronicle.com/sports/astros/article/wild-card-schedule"
-      ],
-      "start_time": "2026-09-29T20:00:00Z"
-    },
-    {
       "sport": "NHL",
       "matchup": "Vegas Golden Knights vs Chicago Blackhawks",
       "date": "2026-09-29",
@@ -488,6 +419,30 @@
         "https://www.espn.com/wnba/player/gamelog/_/id/3142328/gabby-williams",
         "https://sports.yahoo.com/articles/gabby-williams-makes-convincing-case-060016936.html"
       ]
+    },
+    {
+      "sport": "ATP Beijing",
+      "matchup": "Jakub Mensik vs Alexander Bublik",
+      "date": "2026-09-30",
+      "start_time": "2026-09-30T03:00:00Z",
+      "favorite": "Jakub Mensik",
+      "estimated_probability": {
+        "Jakub Mensik": 63,
+        "Alexander Bublik": 37
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "China Open Round 1. Mensik, 20, is in genuine breakout form - reached his first Grand Slam semifinal in Paris this year and climbed to a career-high No. 16-18, with a signature three-set win over World No. 1 Jannik Sinner in Doha in February, plus a title at the 2026 ASB Classic.",
+        "Bublik, by contrast, has had an uneven 2026 outside a Hong Kong title run - a 4th-round Australian Open followed by a 1st-round Roland Garros exit and just one match win total across the Rome/Madrid/Miami Masters 1000 swing, reflecting his usual streaky, error-prone game.",
+        "Real sportsbook price (Mensik -174 / Bublik +162, ~63% implied) lines up closely with the form-based read, so this is sized to the market rather than an independent overreach."
+      ],
+      "sources": [
+        "https://sports.yahoo.com/articles/flavio-cobolli-jakub-mensik-alexander-115204742.html",
+        "https://en.wikipedia.org/wiki/Jakub_Men%C5%A1%C3%ADk",
+        "https://en.wikipedia.org/wiki/Alexander_Bublik",
+        "https://www.dimers.com/tennis/news/alexander-bublik-vs-jakub-mensik-tennis-prediction-atp-china-open-2026-ac"
+      ]
     }
   ],
   "long_shots": [
@@ -502,7 +457,7 @@
         "Doesn't Hit": 74
       },
       "confidence_label": "Coin flip",
-      "recommended_units": 0.1,
+      "recommended_units": 0.25,
       "is_long_shot": true,
       "legs": [
         {
@@ -543,52 +498,6 @@
         "Reuses the research already cited on each leg's own Picks tab entry."
       ],
       "actual_multiplier": 3.53
-    },
-    {
-      "sport": "Parlays",
-      "matchup": "3-Leg Long Shot: Yankees ML + Braves ML + Astros ML (MLB Wild Card sweep)",
-      "date": "2026-09-29",
-      "start_time": "2026-09-29T18:00:00Z",
-      "favorite": "Hits",
-      "estimated_probability": {
-        "Hits": 22,
-        "Doesn't Hit": 78
-      },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.1,
-      "is_long_shot": true,
-      "legs": [
-        {
-          "sport": "MLB",
-          "matchup": "Atlanta Braves vs Philadelphia Phillies",
-          "date": "2026-09-29",
-          "side": "Atlanta Braves",
-          "probability": 61
-        },
-        {
-          "sport": "MLB",
-          "matchup": "Houston Astros vs Chicago White Sox",
-          "date": "2026-09-29",
-          "side": "Houston Astros",
-          "probability": 59
-        },
-        {
-          "sport": "MLB",
-          "matchup": "New York Yankees vs Boston Red Sox",
-          "date": "2026-09-29",
-          "side": "New York Yankees",
-          "probability": 62
-        }
-      ],
-      "reasoning": [
-        "All three Game 1 favorites from today's main Picks tab winning on the same Wild Card slate - same side as each individual pick, not a new belief.",
-        "Combined probability: 0.61 x 0.59 x 0.62 = ~22% - genuinely a long shot even though every leg is a real, cited starting-pitcher edge on its own.",
-        "All three are win-or-go-home Game 1s for the higher seed, so each leg is independently motivated - no shared risk factor beyond 'road playoff upsets happen'."
-      ],
-      "sources": [
-        "Reuses the research already cited on each leg's own Picks tab entry."
-      ],
-      "actual_multiplier": 4.41
     }
   ],
   "settled": [
@@ -3716,6 +3625,34 @@
       "settled_at": "2026-09-29T04:05:00Z"
     }
   ],
-  "ladder": [],
+  "ladder": [
+    {
+      "sport": "ATP Tokyo",
+      "matchup": "Frances Tiafoe vs Kei Nishikori",
+      "date": "2026-09-30",
+      "start_time": "2026-09-30T02:00:00Z",
+      "favorite": "Frances Tiafoe",
+      "estimated_probability": {
+        "Frances Tiafoe": 78,
+        "Kei Nishikori": 22
+      },
+      "actual_multiplier": 1.28,
+      "confidence_label": "Strong lean",
+      "reasoning": [
+        "Japan Open Round 1. Tiafoe is the 2-seed at a career-high No. 8 ranking, fresh off the best comeback of his career - a 5-set quarterfinal win over Michelsen (down 0-2 in sets, 2-17 in his career from that spot) en route to a US Open semifinal, his third career major semi.",
+        "Nishikori is 36, ranked all the way down at No. 464 after an injury-ravaged career, and is explicitly playing his FINAL-EVER Tokyo appearance on a farewell/retirement tour before hanging it up at the end of this season - this is a ceremonial send-off for the hometown crowd, not a competitively sharp top player.",
+        "Real sportsbook price cited at Frances Tiafoe -357 (Dimers), ~1.28 decimal - comfortably inside the 1.2-1.4 range this feature requires, and consistent with a genuinely lopsided quality gap rather than a coin-flip favorite.",
+        "Best-of-3, single-elimination format - a Nishikori upset (plausible given crowd emotion and his own major-final pedigree) would end Tiafoe's tournament outright, exactly the kind of stakes this feature is built around."
+      ],
+      "sources": [
+        "https://www.cbssports.com/tennis/news/2026-us-open-results-frances-tiafoe-alex-michelsen-quarterfinal/",
+        "https://www.atptour.com/en/news/tiafoe-damm-us-open-2026-r1",
+        "https://www.japantimes.co.jp/sports/2026/05/01/tennis/kei-nishikori-retire-end-2026/",
+        "https://www.atptour.com/en/news/nishikori-tokyo-2026-appearance-announcement",
+        "https://www.dimers.com/tennis/news/kei-nishikori-vs-frances-tiafoe-tennis-prediction-atp-japan-open-2026-ac",
+        "https://www.atptour.com/en/news/tokyo-2026-draw-preview"
+      ]
+    }
+  ],
   "prizepicks": []
 }
