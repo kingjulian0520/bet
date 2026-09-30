@@ -1,52 +1,7 @@
 {
-  "generated_at": "2026-09-28T17:45:00Z",
+  "generated_at": "2026-09-30T15:00:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
-    {
-      "sport": "NHL",
-      "matchup": "Vegas Golden Knights vs Chicago Blackhawks",
-      "date": "2026-09-29",
-      "favorite": "Vegas Golden Knights",
-      "estimated_probability": {
-        "Vegas Golden Knights": 70,
-        "Chicago Blackhawks": 30
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 1,
-      "reasoning": [
-        "Season opener. Blackhawks franchise player and newly-named captain Connor Bedard is out until November recovering from shoulder surgery (injured in practice July 2) - Chicago opens the season without its best player entirely.",
-        "Vegas enters on a hot preseason/exhibition run and just added Mitch Marner via sign-and-trade.",
-        "Sized below the market's ~72% implied (-263) given real opening-night variance, but this clears the bar for a genuinely lopsided situation given Bedard's absence."
-      ],
-      "sources": [
-        "https://www.athlonsports.com/nhl/chicago-blackhawks/blackhawks-announce-connor-bedard-update",
-        "https://www.bleachernation.com/blackhawks/2026/09/23/blackhawks-notes-bedard-update"
-      ],
-      "start_time": "2026-09-30T02:30:00Z"
-    },
-    {
-      "sport": "NHL",
-      "matchup": "Edmonton Oilers vs Vancouver Canucks",
-      "date": "2026-09-29",
-      "favorite": "Edmonton Oilers",
-      "estimated_probability": {
-        "Edmonton Oilers": 70,
-        "Vancouver Canucks": 30
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 1,
-      "reasoning": [
-        "Season opener. Edmonton won the last two head-to-head meetings by a combined 12-1 (6-0, 6-1).",
-        "Connor McDavid (138 points last season) headlines a roster priced at +900 to win the Cup vs. Vancouver's +100000 - an extreme talent gap.",
-        "Vancouver missed the playoffs last season with no major offseason additions cited.",
-        "Sized below the market's ~75% implied (-303) but this is a legitimately lopsided matchup on both recent results and roster quality."
-      ],
-      "sources": [
-        "https://www.sportsgrid.com/nhl/game/vancouver-canucks-edmonton-oilers",
-        "https://www.squawka.com/ca/news/nhl/canucks-vs-oilers-prediction-odds-opening-night"
-      ],
-      "start_time": "2026-09-30T02:10:00Z"
-    },
     {
       "sport": "ATP Beijing",
       "matchup": "Novak Djokovic vs Nuno Borges",
@@ -100,28 +55,6 @@
         "https://stats.tennismylife.org/players/alex-michelsen/season/2026",
         "https://sports.yahoo.com/articles/carlos-alcaraz-remaining-2026-schedule-130053663.html",
         "https://en.wikipedia.org/wiki/2026_Japan_Open_Tennis_Championships"
-      ]
-    },
-    {
-      "sport": "MLB Totals",
-      "matchup": "Houston Astros vs Chicago White Sox — Total Runs O/U 8.5",
-      "date": "2026-09-29",
-      "start_time": "2026-09-29T20:00:00Z",
-      "favorite": "Over 8.5",
-      "estimated_probability": {
-        "Over 8.5": 54,
-        "Under 8.5": 46
-      },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.25,
-      "reasoning": [
-        "Both teams are confirmed using bullpen/opener games tonight (Blubaugh for Houston, Hagen Smith for Chicago) rather than a normal starter, which raises scoring variance and supports the Over case.",
-        "Both teams have trended Over across the full season: White Sox 87-66-0 (56.9%), Astros 78-74-10 (~51.3%).",
-        "Downgraded from an earlier pass: this ignored a real opposing signal - Houston has reportedly gone Under in 8 of its last 9 games as a home favorite, and Under in its last 5 Wild Card Round games historically. That cuts directly against the season-long Over trend, so this is sized as closer to a coin flip than a confident Over."
-      ],
-      "sources": [
-        "https://www.yardbarker.com/mlb/articles/astros_white_sox_going_with_bullpen_games_in_game_1_of_wild_card_series/s1_13132_44361751",
-        "https://www.covers.com/sport/baseball/mlb/league-trends"
       ]
     },
     {
@@ -445,61 +378,7 @@
       ]
     }
   ],
-  "long_shots": [
-    {
-      "sport": "Parlays",
-      "matchup": "4-Leg Long Shot: Golden Knights ML + Oilers ML + Rublev ML + Medvedev ML",
-      "date": "2026-09-28",
-      "start_time": "2026-09-28T09:30:00Z",
-      "favorite": "Hits",
-      "estimated_probability": {
-        "Hits": 26,
-        "Doesn't Hit": 74
-      },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.25,
-      "is_long_shot": true,
-      "legs": [
-        {
-          "sport": "ATP Hangzhou",
-          "matchup": "Andrey Rublev vs Kyrian Jacquet",
-          "date": "2026-09-28",
-          "side": "Andrey Rublev",
-          "probability": 72
-        },
-        {
-          "sport": "ATP Hangzhou",
-          "matchup": "Daniil Medvedev vs Roman Safiullin",
-          "date": "2026-09-28",
-          "side": "Daniil Medvedev",
-          "probability": 75
-        },
-        {
-          "sport": "NHL",
-          "matchup": "Vegas Golden Knights vs Chicago Blackhawks",
-          "date": "2026-09-29",
-          "side": "Vegas Golden Knights",
-          "probability": 70
-        },
-        {
-          "sport": "NHL",
-          "matchup": "Edmonton Oilers vs Vancouver Canucks",
-          "date": "2026-09-29",
-          "side": "Edmonton Oilers",
-          "probability": 70
-        }
-      ],
-      "reasoning": [
-        "Every leg is the SAME side already favored in the main Picks tab (Rublev 72%, Medvedev 75%, Golden Knights 70%, Oilers 70%) - none of these fight those picks, they're the exact same convictions stacked for a bigger payout.",
-        "Combined probability: 0.72 x 0.75 x 0.70 x 0.70 = ~26% - a real long shot built entirely from picks that are each a genuine Lean or better on their own.",
-        "Spans two sports across two days (Sun tennis, Mon NHL openers), so no single upset takes out more than its own leg."
-      ],
-      "sources": [
-        "Reuses the research already cited on each leg's own Picks tab entry."
-      ],
-      "actual_multiplier": 3.53
-    }
-  ],
+  "long_shots": [],
   "settled": [
     {
       "sport": "NFL",
@@ -3625,14 +3504,209 @@
       "final_score": "Bears 27, Eagles 7. Corrected settlement: D'Andre Swift actually had 20 carries for 84 yards (comfortably over 14.5 attempts - my original settlement wrongly inferred a low carry count from a flawed team-total-yards subtraction instead of checking his real box score line). Saquon Barkley had 15 carries for 82 yards (73 of it in the first half), also comfortably over his 44.5 line. Both legs hit; parlay corrected to Hits.",
       "settled_at": "2026-09-29T04:05:00Z",
       "platform": "PrizePicks"
+    },
+    {
+      "sport": "NHL",
+      "matchup": "Vegas Golden Knights vs Chicago Blackhawks",
+      "date": "2026-09-29",
+      "favorite": "Vegas Golden Knights",
+      "estimated_probability": {
+        "Vegas Golden Knights": 70,
+        "Chicago Blackhawks": 30
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Season opener. Blackhawks franchise player and newly-named captain Connor Bedard is out until November recovering from shoulder surgery (injured in practice July 2) - Chicago opens the season without its best player entirely.",
+        "Vegas enters on a hot preseason/exhibition run and just added Mitch Marner via sign-and-trade.",
+        "Sized below the market's ~72% implied (-263) given real opening-night variance, but this clears the bar for a genuinely lopsided situation given Bedard's absence."
+      ],
+      "sources": [
+        "https://www.athlonsports.com/nhl/chicago-blackhawks/blackhawks-announce-connor-bedard-update",
+        "https://www.bleachernation.com/blackhawks/2026/09/23/blackhawks-notes-bedard-update"
+      ],
+      "start_time": "2026-09-30T02:30:00Z",
+      "winner": "Vegas Golden Knights",
+      "final_score": "Golden Knights 4, Blackhawks 2 (Golden Knights out-shot Chicago 32-20)",
+      "settled_at": "2026-09-30T15:00:00Z"
+    },
+    {
+      "sport": "NHL",
+      "matchup": "Edmonton Oilers vs Vancouver Canucks",
+      "date": "2026-09-29",
+      "favorite": "Edmonton Oilers",
+      "estimated_probability": {
+        "Edmonton Oilers": 70,
+        "Vancouver Canucks": 30
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Season opener. Edmonton won the last two head-to-head meetings by a combined 12-1 (6-0, 6-1).",
+        "Connor McDavid (138 points last season) headlines a roster priced at +900 to win the Cup vs. Vancouver's +100000 - an extreme talent gap.",
+        "Vancouver missed the playoffs last season with no major offseason additions cited.",
+        "Sized below the market's ~75% implied (-303) but this is a legitimately lopsided matchup on both recent results and roster quality."
+      ],
+      "sources": [
+        "https://www.sportsgrid.com/nhl/game/vancouver-canucks-edmonton-oilers",
+        "https://www.squawka.com/ca/news/nhl/canucks-vs-oilers-prediction-odds-opening-night"
+      ],
+      "start_time": "2026-09-30T02:10:00Z",
+      "winner": "Vancouver Canucks",
+      "final_score": "Canucks 6, Oilers 5 (OT) - Paul Cotter scored the OT winner at 1:59, assisted by Max Sasson. Upset loss for the favorite.",
+      "settled_at": "2026-09-30T15:00:00Z"
+    },
+    {
+      "sport": "MLB Totals",
+      "matchup": "Houston Astros vs Chicago White Sox — Total Runs O/U 8.5",
+      "date": "2026-09-29",
+      "start_time": "2026-09-29T20:00:00Z",
+      "favorite": "Over 8.5",
+      "estimated_probability": {
+        "Over 8.5": 54,
+        "Under 8.5": 46
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.25,
+      "reasoning": [
+        "Both teams are confirmed using bullpen/opener games tonight (Blubaugh for Houston, Hagen Smith for Chicago) rather than a normal starter, which raises scoring variance and supports the Over case.",
+        "Both teams have trended Over across the full season: White Sox 87-66-0 (56.9%), Astros 78-74-10 (~51.3%).",
+        "Downgraded from an earlier pass: this ignored a real opposing signal - Houston has reportedly gone Under in 8 of its last 9 games as a home favorite, and Under in its last 5 Wild Card Round games historically. That cuts directly against the season-long Over trend, so this is sized as closer to a coin flip than a confident Over."
+      ],
+      "sources": [
+        "https://www.yardbarker.com/mlb/articles/astros_white_sox_going_with_bullpen_games_in_game_1_of_wild_card_series/s1_13132_44361751",
+        "https://www.covers.com/sport/baseball/mlb/league-trends"
+      ],
+      "winner": "Over 8.5",
+      "final_score": "White Sox 6, Astros 3 (9 combined runs) - Game 1 of the AL Wild Card Series",
+      "actual_total": 9,
+      "settled_at": "2026-09-30T15:00:00Z"
+    },
+    {
+      "sport": "Parlays",
+      "matchup": "4-Leg Long Shot: Golden Knights ML + Oilers ML + Rublev ML + Medvedev ML",
+      "date": "2026-09-28",
+      "start_time": "2026-09-28T09:30:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 26,
+        "Doesn't Hit": 74
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.25,
+      "is_long_shot": true,
+      "legs": [
+        {
+          "sport": "ATP Hangzhou",
+          "matchup": "Andrey Rublev vs Kyrian Jacquet",
+          "date": "2026-09-28",
+          "side": "Andrey Rublev",
+          "probability": 72
+        },
+        {
+          "sport": "ATP Hangzhou",
+          "matchup": "Daniil Medvedev vs Roman Safiullin",
+          "date": "2026-09-28",
+          "side": "Daniil Medvedev",
+          "probability": 75
+        },
+        {
+          "sport": "NHL",
+          "matchup": "Vegas Golden Knights vs Chicago Blackhawks",
+          "date": "2026-09-29",
+          "side": "Vegas Golden Knights",
+          "probability": 70
+        },
+        {
+          "sport": "NHL",
+          "matchup": "Edmonton Oilers vs Vancouver Canucks",
+          "date": "2026-09-29",
+          "side": "Edmonton Oilers",
+          "probability": 70
+        }
+      ],
+      "reasoning": [
+        "Every leg is the SAME side already favored in the main Picks tab (Rublev 72%, Medvedev 75%, Golden Knights 70%, Oilers 70%) - none of these fight those picks, they're the exact same convictions stacked for a bigger payout.",
+        "Combined probability: 0.72 x 0.75 x 0.70 x 0.70 = ~26% - a real long shot built entirely from picks that are each a genuine Lean or better on their own.",
+        "Spans two sports across two days (Sun tennis, Mon NHL openers), so no single upset takes out more than its own leg."
+      ],
+      "sources": [
+        "Reuses the research already cited on each leg's own Picks tab entry."
+      ],
+      "actual_multiplier": 3.53,
+      "winner": "Doesn't Hit",
+      "final_score": "Rublev beat Jacquet 7-6(0), 6-1 (leg hit). Medvedev beat Safiullin 7-5, 6-4 (leg hit). Golden Knights beat Blackhawks 4-2 (leg hit). But Oilers lost to the Canucks 6-5 in OT (Paul Cotter OT winner) - that leg missed, so the parlay settles Doesn't Hit despite 3 of 4 legs hitting.",
+      "settled_at": "2026-09-30T15:00:00Z"
+    },
+    {
+      "sport": "WNBA",
+      "matchup": "Chelsea Gray Over 1.5 Rebounds + Caitlin Clark Over 1.5 Made Threes + Jackie Young Over 4.5 Assists + Natasha Howard Over 7.5 Points + Olivia Miles Over 0.5 Made Threes",
+      "date": "2026-09-29",
+      "start_time": "2026-09-29T22:30:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 2.2,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Chelsea Gray",
+          "opponent": "Indiana Fever",
+          "side": "Over",
+          "line": 1.5,
+          "stat": "Rebounds"
+        },
+        {
+          "type": "over_under",
+          "player": "Caitlin Clark",
+          "opponent": "Las Vegas Aces",
+          "side": "Over",
+          "line": 1.5,
+          "stat": "Made Threes"
+        },
+        {
+          "type": "over_under",
+          "player": "Jackie Young",
+          "opponent": "Indiana Fever",
+          "side": "Over",
+          "line": 4.5,
+          "stat": "Assists"
+        },
+        {
+          "type": "over_under",
+          "player": "Natasha Howard",
+          "opponent": "New York Liberty",
+          "side": "Over",
+          "line": 7.5,
+          "stat": "Points"
+        },
+        {
+          "type": "over_under",
+          "player": "Olivia Miles",
+          "opponent": "New York Liberty",
+          "side": "Over",
+          "line": 0.5,
+          "stat": "Made Threes"
+        }
+      ],
+      "platform": "PrizePicks",
+      "winner": "Doesn't Hit",
+      "final_score": "Jackie Young leg hit (9 assists on 4.5 line, Aces lost Game 2 to the Fever 99-89). Olivia Miles leg hit (made a buzzer-beating 3 at the half, finished 1-of-8 shooting - at least 1 made three clears the 0.5 line). But Natasha Howard played only 16 minutes and scored just 2 points, well under her 7.5 line - that leg misses, so the parlay settles Doesn't Hit regardless of Gray's rebounds or Clark's made-threes count.",
+      "settled_at": "2026-09-30T15:00:00Z"
     }
   ],
   "ladder": [
     {
       "sport": "ATP Tokyo",
       "matchup": "Frances Tiafoe vs Kei Nishikori",
-      "date": "2026-09-30",
-      "start_time": "2026-10-01T02:00:00Z",
+      "date": "2026-10-01",
+      "start_time": "2026-10-02T02:00:00Z",
       "favorite": "Frances Tiafoe",
       "estimated_probability": {
         "Frances Tiafoe": 78,
@@ -3645,7 +3719,8 @@
         "Nishikori is 36, ranked all the way down at No. 464 after an injury-ravaged career, and is explicitly playing his FINAL-EVER Tokyo appearance on a farewell/retirement tour before hanging it up at the end of this season - re-confirmed as still on with no withdrawal risk found as of this check.",
         "Real sportsbook prices found for this match disagreed by book: -357 (~1.28 decimal) at one source, -500 (~1.20 decimal) at another - genuine line variance, not a data error. Used the more conservative (shorter) of the two real prices found, 1.20, which still sits exactly at this feature's 1.2 floor. Double-check the live price on your own sportsbook immediately before betting - if it's shorter than -500/1.20 decimal, this no longer qualifies under this site's own 1.2-1.4 rule and should be skipped.",
         "Best-of-3, single-elimination format - a Nishikori upset (plausible given crowd emotion and his own major-final pedigree) would end Tiafoe's tournament outright, exactly the kind of stakes this feature is built around.",
-        "Date corrected per direct confirmation: this match is Wednesday (tomorrow), not Tuesday as originally researched - exact time was listed as TBD as of this check, so start_time uses the same placeholder evening-session slot as the other Wednesday Tokyo/Beijing matches; treat as approximate until an exact time is published."
+        "Date corrected per direct confirmation: this match is Wednesday (tomorrow), not Tuesday as originally researched - exact time was listed as TBD as of this check, so start_time uses the same placeholder evening-session slot as the other Wednesday Tokyo/Beijing matches; treat as approximate until an exact time is published.",
+        "Pushed a further day per site owner update: Tommy Paul's earlier match on the same day's order of play ran long, bumping this match off Wednesday entirely - now Thursday, Oct 1. Exact time is still TBD; the placeholder evening-session slot was shifted forward 24 hours to match. Double-check the live time before betting."
       ],
       "sources": [
         "https://www.cbssports.com/tennis/news/2026-us-open-results-frances-tiafoe-alex-michelsen-quarterfinal/",
@@ -3767,65 +3842,6 @@
           "side": "Over",
           "line": 18.5,
           "stat": "Total Games"
-        }
-      ],
-      "platform": "PrizePicks"
-    },
-    {
-      "sport": "WNBA",
-      "matchup": "Chelsea Gray Over 1.5 Rebounds + Caitlin Clark Over 1.5 Made Threes + Jackie Young Over 4.5 Assists + Natasha Howard Over 7.5 Points + Olivia Miles Over 0.5 Made Threes",
-      "date": "2026-09-29",
-      "start_time": "2026-09-29T22:30:00Z",
-      "favorite": "Hits",
-      "estimated_probability": {
-        "Hits": 50,
-        "Doesn't Hit": 50
-      },
-      "recommended_units": 0.5,
-      "actual_multiplier": 2.2,
-      "is_prizepicks": true,
-      "reasoning": [],
-      "sources": [],
-      "legs": [
-        {
-          "type": "over_under",
-          "player": "Chelsea Gray",
-          "opponent": "Indiana Fever",
-          "side": "Over",
-          "line": 1.5,
-          "stat": "Rebounds"
-        },
-        {
-          "type": "over_under",
-          "player": "Caitlin Clark",
-          "opponent": "Las Vegas Aces",
-          "side": "Over",
-          "line": 1.5,
-          "stat": "Made Threes"
-        },
-        {
-          "type": "over_under",
-          "player": "Jackie Young",
-          "opponent": "Indiana Fever",
-          "side": "Over",
-          "line": 4.5,
-          "stat": "Assists"
-        },
-        {
-          "type": "over_under",
-          "player": "Natasha Howard",
-          "opponent": "New York Liberty",
-          "side": "Over",
-          "line": 7.5,
-          "stat": "Points"
-        },
-        {
-          "type": "over_under",
-          "player": "Olivia Miles",
-          "opponent": "New York Liberty",
-          "side": "Over",
-          "line": 0.5,
-          "stat": "Made Threes"
         }
       ],
       "platform": "PrizePicks"
