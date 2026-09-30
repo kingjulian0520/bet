@@ -49,10 +49,8 @@ const COMMON_TIME_ZONES = [
 ];
 
 let rawPicks = [];
-let rawLongShots = [];
 let rawPrizePicks = [];
 let currentPicks = [];
-let currentLongShots = [];
 let currentPrizePicks = [];
 let currentSettled = [];
 let currentLadder = [];
@@ -155,7 +153,7 @@ async function applyAuthState(user) {
   renderAll();
 }
 
-// ---------- picks/long shots lock ----------
+// ---------- picks lock ----------
 
 // Deliberately in-memory only, not saved to the profile or localStorage -
 // resets on every page load/reopen so the passcode has to be re-entered
@@ -166,7 +164,7 @@ function isUnlocked() {
 }
 
 function renderLockOverlays() {
-  ["picks", "longshots", "prizepicks", "ladder"].forEach((prefix) => renderLockOverlay(prefix));
+  ["picks", "prizepicks", "ladder"].forEach((prefix) => renderLockOverlay(prefix));
 }
 
 function renderLockOverlay(prefix) {
@@ -241,7 +239,7 @@ function renderLockOverlay(prefix) {
 }
 
 function unlockOverlaysWithFade() {
-  ["picks", "longshots", "prizepicks", "ladder"].forEach((prefix) => {
+  ["picks", "prizepicks", "ladder"].forEach((prefix) => {
     const overlay = document.getElementById(`${prefix}-lock-overlay`);
     const lockable = document.getElementById(`${prefix}-lockable`);
     if (!overlay || !lockable) return;
@@ -726,7 +724,6 @@ async function main() {
   refreshLastUpdatedLabel();
 
   rawPicks = data.picks || [];
-  rawLongShots = data.long_shots || [];
   rawPrizePicks = data.prizepicks || [];
   currentSettled = data.settled || [];
   currentLadder = data.ladder || [];
@@ -744,9 +741,8 @@ async function main() {
 
   setInterval(async () => {
     const hadPicks = currentPicks.length;
-    const hadLongShots = currentLongShots.length;
     prunePicks();
-    if (currentPicks.length !== hadPicks || currentLongShots.length !== hadLongShots) {
+    if (currentPicks.length !== hadPicks) {
       renderAll();
     }
 
@@ -765,17 +761,16 @@ async function main() {
   }, 60000);
 }
 
-// A pick/long shot with a known start_time disappears from the browsable
-// list once that time passes - you can't act on something already
-// underway. Settlement (once the result is known) is separate and still
-// handled via the "settled" array regardless of this filter.
+// A pick with a known start_time disappears from the browsable list once
+// that time passes - you can't act on something already underway.
+// Settlement (once the result is known) is separate and still handled via
+// the "settled" array regardless of this filter.
 function hasStarted(pick) {
   return !!pick.start_time && new Date(pick.start_time).getTime() <= Date.now();
 }
 
 function prunePicks() {
   currentPicks = rawPicks.filter((p) => !hasStarted(p));
-  currentLongShots = rawLongShots.filter((p) => !hasStarted(p));
   currentPrizePicks = rawPrizePicks.filter((p) => !hasStarted(p));
 }
 
@@ -783,7 +778,6 @@ function renderAll() {
   prunePicks();
   renderDayFilterBar();
   renderPicks();
-  renderLongShots();
   renderPrizePicks();
   renderCalendar();
   renderLadder();
@@ -1213,21 +1207,6 @@ function renderPicks() {
   }
 }
 
-function renderLongShots() {
-  const root = document.getElementById("longshots-root");
-  if (!root) return;
-
-  if (currentLongShots.length === 0) {
-    root.innerHTML = '<p class="empty-state">No long shots yet.</p>';
-    return;
-  }
-
-  root.innerHTML = "";
-  for (const pick of currentLongShots) {
-    root.appendChild(renderCard(pick));
-  }
-}
-
 function renderPrizePicks() {
   const root = document.getElementById("prizepicks-root");
   if (!root) return;
@@ -1613,27 +1592,16 @@ function formatDollarsSigned(n, isExact) {
   return `${isExact ? "=" : "~"}${n >= 0 ? "+" : "-"}$${formatMoney(Math.abs(n))}`;
 }
 
-// Long shots lose their array membership once settled (picks/long_shots
-// and settled are one flat list by then), so this relies on an explicit
-// is_long_shot flag going forward, falling back to the naming convention
-// already used for every long shot added before that flag existed
-// (a parlay, or a matchup literally titled "Long Shot: ...").
-function isLongShotPick(pick) {
-  if (pick.is_long_shot === true) return true;
-  if (pick.sport === "Parlays") return true;
-  return /long shot/i.test(pick.matchup || "");
-}
-
 // PrizePicks entries live in their own "prizepicks" array while live, and
-// carry this flag into "settled" once resolved (same pattern as
-// is_long_shot for long shots) - not tied to any particular sport, since
-// PrizePicks picks can be any sport, not just esports.
+// carry this flag into "settled" once resolved - not tied to any
+// particular sport, since PrizePicks picks can be any sport, not just
+// esports.
 function isPrizePicksPick(pick) {
   return pick.is_prizepicks === true;
 }
 
-// Groups a list of picks (any mix of picks/long_shots/prizepicks, settled
-// or not) into the three tab categories plus a per-sport net total, for the
+// Groups a list of picks (any mix of picks/prizepicks, settled or not)
+// into the tab categories plus a per-sport net total, for the
 // Calendar's compact "Total winnings" + "see full detailed breakdown"
 // bubble. Only settled entries (a winner is known) contribute - unsettled
 // ones have no result yet, so they're excluded rather than counted as 0.
@@ -1660,11 +1628,9 @@ function computeBreakdown(picksList) {
   });
 
   const picksOnly = [];
-  const longshots = [];
   const prizepicks = [];
   for (const p of settled) {
     if (isPrizePicksPick(p)) prizepicks.push(p);
-    else if (isLongShotPick(p)) longshots.push(p);
     else picksOnly.push(p);
   }
 
@@ -1689,7 +1655,6 @@ function computeBreakdown(picksList) {
   return {
     total: sumBucket(settled),
     picks: sumBucket(picksOnly),
-    longshots: sumBucket(longshots),
     prizepicks: sumBucket(prizepicks),
     bySport: sportRows,
     byCompetition: competitionRows,
@@ -1733,7 +1698,6 @@ function openBreakdownModal(title, breakdown) {
 
   const byTypeRows = [
     ["Picks", breakdown.picks],
-    ["Long Shots", breakdown.longshots],
     [ppPlatformName, breakdown.prizepicks],
   ]
     .filter(([, b]) => b.count > 0)
@@ -1793,7 +1757,6 @@ function picksByDate() {
   };
   currentSettled.forEach(add);
   currentPicks.forEach(add);
-  currentLongShots.forEach(add);
   currentPrizePicks.forEach(add);
   return map;
 }
@@ -1820,7 +1783,7 @@ function renderCalendar() {
   const showDollars = displayMode === "dollars" && unitValue;
 
   const monthPrefix = `${calViewYear}-${pad2(calViewMonth + 1)}-`;
-  const monthPicks = [...currentSettled, ...currentPicks, ...currentLongShots, ...currentPrizePicks].filter((p) =>
+  const monthPicks = [...currentSettled, ...currentPicks, ...currentPrizePicks].filter((p) =>
     (p.date || "").startsWith(monthPrefix)
   );
   const monthBreakdown = computeBreakdown(monthPicks);
@@ -1861,7 +1824,7 @@ function renderCalendar() {
     const dateStr = `${calViewYear}-${pad2(calViewMonth + 1)}-${pad2(day)}`;
     const dayPicks = byDate[dateStr] || [];
     const dayBreakdown = computeBreakdown(dayPicks);
-    const settledCount = dayBreakdown.picks.count + dayBreakdown.longshots.count + dayBreakdown.prizepicks.count;
+    const settledCount = dayBreakdown.picks.count + dayBreakdown.prizepicks.count;
     const wins = dayPicks.filter((p) => p.winner && p.winner === p.favorite).length;
     const losses = dayPicks.filter((p) => p.winner && p.winner !== p.favorite && p.winner !== "push").length;
 
