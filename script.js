@@ -1174,7 +1174,7 @@ function renderPicks() {
     // visible pick, regardless of day filter - sport-grouping would defeat
     // the point of sorting by time or confidence.
     for (const pick of sortPicksForDisplay(visiblePicks, picksSortMode)) {
-      root.appendChild(renderCard(pick, { showOddsDropdown: true }));
+      root.appendChild(renderCard(pick));
     }
   } else if (selectedDayFilter === "all") {
     const bySport = {};
@@ -1193,7 +1193,7 @@ function renderPicks() {
       group.appendChild(heading);
 
       for (const pick of bySport[sport]) {
-        group.appendChild(renderCard(pick, { showOddsDropdown: true }));
+        group.appendChild(renderCard(pick));
       }
 
       root.appendChild(group);
@@ -1202,7 +1202,7 @@ function renderPicks() {
     // Single-day view: flat list, no sport grouping, so pick types stay
     // interleaved instead of clustering all moneylines first.
     for (const pick of visiblePicks) {
-      root.appendChild(renderCard(pick, { showOddsDropdown: true }));
+      root.appendChild(renderCard(pick));
     }
   }
 }
@@ -1431,22 +1431,6 @@ function renderCard(pick, options = {}) {
     .map((s, i) => `<a href="${escapeAttr(s)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">[${i + 1}]</a>`)
     .join(" ");
 
-  // Picks tab only: a per-pick "See best odds" dropdown listing whichever
-  // 3 apps currently have the best price for this exact bet. The site owner
-  // supplies the actual book/price pairs as they check them (pick.best_odds,
-  // an array of up to 3 {book, odds}) - selecting an option is purely
-  // informational, nothing else on the page reacts to it.
-  const oddsOptions = Array.isArray(pick.best_odds) ? pick.best_odds : [];
-  const oddsDropdownBlock = options.showOddsDropdown
-    ? `
-    <select class="odds-dropdown">
-      <option value="" disabled selected>See best odds</option>
-      ${oddsOptions
-        .map((o) => `<option value="${escapeAttr(o.book || "")}">${escapeHtml(o.book || "")}${o.odds ? " " + escapeHtml(String(o.odds)) : ""}</option>`)
-        .join("")}
-    </select>`
-    : "";
-
   const units = pick.recommended_units;
   const unitValue = getUnitValue();
   let stakeRow = "";
@@ -1509,7 +1493,6 @@ function renderCard(pick, options = {}) {
     <ul class="reasoning">${reasoningItems}</ul>
     ${sourceLinks ? `<div class="sources">Sources: ${sourceLinks}</div>` : ""}
     ${stakeRow}
-    ${oddsDropdownBlock}
     ${resultDollarsRow}
     ${resultRow}
   `;
