@@ -151,6 +151,29 @@
         "https://en.wikipedia.org/wiki/Alexander_Bublik",
         "https://www.dimers.com/tennis/news/alexander-bublik-vs-jakub-mensik-tennis-prediction-atp-china-open-2026-ac"
       ]
+    },
+    {
+      "sport": "ATP Tokyo",
+      "matchup": "Stefanos Tsitsipas vs Tomas Martin Etcheverry",
+      "date": "2026-09-30",
+      "start_time": "2026-10-01T04:30:00Z",
+      "favorite": "Stefanos Tsitsipas",
+      "estimated_probability": {
+        "Stefanos Tsitsipas": 80,
+        "Tomas Martin Etcheverry": 20
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "reasoning": [
+        "Japan Open Round 1. Tsitsipas came through qualifying by beating Yoshihito Nishioka 7-5, 6-2 and Rinky Hijikata 6-4, 6-3, so he's already had two matches to adjust to the conditions heading into this one, not coming in cold.",
+        "Etcheverry is in poor recent form: an early second-round exit at the Hangzhou Open just this week (lost to Kyrian Jacquet 6-2, 6-3), and his hard-court record this season sits at a middling 8-10.",
+        "Real sportsbook price found: 1.23 decimal on Tsitsipas (~81% implied), 4.1 on Etcheverry. Sized slightly below that market number (80%) rather than just copying it.",
+        "Head-to-head is 2-0 Tsitsipas, though both prior meetings were on clay - this is their first hard-court match, which tempers the head-to-head signal somewhat, but everything else here points the same direction."
+      ],
+      "sources": [
+        "https://www.sportskeeda.com/tennis/stefanos-tsitsipas-vs-tomas-martin-etcheverry-preview-head-to-head-odds-prediction-betting-tips-japan-open-2026",
+        "https://tennistonic.com/tennis-news/1059064/h2h-prediction-of-tomas-martin-etcheverry-vs-stefanos-tsitsipas-in-tokyo-with-odds-preview-pick-30th-september-2026/"
+      ]
     }
   ],
   "settled": [
