@@ -3641,6 +3641,321 @@
         }
       ],
       "platform": "PrizePicks"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "DK Metcalf Over 19.5 Receiving Yards + Aaron Rodgers Over 24.5 Longest Completion + Jaquan Brisker Over 4.5 Tackles + Assists + Raheim Sanders Over 2 Fantasy Score",
+      "date": "2026-10-01",
+      "start_time": "2026-10-02T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.75,
+      "actual_multiplier": 1.7,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "DK Metcalf",
+          "opponent": "Cleveland Browns",
+          "side": "Over",
+          "line": 19.5,
+          "stat": "Receiving Yards"
+        },
+        {
+          "type": "over_under",
+          "player": "Aaron Rodgers",
+          "opponent": "Cleveland Browns",
+          "side": "Over",
+          "line": 24.5,
+          "stat": "Longest Completion"
+        },
+        {
+          "type": "over_under",
+          "player": "Jaquan Brisker",
+          "opponent": "Cleveland Browns",
+          "side": "Over",
+          "line": 4.5,
+          "stat": "Tackles + Assists"
+        },
+        {
+          "type": "over_under",
+          "player": "Raheim Sanders",
+          "opponent": "Pittsburgh Steelers",
+          "side": "Over",
+          "line": 2,
+          "stat": "Fantasy Score"
+        }
+      ],
+      "platform": "PrizePicks"
+    },
+    {
+      "sport": "Mixed",
+      "matchup": "Raheim Sanders Over 24.5 Rush + Receiving Yards + Mason Marchment Over 0.5 Points",
+      "date": "2026-10-01",
+      "start_time": "2026-10-02T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.25,
+      "actual_multiplier": 3.75,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Raheim Sanders",
+          "opponent": "Pittsburgh Steelers",
+          "side": "Over",
+          "line": 24.5,
+          "stat": "Rush + Receiving Yards"
+        },
+        {
+          "type": "over_under",
+          "player": "Mason Marchment",
+          "opponent": "San Jose Sharks",
+          "side": "Over",
+          "line": 0.5,
+          "stat": "Points"
+        }
+      ],
+      "platform": "PrizePicks"
+    },
+    {
+      "sport": "Mixed",
+      "matchup": "yoki Over 5.5 Map 1 Headshots + yoki Over 15.5 Map 1 Kills + Bobby McMann Over 1.5 Shots on Goal",
+      "date": "2026-10-01",
+      "start_time": "2026-10-02T01:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 4.25,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "yoki",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 5.5,
+          "stat": "Map 1 Headshots"
+        },
+        {
+          "type": "over_under",
+          "player": "yoki",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 15.5,
+          "stat": "Map 1 Kills"
+        },
+        {
+          "type": "over_under",
+          "player": "Bobby McMann",
+          "opponent": "Calgary Flames",
+          "side": "Over",
+          "line": 1.5,
+          "stat": "Shots on Goal"
+        }
+      ],
+      "platform": "PrizePicks"
+    },
+    {
+      "sport": "Mixed",
+      "matchup": "Carson Schwesinger Higher 4.5 Assists + Michael Misa Higher 0.5 Points",
+      "date": "2026-10-01",
+      "start_time": "2026-10-02T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.25,
+      "actual_multiplier": 4.44,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Carson Schwesinger",
+          "opponent": "Pittsburgh Steelers",
+          "side": "Higher",
+          "line": 4.5,
+          "stat": "Assists"
+        },
+        {
+          "type": "over_under",
+          "player": "Michael Misa",
+          "opponent": "Florida Panthers",
+          "side": "Higher",
+          "line": 0.5,
+          "stat": "Points"
+        }
+      ],
+      "platform": "Underdog"
+    },
+    {
+      "sport": "Esports",
+      "matchup": "jresy Higher 30.5 Kills on Maps 1+2 + fakerealityy Higher 12.5 Kills on Map 1 + bekker Higher 26.5 Kills on Maps 1+2",
+      "date": "2026-10-01",
+      "start_time": "2026-10-02T01:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.25,
+      "actual_multiplier": 6.5,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "jresy",
+          "opponent": "TBD",
+          "side": "Higher",
+          "line": 30.5,
+          "stat": "Kills on Maps 1+2"
+        },
+        {
+          "type": "over_under",
+          "player": "fakerealityy",
+          "opponent": "TBD",
+          "side": "Higher",
+          "line": 12.5,
+          "stat": "Kills on Map 1"
+        },
+        {
+          "type": "over_under",
+          "player": "bekker",
+          "opponent": "TBD",
+          "side": "Higher",
+          "line": 26.5,
+          "stat": "Kills on Maps 1+2"
+        }
+      ],
+      "platform": "Underdog"
+    },
+    {
+      "sport": "Mixed",
+      "matchup": "Alexander Zverev Moneyline + Harold Fannin Jr. Over 9.5 Longest Reception + Grant Delpit Over 2.5 Tackles + Assists + Jaquan Brisker Over 4.5 Tackles + Assists",
+      "date": "2026-09-30",
+      "start_time": "2026-10-01T02:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 1,
+      "actual_multiplier": 1.84,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "moneyline",
+          "player": "Alexander Zverev",
+          "opponent": "Cameron Norrie",
+          "side": "Alexander Zverev"
+        },
+        {
+          "type": "over_under",
+          "player": "Harold Fannin Jr.",
+          "opponent": "Pittsburgh Steelers",
+          "side": "Over",
+          "line": 9.5,
+          "stat": "Longest Reception"
+        },
+        {
+          "type": "over_under",
+          "player": "Grant Delpit",
+          "opponent": "Pittsburgh Steelers",
+          "side": "Over",
+          "line": 2.5,
+          "stat": "Tackles + Assists"
+        },
+        {
+          "type": "over_under",
+          "player": "Jaquan Brisker",
+          "opponent": "Cleveland Browns",
+          "side": "Over",
+          "line": 4.5,
+          "stat": "Tackles + Assists"
+        }
+      ],
+      "platform": "Courtside"
+    },
+    {
+      "sport": "WNBA",
+      "matchup": "Jewell Loyd Over 0.5 Made Threes + Jackie Young Over 7.5 Rebounds + Assists + Chelsea Gray Over 7.5 Points + A'ja Wilson Over 7.5 Rebounds + Caitlin Clark Over 2.5 Rebounds",
+      "date": "2026-10-01",
+      "start_time": "2026-10-02T01:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 1,
+      "actual_multiplier": 2.1,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Jewell Loyd",
+          "opponent": "Indiana Fever",
+          "side": "Over",
+          "line": 0.5,
+          "stat": "Made Threes"
+        },
+        {
+          "type": "over_under",
+          "player": "Jackie Young",
+          "opponent": "Indiana Fever",
+          "side": "Over",
+          "line": 7.5,
+          "stat": "Rebounds + Assists"
+        },
+        {
+          "type": "over_under",
+          "player": "Chelsea Gray",
+          "opponent": "Indiana Fever",
+          "side": "Over",
+          "line": 7.5,
+          "stat": "Points"
+        },
+        {
+          "type": "over_under",
+          "player": "A'ja Wilson",
+          "opponent": "Indiana Fever",
+          "side": "Over",
+          "line": 7.5,
+          "stat": "Rebounds"
+        },
+        {
+          "type": "over_under",
+          "player": "Caitlin Clark",
+          "opponent": "Las Vegas Aces",
+          "side": "Over",
+          "line": 2.5,
+          "stat": "Rebounds"
+        }
+      ],
+      "platform": "Courtside"
     }
   ]
 }
