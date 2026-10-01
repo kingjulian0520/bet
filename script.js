@@ -1224,8 +1224,14 @@ function renderPrizePicks() {
   if (items.length === 0) {
     const todayStr = todayDateStr();
     const label = ppPlatformName === "PrizePicks" ? "picks" : `${ppPlatformName} picks`;
+    // A platform with zero live entries at all (not just none for the
+    // selected day) means the site owner just hasn't placed anything there
+    // yet, not that this specific day is empty - most of these platforms'
+    // props lean heavily on the NBA, which hasn't started its season yet.
     const msg =
-      selectedPrizePicksDayFilter === "all"
+      platformItems.length === 0
+        ? `No ${label} yet — more coming once the NBA season starts.`
+        : selectedPrizePicksDayFilter === "all"
         ? `No ${label} yet — waiting on a reliable stats source.`
         : selectedPrizePicksDayFilter === todayStr
         ? `No ${label} for today yet.`
