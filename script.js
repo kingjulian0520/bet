@@ -1641,10 +1641,23 @@ function computeBreakdown(picksList) {
     .map((competition) => ({ sport: competition, ...sumBucket(byCompetition[competition]) }))
     .sort((a, b) => b.net - a.net);
 
+  // Each prop app (PrizePicks, Underdog, Courtside, ...) gets its own row
+  // rather than being lumped together under whichever one is selected.
+  const byPlatform = {};
+  for (const p of prizepicks) {
+    const platform = p.platform || "PrizePicks";
+    if (!byPlatform[platform]) byPlatform[platform] = [];
+    byPlatform[platform].push(p);
+  }
+  const platformRows = Object.keys(byPlatform)
+    .map((platform) => ({ platform, ...sumBucket(byPlatform[platform]) }))
+    .sort((a, b) => b.net - a.net);
+
   return {
     total: sumBucket(settled),
     picks: sumBucket(picksOnly),
     prizepicks: sumBucket(prizepicks),
+    byPlatform: platformRows,
     bySport: sportRows,
     byCompetition: competitionRows,
     hasAny: settled.length > 0,
@@ -1687,7 +1700,7 @@ function openBreakdownModal(title, breakdown) {
 
   const byTypeRows = [
     ["Picks", breakdown.picks],
-    [ppPlatformName, breakdown.prizepicks],
+    ...breakdown.byPlatform.map((row) => [escapeHtml(row.platform), row]),
   ]
     .filter(([, b]) => b.count > 0)
     .map(
