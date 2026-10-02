@@ -35,7 +35,7 @@
           "side": "Over",
           "line": 24.5,
           "stat": "Longest Completion",
-          "actual_value": 28
+          "actual_value": 43
         },
         {
           "type": "over_under",
@@ -53,12 +53,12 @@
           "side": "Over",
           "line": 2,
           "stat": "Fantasy Score",
-          "actual_value": 5.6
+          "actual_value": 3.6
         }
       ],
       "platform": "PrizePicks",
       "winner": "Hits",
-      "final_score": "Browns 27-24 Steelers. Metcalf 5 rec for 115 yds (over 19.5). Rodgers' longest completion was 28 yds (over 24.5). Brisker 7 tackles (over 4.5). Sanders 1 rush for 1 yd + 3 rec for 25 yds = ~5.6 fantasy points (over 2). All four legs hit.",
+      "final_score": "Browns 27-24 Steelers. Metcalf 5 rec for 115 yds (over 19.5). Rodgers' longest completion was a 43-yarder to Metcalf (over 24.5). Brisker 7 tackles (over 4.5). Sanders 2 rush for 9 yds + 2 rec for 7 yds = 3.6 fantasy points (over 2). All four legs hit.",
       "settled_at": "2026-10-02T14:00:00Z"
     },
     {
@@ -84,7 +84,7 @@
           "side": "Over",
           "line": 24.5,
           "stat": "Rush + Receiving Yards",
-          "actual_value": 26
+          "actual_value": 16
         },
         {
           "type": "over_under",
@@ -97,9 +97,9 @@
         }
       ],
       "platform": "PrizePicks",
-      "winner": "Hits",
-      "final_score": "Sanders 1 yd rushing + 25 yds receiving = 26 (over 24.5). Marchment scored in his Sharks debut in a Sharks OT win over the Panthers (over 0.5 points). Both legs hit.",
-      "settled_at": "2026-10-02T14:00:00Z"
+      "winner": "Doesn't Hit",
+      "final_score": "Sanders had 2 rush for 9 yds + 2 rec for 7 yds = 16 rush+rec yds (under 24.5) - that leg missed, so the entry settles Doesn't Hit. Marchment did score in his Sharks debut (Sharks 4-3 OT over the Panthers).",
+      "settled_at": "2026-10-02T15:00:00Z"
     },
     {
       "sport": "Mixed",
