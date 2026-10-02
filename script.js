@@ -726,10 +726,10 @@ async function main() {
   currentSettled = data.settled || [];
   prunePicks();
 
+  // Picks always opens on Today, even when today has nothing yet - "All
+  // days" is one tap away.
   const todayStr = todayDateStr();
-  if (currentPicks.some((p) => p.date === todayStr)) {
-    selectedDayFilter = todayStr;
-  }
+  selectedDayFilter = todayStr;
   if (currentPrizePicks.some((p) => p.date === todayStr)) {
     selectedPrizePicksDayFilter = todayStr;
   }
