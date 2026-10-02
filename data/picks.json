@@ -331,6 +331,53 @@
       "winner": "Doesn't Hit",
       "final_score": "Aces 94-83 Fever (Game 3). Loyd 3 threes (over 0.5), Young 8 reb + 7 ast = 15 (over 7.5), Gray 23 pts (over 7.5), Wilson 10 reb (over 7.5) all hit, but Caitlin Clark had only 2 rebounds (under 2.5), so the entry settles Doesn't Hit.",
       "settled_at": "2026-10-02T14:00:00Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "DK Metcalf Over 4.5 1st Quarter Receiving Yards + Aaron Rodgers Over 159.5 Passing Yards + Roman Wilson Over 19.5 Receiving Yards",
+      "date": "2026-10-01",
+      "start_time": "2026-10-02T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 1.5,
+      "actual_multiplier": 3.3,
+      "is_prizepicks": true,
+      "platform": "DraftKings",
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "DK Metcalf",
+          "opponent": "Cleveland Browns",
+          "side": "Over",
+          "line": 4.5,
+          "stat": "1st Quarter Receiving Yards"
+        },
+        {
+          "type": "over_under",
+          "player": "Aaron Rodgers",
+          "opponent": "Cleveland Browns",
+          "side": "Over",
+          "line": 159.5,
+          "stat": "Passing Yards",
+          "actual_value": 299
+        },
+        {
+          "type": "over_under",
+          "player": "Roman Wilson",
+          "opponent": "Cleveland Browns",
+          "side": "Over",
+          "line": 19.5,
+          "stat": "Receiving Yards"
+        }
+      ],
+      "winner": "Hits",
+      "final_score": "Browns 27-24 Steelers. Rodgers threw for 299 yards (over 159.5). All three legs hit, per the site owner (entered after the fact).",
+      "settled_at": "2026-10-02T16:00:00Z"
     }
   ],
   "prizepicks": []

@@ -803,13 +803,16 @@ let selectedDayFilter = "all";
 let selectedPrizePicksDayFilter = "all";
 
 // Which platform this tab is filtered to - the site owner places these
-// picks across several apps (PrizePicks, Courtside, BetMGM, FanDuel,
-// Underdog, Kalshi). The tab bubble is a button that opens a small
+// picks across several apps (PrizePicks, DraftKings, BetMGM, Kalshi).
+// The tab bubble is a button that opens a small
 // dropdown (matching the sort/account menus elsewhere on the site);
 // picking an option both switches to this tab and filters
 // currentPrizePicks down to entries tagged with that platform.
 const PP_PLATFORM_STORAGE_KEY = "ppPlatformNameV2";
-let ppPlatformName = localStorage.getItem(PP_PLATFORM_STORAGE_KEY) || "PrizePicks";
+const PP_PLATFORMS = ["PrizePicks", "DraftKings", "BetMGM", "Kalshi"];
+let ppPlatformName = localStorage.getItem(PP_PLATFORM_STORAGE_KEY);
+// A remembered choice can point at an app that's since been dropped.
+if (!PP_PLATFORMS.includes(ppPlatformName)) ppPlatformName = "PrizePicks";
 
 function applyPPPlatformLabel() {
   const label = document.getElementById("prizepicks-tab-label");
@@ -1636,7 +1639,7 @@ function computeBreakdown(picksList) {
     .map((competition) => ({ sport: competition, ...sumBucket(byCompetition[competition]) }))
     .sort((a, b) => b.net - a.net);
 
-  // Each prop app (PrizePicks, Underdog, Courtside, ...) gets its own row
+  // Each prop app (PrizePicks, DraftKings, ...) gets its own row
   // rather than being lumped together under whichever one is selected.
   const byPlatform = {};
   for (const p of prizepicks) {
