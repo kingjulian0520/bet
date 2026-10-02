@@ -660,6 +660,135 @@
         }
       ],
       "platform": "PrizePicks"
+    },
+    {
+      "sport": "Mixed",
+      "matchup": "Carson Hansen Over 34.5 Rush Yards + Aidan Chiles Over 0.5 TD's + Tom1jed Map 1 Kills Over 11.5 + Michael Olise Over 0.5 SOT",
+      "date": "2026-10-02",
+      "start_time": "2026-10-03T00:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 10,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Carson Hansen",
+          "opponent": "Northwestern",
+          "side": "Over",
+          "line": 34.5,
+          "stat": "Rush Yards"
+        },
+        {
+          "type": "over_under",
+          "player": "Aidan Chiles",
+          "opponent": "Penn State",
+          "side": "Over",
+          "line": 0.5,
+          "stat": "TD's"
+        },
+        {
+          "type": "over_under",
+          "player": "Tom1jed",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 11.5,
+          "stat": "Map 1 Kills"
+        },
+        {
+          "type": "over_under",
+          "player": "Michael Olise",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 0.5,
+          "stat": "SOT"
+        }
+      ],
+      "platform": "PrizePicks"
+    },
+    {
+      "sport": "CFB/NFL",
+      "matchup": "Jordan Marshall Over 29.5 Rush Yards + Jeramiah Koger Over 14.5 Rec Yards + Luther Burden III Over 2.5 Receptions",
+      "date": "2026-10-03",
+      "start_time": "2026-10-03T16:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 1,
+      "actual_multiplier": 2.05,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Jordan Marshall",
+          "opponent": "Minnesota",
+          "side": "Over",
+          "line": 29.5,
+          "stat": "Rush Yards"
+        },
+        {
+          "type": "over_under",
+          "player": "Jeramiah Koger",
+          "opponent": "Tennessee",
+          "side": "Over",
+          "line": 14.5,
+          "stat": "Receiving Yards"
+        },
+        {
+          "type": "over_under",
+          "player": "Luther Burden III",
+          "opponent": "New York Jets",
+          "side": "Over",
+          "line": 2.5,
+          "stat": "Receptions"
+        }
+      ],
+      "platform": "DraftKings"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Jeramiah Koger Over 14.5 Rec Yards + Jordan Marshall Over 24.5 Rush Yards",
+      "date": "2026-10-03",
+      "start_time": "2026-10-03T16:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.71,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Jeramiah Koger",
+          "opponent": "Tennessee",
+          "side": "Over",
+          "line": 14.5,
+          "stat": "Receiving Yards"
+        },
+        {
+          "type": "over_under",
+          "player": "Jordan Marshall",
+          "opponent": "Minnesota",
+          "side": "Over",
+          "line": 24.5,
+          "stat": "Rush Yards"
+        }
+      ],
+      "platform": "DraftKings"
     }
   ]
 }
