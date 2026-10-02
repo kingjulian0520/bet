@@ -1323,8 +1323,7 @@ main {
   }
 }
 
-.calendar-header,
-.ladder-header {
+.calendar-header {
   display: flex;
   align-items: center;
   justify-content: center;

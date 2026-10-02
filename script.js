@@ -53,7 +53,6 @@ let rawPrizePicks = [];
 let currentPicks = [];
 let currentPrizePicks = [];
 let currentSettled = [];
-let currentLadder = [];
 
 // currentUser/profileCache are set once Supabase resolves the login state.
 // Until then (and always, if accounts aren't configured or the visitor
@@ -164,7 +163,7 @@ function isUnlocked() {
 }
 
 function renderLockOverlays() {
-  ["picks", "prizepicks", "ladder"].forEach((prefix) => renderLockOverlay(prefix));
+  ["picks", "prizepicks"].forEach((prefix) => renderLockOverlay(prefix));
 }
 
 function renderLockOverlay(prefix) {
@@ -239,7 +238,7 @@ function renderLockOverlay(prefix) {
 }
 
 function unlockOverlaysWithFade() {
-  ["picks", "prizepicks", "ladder"].forEach((prefix) => {
+  ["picks", "prizepicks"].forEach((prefix) => {
     const overlay = document.getElementById(`${prefix}-lock-overlay`);
     const lockable = document.getElementById(`${prefix}-lockable`);
     if (!overlay || !lockable) return;
@@ -672,7 +671,6 @@ function wireAccountMenu() {
 async function main() {
   wireTabs();
   wireCalendar();
-  wireLadderNav();
   wireDisplayModeToggle();
   wireBreakdownModal();
   wireAuthUI();
@@ -726,7 +724,6 @@ async function main() {
   rawPicks = data.picks || [];
   rawPrizePicks = data.prizepicks || [];
   currentSettled = data.settled || [];
-  currentLadder = data.ladder || [];
   prunePicks();
 
   const todayStr = todayDateStr();
@@ -780,7 +777,6 @@ function renderAll() {
   renderPicks();
   renderPrizePicks();
   renderCalendar();
-  renderLadder();
   renderLockOverlays();
 }
 
@@ -1391,9 +1387,8 @@ function renderCard(pick, options = {}) {
   const confClass = favPct >= 65 ? "high" : favPct >= 58 ? "mid" : "low";
   const confLabel = pick.confidence_label || (favPct >= 65 ? "Lean" : favPct >= 58 ? "Slight lean" : "Coin flip");
 
-  // PrizePicks and Ladder never show a probability/confidence read - PrizePicks
-  // goes purely off the real multiplier you supply, and Ladder is deliberately
-  // presented as a lock with no percentage attached either.
+  // PrizePicks never shows a probability/confidence read - it goes purely
+  // off the real multiplier you supply.
   const isPP = isPrizePicksPick(pick);
   const hideProbability = options.hideProbability || isPP;
 
@@ -1901,121 +1896,6 @@ function renderDayDetail() {
   for (const pick of dayPicks) {
     root.appendChild(renderCard(pick));
   }
-}
-
-// ---------- ladder ----------
-
-// A single day-at-a-time view (not a month grid): one moneyline "lock" per
-// day, compounding forward from 1 unit. A win rolls the payout (via that
-// entry's own actual_multiplier - a real sportsbook price, never an
-// estimate) into the next day's stake; a loss resets the climb back to 1
-// unit. Days with no entry just carry the running stake forward unchanged.
-
-let ladderViewDate = null;
-
-function wireLadderNav() {
-  document.getElementById("ladder-prev").addEventListener("click", () => shiftLadderView(-1));
-  document.getElementById("ladder-next").addEventListener("click", () => shiftLadderView(1));
-}
-
-function addDaysToDateStr(dateStr, days) {
-  const [y, m, d] = dateStr.split("-").map(Number);
-  const dt = new Date(y, m - 1, d);
-  dt.setDate(dt.getDate() + days);
-  return `${dt.getFullYear()}-${pad2(dt.getMonth() + 1)}-${pad2(dt.getDate())}`;
-}
-
-function shiftLadderView(days) {
-  const bounds = ladderBounds();
-  const next = addDaysToDateStr(ladderViewDate || bounds.defaultDate, days);
-  if (next < bounds.earliest || next > bounds.latest) return;
-  ladderViewDate = next;
-  renderLadder();
-}
-
-function ladderBounds() {
-  const today = todayDateStr();
-  const dates = currentLadder.map((e) => e.date).filter(Boolean);
-  const earliest = dates.length ? dates.reduce((a, b) => (a < b ? a : b)) : today;
-  const latestEntry = dates.length ? dates.reduce((a, b) => (a > b ? a : b)) : today;
-  // defaultDate is what the view should open on - today, or a future-dated
-  // entry already on the board if that's later than today. latest is how far
-  // Next may go - a couple of days past defaultDate, so the visitor can still
-  // page forward into an empty upcoming day rather than getting stuck once
-  // the newest entry (or today) is reached.
-  const defaultDate = latestEntry > today ? latestEntry : today;
-  const latest = addDaysToDateStr(defaultDate, 2);
-  return { earliest, defaultDate, latest };
-}
-
-// Walks every ladder entry in date order, compounding the stake: a win
-// multiplies the running stake by that entry's real actual_multiplier and
-// carries it into the next entry; a loss resets the next entry back to 1
-// unit; a push carries the same stake forward unchanged. Returns entries
-// augmented with stakeIn/stakeOut/busted.
-function ladderProgression() {
-  const sorted = [...currentLadder].sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
-  let running = 1;
-  const out = [];
-  for (const entry of sorted) {
-    const stakeIn = running;
-    let stakeOut = null;
-    let busted = false;
-    if (entry.winner) {
-      const isPush = entry.winner === "push" || entry.winner === "Push";
-      const isWin = !isPush && entry.winner === entry.favorite;
-      if (isWin) {
-        stakeOut = stakeIn * (entry.actual_multiplier || 1);
-        running = stakeOut;
-      } else if (isPush) {
-        stakeOut = stakeIn;
-      } else {
-        stakeOut = 0;
-        busted = true;
-        running = 1;
-      }
-    }
-    out.push({ entry, stakeIn, stakeOut, busted });
-  }
-  return out;
-}
-
-function renderLadder() {
-  const label = document.getElementById("ladder-date-label");
-  const root = document.getElementById("ladder-root");
-  const prevBtn = document.getElementById("ladder-prev");
-  const nextBtn = document.getElementById("ladder-next");
-  if (!label || !root) return;
-
-  const bounds = ladderBounds();
-  if (!ladderViewDate) ladderViewDate = bounds.defaultDate;
-  if (ladderViewDate < bounds.earliest) ladderViewDate = bounds.earliest;
-  if (ladderViewDate > bounds.latest) ladderViewDate = bounds.latest;
-
-  const [y, m, d] = ladderViewDate.split("-").map(Number);
-  label.textContent = `${MONTH_NAMES[m - 1]} ${d}, ${y}`;
-  prevBtn.disabled = ladderViewDate <= bounds.earliest;
-  nextBtn.disabled = ladderViewDate >= bounds.latest;
-
-  const progression = ladderProgression();
-  const row = progression.find((r) => r.entry.date === ladderViewDate);
-
-  root.innerHTML = "";
-
-  if (!row) {
-    const p = document.createElement("p");
-    p.className = "empty-state";
-    p.textContent = "No ladder pick this day.";
-    root.appendChild(p);
-    return;
-  }
-
-  // No unit amounts on the card itself - the bio explains the 1-unit-start,
-  // compounding mechanic once; individual days just show the pick and,
-  // once settled, whether it won (renderCard's own result badge).
-  const card = renderCard(row.entry, { hideProbability: true });
-
-  root.appendChild(card);
 }
 
 // ---------- utils ----------

@@ -58,7 +58,6 @@
       <button type="button" class="tab-picker-option" data-platform="Kalshi">Kalshi</button>
     </div>
   </div>
-  <button class="tab-btn" data-tab="ladder" role="tab" aria-selected="false">Ladder</button>
   <button class="tab-btn" data-tab="calendar" role="tab" aria-selected="false">Calendar</button>
 </nav>
 
@@ -123,41 +122,6 @@
           </svg>
         </div>
         <div id="prizepicks-lock-body" class="lock-body"></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="ladder" class="tab-panel">
-    <div class="lockable" id="ladder-lockable">
-      <p class="panel-intro">
-        One moneyline lock a day, compounding. Start at 1 unit - win, and the
-        payout rolls straight into the next day's pick; lose, and it resets to
-        1 unit. Only strong favorites with a real sportsbook multiplier between
-        1.2x and 1.4x, in matches where a single loss actually means something
-        (tennis, other single-elimination formats) - never a long regular
-        season where one result barely moves the needle. Best to stick to one
-        app for the whole ladder so the compounding math actually matches what
-        you're betting - for example, using FanDuel for this the whole way
-        through.
-      </p>
-      <div class="ladder-header">
-        <button id="ladder-prev" class="secondary-btn" aria-label="Previous day">‹</button>
-        <span id="ladder-date-label" class="cal-month-label"></span>
-        <button id="ladder-next" class="secondary-btn" aria-label="Next day">›</button>
-      </div>
-      <div id="ladder-root">
-        <p class="empty-state">No ladder pick yet.</p>
-      </div>
-    </div>
-    <div class="lock-overlay" id="ladder-lock-overlay" hidden>
-      <div class="lock-sticky-inner">
-        <div class="lock-icon">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
-            <path d="M8 11V7a4 4 0 1 1 8 0v4" stroke="currentColor" stroke-width="2"/>
-          </svg>
-        </div>
-        <div id="ladder-lock-body" class="lock-body"></div>
       </div>
     </div>
   </section>
