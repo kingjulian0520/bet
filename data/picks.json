@@ -1,7 +1,132 @@
 {
-  "generated_at": "2026-09-30T15:00:00Z",
+  "generated_at": "2026-10-02T15:30:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [],
+  "picks": [
+    {
+      "sport": "CFB",
+      "matchup": "Notre Dame vs North Carolina",
+      "date": "2026-10-03",
+      "start_time": "2026-10-03T16:00:00Z",
+      "favorite": "Notre Dame",
+      "estimated_probability": {
+        "Notre Dame": 92,
+        "North Carolina": 8
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "reasoning": [
+        "No. 3 Notre Dame is 4-0 with the country's No. 1 defense - only three touchdowns allowed all season, 199.2 yards per game allowed.",
+        "North Carolina is 2-1 and last played on Sept. 19, a 28-20 loss at Clemson; its 2025 sacks leader Melkart Abou Jaoude has missed the last two games with a hand injury.",
+        "Market agrees it's lopsided: Notre Dame is around -1650 to -2083 on the moneyline (~94-95% implied). Capped at 92% for road-game variance - UNC has had two weeks off to prepare.",
+        "Irish injuries are limited: WR Quincy Porter (out for season) and DT Jason Onye (ankle, out); safety Luke Talich is back."
+      ],
+      "sources": [
+        "https://www.uhnd.com/football/games/notre-dame-north-carolina-2026/",
+        "https://goheels.com/news/2026/9/26/notre-dame-football-game-set-for-noon-on-espn",
+        "https://www.on3.com/teams/notre-dame-fighting-irish/news/notre-dame-fighting-irish-football-injury-report-week-5-north-carolina-tar-heels-game",
+        "https://ncfootballnews.com/games/notre-dame-at-north-carolina-football-2026/"
+      ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Baltimore Ravens vs Tennessee Titans",
+      "date": "2026-10-04",
+      "start_time": "2026-10-04T17:00:00Z",
+      "favorite": "Baltimore Ravens",
+      "estimated_probability": {
+        "Baltimore Ravens": 85,
+        "Tennessee Titans": 15
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "reasoning": [
+        "Ravens (2-1) are coming off a 34-31 win over Dallas in Rio; the Titans are 0-3 after three straight close losses, including Cam Ward's end-zone interception in the final seconds against the Giants.",
+        "Lamar Jackson was limited Wednesday with a back injury, but the coach called it minor and he was upgraded on Thursday's report - expected to play.",
+        "Titans' offensive line is unsettled after losing starting RG Fernando Carmona and backup Jackson Slater to IR. One real Ravens concern: both centers (Gwyn, Pocic) are out long-term.",
+        "Moneyline around -700 (~87.5% implied); set at 85% given the Lamar back issue and Tennessee's top-10 pass defense."
+      ],
+      "sources": [
+        "https://www.baltimorebeatdown.com/baltimore-ravens-injuries/85816/ravens-upgrade-lamar-jackson-zay-flowers-on-thursday-injury-report",
+        "https://sports.yahoo.com/articles/tennessee-titans-vs-baltimore-ravens-141514428.html",
+        "https://sports.yahoo.com/articles/titans-massive-underdogs-ahead-ravens-200036760.html",
+        "https://www.espn.com/espn/betting/story/_/id/50028072/2026-nfl-week-4-schedule-odds-betting-point-spreads-totals"
+      ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Minnesota Vikings vs Miami Dolphins",
+      "date": "2026-10-04",
+      "start_time": "2026-10-04T20:05:00Z",
+      "favorite": "Minnesota Vikings",
+      "estimated_probability": {
+        "Minnesota Vikings": 84,
+        "Miami Dolphins": 16
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "reasoning": [
+        "Vikings are 3-0 at home vs the 0-3 Dolphins. Minnesota's defense has at least four sacks and two takeaways in every game so far (14 sacks total).",
+        "Miami lost RB De'Von Achane to a torn ACL in Week 3, CB Storm Duck is out, and several others (WRs Chris Bell and Caleb Douglas, C Aaron Brewer) are questionable.",
+        "Real risk: Justin Jefferson (ankle sprain, no structural damage) is day-to-day and Aaron Jones is carrying a heavy load with Jordan Mason on IR - why this sits below the ~87% the -650 price implies."
+      ],
+      "sources": [
+        "https://www.vikings.com/news/dolphins-injury-report-week-4-2026-nfl-season",
+        "https://www.nbcsports.com/nfl/news/dolphins-vs-vikings-prediction-odds-expert-picks-qb-matchup-injury-update-betting-trends-and-stats",
+        "https://thevikingage.com/minnesota-vikings-miami-dolphins-week-4-tracker-injury-updates-predictions-storylines",
+        "https://www.espn.com/espn/betting/story/_/id/50028072/2026-nfl-week-4-schedule-odds-betting-point-spreads-totals"
+      ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Seattle Seahawks vs Los Angeles Chargers",
+      "date": "2026-10-04",
+      "start_time": "2026-10-04T20:25:00Z",
+      "favorite": "Seattle Seahawks",
+      "estimated_probability": {
+        "Seattle Seahawks": 76,
+        "Los Angeles Chargers": 24
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "Seattle has the league's best pass defense by yardage; the Chargers haven't scored more than 16 points in any game this season.",
+        "Chargers are banged up: WR Ladd McConkey (foot) didn't practice Thursday, starting TE Charlie Kolar (broken forearm) hasn't practiced, and DT Dalvin Tomlinson sat out too.",
+        "Seattle is missing RB Zach Charbonnet (not eligible until next week) and safety depth (Okada out, Love working back from a calf injury). Home at Lumen Field.",
+        "Moneyline around -340 (~77% implied)."
+      ],
+      "sources": [
+        "https://www.seahawks.com/news/week-4-injury-report-seahawks-vs-chargers",
+        "https://www.chargers.com/news/seahawks-injury-report-week-4",
+        "https://www.squawka.com/us/nfl/nfl-news/chargers-vs-seahawks-prediction-picks-odds-week-4/",
+        "https://www.espn.com/espn/betting/story/_/id/50028072/2026-nfl-week-4-schedule-odds-betting-point-spreads-totals"
+      ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Buffalo Bills vs New England Patriots",
+      "date": "2026-10-04",
+      "start_time": "2026-10-04T17:00:00Z",
+      "favorite": "Buffalo Bills",
+      "estimated_probability": {
+        "Buffalo Bills": 74,
+        "New England Patriots": 26
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "New England averages 12 points per game, worst in the NFL. Drake Maye has 1 TD to 6 INTs and has been sacked 9 times, and he's on the injury report with a right shoulder issue (full participant).",
+        "Injuries on the right side of the Patriots' offensive line set up Buffalo's pass rush.",
+        "Josh Allen is off the injury report after taking a shot to the knee in Week 3. The caution: he had three turnovers last week, and division games run tighter.",
+        "Opened as about a 7-point favorite, moneyline around -300 (~75% implied). Home in Buffalo."
+      ],
+      "sources": [
+        "https://www.si.com/nfl/patriots/onsi/patriots-week-4-injury-report-drake-maye-s-shoulder-back-in-the-headlines",
+        "https://www.buffalorumblings.com/buffalo-bills-injuries/141728/bills-vs-patriots-week-4-injury-report-josh-allen-clear",
+        "https://985thesportshub.com/2026/10/01/patriots-bills-odds-picks-predictions/",
+        "https://www.espn.com/espn/betting/story/_/id/50028072/2026-nfl-week-4-schedule-odds-betting-point-spreads-totals"
+      ]
+    }
+  ],
   "settled": [
     {
       "sport": "NFL",
