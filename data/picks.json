@@ -3,31 +3,6 @@
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
-      "sport": "CFB",
-      "matchup": "Notre Dame vs North Carolina",
-      "date": "2026-10-03",
-      "start_time": "2026-10-03T16:00:00Z",
-      "favorite": "Notre Dame",
-      "estimated_probability": {
-        "Notre Dame": 92,
-        "North Carolina": 8
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2.5,
-      "reasoning": [
-        "No. 3 Notre Dame is 4-0 with the country's No. 1 defense - only three touchdowns allowed all season, 199.2 yards per game allowed.",
-        "North Carolina is 2-1 and last played on Sept. 19, a 28-20 loss at Clemson; its 2025 sacks leader Melkart Abou Jaoude has missed the last two games with a hand injury.",
-        "Market agrees it's lopsided: Notre Dame is around -1650 to -2083 on the moneyline (~94-95% implied). Capped at 92% for road-game variance - UNC has had two weeks off to prepare.",
-        "Irish injuries are limited: WR Quincy Porter (out for season) and DT Jason Onye (ankle, out); safety Luke Talich is back."
-      ],
-      "sources": [
-        "https://www.uhnd.com/football/games/notre-dame-north-carolina-2026/",
-        "https://goheels.com/news/2026/9/26/notre-dame-football-game-set-for-noon-on-espn",
-        "https://www.on3.com/teams/notre-dame-fighting-irish/news/notre-dame-fighting-irish-football-injury-report-week-5-north-carolina-tar-heels-game",
-        "https://ncfootballnews.com/games/notre-dame-at-north-carolina-football-2026/"
-      ]
-    },
-    {
       "sport": "NFL",
       "matchup": "Baltimore Ravens vs Tennessee Titans",
       "date": "2026-10-04",
@@ -124,30 +99,6 @@
         "https://www.buffalorumblings.com/buffalo-bills-injuries/141728/bills-vs-patriots-week-4-injury-report-josh-allen-clear",
         "https://985thesportshub.com/2026/10/01/patriots-bills-odds-picks-predictions/",
         "https://www.espn.com/espn/betting/story/_/id/50028072/2026-nfl-week-4-schedule-odds-betting-point-spreads-totals"
-      ]
-    },
-    {
-      "sport": "CFB",
-      "matchup": "Vanderbilt vs Georgia",
-      "date": "2026-10-03",
-      "start_time": "2026-10-03T16:45:00Z",
-      "favorite": "Georgia",
-      "estimated_probability": {
-        "Georgia": 92,
-        "Vanderbilt": 8
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2.5,
-      "reasoning": [
-        "No. 2 Georgia is 4-0 and has scored at least 41 points in every game; its defense is tied for first in the SEC in scoring defense (13.3 points per game). Home at Sanford Stadium.",
-        "Vanderbilt is 3-1 and coming off a 21-15 loss to Auburn; starting QB Jared Curtis is questionable after an injury.",
-        "Market and models agree: Georgia is about a 24.5-point favorite (moneyline around -2500, ~96% implied) and ESPN's matchup predictor gives them 95.6%. Held at 92% - a single bad-turnover day or an unexpected Georgia injury (RB Nate Frazier missed the Oklahoma game, though he warmed up) is the realistic path to an upset."
-      ],
-      "sources": [
-        "https://www.covers.com/ncaaf/vanderbilt-vs-georgia-prediction-picks-odds-oct-3-2026",
-        "https://dawnofthedawg.com/georgia-football-vs-vanderbilt-how-to-watch-odds-early-storylines-predictions",
-        "https://www.cappersdirect.com/vanderbilt-vs-georgia-preview-odds-october-3-2026/",
-        "https://sports.yahoo.com/articles/espn-predicts-winner-georgia-football-121019928.html"
       ]
     },
     {
@@ -714,6 +665,61 @@
       "winner": "Doesn't Hit",
       "final_score": "Northwestern 34-13 Penn State. Carson Hansen had 19 rushing yards (under 34.5; Penn State rushed for only 48 as a team) - that leg missed, so the entry settles Doesn't Hit. (Kabak fouls not needed.)",
       "settled_at": "2026-10-03T04:20:00Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Notre Dame vs North Carolina",
+      "date": "2026-10-03",
+      "start_time": "2026-10-03T16:00:00Z",
+      "favorite": "Notre Dame",
+      "estimated_probability": {
+        "Notre Dame": 92,
+        "North Carolina": 8
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "reasoning": [
+        "No. 3 Notre Dame is 4-0 with the country's No. 1 defense - only three touchdowns allowed all season, 199.2 yards per game allowed.",
+        "North Carolina is 2-1 and last played on Sept. 19, a 28-20 loss at Clemson; its 2025 sacks leader Melkart Abou Jaoude has missed the last two games with a hand injury.",
+        "Market agrees it's lopsided: Notre Dame is around -1650 to -2083 on the moneyline (~94-95% implied). Capped at 92% for road-game variance - UNC has had two weeks off to prepare.",
+        "Irish injuries are limited: WR Quincy Porter (out for season) and DT Jason Onye (ankle, out); safety Luke Talich is back."
+      ],
+      "sources": [
+        "https://www.uhnd.com/football/games/notre-dame-north-carolina-2026/",
+        "https://goheels.com/news/2026/9/26/notre-dame-football-game-set-for-noon-on-espn",
+        "https://www.on3.com/teams/notre-dame-fighting-irish/news/notre-dame-fighting-irish-football-injury-report-week-5-north-carolina-tar-heels-game",
+        "https://ncfootballnews.com/games/notre-dame-at-north-carolina-football-2026/"
+      ],
+      "winner": "Notre Dame",
+      "final_score": "Notre Dame 37-26 North Carolina",
+      "settled_at": "2026-10-03T20:30:00Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Vanderbilt vs Georgia",
+      "date": "2026-10-03",
+      "start_time": "2026-10-03T16:45:00Z",
+      "favorite": "Georgia",
+      "estimated_probability": {
+        "Georgia": 92,
+        "Vanderbilt": 8
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "reasoning": [
+        "No. 2 Georgia is 4-0 and has scored at least 41 points in every game; its defense is tied for first in the SEC in scoring defense (13.3 points per game). Home at Sanford Stadium.",
+        "Vanderbilt is 3-1 and coming off a 21-15 loss to Auburn; starting QB Jared Curtis is questionable after an injury.",
+        "Market and models agree: Georgia is about a 24.5-point favorite (moneyline around -2500, ~96% implied) and ESPN's matchup predictor gives them 95.6%. Held at 92% - a single bad-turnover day or an unexpected Georgia injury (RB Nate Frazier missed the Oklahoma game, though he warmed up) is the realistic path to an upset."
+      ],
+      "sources": [
+        "https://www.covers.com/ncaaf/vanderbilt-vs-georgia-prediction-picks-odds-oct-3-2026",
+        "https://dawnofthedawg.com/georgia-football-vs-vanderbilt-how-to-watch-odds-early-storylines-predictions",
+        "https://www.cappersdirect.com/vanderbilt-vs-georgia-preview-odds-october-3-2026/",
+        "https://sports.yahoo.com/articles/espn-predicts-winner-georgia-football-121019928.html"
+      ],
+      "winner": "Georgia",
+      "final_score": "Georgia 38-14 Vanderbilt",
+      "settled_at": "2026-10-03T20:30:00Z"
     }
   ],
   "prizepicks": [
