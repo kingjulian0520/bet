@@ -572,9 +572,7 @@
       "winner": "Stefanos Tsitsipas",
       "final_score": "Tsitsipas def. Etcheverry 4-6, 6-3, 6-4",
       "settled_at": "2026-10-02T18:00:00Z"
-    }
-  ],
-  "prizepicks": [
+    },
     {
       "sport": "NHL",
       "matchup": "Eeli Tolvanen Over 0.5 Shots + Alex Ovechkin Over 1.5 Shots + Dylan Holloway Over 1.5 Shots + Jimmy Snuggerud Over 1.5 Shots",
@@ -605,7 +603,8 @@
           "opponent": "Carolina Hurricanes",
           "side": "Over",
           "line": 1.5,
-          "stat": "Shots"
+          "stat": "Shots",
+          "actual_value": 1
         },
         {
           "type": "over_under",
@@ -624,7 +623,10 @@
           "stat": "Shots"
         }
       ],
-      "platform": "PrizePicks"
+      "platform": "PrizePicks",
+      "winner": "Doesn't Hit",
+      "final_score": "Capitals 5-2 Hurricanes. Alex Ovechkin had 1 shot on goal (under 1.5) - that leg missed, so the entry settles Doesn't Hit. (Other legs not needed.)",
+      "settled_at": "2026-10-03T04:20:00Z"
     },
     {
       "sport": "Mixed",
@@ -653,14 +655,20 @@
         {
           "type": "over_under",
           "player": "Carson Hansen",
-          "opponent": "TBD",
+          "opponent": "Northwestern",
           "side": "Over",
           "line": 34.5,
-          "stat": "Rush Yards"
+          "stat": "Rush Yards",
+          "actual_value": 19
         }
       ],
-      "platform": "PrizePicks"
-    },
+      "platform": "PrizePicks",
+      "winner": "Doesn't Hit",
+      "final_score": "Northwestern 34-13 Penn State. Carson Hansen had 19 rushing yards (under 34.5; Penn State rushed for only 48 as a team) - that leg missed, so the entry settles Doesn't Hit. (Kabak fouls not needed.)",
+      "settled_at": "2026-10-03T04:20:00Z"
+    }
+  ],
+  "prizepicks": [
     {
       "sport": "Mixed",
       "matchup": "Carson Hansen Over 34.5 Rush Yards + Aidan Chiles Over 0.5 TD's + Tom1jed Map 1 Kills Over 11.5 + Michael Olise Over 0.5 SOT",
