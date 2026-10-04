@@ -100,30 +100,6 @@
         "https://985thesportshub.com/2026/10/01/patriots-bills-odds-picks-predictions/",
         "https://www.espn.com/espn/betting/story/_/id/50028072/2026-nfl-week-4-schedule-odds-betting-point-spreads-totals"
       ]
-    },
-    {
-      "sport": "CFB",
-      "matchup": "Indiana at Rutgers",
-      "date": "2026-10-03",
-      "start_time": "2026-10-04T00:00:00Z",
-      "favorite": "Indiana",
-      "estimated_probability": {
-        "Indiana": 91,
-        "Rutgers": 9
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2.5,
-      "reasoning": [
-        "No. 6 Indiana is 4-0 with wins of 52-16, 55-0, 38-0 and 29-23 (Northwestern); Rutgers is 1-3.",
-        "Indiana is about a 24.5-point favorite at DraftKings with a moneyline around -2100 (~95% implied); two computer models project 42-17 and 39-16.",
-        "Real risks: RB Turbo Richard was hurt in the first half against Northwestern (Roman Beebe Jr. then ran for 203 yards), and the Northwestern game was a 6-point win - a road night game in Piscataway. Set below the market for those reasons."
-      ],
-      "sources": [
-        "https://www.covers.com/ncaaf/indiana-vs-rutgers-prediction-picks-odds-oct-3-2026",
-        "https://hoosierstateofmind.com/indiana-football-vs-rutgers-how-to-watch-injuries-odds-and-predictions-01m3sqr5bn67",
-        "https://www.dimers.com/cfb/predictions/2026_5_rutg_ind",
-        "https://1075thefan.com/733824/indiana-rutgers-game-prediction/"
-      ]
     }
   ],
   "settled": [
@@ -720,6 +696,33 @@
       "winner": "Georgia",
       "final_score": "Georgia 38-14 Vanderbilt",
       "settled_at": "2026-10-03T20:30:00Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Indiana at Rutgers",
+      "date": "2026-10-03",
+      "start_time": "2026-10-04T00:00:00Z",
+      "favorite": "Indiana",
+      "estimated_probability": {
+        "Indiana": 91,
+        "Rutgers": 9
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "reasoning": [
+        "No. 6 Indiana is 4-0 with wins of 52-16, 55-0, 38-0 and 29-23 (Northwestern); Rutgers is 1-3.",
+        "Indiana is about a 24.5-point favorite at DraftKings with a moneyline around -2100 (~95% implied); two computer models project 42-17 and 39-16.",
+        "Real risks: RB Turbo Richard was hurt in the first half against Northwestern (Roman Beebe Jr. then ran for 203 yards), and the Northwestern game was a 6-point win - a road night game in Piscataway. Set below the market for those reasons."
+      ],
+      "sources": [
+        "https://www.covers.com/ncaaf/indiana-vs-rutgers-prediction-picks-odds-oct-3-2026",
+        "https://hoosierstateofmind.com/indiana-football-vs-rutgers-how-to-watch-injuries-odds-and-predictions-01m3sqr5bn67",
+        "https://www.dimers.com/cfb/predictions/2026_5_rutg_ind",
+        "https://1075thefan.com/733824/indiana-rutgers-game-prediction/"
+      ],
+      "winner": "Indiana",
+      "final_score": "Indiana 47-15 Rutgers",
+      "settled_at": "2026-10-04T04:15:00Z"
     }
   ],
   "prizepicks": [
