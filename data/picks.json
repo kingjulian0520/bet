@@ -75,31 +75,6 @@
         "https://www.squawka.com/us/nfl/nfl-news/chargers-vs-seahawks-prediction-picks-odds-week-4/",
         "https://www.espn.com/espn/betting/story/_/id/50028072/2026-nfl-week-4-schedule-odds-betting-point-spreads-totals"
       ]
-    },
-    {
-      "sport": "NFL",
-      "matchup": "Buffalo Bills vs New England Patriots",
-      "date": "2026-10-04",
-      "start_time": "2026-10-04T17:00:00Z",
-      "favorite": "Buffalo Bills",
-      "estimated_probability": {
-        "Buffalo Bills": 74,
-        "New England Patriots": 26
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 1.25,
-      "reasoning": [
-        "New England averages 12 points per game, worst in the NFL. Drake Maye has 1 TD to 6 INTs and has been sacked 9 times, and he's on the injury report with a right shoulder issue (full participant).",
-        "Injuries on the right side of the Patriots' offensive line set up Buffalo's pass rush.",
-        "Josh Allen is off the injury report after taking a shot to the knee in Week 3. The caution: he had three turnovers last week, and division games run tighter.",
-        "Opened as about a 7-point favorite, moneyline around -300 (~75% implied). Home in Buffalo."
-      ],
-      "sources": [
-        "https://www.si.com/nfl/patriots/onsi/patriots-week-4-injury-report-drake-maye-s-shoulder-back-in-the-headlines",
-        "https://www.buffalorumblings.com/buffalo-bills-injuries/141728/bills-vs-patriots-week-4-injury-report-josh-allen-clear",
-        "https://985thesportshub.com/2026/10/01/patriots-bills-odds-picks-predictions/",
-        "https://www.espn.com/espn/betting/story/_/id/50028072/2026-nfl-week-4-schedule-odds-betting-point-spreads-totals"
-      ]
     }
   ],
   "settled": [
@@ -868,6 +843,34 @@
       "winner": "Doesn't Hit",
       "final_score": "Auburn lost 24-14 at Tennessee - Jeramiah Koger caught just 1 pass for 5 yards (under 14.5), so that leg misses regardless of Jordan Marshall's 50 rushing yards (over 24.5, hit) in Michigan's 20-14 loss at Minnesota.",
       "settled_at": "2026-10-04T20:00:00Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Buffalo Bills vs New England Patriots",
+      "date": "2026-10-04",
+      "start_time": "2026-10-04T17:00:00Z",
+      "favorite": "Buffalo Bills",
+      "estimated_probability": {
+        "Buffalo Bills": 74,
+        "New England Patriots": 26
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "New England averages 12 points per game, worst in the NFL. Drake Maye has 1 TD to 6 INTs and has been sacked 9 times, and he's on the injury report with a right shoulder issue (full participant).",
+        "Injuries on the right side of the Patriots' offensive line set up Buffalo's pass rush.",
+        "Josh Allen is off the injury report after taking a shot to the knee in Week 3. The caution: he had three turnovers last week, and division games run tighter.",
+        "Opened as about a 7-point favorite, moneyline around -300 (~75% implied). Home in Buffalo."
+      ],
+      "sources": [
+        "https://www.si.com/nfl/patriots/onsi/patriots-week-4-injury-report-drake-maye-s-shoulder-back-in-the-headlines",
+        "https://www.buffalorumblings.com/buffalo-bills-injuries/141728/bills-vs-patriots-week-4-injury-report-josh-allen-clear",
+        "https://985thesportshub.com/2026/10/01/patriots-bills-odds-picks-predictions/",
+        "https://www.espn.com/espn/betting/story/_/id/50028072/2026-nfl-week-4-schedule-odds-betting-point-spreads-totals"
+      ],
+      "winner": "New England Patriots",
+      "final_score": "Patriots 29-26 Bills",
+      "settled_at": "2026-10-04T20:30:00Z"
     }
   ],
   "prizepicks": []
