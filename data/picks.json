@@ -723,9 +723,64 @@
       "winner": "Indiana",
       "final_score": "Indiana 47-15 Rutgers",
       "settled_at": "2026-10-04T04:15:00Z"
-    }
-  ],
-  "prizepicks": [
+    },
+    {
+      "sport": "Mixed",
+      "matchup": "Carson Hansen Over 34.5 Rush Yards + Aidan Chiles Over 0.5 TD's + Tom1jed Map 1 Kills Over 11.5 + Michael Olise Over 0.5 SOT",
+      "date": "2026-10-02",
+      "start_time": "2026-10-03T00:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 10,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Carson Hansen",
+          "opponent": "Northwestern",
+          "side": "Over",
+          "line": 34.5,
+          "stat": "Rush Yards",
+          "actual_value": 19
+        },
+        {
+          "type": "over_under",
+          "player": "Aidan Chiles",
+          "opponent": "Penn State",
+          "side": "Over",
+          "line": 0.5,
+          "stat": "TD's",
+          "actual_value": 1
+        },
+        {
+          "type": "over_under",
+          "player": "Tom1jed",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 11.5,
+          "stat": "Map 1 Kills"
+        },
+        {
+          "type": "over_under",
+          "player": "Michael Olise",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 0.5,
+          "stat": "SOT",
+          "actual_value": 2
+        }
+      ],
+      "platform": "PrizePicks",
+      "winner": "Doesn't Hit",
+      "final_score": "Northwestern 34-13 Penn State. Carson Hansen had 19 rushing yards (under 34.5) - that leg missed, so the entry settles Doesn't Hit regardless of the others. (Aidan Chiles did score a rushing TD, over 0.5 hit; Michael Olise had 2 SOT, over 0.5 hit; Tom1jed's esports result wasn't needed.)",
+      "settled_at": "2026-10-04T20:00:00Z"
+    },
     {
       "sport": "CFB/NFL",
       "matchup": "Jordan Marshall Over 29.5 Rush Yards + Jeramiah Koger Over 14.5 Rec Yards + Luther Burden III Over 2.5 Receptions",
@@ -748,7 +803,8 @@
           "opponent": "Minnesota",
           "side": "Over",
           "line": 29.5,
-          "stat": "Rush Yards"
+          "stat": "Rush Yards",
+          "actual_value": 50
         },
         {
           "type": "over_under",
@@ -756,7 +812,8 @@
           "opponent": "Tennessee",
           "side": "Over",
           "line": 14.5,
-          "stat": "Receiving Yards"
+          "stat": "Receiving Yards",
+          "actual_value": 5
         },
         {
           "type": "over_under",
@@ -767,7 +824,10 @@
           "stat": "Receptions"
         }
       ],
-      "platform": "DraftKings"
+      "platform": "DraftKings",
+      "winner": "Doesn't Hit",
+      "final_score": "Minnesota 20-14 Michigan (Little Brown Jug) - Jordan Marshall ran for 50 yards (over 29.5, hit). Auburn lost 24-14 at Tennessee, where Jeramiah Koger caught just 1 pass for 5 yards (under 14.5) - that leg missed, so the entry settles Doesn't Hit regardless of Luther Burden III's reception count.",
+      "settled_at": "2026-10-04T20:00:00Z"
     },
     {
       "sport": "CFB",
@@ -791,7 +851,8 @@
           "opponent": "Tennessee",
           "side": "Over",
           "line": 14.5,
-          "stat": "Receiving Yards"
+          "stat": "Receiving Yards",
+          "actual_value": 5
         },
         {
           "type": "over_under",
@@ -799,10 +860,15 @@
           "opponent": "Minnesota",
           "side": "Over",
           "line": 24.5,
-          "stat": "Rush Yards"
+          "stat": "Rush Yards",
+          "actual_value": 50
         }
       ],
-      "platform": "DraftKings"
+      "platform": "DraftKings",
+      "winner": "Doesn't Hit",
+      "final_score": "Auburn lost 24-14 at Tennessee - Jeramiah Koger caught just 1 pass for 5 yards (under 14.5), so that leg misses regardless of Jordan Marshall's 50 rushing yards (over 24.5, hit) in Michigan's 20-14 loss at Minnesota.",
+      "settled_at": "2026-10-04T20:00:00Z"
     }
-  ]
+  ],
+  "prizepicks": []
 }
