@@ -4,31 +4,6 @@
   "picks": [
     {
       "sport": "NFL",
-      "matchup": "Baltimore Ravens vs Tennessee Titans",
-      "date": "2026-10-04",
-      "start_time": "2026-10-04T17:00:00Z",
-      "favorite": "Baltimore Ravens",
-      "estimated_probability": {
-        "Baltimore Ravens": 85,
-        "Tennessee Titans": 15
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2,
-      "reasoning": [
-        "Ravens (2-1) are coming off a 34-31 win over Dallas in Rio; the Titans are 0-3 after three straight close losses, including Cam Ward's end-zone interception in the final seconds against the Giants.",
-        "Lamar Jackson was limited Wednesday with a back injury, but the coach called it minor and he was upgraded on Thursday's report - expected to play.",
-        "Titans' offensive line is unsettled after losing starting RG Fernando Carmona and backup Jackson Slater to IR. One real Ravens concern: both centers (Gwyn, Pocic) are out long-term.",
-        "Moneyline around -700 (~87.5% implied); set at 85% given the Lamar back issue and Tennessee's top-10 pass defense."
-      ],
-      "sources": [
-        "https://www.baltimorebeatdown.com/baltimore-ravens-injuries/85816/ravens-upgrade-lamar-jackson-zay-flowers-on-thursday-injury-report",
-        "https://sports.yahoo.com/articles/tennessee-titans-vs-baltimore-ravens-141514428.html",
-        "https://sports.yahoo.com/articles/titans-massive-underdogs-ahead-ravens-200036760.html",
-        "https://www.espn.com/espn/betting/story/_/id/50028072/2026-nfl-week-4-schedule-odds-betting-point-spreads-totals"
-      ]
-    },
-    {
-      "sport": "NFL",
       "matchup": "Minnesota Vikings vs Miami Dolphins",
       "date": "2026-10-04",
       "start_time": "2026-10-04T20:05:00Z",
@@ -871,6 +846,34 @@
       "winner": "New England Patriots",
       "final_score": "Patriots 29-26 Bills",
       "settled_at": "2026-10-04T20:30:00Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Baltimore Ravens vs Tennessee Titans",
+      "date": "2026-10-04",
+      "start_time": "2026-10-04T17:00:00Z",
+      "favorite": "Baltimore Ravens",
+      "estimated_probability": {
+        "Baltimore Ravens": 85,
+        "Tennessee Titans": 15
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "reasoning": [
+        "Ravens (2-1) are coming off a 34-31 win over Dallas in Rio; the Titans are 0-3 after three straight close losses, including Cam Ward's end-zone interception in the final seconds against the Giants.",
+        "Lamar Jackson was limited Wednesday with a back injury, but the coach called it minor and he was upgraded on Thursday's report - expected to play.",
+        "Titans' offensive line is unsettled after losing starting RG Fernando Carmona and backup Jackson Slater to IR. One real Ravens concern: both centers (Gwyn, Pocic) are out long-term.",
+        "Moneyline around -700 (~87.5% implied); set at 85% given the Lamar back issue and Tennessee's top-10 pass defense."
+      ],
+      "sources": [
+        "https://www.baltimorebeatdown.com/baltimore-ravens-injuries/85816/ravens-upgrade-lamar-jackson-zay-flowers-on-thursday-injury-report",
+        "https://sports.yahoo.com/articles/tennessee-titans-vs-baltimore-ravens-141514428.html",
+        "https://sports.yahoo.com/articles/titans-massive-underdogs-ahead-ravens-200036760.html",
+        "https://www.espn.com/espn/betting/story/_/id/50028072/2026-nfl-week-4-schedule-odds-betting-point-spreads-totals"
+      ],
+      "winner": "Baltimore Ravens",
+      "final_score": "Ravens 24-18 Titans",
+      "settled_at": "2026-10-04T22:30:00Z"
     }
   ],
   "prizepicks": []
