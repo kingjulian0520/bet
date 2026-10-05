@@ -1,57 +1,7 @@
 {
   "generated_at": "2026-10-03T04:30:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [
-    {
-      "sport": "NFL",
-      "matchup": "Minnesota Vikings vs Miami Dolphins",
-      "date": "2026-10-04",
-      "start_time": "2026-10-04T20:05:00Z",
-      "favorite": "Minnesota Vikings",
-      "estimated_probability": {
-        "Minnesota Vikings": 84,
-        "Miami Dolphins": 16
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "reasoning": [
-        "Vikings are 3-0 at home vs the 0-3 Dolphins. Minnesota's defense has at least four sacks and two takeaways in every game so far (14 sacks total).",
-        "Miami lost RB De'Von Achane to a torn ACL in Week 3, CB Storm Duck is out, and several others (WRs Chris Bell and Caleb Douglas, C Aaron Brewer) are questionable.",
-        "Real risk: Justin Jefferson (ankle sprain, no structural damage) is day-to-day and Aaron Jones is carrying a heavy load with Jordan Mason on IR - why this sits below the ~87% the -650 price implies."
-      ],
-      "sources": [
-        "https://www.vikings.com/news/dolphins-injury-report-week-4-2026-nfl-season",
-        "https://www.nbcsports.com/nfl/news/dolphins-vs-vikings-prediction-odds-expert-picks-qb-matchup-injury-update-betting-trends-and-stats",
-        "https://thevikingage.com/minnesota-vikings-miami-dolphins-week-4-tracker-injury-updates-predictions-storylines",
-        "https://www.espn.com/espn/betting/story/_/id/50028072/2026-nfl-week-4-schedule-odds-betting-point-spreads-totals"
-      ]
-    },
-    {
-      "sport": "NFL",
-      "matchup": "Seattle Seahawks vs Los Angeles Chargers",
-      "date": "2026-10-04",
-      "start_time": "2026-10-04T20:25:00Z",
-      "favorite": "Seattle Seahawks",
-      "estimated_probability": {
-        "Seattle Seahawks": 76,
-        "Los Angeles Chargers": 24
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "reasoning": [
-        "Seattle has the league's best pass defense by yardage; the Chargers haven't scored more than 16 points in any game this season.",
-        "Chargers are banged up: WR Ladd McConkey (foot) didn't practice Thursday, starting TE Charlie Kolar (broken forearm) hasn't practiced, and DT Dalvin Tomlinson sat out too.",
-        "Seattle is missing RB Zach Charbonnet (not eligible until next week) and safety depth (Okada out, Love working back from a calf injury). Home at Lumen Field.",
-        "Moneyline around -340 (~77% implied)."
-      ],
-      "sources": [
-        "https://www.seahawks.com/news/week-4-injury-report-seahawks-vs-chargers",
-        "https://www.chargers.com/news/seahawks-injury-report-week-4",
-        "https://www.squawka.com/us/nfl/nfl-news/chargers-vs-seahawks-prediction-picks-odds-week-4/",
-        "https://www.espn.com/espn/betting/story/_/id/50028072/2026-nfl-week-4-schedule-odds-betting-point-spreads-totals"
-      ]
-    }
-  ],
+  "picks": [],
   "settled": [
     {
       "sport": "NFL",
@@ -874,6 +824,61 @@
       "winner": "Baltimore Ravens",
       "final_score": "Ravens 24-18 Titans",
       "settled_at": "2026-10-04T22:30:00Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Minnesota Vikings vs Miami Dolphins",
+      "date": "2026-10-04",
+      "start_time": "2026-10-04T20:05:00Z",
+      "favorite": "Minnesota Vikings",
+      "estimated_probability": {
+        "Minnesota Vikings": 84,
+        "Miami Dolphins": 16
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "reasoning": [
+        "Vikings are 3-0 at home vs the 0-3 Dolphins. Minnesota's defense has at least four sacks and two takeaways in every game so far (14 sacks total).",
+        "Miami lost RB De'Von Achane to a torn ACL in Week 3, CB Storm Duck is out, and several others (WRs Chris Bell and Caleb Douglas, C Aaron Brewer) are questionable.",
+        "Real risk: Justin Jefferson (ankle sprain, no structural damage) is day-to-day and Aaron Jones is carrying a heavy load with Jordan Mason on IR - why this sits below the ~87% the -650 price implies."
+      ],
+      "sources": [
+        "https://www.vikings.com/news/dolphins-injury-report-week-4-2026-nfl-season",
+        "https://www.nbcsports.com/nfl/news/dolphins-vs-vikings-prediction-odds-expert-picks-qb-matchup-injury-update-betting-trends-and-stats",
+        "https://thevikingage.com/minnesota-vikings-miami-dolphins-week-4-tracker-injury-updates-predictions-storylines",
+        "https://www.espn.com/espn/betting/story/_/id/50028072/2026-nfl-week-4-schedule-odds-betting-point-spreads-totals"
+      ],
+      "winner": "Minnesota Vikings",
+      "final_score": "Vikings 15-10 Dolphins",
+      "settled_at": "2026-10-05T00:30:00Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Seattle Seahawks vs Los Angeles Chargers",
+      "date": "2026-10-04",
+      "start_time": "2026-10-04T20:25:00Z",
+      "favorite": "Seattle Seahawks",
+      "estimated_probability": {
+        "Seattle Seahawks": 76,
+        "Los Angeles Chargers": 24
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "Seattle has the league's best pass defense by yardage; the Chargers haven't scored more than 16 points in any game this season.",
+        "Chargers are banged up: WR Ladd McConkey (foot) didn't practice Thursday, starting TE Charlie Kolar (broken forearm) hasn't practiced, and DT Dalvin Tomlinson sat out too.",
+        "Seattle is missing RB Zach Charbonnet (not eligible until next week) and safety depth (Okada out, Love working back from a calf injury). Home at Lumen Field.",
+        "Moneyline around -340 (~77% implied)."
+      ],
+      "sources": [
+        "https://www.seahawks.com/news/week-4-injury-report-seahawks-vs-chargers",
+        "https://www.chargers.com/news/seahawks-injury-report-week-4",
+        "https://www.squawka.com/us/nfl/nfl-news/chargers-vs-seahawks-prediction-picks-odds-week-4/",
+        "https://www.espn.com/espn/betting/story/_/id/50028072/2026-nfl-week-4-schedule-odds-betting-point-spreads-totals"
+      ],
+      "winner": "Seattle Seahawks",
+      "final_score": "Seahawks 30-23 Chargers",
+      "settled_at": "2026-10-05T00:30:00Z"
     }
   ],
   "prizepicks": []
