@@ -1334,6 +1334,16 @@ function deriveLegsFromPick(pick) {
   }
 }
 
+// Actual uploaded filenames in assets/app-logos/ - not all the same
+// extension, so this can't just be guessed from the platform name.
+const APP_LOGO_FILES = {
+  prizepicks: "prizepicks.jpeg",
+  draftkings: "draftkings.jpeg",
+  betmgm: "betmgm.png",
+  kalshi: "kalshi.jpeg",
+  fanduel: "fanduel.jpeg",
+};
+
 function renderCard(pick, options = {}) {
   const card = document.createElement("div");
   card.className = "pick-card";
@@ -1375,10 +1385,9 @@ function renderCard(pick, options = {}) {
   const hasStructuredLegs = Array.isArray(structuredLegs) && structuredLegs.length > 0;
 
   // Parlay cards: every leg's circle in one parallel row, the plain-text
-  // descriptions listed below, then a footer - app used bottom-left (plus
-  // its logo once the owner adds one to assets/app-logos/), real payout
-  // multiplier bottom-right. Non-parlay cards keep the older circle+name
-  // row layout untouched.
+  // descriptions listed below, then a footer - app used bottom-left (with
+  // its logo from assets/app-logos/), real payout multiplier bottom-right.
+  // Non-parlay cards keep the older circle+name row layout untouched.
   let bodyBlock;
   let footerBlock = "";
   if (isPP && hasStructuredLegs) {
@@ -1390,6 +1399,7 @@ function renderCard(pick, options = {}) {
 
     const platformName = pick.platform || "PrizePicks";
     const platformSlug = platformName.toLowerCase().replace(/\s+/g, "");
+    const logoFile = APP_LOGO_FILES[platformSlug];
     const multiplierText =
       typeof pick.actual_multiplier === "number" && pick.actual_multiplier > 0
         ? `${formatMoney(pick.actual_multiplier)}x`
@@ -1397,7 +1407,7 @@ function renderCard(pick, options = {}) {
     footerBlock = `
       <div class="pp-footer-row">
         <div class="pp-app-used">
-          <img src="assets/app-logos/${escapeAttr(platformSlug)}.png" alt="" class="pp-app-logo" onerror="this.style.display='none'">
+          ${logoFile ? `<img src="assets/app-logos/${escapeAttr(logoFile)}" alt="" class="pp-app-logo" onerror="this.style.display='none'">` : ""}
           <span>App used - ${escapeHtml(platformName)}</span>
         </div>
         ${multiplierText ? `<div class="pp-footer-multiplier">${escapeHtml(multiplierText)}</div>` : ""}

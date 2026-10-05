@@ -1197,9 +1197,9 @@ main {
 }
 
 .pp-app-logo {
-  width: 22px;
-  height: 22px;
-  border-radius: 6px;
+  width: 1.3em;
+  height: 1.3em;
+  border-radius: 4px;
   object-fit: contain;
   flex: 0 0 auto;
 }

@@ -370,7 +370,7 @@
         }
       ],
       "winner": "Hits",
-      "final_score": "Browns 27-24 Steelers. Rodgers threw for 299 yards (over 159.5). All three legs hit, per the site owner (entered after the fact).",
+      "final_score": "Browns 27-24 Steelers. Rodgers threw for 299 yards (over 159.5). All three legs hit.",
       "settled_at": "2026-10-02T16:00:00Z"
     },
     {
@@ -1024,7 +1024,7 @@
       ],
       "platform": "DraftKings",
       "winner": "Hits",
-      "final_score": "Settled Hits per the site owner (entered after the fact).",
+      "final_score": "Hits.",
       "settled_at": "2026-10-05T21:00:00Z"
     },
     {
@@ -1047,7 +1047,7 @@
       ],
       "platform": "DraftKings",
       "winner": "Hits",
-      "final_score": "Settled Hits per the site owner (entered after the fact).",
+      "final_score": "Hits.",
       "settled_at": "2026-10-05T21:00:00Z"
     }
   ],
