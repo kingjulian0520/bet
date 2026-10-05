@@ -678,8 +678,6 @@ async function main() {
   wirePasswordRecovery();
   wireSportFilter();
   wireSortDropdown();
-  wirePPPlatformSelect();
-  applyPPPlatformLabel();
 
   document.addEventListener("click", (e) => {
     const accountDropdown = document.getElementById("account-menu-dropdown");
@@ -690,11 +688,6 @@ async function main() {
     const sortDropdown = document.getElementById("sort-dropdown");
     if (sortDropdown && !sortDropdown.hidden && !e.target.closest(".picks-sort-wrap")) {
       sortDropdown.hidden = true;
-    }
-    const ppDropdown = document.getElementById("prizepicks-platform-dropdown");
-    if (ppDropdown && !ppDropdown.hidden && !e.target.closest(".tab-picker-wrap")) {
-      ppDropdown.hidden = true;
-      document.getElementById("prizepicks-tab-btn")?.setAttribute("aria-expanded", "false");
     }
   });
 
@@ -783,7 +776,7 @@ function renderAll() {
 // ---------- tabs ----------
 
 function wireTabs() {
-  document.querySelectorAll(".tab-btn:not(#prizepicks-tab-btn)").forEach((btn) => {
+  document.querySelectorAll(".tab-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       document.querySelectorAll(".tab-btn").forEach((b) => {
         b.classList.remove("active");
@@ -801,69 +794,6 @@ function wireTabs() {
 
 let selectedDayFilter = "all";
 let selectedPrizePicksDayFilter = "all";
-
-// Which platform this tab is filtered to - the site owner places these
-// picks across several apps (PrizePicks, DraftKings, BetMGM, Kalshi).
-// The tab bubble is a button that opens a small
-// dropdown (matching the sort/account menus elsewhere on the site);
-// picking an option both switches to this tab and filters
-// currentPrizePicks down to entries tagged with that platform.
-const PP_PLATFORM_STORAGE_KEY = "ppPlatformNameV2";
-const PP_PLATFORMS = ["PrizePicks", "DraftKings", "BetMGM", "Kalshi"];
-let ppPlatformName = localStorage.getItem(PP_PLATFORM_STORAGE_KEY);
-// A remembered choice can point at an app that's since been dropped.
-if (!PP_PLATFORMS.includes(ppPlatformName)) ppPlatformName = "PrizePicks";
-
-function applyPPPlatformLabel() {
-  const label = document.getElementById("prizepicks-tab-label");
-  if (label) label.textContent = ppPlatformName;
-
-  const dropdown = document.getElementById("prizepicks-platform-dropdown");
-  if (dropdown) {
-    dropdown.querySelectorAll(".tab-picker-option").forEach((opt) => {
-      opt.classList.toggle("active", opt.dataset.platform === ppPlatformName);
-    });
-  }
-
-  const intro = document.getElementById("prizepicks-intro");
-  if (intro) {
-    intro.textContent = `Picks built specifically for ${ppPlatformName}, packaged as ${ppPlatformName}-style player prop parlays. Held empty until there's a reliable stats source backing them — no picks here are guesses.`;
-  }
-}
-
-function wirePPPlatformSelect() {
-  const trigger = document.getElementById("prizepicks-tab-btn");
-  const dropdown = document.getElementById("prizepicks-platform-dropdown");
-  if (!trigger || !dropdown) return;
-
-  trigger.addEventListener("click", (e) => {
-    e.stopPropagation();
-    document.querySelectorAll(".tab-btn").forEach((b) => {
-      b.classList.remove("active");
-      b.setAttribute("aria-selected", "false");
-    });
-    document.querySelectorAll(".tab-panel").forEach((p) => p.classList.remove("active"));
-    trigger.classList.add("active");
-    trigger.setAttribute("aria-selected", "true");
-    document.getElementById(trigger.dataset.tab).classList.add("active");
-
-    const isOpen = !dropdown.hidden;
-    dropdown.hidden = isOpen;
-    trigger.setAttribute("aria-expanded", String(!isOpen));
-  });
-
-  dropdown.querySelectorAll(".tab-picker-option").forEach((opt) => {
-    opt.addEventListener("click", (e) => {
-      e.stopPropagation();
-      ppPlatformName = opt.dataset.platform;
-      localStorage.setItem(PP_PLATFORM_STORAGE_KEY, ppPlatformName);
-      dropdown.hidden = true;
-      trigger.setAttribute("aria-expanded", "false");
-      applyPPPlatformLabel();
-      renderPrizePicks();
-    });
-  });
-}
 
 // Sport filter: applied (activeSportFilters) vs staged-in-the-modal
 // (pendingSportFilters) - selecting chips doesn't change what's shown until
@@ -1212,29 +1142,24 @@ function renderPrizePicks() {
 
   renderPrizePicksDayFilterBar();
 
-  const platformItems = currentPrizePicks.filter(
-    (p) => (p.platform || "PrizePicks") === ppPlatformName
-  );
   const items =
     selectedPrizePicksDayFilter === "all"
-      ? platformItems
-      : platformItems.filter((p) => p.date === selectedPrizePicksDayFilter);
+      ? currentPrizePicks
+      : currentPrizePicks.filter((p) => p.date === selectedPrizePicksDayFilter);
 
   if (items.length === 0) {
     const todayStr = todayDateStr();
-    const label = ppPlatformName === "PrizePicks" ? "picks" : `${ppPlatformName} picks`;
-    // A platform with zero live entries at all (not just none for the
-    // selected day) means the site owner just hasn't placed anything there
-    // yet, not that this specific day is empty - most of these platforms'
-    // props lean heavily on the NBA, which hasn't started its season yet.
+    // Zero live entries at all (not just none for the selected day) means
+    // the site owner just hasn't placed any parlays yet, not that this
+    // specific day is empty.
     const msg =
-      platformItems.length === 0
-        ? `No ${label} yet — more coming once the NBA season starts.`
+      currentPrizePicks.length === 0
+        ? "No parlays yet — waiting on a reliable stats source."
         : selectedPrizePicksDayFilter === "all"
-        ? `No ${label} yet — waiting on a reliable stats source.`
+        ? "No parlays yet — waiting on a reliable stats source."
         : selectedPrizePicksDayFilter === todayStr
-        ? `No ${label} for today yet.`
-        : `No ${label} for this day yet.`;
+        ? "No parlays for today yet."
+        : "No parlays for this day yet.";
     root.innerHTML = `<p class="empty-state">${escapeHtml(msg)}</p>`;
     return;
   }
@@ -1430,6 +1355,17 @@ function renderCard(pick, options = {}) {
     ? `<div class="pp-body">${legRowsBlock}${multiplierBadgeBlock}</div>`
     : legRowsBlock;
 
+  // Parlays no longer live under a per-app tab, so each card states which
+  // app it's on and the real payout multiplier right under its legs.
+  const platformRowBlock =
+    isPP
+      ? `<div class="pp-platform-row">${escapeHtml(pick.platform || "PrizePicks")}${
+          typeof pick.actual_multiplier === "number" && pick.actual_multiplier > 0
+            ? ` · ${formatMoney(pick.actual_multiplier)}x`
+            : ""
+        }</div>`
+      : "";
+
   const reasoningItems = (pick.reasoning || []).map((r) => `<li>${escapeHtml(r)}</li>`).join("");
   const sourceLinks = (pick.sources || [])
     .map((s, i) => `<a href="${escapeAttr(s)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">[${i + 1}]</a>`)
@@ -1493,6 +1429,7 @@ function renderCard(pick, options = {}) {
       <span class="date">${escapeHtml(pick.date || "")}</span>
     </div>
     ${bodyBlock}
+    ${platformRowBlock}
     ${probabilityBlock}
     <ul class="reasoning">${reasoningItems}</ul>
     ${sourceLinks ? `<div class="sources">Sources: ${sourceLinks}</div>` : ""}

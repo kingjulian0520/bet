@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Close Calls</title>
-<link rel="stylesheet" href="style.css?v=49">
+<link rel="stylesheet" href="style.css?v=50">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css">
 </head>
 <body>
@@ -44,18 +44,7 @@
 
 <nav class="tabs" role="tablist">
   <button class="tab-btn active" data-tab="picks" role="tab" aria-selected="true">Picks</button>
-  <div class="tab-picker-wrap" id="prizepicks-tab-wrap">
-    <button type="button" id="prizepicks-tab-btn" class="tab-btn tab-picker-trigger" data-tab="prizepicks" role="tab" aria-selected="false" aria-haspopup="true" aria-expanded="false">
-      <span id="prizepicks-tab-label">PrizePicks</span>
-      <svg class="tab-picker-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-    </button>
-    <div id="prizepicks-platform-dropdown" class="tab-picker-dropdown" hidden>
-      <button type="button" class="tab-picker-option active" data-platform="PrizePicks">PrizePicks</button>
-      <button type="button" class="tab-picker-option" data-platform="DraftKings">DraftKings</button>
-      <button type="button" class="tab-picker-option" data-platform="BetMGM">BetMGM</button>
-      <button type="button" class="tab-picker-option" data-platform="Kalshi">Kalshi</button>
-    </div>
-  </div>
+  <button class="tab-btn" data-tab="prizepicks" role="tab" aria-selected="false">Parlays</button>
   <button class="tab-btn" data-tab="calendar" role="tab" aria-selected="false">Calendar</button>
 </nav>
 
@@ -102,13 +91,14 @@
   <section id="prizepicks" class="tab-panel">
     <div class="lockable" id="prizepicks-lockable">
       <p class="panel-intro" id="prizepicks-intro">
-        Picks built specifically for PrizePicks, packaged as PrizePicks-style
-        player prop parlays. Held empty until there's a reliable stats source
-        backing them — no picks here are guesses.
+        Multi-leg parlays across every app in play — each card shows which
+        app it's on and the real payout multiplier. Held empty until
+        there's a reliable stats source backing them — no picks here are
+        guesses.
       </p>
       <div id="prizepicks-day-filter-bar" class="day-filter-bar"></div>
       <div id="prizepicks-root">
-        <p class="empty-state">No PrizePicks picks yet — waiting on a reliable stats source.</p>
+        <p class="empty-state">No parlays yet — waiting on a reliable stats source.</p>
       </div>
     </div>
     <div class="lock-overlay" id="prizepicks-lock-overlay" hidden>

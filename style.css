@@ -459,70 +459,11 @@ body {
   font-size: 0.9rem;
 }
 
-.tab-picker-wrap {
-  position: relative;
-  display: flex;
-}
-
-.tab-picker-trigger {
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-}
-
-.tab-picker-caret {
-  width: 12px;
-  height: 12px;
+.pp-platform-row {
+  font-size: 0.8rem;
   color: var(--muted);
-  transition: transform 0.15s ease;
-}
-
-.tab-picker-trigger.active .tab-picker-caret {
-  color: #06110d;
-}
-
-.tab-picker-trigger[aria-expanded="true"] .tab-picker-caret {
-  transform: rotate(180deg);
-}
-
-.tab-picker-dropdown[hidden] {
-  display: none;
-}
-
-.tab-picker-dropdown {
-  position: absolute;
-  top: calc(100% + 0.5rem);
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.5);
-  min-width: 160px;
-  padding: 0.4rem;
-  z-index: 55;
-}
-
-.tab-picker-option {
-  display: block;
-  width: 100%;
-  text-align: left;
-  background: none;
-  border: none;
-  color: var(--text);
-  padding: 0.55rem 0.7rem;
-  border-radius: 7px;
-  cursor: pointer;
-  font-size: 0.85rem;
-}
-
-.tab-picker-option:hover {
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.tab-picker-option.active {
-  color: var(--accent);
-  font-weight: 700;
+  font-weight: 600;
+  margin: 0.3rem 0 0.5rem;
 }
 
 .page-header h1 {
