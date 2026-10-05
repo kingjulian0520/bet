@@ -1232,6 +1232,39 @@ function renderLegRow(leg) {
     </div>`;
 }
 
+// Parlay cards (the Parlays tab) show every leg's circle in one parallel
+// row, with the plain-text leg descriptions listed below instead of
+// beside each circle - just the circle half of renderLegRow's markup.
+function legCircleOnly(leg) {
+  if (leg.type === "moneyline") {
+    return `<div class="leg-circle leg-circle-ml"><span class="leg-circle-main">ML</span></div>`;
+  }
+  if (leg.type === "spread") {
+    return `<div class="leg-circle leg-circle-spread"><span class="leg-circle-main">${escapeHtml(leg.spread || "")}</span><span class="leg-circle-sub">SPREAD</span></div>`;
+  }
+  if (leg.type === "binary") {
+    return `<div class="leg-circle leg-circle-ou"><span class="leg-circle-main">${escapeHtml((leg.side || "").toUpperCase())}</span><span class="leg-circle-sub">${escapeHtml(leg.stat || "")}</span></div>`;
+  }
+  const lineText = `${leg.side === "Under" ? "U" : "O"} ${leg.line}`;
+  return `<div class="leg-circle leg-circle-ou"><span class="leg-circle-main">${escapeHtml(lineText)}</span><span class="leg-circle-sub">${escapeHtml(leg.stat || "")}</span></div>`;
+}
+
+// One plain-text line per leg for the parlay card's list below its circle
+// row - same info renderLegRow puts beside each circle, read as a sentence.
+function legLineText(leg) {
+  if (leg.type === "moneyline") {
+    return `${leg.team || ""} ML${leg.opponent ? ` vs ${leg.opponent}` : ""}`.trim();
+  }
+  if (leg.type === "spread") {
+    return `${leg.team || ""} ${leg.spread || ""}`.trim();
+  }
+  if (leg.type === "binary") {
+    return `${leg.player || ""} ${leg.side || ""} ${leg.stat || ""}`.replace(/\s+/g, " ").trim();
+  }
+  const sideWord = leg.side === "Under" ? "Under" : "Over";
+  return `${leg.player || ""} ${sideWord} ${leg.line ?? ""} ${leg.stat || ""}`.replace(/\s+/g, " ").trim();
+}
+
 // Best-effort derivation of one visual leg from an existing pick's own
 // fields (sport/matchup/favorite/estimated_probability), following the
 // site's own standing schema conventions (sport suffix Totals/Spreads/
@@ -1333,14 +1366,6 @@ function renderCard(pick, options = {}) {
       <span>${escapeHtml(dogTeam || "")} ${dogPct}%</span>
     </div>`;
 
-  // PrizePicks shows its real multiplier exactly once, as big plain text in
-  // a circle sitting beside the leg rows (vertically centered against them)
-  // - never as a plain percentage or a second time in the stake row below.
-  const multiplierBadgeBlock =
-    isPP && typeof pick.actual_multiplier === "number" && pick.actual_multiplier > 0
-      ? `<div class="multiplier-badge">${formatMoney(pick.actual_multiplier)}x</div>`
-      : "";
-
   // PrizePicks entries with structured legs (type: "moneyline"/"over_under")
   // render as circle+name+subtitle rows instead of the plain matchup title.
   const structuredLegs =
@@ -1348,23 +1373,38 @@ function renderCard(pick, options = {}) {
       ? pick.legs
       : deriveLegsFromPick(pick);
   const hasStructuredLegs = Array.isArray(structuredLegs) && structuredLegs.length > 0;
-  const legRowsBlock = hasStructuredLegs ? `<div class="leg-rows">${structuredLegs.map(renderLegRow).join("")}</div>` : "";
-  // The multiplier badge sits beside the leg rows, not stacked below them -
-  // wrap both in a row together so the badge centers against their full height.
-  const bodyBlock = multiplierBadgeBlock
-    ? `<div class="pp-body">${legRowsBlock}${multiplierBadgeBlock}</div>`
-    : legRowsBlock;
 
-  // Parlays no longer live under a per-app tab, so each card states which
-  // app it's on and the real payout multiplier right under its legs.
-  const platformRowBlock =
-    isPP
-      ? `<div class="pp-platform-row">${escapeHtml(pick.platform || "PrizePicks")}${
-          typeof pick.actual_multiplier === "number" && pick.actual_multiplier > 0
-            ? ` · ${formatMoney(pick.actual_multiplier)}x`
-            : ""
-        }</div>`
-      : "";
+  // Parlay cards: every leg's circle in one parallel row, the plain-text
+  // descriptions listed below, then a footer - app used bottom-left (plus
+  // its logo once the owner adds one to assets/app-logos/), real payout
+  // multiplier bottom-right. Non-parlay cards keep the older circle+name
+  // row layout untouched.
+  let bodyBlock;
+  let footerBlock = "";
+  if (isPP && hasStructuredLegs) {
+    const circleRowBlock = `<div class="pp-circle-row">${structuredLegs.map(legCircleOnly).join("")}</div>`;
+    const legLinesBlock = `<div class="pp-leg-lines">${structuredLegs
+      .map((l) => `<div class="pp-leg-line">${escapeHtml(legLineText(l))}</div>`)
+      .join("")}</div>`;
+    bodyBlock = circleRowBlock + legLinesBlock;
+
+    const platformName = pick.platform || "PrizePicks";
+    const platformSlug = platformName.toLowerCase().replace(/\s+/g, "");
+    const multiplierText =
+      typeof pick.actual_multiplier === "number" && pick.actual_multiplier > 0
+        ? `${formatMoney(pick.actual_multiplier)}x`
+        : "";
+    footerBlock = `
+      <div class="pp-footer-row">
+        <div class="pp-app-used">
+          <img src="assets/app-logos/${escapeAttr(platformSlug)}.png" alt="" class="pp-app-logo" onerror="this.style.display='none'">
+          <span>App used - ${escapeHtml(platformName)}</span>
+        </div>
+        ${multiplierText ? `<div class="pp-footer-multiplier">${escapeHtml(multiplierText)}</div>` : ""}
+      </div>`;
+  } else {
+    bodyBlock = hasStructuredLegs ? `<div class="leg-rows">${structuredLegs.map(renderLegRow).join("")}</div>` : "";
+  }
 
   const reasoningItems = (pick.reasoning || []).map((r) => `<li>${escapeHtml(r)}</li>`).join("");
   const sourceLinks = (pick.sources || [])
@@ -1429,7 +1469,7 @@ function renderCard(pick, options = {}) {
       <span class="date">${escapeHtml(pick.date || "")}</span>
     </div>
     ${bodyBlock}
-    ${platformRowBlock}
+    ${footerBlock}
     ${probabilityBlock}
     <ul class="reasoning">${reasoningItems}</ul>
     ${sourceLinks ? `<div class="sources">Sources: ${sourceLinks}</div>` : ""}

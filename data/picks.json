@@ -998,7 +998,108 @@
       "winner": "Seattle Seahawks",
       "final_score": "Seahawks 30-23 Chargers",
       "settled_at": "2026-10-05T00:30:00Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Jack Campbell Over 5.5 Tackles + Assists + Sam LaPorta Over 24.5 Rec Yards + Jared Goff Over 199.5 Passing + Rushing Yards + Jared Goff Over 19.5 Completions + Jared Goff Over 27.5 Passing Attempts + Jake Bates Over 0.5 Field Goals Made",
+      "date": "2026-10-04",
+      "start_time": "2026-10-05T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 2.33,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        { "type": "over_under", "player": "Jack Campbell", "opponent": "TBD", "side": "Over", "line": 5.5, "stat": "Tackles + Assists" },
+        { "type": "over_under", "player": "Sam LaPorta", "opponent": "TBD", "side": "Over", "line": 24.5, "stat": "Receiving Yards" },
+        { "type": "over_under", "player": "Jared Goff", "opponent": "TBD", "side": "Over", "line": 199.5, "stat": "Passing + Rushing Yards" },
+        { "type": "over_under", "player": "Jared Goff", "opponent": "TBD", "side": "Over", "line": 19.5, "stat": "Completions" },
+        { "type": "over_under", "player": "Jared Goff", "opponent": "TBD", "side": "Over", "line": 27.5, "stat": "Passing Attempts" },
+        { "type": "over_under", "player": "Jake Bates", "opponent": "TBD", "side": "Over", "line": 0.5, "stat": "Field Goals Made" }
+      ],
+      "platform": "DraftKings",
+      "winner": "Hits",
+      "final_score": "Settled Hits per the site owner (entered after the fact).",
+      "settled_at": "2026-10-05T21:00:00Z"
+    },
+    {
+      "sport": "WTA",
+      "matchup": "Iga Swiatek Moneyline",
+      "date": "2026-10-04",
+      "start_time": "2026-10-04T12:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 1,
+      "actual_multiplier": 1.35,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        { "type": "moneyline", "player": "Iga Swiatek", "opponent": "TBD", "side": "Iga Swiatek" }
+      ],
+      "platform": "DraftKings",
+      "winner": "Hits",
+      "final_score": "Settled Hits per the site owner (entered after the fact).",
+      "settled_at": "2026-10-05T21:00:00Z"
     }
   ],
-  "prizepicks": []
+  "prizepicks": [
+    {
+      "sport": "NFL",
+      "matchup": "Michael Penix Jr. Over 74.5 Passing Yards 1st Half + Bijan Robinson Over 24.5 Rushing Yards 1st Half + Tyler Shough Over 229.5 Pass Yards + Juwan Johnson Over 2.5 Receptions + Bijan Robinson Over 13.5 Rush Attempts",
+      "date": "2026-10-05",
+      "start_time": "2026-10-06T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 1,
+      "actual_multiplier": 2.46,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        { "type": "over_under", "player": "Michael Penix Jr.", "opponent": "New Orleans Saints", "side": "Over", "line": 74.5, "stat": "Passing Yards 1st Half" },
+        { "type": "over_under", "player": "Bijan Robinson", "opponent": "New Orleans Saints", "side": "Over", "line": 24.5, "stat": "Rushing Yards 1st Half" },
+        { "type": "over_under", "player": "Tyler Shough", "opponent": "Atlanta Falcons", "side": "Over", "line": 229.5, "stat": "Passing Yards" },
+        { "type": "over_under", "player": "Juwan Johnson", "opponent": "Atlanta Falcons", "side": "Over", "line": 2.5, "stat": "Receptions" },
+        { "type": "over_under", "player": "Bijan Robinson", "opponent": "New Orleans Saints", "side": "Over", "line": 13.5, "stat": "Rush Attempts" }
+      ],
+      "platform": "DraftKings"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Bijan Robinson Anytime TD Scorer + Michael Penix Jr. Over 0.5 Passing TD's + Tyler Shough Over 0.5 Passing TD's + Tyler Shough Over 199.5 Passing Yards + Chris Olave Over 79.5 Receiving Yards + Bijan Robinson Over 99.5 Rushing Yards",
+      "date": "2026-10-05",
+      "start_time": "2026-10-06T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.25,
+      "actual_multiplier": 5.8,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        { "type": "binary", "player": "Bijan Robinson", "opponent": "New Orleans Saints", "side": "Yes", "stat": "Anytime TD Scorer" },
+        { "type": "over_under", "player": "Michael Penix Jr.", "opponent": "New Orleans Saints", "side": "Over", "line": 0.5, "stat": "Passing TD's" },
+        { "type": "over_under", "player": "Tyler Shough", "opponent": "Atlanta Falcons", "side": "Over", "line": 0.5, "stat": "Passing TD's" },
+        { "type": "over_under", "player": "Tyler Shough", "opponent": "Atlanta Falcons", "side": "Over", "line": 199.5, "stat": "Passing Yards" },
+        { "type": "over_under", "player": "Chris Olave", "opponent": "Atlanta Falcons", "side": "Over", "line": 79.5, "stat": "Receiving Yards" },
+        { "type": "over_under", "player": "Bijan Robinson", "opponent": "New Orleans Saints", "side": "Over", "line": 99.5, "stat": "Rushing Yards" }
+      ],
+      "platform": "DraftKings"
+    }
+  ]
 }
