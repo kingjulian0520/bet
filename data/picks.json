@@ -1100,6 +1100,51 @@
         { "type": "over_under", "player": "Bijan Robinson", "opponent": "New Orleans Saints", "side": "Over", "line": 99.5, "stat": "Rushing Yards" }
       ],
       "platform": "DraftKings"
+    },
+    {
+      "sport": "NHL",
+      "matchup": "Igor Chernyshov Over 0.5 SOG + Wyatt Johnston Over 1.5 SOG + Jeremy Swayman Over 19.5 Saves + Kyle Connor Over 1.5 SOG",
+      "date": "2026-10-05",
+      "start_time": "2026-10-05T23:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 1,
+      "actual_multiplier": 1.99,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        { "type": "over_under", "player": "Igor Chernyshov", "opponent": "TBD", "side": "Over", "line": 0.5, "stat": "Shots on Goal" },
+        { "type": "over_under", "player": "Wyatt Johnston", "opponent": "TBD", "side": "Over", "line": 1.5, "stat": "Shots on Goal" },
+        { "type": "over_under", "player": "Jeremy Swayman", "opponent": "TBD", "side": "Over", "line": 19.5, "stat": "Saves" },
+        { "type": "over_under", "player": "Kyle Connor", "opponent": "TBD", "side": "Over", "line": 1.5, "stat": "Shots on Goal" }
+      ],
+      "platform": "DraftKings"
+    },
+    {
+      "sport": "Mixed",
+      "matchup": "Tyler Shough Over 23.5 Passing Completions + Chris Olave Over 85.5 Receiving Yards + Cam Schlittler Over 4.5 Strikeouts Thrown",
+      "date": "2026-10-05",
+      "start_time": "2026-10-06T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 3.28,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        { "type": "over_under", "player": "Tyler Shough", "opponent": "Atlanta Falcons", "side": "Over", "line": 23.5, "stat": "Passing Completions" },
+        { "type": "over_under", "player": "Chris Olave", "opponent": "Atlanta Falcons", "side": "Over", "line": 85.5, "stat": "Receiving Yards" },
+        { "type": "over_under", "player": "Cam Schlittler", "opponent": "TBD", "side": "Over", "line": 4.5, "stat": "Strikeouts Thrown" }
+      ],
+      "platform": "DraftKings"
     }
   ]
 }
