@@ -1456,6 +1456,76 @@
         }
       ],
       "platform": "DraftKings"
+    },
+    {
+      "sport": "NBA",
+      "matchup": "Michael Porter Jr. Over 17.5 Points + Rebounds + Ass + Zion Williamson Over 15.5 Points + Rebounds + Ass",
+      "date": "2026-10-06",
+      "start_time": "2026-10-06T23:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 3,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Michael Porter Jr.",
+          "opponent": "Charlotte Hornets",
+          "side": "Over",
+          "line": 17.5,
+          "stat": "Points + Rebounds + Assists"
+        },
+        {
+          "type": "over_under",
+          "player": "Zion Williamson",
+          "opponent": "Oklahoma City Thunder",
+          "side": "Over",
+          "line": 15.5,
+          "stat": "Points + Rebounds + Assists"
+        }
+      ],
+      "platform": "PrizePicks"
+    },
+    {
+      "sport": "NBA",
+      "matchup": "Naz Reid Over 13.5 Points + Rebounds + Ass + Trey Murphy III Over 15.5 Points + Rebounds + Ass",
+      "date": "2026-10-06",
+      "start_time": "2026-10-06T23:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 3,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Naz Reid",
+          "opponent": "Brooklyn Nets",
+          "side": "Over",
+          "line": 13.5,
+          "stat": "Points + Rebounds + Assists"
+        },
+        {
+          "type": "over_under",
+          "player": "Trey Murphy III",
+          "opponent": "Oklahoma City Thunder",
+          "side": "Over",
+          "line": 15.5,
+          "stat": "Points + Rebounds + Assists"
+        }
+      ],
+      "platform": "PrizePicks"
     }
   ]
 }
