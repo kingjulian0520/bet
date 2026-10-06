@@ -48,6 +48,29 @@
         "https://www.sportsgrid.com/cfb/game/new-mexico-state-aggies-florida-international-panthers-scores-odds-picks-props-october-07-2026/817868ec-78b9-4849-8ae8-7a65590d7040",
         "https://en.wikipedia.org/wiki/2026_FIU_Panthers_football"
       ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Tampa Bay Buccaneers vs Dallas Cowboys",
+      "date": "2026-10-08",
+      "start_time": "2026-10-09T00:15:00Z",
+      "favorite": "Dallas Cowboys",
+      "estimated_probability": {
+        "Dallas Cowboys": 66,
+        "Tampa Bay Buccaneers": 34
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Bucs starting QB Baker Mayfield (dislocated right thumb, injured vs. Minnesota) is out; Teddy Bridgewater starts in his place on the road on a short week.",
+        "Dallas is favored at home across sportsbooks, though the margin varies by book (moneyline from -205 up toward -300+, spread from -3.5 to -9.5) - treated as a real but not overwhelming edge given that spread.",
+        "Confidence kept moderate (not higher) because Bridgewater is a credible veteran backup, not a replacement-level arm, and the spread disagreement across books signals the market itself isn't fully settled on the size of the gap."
+      ],
+      "sources": [
+        "https://www.covers.com/nfl/week-5-odds-opening-lines-2026",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-09-28/rap-baker-mayfield-thumb-could-miss-2-4-weeks",
+        "https://www.buccaneers.com/news/teddy-bridgewater-ive-got-answer-the-bell"
+      ]
     }
   ],
   "settled": [
