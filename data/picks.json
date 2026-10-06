@@ -48,52 +48,6 @@
         "https://www.sportsgrid.com/cfb/game/new-mexico-state-aggies-florida-international-panthers-scores-odds-picks-props-october-07-2026/817868ec-78b9-4849-8ae8-7a65590d7040",
         "https://en.wikipedia.org/wiki/2026_FIU_Panthers_football"
       ]
-    },
-    {
-      "sport": "ATP Tokyo",
-      "matchup": "Carlos Alcaraz vs Jiri Lehecka",
-      "date": "2026-10-06",
-      "start_time": "2026-10-06T09:00:00Z",
-      "favorite": "Carlos Alcaraz",
-      "estimated_probability": {
-        "Carlos Alcaraz": 80,
-        "Jiri Lehecka": 20
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "reasoning": [
-        "Japan Open final. Alcaraz is -400 on the moneyline (~80% implied) defending his Tokyo title after beating Jaume Munar in the semifinal; he's the higher-ranked, higher-form player.",
-        "Head-to-head is 3-1 in Alcaraz's favor, including a straight-sets win in their most recent meeting at the US Open; Lehecka's lone win came on a different surface/court (Doha 2025).",
-        "Both of their prior hard-court meetings went three sets, so there's real precedent for Lehecka making it competitive - kept below 'heavy favorite' territory for that reason."
-      ],
-      "sources": [
-        "https://www.sportsbettingdime.com/news/tennis/alcaraz-vs-lehecka-expert-picks-props-odds-for-japan-open-final/",
-        "https://scores24.live/en/tennis/m-06-10-2026-alcaraz-carlos-lehecka-jiri-prediction",
-        "https://www.sportskeeda.com/tennis/carlos-alcaraz-vs-jiri-lehecka-preview-head-to-head-odds-prediction-betting-tips-japan-open-2026-final"
-      ]
-    },
-    {
-      "sport": "WTA Beijing",
-      "matchup": "Mirra Andreeva vs Daria Snigur",
-      "date": "2026-10-06",
-      "start_time": "2026-10-06T03:00:00Z",
-      "favorite": "Mirra Andreeva",
-      "estimated_probability": {
-        "Mirra Andreeva": 84,
-        "Daria Snigur": 16
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "reasoning": [
-        "China Open Round of 16. Moneyline odds have Andreeva at roughly 1.16-1.19 (~84-86% implied); Dimers and Stats Insider's models independently land at 82-83%.",
-        "Andreeva (top-10 ranked) reached the Round of 16 at this event while Snigur is unseeded in the draw - a genuine ranking/level gap, not just narrative.",
-        "First-ever meeting between the two (no head-to-head history either way) - the edge here is built purely on the current ranking/form gap."
-      ],
-      "sources": [
-        "https://www.dimers.com/tennis/news/daria-snigur-vs-mirra-andreeva-tennis-prediction-wta-china-open-2026-ac",
-        "https://www.statsinsider.com.au/news/daria-snigur-vs-mirra-andreeva-prediction-wta-china-open-2026",
-        "https://www.tennis.com/tournaments/china-open-wta/matches/d-snigur-vs-m-andreeva-2026-10-06"
-      ]
     }
   ],
   "settled": [
@@ -1348,6 +1302,58 @@
       "winner": "Doesn't Hit",
       "settled_at": "2026-10-06T04:45:00Z",
       "final_score": "Igor Chernyshov was held to 0 shots on goal (15:03 TOI) as Dallas beat San Jose 5-0 - under 0.5, so the entry settles Doesn't Hit regardless of the other legs (which all hit: Johnston 3 SOG, Swayman 20 saves in a 4-1 loss to Ottawa, Connor 6 SOG)."
+    },
+    {
+      "sport": "ATP Tokyo",
+      "matchup": "Carlos Alcaraz vs Jiri Lehecka",
+      "date": "2026-10-06",
+      "start_time": "2026-10-06T09:00:00Z",
+      "favorite": "Carlos Alcaraz",
+      "estimated_probability": {
+        "Carlos Alcaraz": 80,
+        "Jiri Lehecka": 20
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "reasoning": [
+        "Japan Open final. Alcaraz is -400 on the moneyline (~80% implied) defending his Tokyo title after beating Jaume Munar in the semifinal; he's the higher-ranked, higher-form player.",
+        "Head-to-head is 3-1 in Alcaraz's favor, including a straight-sets win in their most recent meeting at the US Open; Lehecka's lone win came on a different surface/court (Doha 2025).",
+        "Both of their prior hard-court meetings went three sets, so there's real precedent for Lehecka making it competitive - kept below 'heavy favorite' territory for that reason."
+      ],
+      "sources": [
+        "https://www.sportsbettingdime.com/news/tennis/alcaraz-vs-lehecka-expert-picks-props-odds-for-japan-open-final/",
+        "https://scores24.live/en/tennis/m-06-10-2026-alcaraz-carlos-lehecka-jiri-prediction",
+        "https://www.sportskeeda.com/tennis/carlos-alcaraz-vs-jiri-lehecka-preview-head-to-head-odds-prediction-betting-tips-japan-open-2026-final"
+      ],
+      "winner": "Carlos Alcaraz",
+      "final_score": "Alcaraz def. Lehecka 7-6(4), 6-4 - his first title since Doha in February, and the first man since Sampras (1993-94) to defend the Tokyo title.",
+      "settled_at": "2026-10-06T11:00:00Z"
+    },
+    {
+      "sport": "WTA Beijing",
+      "matchup": "Mirra Andreeva vs Daria Snigur",
+      "date": "2026-10-06",
+      "start_time": "2026-10-06T03:00:00Z",
+      "favorite": "Mirra Andreeva",
+      "estimated_probability": {
+        "Mirra Andreeva": 84,
+        "Daria Snigur": 16
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "reasoning": [
+        "China Open Round of 16. Moneyline odds have Andreeva at roughly 1.16-1.19 (~84-86% implied); Dimers and Stats Insider's models independently land at 82-83%.",
+        "Andreeva (top-10 ranked) reached the Round of 16 at this event while Snigur is unseeded in the draw - a genuine ranking/level gap, not just narrative.",
+        "First-ever meeting between the two (no head-to-head history either way) - the edge here is built purely on the current ranking/form gap."
+      ],
+      "sources": [
+        "https://www.dimers.com/tennis/news/daria-snigur-vs-mirra-andreeva-tennis-prediction-wta-china-open-2026-ac",
+        "https://www.statsinsider.com.au/news/daria-snigur-vs-mirra-andreeva-prediction-wta-china-open-2026",
+        "https://www.tennis.com/tournaments/china-open-wta/matches/d-snigur-vs-m-andreeva-2026-10-06"
+      ],
+      "winner": "Mirra Andreeva",
+      "final_score": "Andreeva def. Snigur 6-2, 6-2 in 1h03m.",
+      "settled_at": "2026-10-06T11:00:00Z"
     }
   ],
   "prizepicks": []
