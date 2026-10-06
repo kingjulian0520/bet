@@ -1379,5 +1379,83 @@
       "settled_at": "2026-10-06T11:00:00Z"
     }
   ],
-  "prizepicks": []
+  "prizepicks": [
+    {
+      "sport": "Mixed",
+      "matchup": "Cam Fowler Over 0.5 SOG + Harry Kane Anytime Goalscorer + Brandt Clarke Over 0.5 SOG",
+      "date": "2026-10-06",
+      "start_time": "2026-10-06T18:45:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 2.37,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Cam Fowler",
+          "opponent": "Chicago Blackhawks",
+          "side": "Over",
+          "line": 0.5,
+          "stat": "Shots on Goal"
+        },
+        {
+          "type": "binary",
+          "player": "Harry Kane",
+          "opponent": "Czechia",
+          "side": "Yes",
+          "stat": "Anytime Goalscorer"
+        },
+        {
+          "type": "over_under",
+          "player": "Brandt Clarke",
+          "opponent": "Florida Panthers",
+          "side": "Over",
+          "line": 0.5,
+          "stat": "Shots on Goal"
+        }
+      ],
+      "platform": "DraftKings"
+    },
+    {
+      "sport": "NHL",
+      "matchup": "Bobby McMann Over 1.5 SOG + Rasmus Dahlin Over 1.5 SOG",
+      "date": "2026-10-06",
+      "start_time": "2026-10-06T23:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 1,
+      "actual_multiplier": 1.89,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Bobby McMann",
+          "opponent": "Vegas Golden Knights",
+          "side": "Over",
+          "line": 1.5,
+          "stat": "Shots on Goal"
+        },
+        {
+          "type": "over_under",
+          "player": "Rasmus Dahlin",
+          "opponent": "Minnesota Wild",
+          "side": "Over",
+          "line": 1.5,
+          "stat": "Shots on Goal"
+        }
+      ],
+      "platform": "DraftKings"
+    }
+  ]
 }
