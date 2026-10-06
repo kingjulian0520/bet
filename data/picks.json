@@ -3,31 +3,6 @@
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
-      "sport": "NFL",
-      "matchup": "Atlanta Falcons vs New Orleans Saints",
-      "date": "2026-10-05",
-      "start_time": "2026-10-06T00:15:00Z",
-      "favorite": "New Orleans Saints",
-      "estimated_probability": {
-        "New Orleans Saints": 57,
-        "Atlanta Falcons": 43
-      },
-      "confidence_label": "Coin flip",
-      "recommended_units": 0.5,
-      "reasoning": [
-        "Vegas has the Saints as ~1.5-2.5 pt home favorites (-130 ML); Dimers' model gives them a 56.7% win probability - genuinely close, not a case of one team being clearly better (both teams are 1-2).",
-        "Saints are missing 3 linebackers (Elliss, Granderson, Jennings all OUT) and just placed RB Travis Etienne on IR; their run defense ranks 27th in the NFL (~129 rush yds/gm allowed).",
-        "Falcons RB Bijan Robinson just ran for 194 yards and 2 TDs against Green Bay and enters with real momentum; Atlanta also won the most recent head-to-head 24-10 in 2025.",
-        "Despite the injury/form edge pointing toward Atlanta, the market still favors New Orleans at home - treating this as a legitimately close call, not a lean either way."
-      ],
-      "sources": [
-        "https://www.sportsbettingdime.com/news/nfl/final-falcons-vs-saints-injury-report-for-mnf/",
-        "https://www.dimers.com/nfl/predictions/2026_4_no_atl",
-        "https://news.kalshi.com/p/falcons-vs-saints-odds-2026-nfl-week-4",
-        "https://sports.yahoo.com/articles/nfc-south-falcons-leapfrog-bucs-000053998.html"
-      ]
-    },
-    {
       "sport": "CFB",
       "matchup": "Troy Trojans vs Southern Miss Golden Eagles",
       "date": "2026-10-06",
@@ -1015,12 +990,54 @@
       "reasoning": [],
       "sources": [],
       "legs": [
-        { "type": "over_under", "player": "Jack Campbell", "opponent": "TBD", "side": "Over", "line": 5.5, "stat": "Tackles + Assists" },
-        { "type": "over_under", "player": "Sam LaPorta", "opponent": "TBD", "side": "Over", "line": 24.5, "stat": "Receiving Yards" },
-        { "type": "over_under", "player": "Jared Goff", "opponent": "TBD", "side": "Over", "line": 199.5, "stat": "Passing + Rushing Yards" },
-        { "type": "over_under", "player": "Jared Goff", "opponent": "TBD", "side": "Over", "line": 19.5, "stat": "Completions" },
-        { "type": "over_under", "player": "Jared Goff", "opponent": "TBD", "side": "Over", "line": 27.5, "stat": "Passing Attempts" },
-        { "type": "over_under", "player": "Jake Bates", "opponent": "TBD", "side": "Over", "line": 0.5, "stat": "Field Goals Made" }
+        {
+          "type": "over_under",
+          "player": "Jack Campbell",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 5.5,
+          "stat": "Tackles + Assists"
+        },
+        {
+          "type": "over_under",
+          "player": "Sam LaPorta",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 24.5,
+          "stat": "Receiving Yards"
+        },
+        {
+          "type": "over_under",
+          "player": "Jared Goff",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 199.5,
+          "stat": "Passing + Rushing Yards"
+        },
+        {
+          "type": "over_under",
+          "player": "Jared Goff",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 19.5,
+          "stat": "Completions"
+        },
+        {
+          "type": "over_under",
+          "player": "Jared Goff",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 27.5,
+          "stat": "Passing Attempts"
+        },
+        {
+          "type": "over_under",
+          "player": "Jake Bates",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 0.5,
+          "stat": "Field Goals Made"
+        }
       ],
       "platform": "DraftKings",
       "winner": "Hits",
@@ -1043,15 +1060,46 @@
       "reasoning": [],
       "sources": [],
       "legs": [
-        { "type": "moneyline", "player": "Iga Swiatek", "opponent": "TBD", "side": "Iga Swiatek" }
+        {
+          "type": "moneyline",
+          "player": "Iga Swiatek",
+          "opponent": "TBD",
+          "side": "Iga Swiatek"
+        }
       ],
       "platform": "DraftKings",
       "winner": "Hits",
       "final_score": "Hits.",
       "settled_at": "2026-10-05T21:00:00Z"
-    }
-  ],
-  "prizepicks": [
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Atlanta Falcons vs New Orleans Saints",
+      "date": "2026-10-05",
+      "start_time": "2026-10-06T00:15:00Z",
+      "favorite": "New Orleans Saints",
+      "estimated_probability": {
+        "New Orleans Saints": 57,
+        "Atlanta Falcons": 43
+      },
+      "confidence_label": "Coin flip",
+      "recommended_units": 0.5,
+      "reasoning": [
+        "Vegas has the Saints as ~1.5-2.5 pt home favorites (-130 ML); Dimers' model gives them a 56.7% win probability - genuinely close, not a case of one team being clearly better (both teams are 1-2).",
+        "Saints are missing 3 linebackers (Elliss, Granderson, Jennings all OUT) and just placed RB Travis Etienne on IR; their run defense ranks 27th in the NFL (~129 rush yds/gm allowed).",
+        "Falcons RB Bijan Robinson just ran for 194 yards and 2 TDs against Green Bay and enters with real momentum; Atlanta also won the most recent head-to-head 24-10 in 2025.",
+        "Despite the injury/form edge pointing toward Atlanta, the market still favors New Orleans at home - treating this as a legitimately close call, not a lean either way."
+      ],
+      "sources": [
+        "https://www.sportsbettingdime.com/news/nfl/final-falcons-vs-saints-injury-report-for-mnf/",
+        "https://www.dimers.com/nfl/predictions/2026_4_no_atl",
+        "https://news.kalshi.com/p/falcons-vs-saints-odds-2026-nfl-week-4",
+        "https://sports.yahoo.com/articles/nfc-south-falcons-leapfrog-bucs-000053998.html"
+      ],
+      "winner": "Atlanta Falcons",
+      "final_score": "Falcons 45-24 Saints",
+      "settled_at": "2026-10-06T04:30:00Z"
+    },
     {
       "sport": "NFL",
       "matchup": "Michael Penix Jr. Over 74.5 Passing Yards 1st Half + Bijan Robinson Over 24.5 Rushing Yards 1st Half + Tyler Shough Over 229.5 Pass Yards + Juwan Johnson Over 2.5 Receptions + Bijan Robinson Over 13.5 Rush Attempts",
@@ -1068,13 +1116,56 @@
       "reasoning": [],
       "sources": [],
       "legs": [
-        { "type": "over_under", "player": "Michael Penix Jr.", "opponent": "New Orleans Saints", "side": "Over", "line": 74.5, "stat": "Passing Yards 1st Half" },
-        { "type": "over_under", "player": "Bijan Robinson", "opponent": "New Orleans Saints", "side": "Over", "line": 24.5, "stat": "Rushing Yards 1st Half" },
-        { "type": "over_under", "player": "Tyler Shough", "opponent": "Atlanta Falcons", "side": "Over", "line": 229.5, "stat": "Passing Yards" },
-        { "type": "over_under", "player": "Juwan Johnson", "opponent": "Atlanta Falcons", "side": "Over", "line": 2.5, "stat": "Receptions" },
-        { "type": "over_under", "player": "Bijan Robinson", "opponent": "New Orleans Saints", "side": "Over", "line": 13.5, "stat": "Rush Attempts" }
+        {
+          "type": "over_under",
+          "player": "Michael Penix Jr.",
+          "opponent": "New Orleans Saints",
+          "side": "Over",
+          "line": 74.5,
+          "stat": "Passing Yards 1st Half",
+          "actual_value": 125
+        },
+        {
+          "type": "over_under",
+          "player": "Bijan Robinson",
+          "opponent": "New Orleans Saints",
+          "side": "Over",
+          "line": 24.5,
+          "stat": "Rushing Yards 1st Half",
+          "actual_value": 103
+        },
+        {
+          "type": "over_under",
+          "player": "Tyler Shough",
+          "opponent": "Atlanta Falcons",
+          "side": "Over",
+          "line": 229.5,
+          "stat": "Passing Yards",
+          "actual_value": 286
+        },
+        {
+          "type": "over_under",
+          "player": "Juwan Johnson",
+          "opponent": "Atlanta Falcons",
+          "side": "Over",
+          "line": 2.5,
+          "stat": "Receptions",
+          "actual_value": 6
+        },
+        {
+          "type": "over_under",
+          "player": "Bijan Robinson",
+          "opponent": "New Orleans Saints",
+          "side": "Over",
+          "line": 13.5,
+          "stat": "Rush Attempts",
+          "actual_value": 19
+        }
       ],
-      "platform": "DraftKings"
+      "platform": "DraftKings",
+      "winner": "Hits",
+      "settled_at": "2026-10-06T04:30:00Z",
+      "final_score": "Falcons 45-24 Saints. Penix 125 pass yds in the 1st half (over 74.5), Bijan Robinson 103 rush yds in the 1st half (over 24.5), Shough 286 pass yds (over 229.5), Juwan Johnson 6 receptions (over 2.5), Bijan 19 carries (over 13.5). All five legs hit."
     },
     {
       "sport": "NFL",
@@ -1092,37 +1183,64 @@
       "reasoning": [],
       "sources": [],
       "legs": [
-        { "type": "binary", "player": "Bijan Robinson", "opponent": "New Orleans Saints", "side": "Yes", "stat": "Anytime TD Scorer" },
-        { "type": "over_under", "player": "Michael Penix Jr.", "opponent": "New Orleans Saints", "side": "Over", "line": 0.5, "stat": "Passing TD's" },
-        { "type": "over_under", "player": "Tyler Shough", "opponent": "Atlanta Falcons", "side": "Over", "line": 0.5, "stat": "Passing TD's" },
-        { "type": "over_under", "player": "Tyler Shough", "opponent": "Atlanta Falcons", "side": "Over", "line": 199.5, "stat": "Passing Yards" },
-        { "type": "over_under", "player": "Chris Olave", "opponent": "Atlanta Falcons", "side": "Over", "line": 79.5, "stat": "Receiving Yards" },
-        { "type": "over_under", "player": "Bijan Robinson", "opponent": "New Orleans Saints", "side": "Over", "line": 99.5, "stat": "Rushing Yards" }
+        {
+          "type": "binary",
+          "player": "Bijan Robinson",
+          "opponent": "New Orleans Saints",
+          "side": "Yes",
+          "stat": "Anytime TD Scorer",
+          "actual_value": 2
+        },
+        {
+          "type": "over_under",
+          "player": "Michael Penix Jr.",
+          "opponent": "New Orleans Saints",
+          "side": "Over",
+          "line": 0.5,
+          "stat": "Passing TD's",
+          "actual_value": 1
+        },
+        {
+          "type": "over_under",
+          "player": "Tyler Shough",
+          "opponent": "Atlanta Falcons",
+          "side": "Over",
+          "line": 0.5,
+          "stat": "Passing TD's",
+          "actual_value": 1
+        },
+        {
+          "type": "over_under",
+          "player": "Tyler Shough",
+          "opponent": "Atlanta Falcons",
+          "side": "Over",
+          "line": 199.5,
+          "stat": "Passing Yards",
+          "actual_value": 286
+        },
+        {
+          "type": "over_under",
+          "player": "Chris Olave",
+          "opponent": "Atlanta Falcons",
+          "side": "Over",
+          "line": 79.5,
+          "stat": "Receiving Yards",
+          "actual_value": 116
+        },
+        {
+          "type": "over_under",
+          "player": "Bijan Robinson",
+          "opponent": "New Orleans Saints",
+          "side": "Over",
+          "line": 99.5,
+          "stat": "Rushing Yards",
+          "actual_value": 145
+        }
       ],
-      "platform": "DraftKings"
-    },
-    {
-      "sport": "NHL",
-      "matchup": "Igor Chernyshov Over 0.5 SOG + Wyatt Johnston Over 1.5 SOG + Jeremy Swayman Over 19.5 Saves + Kyle Connor Over 1.5 SOG",
-      "date": "2026-10-05",
-      "start_time": "2026-10-05T23:00:00Z",
-      "favorite": "Hits",
-      "estimated_probability": {
-        "Hits": 50,
-        "Doesn't Hit": 50
-      },
-      "recommended_units": 1,
-      "actual_multiplier": 1.99,
-      "is_prizepicks": true,
-      "reasoning": [],
-      "sources": [],
-      "legs": [
-        { "type": "over_under", "player": "Igor Chernyshov", "opponent": "TBD", "side": "Over", "line": 0.5, "stat": "Shots on Goal" },
-        { "type": "over_under", "player": "Wyatt Johnston", "opponent": "TBD", "side": "Over", "line": 1.5, "stat": "Shots on Goal" },
-        { "type": "over_under", "player": "Jeremy Swayman", "opponent": "TBD", "side": "Over", "line": 19.5, "stat": "Saves" },
-        { "type": "over_under", "player": "Kyle Connor", "opponent": "TBD", "side": "Over", "line": 1.5, "stat": "Shots on Goal" }
-      ],
-      "platform": "DraftKings"
+      "platform": "DraftKings",
+      "winner": "Hits",
+      "settled_at": "2026-10-06T04:30:00Z",
+      "final_score": "Falcons 45-24 Saints. Bijan Robinson 2 rushing TDs and 145 rush yds, Penix 1 passing TD, Shough 1 passing TD and 286 pass yds, Olave 116 receiving yds. All six legs hit."
     },
     {
       "sport": "Mixed",
@@ -1140,9 +1258,89 @@
       "reasoning": [],
       "sources": [],
       "legs": [
-        { "type": "over_under", "player": "Tyler Shough", "opponent": "Atlanta Falcons", "side": "Over", "line": 23.5, "stat": "Passing Completions" },
-        { "type": "over_under", "player": "Chris Olave", "opponent": "Atlanta Falcons", "side": "Over", "line": 85.5, "stat": "Receiving Yards" },
-        { "type": "over_under", "player": "Cam Schlittler", "opponent": "TBD", "side": "Over", "line": 4.5, "stat": "Strikeouts Thrown" }
+        {
+          "type": "over_under",
+          "player": "Tyler Shough",
+          "opponent": "Atlanta Falcons",
+          "side": "Over",
+          "line": 23.5,
+          "stat": "Passing Completions",
+          "actual_value": 30
+        },
+        {
+          "type": "over_under",
+          "player": "Chris Olave",
+          "opponent": "Atlanta Falcons",
+          "side": "Over",
+          "line": 85.5,
+          "stat": "Receiving Yards",
+          "actual_value": 116
+        },
+        {
+          "type": "over_under",
+          "player": "Cam Schlittler",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 4.5,
+          "stat": "Strikeouts Thrown",
+          "actual_value": 2
+        }
+      ],
+      "platform": "DraftKings",
+      "winner": "Doesn't Hit",
+      "settled_at": "2026-10-06T04:30:00Z",
+      "final_score": "Cam Schlittler struck out only 2 in 4 1/3 innings of ALDS Game 2 (Rays 5-2 Yankees) - under 4.5, so the entry settles Doesn't Hit. Shough (30 completions) and Olave (116 rec yds) hit."
+    }
+  ],
+  "prizepicks": [
+    {
+      "sport": "NHL",
+      "matchup": "Igor Chernyshov Over 0.5 SOG + Wyatt Johnston Over 1.5 SOG + Jeremy Swayman Over 19.5 Saves + Kyle Connor Over 1.5 SOG",
+      "date": "2026-10-05",
+      "start_time": "2026-10-05T23:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 1,
+      "actual_multiplier": 1.99,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Igor Chernyshov",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 0.5,
+          "stat": "Shots on Goal"
+        },
+        {
+          "type": "over_under",
+          "player": "Wyatt Johnston",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 1.5,
+          "stat": "Shots on Goal"
+        },
+        {
+          "type": "over_under",
+          "player": "Jeremy Swayman",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 19.5,
+          "stat": "Saves"
+        },
+        {
+          "type": "over_under",
+          "player": "Kyle Connor",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 1.5,
+          "stat": "Shots on Goal"
+        }
       ],
       "platform": "DraftKings"
     }
