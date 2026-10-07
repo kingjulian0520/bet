@@ -95,6 +95,31 @@
         "https://www.lta.org.uk/news/2026/march/cam-norrie-becomes-british-no.1-for-first-time-in-two-years",
         "https://en.wikipedia.org/wiki/Dalibor_Svr%C4%8Dina"
       ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Sam Houston vs Liberty",
+      "date": "2026-10-08",
+      "start_time": "2026-10-08T23:00:00Z",
+      "favorite": "Liberty Flames",
+      "estimated_probability": {
+        "Liberty Flames": 82,
+        "Sam Houston Bearkats": 18
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "reasoning": [
+        "Liberty is 4-1 (1-0 Conference USA) with a four-game win streak, including a 51-15 win over Coastal Carolina and a win at Delaware to open league play, and plays at home in Lynchburg on a short week.",
+        "Sam Houston is 1-3 (beat Nicholls 59-0 but lost to Troy 24-21, Tulsa 23-17 and Texas Tech 49-14) and is on the road.",
+        "Market and models agree: Liberty about -629 (~86% implied) and a 13.5-point favorite; computer models give Liberty ~86%. Held at 82% because several Liberty wins were close (24-23 over Ball State, 20-13 over Gardner-Webb) and Sam Houston is 3-1 against the spread this season.",
+        "No injury information turned up for either side in the sources checked."
+      ],
+      "sources": [
+        "https://www.fanduel.com/research/liberty-vs-sam-houston-college-football-odds-picks-best-bets-for-10-8-2026",
+        "https://www.dimers.com/cfb/predictions/2026_6_lib_shsu",
+        "https://www.bleachernation.com/picks/2026/10/06/liberty-vs-sam-houston-football-best-bets-computer-predictions-oct-8/",
+        "https://sports.yahoo.com/articles/sam-houston-vs-liberty-prediction-091401142.html"
+      ]
     }
   ],
   "settled": [
