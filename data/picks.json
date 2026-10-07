@@ -23,7 +23,8 @@
         "https://www.dimers.com/cfb/predictions/2026_6_fiu_nmsu",
         "https://www.sportsgrid.com/cfb/game/new-mexico-state-aggies-florida-international-panthers-scores-odds-picks-props-october-07-2026/817868ec-78b9-4849-8ae8-7a65590d7040",
         "https://en.wikipedia.org/wiki/2026_FIU_Panthers_football"
-      ]
+      ],
+      "actual_multiplier": 1.43
     },
     {
       "sport": "NFL",
@@ -46,7 +47,8 @@
         "https://www.covers.com/nfl/week-5-odds-opening-lines-2026",
         "https://www.nbcsports.com/fantasy/football/player-news/2026-09-28/rap-baker-mayfield-thumb-could-miss-2-4-weeks",
         "https://www.buccaneers.com/news/teddy-bridgewater-ive-got-answer-the-bell"
-      ]
+      ],
+      "actual_multiplier": 1.49
     },
     {
       "sport": "ATP Shanghai",
@@ -70,7 +72,8 @@
         "https://www.lta.org.uk/news/2026/october/rolex-shanghai-masters-draws-announced-for-britains-arthur-fery-and-cam-norrie/",
         "https://www.lta.org.uk/news/2026/march/cam-norrie-becomes-british-no.1-for-first-time-in-two-years",
         "https://en.wikipedia.org/wiki/Dalibor_Svr%C4%8Dina"
-      ]
+      ],
+      "actual_multiplier": 1.5
     },
     {
       "sport": "CFB",
@@ -95,7 +98,8 @@
         "https://www.dimers.com/cfb/predictions/2026_6_lib_shsu",
         "https://www.bleachernation.com/picks/2026/10/06/liberty-vs-sam-houston-football-best-bets-computer-predictions-oct-8/",
         "https://sports.yahoo.com/articles/sam-houston-vs-liberty-prediction-091401142.html"
-      ]
+      ],
+      "actual_multiplier": 1.18
     }
   ],
   "settled": [
@@ -425,7 +429,8 @@
       ],
       "winner": "Carlos Alcaraz",
       "final_score": "Alcaraz def. Michelsen 7-6(1), 4-6, 6-1",
-      "settled_at": "2026-10-02T18:00:00Z"
+      "settled_at": "2026-10-02T18:00:00Z",
+      "actual_multiplier": 1.54
     },
     {
       "sport": "NHL",
@@ -449,7 +454,8 @@
       ],
       "winner": "Colorado Avalanche",
       "final_score": "Avalanche 8, Kings 4 - MacKinnon and Lehkonen each scored twice",
-      "settled_at": "2026-10-02T18:00:00Z"
+      "settled_at": "2026-10-02T18:00:00Z",
+      "actual_multiplier": 1.67
     },
     {
       "sport": "ATP Beijing",
@@ -473,7 +479,8 @@
       ],
       "winner": "Alexander Zverev",
       "final_score": "Zverev def. Norrie 7-6(1), 6-4",
-      "settled_at": "2026-10-02T18:00:00Z"
+      "settled_at": "2026-10-02T18:00:00Z",
+      "actual_multiplier": 1.2
     },
     {
       "sport": "ATP Beijing",
@@ -495,7 +502,8 @@
       ],
       "winner": "Alex de Minaur",
       "final_score": "de Minaur def. Navone 7-6(4), 6-2",
-      "settled_at": "2026-10-02T18:00:00Z"
+      "settled_at": "2026-10-02T18:00:00Z",
+      "actual_multiplier": 1.28
     },
     {
       "sport": "ATP Beijing",
@@ -519,7 +527,8 @@
       ],
       "winner": "Jakub Mensik",
       "final_score": "Mensik def. Bublik 6-4, 7-6",
-      "settled_at": "2026-10-02T18:00:00Z"
+      "settled_at": "2026-10-02T18:00:00Z",
+      "actual_multiplier": 1.59
     },
     {
       "sport": "ATP Tokyo",
@@ -542,7 +551,8 @@
       ],
       "winner": "Stefanos Tsitsipas",
       "final_score": "Tsitsipas def. Etcheverry 4-6, 6-3, 6-4",
-      "settled_at": "2026-10-02T18:00:00Z"
+      "settled_at": "2026-10-02T18:00:00Z",
+      "actual_multiplier": 1.25
     },
     {
       "sport": "NHL",
@@ -600,45 +610,6 @@
       "settled_at": "2026-10-03T04:20:00Z"
     },
     {
-      "sport": "Mixed",
-      "matchup": "Ozan Kabak Over 1.5 Fouls + Carson Hansen Over 34.5 Rush Yards",
-      "date": "2026-10-02",
-      "start_time": "2026-10-02T23:00:00Z",
-      "favorite": "Hits",
-      "estimated_probability": {
-        "Hits": 50,
-        "Doesn't Hit": 50
-      },
-      "recommended_units": 0.5,
-      "actual_multiplier": 3.75,
-      "is_prizepicks": true,
-      "reasoning": [],
-      "sources": [],
-      "legs": [
-        {
-          "type": "over_under",
-          "player": "Ozan Kabak",
-          "opponent": "TBD",
-          "side": "Over",
-          "line": 1.5,
-          "stat": "Fouls"
-        },
-        {
-          "type": "over_under",
-          "player": "Carson Hansen",
-          "opponent": "Northwestern",
-          "side": "Over",
-          "line": 34.5,
-          "stat": "Rush Yards",
-          "actual_value": 19
-        }
-      ],
-      "platform": "PrizePicks",
-      "winner": "Doesn't Hit",
-      "final_score": "Northwestern 34-13 Penn State. Carson Hansen had 19 rushing yards (under 34.5; Penn State rushed for only 48 as a team) - that leg missed, so the entry settles Doesn't Hit. (Kabak fouls not needed.)",
-      "settled_at": "2026-10-03T04:20:00Z"
-    },
-    {
       "sport": "CFB",
       "matchup": "Notre Dame vs North Carolina",
       "date": "2026-10-03",
@@ -664,7 +635,8 @@
       ],
       "winner": "Notre Dame",
       "final_score": "Notre Dame 37-26 North Carolina",
-      "settled_at": "2026-10-03T20:30:00Z"
+      "settled_at": "2026-10-03T20:30:00Z",
+      "actual_multiplier": 1.06
     },
     {
       "sport": "CFB",
@@ -691,7 +663,8 @@
       ],
       "winner": "Georgia",
       "final_score": "Georgia 38-14 Vanderbilt",
-      "settled_at": "2026-10-03T20:30:00Z"
+      "settled_at": "2026-10-03T20:30:00Z",
+      "actual_multiplier": 1.04
     },
     {
       "sport": "CFB",
@@ -718,7 +691,8 @@
       ],
       "winner": "Indiana",
       "final_score": "Indiana 47-15 Rutgers",
-      "settled_at": "2026-10-04T04:15:00Z"
+      "settled_at": "2026-10-04T04:15:00Z",
+      "actual_multiplier": 1.05
     },
     {
       "sport": "Mixed",
@@ -891,7 +865,8 @@
       ],
       "winner": "New England Patriots",
       "final_score": "Patriots 29-26 Bills",
-      "settled_at": "2026-10-04T20:30:00Z"
+      "settled_at": "2026-10-04T20:30:00Z",
+      "actual_multiplier": 1.33
     },
     {
       "sport": "NFL",
@@ -919,7 +894,8 @@
       ],
       "winner": "Baltimore Ravens",
       "final_score": "Ravens 24-18 Titans",
-      "settled_at": "2026-10-04T22:30:00Z"
+      "settled_at": "2026-10-04T22:30:00Z",
+      "actual_multiplier": 1.14
     },
     {
       "sport": "NFL",
@@ -946,7 +922,8 @@
       ],
       "winner": "Minnesota Vikings",
       "final_score": "Vikings 15-10 Dolphins",
-      "settled_at": "2026-10-05T00:30:00Z"
+      "settled_at": "2026-10-05T00:30:00Z",
+      "actual_multiplier": 1.15
     },
     {
       "sport": "NFL",
@@ -974,7 +951,8 @@
       ],
       "winner": "Seattle Seahawks",
       "final_score": "Seahawks 30-23 Chargers",
-      "settled_at": "2026-10-05T00:30:00Z"
+      "settled_at": "2026-10-05T00:30:00Z",
+      "actual_multiplier": 1.29
     },
     {
       "sport": "NFL",
@@ -1100,7 +1078,8 @@
       ],
       "winner": "Atlanta Falcons",
       "final_score": "Falcons 45-24 Saints",
-      "settled_at": "2026-10-06T04:30:00Z"
+      "settled_at": "2026-10-06T04:30:00Z",
+      "actual_multiplier": 1.82
     },
     {
       "sport": "NFL",
@@ -1375,7 +1354,8 @@
       ],
       "winner": "Carlos Alcaraz",
       "final_score": "Alcaraz def. Lehecka 7-6(4), 6-4 - his first title since Doha in February, and the first man since Sampras (1993-94) to defend the Tokyo title.",
-      "settled_at": "2026-10-06T11:00:00Z"
+      "settled_at": "2026-10-06T11:00:00Z",
+      "actual_multiplier": 1.25
     },
     {
       "sport": "WTA Beijing",
@@ -1401,7 +1381,8 @@
       ],
       "winner": "Mirra Andreeva",
       "final_score": "Andreeva def. Snigur 6-2, 6-2 in 1h03m.",
-      "settled_at": "2026-10-06T11:00:00Z"
+      "settled_at": "2026-10-06T11:00:00Z",
+      "actual_multiplier": 1.15
     },
     {
       "sport": "CFB",
@@ -1428,7 +1409,8 @@
       ],
       "winner": "Troy Trojans",
       "final_score": "Troy 55-34 Southern Miss",
-      "settled_at": "2026-10-07T04:15:00Z"
+      "settled_at": "2026-10-07T04:15:00Z",
+      "actual_multiplier": 1.24
     },
     {
       "sport": "ATP Shanghai",
@@ -1455,7 +1437,8 @@
       ],
       "winner": "Arthur Fery",
       "final_score": "Fery 7-6(2), 6-1",
-      "settled_at": "2026-10-07T14:18:51Z"
+      "settled_at": "2026-10-07T14:18:51Z",
+      "actual_multiplier": 1.57
     },
     {
       "sport": "Mixed",
