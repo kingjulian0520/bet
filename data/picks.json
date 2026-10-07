@@ -50,30 +50,6 @@
     },
     {
       "sport": "ATP Shanghai",
-      "matchup": "Arthur Fery vs Marin Cilic",
-      "date": "2026-10-06",
-      "start_time": "2026-10-07T04:30:00Z",
-      "favorite": "Arthur Fery",
-      "estimated_probability": {
-        "Arthur Fery": 70,
-        "Marin Cilic": 30
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 1,
-      "reasoning": [
-        "Fery (career-high ATP No. 33) is in the best form of his career - British No. 1, first tour-level semifinal at Wimbledon 2026 as a wildcard - while Cilic (37, ranked outside the top 45) is 11-10 (52.4%) in 2026 and in the twilight of his career.",
-        "Their only prior meeting (Paris Masters 2024) went to Fils in straight sets, though note this is a different player from the similarly-named Arthur Fils - treating this strictly as a ranking/form gap, not head-to-head history.",
-        "Kept at a Lean rather than higher: Cilic's serve and hard-court pedigree (former US Open champion) still make him a live threat capable of an upset against a less experienced opponent.",
-        "First-round match; exact start time within the Oct 7 day session is an estimate - the hour-by-hour order of play wasn't published yet at research time."
-      ],
-      "sources": [
-        "https://www.lta.org.uk/news/2026/october/rolex-shanghai-masters-draws-announced-for-britains-arthur-fery-and-cam-norrie/",
-        "https://www.lta.org.uk/news/arthur-fery-becomes-british-no.1-with-atp-top-40-debut",
-        "https://old.media-azi.md/marin-cilic-ranking-di51.html"
-      ]
-    },
-    {
-      "sport": "ATP Shanghai",
       "matchup": "Cameron Norrie vs Dalibor Svrcina",
       "date": "2026-10-06",
       "start_time": "2026-10-07T04:30:00Z",
@@ -1453,6 +1429,33 @@
       "winner": "Troy Trojans",
       "final_score": "Troy 55-34 Southern Miss",
       "settled_at": "2026-10-07T04:15:00Z"
+    },
+    {
+      "sport": "ATP Shanghai",
+      "matchup": "Arthur Fery vs Marin Cilic",
+      "date": "2026-10-06",
+      "start_time": "2026-10-07T04:30:00Z",
+      "favorite": "Arthur Fery",
+      "estimated_probability": {
+        "Arthur Fery": 70,
+        "Marin Cilic": 30
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Fery (career-high ATP No. 33) is in the best form of his career - British No. 1, first tour-level semifinal at Wimbledon 2026 as a wildcard - while Cilic (37, ranked outside the top 45) is 11-10 (52.4%) in 2026 and in the twilight of his career.",
+        "Their only prior meeting (Paris Masters 2024) went to Fils in straight sets, though note this is a different player from the similarly-named Arthur Fils - treating this strictly as a ranking/form gap, not head-to-head history.",
+        "Kept at a Lean rather than higher: Cilic's serve and hard-court pedigree (former US Open champion) still make him a live threat capable of an upset against a less experienced opponent.",
+        "First-round match; exact start time within the Oct 7 day session is an estimate - the hour-by-hour order of play wasn't published yet at research time."
+      ],
+      "sources": [
+        "https://www.lta.org.uk/news/2026/october/rolex-shanghai-masters-draws-announced-for-britains-arthur-fery-and-cam-norrie/",
+        "https://www.lta.org.uk/news/arthur-fery-becomes-british-no.1-with-atp-top-40-debut",
+        "https://old.media-azi.md/marin-cilic-ranking-di51.html"
+      ],
+      "winner": "Arthur Fery",
+      "final_score": "Fery 7-6(2), 6-1",
+      "settled_at": "2026-10-07T14:18:51Z"
     }
   ],
   "prizepicks": [
