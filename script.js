@@ -1742,9 +1742,17 @@ function picksByDate() {
     if (!map[p.date]) map[p.date] = [];
     map[p.date].push(p);
   };
+  // Deliberately the raw (unpruned) arrays, not currentPicks/currentPrizePicks:
+  // the Calendar is a historical record of every pick ever made for a day, so
+  // a pick must stay visible there for the whole day even after its
+  // start_time passes and it drops off the live "today's picks" browsing view
+  // (that prune-on-start behavior is real and intentional, just scoped to
+  // that view - see prunePicks()). Once settled it's removed from rawPicks/
+  // rawPrizePicks and lives only in currentSettled, so there's never a
+  // duplicate between the two.
   currentSettled.forEach(add);
-  currentPicks.forEach(add);
-  currentPrizePicks.forEach(add);
+  rawPicks.forEach(add);
+  rawPrizePicks.forEach(add);
   return map;
 }
 
@@ -1770,7 +1778,7 @@ function renderCalendar() {
   const showDollars = displayMode === "dollars" && unitValue;
 
   const monthPrefix = `${calViewYear}-${pad2(calViewMonth + 1)}-`;
-  const monthPicks = [...currentSettled, ...currentPicks, ...currentPrizePicks].filter((p) =>
+  const monthPicks = [...currentSettled, ...rawPicks, ...rawPrizePicks].filter((p) =>
     (p.date || "").startsWith(monthPrefix)
   );
   const monthBreakdown = computeBreakdown(monthPicks);
