@@ -1035,7 +1035,7 @@
         "Doesn't Hit": 50
       },
       "recommended_units": 1,
-      "actual_multiplier": 1.35,
+      "actual_multiplier": 1.22,
       "is_prizepicks": true,
       "reasoning": [],
       "sources": [],
@@ -1499,7 +1499,7 @@
         "Doesn't Hit": 50
       },
       "recommended_units": 1,
-      "actual_multiplier": 1.89,
+      "actual_multiplier": 1.87,
       "is_prizepicks": true,
       "reasoning": [],
       "sources": [],
@@ -1699,6 +1699,98 @@
       "winner": "Doesn't Hit",
       "settled_at": "2026-10-07T18:00:00Z",
       "final_score": "Settled by the site owner (esports - not researched here)."
+    },
+    {
+      "sport": "NHL",
+      "matchup": "yoki Over 5.5 Map 1 Headshots + yoki Over 15.5 Map 1 Kills + Bobby Mcmann Over 1.5 SOG",
+      "date": "2026-10-01",
+      "start_time": "2026-10-01T23:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 4.25,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "yoki",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 5.5,
+          "stat": "Map 1 Headshots"
+        },
+        {
+          "type": "over_under",
+          "player": "yoki",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 15.5,
+          "stat": "Map 1 Kills"
+        },
+        {
+          "type": "over_under",
+          "player": "Bobby Mcmann",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 1.5,
+          "stat": "SOG"
+        }
+      ],
+      "platform": "PrizePicks",
+      "winner": "Doesn't Hit",
+      "final_score": "Settled by the site owner (esports leg - not researched here).",
+      "settled_at": "2026-10-02T12:00:00Z"
+    },
+    {
+      "sport": "Esports",
+      "matchup": "jresy Higher 30.5 Kills on Maps 1+2 + fakerealityy Higher 12.5 Kills on Map 1 + bekker Higher 26.5 Kills on Maps 1+2",
+      "date": "2026-10-01",
+      "start_time": "2026-10-01T23:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.25,
+      "actual_multiplier": 6.5,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "jresy",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 30.5,
+          "stat": "Kills on Maps 1+2"
+        },
+        {
+          "type": "over_under",
+          "player": "fakerealityy",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 12.5,
+          "stat": "Kills on Map 1"
+        },
+        {
+          "type": "over_under",
+          "player": "bekker",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 26.5,
+          "stat": "Kills on Maps 1+2"
+        }
+      ],
+      "platform": "UnderDog",
+      "winner": "Doesn't Hit",
+      "final_score": "Settled by the site owner (esports - not researched here).",
+      "settled_at": "2026-10-02T12:00:00Z"
     }
   ],
   "prizepicks": [
