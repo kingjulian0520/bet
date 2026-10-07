@@ -4,30 +4,6 @@
   "picks": [
     {
       "sport": "CFB",
-      "matchup": "Troy Trojans vs Southern Miss Golden Eagles",
-      "date": "2026-10-06",
-      "start_time": "2026-10-07T00:00:00Z",
-      "favorite": "Troy Trojans",
-      "estimated_probability": {
-        "Troy Trojans": 78,
-        "Southern Miss Golden Eagles": 22
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "reasoning": [
-        "Moneyline has Troy at -429 (~81% implied); independent models converge closely - numberFire 78.1%, Kalshi's prediction market 75%.",
-        "Southern Miss's defense is a real liability: 121st of 134 FBS teams in total yards allowed (418.3 ypg), 131st against the run (220.0 ypg), 116th in points allowed (31.3 ppg).",
-        "Southern Miss is 1-2 overall; Troy is 2-2 but its only losses include a competitive one to a ranked Missouri team - a real talent gap against a one-win CUSA opponent.",
-        "Caveat: Troy itself is 0-2 ATS this season as a double-digit favorite and has scored just 24, 17, and 10 points in its last three games - this is a moneyline-only lean, not a blowout call."
-      ],
-      "sources": [
-        "https://www.covers.com/ncaaf/southern-miss-vs-troy-prediction-picks-odds-oct-6-2026",
-        "https://www.bleachernation.com/picks/2026/10/04/troy-vs-southern-miss-prediction-live-odds-stats-history-and-picks-october-6-2026/",
-        "https://www.espn.com/college-football/team/stats/_/id/2572/southern-miss-golden-eagles"
-      ]
-    },
-    {
-      "sport": "CFB",
       "matchup": "New Mexico State Aggies vs FIU Panthers",
       "date": "2026-10-07",
       "start_time": "2026-10-07T23:30:00Z",
@@ -1425,6 +1401,33 @@
       "winner": "Mirra Andreeva",
       "final_score": "Andreeva def. Snigur 6-2, 6-2 in 1h03m.",
       "settled_at": "2026-10-06T11:00:00Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Troy Trojans vs Southern Miss Golden Eagles",
+      "date": "2026-10-06",
+      "start_time": "2026-10-07T00:00:00Z",
+      "favorite": "Troy Trojans",
+      "estimated_probability": {
+        "Troy Trojans": 78,
+        "Southern Miss Golden Eagles": 22
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "Moneyline has Troy at -429 (~81% implied); independent models converge closely - numberFire 78.1%, Kalshi's prediction market 75%.",
+        "Southern Miss's defense is a real liability: 121st of 134 FBS teams in total yards allowed (418.3 ypg), 131st against the run (220.0 ypg), 116th in points allowed (31.3 ppg).",
+        "Southern Miss is 1-2 overall; Troy is 2-2 but its only losses include a competitive one to a ranked Missouri team - a real talent gap against a one-win CUSA opponent.",
+        "Caveat: Troy itself is 0-2 ATS this season as a double-digit favorite and has scored just 24, 17, and 10 points in its last three games - this is a moneyline-only lean, not a blowout call."
+      ],
+      "sources": [
+        "https://www.covers.com/ncaaf/southern-miss-vs-troy-prediction-picks-odds-oct-6-2026",
+        "https://www.bleachernation.com/picks/2026/10/04/troy-vs-southern-miss-prediction-live-odds-stats-history-and-picks-october-6-2026/",
+        "https://www.espn.com/college-football/team/stats/_/id/2572/southern-miss-golden-eagles"
+      ],
+      "winner": "Troy Trojans",
+      "final_score": "Troy 55-34 Southern Miss",
+      "settled_at": "2026-10-07T04:15:00Z"
     }
   ],
   "prizepicks": [
