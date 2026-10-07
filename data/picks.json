@@ -1456,9 +1456,7 @@
       "winner": "Arthur Fery",
       "final_score": "Fery 7-6(2), 6-1",
       "settled_at": "2026-10-07T14:18:51Z"
-    }
-  ],
-  "prizepicks": [
+    },
     {
       "sport": "Mixed",
       "matchup": "Cam Fowler Over 0.5 SOG + Harry Kane Anytime Goalscorer + Brandt Clarke Over 0.5 SOG",
@@ -1481,14 +1479,16 @@
           "opponent": "Chicago Blackhawks",
           "side": "Over",
           "line": 0.5,
-          "stat": "Shots on Goal"
+          "stat": "Shots on Goal",
+          "actual_value": 2
         },
         {
           "type": "binary",
           "player": "Harry Kane",
           "opponent": "Czechia",
           "side": "Yes",
-          "stat": "Anytime Goalscorer"
+          "stat": "Anytime Goalscorer",
+          "actual_value": 2
         },
         {
           "type": "over_under",
@@ -1496,10 +1496,14 @@
           "opponent": "Florida Panthers",
           "side": "Over",
           "line": 0.5,
-          "stat": "Shots on Goal"
+          "stat": "Shots on Goal",
+          "actual_value": 0
         }
       ],
-      "platform": "DraftKings"
+      "platform": "DraftKings",
+      "winner": "Doesn't Hit",
+      "final_score": "Fowler 2 SOG (over 0.5), Kane scored twice vs Czechia (England 3-0), but Clarke had 0 SOG (under 0.5), so the entry settles Doesn't Hit. Stat lines supplied by the site owner.",
+      "settled_at": "2026-10-07T17:32:42Z"
     },
     {
       "sport": "NHL",
@@ -1523,7 +1527,8 @@
           "opponent": "Vegas Golden Knights",
           "side": "Over",
           "line": 1.5,
-          "stat": "Shots on Goal"
+          "stat": "Shots on Goal",
+          "actual_value": 3
         },
         {
           "type": "over_under",
@@ -1531,10 +1536,14 @@
           "opponent": "Minnesota Wild",
           "side": "Over",
           "line": 1.5,
-          "stat": "Shots on Goal"
+          "stat": "Shots on Goal",
+          "actual_value": 3
         }
       ],
-      "platform": "DraftKings"
+      "platform": "DraftKings",
+      "winner": "Hits",
+      "final_score": "McMann 3 SOG (over 1.5) and Dahlin 3 SOG (over 1.5). Both legs hit. Stat lines supplied by the site owner.",
+      "settled_at": "2026-10-07T17:32:42Z"
     },
     {
       "sport": "NBA",
@@ -1558,7 +1567,8 @@
           "opponent": "Charlotte Hornets",
           "side": "Over",
           "line": 17.5,
-          "stat": "Points + Rebounds + Assists"
+          "stat": "Points + Rebounds + Assists",
+          "actual_value": 23
         },
         {
           "type": "over_under",
@@ -1566,10 +1576,14 @@
           "opponent": "Oklahoma City Thunder",
           "side": "Over",
           "line": 15.5,
-          "stat": "Points + Rebounds + Assists"
+          "stat": "Points + Rebounds + Assists",
+          "actual_value": 16
         }
       ],
-      "platform": "PrizePicks"
+      "platform": "PrizePicks",
+      "winner": "Hits",
+      "final_score": "Porter Jr. 16 pts + 5 reb + 2 ast = 23 (over 17.5); Zion Williamson 11 pts + 4 reb + 1 ast = 16 (over 15.5). Both legs hit.",
+      "settled_at": "2026-10-07T17:32:42Z"
     },
     {
       "sport": "NBA",
@@ -1593,7 +1607,8 @@
           "opponent": "Brooklyn Nets",
           "side": "Over",
           "line": 13.5,
-          "stat": "Points + Rebounds + Assists"
+          "stat": "Points + Rebounds + Assists",
+          "actual_value": 17
         },
         {
           "type": "over_under",
@@ -1601,11 +1616,17 @@
           "opponent": "Oklahoma City Thunder",
           "side": "Over",
           "line": 15.5,
-          "stat": "Points + Rebounds + Assists"
+          "stat": "Points + Rebounds + Assists",
+          "actual_value": 16
         }
       ],
-      "platform": "PrizePicks"
-    },
+      "platform": "PrizePicks",
+      "winner": "Hits",
+      "final_score": "Reid 13 pts + 4 reb = 17+ (over 13.5); Murphy 11 pts + 3 reb + 2 ast = 16 (over 15.5). Both legs hit.",
+      "settled_at": "2026-10-07T17:32:42Z"
+    }
+  ],
+  "prizepicks": [
     {
       "sport": "Esports",
       "matchup": "Zanto Over 21.5 Maps 1-2 Kills + Nafkelah Over 9.5 Maps 1-3 Kills + Lake Over 11.5 Maps 1-2 Headshots + Xross Over 27 Maps 1-2 Kills",
