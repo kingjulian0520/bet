@@ -2077,9 +2077,7 @@
       "winner": "Doesn't Hit",
       "final_score": "Franz Wagner scored 6 points (under 10.5) in Magic 122-118 Grizzlies, so the entry settles Doesn't Hit. Angel Reese's 7 reb + 2 ast = 9 (under 14) would have hit.",
       "settled_at": "2026-10-08T14:18:28Z"
-    }
-  ],
-  "prizepicks": [
+    },
     {
       "sport": "NBA",
       "matchup": "Andrew Nembhard Over 12.5 PRA + Pascal Siakam Over 14.5 PRA + Miles Bridges Over 15.5 PRA + Desmond Bane Over 12.5 PRA + Paolo Banchero Over 14.5 PRA",
@@ -2102,7 +2100,8 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 12.5,
-          "stat": "Points + Rebounds + Assists"
+          "stat": "Points + Rebounds + Assists",
+          "actual_value": 7
         },
         {
           "type": "over_under",
@@ -2110,7 +2109,8 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 14.5,
-          "stat": "Points + Rebounds + Assists"
+          "stat": "Points + Rebounds + Assists",
+          "actual_value": 15
         },
         {
           "type": "over_under",
@@ -2118,7 +2118,8 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 15.5,
-          "stat": "Points + Rebounds + Assists"
+          "stat": "Points + Rebounds + Assists",
+          "actual_value": 5
         },
         {
           "type": "over_under",
@@ -2126,7 +2127,8 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 12.5,
-          "stat": "Points + Rebounds + Assists"
+          "stat": "Points + Rebounds + Assists",
+          "actual_value": 11
         },
         {
           "type": "over_under",
@@ -2134,10 +2136,14 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 14.5,
-          "stat": "Points + Rebounds + Assists"
+          "stat": "Points + Rebounds + Assists",
+          "actual_value": 17
         }
       ],
-      "platform": "PrizePicks"
+      "platform": "PrizePicks",
+      "winner": "Doesn't Hit",
+      "final_score": "Doesn't hit - Nembhard only had 7 PRA (O12.5) and Bridges 5 PRA (O15.5) and Bane 11 PRA (O12.5) all missed; kills the parlay regardless of Siakam (15, hit) and Banchero (17, hit).",
+      "settled_at": "2026-10-08T15:00:00Z"
     },
     {
       "sport": "Mixed",
@@ -2161,7 +2167,8 @@
           "opponent": "TBD",
           "side": "Under",
           "line": 3,
-          "stat": "3-Pointers Made"
+          "stat": "3-Pointers Made",
+          "actual_value": 2
         },
         {
           "type": "over_under",
@@ -2169,10 +2176,15 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 2.5,
-          "stat": "Strikeouts Thrown"
+          "stat": "Strikeouts Thrown",
+          "actual_value": 7
         }
       ],
-      "platform": "PrizePicks"
+      "platform": "PrizePicks",
+      "winner": "Hits",
+      "final_score": "Howard 2 threes (Under 3, hits), Fried 7 Ks (Over 2.5, hits) - both legs hit.",
+      "settled_at": "2026-10-08T15:00:00Z"
     }
-  ]
+  ],
+  "prizepicks": []
 }
