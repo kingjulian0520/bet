@@ -27,31 +27,6 @@
       "actual_multiplier": 1.49
     },
     {
-      "sport": "ATP Shanghai",
-      "matchup": "Cameron Norrie vs Dalibor Svrcina",
-      "date": "2026-10-06",
-      "start_time": "2026-10-07T04:30:00Z",
-      "favorite": "Cameron Norrie",
-      "estimated_probability": {
-        "Cameron Norrie": 72,
-        "Dalibor Svrcina": 28
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 1.25,
-      "reasoning": [
-        "Norrie (ATP No. 35, British No. 1, 2026 quarterfinals at Indian Wells and Wimbledon) is a tour regular with a deep, consistent season.",
-        "Svrcina came through qualifying and has fallen to No. 134 as of late August 2026, well off his career-high No. 86 - a team trending the wrong way just to reach the main draw.",
-        "A roughly 100-spot ranking gap between an in-form tour regular and a sliding qualifier is a real edge, but kept at a Lean since qualifiers are frequently playing loose, high-variance tennis right after winning three qualifying matches.",
-        "First-round match; exact start time within the Oct 7 day session is an estimate - the hour-by-hour order of play wasn't published yet at research time."
-      ],
-      "sources": [
-        "https://www.lta.org.uk/news/2026/october/rolex-shanghai-masters-draws-announced-for-britains-arthur-fery-and-cam-norrie/",
-        "https://www.lta.org.uk/news/2026/march/cam-norrie-becomes-british-no.1-for-first-time-in-two-years",
-        "https://en.wikipedia.org/wiki/Dalibor_Svr%C4%8Dina"
-      ],
-      "actual_multiplier": 1.5
-    },
-    {
       "sport": "CFB",
       "matchup": "Sam Houston vs Liberty",
       "date": "2026-10-08",
@@ -2184,6 +2159,34 @@
       "winner": "Hits",
       "final_score": "Howard 2 threes (Under 3, hits), Fried 7 Ks (Over 2.5, hits) - both legs hit.",
       "settled_at": "2026-10-08T15:00:00Z"
+    },
+    {
+      "sport": "ATP Shanghai",
+      "matchup": "Cameron Norrie vs Dalibor Svrcina",
+      "date": "2026-10-06",
+      "start_time": "2026-10-07T04:30:00Z",
+      "favorite": "Cameron Norrie",
+      "estimated_probability": {
+        "Cameron Norrie": 72,
+        "Dalibor Svrcina": 28
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "Norrie (ATP No. 35, British No. 1, 2026 quarterfinals at Indian Wells and Wimbledon) is a tour regular with a deep, consistent season.",
+        "Svrcina came through qualifying and has fallen to No. 134 as of late August 2026, well off his career-high No. 86 - a team trending the wrong way just to reach the main draw.",
+        "A roughly 100-spot ranking gap between an in-form tour regular and a sliding qualifier is a real edge, but kept at a Lean since qualifiers are frequently playing loose, high-variance tennis right after winning three qualifying matches.",
+        "First-round match; exact start time within the Oct 7 day session is an estimate - the hour-by-hour order of play wasn't published yet at research time."
+      ],
+      "sources": [
+        "https://www.lta.org.uk/news/2026/october/rolex-shanghai-masters-draws-announced-for-britains-arthur-fery-and-cam-norrie/",
+        "https://www.lta.org.uk/news/2026/march/cam-norrie-becomes-british-no.1-for-first-time-in-two-years",
+        "https://en.wikipedia.org/wiki/Dalibor_Svr%C4%8Dina"
+      ],
+      "actual_multiplier": 1.5,
+      "winner": "Dalibor Svrcina",
+      "final_score": "Svrcina upset Norrie (site owner confirmed the loss).",
+      "settled_at": "2026-10-08T18:00:00Z"
     }
   ],
   "prizepicks": []
