@@ -54,30 +54,6 @@
     },
     {
       "sport": "CFB",
-      "matchup": "Stanford vs Notre Dame",
-      "date": "2026-10-10",
-      "start_time": "2026-10-10T19:30:00Z",
-      "favorite": "Notre Dame Fighting Irish",
-      "estimated_probability": {
-        "Notre Dame Fighting Irish": 94,
-        "Stanford Cardinal": 6
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2.5,
-      "reasoning": [
-        "No. 3 Notre Dame is 5-0 averaging 41.2 points and allowing 11.8 per game; Stanford is 2-3, averages 17.4 points and just lost 57-3 to Wake Forest.",
-        "Notre Dame opened as a ~38-point favorite (about -38.5 now) at home; the last meeting was a 49-20 Irish win. No usable moneyline was posted, so the price below is fair odds from the model probability.",
-        "Held below the ~99% a spread that size implies because Notre Dame's most recent game was only a 37-26 win at UNC and starting CB Leonard Moore and LB Kyngstonn Viliamu-Asa are listed questionable. No significant Stanford injury news turned up."
-      ],
-      "sources": [
-        "https://www.covers.com/ncaaf/stanford-vs-notre-dame-prediction-picks-odds-early-leans-week-6-2026",
-        "https://www.uhnd.com/football/2026/10/05/notre-dame-football-primer-no-3-irish-battle-stanford-for-the-legends-trophy/",
-        "https://www.uhnd.com/football/games/notre-dame-vs-stanford-2026/",
-        "https://www.sportsgrid.com/cfb/game/stanford-cardinal-notre-dame-fighting-irish-scores-odds-picks-props-october-10-2026/3ee73c71-c2ee-432f-a062-ab13c20e787c"
-      ]
-    },
-    {
-      "sport": "CFB",
       "matchup": "Ball State vs Northwestern",
       "date": "2026-10-10",
       "start_time": "2026-10-10T16:30:00Z",
