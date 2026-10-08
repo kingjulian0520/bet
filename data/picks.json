@@ -3,30 +3,6 @@
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
-      "sport": "CFB",
-      "matchup": "New Mexico State Aggies vs FIU Panthers",
-      "date": "2026-10-07",
-      "start_time": "2026-10-07T23:30:00Z",
-      "favorite": "FIU Panthers",
-      "estimated_probability": {
-        "FIU Panthers": 63,
-        "New Mexico State Aggies": 37
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "FIU is favored at home (-178, roughly -5.5); Dimers' model has it closer at 62.3% FIU - a real but modest edge, not a mismatch.",
-        "New Mexico State is 1-2 and on a losing streak, most recently falling to Hawaii 19-29; FIU is 2-2 with wins over Buffalo (33-20) and LIU (20-3), though it also has back-to-back losses to USF and FAU.",
-        "A straightforward 'better team at home, modest margin' case - confidence kept moderate since neither team is in great form."
-      ],
-      "sources": [
-        "https://www.dimers.com/cfb/predictions/2026_6_fiu_nmsu",
-        "https://www.sportsgrid.com/cfb/game/new-mexico-state-aggies-florida-international-panthers-scores-odds-picks-props-october-07-2026/817868ec-78b9-4849-8ae8-7a65590d7040",
-        "https://en.wikipedia.org/wiki/2026_FIU_Panthers_football"
-      ],
-      "actual_multiplier": 1.43
-    },
-    {
       "sport": "NFL",
       "matchup": "Tampa Bay Buccaneers vs Dallas Cowboys",
       "date": "2026-10-08",
@@ -1994,9 +1970,34 @@
       "winner": "Doesn't Hit",
       "final_score": "Banchero scored 11 points (2-7 FG, 7-10 FT) with 1 reb and 5 ast in Magic 122-118 Grizzlies - under the 11.5 points line, so the entry settles Doesn't Hit (assists 5 hit).",
       "settled_at": "2026-10-08T04:07:17Z"
-    }
-  ],
-  "prizepicks": [
+    },
+    {
+      "sport": "CFB",
+      "matchup": "New Mexico State Aggies vs FIU Panthers",
+      "date": "2026-10-07",
+      "start_time": "2026-10-07T23:30:00Z",
+      "favorite": "FIU Panthers",
+      "estimated_probability": {
+        "FIU Panthers": 63,
+        "New Mexico State Aggies": 37
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "FIU is favored at home (-178, roughly -5.5); Dimers' model has it closer at 62.3% FIU - a real but modest edge, not a mismatch.",
+        "New Mexico State is 1-2 and on a losing streak, most recently falling to Hawaii 19-29; FIU is 2-2 with wins over Buffalo (33-20) and LIU (20-3), though it also has back-to-back losses to USF and FAU.",
+        "A straightforward 'better team at home, modest margin' case - confidence kept moderate since neither team is in great form."
+      ],
+      "sources": [
+        "https://www.dimers.com/cfb/predictions/2026_6_fiu_nmsu",
+        "https://www.sportsgrid.com/cfb/game/new-mexico-state-aggies-florida-international-panthers-scores-odds-picks-props-october-07-2026/817868ec-78b9-4849-8ae8-7a65590d7040",
+        "https://en.wikipedia.org/wiki/2026_FIU_Panthers_football"
+      ],
+      "actual_multiplier": 1.43,
+      "winner": "FIU Panthers",
+      "final_score": "FIU 22, New Mexico State 3",
+      "settled_at": "2026-10-08T14:18:28Z"
+    },
     {
       "sport": "NBA",
       "matchup": "Josh Giddey Over 3.5 Rebounds + Devin Booker Over 14.5 Points",
@@ -2019,7 +2020,8 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 3.5,
-          "stat": "Rebounds"
+          "stat": "Rebounds",
+          "actual_value": 3
         },
         {
           "type": "over_under",
@@ -2027,11 +2029,57 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 14.5,
-          "stat": "Points"
+          "stat": "Points",
+          "actual_value": 11
         }
       ],
-      "platform": "DraftKings"
+      "platform": "DraftKings",
+      "winner": "Doesn't Hit",
+      "final_score": "Giddey 3 reb (under 3.5) and Booker 11 pts (under 14.5) in Bulls 124-117 Suns - both legs missed.",
+      "settled_at": "2026-10-08T14:18:28Z"
     },
+    {
+      "sport": "Mixed",
+      "matchup": "Angel Reese Under 14 Reb+Assists + Franz Wagner Over 10.5 Points",
+      "date": "2026-10-07",
+      "start_time": "2026-10-08T00:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 3,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Angel Reese",
+          "opponent": "TBD",
+          "side": "Under",
+          "line": 14,
+          "stat": "Rebounds + Assists",
+          "actual_value": 9
+        },
+        {
+          "type": "over_under",
+          "player": "Franz Wagner",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 10.5,
+          "stat": "Points",
+          "actual_value": 6
+        }
+      ],
+      "platform": "PrizePicks",
+      "winner": "Doesn't Hit",
+      "final_score": "Franz Wagner scored 6 points (under 10.5) in Magic 122-118 Grizzlies, so the entry settles Doesn't Hit. Angel Reese's 7 reb + 2 ast = 9 (under 14) would have hit.",
+      "settled_at": "2026-10-08T14:18:28Z"
+    }
+  ],
+  "prizepicks": [
     {
       "sport": "NBA",
       "matchup": "Andrew Nembhard Over 12.5 PRA + Pascal Siakam Over 14.5 PRA + Miles Bridges Over 15.5 PRA + Desmond Bane Over 12.5 PRA + Paolo Banchero Over 14.5 PRA",
@@ -2122,41 +2170,6 @@
           "side": "Over",
           "line": 2.5,
           "stat": "Strikeouts Thrown"
-        }
-      ],
-      "platform": "PrizePicks"
-    },
-    {
-      "sport": "Mixed",
-      "matchup": "Angel Reese Under 14 Reb+Assists + Franz Wagner Over 10.5 Points",
-      "date": "2026-10-07",
-      "start_time": "2026-10-08T00:00:00Z",
-      "favorite": "Hits",
-      "estimated_probability": {
-        "Hits": 50,
-        "Doesn't Hit": 50
-      },
-      "recommended_units": 0.5,
-      "actual_multiplier": 3,
-      "is_prizepicks": true,
-      "reasoning": [],
-      "sources": [],
-      "legs": [
-        {
-          "type": "over_under",
-          "player": "Angel Reese",
-          "opponent": "TBD",
-          "side": "Under",
-          "line": 14,
-          "stat": "Rebounds + Assists"
-        },
-        {
-          "type": "over_under",
-          "player": "Franz Wagner",
-          "opponent": "TBD",
-          "side": "Over",
-          "line": 10.5,
-          "stat": "Points"
         }
       ],
       "platform": "PrizePicks"
