@@ -2165,5 +2165,347 @@
       "settled_at": "2026-10-08T18:00:00Z"
     }
   ],
-  "prizepicks": []
+  "prizepicks": [
+    {
+      "sport": "Mixed",
+      "matchup": "Cowboys ML + Jalon Daniels Over 0.5 INT + Jalon Daniels Over 0.5 Pass TD + Jalon Daniels Over 5.5 Rush Att + Dak Prescott Over 1.5 Pass TD + George Pickens Over 24.5 Rec Yards + CeeDee Lamb Over 49.5 Rec Yards + Dak Prescott Over 229.5 Pass Yards",
+      "date": "2026-10-08",
+      "start_time": "2026-10-09T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.4,
+      "actual_multiplier": 5.3,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "moneyline",
+          "player": "Dallas Cowboys",
+          "opponent": "Tampa Bay Buccaneers",
+          "side": "Moneyline"
+        },
+        {
+          "type": "over_under",
+          "player": "Jalon Daniels",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 0.5,
+          "stat": "Interceptions Thrown"
+        },
+        {
+          "type": "over_under",
+          "player": "Jalon Daniels",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 0.5,
+          "stat": "Passing TD"
+        },
+        {
+          "type": "over_under",
+          "player": "Jalon Daniels",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 5.5,
+          "stat": "Rushing Attempts"
+        },
+        {
+          "type": "over_under",
+          "player": "Dak Prescott",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 1.5,
+          "stat": "Passing TD"
+        },
+        {
+          "type": "over_under",
+          "player": "George Pickens",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 24.5,
+          "stat": "Receiving Yards"
+        },
+        {
+          "type": "over_under",
+          "player": "CeeDee Lamb",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 49.5,
+          "stat": "Receiving Yards"
+        },
+        {
+          "type": "over_under",
+          "player": "Dak Prescott",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 229.5,
+          "stat": "Passing Yards"
+        }
+      ],
+      "platform": "DraftKings"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Pj Martin Anytime TD + Dak Prescott Over 29.5 Pass Yards 1Q + Ryan Flournoy Over 9.5 Longest Rec + Ryan Flournoy Over 14.5 Rec Yards + Ryan Flournoy Over 1.5 Recs + Javonte Williams Over 4.5 Rush Yards 1Q + Bucky Irving Over 9.5 Rush Yards 1Q",
+      "date": "2026-10-08",
+      "start_time": "2026-10-09T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 3.36,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "anytime_td",
+          "player": "Pj Martin",
+          "opponent": "TBD",
+          "side": "Yes",
+          "stat": "Anytime TD"
+        },
+        {
+          "type": "over_under",
+          "player": "Dak Prescott",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 29.5,
+          "stat": "Passing Yards 1Q"
+        },
+        {
+          "type": "over_under",
+          "player": "Ryan Flournoy",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 9.5,
+          "stat": "Longest Reception"
+        },
+        {
+          "type": "over_under",
+          "player": "Ryan Flournoy",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 14.5,
+          "stat": "Receiving Yards"
+        },
+        {
+          "type": "over_under",
+          "player": "Ryan Flournoy",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 1.5,
+          "stat": "Receptions"
+        },
+        {
+          "type": "over_under",
+          "player": "Javonte Williams",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 4.5,
+          "stat": "Rush Yards 1Q"
+        },
+        {
+          "type": "over_under",
+          "player": "Bucky Irving",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 9.5,
+          "stat": "Rush Yards 1Q"
+        }
+      ],
+      "platform": "DraftKings"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "CeeDee Lamb Over 4.5 Recs + Bucky Irving Over 13.5 Rush Atts + Riley Dixon Over 3.5 Punts",
+      "date": "2026-10-08",
+      "start_time": "2026-10-09T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 3.75,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "CeeDee Lamb",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 4.5,
+          "stat": "Receptions"
+        },
+        {
+          "type": "over_under",
+          "player": "Bucky Irving",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 13.5,
+          "stat": "Rush Attempts"
+        },
+        {
+          "type": "over_under",
+          "player": "Riley Dixon",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 3.5,
+          "stat": "Punts"
+        }
+      ],
+      "platform": "PrizePicks"
+    },
+    {
+      "sport": "NBA",
+      "matchup": "Giannis Antetokounmpo Under 24.5 PRA + Victor Wembanyama Under 23.5 PRA + Bronny James Under 6.5 Points + Luka Doncic Under 26.5 PRA",
+      "date": "2026-10-08",
+      "start_time": "2026-10-08T23:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 10,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Giannis Antetokounmpo",
+          "opponent": "TBD",
+          "side": "Under",
+          "line": 24.5,
+          "stat": "Points + Rebounds + Assists"
+        },
+        {
+          "type": "over_under",
+          "player": "Victor Wembanyama",
+          "opponent": "TBD",
+          "side": "Under",
+          "line": 23.5,
+          "stat": "Points + Rebounds + Assists"
+        },
+        {
+          "type": "over_under",
+          "player": "Bronny James",
+          "opponent": "TBD",
+          "side": "Under",
+          "line": 6.5,
+          "stat": "Points"
+        },
+        {
+          "type": "over_under",
+          "player": "Luka Doncic",
+          "opponent": "TBD",
+          "side": "Under",
+          "line": 26.5,
+          "stat": "Points + Rebounds + Assists"
+        }
+      ],
+      "platform": "PrizePicks"
+    },
+    {
+      "sport": "Mixed",
+      "matchup": "Dak Prescott Over 0.5 Pass Yards (Coupon) + Domantas Sabonis Under 17.5 PRA + Luka Doncic Under 26.5 PRA",
+      "date": "2026-10-08",
+      "start_time": "2026-10-09T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 6,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Dak Prescott",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 0.5,
+          "stat": "Passing Yards (Coupon)"
+        },
+        {
+          "type": "over_under",
+          "player": "Domantas Sabonis",
+          "opponent": "TBD",
+          "side": "Under",
+          "line": 17.5,
+          "stat": "Points + Rebounds + Assists"
+        },
+        {
+          "type": "over_under",
+          "player": "Luka Doncic",
+          "opponent": "TBD",
+          "side": "Under",
+          "line": 26.5,
+          "stat": "Points + Rebounds + Assists"
+        }
+      ],
+      "platform": "PrizePicks"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Cowboys ML + CeeDee Lamb Over 29.5 Longest Rec + Ryan Flournoy Over 14.5 Rec Yards + CeeDee Lamb Over 4.5 Recs",
+      "date": "2026-10-08",
+      "start_time": "2026-10-09T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.7,
+      "actual_multiplier": 3.45,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "moneyline",
+          "player": "Dallas Cowboys",
+          "opponent": "Tampa Bay Buccaneers",
+          "side": "Moneyline"
+        },
+        {
+          "type": "over_under",
+          "player": "CeeDee Lamb",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 29.5,
+          "stat": "Longest Reception"
+        },
+        {
+          "type": "over_under",
+          "player": "Ryan Flournoy",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 14.5,
+          "stat": "Receiving Yards"
+        },
+        {
+          "type": "over_under",
+          "player": "CeeDee Lamb",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 4.5,
+          "stat": "Receptions"
+        }
+      ],
+      "platform": "Novig"
+    }
+  ]
 }
