@@ -1791,9 +1791,7 @@
       "winner": "Doesn't Hit",
       "final_score": "Settled by the site owner (esports - not researched here).",
       "settled_at": "2026-10-02T12:00:00Z"
-    }
-  ],
-  "prizepicks": [
+    },
     {
       "sport": "NBA",
       "matchup": "LaMelo Ball Over 9.5 Points + LaMelo Ball Over 1.5 3's",
@@ -1816,7 +1814,8 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 9.5,
-          "stat": "Points"
+          "stat": "Points",
+          "actual_value": 14
         },
         {
           "type": "over_under",
@@ -1824,11 +1823,57 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 1.5,
-          "stat": "3-Pointers Made"
+          "stat": "3-Pointers Made",
+          "actual_value": 4
         }
       ],
-      "platform": "DraftKings"
+      "platform": "DraftKings",
+      "winner": "Hits",
+      "final_score": "LaMelo Ball 14 pts on 5-9 FG, 4-6 from three (Timberwolves 112-123 Pacers): over 9.5 points and over 1.5 threes, both legs hit.",
+      "settled_at": "2026-10-08T04:07:17Z"
     },
+    {
+      "sport": "NBA",
+      "matchup": "Paolo Banchero Over 11.5 Points + Paolo Banchero Over 3.5 Assists",
+      "date": "2026-10-07",
+      "start_time": "2026-10-08T00:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 1,
+      "actual_multiplier": 1.95,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Paolo Banchero",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 11.5,
+          "stat": "Points",
+          "actual_value": 11
+        },
+        {
+          "type": "over_under",
+          "player": "Paolo Banchero",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 3.5,
+          "stat": "Assists",
+          "actual_value": 5
+        }
+      ],
+      "platform": "DraftKings",
+      "winner": "Doesn't Hit",
+      "final_score": "Banchero scored 11 points (2-7 FG, 7-10 FT) with 1 reb and 5 ast in Magic 122-118 Grizzlies - under the 11.5 points line, so the entry settles Doesn't Hit (assists 5 hit).",
+      "settled_at": "2026-10-08T04:07:17Z"
+    }
+  ],
+  "prizepicks": [
     {
       "sport": "NBA",
       "matchup": "Josh Giddey Over 3.5 Rebounds + Devin Booker Over 14.5 Points",
@@ -1860,41 +1905,6 @@
           "side": "Over",
           "line": 14.5,
           "stat": "Points"
-        }
-      ],
-      "platform": "DraftKings"
-    },
-    {
-      "sport": "NBA",
-      "matchup": "Paolo Banchero Over 11.5 Points + Paolo Banchero Over 3.5 Assists",
-      "date": "2026-10-07",
-      "start_time": "2026-10-08T00:00:00Z",
-      "favorite": "Hits",
-      "estimated_probability": {
-        "Hits": 50,
-        "Doesn't Hit": 50
-      },
-      "recommended_units": 1,
-      "actual_multiplier": 1.95,
-      "is_prizepicks": true,
-      "reasoning": [],
-      "sources": [],
-      "legs": [
-        {
-          "type": "over_under",
-          "player": "Paolo Banchero",
-          "opponent": "TBD",
-          "side": "Over",
-          "line": 11.5,
-          "stat": "Points"
-        },
-        {
-          "type": "over_under",
-          "player": "Paolo Banchero",
-          "opponent": "TBD",
-          "side": "Over",
-          "line": 3.5,
-          "stat": "Assists"
         }
       ],
       "platform": "DraftKings"
