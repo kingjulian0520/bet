@@ -100,6 +100,129 @@
         "https://sports.yahoo.com/articles/sam-houston-vs-liberty-prediction-091401142.html"
       ],
       "actual_multiplier": 1.18
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Stanford vs Notre Dame",
+      "date": "2026-10-10",
+      "start_time": "2026-10-10T19:30:00Z",
+      "favorite": "Notre Dame Fighting Irish",
+      "estimated_probability": {
+        "Notre Dame Fighting Irish": 94,
+        "Stanford Cardinal": 6
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "reasoning": [
+        "No. 3 Notre Dame is 5-0 averaging 41.2 points and allowing 11.8 per game; Stanford is 2-3, averages 17.4 points and just lost 57-3 to Wake Forest.",
+        "Notre Dame opened as a ~38-point favorite (about -38.5 now) at home; the last meeting was a 49-20 Irish win. No usable moneyline was posted, so the price below is fair odds from the model probability.",
+        "Held below the ~99% a spread that size implies because Notre Dame's most recent game was only a 37-26 win at UNC and starting CB Leonard Moore and LB Kyngstonn Viliamu-Asa are listed questionable. No significant Stanford injury news turned up."
+      ],
+      "sources": [
+        "https://www.covers.com/ncaaf/stanford-vs-notre-dame-prediction-picks-odds-early-leans-week-6-2026",
+        "https://www.uhnd.com/football/2026/10/05/notre-dame-football-primer-no-3-irish-battle-stanford-for-the-legends-trophy/",
+        "https://www.uhnd.com/football/games/notre-dame-vs-stanford-2026/",
+        "https://www.sportsgrid.com/cfb/game/stanford-cardinal-notre-dame-fighting-irish-scores-odds-picks-props-october-10-2026/3ee73c71-c2ee-432f-a062-ab13c20e787c"
+      ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Ball State vs Northwestern",
+      "date": "2026-10-10",
+      "start_time": "2026-10-10T16:30:00Z",
+      "favorite": "Northwestern Wildcats",
+      "estimated_probability": {
+        "Northwestern Wildcats": 93,
+        "Ball State Cardinals": 7
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "reasoning": [
+        "Northwestern is 3-1 at home in Evanston (beat Colorado 41-7; only loss was 29-23 at No. 5 Indiana); Ball State is 1-4 and went 4-8 last year.",
+        "The spread opened Northwestern -34.5 and has grown to -37 at some books, with the model projecting about 34-13; prediction-market style moneylines sit near -10000. No regulated-book moneyline was reliable, so the price below is fair odds from the model probability.",
+        "Held at 93% because Northwestern's offense has been inconsistent against better teams and I could not confirm the result of its Oct 2 game vs Penn State. No injury news found for either team."
+      ],
+      "sources": [
+        "https://www.espn.com/college-football/preview/_/gameId/401858482",
+        "https://www.vegasinsider.com/college-football/matchups/ball-state-vs-northwestern/",
+        "https://www.bettoredge.com/college-football/ballstate-vs-northwestern",
+        "https://ats.io/matchup/college-football/ball-state-cardinals-vs-northwestern-wildcats-prediction-10-10-2026/"
+      ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "South Carolina vs Florida",
+      "date": "2026-10-10",
+      "start_time": "2026-10-10T16:45:00Z",
+      "favorite": "Florida Gators",
+      "estimated_probability": {
+        "Florida Gators": 84,
+        "South Carolina Gamecocks": 16
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "reasoning": [
+        "Florida is 4-1 (2-1 SEC) at home; South Carolina is 2-3 and 0-3 in the SEC after a 35-34 overtime loss to Kentucky. Florida has won 17 of 19 home meetings in the series.",
+        "Market has Florida about -521 (~84% implied) as a 12.5-13.5 point favorite and Dimers gives Florida 87.2%; held at 84% because Florida just lost at Missouri and South Carolina's offense is averaging 37.6 points and 491 yards.",
+        "Injuries: Florida WR Vernell Brown III and RB London Montgomery are questionable; South Carolina has four players out and three doubtful, including DB Quay'sheed Scott."
+      ],
+      "sources": [
+        "https://www.fanduel.com/research/florida-vs-south-carolina-college-football-odds-picks-best-bets-for-10-10-2026",
+        "https://www.dimers.com/cfb/predictions/2026_6_fla_scar",
+        "https://www.on3.com/teams/florida-gators/news/florida-vs-south-carolina-how-to-watch-injury-report-betting-lines/",
+        "https://floridagators.com/news/2026/10/5/football-that-wasnt-it-gators-look-to-move-on-from-messy-missouri-loss-jadan-baugh-jon-sumrall"
+      ],
+      "actual_multiplier": 1.19
+    },
+    {
+      "sport": "CFB",
+      "matchup": "UCLA vs Oregon",
+      "date": "2026-10-10",
+      "start_time": "2026-10-10T19:30:00Z",
+      "favorite": "Oregon Ducks",
+      "estimated_probability": {
+        "Oregon Ducks": 78,
+        "UCLA Bruins": 22
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "No. 13 Oregon (3-1) hosts No. 21 UCLA (4-0) at Autzen Stadium as an 11.5-12.5 point favorite; the moneyline is roughly Oregon -435 to -550 and Dimers gives Oregon 82.4%.",
+        "Held at 78% because UCLA is unbeaten with a strong ground game and Oregon's quarterback situation after a bye is uncertain; SBG's analyst picks UCLA to cover.",
+        "No other major injury information turned up in the sources checked."
+      ],
+      "sources": [
+        "https://www.espn.com/college-football/preview/_/gameId/401858484",
+        "https://www.dimers.com/cfb/predictions/2026_6_ore_ucla",
+        "https://www.covers.com/sport/football/ncaaf/matchup/378295/picks",
+        "https://www.sbgglobal.eu/ncaa-college-football-betting/ucla-bruins-vs-oregon-ducks-ncaaf-betting-odds-preview-picks/"
+      ],
+      "actual_multiplier": 1.21
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Iowa State vs BYU",
+      "date": "2026-10-09",
+      "start_time": "2026-10-10T01:15:00Z",
+      "favorite": "BYU Cougars",
+      "estimated_probability": {
+        "BYU Cougars": 77,
+        "Iowa State Cyclones": 23
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "No. 8 BYU is 4-0 (2-0 Big 12) at home in Provo; Iowa State is 3-2. BYU is a ~10.5-point favorite at about -410 to -425 (~80% implied before vig).",
+        "Held at 77% because BYU is missing RB LJ Martin, LB Isaiah Glasker and RB Sione Moa (S Raider Damuni doubtful), and previews flag BYU's third-down defense; Iowa State is also thin (S Drew Surges, DE Caden Crawford, DT Ka'Mori Moore out).",
+        "A final availability report comes out 90 minutes before kickoff, so injury designations could still change."
+      ],
+      "sources": [
+        "https://www.deseret.com/sports/2026/10/06/byu-cougars-football-availability-report-iowa-state/",
+        "https://www.bleachernation.com/picks/2026/10/07/byu-vs-iowa-state-prediction-live-odds-stats-history-and-picks-october-9-2026/",
+        "https://www.si.com/betting/iowa-state-vs-byu-prediction-odds-and-key-players-to-watch-for-college-football-week-6-2026",
+        "https://www.widerightnattylite.com/iowa-state-football/54001/injury-report-for-iowa-states-matchup-versus-no-8-byu"
+      ],
+      "actual_multiplier": 1.24
     }
   ],
   "settled": [
