@@ -3,56 +3,6 @@
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
-      "sport": "NFL",
-      "matchup": "Tampa Bay Buccaneers vs Dallas Cowboys",
-      "date": "2026-10-08",
-      "start_time": "2026-10-09T00:15:00Z",
-      "favorite": "Dallas Cowboys",
-      "estimated_probability": {
-        "Dallas Cowboys": 66,
-        "Tampa Bay Buccaneers": 34
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 1,
-      "reasoning": [
-        "Bucs starting QB Baker Mayfield (dislocated right thumb, injured vs. Minnesota) is out; Teddy Bridgewater starts in his place on the road on a short week.",
-        "Dallas is favored at home across sportsbooks, though the margin varies by book (moneyline from -205 up toward -300+, spread from -3.5 to -9.5) - treated as a real but not overwhelming edge given that spread.",
-        "Confidence kept moderate (not higher) because Bridgewater is a credible veteran backup, not a replacement-level arm, and the spread disagreement across books signals the market itself isn't fully settled on the size of the gap."
-      ],
-      "sources": [
-        "https://www.covers.com/nfl/week-5-odds-opening-lines-2026",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-09-28/rap-baker-mayfield-thumb-could-miss-2-4-weeks",
-        "https://www.buccaneers.com/news/teddy-bridgewater-ive-got-answer-the-bell"
-      ],
-      "actual_multiplier": 1.49
-    },
-    {
-      "sport": "CFB",
-      "matchup": "Sam Houston vs Liberty",
-      "date": "2026-10-08",
-      "start_time": "2026-10-08T23:00:00Z",
-      "favorite": "Liberty Flames",
-      "estimated_probability": {
-        "Liberty Flames": 82,
-        "Sam Houston Bearkats": 18
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "reasoning": [
-        "Liberty is 4-1 (1-0 Conference USA) with a four-game win streak, including a 51-15 win over Coastal Carolina and a win at Delaware to open league play, and plays at home in Lynchburg on a short week.",
-        "Sam Houston is 1-3 (beat Nicholls 59-0 but lost to Troy 24-21, Tulsa 23-17 and Texas Tech 49-14) and is on the road.",
-        "Market and models agree: Liberty about -629 (~86% implied) and a 13.5-point favorite; computer models give Liberty ~86%. Held at 82% because several Liberty wins were close (24-23 over Ball State, 20-13 over Gardner-Webb) and Sam Houston is 3-1 against the spread this season.",
-        "No injury information turned up for either side in the sources checked."
-      ],
-      "sources": [
-        "https://www.fanduel.com/research/liberty-vs-sam-houston-college-football-odds-picks-best-bets-for-10-8-2026",
-        "https://www.dimers.com/cfb/predictions/2026_6_lib_shsu",
-        "https://www.bleachernation.com/picks/2026/10/06/liberty-vs-sam-houston-football-best-bets-computer-predictions-oct-8/",
-        "https://sports.yahoo.com/articles/sam-houston-vs-liberty-prediction-091401142.html"
-      ],
-      "actual_multiplier": 1.18
-    },
-    {
       "sport": "CFB",
       "matchup": "Ball State vs Northwestern",
       "date": "2026-10-10",
@@ -130,7 +80,7 @@
       "sport": "CFB",
       "matchup": "Iowa State vs BYU",
       "date": "2026-10-09",
-      "start_time": "2026-10-10T01:15:00Z",
+      "start_time": "2026-10-10T02:15:00Z",
       "favorite": "BYU Cougars",
       "estimated_probability": {
         "BYU Cougars": 77,
@@ -2163,9 +2113,63 @@
       "winner": "Dalibor Svrcina",
       "final_score": "Svrcina upset Norrie (site owner confirmed the loss).",
       "settled_at": "2026-10-08T18:00:00Z"
-    }
-  ],
-  "prizepicks": [
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Tampa Bay Buccaneers vs Dallas Cowboys",
+      "date": "2026-10-08",
+      "start_time": "2026-10-09T00:15:00Z",
+      "favorite": "Dallas Cowboys",
+      "estimated_probability": {
+        "Dallas Cowboys": 66,
+        "Tampa Bay Buccaneers": 34
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1,
+      "reasoning": [
+        "Bucs starting QB Baker Mayfield (dislocated right thumb, injured vs. Minnesota) is out; Teddy Bridgewater starts in his place on the road on a short week.",
+        "Dallas is favored at home across sportsbooks, though the margin varies by book (moneyline from -205 up toward -300+, spread from -3.5 to -9.5) - treated as a real but not overwhelming edge given that spread.",
+        "Confidence kept moderate (not higher) because Bridgewater is a credible veteran backup, not a replacement-level arm, and the spread disagreement across books signals the market itself isn't fully settled on the size of the gap."
+      ],
+      "sources": [
+        "https://www.covers.com/nfl/week-5-odds-opening-lines-2026",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-09-28/rap-baker-mayfield-thumb-could-miss-2-4-weeks",
+        "https://www.buccaneers.com/news/teddy-bridgewater-ive-got-answer-the-bell"
+      ],
+      "actual_multiplier": 1.49,
+      "winner": "Tampa Bay Buccaneers",
+      "final_score": "Buccaneers 24, Cowboys 16",
+      "settled_at": "2026-10-09T04:06:59Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Sam Houston vs Liberty",
+      "date": "2026-10-08",
+      "start_time": "2026-10-08T23:00:00Z",
+      "favorite": "Liberty Flames",
+      "estimated_probability": {
+        "Liberty Flames": 82,
+        "Sam Houston Bearkats": 18
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "reasoning": [
+        "Liberty is 4-1 (1-0 Conference USA) with a four-game win streak, including a 51-15 win over Coastal Carolina and a win at Delaware to open league play, and plays at home in Lynchburg on a short week.",
+        "Sam Houston is 1-3 (beat Nicholls 59-0 but lost to Troy 24-21, Tulsa 23-17 and Texas Tech 49-14) and is on the road.",
+        "Market and models agree: Liberty about -629 (~86% implied) and a 13.5-point favorite; computer models give Liberty ~86%. Held at 82% because several Liberty wins were close (24-23 over Ball State, 20-13 over Gardner-Webb) and Sam Houston is 3-1 against the spread this season.",
+        "No injury information turned up for either side in the sources checked."
+      ],
+      "sources": [
+        "https://www.fanduel.com/research/liberty-vs-sam-houston-college-football-odds-picks-best-bets-for-10-8-2026",
+        "https://www.dimers.com/cfb/predictions/2026_6_lib_shsu",
+        "https://www.bleachernation.com/picks/2026/10/06/liberty-vs-sam-houston-football-best-bets-computer-predictions-oct-8/",
+        "https://sports.yahoo.com/articles/sam-houston-vs-liberty-prediction-091401142.html"
+      ],
+      "actual_multiplier": 1.18,
+      "winner": "Liberty Flames",
+      "final_score": "Liberty 35, Sam Houston 3",
+      "settled_at": "2026-10-09T04:06:59Z"
+    },
     {
       "sport": "Mixed",
       "matchup": "Cowboys ML + Jalon Daniels Over 0.5 INT + Jalon Daniels Over 0.5 Pass TD + Jalon Daniels Over 5.5 Rush Att + Dak Prescott Over 1.5 Pass TD + George Pickens Over 24.5 Rec Yards + CeeDee Lamb Over 49.5 Rec Yards + Dak Prescott Over 229.5 Pass Yards",
@@ -2245,8 +2249,65 @@
           "stat": "Passing Yards"
         }
       ],
-      "platform": "DraftKings"
+      "platform": "DraftKings",
+      "winner": "Doesn't Hit",
+      "settled_at": "2026-10-09T04:06:59Z",
+      "final_score": "Buccaneers 24, Cowboys 16 - the Cowboys ML leg lost, so the entry settles Doesn't Hit."
     },
+    {
+      "sport": "NFL",
+      "matchup": "Cowboys ML + CeeDee Lamb Over 29.5 Longest Rec + Ryan Flournoy Over 14.5 Rec Yards + CeeDee Lamb Over 4.5 Recs",
+      "date": "2026-10-08",
+      "start_time": "2026-10-09T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.7,
+      "actual_multiplier": 3.45,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "moneyline",
+          "player": "Dallas Cowboys",
+          "opponent": "Tampa Bay Buccaneers",
+          "side": "Moneyline"
+        },
+        {
+          "type": "over_under",
+          "player": "CeeDee Lamb",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 29.5,
+          "stat": "Longest Reception"
+        },
+        {
+          "type": "over_under",
+          "player": "Ryan Flournoy",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 14.5,
+          "stat": "Receiving Yards"
+        },
+        {
+          "type": "over_under",
+          "player": "CeeDee Lamb",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 4.5,
+          "stat": "Receptions"
+        }
+      ],
+      "platform": "Novig",
+      "winner": "Doesn't Hit",
+      "settled_at": "2026-10-09T04:06:59Z",
+      "final_score": "Buccaneers 24, Cowboys 16 - the Cowboys ML leg lost, so the entry settles Doesn't Hit."
+    }
+  ],
+  "prizepicks": [
     {
       "sport": "NFL",
       "matchup": "Pj Martin Anytime TD + Dak Prescott Over 29.5 Pass Yards 1Q + Ryan Flournoy Over 9.5 Longest Rec + Ryan Flournoy Over 14.5 Rec Yards + Ryan Flournoy Over 1.5 Recs + Javonte Williams Over 4.5 Rush Yards 1Q + Bucky Irving Over 9.5 Rush Yards 1Q",
@@ -2457,55 +2518,6 @@
         }
       ],
       "platform": "PrizePicks"
-    },
-    {
-      "sport": "NFL",
-      "matchup": "Cowboys ML + CeeDee Lamb Over 29.5 Longest Rec + Ryan Flournoy Over 14.5 Rec Yards + CeeDee Lamb Over 4.5 Recs",
-      "date": "2026-10-08",
-      "start_time": "2026-10-09T00:15:00Z",
-      "favorite": "Hits",
-      "estimated_probability": {
-        "Hits": 50,
-        "Doesn't Hit": 50
-      },
-      "recommended_units": 0.7,
-      "actual_multiplier": 3.45,
-      "is_prizepicks": true,
-      "reasoning": [],
-      "sources": [],
-      "legs": [
-        {
-          "type": "moneyline",
-          "player": "Dallas Cowboys",
-          "opponent": "Tampa Bay Buccaneers",
-          "side": "Moneyline"
-        },
-        {
-          "type": "over_under",
-          "player": "CeeDee Lamb",
-          "opponent": "TBD",
-          "side": "Over",
-          "line": 29.5,
-          "stat": "Longest Reception"
-        },
-        {
-          "type": "over_under",
-          "player": "Ryan Flournoy",
-          "opponent": "TBD",
-          "side": "Over",
-          "line": 14.5,
-          "stat": "Receiving Yards"
-        },
-        {
-          "type": "over_under",
-          "player": "CeeDee Lamb",
-          "opponent": "TBD",
-          "side": "Over",
-          "line": 4.5,
-          "stat": "Receptions"
-        }
-      ],
-      "platform": "Novig"
     }
   ]
 }
