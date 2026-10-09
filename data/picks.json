@@ -102,31 +102,6 @@
       "actual_multiplier": 1.24
     },
     {
-      "sport": "ATP",
-      "matchup": "Alexander Zverev vs Yibing Wu",
-      "date": "2026-10-09",
-      "start_time": "2026-10-09T05:30:00Z",
-      "favorite": "Alexander Zverev",
-      "estimated_probability": {
-        "Alexander Zverev": 88,
-        "Yibing Wu": 12
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2,
-      "reasoning": [
-        "Top-seeded Zverev (first-round bye) faces home wild card Wu Yibing (ranked No. 113) in the Shanghai Masters second round; Zverev has won their only meeting (Wu retired down 4-1 in the first set in Geneva 2023) and is 5-2 since the US Open.",
-        "Market has Zverev about -1111 (~91% implied) and Tennis.com's model gives him 87%; held at 88% because Wu has the crowd at his home event, and one preview points out Zverev is 3-12 in his last 15 against top-10 players (not applicable to Wu, but a reason not to go higher).",
-        "Start time is an estimate: Stadium Court session starts 12:00 local, Zverev-Wu is second on court after Shelton-Altmaier, so roughly 13:30 Shanghai (05:30 UTC). No injury news found for either player."
-      ],
-      "sources": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/alexander-zverev-vs-yibing-wu-round-of-64-match-oct-09-2026/",
-        "https://www.tennis.com/tournaments/rolex-shanghai-masters/matches/a-zverev-vs-y-wu-2026-10-09",
-        "https://www.bleachernation.com/picks/2026/10/07/zverev-vs-wu-prediction-at-the-rolex-shanghai-masters-friday-october-9/",
-        "https://en.tennistemple.com/competitions/shanghai/orderofplay"
-      ],
-      "actual_multiplier": 1.09
-    },
-    {
       "sport": "CFB",
       "matchup": "UCF vs Oklahoma State",
       "date": "2026-10-10",
@@ -2380,6 +2355,136 @@
       "winner": "Doesn't Hit",
       "settled_at": "2026-10-09T04:06:59Z",
       "final_score": "Buccaneers 24, Cowboys 16 - the Cowboys ML leg lost, so the entry settles Doesn't Hit."
+    },
+    {
+      "sport": "ATP",
+      "matchup": "Alexander Zverev vs Yibing Wu",
+      "date": "2026-10-09",
+      "start_time": "2026-10-09T05:30:00Z",
+      "favorite": "Alexander Zverev",
+      "estimated_probability": {
+        "Alexander Zverev": 88,
+        "Yibing Wu": 12
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "reasoning": [
+        "Top-seeded Zverev (first-round bye) faces home wild card Wu Yibing (ranked No. 113) in the Shanghai Masters second round; Zverev has won their only meeting (Wu retired down 4-1 in the first set in Geneva 2023) and is 5-2 since the US Open.",
+        "Market has Zverev about -1111 (~91% implied) and Tennis.com's model gives him 87%; held at 88% because Wu has the crowd at his home event, and one preview points out Zverev is 3-12 in his last 15 against top-10 players (not applicable to Wu, but a reason not to go higher).",
+        "Start time is an estimate: Stadium Court session starts 12:00 local, Zverev-Wu is second on court after Shelton-Altmaier, so roughly 13:30 Shanghai (05:30 UTC). No injury news found for either player."
+      ],
+      "sources": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/alexander-zverev-vs-yibing-wu-round-of-64-match-oct-09-2026/",
+        "https://www.tennis.com/tournaments/rolex-shanghai-masters/matches/a-zverev-vs-y-wu-2026-10-09",
+        "https://www.bleachernation.com/picks/2026/10/07/zverev-vs-wu-prediction-at-the-rolex-shanghai-masters-friday-october-9/",
+        "https://en.tennistemple.com/competitions/shanghai/orderofplay"
+      ],
+      "actual_multiplier": 1.09,
+      "winner": "Alexander Zverev",
+      "final_score": "Zverev 6-4, 7-6(4)",
+      "settled_at": "2026-10-09T14:19:02Z"
+    },
+    {
+      "sport": "NBA",
+      "matchup": "Giannis Antetokounmpo Under 24.5 PRA + Victor Wembanyama Under 23.5 PRA + Bronny James Under 6.5 Points + Luka Doncic Under 26.5 PRA",
+      "date": "2026-10-08",
+      "start_time": "2026-10-08T23:00:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 10,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Giannis Antetokounmpo",
+          "opponent": "TBD",
+          "side": "Under",
+          "line": 24.5,
+          "stat": "Points + Rebounds + Assists"
+        },
+        {
+          "type": "over_under",
+          "player": "Victor Wembanyama",
+          "opponent": "TBD",
+          "side": "Under",
+          "line": 23.5,
+          "stat": "Points + Rebounds + Assists"
+        },
+        {
+          "type": "over_under",
+          "player": "Bronny James",
+          "opponent": "TBD",
+          "side": "Under",
+          "line": 6.5,
+          "stat": "Points"
+        },
+        {
+          "type": "over_under",
+          "player": "Luka Doncic",
+          "opponent": "TBD",
+          "side": "Under",
+          "line": 26.5,
+          "stat": "Points + Rebounds + Assists",
+          "actual_value": 29
+        }
+      ],
+      "platform": "PrizePicks",
+      "winner": "Doesn't Hit",
+      "settled_at": "2026-10-09T14:19:02Z",
+      "final_score": "Luka Doncic 23 pts + 3 reb + 3 ast = 29 PRA in Lakers 114-110 Kings - over the 26.5 line, so the Under leg missed and the entry settles Doesn't Hit."
+    },
+    {
+      "sport": "Mixed",
+      "matchup": "Dak Prescott Over 0.5 Pass Yards (Coupon) + Domantas Sabonis Under 17.5 PRA + Luka Doncic Under 26.5 PRA",
+      "date": "2026-10-08",
+      "start_time": "2026-10-09T00:15:00Z",
+      "favorite": "Hits",
+      "estimated_probability": {
+        "Hits": 50,
+        "Doesn't Hit": 50
+      },
+      "recommended_units": 0.5,
+      "actual_multiplier": 6,
+      "is_prizepicks": true,
+      "reasoning": [],
+      "sources": [],
+      "legs": [
+        {
+          "type": "over_under",
+          "player": "Dak Prescott",
+          "opponent": "TBD",
+          "side": "Over",
+          "line": 0.5,
+          "stat": "Passing Yards (Coupon)"
+        },
+        {
+          "type": "over_under",
+          "player": "Domantas Sabonis",
+          "opponent": "TBD",
+          "side": "Under",
+          "line": 17.5,
+          "stat": "Points + Rebounds + Assists"
+        },
+        {
+          "type": "over_under",
+          "player": "Luka Doncic",
+          "opponent": "TBD",
+          "side": "Under",
+          "line": 26.5,
+          "stat": "Points + Rebounds + Assists",
+          "actual_value": 29
+        }
+      ],
+      "platform": "PrizePicks",
+      "winner": "Doesn't Hit",
+      "settled_at": "2026-10-09T14:19:02Z",
+      "final_score": "Luka Doncic 23 pts + 3 reb + 3 ast = 29 PRA in Lakers 114-110 Kings - over the 26.5 line, so the Under leg missed and the entry settles Doesn't Hit."
     }
   ],
   "prizepicks": [
@@ -2496,100 +2601,6 @@
           "side": "Over",
           "line": 3.5,
           "stat": "Punts"
-        }
-      ],
-      "platform": "PrizePicks"
-    },
-    {
-      "sport": "NBA",
-      "matchup": "Giannis Antetokounmpo Under 24.5 PRA + Victor Wembanyama Under 23.5 PRA + Bronny James Under 6.5 Points + Luka Doncic Under 26.5 PRA",
-      "date": "2026-10-08",
-      "start_time": "2026-10-08T23:00:00Z",
-      "favorite": "Hits",
-      "estimated_probability": {
-        "Hits": 50,
-        "Doesn't Hit": 50
-      },
-      "recommended_units": 0.5,
-      "actual_multiplier": 10,
-      "is_prizepicks": true,
-      "reasoning": [],
-      "sources": [],
-      "legs": [
-        {
-          "type": "over_under",
-          "player": "Giannis Antetokounmpo",
-          "opponent": "TBD",
-          "side": "Under",
-          "line": 24.5,
-          "stat": "Points + Rebounds + Assists"
-        },
-        {
-          "type": "over_under",
-          "player": "Victor Wembanyama",
-          "opponent": "TBD",
-          "side": "Under",
-          "line": 23.5,
-          "stat": "Points + Rebounds + Assists"
-        },
-        {
-          "type": "over_under",
-          "player": "Bronny James",
-          "opponent": "TBD",
-          "side": "Under",
-          "line": 6.5,
-          "stat": "Points"
-        },
-        {
-          "type": "over_under",
-          "player": "Luka Doncic",
-          "opponent": "TBD",
-          "side": "Under",
-          "line": 26.5,
-          "stat": "Points + Rebounds + Assists"
-        }
-      ],
-      "platform": "PrizePicks"
-    },
-    {
-      "sport": "Mixed",
-      "matchup": "Dak Prescott Over 0.5 Pass Yards (Coupon) + Domantas Sabonis Under 17.5 PRA + Luka Doncic Under 26.5 PRA",
-      "date": "2026-10-08",
-      "start_time": "2026-10-09T00:15:00Z",
-      "favorite": "Hits",
-      "estimated_probability": {
-        "Hits": 50,
-        "Doesn't Hit": 50
-      },
-      "recommended_units": 0.5,
-      "actual_multiplier": 6,
-      "is_prizepicks": true,
-      "reasoning": [],
-      "sources": [],
-      "legs": [
-        {
-          "type": "over_under",
-          "player": "Dak Prescott",
-          "opponent": "TBD",
-          "side": "Over",
-          "line": 0.5,
-          "stat": "Passing Yards (Coupon)"
-        },
-        {
-          "type": "over_under",
-          "player": "Domantas Sabonis",
-          "opponent": "TBD",
-          "side": "Under",
-          "line": 17.5,
-          "stat": "Points + Rebounds + Assists"
-        },
-        {
-          "type": "over_under",
-          "player": "Luka Doncic",
-          "opponent": "TBD",
-          "side": "Under",
-          "line": 26.5,
-          "stat": "Points + Rebounds + Assists"
         }
       ],
       "platform": "PrizePicks"
