@@ -2485,9 +2485,7 @@
       "winner": "Doesn't Hit",
       "settled_at": "2026-10-09T14:19:02Z",
       "final_score": "Luka Doncic 23 pts + 3 reb + 3 ast = 29 PRA in Lakers 114-110 Kings - over the 26.5 line, so the Under leg missed and the entry settles Doesn't Hit."
-    }
-  ],
-  "prizepicks": [
+    },
     {
       "sport": "NFL",
       "matchup": "Pj Martin Anytime TD + Dak Prescott Over 29.5 Pass Yards 1Q + Ryan Flournoy Over 9.5 Longest Rec + Ryan Flournoy Over 14.5 Rec Yards + Ryan Flournoy Over 1.5 Recs + Javonte Williams Over 4.5 Rush Yards 1Q + Bucky Irving Over 9.5 Rush Yards 1Q",
@@ -2509,7 +2507,8 @@
           "player": "Pj Martin",
           "opponent": "TBD",
           "side": "Yes",
-          "stat": "Anytime TD"
+          "stat": "Anytime TD",
+          "actual_value": "TD"
         },
         {
           "type": "over_under",
@@ -2517,7 +2516,8 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 29.5,
-          "stat": "Passing Yards 1Q"
+          "stat": "Passing Yards 1Q",
+          "actual_value": 35
         },
         {
           "type": "over_under",
@@ -2525,7 +2525,8 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 9.5,
-          "stat": "Longest Reception"
+          "stat": "Longest Reception",
+          "actual_value": 48
         },
         {
           "type": "over_under",
@@ -2533,7 +2534,8 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 14.5,
-          "stat": "Receiving Yards"
+          "stat": "Receiving Yards",
+          "actual_value": 90
         },
         {
           "type": "over_under",
@@ -2541,7 +2543,8 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 1.5,
-          "stat": "Receptions"
+          "stat": "Receptions",
+          "actual_value": 3
         },
         {
           "type": "over_under",
@@ -2549,7 +2552,8 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 4.5,
-          "stat": "Rush Yards 1Q"
+          "stat": "Rush Yards 1Q",
+          "actual_value": 26
         },
         {
           "type": "over_under",
@@ -2557,10 +2561,14 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 9.5,
-          "stat": "Rush Yards 1Q"
+          "stat": "Rush Yards 1Q",
+          "actual_value": 4
         }
       ],
-      "platform": "DraftKings"
+      "platform": "DraftKings",
+      "winner": "Doesn't Hit",
+      "final_score": "Doesn't hit - Bucky Irving only had 4 rush yards in the 1Q (O9.5) despite everything else hitting (Martin TD, Prescott 35 1Q pass yds, Flournoy 48 longest/90 yds/3 recs, Williams 26 1Q rush yds).",
+      "settled_at": "2026-10-09T15:00:00Z"
     },
     {
       "sport": "NFL",
@@ -2584,7 +2592,8 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 4.5,
-          "stat": "Receptions"
+          "stat": "Receptions",
+          "actual_value": 2
         },
         {
           "type": "over_under",
@@ -2592,7 +2601,8 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 13.5,
-          "stat": "Rush Attempts"
+          "stat": "Rush Attempts",
+          "actual_value": 21
         },
         {
           "type": "over_under",
@@ -2600,10 +2610,15 @@
           "opponent": "TBD",
           "side": "Over",
           "line": 3.5,
-          "stat": "Punts"
+          "stat": "Punts",
+          "actual_value": 4
         }
       ],
-      "platform": "PrizePicks"
+      "platform": "PrizePicks",
+      "winner": "Doesn't Hit",
+      "final_score": "Doesn't hit - CeeDee Lamb only had 2 receptions (O4.5), despite Irving (21 rush atts, O13.5) and Dixon (4 punts, O3.5) both hitting.",
+      "settled_at": "2026-10-09T15:00:00Z"
     }
-  ]
+  ],
+  "prizepicks": []
 }
