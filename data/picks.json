@@ -100,6 +100,81 @@
         "https://www.widerightnattylite.com/iowa-state-football/54001/injury-report-for-iowa-states-matchup-versus-no-8-byu"
       ],
       "actual_multiplier": 1.24
+    },
+    {
+      "sport": "ATP",
+      "matchup": "Alexander Zverev vs Yibing Wu",
+      "date": "2026-10-09",
+      "start_time": "2026-10-09T05:30:00Z",
+      "favorite": "Alexander Zverev",
+      "estimated_probability": {
+        "Alexander Zverev": 88,
+        "Yibing Wu": 12
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "reasoning": [
+        "Top-seeded Zverev (first-round bye) faces home wild card Wu Yibing (ranked No. 113) in the Shanghai Masters second round; Zverev has won their only meeting (Wu retired down 4-1 in the first set in Geneva 2023) and is 5-2 since the US Open.",
+        "Market has Zverev about -1111 (~91% implied) and Tennis.com's model gives him 87%; held at 88% because Wu has the crowd at his home event, and one preview points out Zverev is 3-12 in his last 15 against top-10 players (not applicable to Wu, but a reason not to go higher).",
+        "Start time is an estimate: Stadium Court session starts 12:00 local, Zverev-Wu is second on court after Shelton-Altmaier, so roughly 13:30 Shanghai (05:30 UTC). No injury news found for either player."
+      ],
+      "sources": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/alexander-zverev-vs-yibing-wu-round-of-64-match-oct-09-2026/",
+        "https://www.tennis.com/tournaments/rolex-shanghai-masters/matches/a-zverev-vs-y-wu-2026-10-09",
+        "https://www.bleachernation.com/picks/2026/10/07/zverev-vs-wu-prediction-at-the-rolex-shanghai-masters-friday-october-9/",
+        "https://en.tennistemple.com/competitions/shanghai/orderofplay"
+      ],
+      "actual_multiplier": 1.09
+    },
+    {
+      "sport": "CFB",
+      "matchup": "UCF vs Oklahoma State",
+      "date": "2026-10-10",
+      "start_time": "2026-10-10T16:00:00Z",
+      "favorite": "Oklahoma State Cowboys",
+      "estimated_probability": {
+        "Oklahoma State Cowboys": 77,
+        "UCF Knights": 23
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "No. 18 Oklahoma State (3-1, 1-0 Big 12) is at home as a 9.5-10.5 point favorite at about -410 (~80% implied); Dimers gives it 75.9% and projects 31-22.",
+        "UCF (3-2, 1-1) is undermanned: starting QB Alonza Barnett III remains out (coach Scott Frost doesn't expect him back), OL Jacob Maiava and Owen Spell are out and a backup tackle is questionable. Oklahoma State's injury report is short (DT Landon Dean out; LT Braydon Nelson probable).",
+        "Held at 77% because Oklahoma State is turnover-prone (QB Drew Mestemaker has five interceptions) and UCF's defense is solid (17.6 points allowed per game, 32nd nationally); Predictem likes UCF to cover."
+      ],
+      "sources": [
+        "https://www.fanduel.com/research/oklahoma-state-vs-ucf-college-football-odds-picks-best-bets-for-10-10-2026",
+        "https://www.dimers.com/cfb/predictions/2026_6_okst_ucf",
+        "https://www.si.com/college/ucf/football/ucf-knights-oklahoma-state-cowboys-injury-report-breakdown-scott-frost-alonza-barnett-duane-thomas-jr-jacob-maiava-jayden-jennings-lewis-carter-wyatt-young-01m4d9m4vmd1",
+        "https://www.nationalfootballpost.com/2026/10/05/no-18-oklahoma-state-hosts-undermanned-ucf-after-bye-week-bump"
+      ],
+      "actual_multiplier": 1.24
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Ole Miss vs Vanderbilt",
+      "date": "2026-10-10",
+      "start_time": "2026-10-10T19:30:00Z",
+      "favorite": "Ole Miss Rebels",
+      "estimated_probability": {
+        "Ole Miss Rebels": 72,
+        "Vanderbilt Commodores": 28
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "Ole Miss is a ~9.5-point road favorite at about -355 (~78% implied); it averages 35.5 points per game vs Vanderbilt's 25.4, QB Trinidad Chambliss has 1,222 passing yards and 8 TDs plus 4 rushing scores, and Ole Miss won the last meeting 33-7 (Oct 2023) and leads the series 54-40-2.",
+        "Held at 72% because the game is at Vanderbilt, Ole Miss allows 30.8 points per game, RB Kewan Lacy is only expected to play after a shoulder issue, six Rebels are out (LB Ant Davis Jr., RB Joshua Dye, S Craig Tutt, OL Jalan Chapman, OL Emanuel Faulkner and another), and Vanderbilt QB Jared Curtis is probable after missing the Georgia game.",
+        "Kickoff is 2:30 pm CT (3:30 pm ET); one Yahoo article lists Oct 17 but ESPN and Ole Miss athletics both show Oct 10."
+      ],
+      "sources": [
+        "https://www.si.com/college/olemiss/football/where-kewan-lacy-jared-curtis-land-on-first-injury-report-for-ole-miss-vanderbilt",
+        "https://www.bleachernation.com/picks/2026/10/07/ole-miss-vs-vanderbilt-prediction-odds-picks-best-bets-october-10-2026/",
+        "https://www.foxsports.com/college-football/ole-miss-rebels-vs-vanderbilt-commodores-oct-10-2026-game-boxscore-43593",
+        "https://therebelwalk.com/2026/10/three-keys-to-the-game-ole-miss-at-vanderbilt/"
+      ],
+      "actual_multiplier": 1.28
     }
   ],
   "settled": [
