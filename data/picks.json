@@ -149,30 +149,6 @@
         "https://footballwhispers.com/blog/barcelona-vs-getafe-prediction-10-10-2026/",
         "https://www.fcbarcelona.com/en/news/2196531/fc-barcelona-v-getafe-kick-off-time"
       ]
-    },
-    {
-      "sport": "Soccer",
-      "matchup": "Augsburg vs Bayern Munich",
-      "date": "2026-10-10",
-      "start_time": "2026-10-10T13:30:00Z",
-      "favorite": "Bayern Munich",
-      "estimated_probability": {
-        "Bayern Munich": 88,
-        "Augsburg": 12
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2,
-      "reasoning": [
-        "Draw No Bet. Bayern are about 1.19 to win at Augsburg (draw 9.50, Augsburg 13.80), roughly 83% to win and about 92% with the draw removed; Bayern have won eight of the last ten meetings.",
-        "Bayern's only confirmed absence is Jamal Musiala (thigh); Augsburg are missing Steve Mounie, Tim Breithaupt and Noahkai Banks.",
-        "Held at 88% because Augsburg are the last team to beat Bayern in this fixture, previews lean toward a goal-heavy game, and one model gives Bayern only 50% to win outright (before removing the draw). Kickoff 15:30 CEST is from one source; others disagree, so the start time is an estimate. No real Draw No Bet price was found, so the multiplier is fair odds."
-      ],
-      "sources": [
-        "https://easyodds.com/augsburg-vs-bayern-munich-betting-odds-tips-predictions-preview-10th-october-2026",
-        "https://www.mightytips.com/football-predictions/augsburg-vs-bayern-munich-prediction-10-10-2026/",
-        "https://footballwhispers.com/blog/fc-augsburg-vs-bayern-munich-prediction-preview-betting-tips-10-10-26/",
-        "https://sportsmole.co.uk/football/augsburg/bundesliga-title-race/preview/augsburg-vs-bayern-prediction-team-news-lineups_606491.html"
-      ]
     }
   ],
   "settled": [
@@ -2724,6 +2700,33 @@
       "winner": "Arsenal",
       "final_score": "Arsenal 2, Leeds United 1",
       "settled_at": "2026-10-10T14:17:39Z"
+    },
+    {
+      "sport": "Soccer",
+      "matchup": "Augsburg vs Bayern Munich",
+      "date": "2026-10-10",
+      "start_time": "2026-10-10T13:30:00Z",
+      "favorite": "Bayern Munich",
+      "estimated_probability": {
+        "Bayern Munich": 88,
+        "Augsburg": 12
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "reasoning": [
+        "Draw No Bet. Bayern are about 1.19 to win at Augsburg (draw 9.50, Augsburg 13.80), roughly 83% to win and about 92% with the draw removed; Bayern have won eight of the last ten meetings.",
+        "Bayern's only confirmed absence is Jamal Musiala (thigh); Augsburg are missing Steve Mounie, Tim Breithaupt and Noahkai Banks.",
+        "Held at 88% because Augsburg are the last team to beat Bayern in this fixture, previews lean toward a goal-heavy game, and one model gives Bayern only 50% to win outright (before removing the draw). Kickoff 15:30 CEST is from one source; others disagree, so the start time is an estimate. No real Draw No Bet price was found, so the multiplier is fair odds."
+      ],
+      "sources": [
+        "https://easyodds.com/augsburg-vs-bayern-munich-betting-odds-tips-predictions-preview-10th-october-2026",
+        "https://www.mightytips.com/football-predictions/augsburg-vs-bayern-munich-prediction-10-10-2026/",
+        "https://footballwhispers.com/blog/fc-augsburg-vs-bayern-munich-prediction-preview-betting-tips-10-10-26/",
+        "https://sportsmole.co.uk/football/augsburg/bundesliga-title-race/preview/augsburg-vs-bayern-prediction-team-news-lineups_606491.html"
+      ],
+      "winner": "push",
+      "final_score": "Augsburg 2, Bayern Munich 2 (draw - Draw No Bet stake refunded)",
+      "settled_at": "2026-10-10T18:17:28Z"
     }
   ],
   "prizepicks": []
