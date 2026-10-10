@@ -4,31 +4,6 @@
   "picks": [
     {
       "sport": "CFB",
-      "matchup": "South Carolina vs Florida",
-      "date": "2026-10-10",
-      "start_time": "2026-10-10T16:45:00Z",
-      "favorite": "Florida Gators",
-      "estimated_probability": {
-        "Florida Gators": 84,
-        "South Carolina Gamecocks": 16
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "reasoning": [
-        "Florida is 4-1 (2-1 SEC) at home; South Carolina is 2-3 and 0-3 in the SEC after a 35-34 overtime loss to Kentucky. Florida has won 17 of 19 home meetings in the series.",
-        "Market has Florida about -521 (~84% implied) as a 12.5-13.5 point favorite and Dimers gives Florida 87.2%; held at 84% because Florida just lost at Missouri and South Carolina's offense is averaging 37.6 points and 491 yards.",
-        "Injuries: Florida WR Vernell Brown III and RB London Montgomery are questionable; South Carolina has four players out and three doubtful, including DB Quay'sheed Scott."
-      ],
-      "sources": [
-        "https://www.fanduel.com/research/florida-vs-south-carolina-college-football-odds-picks-best-bets-for-10-10-2026",
-        "https://www.dimers.com/cfb/predictions/2026_6_fla_scar",
-        "https://www.on3.com/teams/florida-gators/news/florida-vs-south-carolina-how-to-watch-injury-report-betting-lines/",
-        "https://floridagators.com/news/2026/10/5/football-that-wasnt-it-gators-look-to-move-on-from-messy-missouri-loss-jadan-baugh-jon-sumrall"
-      ],
-      "actual_multiplier": 1.19
-    },
-    {
-      "sport": "CFB",
       "matchup": "UCLA vs Oregon",
       "date": "2026-10-10",
       "start_time": "2026-10-10T19:30:00Z",
@@ -2736,6 +2711,34 @@
       "winner": "Barcelona",
       "final_score": "Barcelona 3, Getafe 0 (Draw No Bet - win)",
       "settled_at": "2026-10-10T20:16:48Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "South Carolina vs Florida",
+      "date": "2026-10-10",
+      "start_time": "2026-10-10T16:45:00Z",
+      "favorite": "Florida Gators",
+      "estimated_probability": {
+        "Florida Gators": 84,
+        "South Carolina Gamecocks": 16
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "reasoning": [
+        "Florida is 4-1 (2-1 SEC) at home; South Carolina is 2-3 and 0-3 in the SEC after a 35-34 overtime loss to Kentucky. Florida has won 17 of 19 home meetings in the series.",
+        "Market has Florida about -521 (~84% implied) as a 12.5-13.5 point favorite and Dimers gives Florida 87.2%; held at 84% because Florida just lost at Missouri and South Carolina's offense is averaging 37.6 points and 491 yards.",
+        "Injuries: Florida WR Vernell Brown III and RB London Montgomery are questionable; South Carolina has four players out and three doubtful, including DB Quay'sheed Scott."
+      ],
+      "sources": [
+        "https://www.fanduel.com/research/florida-vs-south-carolina-college-football-odds-picks-best-bets-for-10-10-2026",
+        "https://www.dimers.com/cfb/predictions/2026_6_fla_scar",
+        "https://www.on3.com/teams/florida-gators/news/florida-vs-south-carolina-how-to-watch-injury-report-betting-lines/",
+        "https://floridagators.com/news/2026/10/5/football-that-wasnt-it-gators-look-to-move-on-from-messy-missouri-loss-jadan-baugh-jon-sumrall"
+      ],
+      "actual_multiplier": 1.19,
+      "winner": "South Carolina Gamecocks",
+      "final_score": "South Carolina 38, Florida 19",
+      "settled_at": "2026-10-10T22:16:59Z"
     }
   ],
   "prizepicks": []
