@@ -78,31 +78,6 @@
     },
     {
       "sport": "CFB",
-      "matchup": "Iowa State vs BYU",
-      "date": "2026-10-09",
-      "start_time": "2026-10-10T02:15:00Z",
-      "favorite": "BYU Cougars",
-      "estimated_probability": {
-        "BYU Cougars": 77,
-        "Iowa State Cyclones": 23
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "reasoning": [
-        "No. 8 BYU is 4-0 (2-0 Big 12) at home in Provo; Iowa State is 3-2. BYU is a ~10.5-point favorite at about -410 to -425 (~80% implied before vig).",
-        "Held at 77% because BYU is missing RB LJ Martin, LB Isaiah Glasker and RB Sione Moa (S Raider Damuni doubtful), and previews flag BYU's third-down defense; Iowa State is also thin (S Drew Surges, DE Caden Crawford, DT Ka'Mori Moore out).",
-        "A final availability report comes out 90 minutes before kickoff, so injury designations could still change."
-      ],
-      "sources": [
-        "https://www.deseret.com/sports/2026/10/06/byu-cougars-football-availability-report-iowa-state/",
-        "https://www.bleachernation.com/picks/2026/10/07/byu-vs-iowa-state-prediction-live-odds-stats-history-and-picks-october-9-2026/",
-        "https://www.si.com/betting/iowa-state-vs-byu-prediction-odds-and-key-players-to-watch-for-college-football-week-6-2026",
-        "https://www.widerightnattylite.com/iowa-state-football/54001/injury-report-for-iowa-states-matchup-versus-no-8-byu"
-      ],
-      "actual_multiplier": 1.24
-    },
-    {
-      "sport": "CFB",
       "matchup": "UCF vs Oklahoma State",
       "date": "2026-10-10",
       "start_time": "2026-10-10T16:00:00Z",
@@ -152,31 +127,6 @@
       "actual_multiplier": 1.28
     },
     {
-      "sport": "ATP",
-      "matchup": "Juan Manuel Cerundolo vs Carlos Alcaraz",
-      "date": "2026-10-10",
-      "start_time": "2026-10-10T10:00:00Z",
-      "favorite": "Carlos Alcaraz",
-      "estimated_probability": {
-        "Carlos Alcaraz": 94,
-        "Juan Manuel Cerundolo": 6
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2.5,
-      "reasoning": [
-        "No. 3 Alcaraz is a huge favorite in the Shanghai second round: DraftKings -3448 (~97% implied), Bet365 about 1.03, Dimers' model 93%. He just won Tokyo, beating Lehecka 7-6(4), 6-4 in the final, and leads the head-to-head 1-0.",
-        "Juan Manuel Cerundolo (ranked 55) lost four of his previous five matches before Shanghai, and the two have never met on a hard court.",
-        "Held at 94% because of the ~3% upset tail in any single match and a short turnaround after the Tokyo title run; no injury news turned up for either player. Scheduled not before 18:00 local on Stadium Court, about 10:00 UTC."
-      ],
-      "sources": [
-        "https://www.dimers.com/tennis/news/juan-cerundolo-vs-carlos-alcaraz-tennis-prediction-atp-shanghai-masters-2026-ac",
-        "https://lastwordonsports.com/tennis/2026/10/09/atp-shanghai-best-bets-cerundolo-alcaraz/",
-        "https://tennistonic.com/tennis-news/1063108/h2h-prediction-of-carlos-alcaraz-vs-juan-manuel-cerundolo-in-shanghai-with-odds-preview-pick-10th-october-2026/",
-        "https://scores24.live/en/tennis/m-10-10-2026-cerundolo-juan-manuel-alcaraz-carlos-prediction"
-      ],
-      "actual_multiplier": 1.03
-    },
-    {
       "sport": "Soccer",
       "matchup": "Getafe vs Barcelona",
       "date": "2026-10-10",
@@ -222,30 +172,6 @@
         "https://www.mightytips.com/football-predictions/augsburg-vs-bayern-munich-prediction-10-10-2026/",
         "https://footballwhispers.com/blog/fc-augsburg-vs-bayern-munich-prediction-preview-betting-tips-10-10-26/",
         "https://sportsmole.co.uk/football/augsburg/bundesliga-title-race/preview/augsburg-vs-bayern-prediction-team-news-lineups_606491.html"
-      ]
-    },
-    {
-      "sport": "Soccer",
-      "matchup": "Arsenal vs Leeds United",
-      "date": "2026-10-10",
-      "start_time": "2026-10-10T11:30:00Z",
-      "favorite": "Arsenal",
-      "estimated_probability": {
-        "Arsenal": 80,
-        "Leeds United": 20
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "reasoning": [
-        "Draw No Bet. Arsenal are about 4/11 (1.36) to win at the Emirates (draw 4/1, Leeds 15/2), roughly 70% to win and about 86% once the draw is removed; Arsenal won this fixture 5-0 last season and sit second, three points behind Manchester City.",
-        "Held at 80% because Arsenal lost 3-0 at Brighton before the international break, Havertz is out, and Leeds are one of only five unbeaten Premier League sides with a 3-5-2 that has been hard to break down; Sportytrader's model gives Arsenal just ~47% to win outright.",
-        "Kickoff confirmed at 12:30 pm BST (11:30 UTC) after a TV move. No real Draw No Bet price was found, so the multiplier is fair odds from the model probability."
-      ],
-      "sources": [
-        "https://www.football365.com/match-preview/arsenal-v-leeds-prediction-preview",
-        "https://www.rotowire.com/soccer/article/arsenal-vs-leeds-prediction-predicted-lineups-team-news-139320",
-        "https://www.sportytrader.com/en/betting-tips/arsenal-leeds-377664/",
-        "https://www.tntsports.co.uk/football/premier-league/2026-2027/arsenal-leeds-how-to-watch-live-stream-what-channel-uk-start-time-kick-off_sto23343019/story.shtml"
       ]
     }
   ],
@@ -2715,6 +2641,89 @@
       "winner": "Doesn't Hit",
       "final_score": "Doesn't hit - CeeDee Lamb only had 2 receptions (O4.5), despite Irving (21 rush atts, O13.5) and Dixon (4 punts, O3.5) both hitting.",
       "settled_at": "2026-10-09T15:00:00Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Iowa State vs BYU",
+      "date": "2026-10-09",
+      "start_time": "2026-10-10T02:15:00Z",
+      "favorite": "BYU Cougars",
+      "estimated_probability": {
+        "BYU Cougars": 77,
+        "Iowa State Cyclones": 23
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "No. 8 BYU is 4-0 (2-0 Big 12) at home in Provo; Iowa State is 3-2. BYU is a ~10.5-point favorite at about -410 to -425 (~80% implied before vig).",
+        "Held at 77% because BYU is missing RB LJ Martin, LB Isaiah Glasker and RB Sione Moa (S Raider Damuni doubtful), and previews flag BYU's third-down defense; Iowa State is also thin (S Drew Surges, DE Caden Crawford, DT Ka'Mori Moore out).",
+        "A final availability report comes out 90 minutes before kickoff, so injury designations could still change."
+      ],
+      "sources": [
+        "https://www.deseret.com/sports/2026/10/06/byu-cougars-football-availability-report-iowa-state/",
+        "https://www.bleachernation.com/picks/2026/10/07/byu-vs-iowa-state-prediction-live-odds-stats-history-and-picks-october-9-2026/",
+        "https://www.si.com/betting/iowa-state-vs-byu-prediction-odds-and-key-players-to-watch-for-college-football-week-6-2026",
+        "https://www.widerightnattylite.com/iowa-state-football/54001/injury-report-for-iowa-states-matchup-versus-no-8-byu"
+      ],
+      "actual_multiplier": 1.24,
+      "winner": "BYU Cougars",
+      "final_score": "BYU 24, Iowa State 10",
+      "settled_at": "2026-10-10T14:17:39Z"
+    },
+    {
+      "sport": "ATP",
+      "matchup": "Juan Manuel Cerundolo vs Carlos Alcaraz",
+      "date": "2026-10-10",
+      "start_time": "2026-10-10T10:00:00Z",
+      "favorite": "Carlos Alcaraz",
+      "estimated_probability": {
+        "Carlos Alcaraz": 94,
+        "Juan Manuel Cerundolo": 6
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "reasoning": [
+        "No. 3 Alcaraz is a huge favorite in the Shanghai second round: DraftKings -3448 (~97% implied), Bet365 about 1.03, Dimers' model 93%. He just won Tokyo, beating Lehecka 7-6(4), 6-4 in the final, and leads the head-to-head 1-0.",
+        "Juan Manuel Cerundolo (ranked 55) lost four of his previous five matches before Shanghai, and the two have never met on a hard court.",
+        "Held at 94% because of the ~3% upset tail in any single match and a short turnaround after the Tokyo title run; no injury news turned up for either player. Scheduled not before 18:00 local on Stadium Court, about 10:00 UTC."
+      ],
+      "sources": [
+        "https://www.dimers.com/tennis/news/juan-cerundolo-vs-carlos-alcaraz-tennis-prediction-atp-shanghai-masters-2026-ac",
+        "https://lastwordonsports.com/tennis/2026/10/09/atp-shanghai-best-bets-cerundolo-alcaraz/",
+        "https://tennistonic.com/tennis-news/1063108/h2h-prediction-of-carlos-alcaraz-vs-juan-manuel-cerundolo-in-shanghai-with-odds-preview-pick-10th-october-2026/",
+        "https://scores24.live/en/tennis/m-10-10-2026-cerundolo-juan-manuel-alcaraz-carlos-prediction"
+      ],
+      "actual_multiplier": 1.03,
+      "winner": "Carlos Alcaraz",
+      "final_score": "Alcaraz 6-3, 6-3",
+      "settled_at": "2026-10-10T14:17:39Z"
+    },
+    {
+      "sport": "Soccer",
+      "matchup": "Arsenal vs Leeds United",
+      "date": "2026-10-10",
+      "start_time": "2026-10-10T11:30:00Z",
+      "favorite": "Arsenal",
+      "estimated_probability": {
+        "Arsenal": 80,
+        "Leeds United": 20
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "reasoning": [
+        "Draw No Bet. Arsenal are about 4/11 (1.36) to win at the Emirates (draw 4/1, Leeds 15/2), roughly 70% to win and about 86% once the draw is removed; Arsenal won this fixture 5-0 last season and sit second, three points behind Manchester City.",
+        "Held at 80% because Arsenal lost 3-0 at Brighton before the international break, Havertz is out, and Leeds are one of only five unbeaten Premier League sides with a 3-5-2 that has been hard to break down; Sportytrader's model gives Arsenal just ~47% to win outright.",
+        "Kickoff confirmed at 12:30 pm BST (11:30 UTC) after a TV move. No real Draw No Bet price was found, so the multiplier is fair odds from the model probability."
+      ],
+      "sources": [
+        "https://www.football365.com/match-preview/arsenal-v-leeds-prediction-preview",
+        "https://www.rotowire.com/soccer/article/arsenal-vs-leeds-prediction-predicted-lineups-team-news-139320",
+        "https://www.sportytrader.com/en/betting-tips/arsenal-leeds-377664/",
+        "https://www.tntsports.co.uk/football/premier-league/2026-2027/arsenal-leeds-how-to-watch-live-stream-what-channel-uk-start-time-kick-off_sto23343019/story.shtml"
+      ],
+      "winner": "Arsenal",
+      "final_score": "Arsenal 2, Leeds United 1",
+      "settled_at": "2026-10-10T14:17:39Z"
     }
   ],
   "prizepicks": []
