@@ -51,31 +51,6 @@
         "https://capperspicks.com/free-picks/nfl-football/cincinnati-bengals-vs-miami-dolphins-betting-prediction-10-11-2026"
       ],
       "actual_multiplier": 1.29
-    },
-    {
-      "sport": "WTA",
-      "matchup": "Qinwen Zheng vs Mirra Andreeva",
-      "date": "2026-10-11",
-      "start_time": "2026-10-11T11:30:00Z",
-      "favorite": "Mirra Andreeva",
-      "estimated_probability": {
-        "Mirra Andreeva": 64,
-        "Qinwen Zheng": 36
-      },
-      "confidence_label": "Slight lean",
-      "recommended_units": 0.75,
-      "reasoning": [
-        "China Open final in Beijing: Andreeva is about -175 (1.57), roughly 62% implied; she is fresher after four straight-set wins and a 1 hour 14 minute semifinal, while Zheng has played 13h33m on court, the most of any player at any event this season.",
-        "Held at only 64% because Zheng has the home crowd and won their only meeting (5-7, 6-0, 6-4 in the 2024 China Open quarterfinals), and finals are higher variance.",
-        "Scheduled not before 7:30 pm Beijing time (11:30 UTC) after the doubles final. No injury news turned up for either player."
-      ],
-      "sources": [
-        "https://www.sportskeeda.com/tennis/mirra-andreeva-vs-zheng-qinwen-preview-head-to-head-odds-prediction-betting-tips-china-open-2026-final",
-        "https://tennistonic.com/tennis-news/1063478/h2h-prediction-of-mirra-andreeva-vs-qinwen-zheng-in-beijing-with-odds-preview-pick-11th-october-2026/",
-        "https://www.wtatennis.com/news/4589836/mirra-andreeva-vs-zheng-qinwen-everything-to-know-about-china-open-beijing-final",
-        "https://lastwordonsports.com/tennis/2026/10/10/wta-beijing-final-prediction-andreeva-vs-zheng/"
-      ],
-      "actual_multiplier": 1.57
     }
   ],
   "settled": [
@@ -2820,6 +2795,34 @@
       "winner": "Ole Miss Rebels",
       "final_score": "Ole Miss 52, Vanderbilt 17",
       "settled_at": "2026-10-11T00:16:54Z"
+    },
+    {
+      "sport": "WTA",
+      "matchup": "Qinwen Zheng vs Mirra Andreeva",
+      "date": "2026-10-11",
+      "start_time": "2026-10-11T11:30:00Z",
+      "favorite": "Mirra Andreeva",
+      "estimated_probability": {
+        "Mirra Andreeva": 64,
+        "Qinwen Zheng": 36
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "China Open final in Beijing: Andreeva is about -175 (1.57), roughly 62% implied; she is fresher after four straight-set wins and a 1 hour 14 minute semifinal, while Zheng has played 13h33m on court, the most of any player at any event this season.",
+        "Held at only 64% because Zheng has the home crowd and won their only meeting (5-7, 6-0, 6-4 in the 2024 China Open quarterfinals), and finals are higher variance.",
+        "Scheduled not before 7:30 pm Beijing time (11:30 UTC) after the doubles final. No injury news turned up for either player."
+      ],
+      "sources": [
+        "https://www.sportskeeda.com/tennis/mirra-andreeva-vs-zheng-qinwen-preview-head-to-head-odds-prediction-betting-tips-china-open-2026-final",
+        "https://tennistonic.com/tennis-news/1063478/h2h-prediction-of-mirra-andreeva-vs-qinwen-zheng-in-beijing-with-odds-preview-pick-11th-october-2026/",
+        "https://www.wtatennis.com/news/4589836/mirra-andreeva-vs-zheng-qinwen-everything-to-know-about-china-open-beijing-final",
+        "https://lastwordonsports.com/tennis/2026/10/10/wta-beijing-final-prediction-andreeva-vs-zheng/"
+      ],
+      "actual_multiplier": 1.57,
+      "winner": "Qinwen Zheng",
+      "final_score": "Zheng 7-5, 6-4",
+      "settled_at": "2026-10-11T14:18:08Z"
     }
   ],
   "prizepicks": []
