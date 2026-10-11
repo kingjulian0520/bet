@@ -1,58 +1,7 @@
 {
   "generated_at": "2026-10-05T21:00:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [
-    {
-      "sport": "CFB",
-      "matchup": "UCLA vs Oregon",
-      "date": "2026-10-10",
-      "start_time": "2026-10-10T19:30:00Z",
-      "favorite": "Oregon Ducks",
-      "estimated_probability": {
-        "Oregon Ducks": 78,
-        "UCLA Bruins": 22
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "reasoning": [
-        "No. 13 Oregon (3-1) hosts No. 21 UCLA (4-0) at Autzen Stadium as an 11.5-12.5 point favorite; the moneyline is roughly Oregon -435 to -550 and Dimers gives Oregon 82.4%.",
-        "Held at 78% because UCLA is unbeaten with a strong ground game and Oregon's quarterback situation after a bye is uncertain; SBG's analyst picks UCLA to cover.",
-        "No other major injury information turned up in the sources checked."
-      ],
-      "sources": [
-        "https://www.espn.com/college-football/preview/_/gameId/401858484",
-        "https://www.dimers.com/cfb/predictions/2026_6_ore_ucla",
-        "https://www.covers.com/sport/football/ncaaf/matchup/378295/picks",
-        "https://www.sbgglobal.eu/ncaa-college-football-betting/ucla-bruins-vs-oregon-ducks-ncaaf-betting-odds-preview-picks/"
-      ],
-      "actual_multiplier": 1.21
-    },
-    {
-      "sport": "CFB",
-      "matchup": "Ole Miss vs Vanderbilt",
-      "date": "2026-10-10",
-      "start_time": "2026-10-10T19:30:00Z",
-      "favorite": "Ole Miss Rebels",
-      "estimated_probability": {
-        "Ole Miss Rebels": 72,
-        "Vanderbilt Commodores": 28
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 1.25,
-      "reasoning": [
-        "Ole Miss is a ~9.5-point road favorite at about -355 (~78% implied); it averages 35.5 points per game vs Vanderbilt's 25.4, QB Trinidad Chambliss has 1,222 passing yards and 8 TDs plus 4 rushing scores, and Ole Miss won the last meeting 33-7 (Oct 2023) and leads the series 54-40-2.",
-        "Held at 72% because the game is at Vanderbilt, Ole Miss allows 30.8 points per game, RB Kewan Lacy is only expected to play after a shoulder issue, six Rebels are out (LB Ant Davis Jr., RB Joshua Dye, S Craig Tutt, OL Jalan Chapman, OL Emanuel Faulkner and another), and Vanderbilt QB Jared Curtis is probable after missing the Georgia game.",
-        "Kickoff is 2:30 pm CT (3:30 pm ET); one Yahoo article lists Oct 17 but ESPN and Ole Miss athletics both show Oct 10."
-      ],
-      "sources": [
-        "https://www.si.com/college/olemiss/football/where-kewan-lacy-jared-curtis-land-on-first-injury-report-for-ole-miss-vanderbilt",
-        "https://www.bleachernation.com/picks/2026/10/07/ole-miss-vs-vanderbilt-prediction-odds-picks-best-bets-october-10-2026/",
-        "https://www.foxsports.com/college-football/ole-miss-rebels-vs-vanderbilt-commodores-oct-10-2026-game-boxscore-43593",
-        "https://therebelwalk.com/2026/10/three-keys-to-the-game-ole-miss-at-vanderbilt/"
-      ],
-      "actual_multiplier": 1.28
-    }
-  ],
+  "picks": [],
   "settled": [
     {
       "sport": "NFL",
@@ -2739,6 +2688,62 @@
       "winner": "South Carolina Gamecocks",
       "final_score": "South Carolina 38, Florida 19",
       "settled_at": "2026-10-10T22:16:59Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "UCLA vs Oregon",
+      "date": "2026-10-10",
+      "start_time": "2026-10-10T19:30:00Z",
+      "favorite": "Oregon Ducks",
+      "estimated_probability": {
+        "Oregon Ducks": 78,
+        "UCLA Bruins": 22
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "No. 13 Oregon (3-1) hosts No. 21 UCLA (4-0) at Autzen Stadium as an 11.5-12.5 point favorite; the moneyline is roughly Oregon -435 to -550 and Dimers gives Oregon 82.4%.",
+        "Held at 78% because UCLA is unbeaten with a strong ground game and Oregon's quarterback situation after a bye is uncertain; SBG's analyst picks UCLA to cover.",
+        "No other major injury information turned up in the sources checked."
+      ],
+      "sources": [
+        "https://www.espn.com/college-football/preview/_/gameId/401858484",
+        "https://www.dimers.com/cfb/predictions/2026_6_ore_ucla",
+        "https://www.covers.com/sport/football/ncaaf/matchup/378295/picks",
+        "https://www.sbgglobal.eu/ncaa-college-football-betting/ucla-bruins-vs-oregon-ducks-ncaaf-betting-odds-preview-picks/"
+      ],
+      "actual_multiplier": 1.21,
+      "winner": "UCLA Bruins",
+      "final_score": "UCLA 17, Oregon 15",
+      "settled_at": "2026-10-11T00:16:54Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Ole Miss vs Vanderbilt",
+      "date": "2026-10-10",
+      "start_time": "2026-10-10T19:30:00Z",
+      "favorite": "Ole Miss Rebels",
+      "estimated_probability": {
+        "Ole Miss Rebels": 72,
+        "Vanderbilt Commodores": 28
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "Ole Miss is a ~9.5-point road favorite at about -355 (~78% implied); it averages 35.5 points per game vs Vanderbilt's 25.4, QB Trinidad Chambliss has 1,222 passing yards and 8 TDs plus 4 rushing scores, and Ole Miss won the last meeting 33-7 (Oct 2023) and leads the series 54-40-2.",
+        "Held at 72% because the game is at Vanderbilt, Ole Miss allows 30.8 points per game, RB Kewan Lacy is only expected to play after a shoulder issue, six Rebels are out (LB Ant Davis Jr., RB Joshua Dye, S Craig Tutt, OL Jalan Chapman, OL Emanuel Faulkner and another), and Vanderbilt QB Jared Curtis is probable after missing the Georgia game.",
+        "Kickoff is 2:30 pm CT (3:30 pm ET); one Yahoo article lists Oct 17 but ESPN and Ole Miss athletics both show Oct 10."
+      ],
+      "sources": [
+        "https://www.si.com/college/olemiss/football/where-kewan-lacy-jared-curtis-land-on-first-injury-report-for-ole-miss-vanderbilt",
+        "https://www.bleachernation.com/picks/2026/10/07/ole-miss-vs-vanderbilt-prediction-odds-picks-best-bets-october-10-2026/",
+        "https://www.foxsports.com/college-football/ole-miss-rebels-vs-vanderbilt-commodores-oct-10-2026-game-boxscore-43593",
+        "https://therebelwalk.com/2026/10/three-keys-to-the-game-ole-miss-at-vanderbilt/"
+      ],
+      "actual_multiplier": 1.28,
+      "winner": "Ole Miss Rebels",
+      "final_score": "Ole Miss 52, Vanderbilt 17",
+      "settled_at": "2026-10-11T00:16:54Z"
     }
   ],
   "prizepicks": []
