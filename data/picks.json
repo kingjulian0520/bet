@@ -1,7 +1,83 @@
 {
   "generated_at": "2026-10-05T21:00:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [],
+  "picks": [
+    {
+      "sport": "NFL",
+      "matchup": "Philadelphia Eagles vs Jacksonville Jaguars",
+      "date": "2026-10-11",
+      "start_time": "2026-10-11T13:30:00Z",
+      "favorite": "Jacksonville Jaguars",
+      "estimated_probability": {
+        "Jacksonville Jaguars": 77,
+        "Philadelphia Eagles": 23
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "reasoning": [
+        "Week 5 in London (9:30 am ET at Tottenham Hotspur Stadium): Jacksonville is 3-1 and a 7-7.5 point favorite at about -355 to -417 (~78% implied; ESPN's FPI gives the Jaguars 73%); the Eagles are 2-2 on a two-game losing streak.",
+        "Philadelphia has a long injury list: Saquon Barkley, DeVonta Smith, Hollywood Brown, Marcus Epps and Drew Kendall were ruled out in one report, with Jonathan Greenard questionable. Jacksonville's list is minor (CB Jaylon Jones out, S Eric Murray doubtful or questionable).",
+        "Held at 77% because the injury reports differ by outlet and the spread has moved a lot (from -4.5 to -7.5), so some of the news is priced in; the low 41.5-42.5 total also points to a closer game."
+      ],
+      "sources": [
+        "https://www.si.com/betting/eagles-vs-jaguars-prediction-odds-spread-injuries-trends-for-nfl-week-5-2026",
+        "https://sports.yahoo.com/articles/jaguars-vs-eagles-odds-injuries-201049659.html",
+        "https://www.nbcsports.com/betting/nfl/news/eagles-vs-jaguars-odds-expert-picks-team-and-player-news-betting-trends-and-stats",
+        "https://www.sportsgambler.com/betting-tips/nfl/philadelphia-eagles-vs-jacksonville-jaguars-prediction-odds-2026-10-11/"
+      ],
+      "actual_multiplier": 1.27
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Cincinnati Bengals vs Miami Dolphins",
+      "date": "2026-10-11",
+      "start_time": "2026-10-11T17:00:00Z",
+      "favorite": "Cincinnati Bengals",
+      "estimated_probability": {
+        "Cincinnati Bengals": 72,
+        "Miami Dolphins": 28
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "reasoning": [
+        "Bengals (2-2) visit the 0-4 Dolphins as a 7-7.5 point favorite at about -345 to -379 (~77% implied); Miami has the NFL's worst point differential (-55) and is 1-3 against the spread, with a quarterback change reported. ESPN's FPI gives Cincinnati 81% and Covers rates it a 75% moneyline play.",
+        "Held at 72% because Ja'Marr Chase is in concussion protocol and Tee Higgins (abductor) is questionable, Kyle Dugger is out, and Cincinnati has lost its last two games (to Pittsburgh and Jacksonville).",
+        "Kickoff is 1:00 pm ET; final inactives come about 90 minutes earlier, so Chase's status could still change the price."
+      ],
+      "sources": [
+        "https://www.covers.com/nfl/bengals-vs-dolphins-prediction-picks-oct-11-2026",
+        "https://www.nbcsports.com/nfl/news/bengals-vs-dolphins-prediction-odds-expert-picks-qb-matchup-injury-update-betting-trends-and-stats",
+        "https://www.si.com/betting/bengals-vs-dolphins-prediction-odds-spread-injuries-trends-for-nfl-week-5-01m46vr2529z",
+        "https://capperspicks.com/free-picks/nfl-football/cincinnati-bengals-vs-miami-dolphins-betting-prediction-10-11-2026"
+      ],
+      "actual_multiplier": 1.29
+    },
+    {
+      "sport": "WTA",
+      "matchup": "Qinwen Zheng vs Mirra Andreeva",
+      "date": "2026-10-11",
+      "start_time": "2026-10-11T11:30:00Z",
+      "favorite": "Mirra Andreeva",
+      "estimated_probability": {
+        "Mirra Andreeva": 64,
+        "Qinwen Zheng": 36
+      },
+      "confidence_label": "Slight lean",
+      "recommended_units": 0.75,
+      "reasoning": [
+        "China Open final in Beijing: Andreeva is about -175 (1.57), roughly 62% implied; she is fresher after four straight-set wins and a 1 hour 14 minute semifinal, while Zheng has played 13h33m on court, the most of any player at any event this season.",
+        "Held at only 64% because Zheng has the home crowd and won their only meeting (5-7, 6-0, 6-4 in the 2024 China Open quarterfinals), and finals are higher variance.",
+        "Scheduled not before 7:30 pm Beijing time (11:30 UTC) after the doubles final. No injury news turned up for either player."
+      ],
+      "sources": [
+        "https://www.sportskeeda.com/tennis/mirra-andreeva-vs-zheng-qinwen-preview-head-to-head-odds-prediction-betting-tips-china-open-2026-final",
+        "https://tennistonic.com/tennis-news/1063478/h2h-prediction-of-mirra-andreeva-vs-qinwen-zheng-in-beijing-with-odds-preview-pick-11th-october-2026/",
+        "https://www.wtatennis.com/news/4589836/mirra-andreeva-vs-zheng-qinwen-everything-to-know-about-china-open-beijing-final",
+        "https://lastwordonsports.com/tennis/2026/10/10/wta-beijing-final-prediction-andreeva-vs-zheng/"
+      ],
+      "actual_multiplier": 1.57
+    }
+  ],
   "settled": [
     {
       "sport": "NFL",
