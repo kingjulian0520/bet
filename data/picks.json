@@ -1,7 +1,33 @@
 {
   "generated_at": "2026-10-05T21:00:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [],
+  "picks": [
+    {
+      "sport": "Soccer",
+      "matchup": "Benfica vs Celtic (Europa League, Draw No Bet)",
+      "date": "2026-10-15",
+      "start_time": "2026-10-15T19:00:00Z",
+      "favorite": "Benfica",
+      "estimated_probability": {
+        "Benfica": 88,
+        "Celtic": 12
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "reasoning": [
+        "Bookmaker 1X2 prices of roughly Benfica 1.25 / draw 6.50 / Celtic 11.00 imply about 77% / 15% / 9% after removing margin; stripping the draw (Draw No Bet) puts Benfica near 89%.",
+        "Benfica won 2-0 at AC Milan on matchday one and have won nine of their last 10 matches in all competitions; Celtic lost 3-1 at home to Ferencvaros in their opener and only just snapped a three-game losing run with a 2-0 win over Motherwell.",
+        "Benfica have won all four previous European meetings with Celtic in Lisbon.",
+        "Situational: Benfica are without midfielder Enzo Barrenechea (knee), while Celtic are short at centre-back with Carter-Vickers a doubt. Neither absence changes the picture much. A draw is a push (stake refunded); no real DNB price was found, only the 1X2 prices."
+      ],
+      "sources": [
+        "https://www.squawka.com/en/news/benfica-vs-celtic-predictions-betting-tips-15-10-26/",
+        "https://www.racingpost.com/sport/football-tips/europa-league/benfica-vs-celtic-betting-tips-predictions-team-news-odds-bet-builder-akMlO6K5UiT1/",
+        "https://www.sportsgambler.com/betting-tips/football/benfica-vs-celtic-prediction-lineups-odds-2026-10-15/",
+        "https://www.footballwebpages.co.uk/uefa-europa-league/20261015"
+      ]
+    }
+  ],
   "settled": [
     {
       "sport": "NFL",
