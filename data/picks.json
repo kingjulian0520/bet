@@ -1,7 +1,58 @@
 {
   "generated_at": "2026-10-05T21:00:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [],
+  "picks": [
+    {
+      "sport": "NFL",
+      "matchup": "Arizona Cardinals vs Los Angeles Rams",
+      "date": "2026-10-18",
+      "start_time": "2026-10-18T20:05:00Z",
+      "favorite": "Los Angeles Rams",
+      "estimated_probability": {
+        "Los Angeles Rams": 85,
+        "Arizona Cardinals": 15
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "actual_multiplier": 1.11,
+      "reasoning": [
+        "Rams are about 12.5-point home favorites at roughly -900 on the moneyline (books range -769 to -950); Polymarket/Kalshi put them near 88% and Squawka's model has 83%.",
+        "Arizona is 1-4 with a -54 point differential, the worst of the 28 teams playing this week, and has allowed 21 touchdowns in five games; the Rams are 2-3 after a 37-34 overtime loss to Buffalo on Monday night.",
+        "Held at 85% rather than the market's 88%: the Rams' special teams have been a problem, one SI analyst likes Arizona with the points, and Arizona running back Jeremiyah Love is only questionable (ankle). Final inactives come about 90 minutes before the 4:05 pm ET kickoff."
+      ],
+      "sources": [
+        "https://defirate.com/odds/nfl/cardinals-vs-rams-10-18-2026/",
+        "https://www.squawka.com/us/nfl/nfl-news/cardinals-vs-rams-prediction-picks-odds-week-6/",
+        "https://www.si.com/betting/cardinals-vs-rams-prediction-odds-spread-injuries-trends-for-nfl-week-6-2026",
+        "https://espn.com/espn/betting/story/_/id/50147670/2026-nfl-week-6-schedule-odds-point-spreads-totals"
+      ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "New York Jets vs New England Patriots",
+      "date": "2026-10-18",
+      "start_time": "2026-10-18T17:00:00Z",
+      "favorite": "New England Patriots",
+      "estimated_probability": {
+        "New England Patriots": 75,
+        "New York Jets": 25
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.31,
+      "reasoning": [
+        "Patriots are 7-7.5 point home favorites at about -325 to -350 (ESPN -325, FanDuel -350, down from a -375 opener), which is roughly 75-77% after removing the margin; models range from 73% (Dimers) to about 85-87% (Signal, numberFire).",
+        "New England (3-2) has won two straight including 44-17 over the Raiders, has covered 3-1-1 against the spread, and the Jets (2-3) have been swept by them in 8 of the last 10 years.",
+        "Held at 75% because Patriots running back TreVeyon Henderson is doubtful and left tackle Will Campbell is questionable, New England leads the league's Week 6 teams with 7 interceptions thrown, and the Jets pass offense rates 104.2 (4th in the NFL) with Geno Smith; Covers leans Jets +7.5. The line has also moved toward the Jets since opening. Kickoff 1:00 pm ET."
+      ],
+      "sources": [
+        "https://www.covers.com/nfl/jets-vs-patriots-prediction-picks-odds-early-leans-week-6-2026",
+        "https://www.fanduel.com/research/patriots-vs-jets-predictions-odds-picks-best-bets-for-nfl-week-6-2026",
+        "https://www.dimers.com/nfl/news/new-york-jets-vs-new-england-patriots-early-prediction-nfl-week-6-2026-ac",
+        "https://espn.com/espn/betting/story/_/id/50147670/2026-nfl-week-6-schedule-odds-point-spreads-totals"
+      ]
+    }
+  ],
   "settled": [
     {
       "sport": "NFL",
