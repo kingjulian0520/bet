@@ -51,6 +51,56 @@
         "https://www.dimers.com/nfl/news/new-york-jets-vs-new-england-patriots-early-prediction-nfl-week-6-2026-ac",
         "https://espn.com/espn/betting/story/_/id/50147670/2026-nfl-week-6-schedule-odds-point-spreads-totals"
       ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Auburn Tigers vs Georgia Bulldogs",
+      "date": "2026-10-17",
+      "start_time": "2026-10-17T19:30:00Z",
+      "favorite": "Georgia Bulldogs",
+      "estimated_probability": {
+        "Georgia Bulldogs": 92,
+        "Auburn Tigers": 8
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "actual_multiplier": 1.07,
+      "reasoning": [
+        "No. 1 Georgia is a 20.5-point home favorite in Athens at roughly -1450 to -1600 (BetMGM -1400, consensus about -1600), about 93-94% after removing margin; ESPN FPI gives Georgia 90.5% and SP+ projects Georgia 34, Auburn 15.",
+        "Georgia is 6-0 (4-0 SEC) and second nationally in scoring at 46.2 points per game; Auburn is 3-2 (1-2 SEC) and managed only 21 points against Vanderbilt.",
+        "Held at 92% rather than the market's 93-94%: RB Chauncey Bowens is out for a second straight week and safety Malik Green has been sidelined since the Western Kentucky game, and one SI analyst argues the 20.5-point spread is too big (that is a spread opinion, not a straight-up one). Kickoff 3:30 pm ET."
+      ],
+      "sources": [
+        "https://www.covers.com/ncaaf/auburn-vs-georgia-prediction-picks-odds-oct-17-2026",
+        "https://www.si.com/betting/auburn-vs-georgia-prediction-odds-and-key-players-to-watch-for-college-football-week-7-01m4vfvjx4cr",
+        "https://www.capperspicks.com/free-picks/college-football/auburn-tigers-vs-georgia-bulldogs-betting-prediction-10-17-2026/",
+        "https://www.complex.com/bets/a/matt-burke/college-football-odds-week-7-saturday-october-17"
+      ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Florida State Seminoles vs Miami Hurricanes",
+      "date": "2026-10-17",
+      "start_time": "2026-10-17T23:00:00Z",
+      "favorite": "Miami Hurricanes",
+      "estimated_probability": {
+        "Miami Hurricanes": 93,
+        "Florida State Seminoles": 7
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "actual_multiplier": 1.05,
+      "reasoning": [
+        "No. 3 Miami is a 20.5 to 21.5-point home favorite at Hard Rock Stadium, with moneylines from about -1650 to -2300 (roughly 94-95% after removing margin).",
+        "Miami is 5-0; Florida State is 3-3 and 1-3 in the ACC, and has dismissed cornerback Chuck Kennon. CBS's model backs Miami -21.",
+        "Held at 93% rather than the market's 95%: right guard Max Buchanan is out for Miami, rivalry games carry extra variance, and ATS.io sees value on Florida State at +21.5 (a spread view). I found no independent win-probability model for this game. Kickoff 7:00 pm ET."
+      ],
+      "sources": [
+        "https://www.cbssports.com/college-football/news/miami-florida-state-prediction-picks-odds-spread-where-to-watch-live/",
+        "https://www.si.com/betting/florida-state-vs-miami-prediction-odds-and-key-players-to-watch-for-college-football-week-7",
+        "https://caneswarning.com/no-3-miami-hosts-florida-state-how-to-watch-weather-injuries-odds-announcers-and-more",
+        "https://ats.io/college-football/florida-state-vs-miami-prediction-preview-10-17-2026/"
+      ]
     }
   ],
   "settled": [
