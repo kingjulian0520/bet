@@ -29,31 +29,6 @@
     },
     {
       "sport": "NFL",
-      "matchup": "New York Jets vs New England Patriots",
-      "date": "2026-10-18",
-      "start_time": "2026-10-18T17:00:00Z",
-      "favorite": "New England Patriots",
-      "estimated_probability": {
-        "New England Patriots": 75,
-        "New York Jets": 25
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "actual_multiplier": 1.31,
-      "reasoning": [
-        "Patriots are 7-7.5 point home favorites at about -325 to -350 (ESPN -325, FanDuel -350, down from a -375 opener), which is roughly 75-77% after removing the margin; models range from 73% (Dimers) to about 85-87% (Signal, numberFire).",
-        "New England (3-2) has won two straight including 44-17 over the Raiders, has covered 3-1-1 against the spread, and the Jets (2-3) have been swept by them in 8 of the last 10 years.",
-        "Held at 75% because Patriots running back TreVeyon Henderson is doubtful and left tackle Will Campbell is questionable, New England leads the league's Week 6 teams with 7 interceptions thrown, and the Jets pass offense rates 104.2 (4th in the NFL) with Geno Smith; Covers leans Jets +7.5. The line has also moved toward the Jets since opening. Kickoff 1:00 pm ET."
-      ],
-      "sources": [
-        "https://www.covers.com/nfl/jets-vs-patriots-prediction-picks-odds-early-leans-week-6-2026",
-        "https://www.fanduel.com/research/patriots-vs-jets-predictions-odds-picks-best-bets-for-nfl-week-6-2026",
-        "https://www.dimers.com/nfl/news/new-york-jets-vs-new-england-patriots-early-prediction-nfl-week-6-2026-ac",
-        "https://espn.com/espn/betting/story/_/id/50147670/2026-nfl-week-6-schedule-odds-point-spreads-totals"
-      ]
-    },
-    {
-      "sport": "NFL",
       "matchup": "Washington Commanders vs San Francisco 49ers",
       "date": "2026-10-19",
       "start_time": "2026-10-20T00:15:00Z",
@@ -2987,6 +2962,34 @@
       "winner": "Miami Hurricanes",
       "final_score": "Miami 43-35 Florida State (2OT)",
       "settled_at": "2026-10-18T04:06:40Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "New York Jets vs New England Patriots",
+      "date": "2026-10-18",
+      "start_time": "2026-10-18T17:00:00Z",
+      "favorite": "New England Patriots",
+      "estimated_probability": {
+        "New England Patriots": 75,
+        "New York Jets": 25
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.31,
+      "reasoning": [
+        "Patriots are 7-7.5 point home favorites at about -325 to -350 (ESPN -325, FanDuel -350, down from a -375 opener), which is roughly 75-77% after removing the margin; models range from 73% (Dimers) to about 85-87% (Signal, numberFire).",
+        "New England (3-2) has won two straight including 44-17 over the Raiders, has covered 3-1-1 against the spread, and the Jets (2-3) have been swept by them in 8 of the last 10 years.",
+        "Held at 75% because Patriots running back TreVeyon Henderson is doubtful and left tackle Will Campbell is questionable, New England leads the league's Week 6 teams with 7 interceptions thrown, and the Jets pass offense rates 104.2 (4th in the NFL) with Geno Smith; Covers leans Jets +7.5. The line has also moved toward the Jets since opening. Kickoff 1:00 pm ET."
+      ],
+      "sources": [
+        "https://www.covers.com/nfl/jets-vs-patriots-prediction-picks-odds-early-leans-week-6-2026",
+        "https://www.fanduel.com/research/patriots-vs-jets-predictions-odds-picks-best-bets-for-nfl-week-6-2026",
+        "https://www.dimers.com/nfl/news/new-york-jets-vs-new-england-patriots-early-prediction-nfl-week-6-2026-ac",
+        "https://espn.com/espn/betting/story/_/id/50147670/2026-nfl-week-6-schedule-odds-point-spreads-totals"
+      ],
+      "winner": "New England Patriots",
+      "final_score": "Patriots 26-19 Jets",
+      "settled_at": "2026-10-18T20:16:56Z"
     }
   ],
   "prizepicks": []
