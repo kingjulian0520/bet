@@ -54,31 +54,6 @@
     },
     {
       "sport": "CFB",
-      "matchup": "Auburn Tigers vs Georgia Bulldogs",
-      "date": "2026-10-17",
-      "start_time": "2026-10-17T19:30:00Z",
-      "favorite": "Georgia Bulldogs",
-      "estimated_probability": {
-        "Georgia Bulldogs": 92,
-        "Auburn Tigers": 8
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2.5,
-      "actual_multiplier": 1.07,
-      "reasoning": [
-        "No. 1 Georgia is a 20.5-point home favorite in Athens at roughly -1450 to -1600 (BetMGM -1400, consensus about -1600), about 93-94% after removing margin; ESPN FPI gives Georgia 90.5% and SP+ projects Georgia 34, Auburn 15.",
-        "Georgia is 6-0 (4-0 SEC) and second nationally in scoring at 46.2 points per game; Auburn is 3-2 (1-2 SEC) and managed only 21 points against Vanderbilt.",
-        "Held at 92% rather than the market's 93-94%: RB Chauncey Bowens is out for a second straight week and safety Malik Green has been sidelined since the Western Kentucky game, and one SI analyst argues the 20.5-point spread is too big (that is a spread opinion, not a straight-up one). Kickoff 3:30 pm ET."
-      ],
-      "sources": [
-        "https://www.covers.com/ncaaf/auburn-vs-georgia-prediction-picks-odds-oct-17-2026",
-        "https://www.si.com/betting/auburn-vs-georgia-prediction-odds-and-key-players-to-watch-for-college-football-week-7-01m4vfvjx4cr",
-        "https://www.capperspicks.com/free-picks/college-football/auburn-tigers-vs-georgia-bulldogs-betting-prediction-10-17-2026/",
-        "https://www.complex.com/bets/a/matt-burke/college-football-odds-week-7-saturday-october-17"
-      ]
-    },
-    {
-      "sport": "CFB",
       "matchup": "Florida State Seminoles vs Miami Hurricanes",
       "date": "2026-10-17",
       "start_time": "2026-10-17T23:00:00Z",
@@ -2957,6 +2932,34 @@
       "winner": "Benfica",
       "final_score": "Benfica 4-1 Celtic",
       "settled_at": "2026-10-15T22:17:15Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Auburn Tigers vs Georgia Bulldogs",
+      "date": "2026-10-17",
+      "start_time": "2026-10-17T19:30:00Z",
+      "favorite": "Georgia Bulldogs",
+      "estimated_probability": {
+        "Georgia Bulldogs": 92,
+        "Auburn Tigers": 8
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "actual_multiplier": 1.07,
+      "reasoning": [
+        "No. 1 Georgia is a 20.5-point home favorite in Athens at roughly -1450 to -1600 (BetMGM -1400, consensus about -1600), about 93-94% after removing margin; ESPN FPI gives Georgia 90.5% and SP+ projects Georgia 34, Auburn 15.",
+        "Georgia is 6-0 (4-0 SEC) and second nationally in scoring at 46.2 points per game; Auburn is 3-2 (1-2 SEC) and managed only 21 points against Vanderbilt.",
+        "Held at 92% rather than the market's 93-94%: RB Chauncey Bowens is out for a second straight week and safety Malik Green has been sidelined since the Western Kentucky game, and one SI analyst argues the 20.5-point spread is too big (that is a spread opinion, not a straight-up one). Kickoff 3:30 pm ET."
+      ],
+      "sources": [
+        "https://www.covers.com/ncaaf/auburn-vs-georgia-prediction-picks-odds-oct-17-2026",
+        "https://www.si.com/betting/auburn-vs-georgia-prediction-odds-and-key-players-to-watch-for-college-football-week-7-01m4vfvjx4cr",
+        "https://www.capperspicks.com/free-picks/college-football/auburn-tigers-vs-georgia-bulldogs-betting-prediction-10-17-2026/",
+        "https://www.complex.com/bets/a/matt-burke/college-football-odds-week-7-saturday-october-17"
+      ],
+      "winner": "Auburn Tigers",
+      "final_score": "Auburn 27-24 Georgia",
+      "settled_at": "2026-10-18T00:17:24Z"
     }
   ],
   "prizepicks": []
