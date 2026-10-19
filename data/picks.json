@@ -4,31 +4,6 @@
   "picks": [
     {
       "sport": "NFL",
-      "matchup": "Arizona Cardinals vs Los Angeles Rams",
-      "date": "2026-10-18",
-      "start_time": "2026-10-18T20:05:00Z",
-      "favorite": "Los Angeles Rams",
-      "estimated_probability": {
-        "Los Angeles Rams": 85,
-        "Arizona Cardinals": 15
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2,
-      "actual_multiplier": 1.11,
-      "reasoning": [
-        "Rams are about 12.5-point home favorites at roughly -900 on the moneyline (books range -769 to -950); Polymarket/Kalshi put them near 88% and Squawka's model has 83%.",
-        "Arizona is 1-4 with a -54 point differential, the worst of the 28 teams playing this week, and has allowed 21 touchdowns in five games; the Rams are 2-3 after a 37-34 overtime loss to Buffalo on Monday night.",
-        "Held at 85% rather than the market's 88%: the Rams' special teams have been a problem, one SI analyst likes Arizona with the points, and Arizona running back Jeremiyah Love is only questionable (ankle). Final inactives come about 90 minutes before the 4:05 pm ET kickoff."
-      ],
-      "sources": [
-        "https://defirate.com/odds/nfl/cardinals-vs-rams-10-18-2026/",
-        "https://www.squawka.com/us/nfl/nfl-news/cardinals-vs-rams-prediction-picks-odds-week-6/",
-        "https://www.si.com/betting/cardinals-vs-rams-prediction-odds-spread-injuries-trends-for-nfl-week-6-2026",
-        "https://espn.com/espn/betting/story/_/id/50147670/2026-nfl-week-6-schedule-odds-point-spreads-totals"
-      ]
-    },
-    {
-      "sport": "NFL",
       "matchup": "Washington Commanders vs San Francisco 49ers",
       "date": "2026-10-19",
       "start_time": "2026-10-20T00:15:00Z",
@@ -2990,6 +2965,34 @@
       "winner": "New England Patriots",
       "final_score": "Patriots 26-19 Jets",
       "settled_at": "2026-10-18T20:16:56Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Arizona Cardinals vs Los Angeles Rams",
+      "date": "2026-10-18",
+      "start_time": "2026-10-18T20:05:00Z",
+      "favorite": "Los Angeles Rams",
+      "estimated_probability": {
+        "Los Angeles Rams": 85,
+        "Arizona Cardinals": 15
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "actual_multiplier": 1.11,
+      "reasoning": [
+        "Rams are about 12.5-point home favorites at roughly -900 on the moneyline (books range -769 to -950); Polymarket/Kalshi put them near 88% and Squawka's model has 83%.",
+        "Arizona is 1-4 with a -54 point differential, the worst of the 28 teams playing this week, and has allowed 21 touchdowns in five games; the Rams are 2-3 after a 37-34 overtime loss to Buffalo on Monday night.",
+        "Held at 85% rather than the market's 88%: the Rams' special teams have been a problem, one SI analyst likes Arizona with the points, and Arizona running back Jeremiyah Love is only questionable (ankle). Final inactives come about 90 minutes before the 4:05 pm ET kickoff."
+      ],
+      "sources": [
+        "https://defirate.com/odds/nfl/cardinals-vs-rams-10-18-2026/",
+        "https://www.squawka.com/us/nfl/nfl-news/cardinals-vs-rams-prediction-picks-odds-week-6/",
+        "https://www.si.com/betting/cardinals-vs-rams-prediction-odds-spread-injuries-trends-for-nfl-week-6-2026",
+        "https://espn.com/espn/betting/story/_/id/50147670/2026-nfl-week-6-schedule-odds-point-spreads-totals"
+      ],
+      "winner": "Arizona Cardinals",
+      "final_score": "Cardinals 18-16 Rams",
+      "settled_at": "2026-10-19T00:17:02Z"
     }
   ],
   "prizepicks": []
