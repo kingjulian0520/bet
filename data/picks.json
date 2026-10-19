@@ -25,6 +25,30 @@
         "https://www.covers.com/nfl/commanders-vs-49ers-prediction-picks-odds-early-leans-week-6-2026",
         "https://clutchpoints.com/betting/commanders-49ers-prediction-odds-pick-week-6-monday-night-football"
       ]
+    },
+    {
+      "sport": "Soccer",
+      "matchup": "Manchester City vs AEK Athens (Champions League, Draw No Bet)",
+      "date": "2026-10-20",
+      "start_time": "2026-10-20T19:00:00Z",
+      "favorite": "Manchester City",
+      "estimated_probability": {
+        "Manchester City": 92,
+        "AEK Athens": 8
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "reasoning": [
+        "bet365 has City to win at 1.14 (about 88% before removing margin) and Kalshi-linked pricing gives a City win about 84%; with the draw stripped out (Draw No Bet) that is roughly 93-94% for City. I found no real DNB price, only the match-winner price.",
+        "Manchester City are 7 from 7 in the Premier League after wins over Liverpool and Ipswich, though they lost 4-2 at PSG in their last Champions League game; AEK have never won away in the Champions League proper (5 draws, 11 losses) and are missing keeper Thomas Strakosha plus suspended players.",
+        "Held at 92% rather than the market's 93-94%: reports conflict on City's injuries (Semenyo and O'Reilly doubtful, Doku possibly out), Haaland may be rested, and Squawka expects a tight 1-0 type game. Sources also disagree on who is City's manager, so I did not rely on any manager-specific claim. A draw is a push (stake refunded). Kickoff 19:00Z (8:00 pm UK)."
+      ],
+      "sources": [
+        "https://www.sportsmole.co.uk/football/man-city/champions-league/preview/man-city-vs-aek-athens-prediction-team-news-lineups_607182.html",
+        "https://khelnow.com/football/manchester-city-vs-aek-athens-preview-champions-league-202610",
+        "https://www.wincomparator.com/predictions/manchester-city-aek-athens-8786631/",
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/"
+      ]
     }
   ],
   "settled": [
