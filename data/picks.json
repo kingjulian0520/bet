@@ -3,30 +3,6 @@
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
-      "sport": "NFL",
-      "matchup": "Washington Commanders vs San Francisco 49ers",
-      "date": "2026-10-19",
-      "start_time": "2026-10-20T00:15:00Z",
-      "favorite": "San Francisco 49ers",
-      "estimated_probability": {
-        "San Francisco 49ers": 80,
-        "Washington Commanders": 20
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.24,
-      "reasoning": [
-        "49ers are 7.5-point home favorites at -420 on FanDuel (Commanders +330), about 78-81% after removing the margin; Squawka's model gives San Francisco 83% and a 31-17 projection.",
-        "San Francisco is 5-0; Washington is 1-3-1 after a tie with the Giants, and its quarterback Marcus Mariota is listed as doubtful, with Charles Omenihu, Tyler Owens, Nick Cross and Stefon Diggs questionable.",
-        "Held at 80% rather than higher because the 49ers are thin themselves: Deebo Samuel is out with a hamstring injury, Dre Greenlaw is suspended, and Nick Bosa's return is uncertain. Prediction-market pricing on the spread (Kalshi 51% at -7.5) shows this is a one-score-plus game in the market's eyes. Kickoff 8:15 pm ET Monday, so final injury news is still to come."
-      ],
-      "sources": [
-        "https://www.si.com/betting/commanders-vs-49ers-prediction-odds-spread-injuries-trends-for-nfl-week-6-2026",
-        "https://www.covers.com/nfl/commanders-vs-49ers-prediction-picks-odds-early-leans-week-6-2026",
-        "https://clutchpoints.com/betting/commanders-49ers-prediction-odds-pick-week-6-monday-night-football"
-      ]
-    },
-    {
       "sport": "Soccer",
       "matchup": "Manchester City vs AEK Athens (Champions League, Draw No Bet)",
       "date": "2026-10-20",
@@ -3017,6 +2993,33 @@
       "winner": "Arizona Cardinals",
       "final_score": "Cardinals 18-16 Rams",
       "settled_at": "2026-10-19T00:17:02Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Washington Commanders vs San Francisco 49ers",
+      "date": "2026-10-19",
+      "start_time": "2026-10-20T00:15:00Z",
+      "favorite": "San Francisco 49ers",
+      "estimated_probability": {
+        "San Francisco 49ers": 80,
+        "Washington Commanders": 20
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.24,
+      "reasoning": [
+        "49ers are 7.5-point home favorites at -420 on FanDuel (Commanders +330), about 78-81% after removing the margin; Squawka's model gives San Francisco 83% and a 31-17 projection.",
+        "San Francisco is 5-0; Washington is 1-3-1 after a tie with the Giants, and its quarterback Marcus Mariota is listed as doubtful, with Charles Omenihu, Tyler Owens, Nick Cross and Stefon Diggs questionable.",
+        "Held at 80% rather than higher because the 49ers are thin themselves: Deebo Samuel is out with a hamstring injury, Dre Greenlaw is suspended, and Nick Bosa's return is uncertain. Prediction-market pricing on the spread (Kalshi 51% at -7.5) shows this is a one-score-plus game in the market's eyes. Kickoff 8:15 pm ET Monday, so final injury news is still to come."
+      ],
+      "sources": [
+        "https://www.si.com/betting/commanders-vs-49ers-prediction-odds-spread-injuries-trends-for-nfl-week-6-2026",
+        "https://www.covers.com/nfl/commanders-vs-49ers-prediction-picks-odds-early-leans-week-6-2026",
+        "https://clutchpoints.com/betting/commanders-49ers-prediction-odds-pick-week-6-monday-night-football"
+      ],
+      "winner": "San Francisco 49ers",
+      "final_score": "49ers 23, Commanders 17",
+      "settled_at": "2026-10-20T04:07:01Z"
     }
   ],
   "prizepicks": []
