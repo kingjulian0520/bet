@@ -1,7 +1,32 @@
 {
   "generated_at": "2026-10-05T21:00:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [],
+  "picks": [
+    {
+      "sport": "Soccer",
+      "matchup": "Real Madrid vs RB Leipzig (Champions League, Draw No Bet)",
+      "date": "2026-10-21",
+      "start_time": "2026-10-21T19:00:00Z",
+      "favorite": "Real Madrid",
+      "estimated_probability": {
+        "Real Madrid": 87,
+        "RB Leipzig": 13
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "reasoning": [
+        "Real Madrid are about -345 to win in 90 minutes at BetRivers (roughly 77% before margin, 1.31 at 1xBet); stripping out the draw (Draw No Bet) puts Madrid around 87-89%. I found no real DNB price, only the match-winner price.",
+        "Madrid are at the Bernabeu and extended a winning run with a commanding win over Sevilla; Leipzig come in off a six-goal defeat in Munich. Madrid are missing Rodrygo (knee), Mendy (hip) and Asencio (leg), and Leipzig are without Baumgartner (hamstring) and Ouedraogo (shoulder); Mbappe is expected to start.",
+        "Held at 87% rather than higher because I could not verify lineups, and sources disagree on details (one preview names Mourinho and another Ancelotti as coach, and one preview carried a September date), so I did not rely on any coach-specific claim. A draw is a push (stake refunded). Kickoff 21:00 CEST = 19:00Z (2:00 pm CT)."
+      ],
+      "sources": [
+        "https://www.sportsmole.co.uk/football/real-madrid/champions-league/team-news/real-madrid-vs-rb-leipzig-injury-suspension-list-predicted-xis_607255.html",
+        "https://www.bets.com.au/soccer/uefa-champions-league/real-madrid-vs-rb-leipzig-uefa-champions-league-tips-prediction-20261021-0005/",
+        "https://www.sportsgambler.com/betting-tips/football/real-madrid-vs-rb-leipzig-prediction-lineups-odds-2026-10-21/",
+        "https://www.soccerpunter.com/news/real-madrid-vs-rb-leipzig-champions-league-clash-preview-h2h-stats-predictions/"
+      ]
+    }
+  ],
   "settled": [
     {
       "sport": "WTA",
