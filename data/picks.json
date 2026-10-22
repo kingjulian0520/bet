@@ -1,7 +1,33 @@
 {
   "generated_at": "2026-10-05T21:00:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [],
+  "picks": [
+    {
+      "sport": "CFB",
+      "matchup": "Pittsburgh Panthers at Miami Hurricanes",
+      "date": "2026-10-24",
+      "start_time": "2026-10-24T16:00:00Z",
+      "favorite": "Miami Hurricanes",
+      "estimated_probability": {
+        "Miami Hurricanes": 93,
+        "Pittsburgh Panthers": 7
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "actual_multiplier": 1.06,
+      "reasoning": [
+        "Real posted moneylines: DraftKings Miami -1650 / Pitt +950, FanDuel Miami -1800 / Pitt +920 (about 94-95% before margin); prediction markets are lower, Polymarket about 92% and Kalshi -1111 (about 92%). I settled between the two at 93%. The 1.06 multiplier is the DraftKings price, so the payout is thin.",
+        "Miami are No. 1 and 6-0 and host at Hard Rock Stadium; Pitt are 5-2. Miami won the last meeting 38-7 at Pitt (Nov 2025) as a 6.5-point favorite. The spread has drifted from -23.5 at the open to about -19.5 to -20.5, so the market has trimmed Miami a little; Wagertalk projects 38-10.",
+        "Main risks: the line has moved against Miami, a heavy favorite can have an off day (Miami needed double overtime to beat FSU 43-35 last week), and I did not verify injury reports. Noon ET kickoff (16:00Z, 11:00 am CT) on ESPN."
+      ],
+      "sources": [
+        "https://www.wagertalk.com/news/college-football/pitt-vs-miami-prediction-picks-odds-october-24-2026/",
+        "https://www.si.com/betting/pitt-vs-miami-prediction-odds-and-key-players-to-watch-for-college-football-week-8-2026",
+        "https://caneswarning.com/no-1-miami-hosts-pitt-how-to-watch-weather-injuries-odds-announcers-and-more",
+        "https://www.on3.com/pro/news/pitt-at-miami-polymarket-odds-early-point-spread-revealed-how-to-watch/"
+      ]
+    }
+  ],
   "settled": [
     {
       "sport": "Soccer",
