@@ -26,6 +26,31 @@
         "https://caneswarning.com/no-1-miami-hosts-pitt-how-to-watch-weather-injuries-odds-announcers-and-more",
         "https://www.on3.com/pro/news/pitt-at-miami-polymarket-odds-early-point-spread-revealed-how-to-watch/"
       ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Indiana Hoosiers at Michigan Wolverines",
+      "date": "2026-10-24",
+      "start_time": "2026-10-24T16:00:00Z",
+      "favorite": "Indiana Hoosiers",
+      "estimated_probability": {
+        "Indiana Hoosiers": 70,
+        "Michigan Wolverines": 30
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "actual_multiplier": 1.34,
+      "reasoning": [
+        "Real posted moneylines: FanDuel Indiana -295 / Michigan +235 (about 75% before margin, 1.34 payout used as the multiplier); Dimers shows Indiana -258 / Michigan +210 (about 72%). Dimers' own model gives Indiana 67%. I settled at 70%, a little under the market because the model is lower and the spread is a one-score-plus number (Indiana -6 to -8.5).",
+        "Indiana are 6-1 (their only loss was 19-15 to Ohio State) and QB Josh Hoover has 1,660 yards, 18 TD and 0 INT. Michigan are 4-2 after a 21-18 win over Penn State and Sports Betting Dime flags a quarterback controversy (Underwood vs Carr).",
+        "Main risks: it is a road game at Michigan Stadium, totals are low (41.5 at most books, so one possession can decide it), Indiana just lost a close one, and I found no injury reports for either side. Sources disagree on the total (41.5 vs Dimers' 52.5). Noon ET kickoff (16:00Z, 11:00 am CT) on FOX."
+      ],
+      "sources": [
+        "https://www.si.com/betting/indiana-vs-michigan-prediction-odds-and-key-players-to-watch-for-college-football-week-8-2026",
+        "https://www.dimers.com/cfb/predictions/2026_8_mich_ind",
+        "https://www.vegasinsider.com/college-football/indiana-vs-michigan-prediction-odds-october-24-2026/",
+        "https://www.sportsbettingdime.com/?p=845973"
+      ]
     }
   ],
   "settled": [
