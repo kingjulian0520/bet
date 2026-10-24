@@ -51,6 +51,56 @@
         "https://www.vegasinsider.com/college-football/indiana-vs-michigan-prediction-odds-october-24-2026/",
         "https://www.sportsbettingdime.com/?p=845973"
       ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "New York Giants at Houston Texans",
+      "date": "2026-10-25",
+      "start_time": "2026-10-25T17:00:00Z",
+      "favorite": "Houston Texans",
+      "estimated_probability": {
+        "Houston Texans": 77,
+        "New York Giants": 23
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.2,
+      "reasoning": [
+        "Real posted moneylines: DraftKings Texans -500 / Giants +380 (1.20 payout used as the multiplier) and FanDuel -481 / +370, about 81-83% before margin. Polymarket has Houston at 79%, but numberFire (via FanDuel) is lower at 68.2%, and Kalshi has the Giants +9.5 spread at 48%. I settled at 77%, between the models and the market.",
+        "The spread is about Texans -9.5 (opened -7, up three points). Giants QB Jaxson Dart is out for the season, so Jameis Winston is expected to start (Predictem says Harbaugh has not decided between Winston and J.J. McCarthy); CB Greg Newsome II was reported out with a concussion, though SI lists him questionable.",
+        "Main risks: Houston has injury questions (Tank Dell and David Montgomery questionable, Jalen Pitre doubtful, Reed Blankenship in concussion protocol) and Covers flags travel back from London as a possible hangover; I could not confirm that last point. Low total (42.5-43.5) means an upset is possible. Sources disagree on injury statuses, so check the final report. 1:00 pm ET kickoff (17:00Z, 12:00 pm CT) on FOX."
+      ],
+      "sources": [
+        "https://www.si.com/betting/giants-vs-texans-prediction-odds-spread-injuries-trends-for-nfl-week-7-01m5b8c8tmdr",
+        "https://fanduel.com/research/texans-vs-giants-predictions-odds-picks-best-bets-for-nfl-week-7-2026",
+        "https://www.covers.com/nfl/giants-vs-texans-prediction-picks-odds-early-leans-week-7-2026",
+        "https://defirate.com/odds/nfl/new-york-giants-vs-houston-10-25-2026/"
+      ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Indianapolis Colts at Minnesota Vikings",
+      "date": "2026-10-25",
+      "start_time": "2026-10-25T17:00:00Z",
+      "favorite": "Minnesota Vikings",
+      "estimated_probability": {
+        "Minnesota Vikings": 71,
+        "Indianapolis Colts": 29
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "actual_multiplier": 1.37,
+      "reasoning": [
+        "Real posted moneylines: DraftKings Vikings -270 (1.37 payout used as the multiplier) and FanDuel Vikings -290 / Colts +235, about 73-74% before margin. numberFire gives Minnesota 70.8% and Kalshi is near 70-71%, so I used 71%.",
+        "Minnesota's defense ranks first in points allowed per game (12.8) and Indianapolis has the worst turnover margin in the league at minus-8. The spread is Vikings -5.5 to -6.5 with a low total of 41.5; projected scores range from 27-13 to 24-20.",
+        "Main risks: Vikings injury questions (T.J. Hockenson and Christian Darrisaw concussions, Jordan Addison hamstring) with sources disagreeing on their status; Colts have Sauce Gardner doubtful plus Tyler Warren and others questionable; a low-scoring game keeps the upset alive. Check the final injury report. 1:00 pm ET kickoff (17:00Z, 12:00 pm CT) at U.S. Bank Stadium."
+      ],
+      "sources": [
+        "https://www.si.com/betting/colts-vs-vikings-prediction-odds-spread-injuries-trends-for-nfl-week-7-01m5b8s1x8y7",
+        "https://www.fanduel.com/research/vikings-vs-colts-predictions-odds-picks-best-bets-for-nfl-week-7-2026",
+        "https://www.covers.com/nfl/colts-vs-vikings-prediction-picks-odds-early-leans-week-7-2026",
+        "https://defirate.com/odds/nfl/indianapolis-vs-minnesota-10-25-2026/"
+      ]
     }
   ],
   "settled": [
