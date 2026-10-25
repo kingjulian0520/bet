@@ -26,31 +26,6 @@
         "https://www.covers.com/nfl/giants-vs-texans-prediction-picks-odds-early-leans-week-7-2026",
         "https://defirate.com/odds/nfl/new-york-giants-vs-houston-10-25-2026/"
       ]
-    },
-    {
-      "sport": "NFL",
-      "matchup": "Indianapolis Colts at Minnesota Vikings",
-      "date": "2026-10-25",
-      "start_time": "2026-10-25T17:00:00Z",
-      "favorite": "Minnesota Vikings",
-      "estimated_probability": {
-        "Minnesota Vikings": 71,
-        "Indianapolis Colts": 29
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 1.25,
-      "actual_multiplier": 1.37,
-      "reasoning": [
-        "Real posted moneylines: DraftKings Vikings -270 (1.37 payout used as the multiplier) and FanDuel Vikings -290 / Colts +235, about 73-74% before margin. numberFire gives Minnesota 70.8% and Kalshi is near 70-71%, so I used 71%.",
-        "Minnesota's defense ranks first in points allowed per game (12.8) and Indianapolis has the worst turnover margin in the league at minus-8. The spread is Vikings -5.5 to -6.5 with a low total of 41.5; projected scores range from 27-13 to 24-20.",
-        "Main risks: Vikings injury questions (T.J. Hockenson and Christian Darrisaw concussions, Jordan Addison hamstring) with sources disagreeing on their status; Colts have Sauce Gardner doubtful plus Tyler Warren and others questionable; a low-scoring game keeps the upset alive. Check the final injury report. 1:00 pm ET kickoff (17:00Z, 12:00 pm CT) at U.S. Bank Stadium."
-      ],
-      "sources": [
-        "https://www.si.com/betting/colts-vs-vikings-prediction-odds-spread-injuries-trends-for-nfl-week-7-01m5b8s1x8y7",
-        "https://www.fanduel.com/research/vikings-vs-colts-predictions-odds-picks-best-bets-for-nfl-week-7-2026",
-        "https://www.covers.com/nfl/colts-vs-vikings-prediction-picks-odds-early-leans-week-7-2026",
-        "https://defirate.com/odds/nfl/indianapolis-vs-minnesota-10-25-2026/"
-      ]
     }
   ],
   "settled": [
@@ -330,6 +305,34 @@
       "winner": "Indiana Hoosiers",
       "final_score": "Indiana 13, Michigan 6 (OT)",
       "settled_at": "2026-10-24T20:17:33Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Indianapolis Colts at Minnesota Vikings",
+      "date": "2026-10-25",
+      "start_time": "2026-10-25T17:00:00Z",
+      "favorite": "Minnesota Vikings",
+      "estimated_probability": {
+        "Minnesota Vikings": 71,
+        "Indianapolis Colts": 29
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "actual_multiplier": 1.37,
+      "reasoning": [
+        "Real posted moneylines: DraftKings Vikings -270 (1.37 payout used as the multiplier) and FanDuel Vikings -290 / Colts +235, about 73-74% before margin. numberFire gives Minnesota 70.8% and Kalshi is near 70-71%, so I used 71%.",
+        "Minnesota's defense ranks first in points allowed per game (12.8) and Indianapolis has the worst turnover margin in the league at minus-8. The spread is Vikings -5.5 to -6.5 with a low total of 41.5; projected scores range from 27-13 to 24-20.",
+        "Main risks: Vikings injury questions (T.J. Hockenson and Christian Darrisaw concussions, Jordan Addison hamstring) with sources disagreeing on their status; Colts have Sauce Gardner doubtful plus Tyler Warren and others questionable; a low-scoring game keeps the upset alive. Check the final injury report. 1:00 pm ET kickoff (17:00Z, 12:00 pm CT) at U.S. Bank Stadium."
+      ],
+      "sources": [
+        "https://www.si.com/betting/colts-vs-vikings-prediction-odds-spread-injuries-trends-for-nfl-week-7-01m5b8s1x8y7",
+        "https://www.fanduel.com/research/vikings-vs-colts-predictions-odds-picks-best-bets-for-nfl-week-7-2026",
+        "https://www.covers.com/nfl/colts-vs-vikings-prediction-picks-odds-early-leans-week-7-2026",
+        "https://defirate.com/odds/nfl/indianapolis-vs-minnesota-10-25-2026/"
+      ],
+      "winner": "Minnesota Vikings",
+      "final_score": "Minnesota 16, Indianapolis 10",
+      "settled_at": "2026-10-25T20:17:06Z"
     }
   ],
   "prizepicks": []
