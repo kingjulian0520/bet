@@ -1,7 +1,58 @@
 {
   "generated_at": "2026-10-05T21:00:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [],
+  "picks": [
+    {
+      "sport": "CFB",
+      "matchup": "Minnesota Golden Gophers at Indiana Hoosiers",
+      "date": "2026-10-31",
+      "start_time": "2026-10-31T19:30:00Z",
+      "favorite": "Indiana Hoosiers",
+      "estimated_probability": {
+        "Indiana Hoosiers": 92,
+        "Minnesota Golden Gophers": 8
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "actual_multiplier": 1.04,
+      "reasoning": [
+        "Real posted moneylines: Indiana -2300 at one book and -2500 or longer at another (about 96% before margin; 1.04 payout used as the multiplier). Kalshi has Indiana at about 92-93%, so I used 92%. The spread is Indiana -20.5 with a low total of 40.5-41.5. The payout is very thin.",
+        "Indiana (No. 4) are at home in Bloomington and their defense is a strength. Main risks: QB Josh Hoover is listed as probable, Indiana are only 1-6 against the spread while Minnesota are 5-2 against the spread, and a low total means one fluky possession can matter. I found no full Minnesota injury report. Previews disagree on whether this is Week 8 or Week 9, but the date and time agree.",
+        "Kickoff is 3:30 pm ET (19:30Z, 2:30 pm CT) at Memorial Stadium."
+      ],
+      "sources": [
+        "https://www.covers.com/ncaaf/minnesota-vs-indiana-prediction-picks-odds-early-leans-week-9-2026",
+        "https://www.si.com/betting/minnesota-vs-indiana-prediction-odds-and-key-players-to-watch-for-college-football-week-9-01m5x3pxd0rh",
+        "https://kalshi.com/markets/kxncaafgame/minnesota-vs-indiana/kxncaafgame-26oct30minnind",
+        "https://hoosierstateofmind.com/no-4-indiana-vs-minnesota-how-to-watch-odds-injuries-and-predictions-01m5zj797qhm"
+      ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Virginia Cavaliers at Wake Forest Demon Deacons",
+      "date": "2026-10-31",
+      "start_time": "2026-10-31T19:45:00Z",
+      "favorite": "Wake Forest Demon Deacons",
+      "estimated_probability": {
+        "Wake Forest Demon Deacons": 83,
+        "Virginia Cavaliers": 17
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.19,
+      "reasoning": [
+        "Real posted moneyline: Wake Forest -520 / Virginia +390 (about 84% before margin; 1.19 payout used as the multiplier). Dimers' model gives Wake Forest 82.4%, so I used 83%. The spread is Wake Forest -11.5 to -14.5 with a total around 49.",
+        "Wake Forest are 6-1 and at home; Virginia are 4-4 with more than a dozen players on the ACC injury report as out (DBs Brandyn Hillman and Ethan Minter questionable). Sportsbook Review's model projects a 38-20 Wake Forest win.",
+        "Main risks: spread sources range widely (-11.5 to -14.5), one outlet (Docsports) likes Virginia +14.5, and I did not verify Wake Forest's own injury report. Kickoff 3:45 pm ET (19:45Z, 2:45 pm CT) on ESPN2."
+      ],
+      "sources": [
+        "https://www.si.com/betting/virginia-vs-wake-forest-prediction-odds-and-key-players-to-watch-for-college-football-week-9-2026",
+        "https://www.dimers.com/cfb/predictions/2026_9_wake_uva",
+        "https://covers.com/ncaaf/top-25-predictions-week-9-2026",
+        "https://pickdawgz.com/college-football-picks/virginia-vs-wake-forest-prediction-10-31-2026-todays-college-football-picks/"
+      ]
+    }
+  ],
   "settled": [
     {
       "sport": "CFB",
