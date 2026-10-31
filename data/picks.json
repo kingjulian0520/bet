@@ -51,6 +51,81 @@
         "https://covers.com/ncaaf/top-25-predictions-week-9-2026",
         "https://pickdawgz.com/college-football-picks/virginia-vs-wake-forest-prediction-10-31-2026-todays-college-football-picks/"
       ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Tennessee Titans at Cincinnati Bengals",
+      "date": "2026-11-01",
+      "start_time": "2026-11-01T18:00:00Z",
+      "favorite": "Cincinnati Bengals",
+      "estimated_probability": {
+        "Cincinnati Bengals": 84,
+        "Tennessee Titans": 16
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.16,
+      "reasoning": [
+        "Real posted moneylines: DraftKings Bengals -625 / Titans +455 (1.16 payout used as the multiplier), Betfanatics -575 / +420, Rotowire -525 / +490, about 84-86% before margin. Covers puts Cincinnati near 83%; BetMGM's model is lower at 74.2%, so I used 84%, just under the market. The spread is Bengals -10 to -10.5 with a total of 46.5-47.",
+        "Burrow is playing at a high level and Cincinnati converts 50.6% of third downs, best in the NFL; Tennessee rank 32nd in yards per game and are 1-12 at home since the 2025 season. Squawka projects Cincinnati 30-13.",
+        "Main risks: Bengals WR Andrei Iosivas is out (thumb) and TE Erick All Jr. and S Kyle Dugger left last week's game hurt; I could not find a dated full injury report, so check it before kickoff. Sources disagree on kickoff time (Action Network showed 6 pm), but most say 1:00 pm ET. Daylight time ends Nov 1, 2026, so 1:00 pm ET is 18:00Z (12:00 pm CT)."
+      ],
+      "sources": [
+        "https://www.si.com/betting/titans-vs-bengals-prediction-odds-spread-injuries-trends-for-nfl-week-8-2026",
+        "https://www.covers.com/nfl/titans-vs-bengals-prediction-picks-odds-early-leans-week-8-2026",
+        "https://www.dimers.com/nfl/predictions/2026_8_cin_ten",
+        "https://www.footballnationusa.com/post/titans-bengals-week-8-guide-2026"
+      ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "New England Patriots at Miami Dolphins",
+      "date": "2026-11-01",
+      "start_time": "2026-11-01T21:25:00Z",
+      "favorite": "New England Patriots",
+      "estimated_probability": {
+        "New England Patriots": 77,
+        "Miami Dolphins": 23
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.25,
+      "reasoning": [
+        "Real posted moneylines: DraftKings Patriots -395 / Dolphins +310 (1.25 payout used as the multiplier), Fox Sports -330 / +265, VegasInsider -325 / +260, about 77-80% before margin. Kalshi has New England near 78% and Stats Insider's model 74%, so I used 77%. The spread is Patriots -6.5 to -7.5 with a total of 44.5.",
+        "Miami are 1-6 on the season (their first win came last week, 28-25 over the Jets) and allow a 116.8 opponent passer rating, the worst in the NFL; Quinn Ewers starts at quarterback. Covers picks the Patriots 25-21 and Squawka projects 26-17.",
+        "Main risks: The Spread notes a slew of Dolphins injuries could still make it close, I could not find a reliable 2026 injury report for either side, and the Patriots' 25-21 projection is only a four-point margin. Kickoff 4:25 pm ET. Daylight time ends Nov 1, 2026, so that is 21:25Z (3:25 pm CT)."
+      ],
+      "sources": [
+        "https://www.si.com/betting/patriots-vs-dolphins-prediction-odds-spread-injuries-trends-for-nfl-week-8-2026",
+        "https://www.covers.com/nfl/patriots-vs-dolphins-prediction-picks-odds-early-leans-week-8-2026",
+        "https://www.statsinsider.com.au/news/dolphins-vs-patriots-prediction-and-preview-nfl-week-8-2026",
+        "https://www.thespread.com/?p=513295"
+      ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Arizona Cardinals at Dallas Cowboys",
+      "date": "2026-11-01",
+      "start_time": "2026-11-01T18:00:00Z",
+      "favorite": "Dallas Cowboys",
+      "estimated_probability": {
+        "Dallas Cowboys": 72,
+        "Arizona Cardinals": 28
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "actual_multiplier": 1.35,
+      "reasoning": [
+        "Real posted moneylines: DraftKings Cowboys -285 / Cardinals +230 (1.35 payout used as the multiplier), Fox Sports -340 / +270, VegasInsider -310 / +250, about 74-77% before margin. Kalshi has Dallas near 72% and BetMGM's model 71.6%, so I used 72%. The spread is Cowboys -6 to -6.5 with a 54.5 total.",
+        "Arizona are on a 5-game skid, and QB Kyler Murray is not expected to start (he could play). The Cardinals have conceded 26 touchdowns in seven games, the most in the NFL, while Dallas just beat the Eagles 38-21 and project to have their offensive line intact for the first time since Week 2. Squawka projects Dallas 27-17.",
+        "Main risks: BetMGM's model leans Arizona against the spread (63.7%), Murray could still play, a high total keeps the game volatile, and I found no full dated Cowboys injury report. Kickoff Daylight time ends Nov 1, 2026, so 1:00 pm ET is 18:00Z (12:00 pm CT)."
+      ],
+      "sources": [
+        "https://www.si.com/betting/cardinals-vs-cowboys-prediction-odds-spread-injuries-trends-for-nfl-week-8-2026",
+        "https://www.covers.com/nfl/cardinals-vs-cowboys-prediction-picks-odds-early-leans-week-8-2026",
+        "https://www.statsinsider.com.au/news/cowboys-vs-cardinals-prediction-and-preview-nfl-week-8-2026",
+        "https://www.foxsports.com/articles/nfl/qb-kyler-murray-wont-start-could-play-as-cardinals-take-5game-skid-into-dallas"
+      ]
     }
   ],
   "settled": [
