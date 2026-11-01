@@ -3,56 +3,6 @@
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
-      "sport": "CFB",
-      "matchup": "Minnesota Golden Gophers at Indiana Hoosiers",
-      "date": "2026-10-31",
-      "start_time": "2026-10-31T19:30:00Z",
-      "favorite": "Indiana Hoosiers",
-      "estimated_probability": {
-        "Indiana Hoosiers": 92,
-        "Minnesota Golden Gophers": 8
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2.5,
-      "actual_multiplier": 1.04,
-      "reasoning": [
-        "Real posted moneylines: Indiana -2300 at one book and -2500 or longer at another (about 96% before margin; 1.04 payout used as the multiplier). Kalshi has Indiana at about 92-93%, so I used 92%. The spread is Indiana -20.5 with a low total of 40.5-41.5. The payout is very thin.",
-        "Indiana (No. 4) are at home in Bloomington and their defense is a strength. Main risks: QB Josh Hoover is listed as probable, Indiana are only 1-6 against the spread while Minnesota are 5-2 against the spread, and a low total means one fluky possession can matter. I found no full Minnesota injury report. Previews disagree on whether this is Week 8 or Week 9, but the date and time agree.",
-        "Kickoff is 3:30 pm ET (19:30Z, 2:30 pm CT) at Memorial Stadium."
-      ],
-      "sources": [
-        "https://www.covers.com/ncaaf/minnesota-vs-indiana-prediction-picks-odds-early-leans-week-9-2026",
-        "https://www.si.com/betting/minnesota-vs-indiana-prediction-odds-and-key-players-to-watch-for-college-football-week-9-01m5x3pxd0rh",
-        "https://kalshi.com/markets/kxncaafgame/minnesota-vs-indiana/kxncaafgame-26oct30minnind",
-        "https://hoosierstateofmind.com/no-4-indiana-vs-minnesota-how-to-watch-odds-injuries-and-predictions-01m5zj797qhm"
-      ]
-    },
-    {
-      "sport": "CFB",
-      "matchup": "Virginia Cavaliers at Wake Forest Demon Deacons",
-      "date": "2026-10-31",
-      "start_time": "2026-10-31T19:45:00Z",
-      "favorite": "Wake Forest Demon Deacons",
-      "estimated_probability": {
-        "Wake Forest Demon Deacons": 83,
-        "Virginia Cavaliers": 17
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.19,
-      "reasoning": [
-        "Real posted moneyline: Wake Forest -520 / Virginia +390 (about 84% before margin; 1.19 payout used as the multiplier). Dimers' model gives Wake Forest 82.4%, so I used 83%. The spread is Wake Forest -11.5 to -14.5 with a total around 49.",
-        "Wake Forest are 6-1 and at home; Virginia are 4-4 with more than a dozen players on the ACC injury report as out (DBs Brandyn Hillman and Ethan Minter questionable). Sportsbook Review's model projects a 38-20 Wake Forest win.",
-        "Main risks: spread sources range widely (-11.5 to -14.5), one outlet (Docsports) likes Virginia +14.5, and I did not verify Wake Forest's own injury report. Kickoff 3:45 pm ET (19:45Z, 2:45 pm CT) on ESPN2."
-      ],
-      "sources": [
-        "https://www.si.com/betting/virginia-vs-wake-forest-prediction-odds-and-key-players-to-watch-for-college-football-week-9-2026",
-        "https://www.dimers.com/cfb/predictions/2026_9_wake_uva",
-        "https://covers.com/ncaaf/top-25-predictions-week-9-2026",
-        "https://pickdawgz.com/college-football-picks/virginia-vs-wake-forest-prediction-10-31-2026-todays-college-football-picks/"
-      ]
-    },
-    {
       "sport": "NFL",
       "matchup": "Tennessee Titans at Cincinnati Bengals",
       "date": "2026-11-01",
@@ -129,199 +79,6 @@
     }
   ],
   "settled": [
-    {
-      "sport": "CFB",
-      "matchup": "Auburn Tigers vs Georgia Bulldogs",
-      "date": "2026-10-17",
-      "start_time": "2026-10-17T19:30:00Z",
-      "favorite": "Georgia Bulldogs",
-      "estimated_probability": {
-        "Georgia Bulldogs": 92,
-        "Auburn Tigers": 8
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2.5,
-      "actual_multiplier": 1.07,
-      "reasoning": [
-        "No. 1 Georgia is a 20.5-point home favorite in Athens at roughly -1450 to -1600 (BetMGM -1400, consensus about -1600), about 93-94% after removing margin; ESPN FPI gives Georgia 90.5% and SP+ projects Georgia 34, Auburn 15.",
-        "Georgia is 6-0 (4-0 SEC) and second nationally in scoring at 46.2 points per game; Auburn is 3-2 (1-2 SEC) and managed only 21 points against Vanderbilt.",
-        "Held at 92% rather than the market's 93-94%: RB Chauncey Bowens is out for a second straight week and safety Malik Green has been sidelined since the Western Kentucky game, and one SI analyst argues the 20.5-point spread is too big (that is a spread opinion, not a straight-up one). Kickoff 3:30 pm ET."
-      ],
-      "sources": [
-        "https://www.covers.com/ncaaf/auburn-vs-georgia-prediction-picks-odds-oct-17-2026",
-        "https://www.si.com/betting/auburn-vs-georgia-prediction-odds-and-key-players-to-watch-for-college-football-week-7-01m4vfvjx4cr",
-        "https://www.capperspicks.com/free-picks/college-football/auburn-tigers-vs-georgia-bulldogs-betting-prediction-10-17-2026/",
-        "https://www.complex.com/bets/a/matt-burke/college-football-odds-week-7-saturday-october-17"
-      ],
-      "winner": "Auburn Tigers",
-      "final_score": "Auburn 27-24 Georgia",
-      "settled_at": "2026-10-18T00:17:24Z"
-    },
-    {
-      "sport": "CFB",
-      "matchup": "Florida State Seminoles vs Miami Hurricanes",
-      "date": "2026-10-17",
-      "start_time": "2026-10-17T23:00:00Z",
-      "favorite": "Miami Hurricanes",
-      "estimated_probability": {
-        "Miami Hurricanes": 93,
-        "Florida State Seminoles": 7
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2.5,
-      "actual_multiplier": 1.05,
-      "reasoning": [
-        "No. 3 Miami is a 20.5 to 21.5-point home favorite at Hard Rock Stadium, with moneylines from about -1650 to -2300 (roughly 94-95% after removing margin).",
-        "Miami is 5-0; Florida State is 3-3 and 1-3 in the ACC, and has dismissed cornerback Chuck Kennon. CBS's model backs Miami -21.",
-        "Held at 93% rather than the market's 95%: right guard Max Buchanan is out for Miami, rivalry games carry extra variance, and ATS.io sees value on Florida State at +21.5 (a spread view). I found no independent win-probability model for this game. Kickoff 7:00 pm ET."
-      ],
-      "sources": [
-        "https://www.cbssports.com/college-football/news/miami-florida-state-prediction-picks-odds-spread-where-to-watch-live/",
-        "https://www.si.com/betting/florida-state-vs-miami-prediction-odds-and-key-players-to-watch-for-college-football-week-7",
-        "https://caneswarning.com/no-3-miami-hosts-florida-state-how-to-watch-weather-injuries-odds-announcers-and-more",
-        "https://ats.io/college-football/florida-state-vs-miami-prediction-preview-10-17-2026/"
-      ],
-      "winner": "Miami Hurricanes",
-      "final_score": "Miami 43-35 Florida State (2OT)",
-      "settled_at": "2026-10-18T04:06:40Z"
-    },
-    {
-      "sport": "NFL",
-      "matchup": "New York Jets vs New England Patriots",
-      "date": "2026-10-18",
-      "start_time": "2026-10-18T17:00:00Z",
-      "favorite": "New England Patriots",
-      "estimated_probability": {
-        "New England Patriots": 75,
-        "New York Jets": 25
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "actual_multiplier": 1.31,
-      "reasoning": [
-        "Patriots are 7-7.5 point home favorites at about -325 to -350 (ESPN -325, FanDuel -350, down from a -375 opener), which is roughly 75-77% after removing the margin; models range from 73% (Dimers) to about 85-87% (Signal, numberFire).",
-        "New England (3-2) has won two straight including 44-17 over the Raiders, has covered 3-1-1 against the spread, and the Jets (2-3) have been swept by them in 8 of the last 10 years.",
-        "Held at 75% because Patriots running back TreVeyon Henderson is doubtful and left tackle Will Campbell is questionable, New England leads the league's Week 6 teams with 7 interceptions thrown, and the Jets pass offense rates 104.2 (4th in the NFL) with Geno Smith; Covers leans Jets +7.5. The line has also moved toward the Jets since opening. Kickoff 1:00 pm ET."
-      ],
-      "sources": [
-        "https://www.covers.com/nfl/jets-vs-patriots-prediction-picks-odds-early-leans-week-6-2026",
-        "https://www.fanduel.com/research/patriots-vs-jets-predictions-odds-picks-best-bets-for-nfl-week-6-2026",
-        "https://www.dimers.com/nfl/news/new-york-jets-vs-new-england-patriots-early-prediction-nfl-week-6-2026-ac",
-        "https://espn.com/espn/betting/story/_/id/50147670/2026-nfl-week-6-schedule-odds-point-spreads-totals"
-      ],
-      "winner": "New England Patriots",
-      "final_score": "Patriots 26-19 Jets",
-      "settled_at": "2026-10-18T20:16:56Z"
-    },
-    {
-      "sport": "NFL",
-      "matchup": "Arizona Cardinals vs Los Angeles Rams",
-      "date": "2026-10-18",
-      "start_time": "2026-10-18T20:05:00Z",
-      "favorite": "Los Angeles Rams",
-      "estimated_probability": {
-        "Los Angeles Rams": 85,
-        "Arizona Cardinals": 15
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2,
-      "actual_multiplier": 1.11,
-      "reasoning": [
-        "Rams are about 12.5-point home favorites at roughly -900 on the moneyline (books range -769 to -950); Polymarket/Kalshi put them near 88% and Squawka's model has 83%.",
-        "Arizona is 1-4 with a -54 point differential, the worst of the 28 teams playing this week, and has allowed 21 touchdowns in five games; the Rams are 2-3 after a 37-34 overtime loss to Buffalo on Monday night.",
-        "Held at 85% rather than the market's 88%: the Rams' special teams have been a problem, one SI analyst likes Arizona with the points, and Arizona running back Jeremiyah Love is only questionable (ankle). Final inactives come about 90 minutes before the 4:05 pm ET kickoff."
-      ],
-      "sources": [
-        "https://defirate.com/odds/nfl/cardinals-vs-rams-10-18-2026/",
-        "https://www.squawka.com/us/nfl/nfl-news/cardinals-vs-rams-prediction-picks-odds-week-6/",
-        "https://www.si.com/betting/cardinals-vs-rams-prediction-odds-spread-injuries-trends-for-nfl-week-6-2026",
-        "https://espn.com/espn/betting/story/_/id/50147670/2026-nfl-week-6-schedule-odds-point-spreads-totals"
-      ],
-      "winner": "Arizona Cardinals",
-      "final_score": "Cardinals 18-16 Rams",
-      "settled_at": "2026-10-19T00:17:02Z"
-    },
-    {
-      "sport": "NFL",
-      "matchup": "Washington Commanders vs San Francisco 49ers",
-      "date": "2026-10-19",
-      "start_time": "2026-10-20T00:15:00Z",
-      "favorite": "San Francisco 49ers",
-      "estimated_probability": {
-        "San Francisco 49ers": 80,
-        "Washington Commanders": 20
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.24,
-      "reasoning": [
-        "49ers are 7.5-point home favorites at -420 on FanDuel (Commanders +330), about 78-81% after removing the margin; Squawka's model gives San Francisco 83% and a 31-17 projection.",
-        "San Francisco is 5-0; Washington is 1-3-1 after a tie with the Giants, and its quarterback Marcus Mariota is listed as doubtful, with Charles Omenihu, Tyler Owens, Nick Cross and Stefon Diggs questionable.",
-        "Held at 80% rather than higher because the 49ers are thin themselves: Deebo Samuel is out with a hamstring injury, Dre Greenlaw is suspended, and Nick Bosa's return is uncertain. Prediction-market pricing on the spread (Kalshi 51% at -7.5) shows this is a one-score-plus game in the market's eyes. Kickoff 8:15 pm ET Monday, so final injury news is still to come."
-      ],
-      "sources": [
-        "https://www.si.com/betting/commanders-vs-49ers-prediction-odds-spread-injuries-trends-for-nfl-week-6-2026",
-        "https://www.covers.com/nfl/commanders-vs-49ers-prediction-picks-odds-early-leans-week-6-2026",
-        "https://clutchpoints.com/betting/commanders-49ers-prediction-odds-pick-week-6-monday-night-football"
-      ],
-      "winner": "San Francisco 49ers",
-      "final_score": "49ers 23, Commanders 17",
-      "settled_at": "2026-10-20T04:07:01Z"
-    },
-    {
-      "sport": "Soccer",
-      "matchup": "Manchester City vs AEK Athens (Champions League, Draw No Bet)",
-      "date": "2026-10-20",
-      "start_time": "2026-10-20T19:00:00Z",
-      "favorite": "Manchester City",
-      "estimated_probability": {
-        "Manchester City": 92,
-        "AEK Athens": 8
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2.5,
-      "reasoning": [
-        "bet365 has City to win at 1.14 (about 88% before removing margin) and Kalshi-linked pricing gives a City win about 84%; with the draw stripped out (Draw No Bet) that is roughly 93-94% for City. I found no real DNB price, only the match-winner price.",
-        "Manchester City are 7 from 7 in the Premier League after wins over Liverpool and Ipswich, though they lost 4-2 at PSG in their last Champions League game; AEK have never won away in the Champions League proper (5 draws, 11 losses) and are missing keeper Thomas Strakosha plus suspended players.",
-        "Held at 92% rather than the market's 93-94%: reports conflict on City's injuries (Semenyo and O'Reilly doubtful, Doku possibly out), Haaland may be rested, and Squawka expects a tight 1-0 type game. Sources also disagree on who is City's manager, so I did not rely on any manager-specific claim. A draw is a push (stake refunded). Kickoff 19:00Z (8:00 pm UK)."
-      ],
-      "sources": [
-        "https://www.sportsmole.co.uk/football/man-city/champions-league/preview/man-city-vs-aek-athens-prediction-team-news-lineups_607182.html",
-        "https://khelnow.com/football/manchester-city-vs-aek-athens-preview-champions-league-202610",
-        "https://www.wincomparator.com/predictions/manchester-city-aek-athens-8786631/",
-        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/"
-      ],
-      "winner": "Manchester City",
-      "final_score": "Manchester City 5, AEK Athens 1",
-      "settled_at": "2026-10-21T02:16:46Z"
-    },
-    {
-      "sport": "Soccer",
-      "matchup": "Real Madrid vs RB Leipzig (Champions League, Draw No Bet)",
-      "date": "2026-10-21",
-      "start_time": "2026-10-21T19:00:00Z",
-      "favorite": "Real Madrid",
-      "estimated_probability": {
-        "Real Madrid": 87,
-        "RB Leipzig": 13
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2,
-      "reasoning": [
-        "Real Madrid are about -345 to win in 90 minutes at BetRivers (roughly 77% before margin, 1.31 at 1xBet); stripping out the draw (Draw No Bet) puts Madrid around 87-89%. I found no real DNB price, only the match-winner price.",
-        "Madrid are at the Bernabeu and extended a winning run with a commanding win over Sevilla; Leipzig come in off a six-goal defeat in Munich. Madrid are missing Rodrygo (knee), Mendy (hip) and Asencio (leg), and Leipzig are without Baumgartner (hamstring) and Ouedraogo (shoulder); Mbappe is expected to start.",
-        "Held at 87% rather than higher because I could not verify lineups, and sources disagree on details (one preview names Mourinho and another Ancelotti as coach, and one preview carried a September date), so I did not rely on any coach-specific claim. A draw is a push (stake refunded). Kickoff 21:00 CEST = 19:00Z (2:00 pm CT)."
-      ],
-      "sources": [
-        "https://www.sportsmole.co.uk/football/real-madrid/champions-league/team-news/real-madrid-vs-rb-leipzig-injury-suspension-list-predicted-xis_607255.html",
-        "https://www.bets.com.au/soccer/uefa-champions-league/real-madrid-vs-rb-leipzig-uefa-champions-league-tips-prediction-20261021-0005/",
-        "https://www.sportsgambler.com/betting-tips/football/real-madrid-vs-rb-leipzig-prediction-lineups-odds-2026-10-21/",
-        "https://www.soccerpunter.com/news/real-madrid-vs-rb-leipzig-champions-league-clash-preview-h2h-stats-predictions/"
-      ],
-      "winner": "Real Madrid",
-      "final_score": "Real Madrid 4, RB Leipzig 1",
-      "settled_at": "2026-10-21T22:17:30Z"
-    },
     {
       "sport": "CFB",
       "matchup": "Pittsburgh Panthers at Miami Hurricanes",
@@ -461,6 +218,62 @@
       "winner": "Dallas Cowboys",
       "final_score": "Dallas 38, Philadelphia 21",
       "settled_at": "2026-10-27T04:07:34Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Minnesota Golden Gophers at Indiana Hoosiers",
+      "date": "2026-10-31",
+      "start_time": "2026-10-31T19:30:00Z",
+      "favorite": "Indiana Hoosiers",
+      "estimated_probability": {
+        "Indiana Hoosiers": 92,
+        "Minnesota Golden Gophers": 8
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "actual_multiplier": 1.04,
+      "reasoning": [
+        "Real posted moneylines: Indiana -2300 at one book and -2500 or longer at another (about 96% before margin; 1.04 payout used as the multiplier). Kalshi has Indiana at about 92-93%, so I used 92%. The spread is Indiana -20.5 with a low total of 40.5-41.5. The payout is very thin.",
+        "Indiana (No. 4) are at home in Bloomington and their defense is a strength. Main risks: QB Josh Hoover is listed as probable, Indiana are only 1-6 against the spread while Minnesota are 5-2 against the spread, and a low total means one fluky possession can matter. I found no full Minnesota injury report. Previews disagree on whether this is Week 8 or Week 9, but the date and time agree.",
+        "Kickoff is 3:30 pm ET (19:30Z, 2:30 pm CT) at Memorial Stadium."
+      ],
+      "sources": [
+        "https://www.covers.com/ncaaf/minnesota-vs-indiana-prediction-picks-odds-early-leans-week-9-2026",
+        "https://www.si.com/betting/minnesota-vs-indiana-prediction-odds-and-key-players-to-watch-for-college-football-week-9-01m5x3pxd0rh",
+        "https://kalshi.com/markets/kxncaafgame/minnesota-vs-indiana/kxncaafgame-26oct30minnind",
+        "https://hoosierstateofmind.com/no-4-indiana-vs-minnesota-how-to-watch-odds-injuries-and-predictions-01m5zj797qhm"
+      ],
+      "winner": "Indiana Hoosiers",
+      "final_score": "Indiana 23, Minnesota 16 (OT)",
+      "settled_at": "2026-11-01T00:17:44Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Virginia Cavaliers at Wake Forest Demon Deacons",
+      "date": "2026-10-31",
+      "start_time": "2026-10-31T19:45:00Z",
+      "favorite": "Wake Forest Demon Deacons",
+      "estimated_probability": {
+        "Wake Forest Demon Deacons": 83,
+        "Virginia Cavaliers": 17
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.19,
+      "reasoning": [
+        "Real posted moneyline: Wake Forest -520 / Virginia +390 (about 84% before margin; 1.19 payout used as the multiplier). Dimers' model gives Wake Forest 82.4%, so I used 83%. The spread is Wake Forest -11.5 to -14.5 with a total around 49.",
+        "Wake Forest are 6-1 and at home; Virginia are 4-4 with more than a dozen players on the ACC injury report as out (DBs Brandyn Hillman and Ethan Minter questionable). Sportsbook Review's model projects a 38-20 Wake Forest win.",
+        "Main risks: spread sources range widely (-11.5 to -14.5), one outlet (Docsports) likes Virginia +14.5, and I did not verify Wake Forest's own injury report. Kickoff 3:45 pm ET (19:45Z, 2:45 pm CT) on ESPN2."
+      ],
+      "sources": [
+        "https://www.si.com/betting/virginia-vs-wake-forest-prediction-odds-and-key-players-to-watch-for-college-football-week-9-2026",
+        "https://www.dimers.com/cfb/predictions/2026_9_wake_uva",
+        "https://covers.com/ncaaf/top-25-predictions-week-9-2026",
+        "https://pickdawgz.com/college-football-picks/virginia-vs-wake-forest-prediction-10-31-2026-todays-college-football-picks/"
+      ],
+      "winner": "Wake Forest Demon Deacons",
+      "final_score": "Wake Forest 51, Virginia 7",
+      "settled_at": "2026-11-01T00:17:44Z"
     }
   ],
   "prizepicks": []
