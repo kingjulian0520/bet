@@ -4,31 +4,6 @@
   "picks": [
     {
       "sport": "NFL",
-      "matchup": "Tennessee Titans at Cincinnati Bengals",
-      "date": "2026-11-01",
-      "start_time": "2026-11-01T18:00:00Z",
-      "favorite": "Cincinnati Bengals",
-      "estimated_probability": {
-        "Cincinnati Bengals": 84,
-        "Tennessee Titans": 16
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.16,
-      "reasoning": [
-        "Real posted moneylines: DraftKings Bengals -625 / Titans +455 (1.16 payout used as the multiplier), Betfanatics -575 / +420, Rotowire -525 / +490, about 84-86% before margin. Covers puts Cincinnati near 83%; BetMGM's model is lower at 74.2%, so I used 84%, just under the market. The spread is Bengals -10 to -10.5 with a total of 46.5-47.",
-        "Burrow is playing at a high level and Cincinnati converts 50.6% of third downs, best in the NFL; Tennessee rank 32nd in yards per game and are 1-12 at home since the 2025 season. Squawka projects Cincinnati 30-13.",
-        "Main risks: Bengals WR Andrei Iosivas is out (thumb) and TE Erick All Jr. and S Kyle Dugger left last week's game hurt; I could not find a dated full injury report, so check it before kickoff. Sources disagree on kickoff time (Action Network showed 6 pm), but most say 1:00 pm ET. Daylight time ends Nov 1, 2026, so 1:00 pm ET is 18:00Z (12:00 pm CT)."
-      ],
-      "sources": [
-        "https://www.si.com/betting/titans-vs-bengals-prediction-odds-spread-injuries-trends-for-nfl-week-8-2026",
-        "https://www.covers.com/nfl/titans-vs-bengals-prediction-picks-odds-early-leans-week-8-2026",
-        "https://www.dimers.com/nfl/predictions/2026_8_cin_ten",
-        "https://www.footballnationusa.com/post/titans-bengals-week-8-guide-2026"
-      ]
-    },
-    {
-      "sport": "NFL",
       "matchup": "New England Patriots at Miami Dolphins",
       "date": "2026-11-01",
       "start_time": "2026-11-01T21:25:00Z",
@@ -50,31 +25,6 @@
         "https://www.covers.com/nfl/patriots-vs-dolphins-prediction-picks-odds-early-leans-week-8-2026",
         "https://www.statsinsider.com.au/news/dolphins-vs-patriots-prediction-and-preview-nfl-week-8-2026",
         "https://www.thespread.com/?p=513295"
-      ]
-    },
-    {
-      "sport": "NFL",
-      "matchup": "Arizona Cardinals at Dallas Cowboys",
-      "date": "2026-11-01",
-      "start_time": "2026-11-01T18:00:00Z",
-      "favorite": "Dallas Cowboys",
-      "estimated_probability": {
-        "Dallas Cowboys": 72,
-        "Arizona Cardinals": 28
-      },
-      "confidence_label": "Lean",
-      "recommended_units": 1.25,
-      "actual_multiplier": 1.35,
-      "reasoning": [
-        "Real posted moneylines: DraftKings Cowboys -285 / Cardinals +230 (1.35 payout used as the multiplier), Fox Sports -340 / +270, VegasInsider -310 / +250, about 74-77% before margin. Kalshi has Dallas near 72% and BetMGM's model 71.6%, so I used 72%. The spread is Cowboys -6 to -6.5 with a 54.5 total.",
-        "Arizona are on a 5-game skid, and QB Kyler Murray is not expected to start (he could play). The Cardinals have conceded 26 touchdowns in seven games, the most in the NFL, while Dallas just beat the Eagles 38-21 and project to have their offensive line intact for the first time since Week 2. Squawka projects Dallas 27-17.",
-        "Main risks: BetMGM's model leans Arizona against the spread (63.7%), Murray could still play, a high total keeps the game volatile, and I found no full dated Cowboys injury report. Kickoff Daylight time ends Nov 1, 2026, so 1:00 pm ET is 18:00Z (12:00 pm CT)."
-      ],
-      "sources": [
-        "https://www.si.com/betting/cardinals-vs-cowboys-prediction-odds-spread-injuries-trends-for-nfl-week-8-2026",
-        "https://www.covers.com/nfl/cardinals-vs-cowboys-prediction-picks-odds-early-leans-week-8-2026",
-        "https://www.statsinsider.com.au/news/cowboys-vs-cardinals-prediction-and-preview-nfl-week-8-2026",
-        "https://www.foxsports.com/articles/nfl/qb-kyler-murray-wont-start-could-play-as-cardinals-take-5game-skid-into-dallas"
       ]
     },
     {
@@ -299,6 +249,62 @@
       "winner": "Wake Forest Demon Deacons",
       "final_score": "Wake Forest 51, Virginia 7",
       "settled_at": "2026-11-01T00:17:44Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Tennessee Titans at Cincinnati Bengals",
+      "date": "2026-11-01",
+      "start_time": "2026-11-01T18:00:00Z",
+      "favorite": "Cincinnati Bengals",
+      "estimated_probability": {
+        "Cincinnati Bengals": 84,
+        "Tennessee Titans": 16
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.16,
+      "reasoning": [
+        "Real posted moneylines: DraftKings Bengals -625 / Titans +455 (1.16 payout used as the multiplier), Betfanatics -575 / +420, Rotowire -525 / +490, about 84-86% before margin. Covers puts Cincinnati near 83%; BetMGM's model is lower at 74.2%, so I used 84%, just under the market. The spread is Bengals -10 to -10.5 with a total of 46.5-47.",
+        "Burrow is playing at a high level and Cincinnati converts 50.6% of third downs, best in the NFL; Tennessee rank 32nd in yards per game and are 1-12 at home since the 2025 season. Squawka projects Cincinnati 30-13.",
+        "Main risks: Bengals WR Andrei Iosivas is out (thumb) and TE Erick All Jr. and S Kyle Dugger left last week's game hurt; I could not find a dated full injury report, so check it before kickoff. Sources disagree on kickoff time (Action Network showed 6 pm), but most say 1:00 pm ET. Daylight time ends Nov 1, 2026, so 1:00 pm ET is 18:00Z (12:00 pm CT)."
+      ],
+      "sources": [
+        "https://www.si.com/betting/titans-vs-bengals-prediction-odds-spread-injuries-trends-for-nfl-week-8-2026",
+        "https://www.covers.com/nfl/titans-vs-bengals-prediction-picks-odds-early-leans-week-8-2026",
+        "https://www.dimers.com/nfl/predictions/2026_8_cin_ten",
+        "https://www.footballnationusa.com/post/titans-bengals-week-8-guide-2026"
+      ],
+      "winner": "Cincinnati Bengals",
+      "final_score": "Cincinnati 43, Tennessee 36 (OT)",
+      "settled_at": "2026-11-01T22:16:53Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Arizona Cardinals at Dallas Cowboys",
+      "date": "2026-11-01",
+      "start_time": "2026-11-01T18:00:00Z",
+      "favorite": "Dallas Cowboys",
+      "estimated_probability": {
+        "Dallas Cowboys": 72,
+        "Arizona Cardinals": 28
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "actual_multiplier": 1.35,
+      "reasoning": [
+        "Real posted moneylines: DraftKings Cowboys -285 / Cardinals +230 (1.35 payout used as the multiplier), Fox Sports -340 / +270, VegasInsider -310 / +250, about 74-77% before margin. Kalshi has Dallas near 72% and BetMGM's model 71.6%, so I used 72%. The spread is Cowboys -6 to -6.5 with a 54.5 total.",
+        "Arizona are on a 5-game skid, and QB Kyler Murray is not expected to start (he could play). The Cardinals have conceded 26 touchdowns in seven games, the most in the NFL, while Dallas just beat the Eagles 38-21 and project to have their offensive line intact for the first time since Week 2. Squawka projects Dallas 27-17.",
+        "Main risks: BetMGM's model leans Arizona against the spread (63.7%), Murray could still play, a high total keeps the game volatile, and I found no full dated Cowboys injury report. Kickoff Daylight time ends Nov 1, 2026, so 1:00 pm ET is 18:00Z (12:00 pm CT)."
+      ],
+      "sources": [
+        "https://www.si.com/betting/cardinals-vs-cowboys-prediction-odds-spread-injuries-trends-for-nfl-week-8-2026",
+        "https://www.covers.com/nfl/cardinals-vs-cowboys-prediction-picks-odds-early-leans-week-8-2026",
+        "https://www.statsinsider.com.au/news/cowboys-vs-cardinals-prediction-and-preview-nfl-week-8-2026",
+        "https://www.foxsports.com/articles/nfl/qb-kyler-murray-wont-start-could-play-as-cardinals-take-5game-skid-into-dallas"
+      ],
+      "winner": "Arizona Cardinals",
+      "final_score": "Arizona 33, Dallas 30 (OT)",
+      "settled_at": "2026-11-01T22:16:53Z"
     }
   ],
   "prizepicks": []
