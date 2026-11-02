@@ -1,33 +1,7 @@
 {
   "generated_at": "2026-10-05T21:00:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [
-    {
-      "sport": "NFL",
-      "matchup": "New England Patriots at Miami Dolphins",
-      "date": "2026-11-01",
-      "start_time": "2026-11-01T21:25:00Z",
-      "favorite": "New England Patriots",
-      "estimated_probability": {
-        "New England Patriots": 77,
-        "Miami Dolphins": 23
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "actual_multiplier": 1.25,
-      "reasoning": [
-        "Real posted moneylines: DraftKings Patriots -395 / Dolphins +310 (1.25 payout used as the multiplier), Fox Sports -330 / +265, VegasInsider -325 / +260, about 77-80% before margin. Kalshi has New England near 78% and Stats Insider's model 74%, so I used 77%. The spread is Patriots -6.5 to -7.5 with a total of 44.5.",
-        "Miami only got their first win of the season last week (28-25 over the Jets) and allow a 116.8 opponent passer rating, the worst in the NFL; Quinn Ewers starts at quarterback. Covers picks the Patriots 25-21 and Squawka projects 26-17.",
-        "Main risks: The Spread notes a slew of Dolphins injuries could still make it close, I could not find a reliable 2026 injury report for either side, and the Patriots' 25-21 projection is only a four-point margin. Kickoff 4:25 pm ET. Daylight time ends Nov 1, 2026, so that is 21:25Z (3:25 pm CT)."
-      ],
-      "sources": [
-        "https://www.si.com/betting/patriots-vs-dolphins-prediction-odds-spread-injuries-trends-for-nfl-week-8-2026",
-        "https://www.covers.com/nfl/patriots-vs-dolphins-prediction-picks-odds-early-leans-week-8-2026",
-        "https://www.statsinsider.com.au/news/dolphins-vs-patriots-prediction-and-preview-nfl-week-8-2026",
-        "https://www.thespread.com/?p=513295"
-      ]
-    }
-  ],
+  "picks": [],
   "settled": [
     {
       "sport": "CFB",
@@ -308,6 +282,34 @@
       "winner": "Los Angeles Rams",
       "final_score": "Los Angeles Rams 24, Los Angeles Chargers 9",
       "settled_at": "2026-11-02T00:18:16Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "New England Patriots at Miami Dolphins",
+      "date": "2026-11-01",
+      "start_time": "2026-11-01T21:25:00Z",
+      "favorite": "New England Patriots",
+      "estimated_probability": {
+        "New England Patriots": 77,
+        "Miami Dolphins": 23
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.25,
+      "reasoning": [
+        "Real posted moneylines: DraftKings Patriots -395 / Dolphins +310 (1.25 payout used as the multiplier), Fox Sports -330 / +265, VegasInsider -325 / +260, about 77-80% before margin. Kalshi has New England near 78% and Stats Insider's model 74%, so I used 77%. The spread is Patriots -6.5 to -7.5 with a total of 44.5.",
+        "Miami only got their first win of the season last week (28-25 over the Jets) and allow a 116.8 opponent passer rating, the worst in the NFL; Quinn Ewers starts at quarterback. Covers picks the Patriots 25-21 and Squawka projects 26-17.",
+        "Main risks: The Spread notes a slew of Dolphins injuries could still make it close, I could not find a reliable 2026 injury report for either side, and the Patriots' 25-21 projection is only a four-point margin. Kickoff 4:25 pm ET. Daylight time ends Nov 1, 2026, so that is 21:25Z (3:25 pm CT)."
+      ],
+      "sources": [
+        "https://www.si.com/betting/patriots-vs-dolphins-prediction-odds-spread-injuries-trends-for-nfl-week-8-2026",
+        "https://www.covers.com/nfl/patriots-vs-dolphins-prediction-picks-odds-early-leans-week-8-2026",
+        "https://www.statsinsider.com.au/news/dolphins-vs-patriots-prediction-and-preview-nfl-week-8-2026",
+        "https://www.thespread.com/?p=513295"
+      ],
+      "winner": "New England Patriots",
+      "final_score": "New England Patriots 24, Miami Dolphins (13 or 19; sources differ on Miami total)",
+      "settled_at": "2026-11-02T02:17:10Z"
     }
   ],
   "prizepicks": []
