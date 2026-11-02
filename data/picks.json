@@ -1,7 +1,34 @@
 {
   "generated_at": "2026-10-05T21:00:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [],
+  "picks": [
+    {
+      "sport": "CFB",
+      "matchup": "Ohio at Akron",
+      "date": "2026-11-03",
+      "start_time": "2026-11-04T00:00:00Z",
+      "favorite": "Ohio",
+      "estimated_probability": {
+        "Ohio": 82,
+        "Akron": 18
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.21,
+      "reasoning": [
+        "Ohio is 6-2 overall and 4-0 in the MAC with five straight wins, averaging 29.6 points per game on a strong rushing attack (CBS Sports).",
+        "Akron is 1-7 overall and 0-4 in the MAC, has lost six straight and allows 32.8 points and about 185 rushing yards per game; fan coverage describes an injury-hit season.",
+        "Posted moneyline is about Ohio -470 / Akron +360 (Sports Betting Dime, Bleacher Nation), roughly 80% no-vig, with Ohio a ~12-point favorite. Estimate 82%.",
+        "No official injury report found for either side; Ohio QB Nick Poulos returned from an earlier injury and has played well since."
+      ],
+      "sources": [
+        "https://www.cbssports.com/college-football/teams/AKRON/akron-zips/",
+        "https://www.sportsbettingdime.com/news/college-football/opening-week-10-odds-spreads-lines-byu-vs-utah-2026/",
+        "https://www.bleachernation.com/picks/2026/11/01/ohio-vs-akron-prediction-live-odds-stats-history-and-picks-november-3-2026/",
+        "https://akronzippedup.substack.com/p/game-9-preview-ohio-bobcats"
+      ]
+    }
+  ],
   "settled": [
     {
       "sport": "CFB",
