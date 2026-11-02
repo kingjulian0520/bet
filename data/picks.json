@@ -26,31 +26,6 @@
         "https://www.statsinsider.com.au/news/dolphins-vs-patriots-prediction-and-preview-nfl-week-8-2026",
         "https://www.thespread.com/?p=513295"
       ]
-    },
-    {
-      "sport": "NFL",
-      "matchup": "Los Angeles Chargers at Los Angeles Rams",
-      "date": "2026-11-01",
-      "start_time": "2026-11-01T21:05:00Z",
-      "favorite": "Los Angeles Rams",
-      "estimated_probability": {
-        "Los Angeles Rams": 76,
-        "Los Angeles Chargers": 24
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "actual_multiplier": 1.34,
-      "reasoning": [
-        "Real posted moneylines: DraftKings Rams -290 / Chargers +235 (1.34 payout used as the multiplier) and FanDuel -295 / +240, about 74% before margin. Models are mixed: Kalshi 73%, Stats Insider 75%, numberFire 87%, so I used 76%. The spread is Rams -6.5 with a total of 44.5.",
-        "Squawka projects a 26-16 Rams win and Stats Insider 26-18. Injuries: Rams TE Colby Parkinson is questionable (shoulder); on the Chargers side James and Awosika did not practice Wednesday while McConkey practiced fully. I could not find final injury reports.",
-        "Main risks: a six-point-plus spread in a division-style crosstown game with a low total can stay close, and final injury statuses were not confirmed. Kickoff 4:05 pm ET; daylight time ends Nov 1, 2026, so that is 21:05Z (3:05 pm CT) at SoFi Stadium."
-      ],
-      "sources": [
-        "https://www.si.com/betting/chargers-vs-rams-prediction-odds-spread-injuries-trends-for-nfl-week-8-2026",
-        "https://www.covers.com/nfl/chargers-vs-rams-prediction-picks-odds-early-leans-week-8-2026",
-        "https://www.fanduel.com/research/rams-vs-chargers-predictions-odds-picks-best-bets-for-nfl-week-8-2026",
-        "https://www.statsinsider.com.au/news/rams-vs-chargers-prediction-and-preview-nfl-week-8-2026"
-      ]
     }
   ],
   "settled": [
@@ -305,6 +280,34 @@
       "winner": "Arizona Cardinals",
       "final_score": "Arizona 33, Dallas 30 (OT)",
       "settled_at": "2026-11-01T22:16:53Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Los Angeles Chargers at Los Angeles Rams",
+      "date": "2026-11-01",
+      "start_time": "2026-11-01T21:05:00Z",
+      "favorite": "Los Angeles Rams",
+      "estimated_probability": {
+        "Los Angeles Rams": 76,
+        "Los Angeles Chargers": 24
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.34,
+      "reasoning": [
+        "Real posted moneylines: DraftKings Rams -290 / Chargers +235 (1.34 payout used as the multiplier) and FanDuel -295 / +240, about 74% before margin. Models are mixed: Kalshi 73%, Stats Insider 75%, numberFire 87%, so I used 76%. The spread is Rams -6.5 with a total of 44.5.",
+        "Squawka projects a 26-16 Rams win and Stats Insider 26-18. Injuries: Rams TE Colby Parkinson is questionable (shoulder); on the Chargers side James and Awosika did not practice Wednesday while McConkey practiced fully. I could not find final injury reports.",
+        "Main risks: a six-point-plus spread in a division-style crosstown game with a low total can stay close, and final injury statuses were not confirmed. Kickoff 4:05 pm ET; daylight time ends Nov 1, 2026, so that is 21:05Z (3:05 pm CT) at SoFi Stadium."
+      ],
+      "sources": [
+        "https://www.si.com/betting/chargers-vs-rams-prediction-odds-spread-injuries-trends-for-nfl-week-8-2026",
+        "https://www.covers.com/nfl/chargers-vs-rams-prediction-picks-odds-early-leans-week-8-2026",
+        "https://www.fanduel.com/research/rams-vs-chargers-predictions-odds-picks-best-bets-for-nfl-week-8-2026",
+        "https://www.statsinsider.com.au/news/rams-vs-chargers-prediction-and-preview-nfl-week-8-2026"
+      ],
+      "winner": "Los Angeles Rams",
+      "final_score": "Los Angeles Rams 24, Los Angeles Chargers 9",
+      "settled_at": "2026-11-02T00:18:16Z"
     }
   ],
   "prizepicks": []
