@@ -27,6 +27,58 @@
         "https://www.bleachernation.com/picks/2026/11/01/ohio-vs-akron-prediction-live-odds-stats-history-and-picks-november-3-2026/",
         "https://akronzippedup.substack.com/p/game-9-preview-ohio-bobcats"
       ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Jacksonville Jaguars at Baltimore Ravens",
+      "date": "2026-11-05",
+      "start_time": "2026-11-06T01:15:00Z",
+      "favorite": "Jacksonville Jaguars",
+      "estimated_probability": {
+        "Jacksonville Jaguars": 78,
+        "Baltimore Ravens": 22
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.21,
+      "reasoning": [
+        "Jacksonville is 5-2 and coming off a 42-7 win over the Colts; Baltimore is 4-4 and lost 36-10 at Buffalo.",
+        "Lamar Jackson is out (thumb, headed to IR). Rookie Joe Fagnano is expected to make his first NFL start, with an ankle injury reported but unclear.",
+        "Jacksonville's defense allows an NFL-best 77.4 rushing yards per game. Posted moneyline is about Jaguars -455 to -500 / Ravens +335 to +385, roughly 80% no-vig, with the Jaguars -9.5.",
+        "One model shows a smaller edge (about 61%), so the estimate is shaded below the market to 78%. Series history is split (Ravens won three of the last five)."
+      ],
+      "sources": [
+        "https://www.covers.com/nfl/jaguars-vs-ravens-prediction-picks-odds-early-leans-week-9-2026",
+        "https://www.cbssports.com/betting/news/jaguars-ravens-prediction-odds-time-nfl-week-9-thursday-night-football-picks/",
+        "https://www.sportsbettingdime.com/news/nfl/jaguars-vs-ravens-odds-predictions-and-week-9-betting-picks/",
+        "https://www.cbssports.com/nfl/news/jaguars-whos-out-for-thursdays-game-vs-ravens/"
+      ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "James Madison at Southern Miss",
+      "date": "2026-11-05",
+      "start_time": "2026-11-06T01:00:00Z",
+      "favorite": "James Madison",
+      "estimated_probability": {
+        "James Madison": 84,
+        "Southern Miss": 16
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.15,
+      "reasoning": [
+        "James Madison is 7-2 (one preview lists 6-2) and averages 44.0 points per game (2nd nationally); Southern Miss is 3-5 at 26.9 points per game.",
+        "JMU won the last meeting 32-15 in 2024. Its most recent game was a 24-21 loss to Troy, a negative recent result.",
+        "Posted moneyline is about JMU -535 to -649 / Southern Miss +405 to +470, roughly 84% no-vig, with JMU favored by 14 to 14.5.",
+        "No injury report found for either side."
+      ],
+      "sources": [
+        "https://www.fanduel.com/research/james-madison-vs-southern-miss-college-football-odds-picks-best-bets-for-11-5-2026",
+        "https://www.sportsline.com/insiders/james-madison-vs-southern-miss-odds-2026-college-football-picks-week-10-predictions-from-proven-model/",
+        "https://www.winsipedia.com/james-madison/vs/southern-miss",
+        "https://www.docsports.com/free-picks/football/2026/james-madison-dukes-vs-southern-miss-golden-eagles-prediction-11-5-2026-college-football-picks-best-bets-odds.html"
+      ]
     }
   ],
   "settled": [
