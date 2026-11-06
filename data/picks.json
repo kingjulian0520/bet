@@ -53,6 +53,32 @@
         "https://www.winsipedia.com/james-madison/vs/southern-miss",
         "https://www.docsports.com/free-picks/football/2026/james-madison-dukes-vs-southern-miss-golden-eagles-prediction-11-5-2026-college-football-picks-best-bets-odds.html"
       ]
+    },
+    {
+      "sport": "UFC",
+      "matchup": "Seokhyeon Ko vs Wellington Turman",
+      "date": "2026-11-07",
+      "start_time": "2026-11-08T00:00:00Z",
+      "favorite": "Seokhyeon Ko",
+      "estimated_probability": {
+        "Seokhyeon Ko": 84,
+        "Wellington Turman": 16
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.13,
+      "reasoning": [
+        "Ko is 13-3 and a pressure fighter who mixes in takedowns; about half his wins come by strikes. He is coming off a July decision loss to Jean-Paul Lebosnoyani.",
+        "Turman is 18-8, has lost his last three fights (Gooden, Brown, Petroski), has not fought since December 2023, and previews describe his defense as porous.",
+        "Posted moneyline is about Ko -700 to -800 / Turman +510 to +525 (roughly 85-87% no-vig). Estimate shaded to 84% for MMA upset variance and Turman's submission threat (8 submission wins).",
+        "Start time is the fallback of the main card start (about 7 pm ET Nov 7 = 00:00Z Nov 8) because the exact bout time was not found; one source calls this the main event while others list Cortes-Acosta vs Walker as the headliner."
+      ],
+      "sources": [
+        "https://www.docsports.com/free-picks/ufc/2026/seokhyeon-ko-vs-wellington-turman-pick-11-07-2026-predictions-ufc-vegas-124-odds.html",
+        "https://www.rotowire.com/mma/article/ufc-vegas-124-cortes-acosta-vs-walker-dfs-analysis-drakes-takes-145346",
+        "https://rg.org/news/mma/cortes-acosta-vs-walker-suarez-vs-jandiroba-ufc-vegas-124-odds",
+        "https://www.mmamania.com/ufc-odds/483835/ufc-vegas-124-main-card-odds-breakdowns-and-predictions-x-factor"
+      ]
     }
   ],
   "settled": [
