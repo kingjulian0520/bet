@@ -27,6 +27,84 @@
         "https://rg.org/news/mma/cortes-acosta-vs-walker-suarez-vs-jandiroba-ufc-vegas-124-odds",
         "https://www.mmamania.com/ufc-odds/483835/ufc-vegas-124-main-card-odds-breakdowns-and-predictions-x-factor"
       ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "New York Jets at Kansas City Chiefs",
+      "date": "2026-11-08",
+      "start_time": "2026-11-08T18:00:00Z",
+      "favorite": "Kansas City Chiefs",
+      "estimated_probability": {
+        "Kansas City Chiefs": 79,
+        "New York Jets": 21
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.18,
+      "reasoning": [
+        "Jets are 2-6 and will be without WR Garrett Wilson (concussion) and LB Trevin Wallace (groin); RB Breece Hall is expected back.",
+        "Chiefs are at home with Patrick Mahomes a full participant all week despite a knee issue. They started 5-0 but have lost two straight (Seahawks, Broncos), and CB Mansoor Delane and DT Peter Woods are out.",
+        "Posted moneyline is about Chiefs -550 / Jets +400-410 (roughly 82% no-vig), with Kansas City -9.5. Estimate shaded to 79% for the two-game losing streak and Mahomes' knee.",
+        "Start time is a fallback of 1:00 pm ET (18:00Z), based on coverage calling it a rare early-afternoon Arrowhead game; the exact kickoff was not confirmed."
+      ],
+      "sources": [
+        "https://www.si.com/betting/jets-vs-chiefs-prediction-odds-spread-injuries-trends-for-nfl-week-9-2026",
+        "https://www.newyorkjets.com/news/jets-injury-report-week-9-vs-chiefs-friday-11-6-2026",
+        "https://www.arrowheadpride.com/kansas-city-chiefs-injuries/215417/chiefs-jets-week-9-final-injury-report-mansoor-delane-ruled-out",
+        "https://www.foxsports.com/stories/nfl/2026-nfl-odds-week-9-lines-spreads-results-all-15-games"
+      ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Las Vegas Raiders at San Francisco 49ers",
+      "date": "2026-11-08",
+      "start_time": "2026-11-08T21:25:00Z",
+      "favorite": "San Francisco 49ers",
+      "estimated_probability": {
+        "San Francisco 49ers": 77,
+        "Las Vegas Raiders": 23
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.21,
+      "reasoning": [
+        "49ers are 6-1 and rested off a Week 8 bye at Levi's Stadium; Raiders are 4-4 under first-year coach Klint Kubiak, with only CB Darien Porter (groin) notable as questionable.",
+        "San Francisco injury picture is mixed: Christian McCaffrey returned to full practice Friday per the team, but other previews list him questionable, and Nick Bosa (knee/calf) is questionable. Mike Evans and Deebo Samuel were absent from early practice.",
+        "Posted moneyline is about 49ers -455 to -490 / Raiders +350 to +370 (roughly 80% no-vig), with the 49ers favored by about 9.5. Estimate shaded to 77% for the skill-player and Bosa uncertainty.",
+        "Kickoff is 1:25 pm PT / 4:25 pm ET (21:25Z)."
+      ],
+      "sources": [
+        "https://www.raiders.com/news/game-preview-raiders-to-be-tested-against-complete-package-in-49ers",
+        "https://www.covers.com/nfl/raiders-vs-49ers-prediction-picks-nov-8-2026",
+        "https://www.si.com/betting/raiders-vs-49ers-prediction-odds-spread-injuries-trends-for-nfl-week-9-2026",
+        "https://sports.yahoo.com/articles/raiders-week-9-injury-report-001305011.html"
+      ]
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Detroit Lions at Miami Dolphins",
+      "date": "2026-11-08",
+      "start_time": "2026-11-08T18:00:00Z",
+      "favorite": "Detroit Lions",
+      "estimated_probability": {
+        "Detroit Lions": 74,
+        "Miami Dolphins": 26
+      },
+      "confidence_label": "Lean",
+      "recommended_units": 1.25,
+      "actual_multiplier": 1.3,
+      "reasoning": [
+        "Lions are 5-2 and have won three straight, including 19-15 over the Vikings; Jahmyr Gibbs ran for 153 yards and a score last week.",
+        "Dolphins are 1-6, coming off a 24-19 home loss to the Patriots, and are without RB De'Von Achane (ACL, out since Week 3).",
+        "Posted moneyline is about Lions -325 to -350 / Dolphins +260 to +275 (roughly 75% no-vig), with Detroit -7. One analyst sees a flat spot for Detroit after an emotional home win, and a Lions defender named Campbell may be injured (unclear), so the estimate stays at 74%.",
+        "Kickoff is 1:00 pm ET (18:00Z) in Miami Gardens."
+      ],
+      "sources": [
+        "https://www.si.com/betting/lions-vs-dolphins-prediction-odds-spread-injuries-trends-for-nfl-week-9-2026",
+        "https://www.prideofdetroit.com/detroit-lions-analysis/179609/detroit-lions-miami-dolphins-predictions-week-9-picks",
+        "https://www.sportsgamblingpodcast.com/2026/11/05/lions-vs-dolphins-prediction-week-9-2026/",
+        "https://www.foxsports.com/stories/nfl/2026-nfl-odds-week-9-lines-spreads-results-all-15-games"
+      ]
     }
   ],
   "settled": [
