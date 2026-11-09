@@ -1,60 +1,7 @@
 {
   "generated_at": "2026-10-05T21:00:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [
-    {
-      "sport": "NBA",
-      "matchup": "Utah Jazz at Minnesota Timberwolves",
-      "date": "2026-11-08",
-      "start_time": "2026-11-09T01:00:00Z",
-      "favorite": "Minnesota Timberwolves",
-      "estimated_probability": {
-        "Minnesota Timberwolves": 83,
-        "Utah Jazz": 17
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.17,
-      "reasoning": [
-        "Timberwolves are 7-3 on a three-game winning streak at home at Target Center; Jazz are 1-8, on a seven-game losing streak, and are without Jusuf Nurkic (foot) and Jaren Jackson Jr. (knee), with Lauri Markkanen a game-time decision (wrist) per ESPN's injury report.",
-        "Minnesota is without Anthony Edwards (knee, estimated return Dec 21) and Donte DiVincenzo (Achilles), with Joan Beringer and Terrence Shannon Jr. day-to-day, so the estimate sits below the market.",
-        "Posted moneyline is about Timberwolves -592 / Jazz +440 (roughly 85% no-vig), with Minnesota -11.5 per FanDuel.",
-        "Start time is a fallback of 7 pm Central (01:00Z Nov 9) because sources disagree between 7 pm Central and 7 pm Eastern."
-      ],
-      "sources": [
-        "https://www.fanduel.com/research/timberwolves-vs-jazz-prediction-nba-odds-spread-best-bets-for-11-8-2026",
-        "https://kfan.iheart.com/content/2026-11-08-jazz-vs-timberwolves-injury-report-nov-8/",
-        "https://abcnews.com/Sports/wireStory/minnesota-faces-utah-looks-for-4th-straight-victory-137936931",
-        "https://www.640wxsm.com/2026/11/07/timberwolves-launch-lengthy-homestand-vs-struggling-jazz/"
-      ]
-    },
-    {
-      "sport": "NBA",
-      "matchup": "Boston Celtics at Milwaukee Bucks",
-      "date": "2026-11-08",
-      "start_time": "2026-11-09T01:00:00Z",
-      "favorite": "Boston Celtics",
-      "estimated_probability": {
-        "Boston Celtics": 84,
-        "Milwaukee Bucks": 16
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.14,
-      "reasoning": [
-        "Celtics are 7-2 per the latest listing and Bucks are 1-8 (older snapshots show 5-2 and 1-6, so records vary by source); Giannis Antetokounmpo is no longer on Milwaukee's roster, and Kam Jones is day-to-day (ankle).",
-        "Celtics' Devin Carter is out with illness, and Jayson Tatum's availability is disputed across previews, which keeps the estimate below the market.",
-        "Posted moneyline is about Celtics -699 / Bucks +500 (roughly 86% no-vig), with Boston favored by 12.5 per FanDuel.",
-        "Tip is 8 pm ET Sunday Nov 8 at Fiserv Forum (01:00Z Nov 9)."
-      ],
-      "sources": [
-        "https://www.fanduel.com/research/bucks-vs-celtics-prediction-nba-odds-spread-best-bets-for-11-8-2026",
-        "https://www.si.com/nba/bucks/onsi/celtics-make-call-on-tatum-s-status-for-bucks-visit-preview-starters-injuries-how-to-watch-01m6m4jbxaq5",
-        "https://foxsports1070.iheart.com/content/2026-11-08-celtics-vs-bucks-injury-report-nov-8/",
-        "https://www.espn.com/nba/game/_/gameId/401909949/celtics-bucks"
-      ]
-    }
-  ],
+  "picks": [],
   "settled": [
     {
       "sport": "CFB",
@@ -426,6 +373,64 @@
       "winner": "San Francisco 49ers",
       "final_score": "San Francisco 49ers 38, Las Vegas Raiders 17",
       "settled_at": "2026-11-09T02:17:28Z"
+    },
+    {
+      "sport": "NBA",
+      "matchup": "Utah Jazz at Minnesota Timberwolves",
+      "date": "2026-11-08",
+      "start_time": "2026-11-09T01:00:00Z",
+      "favorite": "Minnesota Timberwolves",
+      "estimated_probability": {
+        "Minnesota Timberwolves": 83,
+        "Utah Jazz": 17
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.17,
+      "reasoning": [
+        "Timberwolves are 7-3 on a three-game winning streak at home at Target Center; Jazz are 1-8, on a seven-game losing streak, and are without Jusuf Nurkic (foot) and Jaren Jackson Jr. (knee), with Lauri Markkanen a game-time decision (wrist) per ESPN's injury report.",
+        "Minnesota is without Anthony Edwards (knee, estimated return Dec 21) and Donte DiVincenzo (Achilles), with Joan Beringer and Terrence Shannon Jr. day-to-day, so the estimate sits below the market.",
+        "Posted moneyline is about Timberwolves -592 / Jazz +440 (roughly 85% no-vig), with Minnesota -11.5 per FanDuel.",
+        "Start time is a fallback of 7 pm Central (01:00Z Nov 9) because sources disagree between 7 pm Central and 7 pm Eastern."
+      ],
+      "sources": [
+        "https://www.fanduel.com/research/timberwolves-vs-jazz-prediction-nba-odds-spread-best-bets-for-11-8-2026",
+        "https://kfan.iheart.com/content/2026-11-08-jazz-vs-timberwolves-injury-report-nov-8/",
+        "https://abcnews.com/Sports/wireStory/minnesota-faces-utah-looks-for-4th-straight-victory-137936931",
+        "https://www.640wxsm.com/2026/11/07/timberwolves-launch-lengthy-homestand-vs-struggling-jazz/"
+      ],
+      "winner": "Minnesota Timberwolves",
+      "final_score": "Minnesota Timberwolves 115, Utah Jazz 100",
+      "settled_at": "2026-11-09T04:06:42Z"
+    },
+    {
+      "sport": "NBA",
+      "matchup": "Boston Celtics at Milwaukee Bucks",
+      "date": "2026-11-08",
+      "start_time": "2026-11-09T01:00:00Z",
+      "favorite": "Boston Celtics",
+      "estimated_probability": {
+        "Boston Celtics": 84,
+        "Milwaukee Bucks": 16
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.14,
+      "reasoning": [
+        "Celtics are 7-2 per the latest listing and Bucks are 1-8 (older snapshots show 5-2 and 1-6, so records vary by source); Giannis Antetokounmpo is no longer on Milwaukee's roster, and Kam Jones is day-to-day (ankle).",
+        "Celtics' Devin Carter is out with illness, and Jayson Tatum's availability is disputed across previews, which keeps the estimate below the market.",
+        "Posted moneyline is about Celtics -699 / Bucks +500 (roughly 86% no-vig), with Boston favored by 12.5 per FanDuel.",
+        "Tip is 8 pm ET Sunday Nov 8 at Fiserv Forum (01:00Z Nov 9)."
+      ],
+      "sources": [
+        "https://www.fanduel.com/research/bucks-vs-celtics-prediction-nba-odds-spread-best-bets-for-11-8-2026",
+        "https://www.si.com/nba/bucks/onsi/celtics-make-call-on-tatum-s-status-for-bucks-visit-preview-starters-injuries-how-to-watch-01m6m4jbxaq5",
+        "https://foxsports1070.iheart.com/content/2026-11-08-celtics-vs-bucks-injury-report-nov-8/",
+        "https://www.espn.com/nba/game/_/gameId/401909949/celtics-bucks"
+      ],
+      "winner": "Boston Celtics",
+      "final_score": "Boston Celtics 117, Milwaukee Bucks 97",
+      "settled_at": "2026-11-09T04:06:42Z"
     }
   ],
   "prizepicks": []
