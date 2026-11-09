@@ -3,32 +3,6 @@
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
-      "sport": "NFL",
-      "matchup": "Las Vegas Raiders at San Francisco 49ers",
-      "date": "2026-11-08",
-      "start_time": "2026-11-08T21:25:00Z",
-      "favorite": "San Francisco 49ers",
-      "estimated_probability": {
-        "San Francisco 49ers": 77,
-        "Las Vegas Raiders": 23
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "actual_multiplier": 1.21,
-      "reasoning": [
-        "49ers are 6-1 and rested off a Week 8 bye at Levi's Stadium; Raiders are 4-4 under first-year coach Klint Kubiak, with only CB Darien Porter (groin) notable as questionable.",
-        "San Francisco injury picture is mixed: Christian McCaffrey returned to full practice Friday per the team, but other previews list him questionable, and Nick Bosa (knee/calf) is questionable. Mike Evans and Deebo Samuel were absent from early practice.",
-        "Posted moneyline is about 49ers -455 to -490 / Raiders +350 to +370 (roughly 80% no-vig), with the 49ers favored by about 9.5. Estimate shaded to 77% for the skill-player and Bosa uncertainty.",
-        "Kickoff is 1:25 pm PT / 4:25 pm ET (21:25Z)."
-      ],
-      "sources": [
-        "https://www.raiders.com/news/game-preview-raiders-to-be-tested-against-complete-package-in-49ers",
-        "https://www.covers.com/nfl/raiders-vs-49ers-prediction-picks-nov-8-2026",
-        "https://www.si.com/betting/raiders-vs-49ers-prediction-odds-spread-injuries-trends-for-nfl-week-9-2026",
-        "https://sports.yahoo.com/articles/raiders-week-9-injury-report-001305011.html"
-      ]
-    },
-    {
       "sport": "NBA",
       "matchup": "Utah Jazz at Minnesota Timberwolves",
       "date": "2026-11-08",
@@ -423,6 +397,35 @@
       "winner": "Detroit Lions",
       "final_score": "Detroit Lions 19, Miami Dolphins 9",
       "settled_at": "2026-11-08T22:16:51Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Las Vegas Raiders at San Francisco 49ers",
+      "date": "2026-11-08",
+      "start_time": "2026-11-08T21:25:00Z",
+      "favorite": "San Francisco 49ers",
+      "estimated_probability": {
+        "San Francisco 49ers": 77,
+        "Las Vegas Raiders": 23
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.21,
+      "reasoning": [
+        "49ers are 6-1 and rested off a Week 8 bye at Levi's Stadium; Raiders are 4-4 under first-year coach Klint Kubiak, with only CB Darien Porter (groin) notable as questionable.",
+        "San Francisco injury picture is mixed: Christian McCaffrey returned to full practice Friday per the team, but other previews list him questionable, and Nick Bosa (knee/calf) is questionable. Mike Evans and Deebo Samuel were absent from early practice.",
+        "Posted moneyline is about 49ers -455 to -490 / Raiders +350 to +370 (roughly 80% no-vig), with the 49ers favored by about 9.5. Estimate shaded to 77% for the skill-player and Bosa uncertainty.",
+        "Kickoff is 1:25 pm PT / 4:25 pm ET (21:25Z)."
+      ],
+      "sources": [
+        "https://www.raiders.com/news/game-preview-raiders-to-be-tested-against-complete-package-in-49ers",
+        "https://www.covers.com/nfl/raiders-vs-49ers-prediction-picks-nov-8-2026",
+        "https://www.si.com/betting/raiders-vs-49ers-prediction-odds-spread-injuries-trends-for-nfl-week-9-2026",
+        "https://sports.yahoo.com/articles/raiders-week-9-injury-report-001305011.html"
+      ],
+      "winner": "San Francisco 49ers",
+      "final_score": "San Francisco 49ers 38, Las Vegas Raiders 17",
+      "settled_at": "2026-11-09T02:17:28Z"
     }
   ],
   "prizepicks": []
