@@ -27,6 +27,32 @@
         "https://dailysports.net/predictions/can-wembanyama-expose-phoenixs-weakness-inside-phoenix-suns-vs-san-antonio-spurs-prediction-10112026/",
         "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-phoenix-suns-player-props-injury-report-and-prediction--nba_608729.html"
       ]
+    },
+    {
+      "sport": "NBA",
+      "matchup": "Milwaukee Bucks at New York Knicks",
+      "date": "2026-11-10",
+      "start_time": "2026-11-11T00:30:00Z",
+      "favorite": "New York Knicks",
+      "estimated_probability": {
+        "New York Knicks": 88,
+        "Milwaukee Bucks": 12
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "actual_multiplier": 1.08,
+      "reasoning": [
+        "Bucks are 1-9 and on a six-game losing streak, coming off a 117-97 home loss to the Celtics on Nov 8; Giannis Antetokounmpo is no longer on the roster, Tyler Herro is questionable (contusion) and Gary Trent Jr. is listed with an illness in one preview.",
+        "Knicks are 5-4 at home at Madison Square Garden after a 109-97 win over the Cavaliers on Saturday (Jalen Brunson 31 points, averaging 26.2). Josh Hart (ankle) is a game-time decision after missing two games.",
+        "Posted moneyline is about Knicks -1205 / Bucks +750 per FanDuel (roughly 92% no-vig), with New York -15.5. FanDuel's own model gives New York 85.8%, so the estimate is shaded to 88% for the Knicks' mediocre 5-4 record and Hart's status.",
+        "Tip is 7:30 pm ET Tuesday Nov 10 (00:30Z Nov 11)."
+      ],
+      "sources": [
+        "https://www.fanduel.com/research/knicks-vs-bucks-prediction-nba-odds-spread-best-bets-for-11-10-2026",
+        "https://www.bleachernation.com/picks/2026/11/09/knicks-vs-bucks-prediction-expert-picks-odds-stats-and-best-bets-tuesday-november-10-2026/",
+        "https://www.sportsmole.co.uk/basketball/milwaukee-bucks/preview/milwaukee-bucks-vs-new-york-knicks-player-props-injury-report-and-prediction--nba_608765.html",
+        "https://www.therx.com/nba/bucks-vs-knicks-prediction-can-milwaukee-crack-new-yorks-top-10-defense/54986/"
+      ]
     }
   ],
   "settled": [
