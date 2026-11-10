@@ -4,32 +4,6 @@
   "picks": [
     {
       "sport": "NBA",
-      "matchup": "San Antonio Spurs at Phoenix Suns",
-      "date": "2026-11-09",
-      "start_time": "2026-11-10T02:00:00Z",
-      "favorite": "San Antonio Spurs",
-      "estimated_probability": {
-        "San Antonio Spurs": 75,
-        "Phoenix Suns": 25
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "actual_multiplier": 1.32,
-      "reasoning": [
-        "Spurs are 8-2 (second in the West) and Suns are 3-5 (12th); Victor Wembanyama is averaging 29.1 points, 12.0 rebounds and 3.9 blocks.",
-        "Phoenix is without starting center Mark Williams (shoulder surgery) and Jordan Goodwin is out or doubtful; Spurs are without Tobias Harris (calf) and Jayden Quaintance (knee).",
-        "Posted moneyline is about Spurs -310 / Suns +250 per FanDuel (roughly 74% no-vig), with San Antonio -8.5. One source disputed the favorite on an earlier slate, so the estimate stays at 75%.",
-        "Tip is 9 pm ET Monday Nov 9 in Phoenix (02:00Z Nov 10); one outlet lists a 7 pm tip, but the newer previews agree on 9 pm ET."
-      ],
-      "sources": [
-        "https://www.fanduel.com/research/suns-vs-spurs-prediction-nba-odds-spread-best-bets-for-11-9-2026",
-        "https://www.foxsports.com/articles/nba/san-antonio-plays-phoenix-looks-for-5th-straight-road-win",
-        "https://dailysports.net/predictions/can-wembanyama-expose-phoenixs-weakness-inside-phoenix-suns-vs-san-antonio-spurs-prediction-10112026/",
-        "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-phoenix-suns-player-props-injury-report-and-prediction--nba_608729.html"
-      ]
-    },
-    {
-      "sport": "NBA",
       "matchup": "Milwaukee Bucks at New York Knicks",
       "date": "2026-11-10",
       "start_time": "2026-11-11T00:30:00Z",
@@ -484,6 +458,35 @@
       "winner": "Boston Celtics",
       "final_score": "Boston Celtics 117, Milwaukee Bucks 97",
       "settled_at": "2026-11-09T04:06:42Z"
+    },
+    {
+      "sport": "NBA",
+      "matchup": "San Antonio Spurs at Phoenix Suns",
+      "date": "2026-11-09",
+      "start_time": "2026-11-10T02:00:00Z",
+      "favorite": "San Antonio Spurs",
+      "estimated_probability": {
+        "San Antonio Spurs": 75,
+        "Phoenix Suns": 25
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.32,
+      "reasoning": [
+        "Spurs are 8-2 (second in the West) and Suns are 3-5 (12th); Victor Wembanyama is averaging 29.1 points, 12.0 rebounds and 3.9 blocks.",
+        "Phoenix is without starting center Mark Williams (shoulder surgery) and Jordan Goodwin is out or doubtful; Spurs are without Tobias Harris (calf) and Jayden Quaintance (knee).",
+        "Posted moneyline is about Spurs -310 / Suns +250 per FanDuel (roughly 74% no-vig), with San Antonio -8.5. One source disputed the favorite on an earlier slate, so the estimate stays at 75%.",
+        "Tip is 9 pm ET Monday Nov 9 in Phoenix (02:00Z Nov 10); one outlet lists a 7 pm tip, but the newer previews agree on 9 pm ET."
+      ],
+      "sources": [
+        "https://www.fanduel.com/research/suns-vs-spurs-prediction-nba-odds-spread-best-bets-for-11-9-2026",
+        "https://www.foxsports.com/articles/nba/san-antonio-plays-phoenix-looks-for-5th-straight-road-win",
+        "https://dailysports.net/predictions/can-wembanyama-expose-phoenixs-weakness-inside-phoenix-suns-vs-san-antonio-spurs-prediction-10112026/",
+        "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-phoenix-suns-player-props-injury-report-and-prediction--nba_608729.html"
+      ],
+      "winner": "San Antonio Spurs",
+      "final_score": "San Antonio Spurs 122, Phoenix Suns 96",
+      "settled_at": "2026-11-10T14:22:12Z"
     }
   ],
   "prizepicks": []
