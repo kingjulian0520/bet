@@ -1,7 +1,34 @@
 {
   "generated_at": "2026-10-05T21:00:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [],
+  "picks": [
+    {
+      "sport": "NBA",
+      "matchup": "San Antonio Spurs at Chicago Bulls",
+      "date": "2026-11-11",
+      "start_time": "2026-11-12T01:00:00Z",
+      "favorite": "San Antonio Spurs",
+      "estimated_probability": {
+        "San Antonio Spurs": 86,
+        "Chicago Bulls": 14
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "actual_multiplier": 1.13,
+      "reasoning": [
+        "Spurs are 9-2, second in the West, and have won nine straight, including 122-96 at Phoenix on Nov 9 when Victor Wembanyama had 40 points and 9 blocks; he is averaging 30.1 points and 11.9 rebounds. Bulls are 1-8, 14th in the East.",
+        "Spurs are without Devin Vassell (adductor) and Jayden Quaintance (knee), with Tobias Harris (calf) out or a game-time decision depending on the source. Bulls have Norman Powell day-to-day (shoulder) and Zach Collins day-to-day (illness).",
+        "The Bulls have won seven of the last 10 meetings, but the Spurs won the most recent one 129-114 on Mar 30. Posted moneyline is about Spurs -800 / Bulls +570 per FanDuel (roughly 87% no-vig), so the estimate is 86%.",
+        "Tip is 7 pm CT Wednesday Nov 11 at the United Center (01:00Z Nov 12)."
+      ],
+      "sources": [
+        "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-chicago-bulls-player-props-injury-report-and-prediction--nba_608830.html",
+        "https://sports.yahoo.com/articles/spurs-vs-bulls-watch-game-173838280.html",
+        "https://sports.yahoo.com/articles/wembanyama-leads-san-antonio-against-070442335.html",
+        "https://www.fanduel.com/research/nba-predictions-odds-11-11-2026"
+      ]
+    }
+  ],
   "settled": [
     {
       "sport": "NFL",
