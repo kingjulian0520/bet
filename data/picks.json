@@ -77,88 +77,9 @@
         "https://www.uhnd.com/football/games/notre-dame-vs-boston-college-2026/",
         "https://kalshi.com/markets/kxncaafgame/boston-college-vs-notre-dame/kxncaafgame-26nov14bcnd"
       ]
-    },
-    {
-      "sport": "CFB",
-      "matchup": "Georgia Tech at Clemson",
-      "date": "2026-11-14",
-      "start_time": "2026-11-14T17:30:00Z",
-      "favorite": "Clemson",
-      "estimated_probability": {
-        "Clemson": 79,
-        "Georgia Tech": 21
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "actual_multiplier": 1.18,
-      "reasoning": [
-        "Clemson (6-3, 4-2 ACC) hosts Georgia Tech (2-7, 1-5) at Memorial Stadium; spread is about Clemson -13.5 (DraftKings) with a moneyline near -550 / +410, roughly 83% no-vig.",
-        "Clemson is without RB Gideon Davidson and WR Tyler Brown (ankle injuries), so I shaded the estimate below the market to 79%.",
-        "Kickoff is 12:30 pm ET (17:30Z) on The CW."
-      ],
-      "sources": [
-        "https://sports.yahoo.com/articles/watch-clemson-football-vs-georgia-104500042.html",
-        "https://sports.betmgm.com/en/blog/college-football/georgia-tech-clemson-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
-        "https://clutchpoints.com/ncaa-football/clemson-football-news-tyler-brown-gideon-davidson-ruled-out-for-georgia-tech-clash",
-        "https://rubbingtherock.com/clemson-tigers-final-odds-and-prediction-for-week-11-vs-georgia-tech-yellow-jackets"
-      ]
-    },
-    {
-      "sport": "CFB",
-      "matchup": "Northwestern at Ohio State",
-      "date": "2026-11-14",
-      "start_time": "2026-11-14T17:00:00Z",
-      "favorite": "Ohio State",
-      "estimated_probability": {
-        "Ohio State": 76,
-        "Northwestern": 24
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "actual_multiplier": 1.18,
-      "reasoning": [
-        "Ohio State is a 11-12.5 point home favorite at Ohio Stadium (moneyline about -549 / +410, roughly 83% no-vig) and has won 11 straight against Northwestern.",
-        "Caveats: Ohio State (6-3, coming off losses) is without QB Julian Sayin and expected to start freshman Luke Fahey, with LG Luke Montgomery and WRs Phillip Bell and Brock Boyd questionable. Northwestern (6-3) is also without QB Aidan Chiles. The uncertainty at QB justifies shading to 76%.",
-        "Kickoff is noon ET (17:00Z) on FOX per multiple previews."
-      ],
-      "sources": [
-        "https://sports.betmgm.com/en/blog/college-football/northwestern-ohio-state-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
-        "https://sports.yahoo.com/articles/ohio-state-football-vs-northwestern-222155959.html",
-        "https://www.yardbarker.com/college_football/articles/ohio_state_football_hit_with_a_mixed_bag_of_injury_news_ahead_of_must-win_game_against_northwestern/s1_17313_44556119",
-        "https://www.bleachernation.com/picks/2026/11/11/ohio-state-vs-northwestern-prediction-odds-picks-best-bets-november-14-2026/"
-      ]
     }
   ],
   "settled": [
-    {
-      "sport": "CFB",
-      "matchup": "Ohio at Akron",
-      "date": "2026-11-03",
-      "start_time": "2026-11-04T00:00:00Z",
-      "favorite": "Ohio",
-      "estimated_probability": {
-        "Ohio": 82,
-        "Akron": 18
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.21,
-      "reasoning": [
-        "Ohio is 6-2 overall and 4-0 in the MAC with five straight wins, averaging 29.6 points per game on a strong rushing attack (CBS Sports).",
-        "Akron is 1-7 overall and 0-4 in the MAC, has lost six straight and allows 32.8 points and about 185 rushing yards per game; fan coverage describes an injury-hit season.",
-        "Posted moneyline is about Ohio -470 / Akron +360 (Sports Betting Dime, Bleacher Nation), roughly 80% no-vig, with Ohio a ~12-point favorite. Estimate 82%.",
-        "No official injury report found for either side; Ohio QB Nick Poulos returned from an earlier injury and has played well since."
-      ],
-      "sources": [
-        "https://www.cbssports.com/college-football/teams/AKRON/akron-zips/",
-        "https://www.sportsbettingdime.com/news/college-football/opening-week-10-odds-spreads-lines-byu-vs-utah-2026/",
-        "https://www.bleachernation.com/picks/2026/11/01/ohio-vs-akron-prediction-live-odds-stats-history-and-picks-november-3-2026/",
-        "https://akronzippedup.substack.com/p/game-9-preview-ohio-bobcats"
-      ],
-      "winner": "Ohio",
-      "final_score": "Ohio 28, Akron 20",
-      "settled_at": "2026-11-04T14:19:17Z"
-    },
     {
       "sport": "NFL",
       "matchup": "Jacksonville Jaguars at Baltimore Ravens",
@@ -477,6 +398,62 @@
       "winner": "San Antonio Spurs",
       "final_score": "San Antonio Spurs 124, Chicago Bulls 119",
       "settled_at": "2026-11-12T04:06:20Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Northwestern at Ohio State",
+      "date": "2026-11-14",
+      "start_time": "2026-11-14T17:00:00Z",
+      "favorite": "Ohio State",
+      "estimated_probability": {
+        "Ohio State": 76,
+        "Northwestern": 24
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.18,
+      "reasoning": [
+        "Ohio State is a 11-12.5 point home favorite at Ohio Stadium (moneyline about -549 / +410, roughly 83% no-vig) and has won 11 straight against Northwestern.",
+        "Caveats: Ohio State (6-3, coming off losses) is without QB Julian Sayin and expected to start freshman Luke Fahey, with LG Luke Montgomery and WRs Phillip Bell and Brock Boyd questionable. Northwestern (6-3) is also without QB Aidan Chiles. The uncertainty at QB justifies shading to 76%.",
+        "Kickoff is noon ET (17:00Z) on FOX per multiple previews."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/college-football/northwestern-ohio-state-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
+        "https://sports.yahoo.com/articles/ohio-state-football-vs-northwestern-222155959.html",
+        "https://www.yardbarker.com/college_football/articles/ohio_state_football_hit_with_a_mixed_bag_of_injury_news_ahead_of_must-win_game_against_northwestern/s1_17313_44556119",
+        "https://www.bleachernation.com/picks/2026/11/11/ohio-state-vs-northwestern-prediction-odds-picks-best-bets-november-14-2026/"
+      ],
+      "winner": "Ohio State",
+      "final_score": "Ohio State 28, Northwestern 19",
+      "settled_at": "2026-11-14T22:17:19Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Georgia Tech at Clemson",
+      "date": "2026-11-14",
+      "start_time": "2026-11-14T17:30:00Z",
+      "favorite": "Clemson",
+      "estimated_probability": {
+        "Clemson": 79,
+        "Georgia Tech": 21
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.18,
+      "reasoning": [
+        "Clemson (6-3, 4-2 ACC) hosts Georgia Tech (2-7, 1-5) at Memorial Stadium; spread is about Clemson -13.5 (DraftKings) with a moneyline near -550 / +410, roughly 83% no-vig.",
+        "Clemson is without RB Gideon Davidson and WR Tyler Brown (ankle injuries), so I shaded the estimate below the market to 79%.",
+        "Kickoff is 12:30 pm ET (17:30Z) on The CW."
+      ],
+      "sources": [
+        "https://sports.yahoo.com/articles/watch-clemson-football-vs-georgia-104500042.html",
+        "https://sports.betmgm.com/en/blog/college-football/georgia-tech-clemson-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
+        "https://clutchpoints.com/ncaa-football/clemson-football-news-tyler-brown-gideon-davidson-ruled-out-for-georgia-tech-clash",
+        "https://rubbingtherock.com/clemson-tigers-final-odds-and-prediction-for-week-11-vs-georgia-tech-yellow-jackets"
+      ],
+      "winner": "Georgia Tech",
+      "final_score": "Georgia Tech 20, Clemson 6",
+      "settled_at": "2026-11-14T22:17:19Z"
     }
   ],
   "prizepicks": []
