@@ -52,6 +52,81 @@
         "https://www.si.com/college/virginiatech/football/opening-odds-for-virginia-tech-stanford-put-hokies-as-multi-touchdown-favorites-01m6y7j883ns",
         "https://kalshi.com/markets/kxncaafgame/stanford-vs-virginia-tech/kxncaafgame-26nov14stanvt"
       ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Boston College at Notre Dame",
+      "date": "2026-11-14",
+      "start_time": "2026-11-14T20:30:00Z",
+      "favorite": "Notre Dame",
+      "estimated_probability": {
+        "Notre Dame": 94,
+        "Boston College": 6
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "actual_multiplier": 1.02,
+      "reasoning": [
+        "No. 4 Notre Dame hosts a 4-5 Boston College team at Notre Dame Stadium; the Irish are about a 30-point favorite (-28.5 to -31.5 across books).",
+        "Posted moneylines run roughly -4662 to -10000 and Kalshi has Notre Dame near 99%; capped at 94% since the payout is tiny and any single-game upset risk is nonzero.",
+        "Kickoff is 3:30 pm ET (20:30Z) on NBC/Peacock. I did not find a confirmed 2026 injury report for either side."
+      ],
+      "sources": [
+        "https://www.covers.com/ncaaf/boston-college-vs-notre-dame-prediction-picks-odds-nov-14-2026",
+        "https://sports.betmgm.com/en/blog/college-football/boston-college-notre-dame-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
+        "https://www.uhnd.com/football/games/notre-dame-vs-boston-college-2026/",
+        "https://kalshi.com/markets/kxncaafgame/boston-college-vs-notre-dame/kxncaafgame-26nov14bcnd"
+      ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Georgia Tech at Clemson",
+      "date": "2026-11-14",
+      "start_time": "2026-11-14T17:30:00Z",
+      "favorite": "Clemson",
+      "estimated_probability": {
+        "Clemson": 79,
+        "Georgia Tech": 21
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.18,
+      "reasoning": [
+        "Clemson (6-3, 4-2 ACC) hosts Georgia Tech (2-7, 1-5) at Memorial Stadium; spread is about Clemson -13.5 (DraftKings) with a moneyline near -550 / +410, roughly 83% no-vig.",
+        "Clemson is without RB Gideon Davidson and WR Tyler Brown (ankle injuries), so I shaded the estimate below the market to 79%.",
+        "Kickoff is 12:30 pm ET (17:30Z) on The CW."
+      ],
+      "sources": [
+        "https://sports.yahoo.com/articles/watch-clemson-football-vs-georgia-104500042.html",
+        "https://sports.betmgm.com/en/blog/college-football/georgia-tech-clemson-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
+        "https://clutchpoints.com/ncaa-football/clemson-football-news-tyler-brown-gideon-davidson-ruled-out-for-georgia-tech-clash",
+        "https://rubbingtherock.com/clemson-tigers-final-odds-and-prediction-for-week-11-vs-georgia-tech-yellow-jackets"
+      ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Northwestern at Ohio State",
+      "date": "2026-11-14",
+      "start_time": "2026-11-14T17:00:00Z",
+      "favorite": "Ohio State",
+      "estimated_probability": {
+        "Ohio State": 76,
+        "Northwestern": 24
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.18,
+      "reasoning": [
+        "Ohio State is a 11-12.5 point home favorite at Ohio Stadium (moneyline about -549 / +410, roughly 83% no-vig) and has won 11 straight against Northwestern.",
+        "Caveats: Ohio State (6-3, coming off losses) is without QB Julian Sayin and expected to start freshman Luke Fahey, with LG Luke Montgomery and WRs Phillip Bell and Brock Boyd questionable. Northwestern (6-3) is also without QB Aidan Chiles. The uncertainty at QB justifies shading to 76%.",
+        "Kickoff is noon ET (17:00Z) on FOX per multiple previews."
+      ],
+      "sources": [
+        "https://sports.betmgm.com/en/blog/college-football/northwestern-ohio-state-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
+        "https://sports.yahoo.com/articles/ohio-state-football-vs-northwestern-222155959.html",
+        "https://www.yardbarker.com/college_football/articles/ohio_state_football_hit_with_a_mixed_bag_of_injury_news_ahead_of_must-win_game_against_northwestern/s1_17313_44556119",
+        "https://www.bleachernation.com/picks/2026/11/11/ohio-state-vs-northwestern-prediction-odds-picks-best-bets-november-14-2026/"
+      ]
     }
   ],
   "settled": [
