@@ -4,32 +4,6 @@
   "picks": [
     {
       "sport": "CFB",
-      "matchup": "Missouri at Georgia",
-      "date": "2026-11-14",
-      "start_time": "2026-11-14T20:30:00Z",
-      "favorite": "Georgia",
-      "estimated_probability": {
-        "Georgia": 86,
-        "Missouri": 14
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2,
-      "actual_multiplier": 1.13,
-      "reasoning": [
-        "Georgia is 8-1 and ranked No. 1 at home at Sanford Stadium; Missouri is 6-3 and fell out of the AP Top 25.",
-        "Georgia injuries are minor to moderate: center Drew Bobo and DT Josh Horton are questionable, OLB Amaris Williams is out and RB Chauncey Bowens has been out since Oct 3. Missouri is without edge Langden Kitchen, RB Malae Fonoti, OL Josh Atkins and TE Gavin Hoffman. I could not confirm Georgia's 2026 starting quarterback.",
-        "Posted moneyline is about Georgia -750 / Missouri +525 (DraftKings, Nov 12), with Georgia -15.5 and other tables showing -714 to -1000; roughly 86% no-vig, so the estimate is 86%.",
-        "Kickoff is 3:30 pm ET (20:30Z) per the Week 11 schedule."
-      ],
-      "sources": [
-        "https://bangthebook.com/missouri-tigers-vs-georgia-bulldogs-prediction-2026-11-14/",
-        "https://sports.betmgm.com/en/blog/college-football/missouri-georgia-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
-        "https://247sports.com/college/georgia/article/georgia-center-drew-bobo-questionable-ahead-of-missouri-game-292615548",
-        "https://sports.yahoo.com/articles/opening-odds-mizzou-falls-ap-195647811.html"
-      ]
-    },
-    {
-      "sport": "CFB",
       "matchup": "Stanford at Virginia Tech",
       "date": "2026-11-14",
       "start_time": "2026-11-15T00:30:00Z",
@@ -51,31 +25,6 @@
         "https://sports.betmgm.com/en/blog/college-football/stanford-virginia-tech-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
         "https://www.si.com/college/virginiatech/football/opening-odds-for-virginia-tech-stanford-put-hokies-as-multi-touchdown-favorites-01m6y7j883ns",
         "https://kalshi.com/markets/kxncaafgame/stanford-vs-virginia-tech/kxncaafgame-26nov14stanvt"
-      ]
-    },
-    {
-      "sport": "CFB",
-      "matchup": "Boston College at Notre Dame",
-      "date": "2026-11-14",
-      "start_time": "2026-11-14T20:30:00Z",
-      "favorite": "Notre Dame",
-      "estimated_probability": {
-        "Notre Dame": 94,
-        "Boston College": 6
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2.5,
-      "actual_multiplier": 1.02,
-      "reasoning": [
-        "No. 4 Notre Dame hosts a 4-5 Boston College team at Notre Dame Stadium; the Irish are about a 30-point favorite (-28.5 to -31.5 across books).",
-        "Posted moneylines run roughly -4662 to -10000 and Kalshi has Notre Dame near 99%; capped at 94% since the payout is tiny and any single-game upset risk is nonzero.",
-        "Kickoff is 3:30 pm ET (20:30Z) on NBC/Peacock. I did not find a confirmed 2026 injury report for either side."
-      ],
-      "sources": [
-        "https://www.covers.com/ncaaf/boston-college-vs-notre-dame-prediction-picks-odds-nov-14-2026",
-        "https://sports.betmgm.com/en/blog/college-football/boston-college-notre-dame-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
-        "https://www.uhnd.com/football/games/notre-dame-vs-boston-college-2026/",
-        "https://kalshi.com/markets/kxncaafgame/boston-college-vs-notre-dame/kxncaafgame-26nov14bcnd"
       ]
     }
   ],
@@ -454,6 +403,63 @@
       "winner": "Georgia Tech",
       "final_score": "Georgia Tech 20, Clemson 6",
       "settled_at": "2026-11-14T22:17:19Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Boston College at Notre Dame",
+      "date": "2026-11-14",
+      "start_time": "2026-11-14T20:30:00Z",
+      "favorite": "Notre Dame",
+      "estimated_probability": {
+        "Notre Dame": 94,
+        "Boston College": 6
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "actual_multiplier": 1.02,
+      "reasoning": [
+        "No. 4 Notre Dame hosts a 4-5 Boston College team at Notre Dame Stadium; the Irish are about a 30-point favorite (-28.5 to -31.5 across books).",
+        "Posted moneylines run roughly -4662 to -10000 and Kalshi has Notre Dame near 99%; capped at 94% since the payout is tiny and any single-game upset risk is nonzero.",
+        "Kickoff is 3:30 pm ET (20:30Z) on NBC/Peacock. I did not find a confirmed 2026 injury report for either side."
+      ],
+      "sources": [
+        "https://www.covers.com/ncaaf/boston-college-vs-notre-dame-prediction-picks-odds-nov-14-2026",
+        "https://sports.betmgm.com/en/blog/college-football/boston-college-notre-dame-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
+        "https://www.uhnd.com/football/games/notre-dame-vs-boston-college-2026/",
+        "https://kalshi.com/markets/kxncaafgame/boston-college-vs-notre-dame/kxncaafgame-26nov14bcnd"
+      ],
+      "winner": "Notre Dame",
+      "final_score": "Notre Dame 41, Boston College 7",
+      "settled_at": "2026-11-15T00:16:27Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Missouri at Georgia",
+      "date": "2026-11-14",
+      "start_time": "2026-11-14T20:30:00Z",
+      "favorite": "Georgia",
+      "estimated_probability": {
+        "Georgia": 86,
+        "Missouri": 14
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "actual_multiplier": 1.13,
+      "reasoning": [
+        "Georgia is 8-1 and ranked No. 1 at home at Sanford Stadium; Missouri is 6-3 and fell out of the AP Top 25.",
+        "Georgia injuries are minor to moderate: center Drew Bobo and DT Josh Horton are questionable, OLB Amaris Williams is out and RB Chauncey Bowens has been out since Oct 3. Missouri is without edge Langden Kitchen, RB Malae Fonoti, OL Josh Atkins and TE Gavin Hoffman. I could not confirm Georgia's 2026 starting quarterback.",
+        "Posted moneyline is about Georgia -750 / Missouri +525 (DraftKings, Nov 12), with Georgia -15.5 and other tables showing -714 to -1000; roughly 86% no-vig, so the estimate is 86%.",
+        "Kickoff is 3:30 pm ET (20:30Z) per the Week 11 schedule."
+      ],
+      "sources": [
+        "https://bangthebook.com/missouri-tigers-vs-georgia-bulldogs-prediction-2026-11-14/",
+        "https://sports.betmgm.com/en/blog/college-football/missouri-georgia-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
+        "https://247sports.com/college/georgia/article/georgia-center-drew-bobo-questionable-ahead-of-missouri-game-292615548",
+        "https://sports.yahoo.com/articles/opening-odds-mizzou-falls-ap-195647811.html"
+      ],
+      "winner": "Georgia",
+      "final_score": "Georgia 48, Missouri 21",
+      "settled_at": "2026-11-15T00:16:27Z"
     }
   ],
   "prizepicks": []
