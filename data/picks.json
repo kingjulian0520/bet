@@ -3,31 +3,6 @@
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
-      "sport": "NFL",
-      "matchup": "Jacksonville Jaguars at Tennessee Titans",
-      "date": "2026-11-15",
-      "start_time": "2026-11-15T18:00:00Z",
-      "favorite": "Jacksonville Jaguars",
-      "estimated_probability": {
-        "Jacksonville Jaguars": 82,
-        "Tennessee Titans": 18
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.17,
-      "reasoning": [
-        "Jaguars (6-2) visit the Titans (1-7); Jacksonville is about a 10.5-point road favorite with a moneyline near -600 / +440 (DraftKings), roughly 84% no-vig. Kalshi and OG.com markets sit near 83-84%.",
-        "Most published picks (SI 31-13, Predictem 30-16) back Jacksonville; BetMGM is the only dissent, on the Titans spread. Titans RB Tyjae Spears and WR Carnell Tate are questionable; Jaguars RB Bhayshul Tuten and edge Travon Walker are also questionable. Shaded to 82% for the injury uncertainty and road-favorite variance.",
-        "Kickoff is 1:00 pm ET (18:00Z) at Nissan Stadium."
-      ],
-      "sources": [
-        "https://www.si.com/betting/jaguars-vs-titans-score-prediction-for-nfl-week-10-can-jacksonville-cover-big-spread-again-2026",
-        "https://www.predictem.com/nfl/jaguars-vs-titans-odds-and-expert-pick-for-nfl-week-10/",
-        "https://og.com/learn/jaguars-vs-titans-11-15-26-prediction",
-        "https://sports.betmgm.com/en/blog/nfl/titans-vs-jaguars-prediction-odds-picks-week-10-2026-bm16/"
-      ]
-    },
-    {
       "sport": "NBA",
       "matchup": "San Antonio Spurs at Utah Jazz",
       "date": "2026-11-15",
@@ -513,6 +488,34 @@
       "winner": "Stanford",
       "final_score": "Stanford 40, Virginia Tech 22",
       "settled_at": "2026-11-15T14:16:46Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Jacksonville Jaguars at Tennessee Titans",
+      "date": "2026-11-15",
+      "start_time": "2026-11-15T18:00:00Z",
+      "favorite": "Jacksonville Jaguars",
+      "estimated_probability": {
+        "Jacksonville Jaguars": 82,
+        "Tennessee Titans": 18
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.17,
+      "reasoning": [
+        "Jaguars (6-2) visit the Titans (1-7); Jacksonville is about a 10.5-point road favorite with a moneyline near -600 / +440 (DraftKings), roughly 84% no-vig. Kalshi and OG.com markets sit near 83-84%.",
+        "Most published picks (SI 31-13, Predictem 30-16) back Jacksonville; BetMGM is the only dissent, on the Titans spread. Titans RB Tyjae Spears and WR Carnell Tate are questionable; Jaguars RB Bhayshul Tuten and edge Travon Walker are also questionable. Shaded to 82% for the injury uncertainty and road-favorite variance.",
+        "Kickoff is 1:00 pm ET (18:00Z) at Nissan Stadium."
+      ],
+      "sources": [
+        "https://www.si.com/betting/jaguars-vs-titans-score-prediction-for-nfl-week-10-can-jacksonville-cover-big-spread-again-2026",
+        "https://www.predictem.com/nfl/jaguars-vs-titans-odds-and-expert-pick-for-nfl-week-10/",
+        "https://og.com/learn/jaguars-vs-titans-11-15-26-prediction",
+        "https://sports.betmgm.com/en/blog/nfl/titans-vs-jaguars-prediction-odds-picks-week-10-2026-bm16/"
+      ],
+      "winner": "Jacksonville Jaguars",
+      "final_score": "Jacksonville Jaguars 40, Tennessee Titans 23",
+      "settled_at": "2026-11-15T22:16:33Z"
     }
   ],
   "prizepicks": []
