@@ -3,31 +3,6 @@
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
-      "sport": "CFB",
-      "matchup": "Stanford at Virginia Tech",
-      "date": "2026-11-14",
-      "start_time": "2026-11-15T00:30:00Z",
-      "favorite": "Virginia Tech",
-      "estimated_probability": {
-        "Virginia Tech": 83,
-        "Stanford": 17
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.14,
-      "reasoning": [
-        "Virginia Tech is 6-3 (3-3 ACC) at Lane Stadium; Stanford is 4-5 (2-4 ACC) and is making its first trip to Blacksburg. Stanford's defense has allowed 199.7 rushing yards per game.",
-        "Posted moneyline is about Virginia Tech -700 on BetMGM, with the Hokies -15.5 to -17 and Kalshi at about 85%; the estimate is shaded to 83% because I found no confirmed injury report for either team.",
-        "Kickoff is 7:30 pm ET (00:30Z Nov 15) on the ACC Network per most sources; one Covers page lists 1:00 pm ET and an older Stanford page listed two options, so the start time is the majority-source value."
-      ],
-      "sources": [
-        "https://hokiesports.com/news/2026/11/09/virginia-tech-football-first-look-virginia-tech-vs-stanford-2026",
-        "https://sports.betmgm.com/en/blog/college-football/stanford-virginia-tech-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
-        "https://www.si.com/college/virginiatech/football/opening-odds-for-virginia-tech-stanford-put-hokies-as-multi-touchdown-favorites-01m6y7j883ns",
-        "https://kalshi.com/markets/kxncaafgame/stanford-vs-virginia-tech/kxncaafgame-26nov14stanvt"
-      ]
-    },
-    {
       "sport": "NFL",
       "matchup": "Jacksonville Jaguars at Tennessee Titans",
       "date": "2026-11-15",
@@ -510,6 +485,34 @@
       "winner": "Georgia",
       "final_score": "Georgia 48, Missouri 21",
       "settled_at": "2026-11-15T00:16:27Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Stanford at Virginia Tech",
+      "date": "2026-11-14",
+      "start_time": "2026-11-15T00:30:00Z",
+      "favorite": "Virginia Tech",
+      "estimated_probability": {
+        "Virginia Tech": 83,
+        "Stanford": 17
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.14,
+      "reasoning": [
+        "Virginia Tech is 6-3 (3-3 ACC) at Lane Stadium; Stanford is 4-5 (2-4 ACC) and is making its first trip to Blacksburg. Stanford's defense has allowed 199.7 rushing yards per game.",
+        "Posted moneyline is about Virginia Tech -700 on BetMGM, with the Hokies -15.5 to -17 and Kalshi at about 85%; the estimate is shaded to 83% because I found no confirmed injury report for either team.",
+        "Kickoff is 7:30 pm ET (00:30Z Nov 15) on the ACC Network per most sources; one Covers page lists 1:00 pm ET and an older Stanford page listed two options, so the start time is the majority-source value."
+      ],
+      "sources": [
+        "https://hokiesports.com/news/2026/11/09/virginia-tech-football-first-look-virginia-tech-vs-stanford-2026",
+        "https://sports.betmgm.com/en/blog/college-football/stanford-virginia-tech-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
+        "https://www.si.com/college/virginiatech/football/opening-odds-for-virginia-tech-stanford-put-hokies-as-multi-touchdown-favorites-01m6y7j883ns",
+        "https://kalshi.com/markets/kxncaafgame/stanford-vs-virginia-tech/kxncaafgame-26nov14stanvt"
+      ],
+      "winner": "Stanford",
+      "final_score": "Stanford 40, Virginia Tech 22",
+      "settled_at": "2026-11-15T14:16:46Z"
     }
   ],
   "prizepicks": []
