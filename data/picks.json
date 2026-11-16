@@ -1,7 +1,31 @@
 {
   "generated_at": "2026-10-05T21:00:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [],
+  "picks": [
+    {
+      "sport": "NBA",
+      "matchup": "Orlando Magic at Boston Celtics",
+      "date": "2026-11-16",
+      "start_time": "2026-11-17T00:00:00Z",
+      "favorite": "Boston Celtics",
+      "estimated_probability": {
+        "Boston Celtics": 80,
+        "Orlando Magic": 20
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.23,
+      "reasoning": [
+        "Boston is about a 9.5-point home favorite with a moneyline near -426 (Bang the Book) to -460 (Bleacher Report), roughly 81-82% no-vig; shaded slightly to 80% because only one preview covered this game in detail.",
+        "Orlando is listed without Paolo Banchero (ankle), Jonathan Isaac (knee), Noah Penda (hamstring) and Izaiyah Nelson (ankle), though that injury list comes from a single source and could change by tip-off. No Boston injuries were returned in the latest check.",
+        "The preview cites Boston's unbeaten home record and stronger scoring defense, but Orlando is on a three-game winning run. Tip is 7:00 pm ET (00:00Z Nov 17), which is 6:00 pm CT on Nov 16."
+      ],
+      "sources": [
+        "https://bangthebook.com/orlando-magic-vs-boston-celtics-prediction-2026-11-16/",
+        "https://bleacherreport.com/game/orlando-magic-vs-boston-celtics-2026-11-16-19-00"
+      ]
+    }
+  ],
   "settled": [
     {
       "sport": "NFL",
