@@ -1,7 +1,82 @@
 {
   "generated_at": "2026-10-05T21:00:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [],
+  "picks": [
+    {
+      "sport": "CFB",
+      "matchup": "Eastern Michigan at Western Michigan",
+      "date": "2026-11-17",
+      "start_time": "2026-11-17T23:00:00Z",
+      "favorite": "Western Michigan",
+      "estimated_probability": {
+        "Western Michigan": 82,
+        "Eastern Michigan": 18
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.15,
+      "reasoning": [
+        "Western Michigan is a 14.5-point home favorite at Waldo Stadium (spread steady since open) with a moneyline near -675 / +490 (Bang the Book), roughly 86% no-vig; Polymarket also sits near 86%.",
+        "Shaded to 82% because both starting quarterbacks (WMU's Broc Lowry and EMU's Noah Kim) are reported dealing with injuries and I found no confirmed injury report.",
+        "Kickoff is 6:00 pm ET (23:00Z) on Nov 17 per two 2026 previews."
+      ],
+      "sources": [
+        "https://bangthebook.com/eastern-michigan-eagles-vs-western-michigan-broncos-prediction-2026-11-17/",
+        "https://www.wagertalk.com/news/college-football/eastern-michigan-vs-western-michigan-predictions-picks-odds-november-17-2026/",
+        "https://ats.io/college-football/eastern-michigan-eagles-vs-western-michigan-broncos-prediction-preview-11-17-2026/"
+      ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Ball State at Ohio",
+      "date": "2026-11-17",
+      "start_time": "2026-11-18T00:00:00Z",
+      "favorite": "Ohio",
+      "estimated_probability": {
+        "Ohio": 78,
+        "Ball State": 22
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.25,
+      "reasoning": [
+        "Ohio (7-3, 5-1 MAC) hosts Ball State (3-7, 2-4 MAC) at Peden Stadium; Ohio is favored by roughly 9.5-11.5 with a moneyline between about -355 and -450, roughly 78-82% no-vig.",
+        "Most previews pick Ohio (ATS.io 31-20, TheRx 31-14), though Bang the Book takes Ball State outright, and I found no confirmed injury details, so I shaded to 78%.",
+        "Kickoff is 7:00 pm ET (00:00Z Nov 18), which is 6:00 pm CT on Nov 17."
+      ],
+      "sources": [
+        "https://www.bleachernation.com/picks/2026/11/15/ohio-vs-ball-state-prediction-picks-live-odds-and-moneyline-november-17-2026/",
+        "https://ats.io/college-football/ball-state-vs-ohio-prediction-november-17-2026/",
+        "https://www.therx.com/college-football/ball-state-ohio-prediction-november-17-2026/55534/",
+        "https://www.sportsline.com/insiders/ohio-vs-ball-state-odds-2026-college-football-picks-week-12-tuesday-maction-predictions-from-proven-model/"
+      ]
+    },
+    {
+      "sport": "NBA",
+      "matchup": "Charlotte Hornets at Los Angeles Lakers",
+      "date": "2026-11-17",
+      "start_time": "2026-11-18T04:00:00Z",
+      "favorite": "Los Angeles Lakers",
+      "estimated_probability": {
+        "Los Angeles Lakers": 82,
+        "Charlotte Hornets": 18
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.21,
+      "reasoning": [
+        "Lakers (12-2, eight straight wins) host the Hornets (4-9) at Crypto.com Arena; moneylines range from -381 (DraftKings) to -578 (Bang the Book) and Polymarket has LA near 79%, so I used 82%.",
+        "Charlotte is without Kon Knueppel, Dennis Schroder, Moussa Diabate and Grant Williams. The Lakers are missing Austin Reaves (heel) and Walker Kessler, with Collin Sexton a game-time decision, so there is real injury risk on the Lakers side.",
+        "Tip is 11:00 pm ET (04:00Z Nov 18), which is 10:00 pm CT on Nov 17."
+      ],
+      "sources": [
+        "https://www.nbcsports.com/nba/news/hornets-vs-lakers-predictions-odds-recent-stats-trends-and-best-bets-for-november-17",
+        "https://sports.yahoo.com/articles/hornets-vs-lakers-predictions-odds-032017401.html",
+        "https://bangthebook.com/charlotte-hornets-vs-los-angeles-lakers-prediction-2026-11-17/",
+        "https://polymarket.com/sports/nba/nba-cha-lal-2026-11-17"
+      ]
+    }
+  ],
   "settled": [
     {
       "sport": "UFC",
