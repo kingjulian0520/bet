@@ -1,90 +1,8 @@
 {
   "generated_at": "2026-10-05T21:00:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [
-    {
-      "sport": "NBA",
-      "matchup": "Orlando Magic at Boston Celtics",
-      "date": "2026-11-16",
-      "start_time": "2026-11-17T00:00:00Z",
-      "favorite": "Boston Celtics",
-      "estimated_probability": {
-        "Boston Celtics": 80,
-        "Orlando Magic": 20
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.23,
-      "reasoning": [
-        "Boston is about a 9.5-point home favorite with a moneyline near -426 (Bang the Book) to -460 (Bleacher Report), roughly 81-82% no-vig; shaded slightly to 80% because only one preview covered this game in detail.",
-        "Orlando is listed without Paolo Banchero (ankle), Jonathan Isaac (knee), Noah Penda (hamstring) and Izaiyah Nelson (ankle), though that injury list comes from a single source and could change by tip-off. No Boston injuries were returned in the latest check.",
-        "The preview cites Boston's unbeaten home record and stronger scoring defense, but Orlando is on a three-game winning run. Tip is 7:00 pm ET (00:00Z Nov 17), which is 6:00 pm CT on Nov 16."
-      ],
-      "sources": [
-        "https://bangthebook.com/orlando-magic-vs-boston-celtics-prediction-2026-11-16/",
-        "https://bleacherreport.com/game/orlando-magic-vs-boston-celtics-2026-11-16-19-00"
-      ]
-    }
-  ],
+  "picks": [],
   "settled": [
-    {
-      "sport": "NFL",
-      "matchup": "Jacksonville Jaguars at Baltimore Ravens",
-      "date": "2026-11-05",
-      "start_time": "2026-11-06T01:15:00Z",
-      "favorite": "Jacksonville Jaguars",
-      "estimated_probability": {
-        "Jacksonville Jaguars": 78,
-        "Baltimore Ravens": 22
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "actual_multiplier": 1.21,
-      "reasoning": [
-        "Jacksonville is 5-2 and coming off a 42-7 win over the Colts; Baltimore is 4-4 and lost 36-10 at Buffalo.",
-        "Lamar Jackson is out (thumb, headed to IR). Rookie Joe Fagnano is expected to make his first NFL start, with an ankle injury reported but unclear.",
-        "Jacksonville's defense allows an NFL-best 77.4 rushing yards per game. Posted moneyline is about Jaguars -455 to -500 / Ravens +335 to +385, roughly 80% no-vig, with the Jaguars -9.5.",
-        "One model shows a smaller edge (about 61%), so the estimate is shaded below the market to 78%. Series history is split (Ravens won three of the last five)."
-      ],
-      "sources": [
-        "https://www.covers.com/nfl/jaguars-vs-ravens-prediction-picks-odds-early-leans-week-9-2026",
-        "https://www.cbssports.com/betting/news/jaguars-ravens-prediction-odds-time-nfl-week-9-thursday-night-football-picks/",
-        "https://www.sportsbettingdime.com/news/nfl/jaguars-vs-ravens-odds-predictions-and-week-9-betting-picks/",
-        "https://www.cbssports.com/nfl/news/jaguars-whos-out-for-thursdays-game-vs-ravens/"
-      ],
-      "winner": "Jacksonville Jaguars",
-      "final_score": "Jacksonville Jaguars 33, Baltimore Ravens 10",
-      "settled_at": "2026-11-06T14:20:01Z"
-    },
-    {
-      "sport": "CFB",
-      "matchup": "James Madison at Southern Miss",
-      "date": "2026-11-05",
-      "start_time": "2026-11-06T01:00:00Z",
-      "favorite": "James Madison",
-      "estimated_probability": {
-        "James Madison": 84,
-        "Southern Miss": 16
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.15,
-      "reasoning": [
-        "James Madison is 7-2 (one preview lists 6-2) and averages 44.0 points per game (2nd nationally); Southern Miss is 3-5 at 26.9 points per game.",
-        "JMU won the last meeting 32-15 in 2024. Its most recent game was a 24-21 loss to Troy, a negative recent result.",
-        "Posted moneyline is about JMU -535 to -649 / Southern Miss +405 to +470, roughly 84% no-vig, with JMU favored by 14 to 14.5.",
-        "No injury report found for either side."
-      ],
-      "sources": [
-        "https://www.fanduel.com/research/james-madison-vs-southern-miss-college-football-odds-picks-best-bets-for-11-5-2026",
-        "https://www.sportsline.com/insiders/james-madison-vs-southern-miss-odds-2026-college-football-picks-week-10-predictions-from-proven-model/",
-        "https://www.winsipedia.com/james-madison/vs/southern-miss",
-        "https://www.docsports.com/free-picks/football/2026/james-madison-dukes-vs-southern-miss-golden-eagles-prediction-11-5-2026-college-football-picks-best-bets-odds.html"
-      ],
-      "winner": "James Madison",
-      "final_score": "James Madison 54, Southern Miss 23",
-      "settled_at": "2026-11-06T14:20:01Z"
-    },
     {
       "sport": "UFC",
       "matchup": "Seokhyeon Ko vs Wellington Turman",
@@ -542,6 +460,32 @@
       "winner": "San Antonio Spurs",
       "final_score": "San Antonio Spurs 110, Utah Jazz 102",
       "settled_at": "2026-11-16T02:17:18Z"
+    },
+    {
+      "sport": "NBA",
+      "matchup": "Orlando Magic at Boston Celtics",
+      "date": "2026-11-16",
+      "start_time": "2026-11-17T00:00:00Z",
+      "favorite": "Boston Celtics",
+      "estimated_probability": {
+        "Boston Celtics": 80,
+        "Orlando Magic": 20
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.23,
+      "reasoning": [
+        "Boston is about a 9.5-point home favorite with a moneyline near -426 (Bang the Book) to -460 (Bleacher Report), roughly 81-82% no-vig; shaded slightly to 80% because only one preview covered this game in detail.",
+        "Orlando is listed without Paolo Banchero (ankle), Jonathan Isaac (knee), Noah Penda (hamstring) and Izaiyah Nelson (ankle), though that injury list comes from a single source and could change by tip-off. No Boston injuries were returned in the latest check.",
+        "The preview cites Boston's unbeaten home record and stronger scoring defense, but Orlando is on a three-game winning run. Tip is 7:00 pm ET (00:00Z Nov 17), which is 6:00 pm CT on Nov 16."
+      ],
+      "sources": [
+        "https://bangthebook.com/orlando-magic-vs-boston-celtics-prediction-2026-11-16/",
+        "https://bleacherreport.com/game/orlando-magic-vs-boston-celtics-2026-11-16-19-00"
+      ],
+      "winner": "Orlando Magic",
+      "final_score": "Orlando Magic 115, Boston Celtics 105",
+      "settled_at": "2026-11-17T04:06:27Z"
     }
   ],
   "prizepicks": []
