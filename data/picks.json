@@ -4,30 +4,6 @@
   "picks": [
     {
       "sport": "CFB",
-      "matchup": "Eastern Michigan at Western Michigan",
-      "date": "2026-11-17",
-      "start_time": "2026-11-17T23:00:00Z",
-      "favorite": "Western Michigan",
-      "estimated_probability": {
-        "Western Michigan": 82,
-        "Eastern Michigan": 18
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.15,
-      "reasoning": [
-        "Western Michigan is a 14.5-point home favorite at Waldo Stadium (spread steady since open) with a moneyline near -675 / +490 (Bang the Book), roughly 86% no-vig; Polymarket also sits near 86%.",
-        "Shaded to 82% because both starting quarterbacks (WMU's Broc Lowry and EMU's Noah Kim) are reported dealing with injuries and I found no confirmed injury report.",
-        "Kickoff is 6:00 pm ET (23:00Z) on Nov 17 per two 2026 previews."
-      ],
-      "sources": [
-        "https://bangthebook.com/eastern-michigan-eagles-vs-western-michigan-broncos-prediction-2026-11-17/",
-        "https://www.wagertalk.com/news/college-football/eastern-michigan-vs-western-michigan-predictions-picks-odds-november-17-2026/",
-        "https://ats.io/college-football/eastern-michigan-eagles-vs-western-michigan-broncos-prediction-preview-11-17-2026/"
-      ]
-    },
-    {
-      "sport": "CFB",
       "matchup": "Ball State at Ohio",
       "date": "2026-11-17",
       "start_time": "2026-11-18T00:00:00Z",
@@ -78,35 +54,6 @@
     }
   ],
   "settled": [
-    {
-      "sport": "UFC",
-      "matchup": "Seokhyeon Ko vs Wellington Turman",
-      "date": "2026-11-07",
-      "start_time": "2026-11-08T00:00:00Z",
-      "favorite": "Seokhyeon Ko",
-      "estimated_probability": {
-        "Seokhyeon Ko": 84,
-        "Wellington Turman": 16
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.13,
-      "reasoning": [
-        "Ko is 13-3 and a pressure fighter who mixes in takedowns; about half his wins come by strikes. He is coming off a July decision loss to Jean-Paul Lebosnoyani.",
-        "Turman is 18-8, has lost his last three fights (Gooden, Brown, Petroski), has not fought since December 2023, and previews describe his defense as porous.",
-        "Posted moneyline is about Ko -700 to -800 / Turman +510 to +525 (roughly 85-87% no-vig). Estimate shaded to 84% for MMA upset variance and Turman's submission threat (8 submission wins).",
-        "Start time is the fallback of the main card start (about 7 pm ET Nov 7 = 00:00Z Nov 8) because the exact bout time was not found; one source calls this the main event while others list Cortes-Acosta vs Walker as the headliner."
-      ],
-      "sources": [
-        "https://www.docsports.com/free-picks/ufc/2026/seokhyeon-ko-vs-wellington-turman-pick-11-07-2026-predictions-ufc-vegas-124-odds.html",
-        "https://www.rotowire.com/mma/article/ufc-vegas-124-cortes-acosta-vs-walker-dfs-analysis-drakes-takes-145346",
-        "https://rg.org/news/mma/cortes-acosta-vs-walker-suarez-vs-jandiroba-ufc-vegas-124-odds",
-        "https://www.mmamania.com/ufc-odds/483835/ufc-vegas-124-main-card-odds-breakdowns-and-predictions-x-factor"
-      ],
-      "winner": "Seokhyeon Ko",
-      "final_score": "Seokhyeon Ko def. Wellington Turman by unanimous decision (30-27, 30-27, 30-27)",
-      "settled_at": "2026-11-08T02:16:53Z"
-    },
     {
       "sport": "NFL",
       "matchup": "New York Jets at Kansas City Chiefs",
@@ -561,6 +508,33 @@
       "winner": "Orlando Magic",
       "final_score": "Orlando Magic 115, Boston Celtics 105",
       "settled_at": "2026-11-17T04:06:27Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Eastern Michigan at Western Michigan",
+      "date": "2026-11-17",
+      "start_time": "2026-11-17T23:00:00Z",
+      "favorite": "Western Michigan",
+      "estimated_probability": {
+        "Western Michigan": 82,
+        "Eastern Michigan": 18
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.15,
+      "reasoning": [
+        "Western Michigan is a 14.5-point home favorite at Waldo Stadium (spread steady since open) with a moneyline near -675 / +490 (Bang the Book), roughly 86% no-vig; Polymarket also sits near 86%.",
+        "Shaded to 82% because both starting quarterbacks (WMU's Broc Lowry and EMU's Noah Kim) are reported dealing with injuries and I found no confirmed injury report.",
+        "Kickoff is 6:00 pm ET (23:00Z) on Nov 17 per two 2026 previews."
+      ],
+      "sources": [
+        "https://bangthebook.com/eastern-michigan-eagles-vs-western-michigan-broncos-prediction-2026-11-17/",
+        "https://www.wagertalk.com/news/college-football/eastern-michigan-vs-western-michigan-predictions-picks-odds-november-17-2026/",
+        "https://ats.io/college-football/eastern-michigan-eagles-vs-western-michigan-broncos-prediction-preview-11-17-2026/"
+      ],
+      "winner": "Western Michigan",
+      "final_score": "Western Michigan 34, Eastern Michigan 27",
+      "settled_at": "2026-11-18T04:06:32Z"
     }
   ],
   "prizepicks": []
