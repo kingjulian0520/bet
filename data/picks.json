@@ -1,7 +1,33 @@
 {
   "generated_at": "2026-10-05T21:00:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [],
+  "picks": [
+    {
+      "sport": "CFB",
+      "matchup": "Oregon at Michigan State",
+      "date": "2026-11-20",
+      "start_time": "2026-11-21T01:00:00Z",
+      "favorite": "Oregon",
+      "estimated_probability": {
+        "Oregon": 83,
+        "Michigan State": 17
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.13,
+      "reasoning": [
+        "Oregon (No. 14) is a roughly 14-16.5 point road favorite with a moneyline between about -750 (Sharp Football Analysis) and -850 (Bleacher Nation), about 86-88% no-vig.",
+        "I shaded to 83% because Oregon is without QB Dante Moore (concussion, not expected back this season) and RB Jordon Davison, with Dylan Raiola at quarterback, and Michigan State is a 5-point-plus spread move from open (+13.5 to +16.5), so there is some injury and line-movement risk on the Oregon side.",
+        "Projections favor Oregon comfortably (Capper's 38-17, WagerTalk 27-14). Kickoff is 8:00 pm ET (01:00Z Nov 21), which is 7:00 pm CT on Nov 20."
+      ],
+      "sources": [
+        "https://www.wagertalk.com/news/college-football/oregon-vs-michigan-state-predictions-picks-odds-november-20-2026/",
+        "https://sports.betmgm.com/en/blog/article-new/oregon-michigan-state-prediction-odds-player-prop-bets-picks-ncaaf-week-12-jaa/",
+        "https://www.capperspicks.com/free-picks/college-football/oregon-ducks-vs-michigan-state-spartans-betting-prediction-11-20-2026/",
+        "https://www.sharpfootballanalysis.com/betting/college-football-odds-picks-predictions/"
+      ]
+    }
+  ],
   "settled": [
     {
       "sport": "NBA",
