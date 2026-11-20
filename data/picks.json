@@ -26,6 +26,106 @@
         "https://www.capperspicks.com/free-picks/college-football/oregon-ducks-vs-michigan-state-spartans-betting-prediction-11-20-2026/",
         "https://www.sharpfootballanalysis.com/betting/college-football-odds-picks-predictions/"
       ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Wake Forest at Georgia Tech",
+      "date": "2026-11-21",
+      "start_time": "2026-11-21T17:00:00Z",
+      "favorite": "Wake Forest",
+      "estimated_probability": {
+        "Wake Forest": 91,
+        "Georgia Tech": 9
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "actual_multiplier": 1.07,
+      "reasoning": [
+        "Wake Forest (9-1, 6-1 ACC) is about a 20.5-21 point favorite at 3-7 Georgia Tech with a moneyline between -1450 and -1600 (roughly 93% no-vig); ESPN's FPI gives Georgia Tech 7.5% and AccuScore has Wake Forest at 92%.",
+        "Caveat: Georgia Tech just upset Clemson 20-6, and Wake Forest WRs E. Otieno and N. Carr are questionable; I found no complete injury list, so I shaded to 91%.",
+        "Kickoff is 12:00 pm ET (17:00Z) at Bobby Dodd Stadium on ESPN."
+      ],
+      "sources": [
+        "https://bangthebook.com/wake-forest-demon-deacons-vs-georgia-tech-yellow-jackets-prediction-2026-11-21/",
+        "https://www.accuscore.com/game/cmt51lqhiri8equ01ioplg34z",
+        "https://www.si.com/college/georgiatech/football/espn-s-fpi-predicts-outcome-for-georgia-tech-vs-wake-forest-week-12-matchup-01m7qae0kbp1",
+        "https://www.therx.com/college-football/wake-forest-georgia-tech-acc-picks-nov-21-2026/55774/"
+      ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Western Kentucky at Liberty",
+      "date": "2026-11-21",
+      "start_time": "2026-11-21T18:00:00Z",
+      "favorite": "Liberty",
+      "estimated_probability": {
+        "Liberty": 85,
+        "Western Kentucky": 15
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "actual_multiplier": 1.12,
+      "reasoning": [
+        "Liberty (9-1, unbeaten at home) is about a 17.5-point favorite over 4-6 Western Kentucky with a moneyline near -850 / +575; one preview has Liberty at 88%.",
+        "I found little injury information for either team, and Western Kentucky has two quarterbacks who both played last week, so I stayed at 85%.",
+        "Start time is a mild inconsistency: most sources list 1:00 pm ET (18:00Z) at Williams Stadium but one lists 12:00 pm ET, so I used 18:00Z."
+      ],
+      "sources": [
+        "https://bangthebook.com/western-kentucky-hilltoppers-vs-liberty-flames-prediction-2026-11-21/",
+        "https://www.docsports.com/free-picks/football/2026/western-kentucky-hilltoppers-vs-liberty-flames-prediction-11-21-2026-college-football-picks-best-bets-odds.html",
+        "https://www.pickswise.com/college-football/games/liberty-western-kentucky-college-football-2026-11-21-1200/",
+        "https://blog.youwager.lv/2026/11/16/western-kentucky-hilltoppers-vs-liberty-flames-betting-prediction-november-21-2026/"
+      ]
+    },
+    {
+      "sport": "NBA",
+      "matchup": "Sacramento Kings at Los Angeles Lakers",
+      "date": "2026-11-20",
+      "start_time": "2026-11-21T03:00:00Z",
+      "favorite": "Los Angeles Lakers",
+      "estimated_probability": {
+        "Los Angeles Lakers": 88,
+        "Sacramento Kings": 12
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "actual_multiplier": 1.1,
+      "reasoning": [
+        "Lakers are priced near -1040 / +670 (about 91% no-vig) and Covers' Polymarket-based figure is 86%, so I used 88%. The Lakers beat the Kings 116-103 on Nov 4 with Luka Doncic scoring 40.",
+        "Lakers are without Austin Reaves (heel) and Walker Kessler, but Sacramento has six players out or questionable (Raynaud, Simmons, Mogbo, Pedulla out; Achiuwa and Hunter questionable).",
+        "Tip is 10:00 pm ET (03:00Z Nov 21), which is 9:00 pm CT on Nov 20. Odds came from a single source (Bang the Book), and I did not find a current preview with a posted line."
+      ],
+      "sources": [
+        "https://bangthebook.com/sacramento-kings-vs-los-angeles-lakers-prediction-2026-11-20/",
+        "https://www.covers.com/nba/moneyline-predictions-picks-nov-20-2026",
+        "https://www.sportsmole.co.uk/basketball/la-lakers/preview/sacramento-kings-vs-los-angeles-lakers-player-props-injury-report-and-prediction--nba-cup_609365.html",
+        "https://statz.ai/nba/teams/los-angeles-lakers/injuries"
+      ]
+    },
+    {
+      "sport": "NBA",
+      "matchup": "New Orleans Pelicans at Oklahoma City Thunder",
+      "date": "2026-11-20",
+      "start_time": "2026-11-21T01:00:00Z",
+      "favorite": "Oklahoma City Thunder",
+      "estimated_probability": {
+        "Oklahoma City Thunder": 82,
+        "New Orleans Pelicans": 18
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.2,
+      "reasoning": [
+        "Thunder are about an 11.5-12.5 point favorite at -499 to -525 (roughly 82-84% no-vig), and Covers' expert puts them near 88%; Sportsmole projects a 119-107 Thunder win.",
+        "Both teams are shorthanded: Oklahoma City is missing Jalen Williams, Chet Holmgren and Cason Wallace (Alex Caruso questionable), while New Orleans is missing Dejounte Murray, Trey Murphy III, Bennedict Mathurin, Trendon Watford and Bryce McGowens.",
+        "Tip is 8:00 pm ET (01:00Z Nov 21), which is 7:00 pm CT on Nov 20."
+      ],
+      "sources": [
+        "https://bangthebook.com/new-orleans-pelicans-vs-oklahoma-city-thunder-prediction-2026-11-20/",
+        "https://www.sportsmole.co.uk/basketball/new-orleans-pelicans/preview/new-orleans-pelicans-vs-oklahoma-city-thunder-player-props-injury-report-and-prediction--nba-cup_609382.html",
+        "https://www.therx.com/nba/pelicans-thunder-nba-cup-picks-nov-20-2026/55814/",
+        "https://www.covers.com/nba/moneyline-predictions-picks-nov-20-2026"
+      ]
     }
   ],
   "settled": [
