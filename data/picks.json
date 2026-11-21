@@ -4,31 +4,6 @@
   "picks": [
     {
       "sport": "CFB",
-      "matchup": "Oregon at Michigan State",
-      "date": "2026-11-20",
-      "start_time": "2026-11-21T01:00:00Z",
-      "favorite": "Oregon",
-      "estimated_probability": {
-        "Oregon": 83,
-        "Michigan State": 17
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.13,
-      "reasoning": [
-        "Oregon (No. 14) is a roughly 14-16.5 point road favorite with a moneyline between about -750 (Sharp Football Analysis) and -850 (Bleacher Nation), about 86-88% no-vig.",
-        "I shaded to 83% because Oregon is without QB Dante Moore (concussion, not expected back this season) and RB Jordon Davison, with Dylan Raiola at quarterback, and Michigan State is a 5-point-plus spread move from open (+13.5 to +16.5), so there is some injury and line-movement risk on the Oregon side.",
-        "Projections favor Oregon comfortably (Capper's 38-17, WagerTalk 27-14). Kickoff is 8:00 pm ET (01:00Z Nov 21), which is 7:00 pm CT on Nov 20."
-      ],
-      "sources": [
-        "https://www.wagertalk.com/news/college-football/oregon-vs-michigan-state-predictions-picks-odds-november-20-2026/",
-        "https://sports.betmgm.com/en/blog/article-new/oregon-michigan-state-prediction-odds-player-prop-bets-picks-ncaaf-week-12-jaa/",
-        "https://www.capperspicks.com/free-picks/college-football/oregon-ducks-vs-michigan-state-spartans-betting-prediction-11-20-2026/",
-        "https://www.sharpfootballanalysis.com/betting/college-football-odds-picks-predictions/"
-      ]
-    },
-    {
-      "sport": "CFB",
       "matchup": "Wake Forest at Georgia Tech",
       "date": "2026-11-21",
       "start_time": "2026-11-21T17:00:00Z",
@@ -75,31 +50,6 @@
         "https://www.docsports.com/free-picks/football/2026/western-kentucky-hilltoppers-vs-liberty-flames-prediction-11-21-2026-college-football-picks-best-bets-odds.html",
         "https://www.pickswise.com/college-football/games/liberty-western-kentucky-college-football-2026-11-21-1200/",
         "https://blog.youwager.lv/2026/11/16/western-kentucky-hilltoppers-vs-liberty-flames-betting-prediction-november-21-2026/"
-      ]
-    },
-    {
-      "sport": "NBA",
-      "matchup": "Sacramento Kings at Los Angeles Lakers",
-      "date": "2026-11-20",
-      "start_time": "2026-11-21T03:00:00Z",
-      "favorite": "Los Angeles Lakers",
-      "estimated_probability": {
-        "Los Angeles Lakers": 88,
-        "Sacramento Kings": 12
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2,
-      "actual_multiplier": 1.1,
-      "reasoning": [
-        "Lakers are priced near -1040 / +670 (about 91% no-vig) and Covers' Polymarket-based figure is 86%, so I used 88%. The Lakers beat the Kings 116-103 on Nov 4 with Luka Doncic scoring 40.",
-        "Lakers are without Austin Reaves (heel) and Walker Kessler, but Sacramento has six players out or questionable (Raynaud, Simmons, Mogbo, Pedulla out; Achiuwa and Hunter questionable).",
-        "Tip is 10:00 pm ET (03:00Z Nov 21), which is 9:00 pm CT on Nov 20. Odds came from a single source (Bang the Book), and I did not find a current preview with a posted line."
-      ],
-      "sources": [
-        "https://bangthebook.com/sacramento-kings-vs-los-angeles-lakers-prediction-2026-11-20/",
-        "https://www.covers.com/nba/moneyline-predictions-picks-nov-20-2026",
-        "https://www.sportsmole.co.uk/basketball/la-lakers/preview/sacramento-kings-vs-los-angeles-lakers-player-props-injury-report-and-prediction--nba-cup_609365.html",
-        "https://statz.ai/nba/teams/los-angeles-lakers/injuries"
       ]
     },
     {
@@ -569,6 +519,62 @@
       "winner": "Oklahoma City Thunder",
       "final_score": "Oklahoma City Thunder 126, New Orleans Pelicans 120",
       "settled_at": "2026-11-21T04:06:06Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Oregon at Michigan State",
+      "date": "2026-11-20",
+      "start_time": "2026-11-21T01:00:00Z",
+      "favorite": "Oregon",
+      "estimated_probability": {
+        "Oregon": 83,
+        "Michigan State": 17
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.13,
+      "reasoning": [
+        "Oregon (No. 14) is a roughly 14-16.5 point road favorite with a moneyline between about -750 (Sharp Football Analysis) and -850 (Bleacher Nation), about 86-88% no-vig.",
+        "I shaded to 83% because Oregon is without QB Dante Moore (concussion, not expected back this season) and RB Jordon Davison, with Dylan Raiola at quarterback, and Michigan State is a 5-point-plus spread move from open (+13.5 to +16.5), so there is some injury and line-movement risk on the Oregon side.",
+        "Projections favor Oregon comfortably (Capper's 38-17, WagerTalk 27-14). Kickoff is 8:00 pm ET (01:00Z Nov 21), which is 7:00 pm CT on Nov 20."
+      ],
+      "sources": [
+        "https://www.wagertalk.com/news/college-football/oregon-vs-michigan-state-predictions-picks-odds-november-20-2026/",
+        "https://sports.betmgm.com/en/blog/article-new/oregon-michigan-state-prediction-odds-player-prop-bets-picks-ncaaf-week-12-jaa/",
+        "https://www.capperspicks.com/free-picks/college-football/oregon-ducks-vs-michigan-state-spartans-betting-prediction-11-20-2026/",
+        "https://www.sharpfootballanalysis.com/betting/college-football-odds-picks-predictions/"
+      ],
+      "winner": "Oregon",
+      "final_score": "Oregon 45, Michigan State 7",
+      "settled_at": "2026-11-21T14:16:40Z"
+    },
+    {
+      "sport": "NBA",
+      "matchup": "Sacramento Kings at Los Angeles Lakers",
+      "date": "2026-11-20",
+      "start_time": "2026-11-21T03:00:00Z",
+      "favorite": "Los Angeles Lakers",
+      "estimated_probability": {
+        "Los Angeles Lakers": 88,
+        "Sacramento Kings": 12
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "actual_multiplier": 1.1,
+      "reasoning": [
+        "Lakers are priced near -1040 / +670 (about 91% no-vig) and Covers' Polymarket-based figure is 86%, so I used 88%. The Lakers beat the Kings 116-103 on Nov 4 with Luka Doncic scoring 40.",
+        "Lakers are without Austin Reaves (heel) and Walker Kessler, but Sacramento has six players out or questionable (Raynaud, Simmons, Mogbo, Pedulla out; Achiuwa and Hunter questionable).",
+        "Tip is 10:00 pm ET (03:00Z Nov 21), which is 9:00 pm CT on Nov 20. Odds came from a single source (Bang the Book), and I did not find a current preview with a posted line."
+      ],
+      "sources": [
+        "https://bangthebook.com/sacramento-kings-vs-los-angeles-lakers-prediction-2026-11-20/",
+        "https://www.covers.com/nba/moneyline-predictions-picks-nov-20-2026",
+        "https://www.sportsmole.co.uk/basketball/la-lakers/preview/sacramento-kings-vs-los-angeles-lakers-player-props-injury-report-and-prediction--nba-cup_609365.html",
+        "https://statz.ai/nba/teams/los-angeles-lakers/injuries"
+      ],
+      "winner": "Los Angeles Lakers",
+      "final_score": "Los Angeles Lakers 106, Sacramento Kings 104",
+      "settled_at": "2026-11-21T14:16:40Z"
     }
   ],
   "prizepicks": []
