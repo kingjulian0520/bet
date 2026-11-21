@@ -101,150 +101,9 @@
         "https://www.sportsmole.co.uk/basketball/la-lakers/preview/sacramento-kings-vs-los-angeles-lakers-player-props-injury-report-and-prediction--nba-cup_609365.html",
         "https://statz.ai/nba/teams/los-angeles-lakers/injuries"
       ]
-    },
-    {
-      "sport": "NBA",
-      "matchup": "New Orleans Pelicans at Oklahoma City Thunder",
-      "date": "2026-11-20",
-      "start_time": "2026-11-21T01:00:00Z",
-      "favorite": "Oklahoma City Thunder",
-      "estimated_probability": {
-        "Oklahoma City Thunder": 82,
-        "New Orleans Pelicans": 18
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.2,
-      "reasoning": [
-        "Thunder are about an 11.5-12.5 point favorite at -499 to -525 (roughly 82-84% no-vig), and Covers' expert puts them near 88%; Sportsmole projects a 119-107 Thunder win.",
-        "Both teams are shorthanded: Oklahoma City is missing Jalen Williams, Chet Holmgren and Cason Wallace (Alex Caruso questionable), while New Orleans is missing Dejounte Murray, Trey Murphy III, Bennedict Mathurin, Trendon Watford and Bryce McGowens.",
-        "Tip is 8:00 pm ET (01:00Z Nov 21), which is 7:00 pm CT on Nov 20."
-      ],
-      "sources": [
-        "https://bangthebook.com/new-orleans-pelicans-vs-oklahoma-city-thunder-prediction-2026-11-20/",
-        "https://www.sportsmole.co.uk/basketball/new-orleans-pelicans/preview/new-orleans-pelicans-vs-oklahoma-city-thunder-player-props-injury-report-and-prediction--nba-cup_609382.html",
-        "https://www.therx.com/nba/pelicans-thunder-nba-cup-picks-nov-20-2026/55814/",
-        "https://www.covers.com/nba/moneyline-predictions-picks-nov-20-2026"
-      ]
     }
   ],
   "settled": [
-    {
-      "sport": "NBA",
-      "matchup": "Utah Jazz at Minnesota Timberwolves",
-      "date": "2026-11-08",
-      "start_time": "2026-11-09T01:00:00Z",
-      "favorite": "Minnesota Timberwolves",
-      "estimated_probability": {
-        "Minnesota Timberwolves": 83,
-        "Utah Jazz": 17
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.17,
-      "reasoning": [
-        "Timberwolves are 7-3 on a three-game winning streak at home at Target Center; Jazz are 1-8, on a seven-game losing streak, and are without Jusuf Nurkic (foot) and Jaren Jackson Jr. (knee), with Lauri Markkanen a game-time decision (wrist) per ESPN's injury report.",
-        "Minnesota is without Anthony Edwards (knee, estimated return Dec 21) and Donte DiVincenzo (Achilles), with Joan Beringer and Terrence Shannon Jr. day-to-day, so the estimate sits below the market.",
-        "Posted moneyline is about Timberwolves -592 / Jazz +440 (roughly 85% no-vig), with Minnesota -11.5 per FanDuel.",
-        "Start time is a fallback of 7 pm Central (01:00Z Nov 9) because sources disagree between 7 pm Central and 7 pm Eastern."
-      ],
-      "sources": [
-        "https://www.fanduel.com/research/timberwolves-vs-jazz-prediction-nba-odds-spread-best-bets-for-11-8-2026",
-        "https://kfan.iheart.com/content/2026-11-08-jazz-vs-timberwolves-injury-report-nov-8/",
-        "https://abcnews.com/Sports/wireStory/minnesota-faces-utah-looks-for-4th-straight-victory-137936931",
-        "https://www.640wxsm.com/2026/11/07/timberwolves-launch-lengthy-homestand-vs-struggling-jazz/"
-      ],
-      "winner": "Minnesota Timberwolves",
-      "final_score": "Minnesota Timberwolves 115, Utah Jazz 100",
-      "settled_at": "2026-11-09T04:06:42Z"
-    },
-    {
-      "sport": "NBA",
-      "matchup": "Boston Celtics at Milwaukee Bucks",
-      "date": "2026-11-08",
-      "start_time": "2026-11-09T01:00:00Z",
-      "favorite": "Boston Celtics",
-      "estimated_probability": {
-        "Boston Celtics": 84,
-        "Milwaukee Bucks": 16
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.14,
-      "reasoning": [
-        "Celtics are 7-2 per the latest listing and Bucks are 1-8 (older snapshots show 5-2 and 1-6, so records vary by source); Giannis Antetokounmpo is no longer on Milwaukee's roster, and Kam Jones is day-to-day (ankle).",
-        "Celtics' Devin Carter is out with illness, and Jayson Tatum's availability is disputed across previews, which keeps the estimate below the market.",
-        "Posted moneyline is about Celtics -699 / Bucks +500 (roughly 86% no-vig), with Boston favored by 12.5 per FanDuel.",
-        "Tip is 8 pm ET Sunday Nov 8 at Fiserv Forum (01:00Z Nov 9)."
-      ],
-      "sources": [
-        "https://www.fanduel.com/research/bucks-vs-celtics-prediction-nba-odds-spread-best-bets-for-11-8-2026",
-        "https://www.si.com/nba/bucks/onsi/celtics-make-call-on-tatum-s-status-for-bucks-visit-preview-starters-injuries-how-to-watch-01m6m4jbxaq5",
-        "https://foxsports1070.iheart.com/content/2026-11-08-celtics-vs-bucks-injury-report-nov-8/",
-        "https://www.espn.com/nba/game/_/gameId/401909949/celtics-bucks"
-      ],
-      "winner": "Boston Celtics",
-      "final_score": "Boston Celtics 117, Milwaukee Bucks 97",
-      "settled_at": "2026-11-09T04:06:42Z"
-    },
-    {
-      "sport": "NBA",
-      "matchup": "San Antonio Spurs at Phoenix Suns",
-      "date": "2026-11-09",
-      "start_time": "2026-11-10T02:00:00Z",
-      "favorite": "San Antonio Spurs",
-      "estimated_probability": {
-        "San Antonio Spurs": 75,
-        "Phoenix Suns": 25
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "actual_multiplier": 1.32,
-      "reasoning": [
-        "Spurs are 8-2 (second in the West) and Suns are 3-5 (12th); Victor Wembanyama is averaging 29.1 points, 12.0 rebounds and 3.9 blocks.",
-        "Phoenix is without starting center Mark Williams (shoulder surgery) and Jordan Goodwin is out or doubtful; Spurs are without Tobias Harris (calf) and Jayden Quaintance (knee).",
-        "Posted moneyline is about Spurs -310 / Suns +250 per FanDuel (roughly 74% no-vig), with San Antonio -8.5. One source disputed the favorite on an earlier slate, so the estimate stays at 75%.",
-        "Tip is 9 pm ET Monday Nov 9 in Phoenix (02:00Z Nov 10); one outlet lists a 7 pm tip, but the newer previews agree on 9 pm ET."
-      ],
-      "sources": [
-        "https://www.fanduel.com/research/suns-vs-spurs-prediction-nba-odds-spread-best-bets-for-11-9-2026",
-        "https://www.foxsports.com/articles/nba/san-antonio-plays-phoenix-looks-for-5th-straight-road-win",
-        "https://dailysports.net/predictions/can-wembanyama-expose-phoenixs-weakness-inside-phoenix-suns-vs-san-antonio-spurs-prediction-10112026/",
-        "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-phoenix-suns-player-props-injury-report-and-prediction--nba_608729.html"
-      ],
-      "winner": "San Antonio Spurs",
-      "final_score": "San Antonio Spurs 122, Phoenix Suns 96",
-      "settled_at": "2026-11-10T14:22:12Z"
-    },
-    {
-      "sport": "NBA",
-      "matchup": "Milwaukee Bucks at New York Knicks",
-      "date": "2026-11-10",
-      "start_time": "2026-11-11T00:30:00Z",
-      "favorite": "New York Knicks",
-      "estimated_probability": {
-        "New York Knicks": 88,
-        "Milwaukee Bucks": 12
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2,
-      "actual_multiplier": 1.08,
-      "reasoning": [
-        "Bucks are 1-9 and on a six-game losing streak, coming off a 117-97 home loss to the Celtics on Nov 8; Giannis Antetokounmpo is no longer on the roster, Tyler Herro is questionable (contusion) and Gary Trent Jr. is listed with an illness in one preview.",
-        "Knicks are 5-4 at home at Madison Square Garden after a 109-97 win over the Cavaliers on Saturday (Jalen Brunson 31 points, averaging 26.2). Josh Hart (ankle) is a game-time decision after missing two games.",
-        "Posted moneyline is about Knicks -1205 / Bucks +750 per FanDuel (roughly 92% no-vig), with New York -15.5. FanDuel's own model gives New York 85.8%, so the estimate is shaded to 88% for the Knicks' mediocre 5-4 record and Hart's status.",
-        "Tip is 7:30 pm ET Tuesday Nov 10 (00:30Z Nov 11)."
-      ],
-      "sources": [
-        "https://www.fanduel.com/research/knicks-vs-bucks-prediction-nba-odds-spread-best-bets-for-11-10-2026",
-        "https://www.bleachernation.com/picks/2026/11/09/knicks-vs-bucks-prediction-expert-picks-odds-stats-and-best-bets-tuesday-november-10-2026/",
-        "https://www.sportsmole.co.uk/basketball/milwaukee-bucks/preview/milwaukee-bucks-vs-new-york-knicks-player-props-injury-report-and-prediction--nba_608765.html",
-        "https://www.therx.com/nba/bucks-vs-knicks-prediction-can-milwaukee-crack-new-yorks-top-10-defense/54986/"
-      ],
-      "winner": "New York Knicks",
-      "final_score": "New York Knicks 117, Milwaukee Bucks 85",
-      "settled_at": "2026-11-11T04:06:02Z"
-    },
     {
       "sport": "NBA",
       "matchup": "San Antonio Spurs at Chicago Bulls",
@@ -607,6 +466,34 @@
       "winner": "Miami Heat",
       "final_score": "Miami Heat 137, Milwaukee Bucks 130",
       "settled_at": "2026-11-19T04:06:24Z"
+    },
+    {
+      "sport": "NBA",
+      "matchup": "New Orleans Pelicans at Oklahoma City Thunder",
+      "date": "2026-11-20",
+      "start_time": "2026-11-21T01:00:00Z",
+      "favorite": "Oklahoma City Thunder",
+      "estimated_probability": {
+        "Oklahoma City Thunder": 82,
+        "New Orleans Pelicans": 18
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.2,
+      "reasoning": [
+        "Thunder are about an 11.5-12.5 point favorite at -499 to -525 (roughly 82-84% no-vig), and Covers' expert puts them near 88%; Sportsmole projects a 119-107 Thunder win.",
+        "Both teams are shorthanded: Oklahoma City is missing Jalen Williams, Chet Holmgren and Cason Wallace (Alex Caruso questionable), while New Orleans is missing Dejounte Murray, Trey Murphy III, Bennedict Mathurin, Trendon Watford and Bryce McGowens.",
+        "Tip is 8:00 pm ET (01:00Z Nov 21), which is 7:00 pm CT on Nov 20."
+      ],
+      "sources": [
+        "https://bangthebook.com/new-orleans-pelicans-vs-oklahoma-city-thunder-prediction-2026-11-20/",
+        "https://www.sportsmole.co.uk/basketball/new-orleans-pelicans/preview/new-orleans-pelicans-vs-oklahoma-city-thunder-player-props-injury-report-and-prediction--nba-cup_609382.html",
+        "https://www.therx.com/nba/pelicans-thunder-nba-cup-picks-nov-20-2026/55814/",
+        "https://www.covers.com/nba/moneyline-predictions-picks-nov-20-2026"
+      ],
+      "winner": "Oklahoma City Thunder",
+      "final_score": "Oklahoma City Thunder 126, New Orleans Pelicans 120",
+      "settled_at": "2026-11-21T04:06:06Z"
     }
   ],
   "prizepicks": []
