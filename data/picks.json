@@ -3,56 +3,6 @@
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
-      "sport": "CFB",
-      "matchup": "Wake Forest at Georgia Tech",
-      "date": "2026-11-21",
-      "start_time": "2026-11-21T17:00:00Z",
-      "favorite": "Wake Forest",
-      "estimated_probability": {
-        "Wake Forest": 91,
-        "Georgia Tech": 9
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2.5,
-      "actual_multiplier": 1.07,
-      "reasoning": [
-        "Wake Forest (9-1, 6-1 ACC) is about a 20.5-21 point favorite at 3-7 Georgia Tech with a moneyline between -1450 and -1600 (roughly 93% no-vig); ESPN's FPI gives Georgia Tech 7.5% and AccuScore has Wake Forest at 92%.",
-        "Caveat: Georgia Tech just upset Clemson 20-6, and Wake Forest WRs E. Otieno and N. Carr are questionable; I found no complete injury list, so I shaded to 91%.",
-        "Kickoff is 12:00 pm ET (17:00Z) at Bobby Dodd Stadium on ESPN."
-      ],
-      "sources": [
-        "https://bangthebook.com/wake-forest-demon-deacons-vs-georgia-tech-yellow-jackets-prediction-2026-11-21/",
-        "https://www.accuscore.com/game/cmt51lqhiri8equ01ioplg34z",
-        "https://www.si.com/college/georgiatech/football/espn-s-fpi-predicts-outcome-for-georgia-tech-vs-wake-forest-week-12-matchup-01m7qae0kbp1",
-        "https://www.therx.com/college-football/wake-forest-georgia-tech-acc-picks-nov-21-2026/55774/"
-      ]
-    },
-    {
-      "sport": "CFB",
-      "matchup": "Western Kentucky at Liberty",
-      "date": "2026-11-21",
-      "start_time": "2026-11-21T18:00:00Z",
-      "favorite": "Liberty",
-      "estimated_probability": {
-        "Liberty": 85,
-        "Western Kentucky": 15
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2,
-      "actual_multiplier": 1.12,
-      "reasoning": [
-        "Liberty (9-1, unbeaten at home) is about a 17.5-point favorite over 4-6 Western Kentucky with a moneyline near -850 / +575; one preview has Liberty at 88%.",
-        "I found little injury information for either team, and Western Kentucky has two quarterbacks who both played last week, so I stayed at 85%.",
-        "Start time is a mild inconsistency: most sources list 1:00 pm ET (18:00Z) at Williams Stadium but one lists 12:00 pm ET, so I used 18:00Z."
-      ],
-      "sources": [
-        "https://bangthebook.com/western-kentucky-hilltoppers-vs-liberty-flames-prediction-2026-11-21/",
-        "https://www.docsports.com/free-picks/football/2026/western-kentucky-hilltoppers-vs-liberty-flames-prediction-11-21-2026-college-football-picks-best-bets-odds.html",
-        "https://www.pickswise.com/college-football/games/liberty-western-kentucky-college-football-2026-11-21-1200/",
-        "https://blog.youwager.lv/2026/11/16/western-kentucky-hilltoppers-vs-liberty-flames-betting-prediction-november-21-2026/"
-      ]
-    },
-    {
       "sport": "NFL",
       "matchup": "Miami Dolphins at Buffalo Bills",
       "date": "2026-11-22",
@@ -575,6 +525,62 @@
       "winner": "Los Angeles Lakers",
       "final_score": "Los Angeles Lakers 106, Sacramento Kings 104",
       "settled_at": "2026-11-21T14:16:40Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Wake Forest at Georgia Tech",
+      "date": "2026-11-21",
+      "start_time": "2026-11-21T17:00:00Z",
+      "favorite": "Wake Forest",
+      "estimated_probability": {
+        "Wake Forest": 91,
+        "Georgia Tech": 9
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "actual_multiplier": 1.07,
+      "reasoning": [
+        "Wake Forest (9-1, 6-1 ACC) is about a 20.5-21 point favorite at 3-7 Georgia Tech with a moneyline between -1450 and -1600 (roughly 93% no-vig); ESPN's FPI gives Georgia Tech 7.5% and AccuScore has Wake Forest at 92%.",
+        "Caveat: Georgia Tech just upset Clemson 20-6, and Wake Forest WRs E. Otieno and N. Carr are questionable; I found no complete injury list, so I shaded to 91%.",
+        "Kickoff is 12:00 pm ET (17:00Z) at Bobby Dodd Stadium on ESPN."
+      ],
+      "sources": [
+        "https://bangthebook.com/wake-forest-demon-deacons-vs-georgia-tech-yellow-jackets-prediction-2026-11-21/",
+        "https://www.accuscore.com/game/cmt51lqhiri8equ01ioplg34z",
+        "https://www.si.com/college/georgiatech/football/espn-s-fpi-predicts-outcome-for-georgia-tech-vs-wake-forest-week-12-matchup-01m7qae0kbp1",
+        "https://www.therx.com/college-football/wake-forest-georgia-tech-acc-picks-nov-21-2026/55774/"
+      ],
+      "winner": "Wake Forest",
+      "final_score": "Wake Forest 50, Georgia Tech 29",
+      "settled_at": "2026-11-21T22:17:22Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Western Kentucky at Liberty",
+      "date": "2026-11-21",
+      "start_time": "2026-11-21T18:00:00Z",
+      "favorite": "Liberty",
+      "estimated_probability": {
+        "Liberty": 85,
+        "Western Kentucky": 15
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "actual_multiplier": 1.12,
+      "reasoning": [
+        "Liberty (9-1, unbeaten at home) is about a 17.5-point favorite over 4-6 Western Kentucky with a moneyline near -850 / +575; one preview has Liberty at 88%.",
+        "I found little injury information for either team, and Western Kentucky has two quarterbacks who both played last week, so I stayed at 85%.",
+        "Start time is a mild inconsistency: most sources list 1:00 pm ET (18:00Z) at Williams Stadium but one lists 12:00 pm ET, so I used 18:00Z."
+      ],
+      "sources": [
+        "https://bangthebook.com/western-kentucky-hilltoppers-vs-liberty-flames-prediction-2026-11-21/",
+        "https://www.docsports.com/free-picks/football/2026/western-kentucky-hilltoppers-vs-liberty-flames-prediction-11-21-2026-college-football-picks-best-bets-odds.html",
+        "https://www.pickswise.com/college-football/games/liberty-western-kentucky-college-football-2026-11-21-1200/",
+        "https://blog.youwager.lv/2026/11/16/western-kentucky-hilltoppers-vs-liberty-flames-betting-prediction-november-21-2026/"
+      ],
+      "winner": "Liberty",
+      "final_score": "Liberty 45, Western Kentucky 14",
+      "settled_at": "2026-11-21T22:17:22Z"
     }
   ],
   "prizepicks": []
