@@ -51,31 +51,6 @@
         "https://www.arrowheadpride.com/kansas-city-chiefs-odds/216955/chiefs-cardinals-week-11-game-score-predictions",
         "https://www.predictem.com/nfl/cardinals-at-chiefs-nfl-week-11-odds-and-expert-prediction/"
       ]
-    },
-    {
-      "sport": "CFB",
-      "matchup": "Georgia at South Carolina",
-      "date": "2026-11-21",
-      "start_time": "2026-11-22T00:30:00Z",
-      "favorite": "Georgia",
-      "estimated_probability": {
-        "Georgia": 86,
-        "South Carolina": 14
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2,
-      "actual_multiplier": 1.13,
-      "reasoning": [
-        "Georgia (9-1) visits South Carolina (6-4, 4-4 SEC) at Williams-Brice Stadium as a 14.5-16.5 point favorite with a moneyline near -715 to -800; prediction markets sit at about 85-88% and ESPN Analytics gives South Carolina 13.1%.",
-        "South Carolina has 13 players on the SEC injury report, including several starters out and five questionable, though QB LaNorris Sellers is not listed. Rivalry games are volatile, so I stayed at 86%.",
-        "Kickoff is 7:30 pm ET (00:30Z Nov 22) on ABC per newer sources (one older Bleacher Report page lists 4:30 pm), which is 6:30 pm CT on Nov 21."
-      ],
-      "sources": [
-        "https://www.covers.com/ncaaf/georgia-vs-south-carolina-prediction-picks-odds-nov-21-2026",
-        "https://sports.yahoo.com/articles/south-carolina-vs-georgia-kickoff-120000752.html",
-        "https://sports.betmgm.com/en/blog/college-football/georgia-south-carolina-prediction-odds-player-prop-bets-picks-ncaaf-week-12-jaa/",
-        "https://ats.io/college-football/georgia-vs-south-carolina-prediction-november-21-2026/"
-      ]
     }
   ],
   "settled": [
@@ -581,6 +556,34 @@
       "winner": "Liberty",
       "final_score": "Liberty 45, Western Kentucky 14",
       "settled_at": "2026-11-21T22:17:22Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Georgia at South Carolina",
+      "date": "2026-11-21",
+      "start_time": "2026-11-22T00:30:00Z",
+      "favorite": "Georgia",
+      "estimated_probability": {
+        "Georgia": 86,
+        "South Carolina": 14
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "actual_multiplier": 1.13,
+      "reasoning": [
+        "Georgia (9-1) visits South Carolina (6-4, 4-4 SEC) at Williams-Brice Stadium as a 14.5-16.5 point favorite with a moneyline near -715 to -800; prediction markets sit at about 85-88% and ESPN Analytics gives South Carolina 13.1%.",
+        "South Carolina has 13 players on the SEC injury report, including several starters out and five questionable, though QB LaNorris Sellers is not listed. Rivalry games are volatile, so I stayed at 86%.",
+        "Kickoff is 7:30 pm ET (00:30Z Nov 22) on ABC per newer sources (one older Bleacher Report page lists 4:30 pm), which is 6:30 pm CT on Nov 21."
+      ],
+      "sources": [
+        "https://www.covers.com/ncaaf/georgia-vs-south-carolina-prediction-picks-odds-nov-21-2026",
+        "https://sports.yahoo.com/articles/south-carolina-vs-georgia-kickoff-120000752.html",
+        "https://sports.betmgm.com/en/blog/college-football/georgia-south-carolina-prediction-odds-player-prop-bets-picks-ncaaf-week-12-jaa/",
+        "https://ats.io/college-football/georgia-vs-south-carolina-prediction-november-21-2026/"
+      ],
+      "winner": "Georgia",
+      "final_score": "Georgia 34, South Carolina 6",
+      "settled_at": "2026-11-22T04:06:09Z"
     }
   ],
   "prizepicks": []
