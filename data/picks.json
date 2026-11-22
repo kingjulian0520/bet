@@ -3,56 +3,6 @@
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
-      "sport": "NFL",
-      "matchup": "Miami Dolphins at Buffalo Bills",
-      "date": "2026-11-22",
-      "start_time": "2026-11-22T18:00:00Z",
-      "favorite": "Buffalo Bills",
-      "estimated_probability": {
-        "Buffalo Bills": 91,
-        "Miami Dolphins": 9
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2.5,
-      "actual_multiplier": 1.07,
-      "reasoning": [
-        "Buffalo (8-1, first in the NFL in points per game) hosts Miami (1-8, three straight losses); the Bills are a 16.5-point favorite with moneylines from about -1150 to -1700 (-1450 as of Nov 18), roughly 92-94% no-vig, and one model gives them 90%.",
-        "Injuries on both sides: the Bills have several players questionable, with Tyrell Shavers out (ACL) and Ar'maj Reed-Adams on IR; Miami has several questionable. NBC Sports leans Dolphins +16.5 on the spread, but that is a margin call, not a win call. I shaded to 91%.",
-        "Kickoff is 1:00 pm ET (18:00Z) at Highmark Stadium."
-      ],
-      "sources": [
-        "https://www.si.com/betting/dolphins-vs-bills-prediction-odds-spread-injuries-trends-for-nfl-week-11-2026",
-        "https://bangthebook.com/miami-dolphins-vs-buffalo-bills-prediction-2026-11-22/",
-        "https://www.nbcsports.com/nfl/news/dolphins-vs-bills-prediction-odds-expert-picks-qb-matchup-injury-update-betting-trends-and-stats",
-        "https://news.sportsinteraction.com/nfl/story/dolphins-vs-bills-odds-prediction-112226-216065"
-      ]
-    },
-    {
-      "sport": "NFL",
-      "matchup": "Arizona Cardinals at Kansas City Chiefs",
-      "date": "2026-11-22",
-      "start_time": "2026-11-22T18:00:00Z",
-      "favorite": "Kansas City Chiefs",
-      "estimated_probability": {
-        "Kansas City Chiefs": 89,
-        "Arizona Cardinals": 11
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2,
-      "actual_multiplier": 1.07,
-      "reasoning": [
-        "Kansas City is a 15.5-16.5 point home favorite with a moneyline near -1420 to -1600 (about 91-92% implied); one model gives the Chiefs 88% and projected scores run about 23-9 to 30-10.",
-        "Arizona starts rookie QB Carson Beck and has RB James Conner on IR, but the Chiefs are short-handed too: RT Jaylon Moore, RG Trey Smith (concussion protocol) and RB Kenneth Walker III (groin) were not expected to play and Travis Kelce has an ankle issue. Shaded to 89%.",
-        "Kickoff is 1:00 pm ET (18:00Z) at Arrowhead Stadium."
-      ],
-      "sources": [
-        "https://www.si.com/betting/cardinals-vs-chiefs-prediction-odds-spread-injuries-trends-for-nfl-week-11-2026",
-        "https://og.com/learn/cardinals-vs-chiefs-11-22-26-prediction",
-        "https://www.arrowheadpride.com/kansas-city-chiefs-odds/216955/chiefs-cardinals-week-11-game-score-predictions",
-        "https://www.predictem.com/nfl/cardinals-at-chiefs-nfl-week-11-odds-and-expert-prediction/"
-      ]
-    },
-    {
       "sport": "NBA",
       "matchup": "Denver Nuggets at Chicago Bulls",
       "date": "2026-11-22",
@@ -79,35 +29,6 @@
     }
   ],
   "settled": [
-    {
-      "sport": "NBA",
-      "matchup": "San Antonio Spurs at Chicago Bulls",
-      "date": "2026-11-11",
-      "start_time": "2026-11-12T01:00:00Z",
-      "favorite": "San Antonio Spurs",
-      "estimated_probability": {
-        "San Antonio Spurs": 86,
-        "Chicago Bulls": 14
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2,
-      "actual_multiplier": 1.13,
-      "reasoning": [
-        "Spurs are 9-2, second in the West, and have won nine straight, including 122-96 at Phoenix on Nov 9 when Victor Wembanyama had 40 points and 9 blocks; he is averaging 30.1 points and 11.9 rebounds. Bulls are 1-8, 14th in the East.",
-        "Spurs are without Devin Vassell (adductor) and Jayden Quaintance (knee), with Tobias Harris (calf) out or a game-time decision depending on the source. Bulls have Norman Powell day-to-day (shoulder) and Zach Collins day-to-day (illness).",
-        "The Bulls have won seven of the last 10 meetings, but the Spurs won the most recent one 129-114 on Mar 30. Posted moneyline is about Spurs -800 / Bulls +570 per FanDuel (roughly 87% no-vig), so the estimate is 86%.",
-        "Tip is 7 pm CT Wednesday Nov 11 at the United Center (01:00Z Nov 12)."
-      ],
-      "sources": [
-        "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-chicago-bulls-player-props-injury-report-and-prediction--nba_608830.html",
-        "https://sports.yahoo.com/articles/spurs-vs-bulls-watch-game-173838280.html",
-        "https://sports.yahoo.com/articles/wembanyama-leads-san-antonio-against-070442335.html",
-        "https://www.fanduel.com/research/nba-predictions-odds-11-11-2026"
-      ],
-      "winner": "San Antonio Spurs",
-      "final_score": "San Antonio Spurs 124, Chicago Bulls 119",
-      "settled_at": "2026-11-12T04:06:20Z"
-    },
     {
       "sport": "CFB",
       "matchup": "Northwestern at Ohio State",
@@ -609,6 +530,62 @@
       "winner": "Georgia",
       "final_score": "Georgia 34, South Carolina 6",
       "settled_at": "2026-11-22T04:06:09Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Miami Dolphins at Buffalo Bills",
+      "date": "2026-11-22",
+      "start_time": "2026-11-22T18:00:00Z",
+      "favorite": "Buffalo Bills",
+      "estimated_probability": {
+        "Buffalo Bills": 91,
+        "Miami Dolphins": 9
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "actual_multiplier": 1.07,
+      "reasoning": [
+        "Buffalo (8-1, first in the NFL in points per game) hosts Miami (1-8, three straight losses); the Bills are a 16.5-point favorite with moneylines from about -1150 to -1700 (-1450 as of Nov 18), roughly 92-94% no-vig, and one model gives them 90%.",
+        "Injuries on both sides: the Bills have several players questionable, with Tyrell Shavers out (ACL) and Ar'maj Reed-Adams on IR; Miami has several questionable. NBC Sports leans Dolphins +16.5 on the spread, but that is a margin call, not a win call. I shaded to 91%.",
+        "Kickoff is 1:00 pm ET (18:00Z) at Highmark Stadium."
+      ],
+      "sources": [
+        "https://www.si.com/betting/dolphins-vs-bills-prediction-odds-spread-injuries-trends-for-nfl-week-11-2026",
+        "https://bangthebook.com/miami-dolphins-vs-buffalo-bills-prediction-2026-11-22/",
+        "https://www.nbcsports.com/nfl/news/dolphins-vs-bills-prediction-odds-expert-picks-qb-matchup-injury-update-betting-trends-and-stats",
+        "https://news.sportsinteraction.com/nfl/story/dolphins-vs-bills-odds-prediction-112226-216065"
+      ],
+      "winner": "Buffalo Bills",
+      "final_score": "Buffalo Bills 26, Miami Dolphins 9",
+      "settled_at": "2026-11-22T22:17:08Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Arizona Cardinals at Kansas City Chiefs",
+      "date": "2026-11-22",
+      "start_time": "2026-11-22T18:00:00Z",
+      "favorite": "Kansas City Chiefs",
+      "estimated_probability": {
+        "Kansas City Chiefs": 89,
+        "Arizona Cardinals": 11
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "actual_multiplier": 1.07,
+      "reasoning": [
+        "Kansas City is a 15.5-16.5 point home favorite with a moneyline near -1420 to -1600 (about 91-92% implied); one model gives the Chiefs 88% and projected scores run about 23-9 to 30-10.",
+        "Arizona starts rookie QB Carson Beck and has RB James Conner on IR, but the Chiefs are short-handed too: RT Jaylon Moore, RG Trey Smith (concussion protocol) and RB Kenneth Walker III (groin) were not expected to play and Travis Kelce has an ankle issue. Shaded to 89%.",
+        "Kickoff is 1:00 pm ET (18:00Z) at Arrowhead Stadium."
+      ],
+      "sources": [
+        "https://www.si.com/betting/cardinals-vs-chiefs-prediction-odds-spread-injuries-trends-for-nfl-week-11-2026",
+        "https://og.com/learn/cardinals-vs-chiefs-11-22-26-prediction",
+        "https://www.arrowheadpride.com/kansas-city-chiefs-odds/216955/chiefs-cardinals-week-11-game-score-predictions",
+        "https://www.predictem.com/nfl/cardinals-at-chiefs-nfl-week-11-odds-and-expert-prediction/"
+      ],
+      "winner": "Kansas City Chiefs",
+      "final_score": "Kansas City Chiefs 34, Arizona Cardinals 7",
+      "settled_at": "2026-11-22T22:17:08Z"
     }
   ],
   "prizepicks": []
