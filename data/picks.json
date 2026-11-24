@@ -1,33 +1,7 @@
 {
   "generated_at": "2026-10-05T21:00:00Z",
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
-  "picks": [
-    {
-      "sport": "NBA",
-      "matchup": "Utah Jazz at Los Angeles Lakers",
-      "date": "2026-11-23",
-      "start_time": "2026-11-24T03:00:00Z",
-      "favorite": "Los Angeles Lakers",
-      "estimated_probability": {
-        "Los Angeles Lakers": 84,
-        "Utah Jazz": 16
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.14,
-      "reasoning": [
-        "Lakers are about a 12.5-point home favorite with a moneyline between -700 (Bang the Book) and -890 (another capper), and Covers' Polymarket-based figure is 86%, so I used 84%. LA has a 7-2 home record.",
-        "Utah is without Jaxson Hayes, Jusuf Nurkic, Lauri Markkanen and Jaren Jackson Jr., while the Lakers are without Austin Reaves (heel) but Luka Doncic is averaging about 37 points. Predictions range from a 118-113 to a 123-110 Lakers win and one capper takes Utah +13.5, so I did not go higher.",
-        "Start time is not confirmed in the sources I found. I used the usual 7:00 pm PT / 10:00 pm ET local start (03:00Z Nov 24) as a fallback, which is 9:00 pm CT on Nov 23."
-      ],
-      "sources": [
-        "https://bangthebook.com/utah-jazz-vs-los-angeles-lakers-prediction-2026-11-23/",
-        "https://www.capperspicks.com/free-picks/nba-basketball/utah-jazz-vs-la-lakers-betting-prediction-11-23-26/",
-        "https://www.covers.com/nba/moneyline-predictions-picks-nov-23-2026",
-        "https://www.sportsmole.co.uk/basketball/la-lakers/preview/utah-jazz-vs-los-angeles-lakers-player-props-injury-report-and-prediction--nba_609305.html"
-      ]
-    }
-  ],
+  "picks": [],
   "settled": [
     {
       "sport": "CFB",
@@ -614,6 +588,34 @@
       "winner": "Denver Nuggets",
       "final_score": "Denver Nuggets 151, Chicago Bulls 145 (OT)",
       "settled_at": "2026-11-23T04:06:21Z"
+    },
+    {
+      "sport": "NBA",
+      "matchup": "Utah Jazz at Los Angeles Lakers",
+      "date": "2026-11-23",
+      "start_time": "2026-11-24T03:00:00Z",
+      "favorite": "Los Angeles Lakers",
+      "estimated_probability": {
+        "Los Angeles Lakers": 84,
+        "Utah Jazz": 16
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.14,
+      "reasoning": [
+        "Lakers are about a 12.5-point home favorite with a moneyline between -700 (Bang the Book) and -890 (another capper), and Covers' Polymarket-based figure is 86%, so I used 84%. LA has a 7-2 home record.",
+        "Utah is without Jaxson Hayes, Jusuf Nurkic, Lauri Markkanen and Jaren Jackson Jr., while the Lakers are without Austin Reaves (heel) but Luka Doncic is averaging about 37 points. Predictions range from a 118-113 to a 123-110 Lakers win and one capper takes Utah +13.5, so I did not go higher.",
+        "Start time is not confirmed in the sources I found. I used the usual 7:00 pm PT / 10:00 pm ET local start (03:00Z Nov 24) as a fallback, which is 9:00 pm CT on Nov 23."
+      ],
+      "sources": [
+        "https://bangthebook.com/utah-jazz-vs-los-angeles-lakers-prediction-2026-11-23/",
+        "https://www.capperspicks.com/free-picks/nba-basketball/utah-jazz-vs-la-lakers-betting-prediction-11-23-26/",
+        "https://www.covers.com/nba/moneyline-predictions-picks-nov-23-2026",
+        "https://www.sportsmole.co.uk/basketball/la-lakers/preview/utah-jazz-vs-los-angeles-lakers-player-props-injury-report-and-prediction--nba_609305.html"
+      ],
+      "winner": "Los Angeles Lakers",
+      "final_score": "Los Angeles Lakers 109-94 Utah Jazz",
+      "settled_at": "2026-11-24T14:18:28Z"
     }
   ],
   "prizepicks": []
