@@ -3,58 +3,6 @@
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
-      "sport": "Soccer",
-      "matchup": "Viking FK at Atletico Madrid",
-      "date": "2026-11-25",
-      "start_time": "2026-11-25T20:00:00Z",
-      "favorite": "Atletico Madrid",
-      "estimated_probability": {
-        "Atletico Madrid": 90,
-        "Viking FK": 10
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2.5,
-      "actual_multiplier": 1.08,
-      "reasoning": [
-        "Draw No Bet. Atletico win is priced about 1.09 median across 33 books (1.10 at 1xBet, 1.11 at bet365, 1/8 at Oddschecker), with the draw at 10.00 and Viking at 21.00. That makes it about 94% with the draw refunded; I shaded to 90% because Atletico have only 4 points and an injury list.",
-        "Atletico are missing Pubill (ankle), Lookman is recovering from a knee problem and Romero is a doubt; Viking are also without four players and have scored 16 goals in their last five. Tipsters expect 2-0 to 3-1 home wins.",
-        "Kickoff 3:00 pm ET / 21:00 CET (20:00Z), 2:00 pm CT on Nov 25; one preview said 20:00 local, but the schedule listings agree on the late slot."
-      ],
-      "sources": [
-        "https://khelnow.com/football/atletico-madrid-vs-viking-fk-preview-champions-league-202611",
-        "https://www.squawka.com/us/news/champions-league/match-preview-atletico-madrid-vs-viking-25-11-26-champions-league/",
-        "https://www.mightytips.com/football-predictions/atletico-madrid-vs-viking-prediction-25-11-2026/",
-        "https://www.covers.com/soccer/champions-league-moneyline-picks-matchday-5-2026",
-        "https://www.naijanews.com/2026/11/23/uefa-champions-league-all-matchday-five-fixtures-kick-off-times/"
-      ]
-    },
-    {
-      "sport": "Soccer",
-      "matchup": "Roma at Paris Saint-Germain",
-      "date": "2026-11-25",
-      "start_time": "2026-11-25T20:00:00Z",
-      "favorite": "Paris Saint-Germain",
-      "estimated_probability": {
-        "Paris Saint-Germain": 82,
-        "Roma": 18
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.25,
-      "reasoning": [
-        "Draw No Bet. One tipster has PSG 1.30, draw 5.00, Roma 8.00 (about 85% DNB after removing the margin), other books show 1.36-1.45, and Kalshi via Covers has PSG at 69% to win outright, which also works out to about 85% DNB. I used 82% because Doue and Kvaratskhelia are out.",
-        "PSG are unbeaten in the Champions League and lead it with 2.76 xG per match; Dembele is available again. Roma lose Pellegrini and have struggled defensively.",
-        "Kickoff 3:00 pm ET / 21:00 CET (20:00Z), 2:00 pm CT on Nov 25. Fair odds used for the multiplier (DNB price not found)."
-      ],
-      "sources": [
-        "https://www.covers.com/soccer/psg-vs-as-roma-prediction-picks-nov-25-2026",
-        "https://www.livescore.com/en/news/football/champions-league/predictions/psg-roma-predictions-champons-league/",
-        "https://www.sportsgambler.com/betting-tips/football/psg-vs-roma-prediction-lineups-odds-2026-11-25/",
-        "https://www.canadasportsbetting.ca/news/soccer/roma-psg-odds-prediction-november-25/",
-        "https://www.covers.com/soccer/champions-league-moneyline-picks-matchday-5-2026"
-      ]
-    },
-    {
       "sport": "NFL",
       "matchup": "Philadelphia Eagles at Dallas Cowboys",
       "date": "2026-11-26",
@@ -82,34 +30,6 @@
     }
   ],
   "settled": [
-    {
-      "sport": "NFL",
-      "matchup": "Jacksonville Jaguars at Tennessee Titans",
-      "date": "2026-11-15",
-      "start_time": "2026-11-15T18:00:00Z",
-      "favorite": "Jacksonville Jaguars",
-      "estimated_probability": {
-        "Jacksonville Jaguars": 82,
-        "Tennessee Titans": 18
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.17,
-      "reasoning": [
-        "Jaguars (6-2) visit the Titans (1-7); Jacksonville is about a 10.5-point road favorite with a moneyline near -600 / +440 (DraftKings), roughly 84% no-vig. Kalshi and OG.com markets sit near 83-84%.",
-        "Most published picks (SI 31-13, Predictem 30-16) back Jacksonville; BetMGM is the only dissent, on the Titans spread. Titans RB Tyjae Spears and WR Carnell Tate are questionable; Jaguars RB Bhayshul Tuten and edge Travon Walker are also questionable. Shaded to 82% for the injury uncertainty and road-favorite variance.",
-        "Kickoff is 1:00 pm ET (18:00Z) at Nissan Stadium."
-      ],
-      "sources": [
-        "https://www.si.com/betting/jaguars-vs-titans-score-prediction-for-nfl-week-10-can-jacksonville-cover-big-spread-again-2026",
-        "https://www.predictem.com/nfl/jaguars-vs-titans-odds-and-expert-pick-for-nfl-week-10/",
-        "https://og.com/learn/jaguars-vs-titans-11-15-26-prediction",
-        "https://sports.betmgm.com/en/blog/nfl/titans-vs-jaguars-prediction-odds-picks-week-10-2026-bm16/"
-      ],
-      "winner": "Jacksonville Jaguars",
-      "final_score": "Jacksonville Jaguars 40, Tennessee Titans 23",
-      "settled_at": "2026-11-15T22:16:33Z"
-    },
     {
       "sport": "NBA",
       "matchup": "San Antonio Spurs at Utah Jazz",
@@ -583,6 +503,64 @@
       "winner": "Barcelona",
       "final_score": "Barcelona 4-1 Sabah",
       "settled_at": "2026-11-25T20:16:59Z"
+    },
+    {
+      "sport": "Soccer",
+      "matchup": "Viking FK at Atletico Madrid",
+      "date": "2026-11-25",
+      "start_time": "2026-11-25T20:00:00Z",
+      "favorite": "Atletico Madrid",
+      "estimated_probability": {
+        "Atletico Madrid": 90,
+        "Viking FK": 10
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "actual_multiplier": 1.08,
+      "reasoning": [
+        "Draw No Bet. Atletico win is priced about 1.09 median across 33 books (1.10 at 1xBet, 1.11 at bet365, 1/8 at Oddschecker), with the draw at 10.00 and Viking at 21.00. That makes it about 94% with the draw refunded; I shaded to 90% because Atletico have only 4 points and an injury list.",
+        "Atletico are missing Pubill (ankle), Lookman is recovering from a knee problem and Romero is a doubt; Viking are also without four players and have scored 16 goals in their last five. Tipsters expect 2-0 to 3-1 home wins.",
+        "Kickoff 3:00 pm ET / 21:00 CET (20:00Z), 2:00 pm CT on Nov 25; one preview said 20:00 local, but the schedule listings agree on the late slot."
+      ],
+      "sources": [
+        "https://khelnow.com/football/atletico-madrid-vs-viking-fk-preview-champions-league-202611",
+        "https://www.squawka.com/us/news/champions-league/match-preview-atletico-madrid-vs-viking-25-11-26-champions-league/",
+        "https://www.mightytips.com/football-predictions/atletico-madrid-vs-viking-prediction-25-11-2026/",
+        "https://www.covers.com/soccer/champions-league-moneyline-picks-matchday-5-2026",
+        "https://www.naijanews.com/2026/11/23/uefa-champions-league-all-matchday-five-fixtures-kick-off-times/"
+      ],
+      "winner": "Atletico Madrid",
+      "final_score": "Atletico Madrid 2-0 Viking FK",
+      "settled_at": "2026-11-25T22:16:48Z"
+    },
+    {
+      "sport": "Soccer",
+      "matchup": "Roma at Paris Saint-Germain",
+      "date": "2026-11-25",
+      "start_time": "2026-11-25T20:00:00Z",
+      "favorite": "Paris Saint-Germain",
+      "estimated_probability": {
+        "Paris Saint-Germain": 82,
+        "Roma": 18
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.25,
+      "reasoning": [
+        "Draw No Bet. One tipster has PSG 1.30, draw 5.00, Roma 8.00 (about 85% DNB after removing the margin), other books show 1.36-1.45, and Kalshi via Covers has PSG at 69% to win outright, which also works out to about 85% DNB. I used 82% because Doue and Kvaratskhelia are out.",
+        "PSG are unbeaten in the Champions League and lead it with 2.76 xG per match; Dembele is available again. Roma lose Pellegrini and have struggled defensively.",
+        "Kickoff 3:00 pm ET / 21:00 CET (20:00Z), 2:00 pm CT on Nov 25. Fair odds used for the multiplier (DNB price not found)."
+      ],
+      "sources": [
+        "https://www.covers.com/soccer/psg-vs-as-roma-prediction-picks-nov-25-2026",
+        "https://www.livescore.com/en/news/football/champions-league/predictions/psg-roma-predictions-champons-league/",
+        "https://www.sportsgambler.com/betting-tips/football/psg-vs-roma-prediction-lineups-odds-2026-11-25/",
+        "https://www.canadasportsbetting.ca/news/soccer/roma-psg-odds-prediction-november-25/",
+        "https://www.covers.com/soccer/champions-league-moneyline-picks-matchday-5-2026"
+      ],
+      "winner": "push",
+      "final_score": "Paris Saint-Germain 2-2 Roma (draw, Draw No Bet refunded)",
+      "settled_at": "2026-11-25T22:16:48Z"
     }
   ],
   "prizepicks": []
