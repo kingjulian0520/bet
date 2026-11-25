@@ -4,32 +4,6 @@
   "picks": [
     {
       "sport": "Soccer",
-      "matchup": "Barcelona at Sabah",
-      "date": "2026-11-25",
-      "start_time": "2026-11-25T17:45:00Z",
-      "favorite": "Barcelona",
-      "estimated_probability": {
-        "Barcelona": 94,
-        "Sabah": 6
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2.5,
-      "actual_multiplier": 1.05,
-      "reasoning": [
-        "Draw No Bet. Barcelona win prices run from about 1.09 (22bet) to 1.10 (-1100), and one model has 89-94%. With the draw refunded, that works out to about 95%, so I shaded to 94%.",
-        "Barcelona have 9 points to Sabah's 3, and Sabah have conceded 12.17 xGA in four Champions League matches, third-worst in the competition. Only injury note found is Yamal with mild right-ankle discomfort; Sabah report a clean bill of health. Sources disagree on the venue name.",
-        "Kickoff 12:45 pm ET / 18:45 CET (17:45Z), which is 11:45 am CT on Nov 25; listings agree on the early slot."
-      ],
-      "sources": [
-        "https://www.goal.com/en-ca/betting/tips/sabah-vs-barcelona-predictions-25-11-2026/A%3Ablt06bdc9cf392cba7b",
-        "https://www.squawka.com/us/news/champions-league/match-preview-sabah-vs-barcelona-25-11-26-champions-league/",
-        "https://khelnow.com/football/sabah-fk-vs-barcelona-preview-champions-league-202611",
-        "https://www.canadasportsbetting.ca/news/soccer/barcelona-sabah-odds-prediction-november-25/",
-        "https://www.covers.com/soccer/champions-league-moneyline-picks-matchday-5-2026"
-      ]
-    },
-    {
-      "sport": "Soccer",
       "matchup": "Viking FK at Atletico Madrid",
       "date": "2026-11-25",
       "start_time": "2026-11-25T20:00:00Z",
@@ -108,147 +82,6 @@
     }
   ],
   "settled": [
-    {
-      "sport": "CFB",
-      "matchup": "Northwestern at Ohio State",
-      "date": "2026-11-14",
-      "start_time": "2026-11-14T17:00:00Z",
-      "favorite": "Ohio State",
-      "estimated_probability": {
-        "Ohio State": 76,
-        "Northwestern": 24
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "actual_multiplier": 1.18,
-      "reasoning": [
-        "Ohio State is a 11-12.5 point home favorite at Ohio Stadium (moneyline about -549 / +410, roughly 83% no-vig) and has won 11 straight against Northwestern.",
-        "Caveats: Ohio State (6-3, coming off losses) is without QB Julian Sayin and expected to start freshman Luke Fahey, with LG Luke Montgomery and WRs Phillip Bell and Brock Boyd questionable. Northwestern (6-3) is also without QB Aidan Chiles. The uncertainty at QB justifies shading to 76%.",
-        "Kickoff is noon ET (17:00Z) on FOX per multiple previews."
-      ],
-      "sources": [
-        "https://sports.betmgm.com/en/blog/college-football/northwestern-ohio-state-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
-        "https://sports.yahoo.com/articles/ohio-state-football-vs-northwestern-222155959.html",
-        "https://www.yardbarker.com/college_football/articles/ohio_state_football_hit_with_a_mixed_bag_of_injury_news_ahead_of_must-win_game_against_northwestern/s1_17313_44556119",
-        "https://www.bleachernation.com/picks/2026/11/11/ohio-state-vs-northwestern-prediction-odds-picks-best-bets-november-14-2026/"
-      ],
-      "winner": "Ohio State",
-      "final_score": "Ohio State 28, Northwestern 19",
-      "settled_at": "2026-11-14T22:17:19Z"
-    },
-    {
-      "sport": "CFB",
-      "matchup": "Georgia Tech at Clemson",
-      "date": "2026-11-14",
-      "start_time": "2026-11-14T17:30:00Z",
-      "favorite": "Clemson",
-      "estimated_probability": {
-        "Clemson": 79,
-        "Georgia Tech": 21
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "actual_multiplier": 1.18,
-      "reasoning": [
-        "Clemson (6-3, 4-2 ACC) hosts Georgia Tech (2-7, 1-5) at Memorial Stadium; spread is about Clemson -13.5 (DraftKings) with a moneyline near -550 / +410, roughly 83% no-vig.",
-        "Clemson is without RB Gideon Davidson and WR Tyler Brown (ankle injuries), so I shaded the estimate below the market to 79%.",
-        "Kickoff is 12:30 pm ET (17:30Z) on The CW."
-      ],
-      "sources": [
-        "https://sports.yahoo.com/articles/watch-clemson-football-vs-georgia-104500042.html",
-        "https://sports.betmgm.com/en/blog/college-football/georgia-tech-clemson-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
-        "https://clutchpoints.com/ncaa-football/clemson-football-news-tyler-brown-gideon-davidson-ruled-out-for-georgia-tech-clash",
-        "https://rubbingtherock.com/clemson-tigers-final-odds-and-prediction-for-week-11-vs-georgia-tech-yellow-jackets"
-      ],
-      "winner": "Georgia Tech",
-      "final_score": "Georgia Tech 20, Clemson 6",
-      "settled_at": "2026-11-14T22:17:19Z"
-    },
-    {
-      "sport": "CFB",
-      "matchup": "Boston College at Notre Dame",
-      "date": "2026-11-14",
-      "start_time": "2026-11-14T20:30:00Z",
-      "favorite": "Notre Dame",
-      "estimated_probability": {
-        "Notre Dame": 94,
-        "Boston College": 6
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2.5,
-      "actual_multiplier": 1.02,
-      "reasoning": [
-        "No. 4 Notre Dame hosts a 4-5 Boston College team at Notre Dame Stadium; the Irish are about a 30-point favorite (-28.5 to -31.5 across books).",
-        "Posted moneylines run roughly -4662 to -10000 and Kalshi has Notre Dame near 99%; capped at 94% since the payout is tiny and any single-game upset risk is nonzero.",
-        "Kickoff is 3:30 pm ET (20:30Z) on NBC/Peacock. I did not find a confirmed 2026 injury report for either side."
-      ],
-      "sources": [
-        "https://www.covers.com/ncaaf/boston-college-vs-notre-dame-prediction-picks-odds-nov-14-2026",
-        "https://sports.betmgm.com/en/blog/college-football/boston-college-notre-dame-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
-        "https://www.uhnd.com/football/games/notre-dame-vs-boston-college-2026/",
-        "https://kalshi.com/markets/kxncaafgame/boston-college-vs-notre-dame/kxncaafgame-26nov14bcnd"
-      ],
-      "winner": "Notre Dame",
-      "final_score": "Notre Dame 41, Boston College 7",
-      "settled_at": "2026-11-15T00:16:27Z"
-    },
-    {
-      "sport": "CFB",
-      "matchup": "Missouri at Georgia",
-      "date": "2026-11-14",
-      "start_time": "2026-11-14T20:30:00Z",
-      "favorite": "Georgia",
-      "estimated_probability": {
-        "Georgia": 86,
-        "Missouri": 14
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2,
-      "actual_multiplier": 1.13,
-      "reasoning": [
-        "Georgia is 8-1 and ranked No. 1 at home at Sanford Stadium; Missouri is 6-3 and fell out of the AP Top 25.",
-        "Georgia injuries are minor to moderate: center Drew Bobo and DT Josh Horton are questionable, OLB Amaris Williams is out and RB Chauncey Bowens has been out since Oct 3. Missouri is without edge Langden Kitchen, RB Malae Fonoti, OL Josh Atkins and TE Gavin Hoffman. I could not confirm Georgia's 2026 starting quarterback.",
-        "Posted moneyline is about Georgia -750 / Missouri +525 (DraftKings, Nov 12), with Georgia -15.5 and other tables showing -714 to -1000; roughly 86% no-vig, so the estimate is 86%.",
-        "Kickoff is 3:30 pm ET (20:30Z) per the Week 11 schedule."
-      ],
-      "sources": [
-        "https://bangthebook.com/missouri-tigers-vs-georgia-bulldogs-prediction-2026-11-14/",
-        "https://sports.betmgm.com/en/blog/college-football/missouri-georgia-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
-        "https://247sports.com/college/georgia/article/georgia-center-drew-bobo-questionable-ahead-of-missouri-game-292615548",
-        "https://sports.yahoo.com/articles/opening-odds-mizzou-falls-ap-195647811.html"
-      ],
-      "winner": "Georgia",
-      "final_score": "Georgia 48, Missouri 21",
-      "settled_at": "2026-11-15T00:16:27Z"
-    },
-    {
-      "sport": "CFB",
-      "matchup": "Stanford at Virginia Tech",
-      "date": "2026-11-14",
-      "start_time": "2026-11-15T00:30:00Z",
-      "favorite": "Virginia Tech",
-      "estimated_probability": {
-        "Virginia Tech": 83,
-        "Stanford": 17
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.14,
-      "reasoning": [
-        "Virginia Tech is 6-3 (3-3 ACC) at Lane Stadium; Stanford is 4-5 (2-4 ACC) and is making its first trip to Blacksburg. Stanford's defense has allowed 199.7 rushing yards per game.",
-        "Posted moneyline is about Virginia Tech -700 on BetMGM, with the Hokies -15.5 to -17 and Kalshi at about 85%; the estimate is shaded to 83% because I found no confirmed injury report for either team.",
-        "Kickoff is 7:30 pm ET (00:30Z Nov 15) on the ACC Network per most sources; one Covers page lists 1:00 pm ET and an older Stanford page listed two options, so the start time is the majority-source value."
-      ],
-      "sources": [
-        "https://hokiesports.com/news/2026/11/09/virginia-tech-football-first-look-virginia-tech-vs-stanford-2026",
-        "https://sports.betmgm.com/en/blog/college-football/stanford-virginia-tech-prediction-odds-player-prop-bets-picks-ncaaf-week-11-jaa/",
-        "https://www.si.com/college/virginiatech/football/opening-odds-for-virginia-tech-stanford-put-hokies-as-multi-touchdown-favorites-01m6y7j883ns",
-        "https://kalshi.com/markets/kxncaafgame/stanford-vs-virginia-tech/kxncaafgame-26nov14stanvt"
-      ],
-      "winner": "Stanford",
-      "final_score": "Stanford 40, Virginia Tech 22",
-      "settled_at": "2026-11-15T14:16:46Z"
-    },
     {
       "sport": "NFL",
       "matchup": "Jacksonville Jaguars at Tennessee Titans",
@@ -721,6 +554,35 @@
       "winner": "Los Angeles Lakers",
       "final_score": "Los Angeles Lakers 109-94 Utah Jazz",
       "settled_at": "2026-11-24T14:18:28Z"
+    },
+    {
+      "sport": "Soccer",
+      "matchup": "Barcelona at Sabah",
+      "date": "2026-11-25",
+      "start_time": "2026-11-25T17:45:00Z",
+      "favorite": "Barcelona",
+      "estimated_probability": {
+        "Barcelona": 94,
+        "Sabah": 6
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "actual_multiplier": 1.05,
+      "reasoning": [
+        "Draw No Bet. Barcelona win prices run from about 1.09 (22bet) to 1.10 (-1100), and one model has 89-94%. With the draw refunded, that works out to about 95%, so I shaded to 94%.",
+        "Barcelona have 9 points to Sabah's 3, and Sabah have conceded 12.17 xGA in four Champions League matches, third-worst in the competition. Only injury note found is Yamal with mild right-ankle discomfort; Sabah report a clean bill of health. Sources disagree on the venue name.",
+        "Kickoff 12:45 pm ET / 18:45 CET (17:45Z), which is 11:45 am CT on Nov 25; listings agree on the early slot."
+      ],
+      "sources": [
+        "https://www.goal.com/en-ca/betting/tips/sabah-vs-barcelona-predictions-25-11-2026/A%3Ablt06bdc9cf392cba7b",
+        "https://www.squawka.com/us/news/champions-league/match-preview-sabah-vs-barcelona-25-11-26-champions-league/",
+        "https://khelnow.com/football/sabah-fk-vs-barcelona-preview-champions-league-202611",
+        "https://www.canadasportsbetting.ca/news/soccer/barcelona-sabah-odds-prediction-november-25/",
+        "https://www.covers.com/soccer/champions-league-moneyline-picks-matchday-5-2026"
+      ],
+      "winner": "Barcelona",
+      "final_score": "Barcelona 4-1 Sabah",
+      "settled_at": "2026-11-25T20:16:59Z"
     }
   ],
   "prizepicks": []
