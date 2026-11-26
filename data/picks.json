@@ -27,6 +27,58 @@
         "https://betbystate.com/news/thanksgiving-nfl-betting-guide/",
         "https://www.bleedinggreennation.com/philadelphia-eagles-injuries/191167/eagles-issue-estimated-injury-report-ahead-of-cowboys-thanksgiving-game"
       ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "West Virginia at Utah",
+      "date": "2026-11-27",
+      "start_time": "2026-11-28T02:00:00Z",
+      "favorite": "Utah",
+      "estimated_probability": {
+        "Utah": 94,
+        "West Virginia": 6
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "actual_multiplier": 1.07,
+      "reasoning": [
+        "Utah is 11-0 and a 20-25 point home favorite; moneylines run from about -1450 to -2000 at most books and -2800 at DraftKings, and one model gives Utah 94.7%. I used 94% and the low end of the price range for the multiplier.",
+        "West Virginia is 5-6 after a 34-31 loss to Houston, and quarterback Michael Hawkins Jr. aggravated an ankle injury in that game; his status is unconfirmed (one preview lists no injuries for either team). Neither status changes the case for Utah.",
+        "Kickoff 9:00 pm ET Friday (02:00Z Nov 28), which is 8:00 pm CT on Nov 27; the time came from one listing, so verify it."
+      ],
+      "sources": [
+        "https://www.heartlandcollegesports.com/2026/11/22/west-virginia-vs-utah-prediction-odds-injury-report-for-week-13/",
+        "https://www.dimers.com/cfb/predictions/2026_13_utah_wvu",
+        "https://bangthebook.com/west-virginia-mountaineers-vs-utah-utes-prediction-2026-11-27/",
+        "https://thesharpedition.com/cfb/games/CFB2026_13_west-virginia_utah",
+        "https://bleachernation.com/picks/2026/11/25/utah-vs-west-virginia-prediction-live-odds-stats-history-and-picks-november-27-2026"
+      ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Texas at Texas A&M",
+      "date": "2026-11-27",
+      "start_time": "2026-11-28T00:30:00Z",
+      "favorite": "Texas",
+      "estimated_probability": {
+        "Texas": 79,
+        "Texas A&M": 21
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.22,
+      "reasoning": [
+        "Texas is a 10.5-11.5 point road favorite with moneylines from about -440 to -502 (Texas A&M +340 to +371); Polymarket has Texas at 80% and Covers projects 79%, which is where I landed.",
+        "Texas has won five straight while Texas A&M has lost four in a row; the Aggies are 4-2 at Kyle Field but the game is a rivalry, so I did not go higher. Injury reports conflict: one preview lists none, another has Aggies tackle Landon Rink out with illness.",
+        "Kickoff 7:30 pm ET on ABC (00:30Z Nov 28), which is 6:30 pm CT on Nov 27."
+      ],
+      "sources": [
+        "https://www.covers.com/ncaaf/texas-vs-texas-am-prediction-picks-odds-early-leans-week-13-2026",
+        "https://bangthebook.com/texas-longhorns-vs-texas-a-m-aggies-prediction-2026-11-27/",
+        "https://polymarket.com/sports/cfb/cfb-tx-txam-2026-11-27",
+        "https://www.capperspicks.com/free-picks/college-football/texas-longhorns-vs-texas-am-aggies-betting-prediction-11-27-2026/",
+        "https://www.tonyspicks.com/2026/11/25/texas-vs-texas-aandm-prediction-picks-11-27-26/"
+      ]
     }
   ],
   "settled": [
