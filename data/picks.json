@@ -53,6 +53,84 @@
         "https://www.capperspicks.com/free-picks/college-football/texas-longhorns-vs-texas-am-aggies-betting-prediction-11-27-2026/",
         "https://www.tonyspicks.com/2026/11/25/texas-vs-texas-aandm-prediction-picks-11-27-26/"
       ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Georgia Tech at Georgia",
+      "date": "2026-11-28",
+      "start_time": "2026-11-28T20:30:00Z",
+      "favorite": "Georgia",
+      "estimated_probability": {
+        "Georgia": 95,
+        "Georgia Tech": 5
+      },
+      "confidence_label": "Chalk",
+      "recommended_units": 3,
+      "actual_multiplier": 1.01,
+      "reasoning": [
+        "Georgia is a 35.5-point home favorite at -8000 (Georgia Tech +2200) on DraftKings; ESPN's matchup predictor gives Georgia 98.7% and Polymarket 99%. I capped it at 95%.",
+        "Georgia is 10-1 (8-1 SEC) with four straight wins; Georgia Tech is 3-8, and both its quarterbacks were hurt in a 50-29 loss to Wake Forest (Adamson out with a broken collarbone, Mendoza uncertain). I found no injury report for Georgia.",
+        "Kickoff 3:30 pm ET on ABC (20:30Z), 2:30 pm CT on Nov 28. The multiplier is tiny at this price."
+      ],
+      "sources": [
+        "https://www.si.com/betting/georgia-tech-vs-georgia-prediction-odds-and-key-players-to-watch-for-college-football-week-13-01m85t41t9mg",
+        "https://www.therx.com/college-football/georgia-tech-georgia-rivalry-preview-nov-28-2026/56308/",
+        "https://pickdawgz.com/college-football-picks/georgia-tech-vs-georgia-prediction-11-28-2026-todays-college-football-picks/",
+        "https://www.tonyspicks.com/2026/11/26/georgia-tech-vs-georgia-prediction-picks-11-28-26/",
+        "https://www.sportsbettingdime.com/news/college-football/early-georgia-tech-georgia-prediction-spread-sec-picks/"
+      ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Auburn at Alabama",
+      "date": "2026-11-28",
+      "start_time": "2026-11-29T00:30:00Z",
+      "favorite": "Alabama",
+      "estimated_probability": {
+        "Alabama": 81,
+        "Auburn": 19
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.13,
+      "reasoning": [
+        "Alabama is a 14.5-16.5 point home favorite with moneylines of -750/+525 to -750/+530, and Covers shows 84%. I used 81% because it's the Iron Bowl and the injury reports are messy.",
+        "Alabama is 9-2 (6-2 SEC), ranked No. 6 and chasing a playoff bye; Auburn is 7-4 (4-4). Alabama QB Keelon Russell rested an ankle after a 47-0 win and coach DeBoer says he is in a good place; several Alabama defenders are out or questionable. Predictions run from 34-13 Alabama to one capper's 31-28.",
+        "Kickoff 7:30 pm ET on ABC (00:30Z Nov 29), 6:30 pm CT on Nov 28."
+      ],
+      "sources": [
+        "https://www.cbssports.com/college-football/news/alabama-auburn-prediction-pick-iron-bowl-2026-odds-spread-where-to-watch/",
+        "https://www.si.com/betting/auburn-vs-alabama-prediction-odds-and-key-players-to-watch-for-iron-bowl-in-college-football-week-13-2026",
+        "https://www.covers.com/ncaaf/auburn-vs-alabama-prediction-picks-odds-early-leans-week-13-2026",
+        "https://bamahammer.com/alabama-vs-auburn-how-to-watch-odds-injuries-more-for-91st-iron-bowl",
+        "https://picksandparlays.net/free-picks/ncaaf/auburn-vs-alabama-picks-and-predictions-for-saturday-november-28-2026"
+      ]
+    },
+    {
+      "sport": "NBA",
+      "matchup": "Denver Nuggets at Utah Jazz",
+      "date": "2026-11-27",
+      "start_time": "2026-11-28T02:30:00Z",
+      "favorite": "Denver Nuggets",
+      "estimated_probability": {
+        "Denver Nuggets": 83,
+        "Utah Jazz": 17
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.21,
+      "reasoning": [
+        "Denver is a 9.5-point favorite at -481 (Jazz +370) on FanDuel, about 80% after removing the margin; Jazz are 3-16 on the season. I used 83% because Utah is shorthanded.",
+        "No Nuggets are on the injury report in two sources (Jokic and Murray expected to play), though one Fox Sports listing shows Julian Strawther out with a knee. Utah is without Markkanen (hand) and Jaren Jackson Jr. (MCL), with Nurkic and Hayes questionable.",
+        "Tip-off 9:30 pm ET Friday (02:30Z Nov 28), 8:30 pm CT on Nov 27. One listing calls this an NBA Cup group game with the Nuggets visiting the Jazz; the FanDuel page lists it as Jazz vs. Nuggets, so I took Fox Sports' home/away."
+      ],
+      "sources": [
+        "https://www.fanduel.com/research/jazz-vs-nuggets-prediction-nba-odds-spread-best-bets-for-11-27-2026",
+        "https://www.foxsports.com/articles/nba/nuggets-visit-jazz-friday-in-nba-cup-group-stage",
+        "https://www.sportsmole.co.uk/basketball/denver-nuggets/preview/denver-nuggets-vs-utah-jazz-player-props-injury-report-and-prediction--nba-cup_609821.html",
+        "https://hoopsnightly.com/teams/nuggets/injuries",
+        "https://www.covers.com/sport/basketball/nba/teams/main/utah-jazz/injuries"
+      ]
     }
   ],
   "settled": [
