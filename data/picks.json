@@ -3,32 +3,6 @@
   "window_note": "Rolling feed of deeply-researched picks (moneylines, totals, spreads, player/match props, and parlays) across the full confidence spectrum, refreshed hourly but only updated when something genuinely changed. Confidence tracks the specificity of the evidence. Only games that haven't started yet are included. Nothing here is ever a guaranteed outcome, however lopsided it looks.",
   "picks": [
     {
-      "sport": "NFL",
-      "matchup": "Philadelphia Eagles at Dallas Cowboys",
-      "date": "2026-11-26",
-      "start_time": "2026-11-26T21:30:00Z",
-      "favorite": "Dallas Cowboys",
-      "estimated_probability": {
-        "Dallas Cowboys": 77,
-        "Philadelphia Eagles": 23
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "actual_multiplier": 1.22,
-      "reasoning": [
-        "Dallas is an 8.5-point favorite at most books with a moneyline of about -456 to -500 (Eagles +335 to +379), which is roughly 78-80% after removing the margin; I used 77% because Dallas is only 5-6 and has defensive concerns.",
-        "Eagles are 3-7 in an injury-plagued season: Barkley is listed with neck/illness, Quinyon Mitchell and Jonathan Jones are questionable, and Hurts's status is unresolved (one report says Joe Milton starts). Cowboys are without Ferguson (doubtful) and Tyler Booker (DNP), but Prescott has been playing well.",
-        "Kickoff 4:30 pm ET (21:30Z), 3:30 pm CT on Thanksgiving, Nov 26."
-      ],
-      "sources": [
-        "https://www.si.com/betting/eagles-vs-cowboys-prediction-odds-spread-injuries-trends-for-thanksgiving-day-in-nfl-week-12-2026",
-        "https://www.bettoredge.com/post/nfl-thanksgiving-2026-schedule-odds-how-to-watch",
-        "https://rg.org/news/football/bears-vs-lions-eagles-vs-cowboys-chiefs-vs-bills-thanksgiving-picks-2026",
-        "https://betbystate.com/news/thanksgiving-nfl-betting-guide/",
-        "https://www.bleedinggreennation.com/philadelphia-eagles-injuries/191167/eagles-issue-estimated-injury-report-ahead-of-cowboys-thanksgiving-game"
-      ]
-    },
-    {
       "sport": "CFB",
       "matchup": "West Virginia at Utah",
       "date": "2026-11-27",
@@ -82,34 +56,6 @@
     }
   ],
   "settled": [
-    {
-      "sport": "NBA",
-      "matchup": "San Antonio Spurs at Utah Jazz",
-      "date": "2026-11-15",
-      "start_time": "2026-11-15T22:00:00Z",
-      "favorite": "San Antonio Spurs",
-      "estimated_probability": {
-        "San Antonio Spurs": 92,
-        "Utah Jazz": 8
-      },
-      "confidence_label": "Heavy favorite",
-      "recommended_units": 2.5,
-      "actual_multiplier": 1.06,
-      "reasoning": [
-        "Spurs are about a 17.5-point favorite with a moneyline near -1640 / +920 (Bang the Book); FanDuel has -1786. OG.com prediction markets put San Antonio at about 94%.",
-        "Utah is badly short-handed: Bang the Book lists Markkanen, Jaren Jackson Jr., Nurkic, Hayes and Alexander out (Sportsmole instead calls Hayes a game-time decision, so that one is unresolved). I found no injury news on Wembanyama.",
-        "Capped below the market at 92% because a single NBA game can swing on rest or a late injury. Tip is 5:00 pm ET (22:00Z); sources disagree on which team is the listed home side, but the price is the same."
-      ],
-      "sources": [
-        "https://bangthebook.com/san-antonio-spurs-vs-utah-jazz-prediction-2026-11-15/",
-        "https://og.com/learn/spurs-at-jazz-11-15-26-prediction",
-        "https://www.fanduel.com/research/nba-predictions-odds-11-15-2026",
-        "https://www.sportsmole.co.uk/basketball/san-antonio-spurs/preview/san-antonio-spurs-vs-utah-jazz-player-props-injury-report-and-prediction--nba_607855.html"
-      ],
-      "winner": "San Antonio Spurs",
-      "final_score": "San Antonio Spurs 110, Utah Jazz 102",
-      "settled_at": "2026-11-16T02:17:18Z"
-    },
     {
       "sport": "NBA",
       "matchup": "Orlando Magic at Boston Celtics",
@@ -613,6 +559,35 @@
       "winner": "push",
       "final_score": "Paris Saint-Germain 2-2 Roma (draw, Draw No Bet refunded)",
       "settled_at": "2026-11-25T22:16:48Z"
+    },
+    {
+      "sport": "NFL",
+      "matchup": "Philadelphia Eagles at Dallas Cowboys",
+      "date": "2026-11-26",
+      "start_time": "2026-11-26T21:30:00Z",
+      "favorite": "Dallas Cowboys",
+      "estimated_probability": {
+        "Dallas Cowboys": 77,
+        "Philadelphia Eagles": 23
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.22,
+      "reasoning": [
+        "Dallas is an 8.5-point favorite at most books with a moneyline of about -456 to -500 (Eagles +335 to +379), which is roughly 78-80% after removing the margin; I used 77% because Dallas is only 5-6 and has defensive concerns.",
+        "Eagles are 3-7 in an injury-plagued season: Barkley is listed with neck/illness, Quinyon Mitchell and Jonathan Jones are questionable, and Hurts's status is unresolved (one report says Joe Milton starts). Cowboys are without Ferguson (doubtful) and Tyler Booker (DNP), but Prescott has been playing well.",
+        "Kickoff 4:30 pm ET (21:30Z), 3:30 pm CT on Thanksgiving, Nov 26."
+      ],
+      "sources": [
+        "https://www.si.com/betting/eagles-vs-cowboys-prediction-odds-spread-injuries-trends-for-thanksgiving-day-in-nfl-week-12-2026",
+        "https://www.bettoredge.com/post/nfl-thanksgiving-2026-schedule-odds-how-to-watch",
+        "https://rg.org/news/football/bears-vs-lions-eagles-vs-cowboys-chiefs-vs-bills-thanksgiving-picks-2026",
+        "https://betbystate.com/news/thanksgiving-nfl-betting-guide/",
+        "https://www.bleedinggreennation.com/philadelphia-eagles-injuries/191167/eagles-issue-estimated-injury-report-ahead-of-cowboys-thanksgiving-game"
+      ],
+      "winner": "Philadelphia Eagles",
+      "final_score": "Philadelphia Eagles 39-38 Dallas Cowboys",
+      "settled_at": "2026-11-27T02:16:39Z"
     }
   ],
   "prizepicks": []
