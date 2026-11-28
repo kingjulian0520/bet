@@ -30,32 +30,6 @@
     },
     {
       "sport": "CFB",
-      "matchup": "Texas at Texas A&M",
-      "date": "2026-11-27",
-      "start_time": "2026-11-28T00:30:00Z",
-      "favorite": "Texas",
-      "estimated_probability": {
-        "Texas": 79,
-        "Texas A&M": 21
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.5,
-      "actual_multiplier": 1.22,
-      "reasoning": [
-        "Texas is a 10.5-11.5 point road favorite with moneylines from about -440 to -502 (Texas A&M +340 to +371); Polymarket has Texas at 80% and Covers projects 79%, which is where I landed.",
-        "Texas has won five straight while Texas A&M has lost four in a row; the Aggies are 4-2 at Kyle Field but the game is a rivalry, so I did not go higher. Injury reports conflict: one preview lists none, another has Aggies tackle Landon Rink out with illness.",
-        "Kickoff 7:30 pm ET on ABC (00:30Z Nov 28), which is 6:30 pm CT on Nov 27."
-      ],
-      "sources": [
-        "https://www.covers.com/ncaaf/texas-vs-texas-am-prediction-picks-odds-early-leans-week-13-2026",
-        "https://bangthebook.com/texas-longhorns-vs-texas-a-m-aggies-prediction-2026-11-27/",
-        "https://polymarket.com/sports/cfb/cfb-tx-txam-2026-11-27",
-        "https://www.capperspicks.com/free-picks/college-football/texas-longhorns-vs-texas-am-aggies-betting-prediction-11-27-2026/",
-        "https://www.tonyspicks.com/2026/11/25/texas-vs-texas-aandm-prediction-picks-11-27-26/"
-      ]
-    },
-    {
-      "sport": "CFB",
       "matchup": "Georgia Tech at Georgia",
       "date": "2026-11-28",
       "start_time": "2026-11-28T20:30:00Z",
@@ -134,59 +108,6 @@
     }
   ],
   "settled": [
-    {
-      "sport": "NBA",
-      "matchup": "Orlando Magic at Boston Celtics",
-      "date": "2026-11-16",
-      "start_time": "2026-11-17T00:00:00Z",
-      "favorite": "Boston Celtics",
-      "estimated_probability": {
-        "Boston Celtics": 80,
-        "Orlando Magic": 20
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.23,
-      "reasoning": [
-        "Boston is about a 9.5-point home favorite with a moneyline near -426 (Bang the Book) to -460 (Bleacher Report), roughly 81-82% no-vig; shaded slightly to 80% because only one preview covered this game in detail.",
-        "Orlando is listed without Paolo Banchero (ankle), Jonathan Isaac (knee), Noah Penda (hamstring) and Izaiyah Nelson (ankle), though that injury list comes from a single source and could change by tip-off. No Boston injuries were returned in the latest check.",
-        "The preview cites Boston's unbeaten home record and stronger scoring defense, but Orlando is on a three-game winning run. Tip is 7:00 pm ET (00:00Z Nov 17), which is 6:00 pm CT on Nov 16."
-      ],
-      "sources": [
-        "https://bangthebook.com/orlando-magic-vs-boston-celtics-prediction-2026-11-16/",
-        "https://bleacherreport.com/game/orlando-magic-vs-boston-celtics-2026-11-16-19-00"
-      ],
-      "winner": "Orlando Magic",
-      "final_score": "Orlando Magic 115, Boston Celtics 105",
-      "settled_at": "2026-11-17T04:06:27Z"
-    },
-    {
-      "sport": "CFB",
-      "matchup": "Eastern Michigan at Western Michigan",
-      "date": "2026-11-17",
-      "start_time": "2026-11-17T23:00:00Z",
-      "favorite": "Western Michigan",
-      "estimated_probability": {
-        "Western Michigan": 82,
-        "Eastern Michigan": 18
-      },
-      "confidence_label": "Strong lean",
-      "recommended_units": 1.75,
-      "actual_multiplier": 1.15,
-      "reasoning": [
-        "Western Michigan is a 14.5-point home favorite at Waldo Stadium (spread steady since open) with a moneyline near -675 / +490 (Bang the Book), roughly 86% no-vig; Polymarket also sits near 86%.",
-        "Shaded to 82% because both starting quarterbacks (WMU's Broc Lowry and EMU's Noah Kim) are reported dealing with injuries and I found no confirmed injury report.",
-        "Kickoff is 6:00 pm ET (23:00Z) on Nov 17 per two 2026 previews."
-      ],
-      "sources": [
-        "https://bangthebook.com/eastern-michigan-eagles-vs-western-michigan-broncos-prediction-2026-11-17/",
-        "https://www.wagertalk.com/news/college-football/eastern-michigan-vs-western-michigan-predictions-picks-odds-november-17-2026/",
-        "https://ats.io/college-football/eastern-michigan-eagles-vs-western-michigan-broncos-prediction-preview-11-17-2026/"
-      ],
-      "winner": "Western Michigan",
-      "final_score": "Western Michigan 34, Eastern Michigan 27",
-      "settled_at": "2026-11-18T04:06:32Z"
-    },
     {
       "sport": "CFB",
       "matchup": "Ball State at Ohio",
@@ -666,6 +587,35 @@
       "winner": "Philadelphia Eagles",
       "final_score": "Philadelphia Eagles 39-38 Dallas Cowboys",
       "settled_at": "2026-11-27T02:16:39Z"
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Texas at Texas A&M",
+      "date": "2026-11-27",
+      "start_time": "2026-11-28T00:30:00Z",
+      "favorite": "Texas",
+      "estimated_probability": {
+        "Texas": 79,
+        "Texas A&M": 21
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.22,
+      "reasoning": [
+        "Texas is a 10.5-11.5 point road favorite with moneylines from about -440 to -502 (Texas A&M +340 to +371); Polymarket has Texas at 80% and Covers projects 79%, which is where I landed.",
+        "Texas has won five straight while Texas A&M has lost four in a row; the Aggies are 4-2 at Kyle Field but the game is a rivalry, so I did not go higher. Injury reports conflict: one preview lists none, another has Aggies tackle Landon Rink out with illness.",
+        "Kickoff 7:30 pm ET on ABC (00:30Z Nov 28), which is 6:30 pm CT on Nov 27."
+      ],
+      "sources": [
+        "https://www.covers.com/ncaaf/texas-vs-texas-am-prediction-picks-odds-early-leans-week-13-2026",
+        "https://bangthebook.com/texas-longhorns-vs-texas-a-m-aggies-prediction-2026-11-27/",
+        "https://polymarket.com/sports/cfb/cfb-tx-txam-2026-11-27",
+        "https://www.capperspicks.com/free-picks/college-football/texas-longhorns-vs-texas-am-aggies-betting-prediction-11-27-2026/",
+        "https://www.tonyspicks.com/2026/11/25/texas-vs-texas-aandm-prediction-picks-11-27-26/"
+      ],
+      "winner": "Texas",
+      "final_score": "Texas 16-6 Texas A&M",
+      "settled_at": "2026-11-28T04:06:57Z"
     }
   ],
   "prizepicks": []
