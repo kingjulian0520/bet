@@ -105,6 +105,110 @@
         "https://hoopsnightly.com/teams/nuggets/injuries",
         "https://www.covers.com/sport/basketball/nba/teams/main/utah-jazz/injuries"
       ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Purdue at Indiana",
+      "date": "2026-11-28",
+      "start_time": "2026-11-29T00:00:00Z",
+      "favorite": "Indiana",
+      "estimated_probability": {
+        "Indiana": 93,
+        "Purdue": 7
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2.5,
+      "actual_multiplier": 1.05,
+      "reasoning": [
+        "Indiana is a 22.5-23.5 point home favorite at about -2100 (Purdue +1100) on DraftKings, with a betting-data model at 93%; I used 93%.",
+        "Indiana is 9-2 and ranked No. 14; Purdue is 3-8 and has lost five straight, and Indiana won the last two Old Oaken Bucket games by a combined 112-3. Indiana QB Josh Hoover has a throwing-shoulder injury, CB A.J. Harris is out and guard Joe Brunner is out for the season; Predictem projects 30-10 Indiana.",
+        "Kickoff 7:00 pm ET on FS1 (00:00Z Nov 29), 6:00 pm CT on Nov 28; one item listed Nov 30, but most sources agree on Saturday."
+      ],
+      "sources": [
+        "https://www.idsnews.com/article/2026/11/indiana-football-purdue-old-oaken-bucket-battle",
+        "https://bvmsports.com/2026/11/24/indiana-vs-purdue-old-oaken-bucket-qb-questions-and-injuries/",
+        "https://www.predictem.com/college-football/purdue-vs-indiana-prediction-old-oaken-bucket-odds-and-pick/",
+        "https://covers.com/ncaaf/top-25-predictions-week-13-2026",
+        "https://www.fanduel.com/research/indiana-vs-purdue-college-football-odds-picks-best-bets-for-11-28-2026"
+      ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Cincinnati at BYU",
+      "date": "2026-11-28",
+      "start_time": "2026-11-28T20:30:00Z",
+      "favorite": "BYU",
+      "estimated_probability": {
+        "BYU": 85,
+        "Cincinnati": 15
+      },
+      "confidence_label": "Heavy favorite",
+      "recommended_units": 2,
+      "actual_multiplier": 1.14,
+      "reasoning": [
+        "BYU is a 14.5-15.5 point home favorite at about -667 to -714 (Cincinnati +500), roughly 85% after removing the margin, which is what I used.",
+        "BYU is 9-2 and Cincinnati is 6-5; projected scores run from BYU 37-17 to BYU 34-24, and one analyst likes Cincinnati to cover on turnover margin. Cincinnati lists two safeties (Beeler, Cannon) as questionable; no injuries listed for BYU, but that report may be dated.",
+        "Kickoff 3:30 pm ET on FOX (20:30Z), 2:30 pm CT on Nov 28."
+      ],
+      "sources": [
+        "https://www.covers.com/ncaaf/cincinnati-vs-byu-prediction-picks-nov-28-2026",
+        "https://www.heartlandcollegesports.com/2026/11/22/cincinnati-byu-prediction-odds-injury-report-2026/",
+        "https://www.sportsbookreview.com/picks/college-football/cincinnati-vs-byu-prediction-odds-picks-week-13-2026/",
+        "https://www.tonyspicks.com/2026/11/26/cincinnati-vs-byu-prediction-picks-11-28-26/",
+        "https://sports.betmgm.com/en/blog/college-football/cincinnati-byu-prediction-odds-player-prop-bets-picks-ncaaf-week-13-jaa/"
+      ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Navy at Charlotte",
+      "date": "2026-11-28",
+      "start_time": "2026-11-28T17:00:00Z",
+      "favorite": "Navy",
+      "estimated_probability": {
+        "Navy": 84,
+        "Charlotte": 16
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.75,
+      "actual_multiplier": 1.12,
+      "reasoning": [
+        "Navy is a 14.5-16.5 point road favorite at about -850 to -889 (Charlotte +575 to +587), and Kalshi has Navy at about 87%; I used 84% because I found no injury report and Navy is only 4-6.",
+        "Charlotte is 1-10 and has lost its last nine home games and allows about 185 rushing yards a game, which suits Navy's rushing attack. One handicapper takes Charlotte to cover on its home ATS record.",
+        "Kickoff 12:00 pm ET on ESPN+ (17:00Z), 11:00 am CT on Nov 28; one listing showed 12:00 AM, which looks like a formatting error. The multiplier uses the -889 price."
+      ],
+      "sources": [
+        "https://bangthebook.com/navy-midshipmen-vs-charlotte-49ers-prediction-2026-11-28/",
+        "https://sports.betmgm.com/en/blog/college-football/navy-charlotte-prediction-odds-player-prop-bets-picks-ncaaf-week-13-jaa/",
+        "https://americanconference.co/scores/2026-11-28-navy-charlotte",
+        "https://probsee.com/predictions/event/kalshi/kxncaafgame-26nov28navychar",
+        "https://pickdawgz.com/college-football-picks/navy-vs-charlotte-prediction-11-28-2026-todays-college-football-picks/"
+      ]
+    },
+    {
+      "sport": "CFB",
+      "matchup": "Tennessee at Vanderbilt",
+      "date": "2026-11-28",
+      "start_time": "2026-11-29T00:00:00Z",
+      "favorite": "Tennessee",
+      "estimated_probability": {
+        "Tennessee": 78,
+        "Vanderbilt": 22
+      },
+      "confidence_label": "Strong lean",
+      "recommended_units": 1.5,
+      "actual_multiplier": 1.17,
+      "reasoning": [
+        "Tennessee is a 13.5-point road favorite at about -545 to -581 (Vanderbilt +430 to +525), roughly 81% after removing the margin, and one model gives Vanderbilt 19%. I used 78% because RB DeSean Bishop (the SEC's leading rusher) left the LSU game hurt and his status is unconfirmed.",
+        "Tennessee is No. 5 and one win from the playoff; Vanderbilt is hunting an upset to close the season. Projected scores run 26-17 to 29-17 Tennessee.",
+        "Kickoff 7:00 pm ET on ESPN (00:00Z Nov 29), 6:00 pm CT on Nov 28; one report says 6 pm ET, so the time is not fully confirmed."
+      ],
+      "sources": [
+        "https://www.fanduel.com/research/tennessee-vs-vanderbilt-college-football-odds-picks-best-bets-for-11-28-2026",
+        "https://www.rockytopinsider.com/2026/11/23/tennessee-vs-vanderbilt-prediction-odds-best-bets-2026/",
+        "https://www.rockytopinsider.com/2026/11/24/tennessee-vanderbilt-early-look-odds-kalshi-polymarket-regular-season-finale/",
+        "https://www.bleachernation.com/picks/2026/11/25/tennessee-vs-vanderbilt-prediction-odds-picks-best-bets-november-28-2026/",
+        "https://www.cappertek.com/article.asp?a=tennessee-vs-vanderbilt-betting-odds-free-picks-and-predictions-11-28-2026-425065"
+      ]
     }
   ],
   "settled": [
